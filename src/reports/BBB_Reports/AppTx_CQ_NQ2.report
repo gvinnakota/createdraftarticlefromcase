@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Is_ISR__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_App_Tx__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_Forecasted_ACV__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Region_autofill__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CUSTOMER_PRODUCT_ID</field>
+    </columns>
+    <currency>USD</currency>
+    <description>AppTx Opportunities for CQ + NQ sorted by Total AppTx</description>
+    <filter>
+        <criteriaItems>
+            <column>CUSTOMER_PRODUCT_ID</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SVC-1151,SVC-1142,SVC-1143,SVC-1144</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Region_autofill__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AMER</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1 - Qualified,2 - Validated,3 - Procurement,Booked</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Fiscal_Period__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AppTx CQ + NQ</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ProductOpportunity</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURNEXT1</interval>
+    </timeFrameFilter>
+</Report>

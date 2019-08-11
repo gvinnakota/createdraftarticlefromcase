@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.Newsletter October 2013</name>
+    <style>none</style>
+    <subject>Spring News: Pivotal, Cloudera, Hortonworks certify Spring for Apache Hadoop</subject>
+    <textOnly>October 2013
+
+Pivotal, Cloudera, Hortonworks certify Spring for Apache Hadoop
+PIVOTAL, CLOUDERA, AND HORTONWORKS
+Pivotal &lt;http://projects.spring.io/spring-hadoop/&gt;, Cloudera &lt;http://www.gopivotal.com/about-pivotal/press-center/10292013-cloudera&gt;, and Hortonworks &lt;http://www.gopivotal.com/about-pivotal/press-center/10292013-hortonworks&gt; are announcing certification of their respective Hadoop distributions for milestone builds of Spring XD, which includes the Spring for Apache Hadoop project. This certification enables Java developers to use familiar tools while building big data applications - that work across major Hadoop distributions without modification.
+
+
+Learn More... &lt;http://projects.spring.io/spring-hadoop/&gt;
+SPRING: ADDING A CUSTOM SOURCE AND SINK TO SPRING XD 
+
+
+Spring XD is a powerful way to model data-integration or stream processing solutions that builds on the strengths of Spring Integration and Spring Batch.
+
+Spring XD has a notion of sources and sinks. A source describes where data is ingested - you might use Twitter, or HDFS, etc. A sink describes where data is written - to HDFS, a file system, a database, etc. When you create a stream, you reference components - powered by Spring Integration - that live in the modules folder of the Spring XD distribution. 
+
+Thus, in the following example http refers to $XD_HOME/xd/modules/source/http.xml, 
+and hdfs refers to $XD_HOME/xd/modules/sink/hdfs.xml:
+
+:&gt; stream create --definition &quot;http --port=8000 | 
+
+hdfs --rollover=51200&quot; --name order_stream 
+
+
+It&apos;s easy to add your own sources and sinks! A source is simply any valid Spring Integration flow configured in an XML file that defines a Spring 
+Integration channel with the well-known name output through which messages will be delivered. Likewise, a sink is simply any valid Spring Integration flow that has a well-known 
+channel named inbound. Again, Spring XD doesn&apos;t care what you do with the messages that come off of that channel, but it expects it to be there to provide you with the messages.
+
+Spring XD makes it easy to parameterize a given source or sink with property placeholder overrides driven by double-dash arguments in the Spring XD DSL. In the above example, the XML file for the hdfs sink has the following 
+stanza:
+&lt;int-hadoop:hdfs-outbound-channel-adapter id=&quot;files&quot;
+ file-system=&quot;hadoopFs&quot; .. rollover-threshold-in-bytes=&quot;$ {rollover:1000000}&quot;/&gt;
+
+The --rollover argument in the Spring XD, if optionally supplied, is substituted in the XML property placeholder ($ {rollover:1000000}). 
+The : tells Spring to default the value if none is provided.
+
+There are, of course, other components, like processors and jobs, too, that work similarly, in convention-over-configuration ways, making it very simply to extend every part of Spring XD with ease.
+
+
+STS: CONTENT-ASSIST FOR SPRING ANNOTATIONS 
+
+
+Content-assist is one of the most useful features of integrated development environments. Using the Spring Tool Suite, you now get content-assist for certain Spring-specific annotations and allows you to easily define types and packages in annotation parameters, for example for basePackages and basePackageClasses in @ComponentScan or locations in @ContextConfiguration.
+DYNAMIC ROUTING AT 1 MILLION PER SECOND WITH SPRING INTEGRATION
+
+Speakers: John Davies and Josh Long
+
+While some of today&apos;s systems can hit μSec performance it usually take a lot of good design and optimization. The solution is often hard-baked and inflexible and the end user still wants the flexibility promised by ESBs with dynamic routing based on runtime rules with transformations from one format to another. 
+
+Josh and John will walk you through the latest in high performance message handling with Spring Integration covering non-XML (binary and CSV) data, code generation, on-the-fly compilation, dynamic routing and in-memory queries - an hour well spent.
+EMEA
+
+Tuesday, November 19
+ 3:00pm GMT
+(London, GMT)
+
+Register &lt;http://play.gopivotal.com/OSS_Webinar_DynamicRoutingwithSpringIntegration7AM_Register1.html&gt;
+NORAM
+
+Tuesday, November 19
+ 10:00am PST
+ (San Francisco, GMT-08:00)
+
+Register &lt;http://play.gopivotal.com/OSS_Webinar_DynamicRoutingwithSpringIntegration10AM_Register.html&gt;
+HAVE YOU SEEN SPRING LATELY?
+
+
+Speaker: Josh Long
+
+It&apos;s been an amazing year for Spring! 2013 saw the Spring family join Pivotal where - along with Cloud Foundry and our data driven technologies (the Pivotal HD Hadoop distribution, the GemFire data grid, and the RabbitMQ message broker) - Spring supports today&apos;s application workloads and profiles.
+
+Today&apos;s Spring embraces Java 8, Scala, Groovy, provides a best-in-class REST stack, supports the open web, mobile applications, big-data applications and batch workloads. Today&apos;s Spring is easy to get started with, easy to learn, and embraces conventions over configuration. Today&apos;s Spring is part of the Spring.IO platform. Today&apos;s Spring is...Pivotal. 
+
+Join Spring developer advocate Josh Long as he re-introduces you to today&apos;s Spring, a Spring you may not have seen yet.
+
+VIDEOS:
+Taming Coupling &amp; Cohesive Beasts with Modularity Patterns and Spring &lt;https://spring.io/blog/2013/10/02/webinar-replay-taming-coupling-cohesive-beasts-with-modularity-patterns-and-spring&gt;
+Simplifying Spring with Spring Boot &lt;https://spring.io/blog/2013/10/02/webinar-replay-spring-boot-simplifying-spring-for-everyone&gt;
+Building WebSocket Browser Apps with Spring &lt;http://www.spring.io/blog/2013/10/23/webinar-replay-building-websocket-browser-applications-with-spring&gt;
+
+FEATURED DEMOS:
+SpringOne 2GX Day 1 Keynote &lt;http://spring.io/blog/2013/10/02/springone2gx-2013-opening-night-keynote&gt;
+SpringOne 2GX Day 2 Keynote &lt;https://spring.io/blog/2013/10/23/springone2gx-2013-day-2-keynote&gt;
+Spring Boot and Spring Loaded &lt;http://www.youtube.com/watch?v=GTrNkhVnJBU&gt;
+
+
+
+EMEA
+
+Thursday, November 21
+ 3:00pm GMT
+ (London, GMT)
+
+Register &lt;http://play.gopivotal.com/OSS_Webinar_HaveyouseenSpringlately7AM_Register.html&gt;
+NORAM
+
+Thursday, November 21
+ 10:00am PST
+ (San Francisco, GMT-08:00)
+
+Register &lt;http://play.gopivotal.com/OSS_Webinar_HaveyouseenSpringlately10AM_Register.html&gt;
+Spring Data Arora SR3 &lt;http://spring.io/blog/2013/10/01/spring-data-arora-sr3-released&gt;
+Spring Mobile 1.1.0  &lt;https://spring.io/blog/2013/10/08/spring-mobile-1-1-0-released&gt;
+Spring Tool Suite and Groovy/Grails Tool Suite 3.4.0  &lt;https://spring.io/blog/2013/10/08/spring-tool-suite-and-groovy-grails-tool-suite-3-4-0-released&gt;
+Spring Boot 0.5.0.M5  &lt;https://spring.io/blog/2013/10/09/spring-boot-0-5-0-m5-released&gt;
+Spring Integration 2.2.6  &lt;http://www.spring.io/blog/2013/10/14/spring-integration-2-2-6-is-now-available&gt;
+The Spring REST Stack &lt;https://github.com/Joshlong/the-spring-rest-stack&gt;
+
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+ Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+ Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+ Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+ Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

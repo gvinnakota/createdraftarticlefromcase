@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_VMworld_Q313.Follow Up</name>
+    <style>none</style>
+    <subject>Thank you for visiting Pivotal at VMworld</subject>
+    <textOnly>It Was Great to See You.
+Hi {{lead.First Name:default=there}},
+
+Thank you for dropping by our Pivotal booth last week at VMworld 2013. There was a lot of buzz and excitement around new products and partnerships. In case you missed it:
+
+
+ - We partnered with VMware to co-develop Pivotal CF, a commercially supported hybrid Platform as a Service (PaaS) based on the Cloud Foundry platform. Pivotal CF will be made available on VMware vSphere® and vCloud® Hybrid Service™ later this year. See a demo of Pivotal CF &lt;http://www.youtube.com/watch?v=F-0G9_Pwi1U&amp;feature=player_embedded&gt;.
+
+ - We announced the availability of Pivotal HD (Hadoop Distribution) on VMware vSphere®. Download your free 60-day trial of Pivotal HD now &lt;http://www.gopivotal.com/pivotal-products/pivotal-data-fabric/pivotal-hd#4&gt;.
+
+
+A lot more to come next week in Santa Clara:
+
+&gt;&gt; Platform CF: The Cloud Foundry Conference &lt;http://www.platformcf.com/&gt; September 8-9. 
+ An event for developers and cloud operators that are using the industry&apos;s leading Open Source Platform-as-a-Service: Cloud Foundry.
+
+&gt;&gt; SpringOne 2GX 2013 Conference &lt;http://www.springone2gx.com/conference/santa_clara/2013/09/home&gt; September 9-12.
+A one-of-a-kind conference for application developers, solution architects, web operations and IT teams who develop business applications, create multi-device aware web applications, design cloud architectures, and manage high performance infrastructure. 
+
+ 
+Thank you,
+
+The Pivotal Team
+
+Still have questions? Learn more about Pivotal Solutions here &lt;http://gopivotal.com/pivotal-products/pivotal-one&gt; or email info@gopivotal.com &lt;mailto:info@gopivotal.com&gt; to speak to an expert.
+Check out Pivotal P.O.V.
+Visit our blog &gt;&gt; &lt;blog.gopivotal.com&gt;
+Exploring Pivotal HD Single Node
+Watch now &gt;&gt; &lt;http://bitcast-a.v1.o1.sjc1.bitgravity.com/greenplum/pivotalvideo/Webinar-08062013-PHD.m4v&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

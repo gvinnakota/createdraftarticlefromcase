@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Lean+Leaders_Backers_2016.Reminder - Boston</name>
+    <style>none</style>
+    <subject>See You Tomorrow at the Leader’s Guide Workshop!</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+
+Thank you for signing up to attend the Leader’s Guide Workshop taking place tomorrow in Boston. 
+
+ The Leader’s Guide To Adopting Lean Startup at Scale
+Friday, July 15th, 2016
+Registration @ 9:30am
+Sessions Start @ 10:00am
+Workshop Agenda &lt;[[http://pivotal.io/event/lean-workshops/backers/boston]]&gt;
+
+ Location
+Pivotal Boston &lt;[[http://pivotal.io/locations/boston]]&gt;
+145 Broadway, 3rd Floor
+Cambridge, MA 02142
+Map &amp; Directions &lt;[[https://www.google.com/maps/place/145+Broadway,+Cambridge,+MA+02142/@42.364932,-71.0910598,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370ae56c77775:0x6f67dbaf689fcdac!8m2!3d42.3649281!4d-71.0888711]]&gt;
+
+Questions? 
+Contact us at leadersguide@pivotal.io &lt;[[mailto:leadersguide@pivotal.io]]&gt;
+
+We look forward to seeing you there!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

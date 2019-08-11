@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_ChicagoOfficeOpening_Q115.Registration Confirmation</name>
+    <style>none</style>
+    <subject>You are confirmed to attend Pivotal Chicago Grand Office Opening (January 29)</subject>
+    <textOnly>REGISTRATION CONFIRMATION
+Hello {{lead.First Name:default=}},
+ 
+Thank you for registering for Pivotal Chicago Grand Office Opening.
+See event details below.
+ 
+Date: Thursday, January 29, 2015
+Time: 6pm - 9pm
+Location: Pivotal Office &lt;https://www.google.com/maps/place/222+W+Merchandise+Mart+Plaza+%231214,+Chicago,+IL+60654/@41.8883695,-87.6353645,17z/data=!3m1!4b1!4m2!3m1!1s0x880e2cb6fb232d35:0xea0fa25ca30f1303&gt;, 222 Merchandise Mart Plaza Suite 1214, Chicago, IL 60654
+
+{{my.Save the Date:default=edit me}} 
+ 
+Should you have any questions or would like more information, please email elogue@pivotal.io &lt;mailto:elogue@pivotal.io&gt;. See you on Thursday, January 29th!
+ 
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Telco Luncheon Series_Q314.03 Confirmation - Sydney</name>
+    <style>none</style>
+    <subject>You are confirmed: Pivotal Executive Luncheon Series - Sydney</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Thank you for registering for the Pivotal Executive Luncheon in Sydney on Tuesday, October 7, 2014. Please see event details below: 
+
+Date: Tuesday 7th October 2014
+Time: 12.15 for registration with 12.30pm start – 2.30pm
+Location: Aria Restaurant, 1 Macquarie St &lt;http://www.ariarestaurant.com/&gt;
+
+{{my.Save the Date - Sydney:default=edit me}}
+
+We look forward to you joining us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

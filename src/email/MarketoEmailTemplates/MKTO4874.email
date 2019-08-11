@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse;background-color:#ffffff" bgcolor='#FFFFFF'>
+<tr>
+<td height='60' style='background-color:#ffffff" bgcolor='></td>
+</tr>
+<tr>
+<td width='40' bgcolor='#FFFFFF'></td>
+<td bgcolor='#FFFFFF' align="center" valign="middle" class="stack brand-block"><a href="http://insidepivotal.com" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/logo-inside-pivotal-newsletter.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td width='40' bgcolor='#FFFFFF'></td>
+</tr>
+<tr>
+<td height='40'></td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" bgcolor="#FFFFFF" style="border-collapse:collapse; " ><tr>
+<td height='15'></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr ><td width='40'></td>
+<td align="left" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue-date" style="font-size:12px; color:#4f504f; " >May 17, 2017</span>
+</strong>
+</td>
+<td align="right" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue" style="font-size:12px; color:#4f504f; " >Vol 5, No 7</span>
+</strong>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='10'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='40'></td>
+</tr>
+<tr ><td width='40'></td>
+<td style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; " ><p style="font-family:Helvetica, Arial, sans-serif;margin:0; font-size:34px; line-height:1.2em;color:#000000;font-weight: 300;padding-bottom: 7px;">In This Issue</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-letter-from-the-editor" ><a style="color: #00ae9e; text-decoration: none;" href="#letter-from-the-editor">Letter from the Editor</a> – Code Matters</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-product" ><a style="color: #00ae9e; text-decoration: none;" href="#product-update">All Things Product</a> – No Bull With BOSH</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-seen" ><a style="color: #00ae9e; text-decoration: none;" href="#seen-update">Interestings</a> – Noteworthy Odds &amp; Ends</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-culture" ><a style="color: #00ae9e; text-decoration: none;" href="#culture-update">Labs + Culture</a>&nbsp;– Continuous Feedback Builds Great Teams</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-my-name-is" ><a style="color: #00ae9e; text-decoration: none;" href="#my-name-is">My Name Is</a> – Jay Hum</span>
+</p>
+</td>
+<td width='40px'></td>
+</tr>
+<tr>
+<td height='45'></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of Letter from the Editor // -->
+<a href="#letter-from-the-editor" name="letter-from-the-editor"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td style="color:#666666; font-size:14px; line-height:22px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#008774" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Letter&nbsp;from&nbsp;the Editor</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="letter-from-the-editor-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/portrait-template-inside-pivotal-newsletter-2016-scasale.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">code matters</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #008774; text-decoration: none;" href="#author-socialcast-profile">Steve Casale</a>, Pivotal Communications</p></div>
+<div class="mktEditable" id="letter-from-the-editor-entry" style="padding-right:40px; " ><p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">At the core of the Pivotal genome lies a &lsquo;what&rsquo; (software tools), and a &lsquo;how-to&rsquo; (agile methods). And in their expression they aim to help enterprises transform themselves through software&mdash;to sprint fast and release products that move customers and markets.</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-b55e4980-1752-3361-55f0-39a424fd1ca2"><span>BOSH is one part of that proposition. Now five years-old, this open source tool chain is to software what RNA is to an organism's genome. Where RNA is essential to the coding, regulation, and expression of genes, BOSH is central to deploying, packaging, managing, and the expression of software and software systems, as intended.</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-b55e4980-1752-3361-55f0-39a424fd1ca2"><span>In his update this issue on BOSH and its features new and old, product lead Amit Gupta reminds us of the tool chain's staying power and the tribe of Pivots who have nurtured it along the way. We&rsquo;re also pleased to offer a related 'how-to' story and flash of creation from BOSH software developer, Saman Alvi, who writes on her team's successful experiment with continuous feedback. </span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-b55e4980-1752-3361-55f0-39a424fd1ca2">Finally, tune in to next week's <a style="color: #008774; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/pivotal-town-hall">Town Hall</a> on Tuesday, May 23 at 12:30 PM (pst). The slate includes Rob Mee, Edward Hieatt, an update on R&amp;D from Elisabeth Hendrickson and James Bayer, and something new: Pivot Neha Batra will host. Submit your questions during the event on the #townhall Slack channel.</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">Enjoy.</p></div>
+</td>
+</tr>
+<tr>
+<td height='30'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of Letter from the Editor // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:40px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00AE9E" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>All&nbsp;Things&nbsp;Product</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="product-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/Amit-portrait.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">no bull with bosh&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #00ae9e; text-decoration: none;" href="#author-socialcast-profile"><span id="docs-internal-guid-800c6784-8763-904d-0af5-ccabbbc651de"><span>Amit Gupta</span></span></a>, Director of Product Management, Cloud Foundry</p></div>
+<div class="mktEditable" id="product-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-1227-69b8-2ca2-b20c5f5e422b">For operators who want to package, deploy, and manage cloud software with greater velocity and availability, BOSH continues to show its versatility as a cloud-native workhorse.
+     Thanks to the good folks at Pivotal, this open source project and tool chain for release engineering, deployment, and life-cycle management continues to get better</span>.</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>What's New?</strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">We officially <a style="color: #00ae9e; text-decoration: none;" href="https://lists.cloudfoundry.org/archives/list/cf-bosh@lists.cloudfoundry.org/thread/L6GNJMAVZEJX7ZQFOINWBRO7NDG56Y5H/">shipped v2 of the BOSH CLI</a> (command line interface), totally rewritten in Go! It     
+supports all the same functionality of the old CLI, but is a much faster beast with a snappier UX.
+     Installation is a lot easier now too&mdash;just download the right binary for your platform, so no more tears and hand-wringing from Windows users!</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-1229-5abd-0815-fd26f963ba39"><span>We&rsquo;re wrapping up some last-mile items on </span><a style="color: #00ae9e; text-decoration: none;" 
+href="https://docs.google.com/document/d/1iG28J2Lm8RY3BXCZqqNWO7v-G1ppcdK8cizlhbN_o4g/edit#heading=h.jofxvvvari4y"><span>CredHub</span></a><span> integration.
+     On our journey to get plaintext credentials out of PCF, the first major step is getting them out of the BOSH manifests.
+     &nbsp;BOSH and Ops Manager now enable this in PCF, so tiles will soon migrate over.</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>What's Coming?</strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-122a-2b6d-6581-a7e3e3b759b3"><span>The team is hard at work on BOSH DNS.
+     Today, apps talk to services via addresses in their VCAP_SERVICES; those addresses are IPs, which means apps have to be restaged every time a service&rsquo;s IP changes.
+     BOSH DNS lets service brokers put a stable DNS hostname in VCAP_SERVICES, and enables apps to correctly resolve this hostname.</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-122b-01e3-8cfe-fe87820c1c19"><span>Separately, </span><a style="color: #00ae9e; text-decoration: none;" href="https://www.consul.io/"><span>Consul</span></a><span>, a distributed tool used for service discovery and registration of components 
+    internal to Elastic Runtime, has historically been a major source of instability.
+     &nbsp;BOSH DNS is being explored as a replacement to that.
+     Further, this effort also supports the longer-term goal of making BOSH HA, by replacing the old PowerDNS Single-Point-Of-Failure (SPOF).</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-122b-b227-c6d9-bfb55ddfe09e"><span>You might ask, how often does a service&rsquo;s IP really change? More than you think.
+     Enter HotSwap.
+     We&rsquo;re working on smarter update strategies for instances with persistent disk.
+     &nbsp;Recreating the VM where your service instance lives (e.g.
+     an on-demand MySQL instance) incurs downtime that can run minutes long&mdash;a lag which impacts your app.
+     HotSwap will significantly reduce this downtime by starting a new VM before stopping the processes on the original VM.</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>What's Old?</strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong><br /></strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-122c-1530-2f81-2cadf435d564"><span>We regularly release BOSH features that only a small tribe knows about.
+     As BOSH continues to emerge as a player in the open source DevOps community, we hope to communicate more on these features.
+     For instance, did you know:</span></span></p>
+<ul>
+<li><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;"><span id="docs-internal-guid-a98570f8-f7a7-5c35-bd85-28f0fd3a3e75"><span><span id="docs-internal-guid-598b4113-1232-b307-fcac-8dc6ad1c4b3d"><span style="font-family: 'courier new', courier;">bosh run-errand --when-changed</span><span> is a smart way to run errands in a CI pipeline, such   
+that they are no-ops, unless they&rsquo;ve   changed or failed on the last run.
+     This feature is used in Ops Manager 1.10 to drastically cut down updates by an order of magnitude</span></span>;</span></span></span></span></li>
+<li><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;"><span id="docs-internal-guid-a98570f8-f7a7-dccb-804f-37ca4e119bcf"><span><span id="docs-internal-guid-598b4113-1233-9dbd-593b-dae32aff5e79"><span>BOSH</span><span> </span><span>addons can be blacklisted and whitelisted</span><span>,</span><span> so you can focus on the exact deployments    
+ and instance groups you want to co-locate with.
+     Use this, for example, to co-locate a Syslog addon with tiles that don&rsquo;t already provide syslog functionality, without clashing with tiles that do.</span></span></span><span>&nbsp;</span></span></span></span></li>
+<li><span style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;"><span id="docs-internal-guid-598b4113-1234-04ad-50aa-262aa3738c4b"><span>The BOSH Director accepts multiple CPI configurations</span><span> </span><span>for the same IaaS, allowing you to target multiple vCenter datacenters, or multiple AWS regions, etc.
+     We haven&rsquo;t seen much mileage on this yet, but we&rsquo;re considering incorporating it into Ops Manager for the 1.12 timeframe.</span></span></span></li>
+</ul>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>Connect with Team BOSH&nbsp;</strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-598b4113-124b-f2a2-1791-0ec690a5ca98"><span>We&rsquo;re working to </span><em><span>transform the way the world operates software</span></em><span>, and we want your involvement! How-to questions, architectural questions, UX feedback, feature ideas,  
+   and pull requests are welcome.
+     Hit us up on the mailing lists (</span><a style="color: #059a91; text-decoration: none;" href="https://lists.cloudfoundry.org/archives/list/cf-bosh@lists.cloudfoundry.org/"><span>cf-bosh</span></a><span>), Pivotal Slack (</span><a style="color: #00ae9e; text-decoration: none;" href="https://pivotal.slack.com/messages/cf-bosh-core"><span>#cf-bosh-core</span></a><span>), CFF Slack (</span><a 
+style="color: #00ae9e; text-decoration: none;" href="https://cloudfoundry.slack.com/messages/bosh"><span>#bosh</span></a><span>), GitHub (</span><a style="color: #00ae9e; text-decoration: none;" href="https://github.com/cloudfoundry/bosh"><span>bosh</span></a><span>, </span><a style="color: #00ae9e; text-decoration: none;" 
+href="https://github.com/cloudfoundry/bosh-cli"><span>bosh-cli</span></a><span>, </span><a style="color: #00ae9e; text-decoration: none;" href="https://github.com/cloudfoundry/bosh-agent"><span>bosh-agent</span></a><span>, </span><a style="color: #00ae9e; text-decoration: none;" href="https://github.com/cloudfoundry/dns-release"><span>dns-release</span></a><span>), and Pivotalk (</span><a 
+style="color: #00ae9e; text-decoration: none;" href="https://www.pivotalk.io/tags/bosh"><span>#bosh</span></a><span>).</span></span></p>
+</div>
+<a href="#top" style="color:#00ae9e; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+<tr>
+<td height='27'></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of seen and heard -->
+<a href="#seen-update" name="seen-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#026D63" ><tr ><td width='40'></td>
+<td ><div class="mktEditable" id="seen-and-heard" >
+<table style="border-collapse: collapse;">
+<tbody>
+<tr>
+<td width="180px" height="32px" align="center" bgcolor="white">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #026d63; font-weight: 200; font-size: 17px; margin: 0;">Interestings</p>
+</td>
+</tr>
+<tr>
+<td height="30"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-580360af-8ca0-7c8d-90b4-54bf5c5ccae3">Read it: Why Kubernetes and&nbsp;Cloud Foundry <a style="color: white;" href="https://www.suse.com/communities/blog/cloud-foundry-kubernetes/">are better together</a>.</span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="font-size: 10px; color: #ffffff; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;">Seen on Pivotalk: <a style="color: white;" href="https://www.pivotalk.io/t/build-2017-technical-notes/25843">Nice technical notes</a> on Azure features   
+     and where PCF might play, from 2017 Microsoft Build conference.</span></span><span style="font-size: 10px; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;">&nbsp;</span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Google's widely discussed SRE book on all it's learned running massive production systems is <a style="color: white;" href="https://landing.google.com/sre/book/index.html">now online for free</a>.&nbsp;</li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Ex- (and honorary) Pivot Sara Mei muses on testing philosophies in a post on <a style="color: white;" 
+href="https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBWRAeb4gkmvmCxZAYc82jNEt03czZgcjO4JGtQH2xGhlIky5U-2FhwExP4p3ssnpbzlw-3D-3D_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMSS6ppK3ETSuTQnvQsZdgkzRTK7mGgHV58y-2B9cHs6JVpiQxMYG9gpIlrEQ8diqL-2BU7jVuv7yLSLoaZAwC8wbyPNBE9QSyDJDi4pFMEYudJHqs7tcgYBmflguOiaQjaNu5PXdKUhqnmC3HNWtTG7wBh2ZeTX2-2Frje8seaqQuPQA2086nspVy-2F2UeyktVgzIxQZ4-3D">'5-factor 
+       Testing.'</a></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">And from Singapore&mdash;<a style="color: white;" 
+href="https://u3457624.ct.sendgrid.net/wf/click?upn=R1gW3EcHRGI3Tt-2BMy4vQHHfQbt7Cs6QDKlhVsfNDhdx6tVhtccQuoOXCpUqnANXREVVP0ehecs-2BMzjjNf5sHOg-3D-3D_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQdBfSmQUpNSA4Yoqg4UVKNIRWMCaqYJL-2BMiP4CPd-2FiXCJ6LiO-2BLmSJ89V2Q0vBb5Oa-2FgmHBM0sA4PfvcXTwSBql0-2FtU-2BczpQJwN6XwKKT1SmUyjO6bT0K9xLkko-2FbVNEJBvydXw2V3wkYPszui8q4nfkFz5HbpEA1nUEVvGm-2BqJrPIhxTUuCapwxuJLyj1jds-3D">Future 
+       of Ops</a>, <a style="color: white;" 
+href="https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBXnkTE0CUqIWK1WlpQjyjtR0b-2BdaoUeQOcLxBamOx8gyJ8OVgoay-2BRa9LdrX9Dxfv-2FfXyFEV6ryrxBZF-2BCwaCxQjv3RyHVaRploLp9OSqsgm_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQdBfSmQUpNSA4Yoqg4UVKNIRWMCaqYJL-2BMiP4CPd-2FiXKzDjpabaxUvk4xNkB9v2GGkuLOTX59FnzFqxBKoCn8iDZD4lWLpTRtjH-2BOleZHdkyaNcu31eZD-2FC-2B4-2BexueCBi1-2F8IiTk42IBgNobE8cY2zxt7QGfzpFG0sWqd3IOpWlZCO7oy3kf10o9NOKnP-2F96A-3D">Experimental 
+       syntax AI for React.js</a>&nbsp;...&nbsp;and <a style="color: white;" 
+href="https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBbj0xkYKE92175yTG5G-2Bk9RBgs2DnhfuSjC48RHTIW1GlRu-2Bz5-2FVo1I9vMDZkDTfayaQ2BAmOoYCZMifvk5Wp9MF7UYWuGbqoqFBr0A6hJFm_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQdBfSmQUpNSA4Yoqg4UVKNIRWMCaqYJL-2BMiP4CPd-2FiXL8GhUfUCoiXLwz57MqHRQFrCZ0PGRrBXD6f6cXFtZ7-2BjMO-2B07hCiCrEFQszRILF6RQ-2FGIiufJt0urhUgqX-2FKQfQrQ5FUs4XzLqg3wPZ7tpSQXh-2FbxvcaIMfqxGi0rYE8HF3DxnFApuGT5dWqMFiYzc-3D">Wikipedia 
+      has cancer</a> :(.</li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Just out: Speedy data ingestion bridge&mdash;<span>GemFire-GreenPlum connector 3.0.0, available on the&nbsp;</span><span style="color: white;"><a style="color: white;" href="https://network.pivotal.io/products/pivotal-gemfire/#/releases/5376/file_groups/495" 
+target="_blank">Pivotal Network</a>!</span></li>
+</ul>
+</div>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='40'></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<!-- End of seen and heard // -->
+<!-- Start of culture update // -->
+<a href="#culture-update" name="culture-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='60'></td>
+</tr>
+<tr ><td width='40'></td>
+<td ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#87C876" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Labs&nbsp;+&nbsp;Culture</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="culture-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/Saman-portrait.png" alt="" width="130" height="172" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">continuous feedback builds great teams&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #87c876; text-decoration: none;" href="#author-socialcast-profile">Saman Alvi</a>, Senior Software Engineer, Cloud Foundry</p></div>
+<div class="mktEditable" id="culture-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c157c742-8775-5a9c-aaaa-c61f9fd86101"><span id="docs-internal-guid-3063844f-0ed8-919c-6439-b602d521933a"><span><em>If you give a mediocre idea to a brilliant team, they will either fix it or throw it away and come up with something                   
+better.</em>&nbsp;&ndash; Ed Catmul, Creativity Inc., President of Pixar and Walt Disney Animation Studios</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span id="docs-internal-guid-3063844f-12f3-4e55-fb5c-01566d8bc61b"><span>At Pivotal, we understand that building great products comes from great teams of motivated, kind, empathetic individuals who do their best work together.
+                   To keep great people around, they need to continuously grow their skills.
+                   And if you pair as much as we do at Pivotal, one way to grow is to provide quick feedback loops on their performance and work.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span id="docs-internal-guid-3063844f-12f3-4e55-fb5c-01566d8bc61b"><span>Feedback loops are familiar territory for Pivots&mdash;our software tests are characterized by short feedback cycles that allow us to quickly catch mistakes.
+                   It's why we streamline our pipelines and parallelize them where we can.
+                   We look for bottlenecks in our code bases, and spread the load.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span id="docs-internal-guid-3063844f-12f3-4e55-fb5c-01566d8bc61b"><span>We can apply a similar approach to our teams.
+                   In order for people to see their progress and growth, we advocate short, quick feedback loops.
+                   These short cycles are vital for Pivots to grow, and to resolve issues within a team that can cause greater pain much further down the line if left unaddressed.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-3063844f-12f3-4e55-fb5c-01566d8bc61b"><span style="color: #666666;">When we tested our theory on the benefits of short feedback loops on the </span><a style="color: #87c876; text-decoration: none;" 
+href="https://github.com/cloudfoundry/bosh"><span>BOSH</span></a><span style="color: #666666;"> team, we found a lot of personal growth and success.
+                   This practice has since expanded to the </span><span style="color: #666666;">OSL</span><span style="color: #666666;">, Push</span><span style="color: #87c876;">,</span><span style="color: #666666;">&nbsp;CloudOps, and Pivnet&nbsp;</span><span style="color: #666666;">teams.
+                   The format is simple&mdash;within each pair both individuals ask each other </span><a style="color: #87c876; text-decoration: none;" href="https://groups.google.com/a/pivotal.io/forum/#!msg/cf-all/1sOG9aLBVV4/3ed7Cth5BQAJ"><span>these questions</span></a><span style="color: #666666;"> once a week (assuming weekly rotations).
+                   The questions are broad in nature to address different issues that a pair may have experienced that week.
+                   They are good prompts to get folks thinking in terms of how the previous week went.
+                   As the feedback is provided one-on-one, its ephemeral nature allows it to be delivered more easily as well.</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-3063844f-12f5-61d5-85b9-fc640f29c549"><span>Feedback from these teams has allowed us to realize the following:</span></span></p>
+<ul style="color: #666666; font-weight: 300;">
+<li style="color: #666666; font-weight: 300;"><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;"><span id="docs-internal-guid-a98570f8-f7a7-5c35-bd85-28f0fd3a3e75"><span><span id="docs-internal-guid-598b4113-1232-b307-fcac-8dc6ad1c4b3d"><span><span id="docs-internal-guid-3063844f-12fa-164b-e7dd-ec96f858cd0f"><span>It helps to tell your pair    
+        specifically what you're looking for with   regard to feedback, at the beginning of the week</span></span></span></span>;</span></span></span></span></li>
+<li><span style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;"><span id="docs-internal-guid-598b4113-1233-9dbd-593b-dae32aff5e79"><span id="docs-internal-guid-3063844f-12fa-b92b-9556-ec6749a141a8"><span>It's good to hear things that are going well, but notably more valuable to hear about what went wrong or could be better&mdash;while tougher to deliver, it's worth it.
+              Keep the following in mind when delivering critical feedback</span></span>.</span></span> 
+<ul style="color: #666666; font-weight: 300;">
+<li><span style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;"><span id="docs-internal-guid-3063844f-12fc-13af-92d8-37007b25987d"><span>The discussion should happen in a measured, level tone</span></span>&gt;</span></li>
+<li><span style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;"><span id="docs-internal-guid-3063844f-12fc-4c10-4021-c2d7f122b259"><span>The pair should have an established rapport&gt;</span></span>&nbsp;</span></li>
+<li><span style="font-size: 15px; font-family: Helvetica, Arial, sans-serif;"><span id="docs-internal-guid-598b4113-1234-04ad-50aa-262aa3738c4b"><span><span id="docs-internal-guid-3063844f-12fc-9b97-7e21-a1f1be3f8b54"><span>Provide a clear action for improvement, do not just use it an opportunity to vent</span></span>.</span></span></span></li>
+</ul>
+</li>
+<li><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;"><span id="docs-internal-guid-3063844f-131f-cea9-00b9-651f3e4df9a2"><span>It helps to write down the feedback someone gives you, so you can track your progress</span></span></span></span> 
+<ul style="color: #666666; font-weight: 300;">
+</ul>
+</li>
+</ul>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span id="docs-internal-guid-3063844f-12f3-4e55-fb5c-01566d8bc61b"><span><span id="docs-internal-guid-3063844f-1323-f324-1551-86c8fc165307"><span>After a period of time, you should be able to see the change in yourself, which can be extremely rewarding.
+         If a team does daily rotations, you have the option of giving feedback every day, or choosing a specific day in a week with whomever you are pairing on that given day.
+         Daily feedback can be harder, so weekly feedback is recommended.</span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span id="docs-internal-guid-3063844f-12f3-4e55-fb5c-01566d8bc61b"><span><span id="docs-internal-guid-3063844f-1323-f324-1551-86c8fc165307"><span>With time and regular check-ins with your pair or team, you should grow beyond your expectations.
+         You can make a plan of where you want to end up, but by consistently checking in and making small iterative improvements along the way, you can go much further than you thought you could.
+         This is summed up by Ed Catmul fairly well with the following image:</span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span><span><span><span><img src="http://connect.pivotal.io/rs/pivotal/images/continuous-improve.jpg" alt="improve curve" width="530" height="312" /><br /></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span><span><span><span><span id="docs-internal-guid-3063844f-1357-d126-8a1a-6efd557dc651">David McClure has <a style="color: #87c876; text-decoration: none;" href="https://www.pivotalk.io/t/continuous-feedback-daily-plus-delta-with-your-pair/25683?u=dmcclure">written   
+about</a> his experience with and improvements on the feedback technique described above<span style="color: #87c876; text-decoration: none;">.&nbsp;</span>Try it out on your team, and see how you progress!</span></span></span></span></span></span></p>
+</div>
+<a href="#top" style="color:#87c876; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of culture update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; border-top:1px solid #f1f1f1; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00A1E4" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin:0'>My&nbsp;Name&nbsp;Is</p>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/JHum.png" alt="ABoheim" width="170" height="183" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">jay Hum</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;">Product + Growth, San Francisco</p></div>
+<div class="mktEditable" id="my-name-is-entry" >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;">At Pivotal I...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span><span id="docs-internal-guid-e9cc81bb-f71b-049c-6e30-f399864df42e"><span><span id="docs-internal-guid-36607bb1-8899-e242-e1e9-6135ac5f198c"><span><span id="docs-internal-guid-d1cf31fd-1369-1c40-31ff-3c6466933c49"><span>Work on the Labs Team in a hybrid role that involves product management, business development, and strategic 
+ partnerships</span></span></span></span>.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">You can find me...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-8208-2e4c-0f2a-b461c45aa234"><span id="docs-internal-guid-e9cc81bb-f71b-ace5-fdb4-f0aaf9148ce2"><span style="color: #00a1e4; text-decoration: none;"><span style="color: #666666;"><span id="docs-internal-guid-36607bb1-889a-29d5-0a41-baf1b9edc165"><span><span 
+id="docs-internal-guid-d1cf31fd-1359-5ab5-cf7c-d361c7f52d4f"><span><span id="docs-internal-guid-d1cf31fd-1369-890b-1abd-3c3957203af0"><span>In the San Francisco office or offsite in caf&eacute;s and co-working spaces in and around the SF / Bay Area.
+  Also on </span><a style="color: #00a1e4; text-decoration: none;" href="https://links5.mixmaxusercontent.com/xzePpmcrb3Lr3nMNy/l/nR2C1IghkAj3oc99v?messageId=IfUb9wcCgMbLu01kO&amp;rn=gIlxWYzF2Qg4WZoBXZ0NlI&amp;re=Iybp5CbhR3b2lGcAVGbhNXYjNnI"><span>LinkedIn</span></a><span>, </span><a style="color: #00a1e4; text-decoration: none;" 
+href="https://links4.mixmaxusercontent.com/xzePpmcrb3Lr3nMNy/l/uPAoCeVNEnmjmB5Ml?messageId=IfUb9wcCgMbLu01kO&amp;rn=gIlxWYzF2Qg4WZoBXZ0NlI&amp;re=Iybp5CbhR3b2lGcAVGbhNXYjNnI"><span>Twitter</span></a><span>, and </span><span><a style="color: #00a1e4; text-decoration: none;" 
+href="https://links7.mixmaxusercontent.com/xzePpmcrb3Lr3nMNy/l/nv1LsH0lWju4x6FRe?messageId=IfUb9wcCgMbLu01kO&amp;rn=gIlxWYzF2Qg4WZoBXZ0NlI&amp;re=Iybp5CbhR3b2lGcAVGbhNXYjNnI">Instagram</a>.</span></span></span></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Currently, I am working on&hellip;</p>
+<ol>
+<li><span id="docs-internal-guid-8488aa3f-35c3-3cfb-dc3c-93bc527a94f6"><span id="docs-internal-guid-36607bb1-889a-b508-5da0-554bdf6471bd"><span id="docs-internal-guid-d1cf31fd-135a-9768-76d2-c4ba00ce2bd7">Developing the Corporate Innovation practice, which helps enterprise companies innovate like startups;</span></span></span></li>
+<li><span><span><span>Leading the Pivotal for Startups program, which helps startups go from stealth to scale by providing access to Pivotal's products and services; and</span></span></span></li>
+<li><span><span><span>Managing strategic partnerships with startup organizations and accelerators such as 500 Startups, Acceleprise, and Startup Leadership</span></span></span>.</li>
+</ol>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">In my spare time&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-820c-d633-5d86-a1190e77d3de"><span id="docs-internal-guid-e9cc81bb-f720-72ff-8d10-0b99138bfc0e"><span id="docs-internal-guid-8488aa3f-35c3-9fce-6fba-1bcede3da978"><span style="text-decoration: none;"><span style="color: #666666;"><span 
+id="docs-internal-guid-36607bb1-889b-5b4f-5032-4dffef61bd66"><span><span id="docs-internal-guid-d1cf31fd-135c-a041-3c8d-5725877fda3d"><span>I surf cold, unforgiving breaks in NorCal; </span></span></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-820c-d633-5d86-a1190e77d3de"><span id="docs-internal-guid-e9cc81bb-f720-72ff-8d10-0b99138bfc0e"><span id="docs-internal-guid-8488aa3f-35c3-9fce-6fba-1bcede3da978"><span style="text-decoration: none;"><span style="color: #666666;"><span 
+id="docs-internal-guid-36607bb1-889b-5b4f-5032-4dffef61bd66"><span><span id="docs-internal-guid-d1cf31fd-135c-a041-3c8d-5725877fda3d"><span>I snowboard down black diamond runs in Lake Tahoe; </span></span></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-820c-d633-5d86-a1190e77d3de"><span id="docs-internal-guid-e9cc81bb-f720-72ff-8d10-0b99138bfc0e"><span id="docs-internal-guid-8488aa3f-35c3-9fce-6fba-1bcede3da978"><span style="text-decoration: none;"><span style="color: #666666;"><span 
+id="docs-internal-guid-36607bb1-889b-5b4f-5032-4dffef61bd66"><span><span id="docs-internal-guid-d1cf31fd-135c-a041-3c8d-5725877fda3d"><span>I skateboard through the sketchy streets of San Francisco; </span></span></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-820c-d633-5d86-a1190e77d3de"><span id="docs-internal-guid-e9cc81bb-f720-72ff-8d10-0b99138bfc0e"><span id="docs-internal-guid-8488aa3f-35c3-9fce-6fba-1bcede3da978"><span style="text-decoration: none;"><span style="color: #666666;"><span 
+id="docs-internal-guid-36607bb1-889b-5b4f-5032-4dffef61bd66"><span><span id="docs-internal-guid-d1cf31fd-135c-a041-3c8d-5725877fda3d"><span>and I mentor and advise seed-stage startups.</span></span></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Something you probably don&rsquo;t know about me&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-d26932b9-2024-6f3f-4562-1c32c533bb1b"><span><span id="docs-internal-guid-8488aa3f-35c5-e25a-5249-dabc0afca4ef"><span><span id="docs-internal-guid-36607bb1-889d-1a36-7f82-be0d22ca2c8f"><span><span id="docs-internal-guid-d1cf31fd-135d-4605-d7c2-c75ade58f8db"><span>I have a 4 Win &ndash; 0 Loss record with 
+ 1 TKO in amateur Muay Thai.</span></span></span></span></span></span></span></span></p>
+</div>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; " ><tr ><td ><div class="mktEditable" id="my-name-is-photo" ><p><img src="http://connect.pivotal.io/rs/pivotal/images/kickboxing.jpg" alt="kick box" width="600" height="375" /><img src="http://connect.pivotal.io/rs/pivotal/images/snowboarding.jpg" alt="snowboard" width="600" height="375" /><img src="http://connect.pivotal.io/rs/pivotal/images/surfing.jpg" alt="family" /></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666; font-size: 12px; font-style: italic; margin: 20px auto 0; max-width: 520px;">A pursuit for every season: Jay at play in the Golden State.</p></div>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-top:30px; padding-bottom:60px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><div class="mktEditable" id="my-name-is-outro" ><p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">To me Pivotal&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-36607bb1-889f-cba8-79de-48a932078eb7"><span>Is an adventure</span></span>.</p></div>
+<p style='font-family:Helvetica, Arial, sans-serif;color:#00a1e4;font-weight: bold'><a href="#top" style="color:#00a1e4; font-size:14px; text-decoration:none; display:block;font-weight:bold">Back to the Top</a></p>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of end -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #008774; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://connect.pivotal.io/rs/pivotal/images/white-i.png" alt="InsidePivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:20px; padding-right:40px; padding-bottom:20px; font-weight:300; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;font-family:Helvetica, Arial, sans-serif;">Find all issues on <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/newsletters" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a></span></td>
+</tr>
+</table>
+<!-- End of end -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="font-family:Helvetica, Arial, sans-serif;color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif;padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2017 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

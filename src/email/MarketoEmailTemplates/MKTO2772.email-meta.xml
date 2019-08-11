@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Oscon_Q215.Follow Up Email</name>
+    <style>none</style>
+    <subject>Thank You for Joining Pivotal at OSCON 2015</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+It was great meeting you at OSCON! We’re going to conferences like OSCON to show you some real cool 
+ways the open source community is driving IoT innovation, cloud native application development, and open software collaboration.
+
+We had a bunch of really smart industry experts and technologists 
+who hosted hands-on labs and demos, giving you direct access to Pivotal products for you to play around with. We had so much fun showing the crowd how to build an app that consumes data streamed from connected devices, and apply advanced real-time analytics. 
+
+If you are weren’t able to catch our one of our talks or our hands-on IoT lab, here’s a recap:
+
+
+ - Spencer Gibb gave a talk on Microservices with Spring Cloud and Netflix OSS &lt;http://www.oscon.com/open-source-2015/public/schedule/detail/41041&gt;
+ - Fred Melo &lt;http://www.oscon.com/open-source-2015/public/schedule/speaker/210563&gt; and William Markito Oliveira &lt;http://www.oscon.com/open-source-2015/public/schedule/speaker/196748&gt; hosted a Hands-On Workshop: Building Internet of Things (IoT) Apps on Open Source &lt;http://www.oscon.com/open-source-2015/public/schedule/detail/44875&gt;
+
+ - Roman Shaposhnik &lt;http://www.oscon.com/open-source-2015/public/schedule/speaker/151691&gt; discussed Scalable Graph Analysis with Apache Giraph and Spark GraphX &lt;http://www.oscon.com/open-source-2015/public/schedule/detail/41616&gt;
+
+
+Stay in touch with Pivotal and join the conversation on our blogs &lt;http://spring.io/blog&gt;, YouTube &lt;http://spring.io/video&gt;, and on Twitter &lt;https://twitter.com/springcentral&gt;. 
+
+We hope to see you again soon at a future event &lt;https://pivotal.io/news-events&gt;! 
+
+The 
+Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

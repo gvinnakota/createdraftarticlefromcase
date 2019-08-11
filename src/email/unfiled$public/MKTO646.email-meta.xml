@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Catalyst Partner Program.Partner Rejected Email</name>
+    <style>none</style>
+    <subject>Pivotal One Partner Program Application Update</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Application Update
+
+Thank you again for your interest in the Pivotal One Partner Program.  We have reviewed the application for {{company.Company Name:default=your company}} to participate in the program as a Registered Member.
+
+At this time, we are not able to complete your application.  We are able to move forward with applications when:
+
+
+ - The proposed joint solution provided with your application contains sufficient information or detail and aligns with Pivotal products.
+ - The proposed joint solution provided with your application aligns to the type of customers and prospects with whom Pivotal is currently engaged.
+ - Sufficient information about your company and product is publicly available or submitted with your application.
+
+
+If you would like to resubmit your application addressing the items above, we would be happy to review again.
+
+Sincerely,
+
+The Pivotal Business Development Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qty --></label>
+        <name>Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- ApproveLines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TCV --></label>
+        <name>TCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Unit List Price --></label>
+        <name>Total_Unit_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- UOM --></label>
+        <name>UOM__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>ApproveLine</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ApproveLines</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

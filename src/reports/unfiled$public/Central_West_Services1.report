@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Total_PaaS_Services__c:SUM +
+Opportunity.Total_Pivotal_Labs__c:SUM +
+Opportunity.Total_Transformation__c:SUM+
+Opportunity.Total_Edu__c:SUM+
+Opportunity.Total_CSD__c:SUM+
+Opportunity.Total_App_Tx__c:SUM+
+Opportunity.Total_PAL__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Labs +PCFServ/Edu+Tx + EngDir+AppTx+ PAL</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>OPPORTUNITY.NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Next_Action_involving_CSO_org_PA_CNS__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Total_App_Tx__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.AppTx_Scoping_Scheduled__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Total_Pivotal_Labs__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Scoping_Scheduled__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Customer_Received_PPT_Proposal__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Customer_Received_Commercial_Paperwork__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 AND 2 AND (3 OR 4))</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Is_ISR__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Central West</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Forecast_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pipeline,Upside,Commit,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Total_Pivotal_Labs__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Total_App_Tx__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>Central West Services</name>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeam</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.Customer_Received_Commercial_Paperwork__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

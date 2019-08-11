@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Zuora__R00N40000001kyLcEAI__r.Zuora__Subscriptions__r.Zuora__Subscription_Product_Charges__r$Zuora__ProductSKU_Product__c</field>
+    </columns>
+    <columns>
+        <field>Account.Zuora__R00N40000001kyLcEAI__r.Zuora__Subscriptions__r.Zuora__Subscription_Product_Charges__r$Subscription_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account.Zuora__R00N40000001kyLcEAI__r.Zuora__Subscriptions__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Zuora__R00N40000001kyLcEAI__r.Zuora__Subscriptions__r.Zuora__Subscription_Product_Charges__r$Zuora__TotalContractValue__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Zuora__R00N40000001kyLcEAI__r.Zuora__Subscriptions__r.Zuora__Subscription_Product_Charges__r$Zuora__ProductSKU_Product__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>SSS-1018,SSS-1016,SSS-1178,SSS-1021,SSS-1146</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Current PCF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_with_Subscription_Billing_Account_and_SPC__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$DSCORGPKG__DiscoverOrg_Created_On__c</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

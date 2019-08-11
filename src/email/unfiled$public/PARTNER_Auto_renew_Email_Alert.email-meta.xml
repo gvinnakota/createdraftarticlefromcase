@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An Email Alert will be sent out to the Account Owner X days prior to the Agreement Expiry. The email will inform the recipient that the Partnership is going to be renewed automatically and that the Partner should be informed.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PARTNER Auto-renew Email Alert</name>
+    <style>none</style>
+    <subject>{!Account.Name} - Partnership Auto-renew Email Alert</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

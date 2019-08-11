@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Region__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AMER East,AMER South,AMER West,AMER ISR,AMER Data Sales,AMER PDE,AMER Sub Renewals,AMER Other,Bay Area,Canada,Central North,Central West,Great Lakes,LATAM,Mid-Atlantic,Mountain West,New England,NY/NJ Global Financial Services,NY/NJ 2,NY/NJ 3,Pacific Southwest,Southeast,TOLA,Global,South</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SalesPlayMarkers_AMER</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- ID field not case sensitive --></help>
+        <label><!-- ID18 --></label>
+        <name>ID18__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity (APR) --></label>
+        <name>Opportunity_APR__c</name>
+        <relationshipLabel><!-- Partner Attach --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please choose Partner Attach Type from available list --></help>
+        <label><!-- Partner Attach Type --></label>
+        <name>Partner_Attach_Type__c</name>
+        <picklistValues>
+            <masterLabel>Joint Solution</masterLabel>
+            <translation><!-- Joint Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Sub Contract</masterLabel>
+            <translation><!-- Pivotal Sub Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP/RFI Inclusion</masterLabel>
+            <translation><!-- RFP/RFI Inclusion --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which Partner is Associated? --></help>
+        <label><!-- Partner Identified for Attach --></label>
+        <name>Partner_Identified_for_Attach__c</name>
+        <relationshipLabel><!-- Partner Attaches --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Notes --></label>
+        <name>Partner_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field set by Partner Manager when Complete --></help>
+        <label><!-- Worksheet Completed? --></label>
+        <name>Worksheet_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Completed by Partner Manager, quick link to Google Drive --></help>
+        <label><!-- Worksheet Link --></label>
+        <name>Worksheet_Link__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Attach</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Attach</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>Associated Partner Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

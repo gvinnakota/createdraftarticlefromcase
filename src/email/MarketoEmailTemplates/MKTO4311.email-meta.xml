@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Tech Workshops_Q3-416.Confirmation - NovaTec</name>
+    <style>none</style>
+    <subject>Registration Confirmed for Data Science Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+ Thank you for signing up for the Pivotal Data Science hands-on technical workshop dedicated to your organization. Please find more details on this event below. 
+
+ Date &amp; Location
+Tuesday, October 25, 2016 
+14h00 to 18h00 
+
+
+NovaTec Consulting GmbH
+Dieselstraße 18/1 
+70771 Leinfelden-Echterdingen
+ 
+{{my.Save the Date Novatec}}
+
+Prerequisites
+
+
+ - Willingness to participate in demanding, high-intensity training experience
+ - Comfort with data analytic technologies a plus (Statistics, mathematics, machine learning, SQL, R, Python)
+
+
+Intended Audience
+
+
+ - Experienced data analysts and data engineers willing to work hard to achieve superior Pivotal Data Science skills
+ - Anyone else who wants to learn about data science using the Pivotal Big Data product stack 
+
+
+Prepare your system for the workshop
+
+If you are planning to follow the workshop labs, you will need to have a client ssh program installed. There are several open source / free programs available:
+
+
+ - Windows: Putty &lt;[[http://www.putty.org/]]&gt; or MobaXterm &lt;[[http://mobaxterm.mobatek.net/download.html]]&gt; (MobaXterm is preferred)
+ - MacOS: Native built in 
+ - Linux: Native built in 
+
+
+You are also welcome to use any commercial version if you have it.
+
+ Questions? 
+ If you have any questions related to the workshop, please contact Marie-Jeanne Dougados at mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt;.  
+
+ Kind Regards, 
+The Pivotal Team
+ 
+For a preview of our data science stories, check out the Pivotal Data Science blog: http://blog.pivotal.io/data-science-pivotal &lt;[[http://blog.pivotal.io/data-science-pivotal]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

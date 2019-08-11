@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Pivotal-PCF &amp; DataStax_Q117.Invite 1-24-17</name>
+    <style>none</style>
+    <subject>2/9 Webinar: Cloud Data at epic scale with DataStax Enterprise and Pivotal Cloud Foundry</subject>
+    <textOnly>&lt;[[https://content.pivotal.io/webinars/cloud-data-at-epic-scale-with-datastax-enterprise-and-pivotal-cloud-foundry]]&gt;
+Hi {{lead.First Name:default=there}},
+ 
+ DataStax Enterprise (DSE) contains a highly distributed NoSQL database - a perfect fit for a highly distributed cloud platform. Pivotal Cloud Foundry makes provisioning access to your existing DSE clusters a self-service exercise for developers and operators. Spring, .NET or any Pivotal Cloud Foundry managed application can then connect and use this Apache Cassandra-based technology as either as OLTP system of record, or read-intensive datastore. 
+ 
+Join Pieter Humphrey and Gilbert Lau &lt;[[https://content.pivotal.io/webinars/cloud-data-at-epic-scale-with-datastax-enterprise-and-pivotal-cloud-foundry]]&gt; for a brief overview of Cassandra technology, discussion of business benefits and use cases with Pivotal Cloud Foundry, demos of the Pivotal Cloud Foundry Service Broker for DSE, and a look at some proof-of-concept work to deploy a fully BOSH 2.0 managed DSE Tile on Pivotal Cloud Foundry. 
+ 
+More details below:
+ 
+Date: Thursday, February 9, 2017
+Time: 10:00am PST / 1:00pm EST
+ 
+Save My Spot &lt;[[https://content.pivotal.io/webinars/cloud-data-at-epic-scale-with-datastax-enterprise-and-pivotal-cloud-foundry]]&gt;
+
+We look forward to you joining us!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

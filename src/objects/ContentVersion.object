@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Company_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+BEGINS(Title, "PVTL_"),
+RIGHT(LEFT(Title, 9),4),
+Title 
+)</formula>
+        <label>Company Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContentSize</fullName>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>FileExtension</fullName>
+    </fields>
+    <fields>
+        <fullName>FileType</fullName>
+    </fields>
+    <fields>
+        <fullName>IsAssetEnabled</fullName>
+    </fields>
+    <fields>
+        <fullName>Language</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Published_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>RIGHT(
+( IF ( DATEVALUE(CreatedDate) &gt;=
+DATE ( YEAR (DATEVALUE(CreatedDate)),3,1)
++
+(
+14-
+CASE( MOD(DATE ( YEAR (DATEVALUE(CreatedDate)),3,1) - DATE (1900,1,7),7) ,
+0,7,MOD(DATE ( YEAR (DATEVALUE(CreatedDate)),3,1) - DATE (1900,1,7),7))
+)
+&amp;&amp;
+DATEVALUE(CreatedDate) &lt;
+DATE ( YEAR (DATEVALUE(CreatedDate)),11,1)
++
+(
+7-
+CASE( MOD(DATE ( YEAR (DATEVALUE(CreatedDate)),11,1) - DATE (1900,1,7),7) ,
+0,7,MOD(DATE ( YEAR (DATEVALUE(CreatedDate)),11,1) - DATE (1900,1,7),7))
+),
+LEFT ( TEXT (CreatedDate- 7/24 ), 16),
+LEFT ( TEXT (CreatedDate- 8/24), 16)
+)), 5)</formula>
+        <label>Published Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SharingOption</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SharingPrivacy</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TagCsv</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <searchLayouts>
+        <searchResultsAdditionalFields>VERSION.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.CONTENT_SIZE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.FILE_EXTENSION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.OWNER</searchResultsAdditionalFields>
+    </searchLayouts>
+    <recordTypes>
+        <fullName>Case_Study</fullName>
+        <active>true</active>
+        <label>Case Study</label>
+    </recordTypes>
+</CustomObject>

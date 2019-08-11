@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Sales Quarterly Goals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CNS Rep --></label>
+        <name>CNS_rep__c</name>
+        <relationshipLabel><!-- Sales Quarterly Goals (CNS Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DSS Rep --></label>
+        <name>DSS_Rep__c</name>
+        <relationshipLabel><!-- Sales Quarterly Goals (DSS Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Engagement Director --></label>
+        <name>Engagement_Director__c</name>
+        <relationshipLabel><!-- Sales Quarterly Goals (Engagement Director) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Goal Owner --></label>
+        <name>Goal_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Level Account Dev Plan --></label>
+        <name>High_Level_Account_Dev_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Quarter Actions to be Taken --></label>
+        <name>In_Quarter_Actions_to_be_Taken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Notes --></label>
+        <name>Manager_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager Reviewed --></label>
+        <name>Manager_Reviewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Platform Architect --></label>
+        <name>Platform_Architect__c</name>
+        <relationshipLabel><!-- Sales Quarterly Goals (Platform Architect) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- What are your primary goals for objectives for this account? --></help>
+        <label><!-- Primary Objectives and Goals --></label>
+        <name>Primary_Objectives_and_Goals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quarter --></label>
+        <name>Quarter__c</name>
+        <picklistValues>
+            <masterLabel>Q2 FY19</masterLabel>
+            <translation><!-- Q2 FY19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q3 FY19</masterLabel>
+            <translation><!-- Q3 FY19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4 FY19</masterLabel>
+            <translation><!-- Q4 FY19 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>Sales_Manager__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Quarterly Goals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Quarterly Goals</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Sales Quarterly Goals Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- In Quarter Goals --></label>
+            <section>In Quarter Goals</section>
+        </sections>
+        <sections>
+            <label><!-- Manager Notes &amp; Approval --></label>
+            <section>Manager Notes &amp; Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Team Members --></label>
+            <section>Team Members</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Attunity/Wellcare_Q215.Reminder day before</name>
+    <style>none</style>
+    <subject>See you Tomorrow: Pivotal Customer Spotlight Webinar with WellCare and Attunity</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+See you tomorrow for the Pivotal Customer Spotlight Webinar with WellCare and Attunity at 10:00AM PDT. Please see event details below:
+
+Date: Tuesday, June 30, 2015
+Time: 10:00AM PDT/5:00PM GMT
+
+Join the Session &lt;http://event.on24.com/wcc/r/1006866/D693E6D35C4BF71B41AB15D6653FA757&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date-Attunity-Wellcare:default=edit me}}
+We look forward to you joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

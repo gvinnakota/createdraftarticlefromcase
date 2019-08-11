@@ -1,0 +1,63 @@
+<messaging:emailTemplate subject="Order Confirmation for {!relatedTo.zqu__Opportunity__r.Account_Name__c}" recipientType="User" relatedToType="zqu__Quote__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <STYLE type="text/css">
+                    TH {font-size: 11px; font-face: arial;background: #CCCCCC;
+                    border-width: 1;  text-align: center; padding: 0.5rem }
+                    TD  {font-size: 11px; font-face: verdana}
+                    TABLE {border: solid #CCCCCC; border-width: 1}
+                    TR {border: solid #CCCCCC; border-width: 1}
+                </STYLE>
+                <font face="arial" size="2">
+
+
+                    <apex:image id="PivotalLogo" value="https://pivotal--c.na12.content.force.com/servlet/servlet.ImageServer?id=015U0000003J2XR&oid=00DU0000000YQaz" 
+                    height="64" width="200"/>
+                    
+                  <p><b>ORDER CONFIRMATION FOR {!relatedTo.zqu__Opportunity__r.Account_Name__c}</b></p>
+                  <p/>
+                  <p><b>Pivotal Customer Number:</b>&nbsp;{!relatedTo.Pivotal_Customer_Number__c}</p>
+                  <p><b>Purchase Order Number:</b>&nbsp;{!relatedTo.PurchaseOrder__c}</p> 
+                  <p><b>Order Date:</b>&nbsp;<apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText></p> 
+                  <p/>
+                  <p>Dear {!relatedTo.Ship_To_First_Name__c},</p>  
+                  <p>Thank you for joining the Pivotal Ready Partner Progam. We are thrilled that you have made the decision to partner with Pivotal. Together, we can help enterprises digitally transform their business to enable them to provide modern, software-driven experiences for their customers and workforces.</p>
+
+                  <p>Please review the details below regarding your order:</p> 
+                               
+                   <c:Zquote_EmailTemplate quoteRecordId="{!relatedTo.id}" ApprovalProductType="Alliances">
+                    
+                    <table border="1" >
+                        <tr>
+                            <th>Pivotal Ready Partner Program Name</th>
+                            <th>SKU</th>
+                            <th>Subscription Period</th>
+                        </tr>
+                        <apex:repeat var="cx" value="{!varResults}">
+                            <tr>
+                                <td>{!cx.zqu__Product_Name__c}</td>
+                                <td>{!cx.SKU__c}</td>
+                                <td align="right">{!cx.ConfDateRange__c}</td>
+                            </tr>
+                        </apex:repeat>                
+                    </table>
+                  </c:Zquote_EmailTemplate>  
+                    <p />
+                   
+                    <p>You will be contacted shortly by a representative of the Pivotal Alliance Team to answer any questions you may have.  In the interim, please do not hesitate to contact us at <a href="mailto:pivotal-ready-partner@pivotal.io">pivotal-ready-partner@pivotal.io</a></p>
+
+                    <p>Thank you again for your commitment to Pivotal.</p>
+
+                    <p>Sincerely,</p>
+                    
+                    <p>-The Pivotal Alliance Team</p>
+                    <p/>
+                    <p/>
+                    <p/>
+                    <font size="1">ref: {!relatedTo.Id}</font>
+                </font>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

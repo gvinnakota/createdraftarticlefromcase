@@ -1,0 +1,32 @@
+<aura:component implements="forceCommunity:layout" access="global"
+                description="Home Page Layout">    
+    <aura:attribute name="column1" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="column2" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="column3" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="column4" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="column5" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="column6" type="Aura.Component[]" required="false"></aura:attribute>
+
+    <div class="slds">
+        <div class="slds-size--0-of-12 slds-medium-size--1-of-12 slds-large-size--0-of-12">&nbsp;</div>
+         <div class="slds-grid serviceboxposition">
+            <div class="slds-size--0-of-12 slds-medium-size--1-of-12 slds-large-size--0-of-12">&nbsp;</div>
+            <div class="slds-size--12-of-12 slds-medium-size--11-of-12 slds-large-size--12-of-12">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-size--6-of-12 slds-medium-size--3-of-12 slds-large-size--3-of-12">{!v.column2}</div>
+                    <div class="slds-size--6-of-12 slds-medium-size--3-of-12 slds-large-size--3-of-12">{!v.column3}</div>
+                    <div class="slds-size--6-of-12 slds-medium-size--3-of-12 slds-large-size--3-of-12">{!v.column4}</div>
+                    <div class="slds-size--6-of-12 slds-medium-size--3-of-12 slds-large-size--3-of-12">{!v.column5}</div>                  
+                </div>
+            </div>
+            <div class="slds-size--0-of-12 slds-medium-size--0-of-12 slds-large-size--0-of-12">&nbsp;</div>
+        </div> 
+        <div class="slds-size--0-of-12 slds-medium-size--1-of-12 slds-large-size--0-of-12">&nbsp;</div>
+        <div class="slds-grid">
+            <div class="slds-size--12-of-12 slds-medium-size--12-of-12 slds-large-size--12-of-12">
+                    {!v.column1}
+            </div>  
+        </div>
+        </div>
+                 
+</aura:component>

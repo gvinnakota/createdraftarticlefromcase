@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Building Scalable Data Applications with Spring and GemFire.7AM</name>
+    <style>none</style>
+    <subject>Sorry we missed you at the Building Scalable Data Applications with Spring and GemFire webinar</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Sorry we missed you at the Building Scalable Data Applications with Spring and GemFire &lt;http://spring.io/blog/2015/01/19/webinar-replay-building-scalable-data-applications-with-spring-and-gemfire&gt; webinar.
+
+This session featured methods to simplify the configuration of a Pivotal GemFire grid using Spring Data GemFire, and explored how data is dynamically distributed and made highly available as the grid resources are increased or decreased to meet increased client demand.
+
+Please feel free to share the on-demand replay of the webinar &lt;http://spring.io/blog/2015/01/19/webinar-replay-building-scalable-data-applications-with-spring-and-gemfire&gt; and the slides &lt;http://www.slideshare.net/SpringCentral/building-scalable-web-applications-with-spring-data-gemfire&gt; with your colleagues!
+
+For more information about Pivotal GemFire, and and the other technologies that were demonstrated in the webinar, please visit:
+
+ - Pivotal Gemfire Community Edition &lt;https://network.pivotal.io/products/pivotal-gemfire&gt; (free download) 
+ - Spring Data GemFire documentation  &lt;http://docs.spring.io/spring-data-gemfire/docs/current/reference/html/&gt;
+ - Pivotal GemFire site  &lt;http://www.pivotal.io/big-data/pivotal-gemfire&gt;
+ - Pivotal GemFire online documentation  &lt;http://gemfire.docs.pivotal.io/latest/index.html&gt;
+
+
+Thanks,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

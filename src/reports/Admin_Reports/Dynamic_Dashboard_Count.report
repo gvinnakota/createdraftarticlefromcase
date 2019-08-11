@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Report$Name</field>
+    </columns>
+    <columns>
+        <field>Report$Owner</field>
+    </columns>
+    <columns>
+        <field>Report$ReportTypeEnumOrId</field>
+    </columns>
+    <columns>
+        <field>Report$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Report.DashboardComponents$Dashboard.Description</field>
+    </columns>
+    <columns>
+        <field>Report.DashboardComponents$CustomReport</field>
+    </columns>
+    <columns>
+        <field>Report.DashboardComponents$Dashboard.RunningUser</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Report.DashboardComponents$Dashboard.DeveloperName</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Dynamic Dashboard Count</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Reports_with_Dashboard__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Report$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

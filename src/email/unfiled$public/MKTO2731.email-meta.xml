@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_HAWQ &amp; Hortonworks_Q315.Follow Up</name>
+    <style>none</style>
+    <subject>Thanks for Joining Us!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We hope you enjoyed our webinar, Pivotal HAWQ and Hortonworks Data Platform: Modern Data Architecture for IT Transformation &lt;http://pivotal.io/big-data/webinar/modern-data-architecture-for-it-transformation&gt;. 
+
+This session featured speakers from Pivotal and Hortonworks discussing how, featuring a massively-parallel processing (MPP) SQL query engine that runs directly in the compute resources of a Hadoop 
+cluster, Pivotal HAWQ &lt;http://pivotal.io/big-data/pivotal-hawq&gt; and the Hortonworks Data Platform &lt;http://hortonworks.com/hdp/&gt; 
+provide businesses with a Modern Data Architecture for analytics and data science.
+ 
+ For more about the technologies that were discussed in the webinar, check out these resources:
+
+
+ - Hadoop for the Enterprise page &lt;http://pivotal.io/big-data/hadoop&gt;
+ - SQL on Hadoop page &lt;http://pivotal.io/big-data/hadoop/sql-on-hadoop&gt;
+
+ - Turbocharge Data Science with Pivotal HAWQ and the Hortonworks Data Platform webinar 
+replay
+ - Hortonworks/Pivotal Partner page &lt;http://hortonworks.com/partner/pivotal/&gt;
+
+
+Please feel free to share the on-demand 
+replay of the webinar and the slides &lt;http://www.slideshare.net/Pivotal/pivotal-hawq-and-hortonworks-data-platform-modern-data-architecture-for-it-transformation&gt; with your 
+colleagues.
+
+We look forward to sharing more insights with you at our next webinar!
+
+Thanks!
+The 
+Pivotal &amp; Hortonworks Teams</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

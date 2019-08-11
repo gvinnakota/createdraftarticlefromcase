@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Pivotal GemFire 功能及开发实例</title> 
+<link href="https://d1fto35gcfffzn.cloudfront.net/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; ">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; ">
+<tbody>
+<tr>
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; ">
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; ">
+<tbody> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,sans-serif; font-size: 13px; font-weight: normal">&nbsp;<br> 如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a><br> <br></td> 
+</tr> 
+<!-- <tr>
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: '宋体'; font-size: 13px; font-weight: normal">&nbsp;</td>
+</tr> --> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr>
+<td valign="top" style="padding-bottom:15px; ">
+<div class="mktEditable" id="banner-main">
+<img title="roadshow" src="http://connect.pivotal.io/rs/625-IUJ-009/images/2017_11_09_10.jpg" width="600" height="" border="0" alt="Greenplum和机器学习用户大会">
+</div> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; "> 
+<tbody>
+<tr> 
+<td width="30" style="background: white;">&nbsp;</td> 
+<td height="35" style="background: white;height:35px;">&nbsp;</td> 
+<td width="30" style="background: white;">&nbsp;</td> 
+</tr> 
+<tr>
+<td width="30"></td> 
+<td style="color:#555555; font-size:13px; line-height:1.5em;padding-bottom:35px;font-family:Helvetica,Arial,sans-serif; "> 
+<div class="mktEditable" id="confirmation-text">
+感谢您参加11月4日Pivotal 在上海举办的 “Greenplum和机器学习用户大会”。一天会议让我们真切感受到了大家的热情与关注，线上线下近400人参与活动 。 
+<br> 
+<br> 除了Greenplum,也许你还听说过Gemfire, HAWQ, Spring, Redis, RabbitMQ, Cloud Foundry, Bosh, Concourse, Jasmine, Ginkgo, Madlib, Cedar 这些开源项目? 是的，这些产品和技术背后的公司都是 Pivotal！ 
+<br> 
+<br> Pivotal 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新 。 经过十年的发展，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是 Pivotal 的用户。 
+<br> 
+<br> 如果你热爱技术和开放的文化，Pivotal欢迎你的加入，一起开发世界一流的产品，引领世界软件开发未来，并为自己创建机会和财富！ 
+<br> 
+<br> 热招职位1: Greenplum Database Kernel Engineer （ 
+<a href="http://pivotal-china.com/html/job/greenplum_database_kernel_engineer.pdf" style="color:#23b8aa;">查看职位信息</a>） 
+<br> 热招职位2: Greenplum FullStack Engineer （ 
+<a href="http://pivotal-china.com/html/job/greenplum_fullStack_engineer.pdf" style="color:#23b8aa;">查看职位信息</a>）
+</div></td> 
+<td width="30"></td> 
+</tr> 
+<tr>
+<td colspan="3" style="background-color:#ededee;height:15px;">&nbsp;</td>
+</tr> 
+<tr> 
+<td width="30" style="background: white;">&nbsp;</td> 
+<td height="35" style="background: white;">&nbsp;</td> 
+<td width="30" style="background: white;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="30" style="margin-top:20px;"></td> 
+<td style="color: #555555;font-family:Helvetica,Arial,sans-serif;font-size: 13px; line-height: 1.5em; text-align: left; margin: 0;"> 
+<table width="540"> 
+<tbody>
+<tr> 
+<td width="200"></td> 
+<td style="font-family: Helvetica,Arial,sans-serif;font-size: 14px;color:#00AE9E;" align="center" valign="middle"><b>大会资料分享下载</b></td> 
+<!--  <td  align="center" valign="middle" bgcolor="#00AE9E" style="padding:6px;"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="http://www.itdks.com/dakashuo/playback/1512">视频回放</a></td>  --> 
+<td width="200"></td> 
+</tr> 
+</tbody>
+</table> </td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30" style="background: white;">&nbsp;</td> 
+<td height="20" style="background: white;">&nbsp;</td> 
+<td width="30" style="background: white;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="30" style="margin-top:20px;"></td> 
+<td style="color: #555555;font-family:Helvetica,Arial,sans-serif;font-size: 13px; line-height: 1.5em; text-align: left; margin: 0;"> 
+<!-- <b style='color:#00ae9e;font-size: 14px;'>大会资料分享下载</b><br><br> --> 主题：新一代数据平台: Greenplum 5.0<br> 主讲：姚延栋 Pivotal Greenplum研发总监 （<a href="http://pivotal-china.com/html/event/greenplum_new_data_yyd.pdf" style="color:#23b8aa;">PPT</a>）<br><br> 主题：Pb级大数据Ad-Hoc查询选型－ Greenplum vs. Presto vs.Kylin <br> 主讲：易观大数据CTO郭炜 （<a href="http://pivotal-china.com/html/event/yiguan_pb_database_adhoc.pdf" style="color:#23b8aa;">PPT</a>）<br><br> 主题：借助Greenplum Database构建完整的云数据库生态 <br> 主讲：阿里云数据库高级产品经理萧少聪 （<a href="http://pivotal-china.com/html/event/ali_greenplum_database.pdf" style="color:#23b8aa;">PPT</a>）<br><br> 主题：Machine Learning on Greenplum— MADlib 简介与应用实例 <br> 主讲：Pivotal Greenplum Madlib研发工程师梅靖怡 （<a href="http://pivotal-china.com/html/event/madlib_machine_learning_on_greenplum.pdf" style="color:#23b8aa;">PPT</a>）<br><br> 主题：Procedural Language In Container － Greenplum助力数据科学计算 <br> 主讲：Pivotal Greenplum研发工程师郭罡 （<a href="http://pivotal-china.com/html/event/pl_greenplum_shanghai.pdf" style="color:#23b8aa;">PPT</a>）<br><br> 主题：DT时代 探索数据到决策的最短路径 <br> 主讲：观远数据创始人/CEO苏春园 （<a href="http://pivotal-china.com/html/event/guanyuan_greenplum.pdf" style="color:#23b8aa;">PPT</a>） 
+<!-- <p style="padding:7px;" align="center"><a href="http://www.pivotal-china.com/"  style="color:#23b8aa;">点击此处</a>下载演讲资料（没有注册的用户需登录后方可下载）</p> --> </td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30" style="background: white;">&nbsp;</td> 
+<td height="20" style="background: white;">&nbsp;</td> 
+<td width="30" style="background: white;">&nbsp;</td> 
+</tr> 
+<!-- <tr>
+<td width="30" style="margin-top:20px;"></td>
+<td style="color: #555555;font-family:Helvetica,Arial,sans-serif;font-size: 13px; line-height: 1.5em; text-align: left; margin: 0;">
+ <table width="540">
+ 	 <tr > 
+           <td width="220"></td> 
+          
+          <td  height="29"  align="center" valign="middle" bgcolor="#00AE9E" ><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="http://www.itdks.com/dakashuo/playback/1512">视频回放</a></td> 
+           <td width="200"></td> 
+     </tr> 
+ </table>
+
+</td>
+<td width="30"></td>
+</tr> --> 
+<tr> 
+<td colspan="3"> 
+<table width="540"> 
+<tbody> 
+<tr> 
+<td width="190"></td> 
+<td width="60"></td> 
+<td align="center" bgcolor="#00AE9E" valign="middle" width="90" style="padding:5.0px;"><a href="http://www.itdks.com/dakashuo/playback/1512" target="_blank" style="font-family:Arial,Helvetica,sans-serif;font-size:13.0px;color:white;text-decoration:none;">视频回放</a></td> 
+<td width="90"></td> 
+<td></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td width="30" style="background: white;">&nbsp;</td> 
+<td height="35" style="background: white;">&nbsp;</td> 
+<td width="30" style="background: white;">&nbsp;</td> 
+</tr> 
+<!-- 释放一下 --> 
+<!-- <tr><td colspan="3" style="background-color:#ededee;height:15px;">&nbsp;</td></tr>
+<tr>
+<td width="30" style='background: white;'>&nbsp;</td>
+<td height="35" style='background: white;'>&nbsp;</td>
+<td width="30" style='background: white;'>&nbsp;</td>
+</tr>
+<tr>
+<td width="30" style="margin-top:20px;"></td>
+<td style="color: #555555;font-family:Helvetica,Arial,sans-serif;font-size: 13px; line-height: 1.5em; text-align: left; margin: 0;">
+ <table width="540">
+ 	 <tr > 
+           <td width="220"></td> 
+           <td style="font-family: Helvetica,Arial,sans-serif;font-size: 16px;color:#00AE9E;" align="center" valign="middle" ><b>视频回放</b></td> 
+           <td width="200"></td> 
+     </tr> 
+ </table>
+
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30" style='background: white;'>&nbsp;</td>
+<td height="20" style='background: white;'>&nbsp;</td>
+<td width="30" style='background: white;'>&nbsp;</td>
+</tr>
+<tr>
+<td width="30" style='background: white;'>&nbsp;</td>
+<td  style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color:#4F8EBD;">1.&nbsp;</span> <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/3364">如何使用Spring Boot/Spring Cloud 实现微服务应用</a><br>
+<span style="color:#4F8EBD">2.&nbsp;</span> <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/3478">如何使用Spring XD/Spring Cloud Data Flow构建Data Microservices</a><br>
+<span style="color:#4F8EBD">3.&nbsp;</span> <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/4407">Cloud Foundry技术新纪元 2017年发展趋势前瞻</a><br>
+<span style="color:#4F8EBD">4.&nbsp;</span> <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/4777">轻松应战Postgres & Greenplum非法/歧义字符加载入库</a><br>
+<span style="color:#4F8EBD">5.&nbsp;</span> <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/5012">Pivotal GemFire功能及开发应用实例</a><br>
+<span style="color:#4F8EBD">6.&nbsp;</span> <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/5393">  Greenplum DB在企业中的最佳实践</a>
+</td>
+<td width="30" style='background: white;'>&nbsp;</td>
+</tr>
+<tr>
+<td width="30" style='background: white;'>&nbsp;</td>
+<td height="35" style='background: white;'>&nbsp;</td>
+<td width="30" style='background: white;'>&nbsp;</td>
+</tr> --> 
+<!-- <tr style="">
+<td width="30"></td>
+<td style="color: #555555;font-family:Helvetica,Arial,sans-serif;font-size: 13px; line-height: 1.5em; text-align: left; margin: 0;">
+
+煮酒夜话论 Spring晚场活动为大家搭建了一个的交流平台，Pivotal海外专家就大家关注的话题进行了深入的交流，彼此分享成功经验。<br><p style="padding:0px;" align="center"><a href=""  style="color:#23b8aa;">点击此处</a>下载精彩照片</p>
+<table>
+	<tr>
+<td width="30" style='background: white;'>&nbsp;</td>
+<td height="25" style='background: white;'>&nbsp;</td>
+<td width="30" style='background: white;'>&nbsp;</td>
+</tr>
+
+</table>
+
+</td>
+<td width="30"  style="">&nbsp;</td>
+</tr> --> 
+<tr>
+<td colspan="3" style="background-color:#ededee;height:15px;">&nbsp;</td>
+</tr> 
+<tr> 
+<td width="30" style="background: white;">&nbsp;</td> 
+<td height="35" style="background: white;">&nbsp;</td> 
+<td width="30" style="background: white;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td style="color: #555555;font-family:Helvetica,Arial,sans-serif;font-size: 13px; line-height: 1.5em; text-align: left; margin: 0;"> 感谢您继续关注和支持Pivotal， 如果您有任何问题，请随时与我们联系。<br>谢谢！<br><br> 
+<!-- 关于此次合作伙伴峰会，如果您有任何建议与意见，请随时与我们联系。<br>
+<span style="color:#23b8aa;">我们期待着与您2018年再会！</span><br>
+谢谢！<br>
+Spring Summit会务组 --> Pivotal&nbsp;大中华区市场部 
+<!--2017年7月6日 --></td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30">&nbsp;</td> 
+<td height="35">&nbsp;</td> 
+<td width="30">&nbsp;</td> 
+</tr> 
+</tbody>
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="35"></td> 
+<td height="20"></td> 
+<td width="35"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top">
+<!-- Start of footer --> 
+<!-- start of social links // --> 
+<!-- End of social links // --> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td align="center" style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;;font-family:Helvetica, Arial, sans-serif"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="font-family: Arial; color:#008774;text-decoration: none;">www.pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> © Pivotal，以及 Pivotal 徽标均为 Pivotal Software, Inc.在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。© 2017 Pivotal Software, Inc.保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+<!--<p> --></td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of footer // --></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

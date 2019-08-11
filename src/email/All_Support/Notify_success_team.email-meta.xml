@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Notify Success Team of Case Creation</name>
+    <style>formalLetter</style>
+    <subject>{!Case.Account} opened new support case: [{!Case.CaseNumber}] {!Case.Subject}</subject>
+    <textOnly>Success Team Notification:  {!Case.Account} has created a case
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+Account Name: {!Case.Account}
+Contact Name: {!Case.Contact}
+Severity: {!Case.Priority}
+Product: {!Case.Product}
+Case Owner: {!Case.OwnerFullName}
+Description: {!Case.Description}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Amsterdam Reminder Email</name>
+    <style>none</style>
+    <subject>See you tomorrow at SpringOne Tour Amsterdam!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+We look forward to seeing you at SpringOne Tour Amsterdam tomorrow. Please review the event details here &lt;[[https://springonetour.io/2019/amsterdam]]&gt; and feel free to email the team at springonetour@pivotal.io &lt;[[mailto:springonetour@pivotal.io]]&gt; with any questions.
+
+
+Location:
+B. Amsterdam
+Johan Huizingalaan 763a, 1066 VH
+Amsterdam, the Netherlands 
+
+
+Getting There:
+Parking:
+B. Amsterdam has a parking deck right next to the venue, where they offer day tickets at a daily max of €12
+
+
+Public Transport:
+By Tram: Line 2 Central Station – Louwesweg, stop at Slotervaartziekenhuis 
+
+By Metro: Line 50 Gein/Isolatorweg – stop at Henk Sneevlietweg
+By Train: Get to the station Lelylaan; then continue with Bus 64 in the direction of Amstelveen, stopping at Louwesweg/Johan Huizingalaan
+By Bus:
+Line 18 Centraal station – Louwesweg, stop at Louwesweg/Johan Huizingalaan.
+Line 19 station Sloterdijk – Slotervaart – Laan van Vlaanderen
+Line 64 station Sloterdijk – Station Lelylaan – Amstelveen, 
+stop at Louwesweg/Johan Huizingalaan
+
+
+
+
+Thanks,
+
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

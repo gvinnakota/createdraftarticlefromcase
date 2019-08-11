@@ -1,0 +1,96 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes"  access="global" controller="PortalNewCaseController" >
+    <!--<ltng:require styles="/resource/bootstrap/css/bootstrap.min.css" 
+                  scripts="/resource/bootstrap/js/jquery.js,/resource/bootstrap/js/bootstrap.min.js"/> -->
+	<ltng:require scripts="{!join(',', $Resource.jquery, $Resource.sendsafely)}"/>
+    <!--Attributes-->
+    <aura:attribute name="ca"   type="Case" default="{'sobjectType': 'Case'}"/>
+    <aura:attribute name="ssWidget" type="Object"/>
+    <aura:attribute name="showError" type="Boolean" required="false" description="" default="false" access="private"/>
+    <aura:attribute name="errorMessage" type="String" required="false" description="" access="private" default=''/>
+    <aura:attribute name="cUser" type="User"/>
+    <!--<aura:attribute name="rUser" type="String" default="Pivotal - Community Registered User"/>-->
+    <aura:attribute name="disablesubmit" type="Boolean" required="false"/>
+    <!-- Window variables-->
+    <aura:attribute name="isWindowOpen" type="Boolean" />
+    <aura:attribute name="proceed" type="Boolean"/>
+    <aura:attribute name="oWindow" type="Boolean"/>
+    <aura:attribute name="rtypes" type="String[]" default="[]"/>
+    <aura:attribute name="rtype" type="String"/>
+    <aura:handler name="init"  value="{!this}" action="{!c.doInit}"/>
+    <div class="backgrd"/>
+       <div>
+        <button class="slds-button slds-button--brand buttonColor" onclick="{!c.modalWindow}">Create New Case</button> 
+     	  <aura:if isTrue="{!v.isWindowOpen}">
+             <div class="slds-modal slds-fade-in-open backgrd">
+                
+                <div class="slds-modal__container ">
+                    <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+                    <div class="slds-modal__header">
+                        <h2 id="header99" class="slds-text-heading--medium">New Case</h2>
+                    </div>
+             
+                    <div class="slds-modal__content slds-p-around--medium modalContent">
+                        <legend class="slds-form-element__legend slds-form-element__label element-font">
+                        <abbr class="slds-required" title="required"></abbr><b>Select a Case Type:</b>
+                        </legend>
+                        <aura:iteration items="{!v.rtypes}" var="rtype">
+                           <label class="slds-radio__label ">
+                               <!--  <aura:if isTrue="{!v.cUser.Profile.Name != v.rUser}"> -->
+                                      <ui:inputRadio label="{!rtype}" name="options" value="false" change="{!c.rTypeChange}"/>
+                                 <!--    </aura:if> -->
+                            </label>
+                               </aura:iteration>
+                    </div>
+                    <div class="slds-modal__footer">
+                       <aura:if isTrue="{!v.proceed}">
+                          <button class="slds-button slds-button--brand buttonStyle" onclick="{!c.openModal}">Next</button>
+                       </aura:if>
+                          <button class="slds-button slds-button--neutral cancel" onclick="{!c.closeModal}">Cancel </button>
+                   </div>
+                   </div> 
+                  </div>
+              </aura:if>  
+             <!--Use aura:if tag to display Model Box, on the bese of conditions. [isOpen boolean attribute] -->   
+            <aura:if isTrue="{!v.oWindow}">
+                <!--###### MODAL BOX Start From Here ######--> 
+              <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open backgrd">
+                    <div class="slds-modal__container">
+                        <!-- ###### MODAL BOX HEADER Part Start From Here ######-->
+                        <div class="slds-modal__header">
+                          <h2 id="header99" class="slds-text-heading--medium">New Case</h2>
+                        <div style="text-align-last:left"><abbr class="slds-required" title="required">*</abbr><b>Required</b></div>
+                        </div>
+                        <!--###### MODAL BOX BODY Part Start From Here ######-->
+                        <div class="slds-modal__content slds-p-around--medium "> 
+                            <div class="container-fluid">
+                     
+                            <aura:if isTrue="{!v.rtype== $Label.c.Product_Support}">
+	                                <c:TechnicalCase aura:id="techCase" origin="caseTab" cObj="{!v.ca}" cUser="{!v.cUser}" widget="{!v.ssWidget}"/>
+							</aura:if>
+                            <aura:if isTrue="{!v.rtype== $Label.c.Non_Product_Support}">
+                                <c:NonTechnicalCase aura:id="nonTechCase" origin="caseTab" cObj="{!v.ca}" cUser="{!v.cUser}" widget="{!v.ssWidget}"/>
+                            </aura:if>
+                        	</div>
+                          <aura:if isTrue="{!v.showError}">
+                                <div id="error">
+                                    <ui:outputRichText value="{!v.errorMessage}"/>
+                                </div>
+                          </aura:if>
+                        <!--###### MODAL BOX FOOTER Part Start From Here ######-->
+                        <div class="slds-modal__footer">
+                            <button class="slds-button slds-button--brand buttonStyle " onclick="{!c.saveRecord}" disabled="{!v.disablesubmit}">Submit Case</button>
+                            <button class="slds-button slds-button--neutral cancel" onclick="{!c.cancelRecord}" >Cancel</button>
+                        </div>
+                        <c:ValidateCaseData aura:id="child"/>
+                    </div>
+                </div>
+                <div class="slds-backdrop slds-backdrop--open slds-hide"></div>
+                 
+                <!--###### MODAL BOX Part END Here ######-->
+                </div> 
+            </aura:if>
+           
+            
+         
+      </div>
+</aura:component>

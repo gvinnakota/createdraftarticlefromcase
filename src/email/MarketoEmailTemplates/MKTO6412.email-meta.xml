@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne_Platform_2018.AWSworkshopConfEmail</name>
+    <style>none</style>
+    <subject>SpringOne Platform - AWS Workshop | Registration Confirmation</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+
+Thank you for registering for the Hybrid made easy, modernizing and moving to the cloud with Pivotal Cloud Foundry and AWS workshop &lt;[[springoneplatform.io/2018/workshops/aws]]&gt; on September 24th in Washington D.C. 
+
+
+
+Date:
+Monday, September 24, 2018
+
+
+
+Time:
+
+
+9:00AM to 11:00AM
+
+
+
+Room: 
+TBA
+
+
+
+
+Please note, you must be registered for SpringOne Platform &lt;[[https://springoneplatform.io/]]&gt; to attend this workshop.
+
+The SpringOne Platform Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

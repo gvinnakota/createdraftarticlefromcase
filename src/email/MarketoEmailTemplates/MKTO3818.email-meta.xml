@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_DE_Digital Transformation Forum_Q216.Confirmation - English</name>
+    <style>none</style>
+    <subject>Confirmation: Pivotal Digital Transformation Forum</subject>
+    <textOnly>&lt;[[http://pivotal.io/de/event/digital-transformation-forum/frankfurt]]&gt;
+Hi {{lead.First Name:default=edit me}} {{lead.Last Name:default=edit me}}, 
+
+ Thank you for registering for the upcoming Digital Transformation Forum in Frankfurt. See event details below: 
+
+ Date: 8 June 2016 {{my.My Token-English:default=Save the Date}}
+Time: 9h00 to 16h45
+ Location: Hilton Frankfurt Airport Hotel &lt;[[http://www3.hilton.com/en/hotels/hesse/hilton-frankfurt-airport-FRAHAHI/index.html]]&gt; 
+
+ AGENDA &lt;[[http://pivotal.io/event/digital-transformation-forum/frankfurt]]&gt; 
+
+ We look forward to meeting you soon! 
+
+ The 
+Pivotal Team 
+
+ Questions? Please contact us via email &lt;[[mailto:ischuller@pivotal.io]]&gt; or visit our website &lt;[[http://pivotal.io/contact]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

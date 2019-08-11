@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Exec Dinner_SJ_Q215.Hadoop Dinner Follow Up</name>
+    <style>none</style>
+    <subject>Thank you for joining us!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+It was a pleasure having you at our Hadoop Summit dinner last night. We hope you enjoyed the opportunity to network, catch-up with friends, and talk about the ever-changing world of Big Data.
+
+If you haven&apos;t already, come by our booth to see the latest Big Data Suite demos, HAWQ on Hortonworks using Ambari, or just to talk to our industry experts.
+
+Watch Sunny Madra’s Hadoop Summit interview with theCUBE here &lt;https://www.youtube.com/watch?v=xIIcXdAAjw8&amp;feature=youtu.be&gt;.
+
+Blog &lt;http://blog.pivotal.io/big-data-pivotal/news-2/jignesh-patel-on-pivotals-acquisition-of-big-data-project-quickstep&gt;: Jignesh Patel on Pivotal’s Acquisition of Big Data Project Quickstep
+
+Cheers,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

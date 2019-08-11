@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Spring Boot in NetBeans IDE.Reminder</name>
+    <style>none</style>
+    <subject>Webinar Reminder:  Up and Running with Spring Boot in NetBeans IDE</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+
+Thank you for registering for the webinar Up and Running with Spring Boot in NetBeans IDE on Thursday, February 25, 2016. 
+
+Please see event details below:
+
+Date: Thursday, February 25, 2016 
+Time: 3:00PM GMT (London, GMT)
+
+Join the Session  &lt;[[http://event.on24.com/wcc/r/1134226/3B87A44768016F9C11CFC8485FC80768]]&gt;
+ 
+Audio Information: 
+This webinar will be streaming live via your computer speakers.  
+
+We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

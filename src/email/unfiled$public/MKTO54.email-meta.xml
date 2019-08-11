@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Website_HAWQ_Downloads.Email 1</name>
+    <style>none</style>
+    <subject>Thank you for downloading HAWQ</subject>
+    <textOnly>Here&apos;s How to Get Started.
+Hi {{lead.First Name:default=there}},
+
+Thank for downloading HAWQ for 60 days for free with your Pivotal HD Community deployment. Please refer to the documentation &lt;http://www.gopivotal.com/pivotal-products/pivotal-data-fabric/pivotal-hd#5&gt; before you begin your install process. 
+ 
+As a reminder Pivotal HD Community is supported by you – the Community. If you have any questions, comments, etc, please join our discussion forum &lt;http://www.gopivotal.com/community/pivotal-hd&gt;.
+
+Thank you,
+
+The Pivotal Team
+Check out Pivotal P.O.V.
+Visit our blog &gt;&gt; &lt;blog.gopivotal.com&gt;
+Exploring Pivotal HD Single Node
+Watch now &gt;&gt; &lt;http://bitcast-a.v1.o1.sjc1.bitgravity.com/greenplum/pivotalvideo/Webinar-08062013-PHD.m4v&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

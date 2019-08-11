@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Post-event (Attended) Paris</name>
+    <style>none</style>
+    <subject>Thank you for spending time with us!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Thank you for attending the Pivotal Cloud Native Roadshow in Paris on July 7th, 2016. We hope our event provided you clear perspective on the process and technology of Cloud Native organizations. 
+
+ We have made our presentation slides available here &lt;[[https://drive.google.com/folderview?id=0BwA78Sj43bSPQ3ZxNUJBQUcxUDQ&amp;usp=sharing]]&gt;.
+
+Please take a few minutes to share some feedback &lt;[[https://docs.google.com/forms/d/1TF1aDReykgo6IkCG3KNBb60CjQkoL9qKpsyMHDBp7wQ/viewform]]&gt; about the event so we can continue to improve the experience you have with Pivotal.
+
+If you are interested in having Pivotal present cloud native content to your organization or want to learn more about Pivotal, contact us &lt;[[mailto:emea_isr@pivotal.io]]&gt; to schedule a follow up with our team. 
+
+Thank you again for joining us! 
+
+The Pivotal Team 
+
+If you want to see more in depth presentations on cloud native topics and everything else to do with delivering software, please join us again at SpringOne Platform &lt;[[http://springoneplatform.io/]]&gt;, August 1–4.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

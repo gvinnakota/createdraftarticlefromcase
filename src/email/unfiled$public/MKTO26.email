@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpringOne 2GX 2013</title>
+
+<style type="text/css">
+
+    body {margin:0; padding:0; background-color:#6DB33F; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:14px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; width:100% !important;}
+    a, a:link, a:visited {color:#F3571B; text-decoration:none;}
+    a:hover, a:active {text-decoration:none; color:#E89D7F !important;}
+    h1, h2, h3 {color:#333333 !important; padding:0px 0px 10px 0px; margin:0px 0px 10px 0px;}
+    p {margin:0 0 14px 0; padding:0;}
+    img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+    a img {border:none;}
+    table td {border-collapse:collapse;}
+    .highlighted {color:#F3571B;}
+    .link {color:#F3571B; text-decoration:none;}
+
+    /**
+    * @tab Mobile Styles
+    * @section body image
+    * @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+    */
+    #bodyImage{height:auto !important; /*@editable*/ max-width:560px !important; /*@editable*/ width:100% !important;}
+    
+    /* Clients specific styles */
+    .ReadMsgBody {width: 100%;}
+    .ExternalClass {width: 100%;}
+    .yshortcuts {color: #333333;}
+    .yshortcuts a span {color: #333333; border-bottom: none !important; background: none !important; text-decoration:none !important;}
+    /* / Clients specific styles */
+    
+    /* Media queries */
+    @media only screen and (max-width: 640px) {
+        table[class=row] {width:580px !important;}
+        img[class=wideImage], img[class=banner] {width:100% !important; height:auto !important; max-width:100%;}
+    }
+    @media only screen and (max-width: 610px) {
+        table[class=row] {width:570px !important;}
+        td[class=container] {padding:0px !important;}
+    }
+    @media only screen and (max-width: 540px) {
+        table[class=row] {width:510px !important;}
+        td[class=oneFromFour] {font-size:14px !important; line-height:15pt !important;}
+    }
+    @media only screen and (max-width: 480px) {
+        table[class=row] {width:450px !important;}
+        td[class=oneFromTwo], td[class=twoColumns] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=column] {display:block; width:390px !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=website] {display:block; width:390px !important; padding:15px 20px 15px 20px !important; text-align:center;}
+        td[class=socialIcons] {display:block; width:390px !important; padding:0px 20px 15px 20px !important; text-align:center !important;}
+        img[class=phoneIcon] {display:none !important;}
+        img[class=wideImage] {width:auto !important;}
+        table[class=quoteContainer] {width:190px !important;}
+    }
+    @media only screen and (max-width: 360px) {
+        table[class=row] {width:340px !important;}
+        td[class=column], td[class=website], td[class=socialIcons] {width:280px !important;}
+        td[class=logo] {display:block; width:280px !important; padding-bottom:0 !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=phone] {display:block; width:280px !important; padding:9px 20px 13px 20px !important; text-align:left !important; background-color:#EBF1E7;}
+        td[class=month] {display:block; width:280px !important; padding:8px 20px 8px 20px !important; text-align:left !important; /*border-top:1px solid #FFFFFF;*/}
+        td[class=icon] {padding-top:10px !important; padding-bottom:10px !important;}
+        table[class=quoteContainer] {width:140px !important;}
+        table[class=quoteContainer] td {font-size:12px !important; line-height:15pt !important;}
+        td[class=footer] {padding:0px 0px 25px 0px !important; text-align:left !important;}
+    }
+    @media only screen and (max-width: 320px) {
+        table[class=row] {width:300px !important;}
+        td[class=column], td[class=website], td[class=socialIcons], td[class=logo], td[class=phone], td[class=phone2] {width:240px !important;}
+        table[class=quoteContainer] {width:100% !important; border-bottom:1px solid #EEEEEE; margin-bottom:20px;}
+        table[class=quoteContainer] td {padding-left:0px !important;}
+        td[class=quoteAuthor] {padding-bottom:20px !important;}
+    }
+    @media only screen and (max-width: 240px) {
+        table[class=row] {width:220px !important;}
+        td[class=column], td[class=logo], td[class=phone], td[class=phone2] {width:160px !important;}
+        td[class=oneFromFour] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website], td[class=socialIcons] {width:220px !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website] {font-size:18px !important;}
+        img[class=wideImage] {width:100% !important;}
+        table[class=iconContainer], table[class=imgContainer] {width:100% !important;}
+        td[class=icon], td[class=authorPicture] {padding-right:0px !important; padding-bottom:20px !important; text-align:center;}
+        td[class=icon] img, td[class=authorPicture] img {display:inline !important;}
+    }
+    /* / Media queries */
+
+</style>
+</head>
+<body link="#F3571B" vlink="#F3571B" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-color:#6DB33F; font-size:14px; line-height:24px; " ><tr ><td class="container" style="padding-left:15px; padding-right:15px; " ><table class="row" width="600" bgcolor="#6DB33F" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; background-image:url('http://play.gopivotal.com/rs/pivotal/images/BG_logoGlow.png');background-repeat:no-repeat;background-color:#6DB33F;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF;">
+<tr>
+<td class="logo" width="50%" style="padding-top:10px; padding-right:15px; padding-bottom:10px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; line-height:25pt; color:#FFFFFF; font-weight:300;">
+<div style="margin-top:0px; margin-bottom:0px !important; padding:0px; line-height:100%;"><a href="http://www.springone2gx.com" title="SpringOne 2GX, 2013" style="color:#FFFFFF !important;"><img src="http://play.gopivotal.com/rs/pivotal/images/LOGO_SpringOne2GX2013.png" alt="SpringOne 2GX, 2013" border="0" vspace="0" hspace="0" style="display:block; max-width:100%; height:auto !important;"></a></div>
+</td>
+<td class="month" width="50%" style="padding-top:10px; padding-right:20px; padding-bottom:15px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF; text-align:right;">
+<div class="month" style="margin-top:0px; margin-bottom:0px; padding:0px; font-size:16px; line-height:24px; font-weight:300; color:#FFFFFF !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">September 9-12, 2013</div>
+Santa Clara, CA</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%" align="center" style="padding-top:10px; padding-right:20px; padding-bottom:0; padding-left:20px;border-bottom:1px; border-bottom-color:#DDDDDD; border-bottom-style:solid;">
+<h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; line-height:22pt; color:#333333 !important; font-weight:500;">THE SPRING, GROOVY, GRAILS &amp; CLOUD EVENT OF THE YEAR!</h2>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#F3F3F3" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-top:1px; border-top-color:#FFFFFF; border-top-style:solid; " ><tr ><td width="100%" ><div style="height:40px">&nbsp;</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td width="380" class="column" valign="top" style="padding-right:15px; padding-bottom:0; padding-left:20px; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="section1" ><h2 style="margin-top: 0px; margin-bottom: 0px ! important; padding-top: 0px; padding-bottom: 0px; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 16px; line-height: 18pt; color: #333333 ! important; font-weight: 500; text-align: left;"><strong>TO ALL SPRINGONE 2GX 2013 CONFERENCE PASS HOLDERS:<br /></strong></h2>
+<p style="text-align: left;">You are invited to attend <strong>Platform: the Cloud Foundry Conference</strong> for <strong>FREE</strong> on September 8-9, 2013 at the Santa Clara Convention Center.</p>
+<p>Holders of SpringOne 2GX 2013 full conference passes can register for  the Sunday and Monday event for FREE with your personal promo code  {{lead.CloudFoundryRegCode:default=edit me}} &nbsp;Space is limited!</p>
+<p>Contact Tamao Nakahara @ tnakahara@gopivotal.com for any promo code issues.</p>
+<h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;"><a class="color:#F3571B" href="http://www.platformcf.com">REGISTER NOW!</a></h3>
+<p>Go to <a class="color:#F3571B" href="http://www.platformcf.com">platformcf.com</a> to register and view the agenda.</p>
+<p><a class="color: #f3571b;" href="http://www.platformcf.com">Platform</a> is an event for developers and cloud operators that are using the  industry's leading Open Source Platform-as-a-Service: Cloud Foundry.  Join core contributors to the project and real world users for two days  to discuss deep technical topics, engineering roadmap, community  ecosystem and operational best practices. The Cloud Foundry Conference  will be held in Santa Clara, CA, September 8-9, 2013 at the Santa Clara  Convention Center.</p>
+<p>Looking forward to a great conference.</p></div>
+<h3 style="margin-top:0px; margin-bottom:20px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; color:#333333;">The Spring Team</h3>
+<br>
+<br></td>
+<td width="180" class="column" valign="top" style="padding-top:5px; padding-right:20px; padding-bottom:0; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:center; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:0; " ><tr ><td width="100%" bgcolor="#F4F4F4" align="center" style="padding-top:20px; padding-right:0; padding-bottom:20px; padding-left:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="badge" ><p><a style="color: #f3571b !important;" title="SpringOne 2GX 2013" href="http://www.springone2gx.com"><img style="display: block; max-width: 100%; height: auto !important;" src="http://play.gopivotal.com/rs/pivotal/images/BADGE_SpringOne2GX2013.png" border="0" alt="SpringOne 2GX 2013" hspace="0" vspace="0" /></a></p>
+<p><a style="color: #f3571b !important;" title="SpringOne 2GX 2013" href="http://www.springone2gx.com"><img style="display: block; max-width: 100%; height: auto !important;" src="http://play.gopivotal.com/rs/pivotal/images/logo_PlatformCF.png" border="0" alt="Platform: Cloud Foundry Conference" hspace="0" vspace="0" /></a></p></div>
+</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-top:15px; border-top:1px; border-top-color:#FFFFFF; border-top-style:solid; border-bottom:1px; border-bottom-color:#FFFFFF; border-bottom-style:solid; margin-bottom:20px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:20px; padding-right:0; padding-bottom:20px; padding-left:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="address" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; color: #333333;">Santa Clara Convention Center - Hyatt Regency</h3>
+<p>5001 Great America Pkwy<br /> Santa Clara, CA 95054<br /> (408) 330-0001</p></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#6DB33F" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; border-bottom:1px; border-bottom-color:#ABD78E; border-bottom-style:solid;">
+<tr>
+<td class="website" width="50%" valign="top" style="padding-top:24px; padding-right:15px; padding-bottom:20px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:100%; color:#6DB33F; font-weight:300;"><a style="text-decoration:none; color:#ABD78E;" href="http://www.springone2gx.com/">www.springone2gx.com</a></td>
+<td class="website" width="50%" align="right" valign="top" style="padding-top:24px; padding-right:15px; padding-bottom:20px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:100%; color:#6DB33F; font-weight:300;"><a style="text-decoration:none; color:#ABD78E;" href="http://www.gopivotal.com">www.gopivotal.com</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="footer" width="100%" bgcolor="#6DB33F" style="padding-top:0;padding-right: 20px;padding-bottom: 25px;padding-left: 20px; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:13pt; color:#ABD78E; text-align:left; -webkit-text-size-adjust:none;">
+<div style="height:20px">&nbsp;</div>
+&copy; 2013 Spring by Pivotal. The Spring and Pivotal logo are registered trademarks or trademarks of GoPivotal, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2013 Go Pivotal, Inc. All rights reserved. Published in the USA. <a href="http://info.vmware.com/content/Subscription_Developer?" style="color:#387C2C;">Unsubscribe from this list</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

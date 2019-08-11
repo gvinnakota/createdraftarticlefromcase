@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Email Reminder - Atlanta</name>
+    <style>none</style>
+    <subject>See you this Tuesday at the Pivotal Cloud Platform Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up this Tuesday in Atlanta. We look forward to seeing you! 
+
+ Please be prepared to present a form of photo ID upon check-in with Security. Please also bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Pivotal Cloud Platform 
+Workshop
+Tuesday, October 21, 2014
+8:00am - 5:30pm (breakfast &amp; lunch provided)
+Workshop Agenda &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/atlanta&gt;
+
+Cox Communications
+6305 Peachtree Dunwoody Road, NE 
+C-Tech Building: Jim Kennedy 
+Conference Center, Azalea Room
+Atlanta, GA 30328
+Map and Driving Directions &lt;http://www.mapquest.com/us/georgia/business-atlanta/cox-enterprises-inc-288296417&gt;
+
+Parking Information
+The visitor’s parking 
+garage is located on the Peachtree Dunwoody Road. Once inside the visitor’s parking garage, follow the signs to the 6305 A or B building. From level B2 or P1, take the elevator to the lobby (level 2L) of the C-Tech A or B building (the buildings are connected and share one security desk). Obtain a visitor badge from the security desk after presenting a photo ID. Security will direct you to wait in the seating area for an escort. Should you require assistance with directions, please call Cox Enterprises Security at 678-645-0911 &lt;tel:678-645-0911&gt;.
+
+WORKSHOP 
+PREREQUISITES
+All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest! 
+
+ - A FREE account on Pivotal Web Services - create a 60-day trial with no credit card at 
+https://run.pivotal.io
+
+
+
+QUESTIONS? 
+Contact Kim Marie Ruquet at kruquet@pivotal.io &lt;mailto:kruquet@pivotal.io&gt; or via cell at 631-388-0569 &lt;tel:631-388-0569&gt;. 
+
+We look forward to seeing you!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

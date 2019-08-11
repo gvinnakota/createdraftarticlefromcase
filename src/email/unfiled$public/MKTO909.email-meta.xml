@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Querying External Data Sources with Hadoop_Q214.Follow Up No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you: Querying External Data Sources with Hadoop webinar</subject>
+    <textOnly>&lt;http://www.gopivotal.com/big-data/hadoop/querying-external-data-sources-with-hadoop-webinar&gt;
+Hi {{lead.First Name:default=There}},
+
+Sorry we missed you last week for our webinar &lt;http://www.gopivotal.com/big-data/hadoop/querying-external-data-sources-with-hadoop-webinar&gt; &quot;Querying External Data Sources with Hadoop&quot; on July 15, 2014. 
+
+We presented a demo on how to add extensibility into Hadoop and more:
+
+
+ - How to eliminate the need to copy data from the underlying storage system to HDFS
+ - How to leverage rich, deep and fast analytics on various Hadoop data files
+ - How to conduct statistical and analytical functions from HAWQ to HBase or Hive data
+ - How to run complex analytical queries that join in-database dimensional data with fact data stored in HBase
+ - How to easily write your own custom PXF connectors to external data sources
+
+
+
+We invite you to watch the replay &lt;http://www.gopivotal.com/big-data/hadoop/querying-external-data-sources-with-hadoop-webinar&gt; to learn more about Pivotal HD &lt;http://www.gopivotal.com/big-data/pivotal-hd&gt; and Pivotal Xtension Frameworks (PXF) &lt;http://blog.gopivotal.com/pivotal/products/json-on-hadoop-example-for-extending-hawq-data-formats-using-pivotal-extension-framework-pxf&gt;.
+
+Thank you for your interest and we hope to see you next time.
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

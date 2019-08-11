@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Cloud_Workshops_Q116-Q216.Confirmation</name>
+    <style>none</style>
+    <subject>Pivotal Cloud Native Java Workshop Confirmation</subject>
+    <textOnly>&lt;[[http://pivotal.io/event/cloud-native-java-workshop]]&gt;
+Thank you for signing up for the Pivotal Cloud Native Java workshop dedicated to your organization.
+
+Please bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending by following the prerequisites below (will take approximately 35-45 minutes):
+
+
+ - The accompanying code for this workshop is on Github Microservices, and involves a lot of moving parts. Make sure we can run all those things in this lab.
+ - You will need JDK 8, Git, Maven, an IDE and Docker Toolbox in order to follow along.
+ - Specify important environment variables before opening any IDEs. Set JAVA_HOME to where the JDK is. If you&apos;re on OSX you can have it set with: export JAVA_HOME=`/usr/libexec/java_home`.
+ - Create an environment variable called DOCKER_HOST that points to your Docker Toolbox machine. On OSX and Windows this will resolve to a virtual machine running in VirtualBox. If you&apos;re on OSX you can have it set with: export DOCKER_HOST=`docker-machine ip default`. 
+ - Install the Cloud Foundry CLI.
+ - Go to the Spring Initializr and specify the latest stable (non-SNAPSHOT) version of Spring Boot, click the link Switch to the full version, and then choose EVERY checkbox, then click Generate Project.
+ - In the shell, run mvn -DskipTests=true clean install to force the resolution of all those dependencies so you&apos;re not stalled later. Then, run mvn clean install to force the resolution of the test scoped dependencies. You may discard this project after you&apos;ve installed everything.
+ - Run redis.sh, redis-cli.sh, and graphite.sh of the .sh scripts in the ./bin directory of the cloned Git repository for this workshop. Run bin/psql.sh after you&apos;ve run bin/postgresh.sh and confirm that they all complete and emit no obvious errors.
+ - Very Important: go to Pivotal Web Services &lt;[[https://run.pivotal.io/]]&gt; and sign up for a Free Trial, you&apos;ll need an account to see this through to the end. No credit card is required, though you&apos;ll need a valid phone number.
+
+
+
+If you have any questions related to the workshop, please contact mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt;.
+
+Kind regards,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

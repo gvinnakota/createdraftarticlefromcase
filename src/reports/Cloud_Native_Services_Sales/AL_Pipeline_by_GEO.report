@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_95398732</developerName>
+        <masterLabel>Sales GEO</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Is_ISR__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Central North</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Central West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>TOLA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pacific Northwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pacific Southwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NY/NJ General Markets</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Industrials</sourceValue>
+            </sourceValues>
+            <value>WEST</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Telco / Media</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NY/NJ Global Financial Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Central South</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>LATAM</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New England</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Canada</sourceValue>
+            </sourceValues>
+            <value>EAST</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA Central</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA France</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA South</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA UKI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA France &amp; S Europe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA MEA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Other</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>APJ Australia New Zealand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Greater China</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Japan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Korea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ South Asia</sourceValue>
+            </sourceValues>
+            <value>APJ</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER Fed</sourceValue>
+            </sourceValues>
+            <value>FED</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>UNIT_PRICE</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_95398732</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>UNIT_PRICE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Next_Step__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Product2.Report_Category__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Agile - CSD,Agile - Labs,Agile - Tx,PaaS - Edu,PaaS - Services</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Forecast_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_95398732</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Region__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunityLineItem.Product_Portfolio__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AL - Pipeline by GEO (CQ)</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2017-05-05</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2017-01-01</startDate>
+    </timeFrameFilter>
+</Report>

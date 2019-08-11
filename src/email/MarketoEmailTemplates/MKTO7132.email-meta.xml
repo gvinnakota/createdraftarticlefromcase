@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Pivotal Breakfast_Sydney_Q119.Registration Confirmation</name>
+    <style>none</style>
+    <subject>Registration Confirmation: Pivotal Sydney Breakfast</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Thank you for registering for the upcoming Pivotal Breakfast - Driving Innovation with Application Transformation.
+
+Date: Wednesday, 27th March 2019
+Time: 8:30am - 10:15am (registration opens from 8am)
+Location: Pivotal Labs Sydney, Level 11/155 Clarence St, Sydney NSW 2000
+
+Save the event in your calendar: https://connect.pivotal.io/rs/625-IUJ-009/images/Pivotal-Breakfast-Sydney-March19.ics
+
+Should you have any questions or would like more information about this event, please email us at communications-apj@pivotal.io.
+
+We look forward to seeing you there.
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

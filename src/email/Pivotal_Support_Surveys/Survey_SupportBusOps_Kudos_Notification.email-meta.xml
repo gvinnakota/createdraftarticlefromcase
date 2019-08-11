@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification for Positive Customer Feedback</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Kudos</name>
+    <style>formalLetter</style>
+    <subject>You are amazing! Open this email to read your glowing customer feedback</subject>
+    <textOnly>The following Customer positive feedback was received on {!Pivotal_Survey_Feedback__c.CreatedDate} :
+
+
+Case Owner: {!Pivotal_Survey_Feedback__c.Case_Owner_Feedback__c}
+Case Number:{!Pivotal_Survey_Feedback__c.Case_Number_Feedback__c}
+Case Subject: {!Pivotal_Survey_Feedback__c.CaseSubject_Feedback__c}
+
+Survey Score: {!Pivotal_Survey_Feedback__c.CES_Survey_Score__c}
+Customer Feedback:{!Pivotal_Survey_Feedback__c.CES_Positive_Feedback__c}
+Customer: {!Pivotal_Survey_Feedback__c.Account_Name_Feedback__c}
+Customer Contact: {!Pivotal_Survey_Feedback__c.ContactName_Feedback__c}
+
+
+Survey Feedback URL: {!Pivotal_Survey_Feedback__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

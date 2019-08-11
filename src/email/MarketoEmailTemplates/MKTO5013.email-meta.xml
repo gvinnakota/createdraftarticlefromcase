@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PivAcademy_Website_Contact Us.Confirmation 2017</name>
+    <style>none</style>
+    <subject>Thank you for your Inquiry</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+ Thank you for contacting Pivotal Training. Your request has been received. We will review and assign your inquiry to one of our awesome agents and reply within 1 business day.
+
+Your ticket will be assigned based on our business hours: Monday-Friday, 8 am to 5 pm (EST), excluding all U.S. holidays. Please note that our agents are in different time zones, and there may be delays in their response times.
+
+Once your assigned agent has responded, they will do their best to inform you of the time it will take for your question, request, or problem to be resolved. Typically inquiries are resolved within 2-4 business days.
+
+Thank you,
+The Pivotal Education Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

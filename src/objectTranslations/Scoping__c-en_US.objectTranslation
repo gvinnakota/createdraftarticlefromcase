@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Area --></label>
+        <name>Account_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Region --></label>
+        <name>Account_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Theater --></label>
+        <name>Account_Theater__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Information --></label>
+        <name>Background__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Scopings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Scoper --></label>
+        <name>Primary_Scoper__c</name>
+        <relationshipLabel><!-- Scopings (Primary Scoper) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scoping Date --></label>
+        <name>Scoping_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Scoper --></label>
+        <name>Secondary_Scoper__c</name>
+        <relationshipLabel><!-- Scopings (Secondary Scoper) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>AppTx</masterLabel>
+            <translation><!-- AppTx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labs</masterLabel>
+            <translation><!-- Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform</masterLabel>
+            <translation><!-- Platform --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Scoping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scopings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Scoping Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer --></label>
+            <section>Customer</section>
+        </sections>
+        <sections>
+            <label><!-- People --></label>
+            <section>People</section>
+        </sections>
+        <sections>
+            <label><!-- Scoping --></label>
+            <section>Scoping</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Scoping Date / Time is required when Status is Scheduled or Completed --></errorMessage>
+        <name>scoping_date_required</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Reset Confirmation</name>
+    <style>none</style>
+    <subject>SpringOne Tour Password Reset</subject>
+    <textOnly>A request has been made to reset your password for {{lead.Email Address:default=edit me}}
+
+Reset your password &lt;https://springonetour.io/reset-password?resetCode={{lead.Registration Token:default=edit me}}&gt;
+
+If you did not make this request, simply ignore this message and your old password will continue to work.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

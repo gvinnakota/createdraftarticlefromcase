@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <columns>
+        <field>CLOSED</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Open,On Hold,Escalated,Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Alpine Chorus for Pivotal Data Suite,Datometry Hyper-Q for Pivotal Data Suite,Datometry Workload Manager,Greenplum MapReduce,Open Source PostgreSQL,Pivotal Command Center,Pivotal GemFire,Pivotal GemFire XD,Pivotal GPText,Pivotal Greenplum,Pivotal Greenplum Command Center,Pivotal Greenplum Text,Pivotal HD,Pivotal HDB,Pivotal HDP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brendan Stephens,Deepika Pandhi,Kevin Huang,Kushal Choubay,Kyle Roberts,Suhasini Peddada,Rohit Kapil,Nimish Avarsekar,Himanshu Pandey,Tod Morrison,David Wisler,Ashley Heys,Shane Smalldon,Geet Rawat,Srikanth Manvi,Michael Harris,Chi Xie,Chumo Son,Tyler Ramer,Nader Mustafa,Shubham Sharma,Jeffrey Sdoeung,Mike Berendsen,Stephen Berry</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>AMER Data Backlog</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>OWNER</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

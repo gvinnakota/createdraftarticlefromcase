@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_93673971</developerName>
+        <masterLabel>Area</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>User.Region__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Southeast</sourceValue>
+            </sourceValues>
+            <value>East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pacific Southwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Central North</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Federal Civilian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Federal DoD/Intel</sourceValue>
+            </sourceValues>
+            <value>Federal</value>
+        </values>
+        <values>
+            <value>Telco/Media</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>NY/NJ Global Financial Services</sourceValue>
+            </sourceValues>
+            <value>FinServ</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.Is_ISR__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Forecasted_Renewal_ACV__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.BDS_Primary_Influence__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Account.Pivotal_Account_Category__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Theater__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Forecasted_Renewal_ACV__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Product2.Report_Category__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Data - BCS,Data - Big Data Suite,Data - DS,Data - Edu,Data - GemFire,Data - GPDB,Data - HAWQ,Data - HD,Data - Resell,Data - Services,PaaS - CC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Area__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA UKI</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Fiscal_Period__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Forecast_Status__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>EMEA FC_CQ, CQ +1_RENEWALS_DATA UK</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CLOSE_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURNEXT1</interval>
+    </timeFrameFilter>
+</Report>

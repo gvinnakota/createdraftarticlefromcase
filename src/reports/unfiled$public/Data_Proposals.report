@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Is_ISR__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Pivotal_Labs_Delivery_Office__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_Agile_DS__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_Data_Services__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_Data_Perpetual__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_Data_Product__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Total_Pivotal_CF_Product__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Total_Pivotal_Labs__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Account.Named_Account__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All proposals with data attached</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Vincent Osterman,Garry Chan,Monica Hirano,Amanda Lavecchia,Alvin Jung,Anna Ye,Linda Lau,Adam Lacombe,Asfand Minhas,Sarah Hameed,Annie Zhang,Muhammad Ahmed,Ke Pin Lu,Huda Syed,Amir Kharazmi</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Total_Data_Perpetual__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Total_Data_Product__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Total_Agile_DS__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Total_Data_Services__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Data Proposals</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ASSIGNED</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

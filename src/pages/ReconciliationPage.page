@@ -1,0 +1,211 @@
+<!--
+ - Created by Jakub Wilkosz on 07/02/2019.
+ -->
+
+<apex:page id="ReconciliationPage" controller="ReconciliationController" docType="html-5.0" lightningStylesheets="true">
+    <script>
+    var accSearchPhraseSize = 0;
+
+    var scheduled = [];
+    var currentInput;
+
+    function scheduleRetrieval(){
+        if (scheduled.length > 1){
+            scheduled.shift();
+        } else if (scheduled.length === 1){
+            openModal();
+            scheduled.pop()();
+        }
+    }
+
+    function accountSearchKeyPress(input) {
+        if (input.value.length > 2) {
+            currentInput = input.value;
+            accSearchPhraseSize = input.value.length;
+            scheduled.push(loadSearchAF);
+            window.setTimeout(scheduleRetrieval, 1500);
+        } else if (accSearchPhraseSize > 2) {
+            currentInput = input.value;
+            accSearchPhraseSize = input.value.length;
+            scheduled.push(loadRecentAF);
+            window.setTimeout(scheduleRetrieval, 1500);
+        }
+    }
+
+    function openModal() {
+        document.getElementById('loading-modal').style.display = "block";
+    }
+
+    function closeModal(param) {
+        param = param || 0;
+        document.getElementById('loading-modal').style.display = "none";
+        if (param !== 0){
+            document.getElementById(param).focus();
+        }
+    }
+
+    function focusOnEnd(elem){
+        setTimeout(function(){ elem.selectionStart = elem.selectionEnd = 10000; }, 0);
+    }
+
+
+    function openInNewWindowById(id) {
+        window.open('{!JSENCODE(LEFT($Api.Partner_Server_URL_340, FIND( '/services', $Api.Partner_Server_URL_340)))}' + id, '_blank');
+    }
+
+    function openReconciliationById(id) {
+        window.open('{!JSENCODE(LEFT($Api.Partner_Server_URL_340, FIND( '/services', $Api.Partner_Server_URL_340)))}' + 'apex/SingleReconciliation?id=' + id, '_blank');
+    }
+
+    window.onload = function (ev) {
+        loadRecentAF();
+    }
+
+
+
+</script>
+    <style>
+        .mousePointer {
+            cursor: pointer;
+        }
+
+        #loading-modal {
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .loader {
+            position: fixed;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #bdbd75;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /*advanced search*/
+
+        input#show, input#hide {
+            display:none;
+        }
+
+        span#content {
+            display: block;
+            -webkit-transition: opacity 1s ease-out;
+            transition: opacity 1s ease-out;
+            opacity: 0;
+            height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+
+        input#show:checked ~ .show:before {
+            content: ""
+        }
+        input#show:checked ~ .hide:before {
+            content: "Hide"
+        }
+
+        input#hide:checked ~ .hide:before {
+            content: ""
+        }
+        input#hide:checked ~ .show:before {
+            content: "Advanced Search";
+            background-image: chevronright;
+        }
+        input#show:checked ~ span#content {
+            opacity: 1;
+            font-size: 100%;
+            height: auto;
+        }
+        input#hide:checked ~ span#content {
+            display: block;
+            -webkit-transition: opacity 1s ease-out;
+            transition: opacity 1s ease-out;
+            opacity: 0;
+            height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+
+    </style>
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <apex:pageBlock title="Reconciliation Page" id="reconPB">
+        <apex:form id="reconForm">
+            <!--<apex:pageBlockSection collapsible="false" columns="1" id="searchBarPBS">-->
+            <apex:actionRegion >
+                <apex:actionFunction name="loadRecentAF" action="{!loadRecent}"
+                                     reRender="searchSection"
+                                     onComplete="closeModal('{!$Component.reconPB.reconForm.searchBarPBS.searchForm}')"/>
+                <apex:actionFunction name="loadSearchAF" action="{!loadSearch}"
+                                     reRender="searchSection"
+                                     onComplete="closeModal('{!$Component.reconPB.reconForm.searchBarPBS.searchForm}')"/>
+                <apex:outputLabel value="Search Subscriptions by: Quote Number, Subscription Number, Subscription Zuora Id"/>
+                <br/>
+                <apex:inputText value="{!searchText}" size="60" id="searchForm"
+                                onKeyUp="accountSearchKeyPress(this);"
+                                onFocus="focusOnEnd(this)"/>
+                <input type="radio" id="show" name="group"/>
+                <input type="radio" id="hide" name="group" checked="true"/>
+                <label for="hide" class="hide"></label>
+                <label for="show" class="show"></label>
+                <span id="content">
+                <br/>
+                    Created&nbsp;Date&nbsp;<apex:input value="{!startCreatedDate}" type="auto"/>&nbsp;to&nbsp;<apex:input value="{!endCreatedDate}" type="auto"/>
+                <br/>
+                    Activation Date &nbsp; <apex:input value="{!startActivationDate}" type="auto"/> to &nbsp; <apex:input value="{!endActivationDate}" type="auto"/>
+                <br/>
+                    <apex:commandButton reRender="searchSection" action="{!loadSearch}" value="Search" onClick="openModal();" onComplete="closeModal();"/>
+                </span>
+                <!--</apex:pageBlockSection>-->
+
+            </apex:actionRegion>
+
+            <!--</apex:pageBlockSection>-->
+            <apex:pageBlockSection title="{!searchResultTitle}" id="searchSection" columns="1">
+                <apex:pageBlockTable value="{!searchResults}" var="res">
+                    <apex:column headerValue="Reconcile" style="width: 40px;">
+                        <apex:commandButton styleClass="autocomplete-btn"
+                                            onClick="openReconciliationById('{!res.QuoteId}')"
+                                            reRender="searchSection"
+                                            value="Reconcile"/>
+                    </apex:column>
+                    <apex:column value="{!res.ZNumber}" headerValue="Subscription Number"/>
+                    <apex:column value="{!res.Name}" headerValue="Quote Number"/>
+                    <apex:column value="{!res.ZId}" headerValue="Zuora ID"/>
+                    <apex:column headerValue="Related Quote ID">
+                        <apex:outputLabel value="{!res.QuoteId}"
+                                          onClick="openInNewWindowById('{!res.QuoteId}');"
+                                          styleClass="mousePointer" style="text-decoration:underline">
+                        </apex:outputLabel>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:form>
+    </apex:pageBlock>
+    <!-- SPINNER -->
+    <div id="loading-modal">
+        <div class="loader"></div>
+    </div>
+    </html>
+</apex:page>

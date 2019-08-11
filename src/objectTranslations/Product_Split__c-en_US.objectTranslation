@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentages Sum --></label>
+        <name>Percentages_Sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Rate Plan Charge --></label>
+        <name>Product_Rate_Plan_Charge__c</name>
+        <relationshipLabel><!-- Product Splits --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Split</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Splits</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Product Split Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- To make a Product Split active, splits must add up to 100% --></errorMessage>
+        <name>Splits_sum_to_100_percent_on_active</name>
+    </validationRules>
+</CustomObjectTranslation>

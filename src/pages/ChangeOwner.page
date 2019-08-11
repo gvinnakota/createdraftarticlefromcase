@@ -1,0 +1,33 @@
+<apex:page standardController="Opportunity" extensions="ChangeOwnerCtlr" recordSetVar="Member">
+    <apex:includeLightning /> 
+    <div id="Con" />
+      <script>
+        debugger;
+       $Lightning.use("c:ChangeOwnerApp", function() {
+            $Lightning.createComponent("c:ChangeOwner",{
+                oppRecIds:'{!memIds}', listViewId : '{!listViewId}', listViewName : '{!listViewName}'}, "Con",
+                   function(cmp) {
+                    $A.eventService.addHandler({
+                      event: 'force:navigateToList',
+                      handler: function(event) {
+                        if (sforce && sforce.one) {
+                          console.log('First');
+                                                sforce.one.force.navigateToList(event.$params$.listViewId,event.$params$.listViewName,'Opportunity');
+                        } else {
+                          console.log('second');
+
+                                                    if (event.$params$.scope === 'Opportunity') {
+                            window.location = '{!URLFOR($Action.Opportunity.Tab, $ObjectType.Opportunity)}';
+                          }
+                        }
+                      }
+                    });
+                     console.log("Component is created!");
+                     console.log(cmp);
+                });
+
+            });
+
+     </script>    
+
+</apex:page>

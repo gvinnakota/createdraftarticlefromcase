@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Partner Verification</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Support:Entitlement:Partner Verification</name>
+    <style>freeForm</style>
+    <subject>Partner Verification Required for Case {!Case.CaseNumber}</subject>
+    <textOnly>***CSR AGENT: Check this dashboard to see if the customer has been updated in the Partnership Program: https://docs.google.com/spreadsheets/d/1hO0m5dUHj1ypR1u3w1F759awQYdEWEnVlGt01v44QNY/edit#gid=1068916258  Check Open Activities in salesforce.  If there is no information in either email amackenzie@pivotal.io and ceisner@pivotal.io, cc global csr, asking if the customer is in the process of becoming a partner. ***  
+
+Hi {!Contact.FirstName},  
+
+We received your request for support. It is our policy to confirm your partner contract/agreement with Sales before providing technical assistance. Please reply with information that identifies your agreement with Pivotal.  
+
+Thanks for your assistance,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

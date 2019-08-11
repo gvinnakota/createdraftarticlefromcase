@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Reminder - Boston</name>
+    <style>none</style>
+    <subject>See you tomorrow at the Pivotal Cloud Native Roadshow!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+
+ Thank you for signing up to attend the Cloud Native Roadshow taking place tomorrow in Boston. 
+
+ Pivotal Cloud Native Roadshow—Boston 
+Wednesday, June 15th, 2016 
+8:30am – 9:30am 
+Breakfast 
+9:30am – 12:00pm Sessions
+ 12:00pm – 1:00pm Lunch
+1:00pm – 3:30pm Sessions
+Roadshow Agenda &lt;[[http://pivotal.io/event/pivotal-cloud-native-roadshow/boston?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=pivotal-roadshow-2016-Boston]]&gt; 
+
+ Location
+Pivotal Boston &lt;[[http://pivotal.io/locations/boston]]&gt;
+145 Broadway, 3rd Floor
+Cambridge, MA 02142
+Map &amp; Directions &lt;[[https://www.google.com/maps/place/145+Broadway,+Cambridge,+MA+02142/@42.3649281,-71.0910598,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370ae56c77775:0x6f67dbaf689fcdac!8m2!3d42.3649281!4d-71.0888711]]&gt; 
+
+ Questions? 
+Contact Patrick Gillis at pgillis@pivotal.io &lt;[[mailto:pgillis@pivotal.io]]&gt;. 
+
+ We look forward to seeing you! 
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

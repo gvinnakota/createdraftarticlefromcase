@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Introducing Spring Cloud Task.Confirmation</name>
+    <style>none</style>
+    <subject>Webinar Confirmation:  Introducing Spring Cloud Task</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar Introducing Spring Cloud Task on Thursday, April 28, 2016.
+
+Please see event details below:
+
+Date: Thursday, April 28, 2016
+
+Time: 3:00PM Time (London, GMT)
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1175611/CB10786F2652640FB8056003789A08DB]]&gt;
+
+Audio Information:
+
+This webinar will be streaming live via your computer speakers.
+
+{{my.My Token:default=Save the Date}}
+
+
+
+We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

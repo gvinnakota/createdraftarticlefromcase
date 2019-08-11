@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_The Insiders Guide to Mobile Apps_Q115.Correction Email</name>
+    <style>none</style>
+    <subject>Correction: Updated Login for The Insider&apos;s Guide to Mobile Apps Webinar on 1/7</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar &quot;The Insider&apos;s Guide to Mobile Apps&quot; on Wednesday, January 7, 2015 at 10:00 AM PST. We have updated the event with corrected login information. Please re-save the .ics file or refresh your calendar hold with the new login link &lt;http://w.on24.com/r.htm?e=916159&amp;s=1&amp;k=87114DD4CABA4D534C05B46D65FB252C&gt;. Let us know if you have any questions!
+
+Date: Wednesday, January 7, 2015
+Time: 10:00AM PST (San Francisco)
+Join the Session &lt;http://w.on24.com/r.htm?e=916159&amp;s=1&amp;k=87114DD4CABA4D534C05B46D65FB252C&gt;
+ Audio Information:
+This webinar will be streaming live via audio bridge
+
+{{my.Save the Date:default=edit me}}
+ 
+We look forward to you joining us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

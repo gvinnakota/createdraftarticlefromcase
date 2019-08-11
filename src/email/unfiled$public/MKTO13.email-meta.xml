@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.7-25 Send</name>
+    <style>none</style>
+    <subject>Pivotal HD Community &amp; Pivotal HD Single Node (VM) Available for Download Today</subject>
+    <textOnly>JULY 2013
+&lt;http://blog.gopivotal.com/products/pivotal-hd-ga#sthash.hmSYbyQz.dpuf&gt;
+Pivotal HD Communication &amp; Pivotal HD Single Node (VM) Available for Download Today!
+Spring for Apache Hadoop 1.0.1 RC1 introduces support for the recently available Pivotal HD 1.0 - the world’s fastest Hadoop distribution - in 
+addition to 6 other Hadoop distributions. PHD 1.0 is now available in two versions, both free for download. The first, Pivotal HD Single Node (VM), is a complete, pre-configured single node instance of Pivotal HD and HAWQ in a single virtual machine environment packed with guides and advanced tutorials. The second, Pivotal HD Community Edition, allows users to 
+run in production with a 50 node cluster limit.   Pivotal HD + HAWQ provide a foundation for change – a platform that addresses the complexity and implementation costs of Hadoop, enhancing it with the expressive power of Structured Query Language (SQL).  Download &lt;http://www.gopivotal.com/pivotal-products/pivotal-data-fabric/pivotal-hd&gt; them today, and learn about them at SpringOne2GX 2013 &lt;https://springone2gx.com/conference/santa_clara/2013/09/register&gt;! Hurry, the early bird discount ends 8/9/2013. 
+
+Download: &lt;http://www.gopivotal.com/pivotal-products/pivotal-data-fabric/pivotal-hd&gt;
+
+
+SpringOne 2GX 2013 - Early Bird expires August 9th, register now &lt;http://www.springone2gx.com/conference/santa_clara/2013/09/register&gt; to save
+Featuring presentations delivered by development leads and published authors on Spring, Groovy/Grails, Cloud and Big Data technology, it&apos;s the ideal place to obtain critical skills to help you design, build and run tomorrow&apos;s software solutions. Plus you&apos;ll meet and learn from open source leaders who drive innovation for these technologies.
+
+
+MONTHLY SPRING TECHTIP: 
+Spring&apos;s Broad Messaging Support
+The Advanced Message Queuing Protocol (AMQP) &lt;http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol&gt; defines the client API for messaging servers (like the powerful RabbitMQ &lt;http://rabbitmq.com&gt; message broker) as a protocol (like HTTP or FTP)
+Spring&apos;s AMQP support looks and feels very much like Spring&apos;s JMS support &lt;http://static.springsource.org/spring/docs/current/spring-framework-reference/htmlsingle/#remoting-jms&gt;. Spring AMQP &lt;http://springsource.org/Spring-AMQP&gt;&apos;s AmqpTemplate reduces common messaging operations - like sending messages - to one-liners.
+@Inject 
+public void setRabbitTemplate(RabbitTemplate rt){
+ rabbitTemplate = rt;
+}
+public void sendCustomerUpdate(Customer customer) {
+ // this.exchange = &quot;customers&quot;
+ // this.routingKey = &quot;customers&quot; 
+ rabbitTemplate.convertAndSend(this.exchange, this.routingKey, customer);
+}
+Spring AMQP will attempt to convert the payload (a Customer record) to a format like JSON before sending it on the wire. The exchange is the address on the broker to which messages are sent. The routing key is used by the exchange to determine where to route the message. There are many different types of exchanges. The routing key defines how AMQP messages are to be routed inside the AMQP broker to the final consumer.
+Spring AMQP also provides a message listener container &lt;http://static.springsource.org/spring-amqp/api/org/springframework/amqp/core/MessageListener.html&gt; for receiving messages asynchronously, similar to Spring&apos;s JMS, MQTT, GemFire and Redis support. For more, check out this blog on Spring&apos;s enterprise messaging support with JMS and AMQP &lt;http://blog.springsource.org/2011/01/25/green-beans-getting-started-with-enterprise-messaging-and-spring/&gt;.
+
+MONTHLY STS TECHTIP: 
+The Spring tooling for Eclipse provides you with a nice overview of your Spring projects. Request mappings of your Spring MVC applications, for example, are visualized directly as part of the Spring Elements section in the project explorer. This helps you to keep track of the different request mappings that you have defined in your application. In addition to that you can quickly navigate from the project explorer to the source code that implements the requests - in case you would like to take a look at the details. So whenever you asked yourself what part of your code implements a certain request, take a look at your project explorer! 
+
+WEBINARS:
+
+SPRING WITH CUCUMBER FOR AUTOMATION
+Learn how Spring and Cucumber integrate to make test automation easier. Cucumber is a framework for Behavior-Driven-Development (BDD), a refinement of TDD (Test-Driven-Development). It&apos;s intent is to enable developers to write high level use cases in plain text, that can be verified by non-technical stakeholders, and turn them into executable tests, written in a language called Gherkin.
+
+Register &lt;https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=666822918&gt;
+July 30, 2013 
+3:00PM GMT Summer Time (London GMT+01:00)
+
+Register &lt;https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=665086800&gt;
+July 30, 2013 
+10:00AM PT (San Francisco, GMT-07:00)
+
+TAMING COUPLING &amp; COHESIVE BEASTS WITH MODULARITY PATTERNS AND SPRING
+If you have not heard about coupling and cohesiveness, please come out of the rock that you live under. These two and their third cousin, polymorphism, is what we as developers chase day-in and day-out. They tease us with re-usability, they prank us with promise of comprehensiveness of our code. They entice with code quality, testability and unicorn. Then came DDD, BDD and ABC. Wait, what&apos;s ABC? I don&apos;t know.
+
+Register &lt;https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=665101193&gt;
+August 29, 2013 
+3:00PM GMT Summer Time (London GMT+01:00)
+
+Register &lt;https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=661946767&gt;
+10:00AM PT (San Francisco, GMT-07:00)
+
+PIVOTAL WEBINAR SERIES: WHAT YOU CAN DO WITH HADOOP 
+This Pivotal webinar series happens on the first Thursday of every month. The first webinar on August 1st, 2013 will provide in-depth details about the features and tutorials included in the newly released &lt;http://blog.gopivotal.com/products/pivotal-hd-ga&gt; Pivotal HD Single Node (VM).
+
+Register &lt;http://play.gopivotal.com/pivotalHDLaunchWebinarsession1.html&gt;
+August 1, 2013 for the 9AM PT session
+
+Register &lt;http://play.gopivotal.com/GlobalPivotalHDLaunch2.html&gt;
+August 1, 2013 for the 7PM PT session
+
+VIDEOS:
+Resistance is not Futile: How to talk Spring and Influence People &lt;http://www.springsource.org/node/22648&gt;
+Introducing Reactor - A Framework for Asynchronous Applications on the JVM &lt;http://www.springsource.org/node/22638&gt;
+Building REST-ful Services with Spring &lt;http://www.springsource.org/node/22636&gt;
+
+FEATURED DEMO:
+Apache Tomcat 8 Preview (2012) &lt;http://archive.apachecon.com/eu2012/presentations/06-Tuesday/RN-ApacheEE/aceu-2012-tomcat-8-preview.pdf&gt;
+
+
+Spring XD 1.0 M1 &lt;http://blog.springsource.org/2013/06/12/spring-xd-1-0-milestone-1-released/&gt;
+Spring Data Arora Service Release 2 &lt;http://www.springsource.org/node/22654&gt;
+Spring for Apache Hadoop 1.0.1.RC1 &lt;http://www.springsource.org/node/22651&gt;
+Reactor 1.0.0.M1 – a foundation for asynchronous fast-data applications on the JVM &lt;http://blog.springsource.org/2013/07/18/reactor-1-0-0-m1-a-foundation-for-asynchronous-fast-data-applications-on-the-jvm/&gt;
+Spring Tool Suite and Groovy/Grails Tool Suite 3.3.0 &lt;http://www.springsource.org/node/22650&gt;
+Spring AMQP 1.2.0 for Java &lt;http://www.springsource.org/node/22652&gt;
+Spring Security Java Configuration 1.0.0.M1 &lt;http://www.springsource.org/node/22640&gt;
+Spring Security 3.2.0.M2 &lt;http://www.springsource.org/node/22639&gt;
+Spring Social 1.0.0.M3 &lt;http://www.springsource.org/spring-social/news/1.1.0.m3-released&gt;
+Apache Tomcat 7.0.42 &lt;http://markmail.org/message/b2tinohm72kqpp7q&gt;
+Spring Data Redis 1.1 M1 and 1.0.5 &lt;http://www.springsource.org/node/22642&gt;
+Spring Social Facebook 1.0.3 &lt;http://www.springsource.org/spring-social/news/spring-social-facebook-1.0.3-released&gt;
+JavaConfig support in the Spring Tool Suite &lt;http://blog.springsource.org/2013/07/18/javaconfig-support-in-the-spring-tool-suite/&gt;
+Eclipse Quick Search &lt;http://blog.springsource.org/2013/07/11/eclipse-quick-search/&gt;
+Spring Security Java Config Preview: Introduction &lt;http://blog.springsource.org/2013/07/02/spring-security-java-config-preview-introduction/&gt;
+Spring Security Java Config Preview: Method Security &lt;http://blog.springsource.org/2013/07/04/spring-security-java-config-preview-method-security/&gt;
+Spring Security Java Config Preview: Web Security &lt;http://blog.springsource.org/2013/07/03/spring-security-java-config-preview-web-security/&gt;
+Spring Security Java Config Preview: OAuth &lt;http://blog.springsource.org/2013/07/05/spring-security-java-config-preview-oauth/&gt;
+Spring Security Java Config Preview: Readability &lt;http://blog.springsource.org/2013/07/11/spring-security-java-config-preview-readability/&gt;
+How to use Spring Batch with Spring for Apache Hadoop &lt;http://blog.gopivotal.com/products/programming-with-hadoop-101-getting-started-with-spring-hadoop&gt;
+&lt;#adlink&gt;
+&lt;#&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+ Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+ Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+ Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+ Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18353&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Escalation Request by EM</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer: Escalation Request Response by EM or Manager</name>
+    <style>freeForm</style>
+    <subject>Escalation Request Response by EM or Manager Case {!Case.CaseNumber}</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+My name is &lt;EM Name&gt;, I am an Escalation Manager with Pivotal. &lt;CE Name&gt; brought this issue to my attention, based on the business impact you identified. &lt;EM instructions&gt;Try and label the frustration expressed by the customer: examples - It sounds like the progress made so far is insufficient. / It sounds like responses have not been as quick as you expected. / etc.. &lt;/EM instructions&gt;
+
+We discussed the current action plan with Support Management to make sure the actions we proposed are accurate and suitable. Please continue to work with &lt;CE Name&gt; on technical details as I will ensure the right people and resources are continuously engaged. I will also be monitoring all updates in this case. You may reach me via the contact information in my signature, should you feel your expectations are not being met.
+
+Kind regards,
+&lt;CE name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

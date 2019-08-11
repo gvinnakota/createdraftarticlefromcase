@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>Case.Products__c</field>
+    </columns>
+    <columns>
+        <field>Case.Versions__c</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <currency>EUR</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case.Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pivotal Cloud Cache,Pivotal Cloud Foundry Elastic Runtime Suite,Pivotal Application Service (formerly Elastic Runtime),Pivotal Cloud Foundry Operations Manager,Pivotal Cloud Foundry Operations Manager v2,Pivotal GemFire for Pivotal Cloud Foundry,Pivotal RabbitMQ for Pivotal Cloud Foundry,Pivotal Services Suite for Pivotal Cloud Foundry,Redis for Pivotal Cloud Foundry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.What_action_were_you_performing__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Upgrade,Downgrade</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PCF Upgrades Support cases</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CREATED_DATEONLY</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

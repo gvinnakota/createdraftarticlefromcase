@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Product2__c</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Approval_Status__c</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$PublishStatus</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Title</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All RabbitMQ articles</description>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeArticle__ka.KnowledgeArticle__kav$Product2__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Open Source RabbitMQ,Pivotal RabbitMQ,Pivotal RabbitMQ for Pivotal Cloud Foundry</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>RabbitMQ and RabbitMQ for PCF</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Articles_w_kav__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle__ka$ArchivedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

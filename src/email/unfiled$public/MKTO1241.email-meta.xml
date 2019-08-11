@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Email Reminder - Minneapolis</name>
+    <style>none</style>
+    <subject>Reminder: See you Thursday for the Pivotal Cloud Platform Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up this Thursday in Minneapolis. We look forward to seeing you! 
+
+ Please bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Pivotal Cloud Platform Workshop
+Thursday, October 2, 2014
+8:00am - 5:30pm (breakfast &amp; lunch provided)
+Workshop Agenda &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/minneapolis&gt;
+
+Sheraton Bloomington Hotel
+Fountainebleau Room, Lower Level
+5601 West 78th Street
+Minneapolis, MN 55439
+Map and Driving Directions &lt;http://www.starwoodhotels.com/sheraton/property/area/map.html?propertyID=4013&gt;
+Complimentary valet and self parking available
+
+WORKSHOP PREREQUISITES
+All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest!
+ 
+
+ - A FREE account on Pivotal Web Services - create a 60-day trial with no credit card at 
+https://run.pivotal.io
+
+
+
+
+Questions?
+Contact Paul Santos at psantos@pivotal.io  &lt;mailto:psantos@pivotal.io&gt;or via cell at 408-425-9302 &lt;tel:408-425-9302&gt;. 
+
+We look forward to seeing you!
+The Pivotal Team
+
+P.S.- Only a few spots remain! If you have a colleague interested in attending please forward on this link to workshop details &amp; registration &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/minneapolis&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

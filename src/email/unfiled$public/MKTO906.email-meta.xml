@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Event_TechTalks_Q314.Registration Confirmation</name>
+    <style>none</style>
+    <subject>Registration Confirmation - Tech Talks at Pivotal Labs HQ - July 30, 6 p.m.</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+ 
+
+Thank you for registering for the upcoming Tech Talk at Pivotal Labs HQ on July 30 from 6 p.m. - 8 p.m. PDT.
+
+ 
+
+Event details are below. 
+
+ 
+
+Topic: Grow, Don&apos;t Break: How to Scale a Software Team
+
+Date: Wednesday, July 30, 2014
+
+Time: 6 p.m. - 8 p.m. PDT
+
+Location: Pivotal Labs, 875 Howard Street, San Francisco, CA
+
+ 
+
+If you have any questions prior to the session, please reply to this email.
+
+ 
+
+Regards,
+
+The Pivotal Labs team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

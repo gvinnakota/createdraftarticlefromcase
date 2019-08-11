@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2018.SG Attended</name>
+    <style>none</style>
+    <subject>Thanks for attending SpringOne Tour 2018 in Singapore</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+It was a great privilege to host you at our Inaugural SpringOne Tour Singapore 2018, which was held at Grand Hyatt Singapore on 12 November 2018.
+
+We would like to thank you for taking time out of your busy schedule to attend the SpringOne Tour. Your support is what makes this event a successful one!
+
+We hope that you found the content engaging, insightful and thought-provoking, and the opportunity to connect with peers in the industry.
+
+Key Highlights:
+- Attendees: Our attendees include Developers, Architects, Software Engineers and CTOs who gathered to exchange ideas and network.
+- Sponsors: Our distinguished sponsors Dynatrace, Solace, JP Morgan and Synopsys showcase their latest product knowledge and upcoming trends about the industry.
+- Speakers: 8 established speakers from Pivotal shared about topics relevant to Spring. The event kick started with a presentation on &apos;Reactive Spring with Spring Boot 2.0&apos; and culminated with a keynote on &apos;Using Spinnaker to Create a Development Workflow on Kubernetes&apos;.
+- Download presentation slides here &lt;[[https://www.ekkko.com/smart/hello/Load?EventID=k580qhhw&amp;Pg=presentation]]&gt;
+- Photos &lt;[[https://www.ekkko.com/smart/hello/Load?EventID=k580qhhw&amp;Pg=photos]]&gt;: Our attendees had the opportunity to visit booth showcases, snap a photo at our photo-wall &amp; connect with peers at our cocktail after-party.
+
+Email us at jchew@pivotal.io &lt;[[mailto:jchew@pivotal.io]]&gt; if you have any feedback or enquiries.
+
+We look forward to seeing you at our next event!
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

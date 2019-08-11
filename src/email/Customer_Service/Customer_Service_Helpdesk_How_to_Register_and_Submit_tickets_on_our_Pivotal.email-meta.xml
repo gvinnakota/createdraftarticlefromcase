@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Register and Submit tickets on our Pivotal Portal</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Support:Helpdesk:How to Register and Submit tickets on Pivotal Portal</name>
+    <style>freeForm</style>
+    <subject>How to Register for Support on Portal</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+I am following up on your recent email requesting assistance to share the following information to help expedite any future requests.
+
+Pivotal&apos;s support community provides the fastest result for known issues. Search here for articles and discussions: https://community.pivotal.io
+
+Subscribers may also submit a case online. This is generally faster than requesting via email or phone. Please follow these instructions to register and open a case: https://content.pivotal.io/support/pivotal-support-for-subscribers
+
+Please feel free to email support@pivotal.io if you have any questions during the registration process.
+
+Kind regards,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Case Update</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer:Update on Case</name>
+    <style>freeForm</style>
+    <subject>Update on Case {!Case.CaseNumber}</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I’m pleased to report we are making progress on your Pivotal Support case {!Case.CaseNumber}. Below are current status and next steps:
+
+&lt;ce-instructions&gt;CE to add a message to the customer here. The following are some suggestions in order of what should be in this message to the customer:
+
+- Brief message outlining the progress you’re making
+- If necessary, request further information from the customer
+- If necessary, request log files from the customer
+- Ask any other questions you need the customer to answer
+&lt;/ce-instructions&gt;
+
+### NEXT STEPS:
+- What are the next steps to be added here
+- When is the next update due/expected
+
+
+### EVIDENCE FROM LOGFILE INVESTIGATION:
+- Any important log information for the case to be added here
+
+Feel free to reply to this message if I may further clarify any of the above information or you wish to discuss, directly.
+
+
+Kind regards,
+
+&lt;CE name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

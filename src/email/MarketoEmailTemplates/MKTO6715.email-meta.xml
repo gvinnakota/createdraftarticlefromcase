@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_London_MeetUps_Q418.Confirmation Nov22</name>
+    <style>none</style>
+    <subject>You&apos;re confirmed for the Meetup!</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+
+Thank you for registering for the  Securing Microservices with Spring and PCF Meetup on Thursday, November 22 at Pivotal London &lt;[[https://pivotal.io/locations/london]]&gt;.
+
+We look forward to seeing you there.
+
+Should you have any questions or would like more information about this event, please email at preay@pivotal.io &lt;[[mailto:preay@pivotal.io]]&gt;. 
+
+Sincerely,
+
+The Pivotal Team
+Event Details &lt;[[https://connect.pivotal.io/London_meetup_Nov22.html]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

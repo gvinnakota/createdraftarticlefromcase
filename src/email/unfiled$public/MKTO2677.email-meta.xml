@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_5 Steps for Push Based Apps_Q315.Confirmation</name>
+    <style>none</style>
+    <subject>You are Confirmed: 5 Steps to Developing Push-based Apps in the Age of Connected Devices</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming 5 Steps to Developing Push-based Apps in the Age of Connected Devices on Thursday, July 23, 2015. Please see event details below:
+
+Date: Thursday, July 23, 2015
+Time: 10:00AM PDT/5:00PM GMT
+
+Join the Session &lt;http://event.on24.com/wcc/r/1017712/3AB63181FBAF0B1AF4AFE9393DAB928A&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date:default=edit me}}
+We look forward to you joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

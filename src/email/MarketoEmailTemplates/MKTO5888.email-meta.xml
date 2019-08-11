@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter (Pre-2018).Newsletter November 2013</name>
+    <style>none</style>
+    <subject>Reactor Debuts Framework for Reactive, FastData Applications on the JVM</subject>
+    <textOnly>NOVEMBER 2013
+&lt;#featureLink&gt;
+Reactor Debuts Framework for Reactive, FastData Applications on the JVM
+Reactor is a succinct and powerful foundational library for building reactive, fastdata applications on the JVM. Although it is part of the Spring IO platform, the core Reactor libraries have no dependency on Spring.  Above the core library, there&apos;s direct support for the Disruptor via the high-speed Processor abstraction which provides a Reactor API over the RingBuffer, first-class support for the high-performance JavaChronicle persistent message-passing library through the flexible PersistentQueue abstraction, first-class support for Groovy closures and @CompileStatic, high-performance TCP client and server support based on Netty 4.0, powerful annotation-based Spring support, and much more.
+Learn More &lt;https://spring.io/blog/2013/11/12/it-can-t-just-be-big-data-it-has-to-be-fast-data-reactor-1-0-goes-ga&gt;
+Turnkey Reactor Support in Spring with @EnableReactor
+Since creating the initial Environment is a standard part of using Reactor in any application, reactor-spring provides a JavaConfig-centric annotation that you put on your @Configuration bean to implicitly create an Environment based on the default properties file bootstrapping mechanism. You don’t have to create an Environment bean explicitly if you use @EnableReactor. 
+
+Using the @EnableReactor processes beans that have methods annotated with the @Selector annotation. Here’s an example POJO definition that uses annotations to consume events published via Reactor.  
+@Component 
+public class HandlerBean { 
+
+
+ @Selector(value=&quot;test.topic&quot;, reactor=&quot;@rootReactor&quot;) 
+ public void handleTestTopic(Event&lt;String&gt; evt) { 
+ // handle the event
+ }
+}
+
+@Configuration
+@EnableReactor
+@ComponentScan
+public class ReactorConfig {
+
+
+ @Bean
+ public Reactor rootReactor(Environment env) {
+ // implicit Environment is injected into bean def method
+ return Reactors.reactor().env(env).get();
+
+ }
+}
+Content-assist for Spring annotations
+Using the @Autowired annotation to get dependencies injected into your beans is a widely used technique. The Spring Tool Suite provides improved support for this annotation and allows you to easily navigate from such a @Autowired annotation to the bean definitions that gets injected there. This can be used by the famous hyperlink navigation. Just hover over the parameter definition of an @Autowired-annotated method or the @Autowired-annotated field definition while keeping the CTRL key pressed and you will get an option to directly jump to the autowired bean definition.
+Reactor
+Reactor is a succinct and powerful foundational library for building reactive, fastdata applications on the JVM. Although it is part of the Spring IO platform, the core Reactor libraries have no dependency on Spring.  Above the core library, there&apos;s direct support for the Disruptor via the high-speed Processor abstraction which provides a Reactor API over the RingBuffer, first-class support for the high-performance JavaChronicle persistent message-passing library through the flexible PersistentQueue abstraction, first-class support for Groovy closures and @CompileStatic, high-performance TCP client and server support based on Netty 4.0, powerful annotation-based Spring support, and much more.
+
+Join Jon Brisbin at the event to get introduced to the first major GA release of Reactor, and learn how Reactor&apos;s Promise and Stream APIs are used to wrangle the inherent complexity of asynchronous, event-driven application code.
+Europe
+
+Tuesday, December 3
+ 3:00PM GMT Time
+ (London GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_Reactor7AM_Register.html&gt;
+North America
+
+Tuesday, December 3
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_Reactor10AM_Register.html&gt;
+Spring with Immutability
+Readers of Josh Bloch&apos;s &quot;Effective Java&quot; are sometimes perplexed when they reach Item #15: &quot;Minimize Mutability.&quot; If we are to minimize mutability, then obviously we must maximize immutability. While all Java programmers utilize immutable objects every day (e.g. java.lang.String), when asked to create our own immutable classes, we often hesitate. However, if we push through this hesitation, we&apos;ll reap the benefits of simpler reasoning about program correctness, free thread safety, and other benefits.
+ 
+ One of the primary issues faced by enterprise 
+Java programmers seeking to utilize immutable classes are framework issues. Enterprise frameworks from Spring to Hibernate have varying levels of support for immutability, ranging from decent to nonexistent. However, there several practical solutions available to the Spring developer, and this session will illuminate what&apos;s available.
+
+ 
+More Upcoming Events
+
+Chicago, IL Java User Group with Michael Minella on Thursday, December 5, 5:30pm. Topic: What&apos;s New in Spring! Register today! &lt;http://www.meetup.com/ChicagoJUG/events/143980242&gt; 
+
+Glendale, CA Meetup with Josh Long on Wednesday, December 11, 6:30pm. Topic: What&apos;s New in Spring! Register today! &lt;http://bit.ly/POSH0006&gt;  
+Videos:
+
+Modern Component Design with Spring &lt;http://spring.io/blog/2013/10/29/webinar-replay-modern-component-design-with-spring&gt;
+Building WebSocket Browser Applications with Spring &lt;http://spring.io/blog/2013/10/23/webinar-replay-building-websocket-browser-applications-with-spring&gt;
+What can you do with Hadoop: Building big Data Applications with Hadoop &amp; Spring &lt;http://spring.io/blog/2013/10/29/webinar-replay-what-you-can-do-with-hadoop-building-big-data-applications-with-hadoop-spring&gt;
+JavaOne 2013: The Spring Update &lt;http://www.parleys.com/share_channel.html#play/525070b1e4b0a43ac121241a&gt;
+SpringOne 2GX 2013 Replay: 
+Spring and Web Content Management
+Bringing Spring Apps to the Web at the US Navy &lt;http://spring.io/blog/2013/10/29/webinar-replay-bringing-spring-apps-to-the-web-at-the-us-navy&gt;
+SpringOne 2GX 2013 Replay: Inside Cloud Foundry an Architectural Review
+SpringOne 2GX 2013 Replay: Troubleshooting Live Java Web Applications &lt;https://spring.io/blog/2013/11/13/springone2gx-2013-replay-troubleshooting-live-java-web-applications&gt;
+ 
+Featured Demo:
+
+SpringOne 2GX 2013 Day 2 Keynote: Grails 2.3, Spring XD, Integration, Batch &lt;http://spring.io/blog/2013/10/23/springone2gx-2013-day-2-keynote&gt;
+Europe
+
+Tuesday, December 10
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringwithImmutability7AM_Register.html&gt;
+North America
+
+Tuesday, December 10
+ 10:00AM PST
+ (San Francisco GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringwithImmutability10AM_Register.html&gt;
+&lt;https://spring.io/blog/2013/11/12/it-can-t-just-be-big-data-it-has-to-be-fast-data-reactor-1-0-goes-ga&gt;
+Video Title Goes Here
+Video description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet urna velit. Donec luctus malesuada diam, vitae condimentum metus pretium id. Vestibulum molestie, turpis facilisis scelerisque molestie.
+Watch Video &lt;&gt;
+Archived videos
+
+Etiam porta sem malesuada magna mollis euismod &lt;#link&gt;
+
+Integer posuere erat a ante venenatis aliquet &lt;#link&gt;
+
+Nulla vitae elit libero, a pharetra augue &lt;#link&gt;
+
+Donec id elit non mi porta gravida at eget metus &lt;#link&gt;
+
+Cras mattis consectetur purus sit amet fermentum &lt;#link&gt;
+
+Vestibulum id ligula porta felis euismod semper &lt;#link&gt;
+
+Vivamus sagittis lacus vel augue laoreet &lt;#link&gt;
+
+Aenean lacinia bibendum nulla sed consectetur &lt;#link&gt;
+
+Donec id elit non mi porta gravida &lt;#link&gt;
+
+Cras mattis consectetur purus &lt;#link&gt;
+
+Aenean eu leo quam. &lt;#link&gt;
+Spring Boot 0.5.0M6 &lt;https://spring.io/blog/2013/11/10/spring-boot-0-5-0-m6-released&gt;
+ Spring Framework 4.0 RC1 &lt;http://spring.io/blog/2013/11/01/spring-framework-4-0-rc1-available&gt;
+ Spring Framework 3.2.5 &lt;http://spring.io/blog/2013/11/07/spring-framework-3-2-5-released&gt;
+ Spring XD 1.0.0.M4 &lt;https://spring.io/blog/2013/11/14/spring-xd-1-0-0-m4-released&gt;
+ Spring for Apache Hadoop 1.0.2 GA and 2.0 M2 &lt;https://spring.io/blog/2013/11/14/spring-for-apache-hadoop-1-0-2-ga-and-2-0-m2-released&gt;
+ Spring Security 3.2.0.RC2 &lt;http://spring.io/blog/2013/11/01/spring-security-3-2-0-rc2-released&gt;
+ Spring LDAP 2.0.0.M1 &lt;http://spring.io/blog/2013/11/01/spring-ldap-2-0-0-m1-released&gt;
+ Spring Data Release Train Babbage 
+SR1
+ Reactor 1.0 GA &lt;https://spring.io/blog/2013/11/12/it-can-t-just-be-big-data-it-has-to-be-fast-data-reactor-1-0-goes-ga&quot;&gt;&lt;span style=&gt;
+Spring.IO Site &lt;http://spring.io/blog/2013/10/23/the-spring-io-site&gt;
+ &lt;http://spring.io/blog/2013/10/30/empowering-your-apps-with-spring-boot-s-property-support&quot;&gt;Empowering your apps with Spring Boot&gt;
+ Spring XD - Getting Started Guide &lt;https://spring.io/guides/gs/spring-xd/&gt;
+ Exception Handling in Spring MVC &lt;http://spring.io/blog/2013/11/01/exception-handling-in-spring-mvc&gt;
+ Spring Documentation is moving to Asciidoc! &lt;https://github.com/spring-projects/spring-framework/commit/fd0b6caf&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+ Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+ Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+ Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+ Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

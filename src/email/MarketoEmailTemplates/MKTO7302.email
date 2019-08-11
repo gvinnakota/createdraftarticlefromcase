@@ -1,0 +1,417 @@
+<html>
+<head>
+<style>body{margin:0;}a{font-weight: 600;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;color:#70ac50;text-decoration: none;}</style> 
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" bgcolor="#ededee" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td height="40"></td> 
+</tr> 
+<tr> 
+<td> 
+<table width="100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<td width="160"></td> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-spring-279.png" style="max-width:279px" alt="Spring by Pivotal"> </td> 
+<td width="160"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="40"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" align="center" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td style="background: white;"></td> 
+<td height="25" style="background: white;"></td> 
+<td style="background: white;"></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td align="center"> 
+<div class="mktEditable" id="title">
+<p style="margin: 0; color: #262626; font-size: 44px; font-family: Helvetica, Arial, sans-serif;">This&nbsp;Month in Spring</p>
+</div> </td> 
+<td></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td height="30"></td> 
+<td></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td valign="top" align="center" style="text-transform: uppercase;font-size:14px;color:#adadad;font-family: Helvetica, Arial, sans-serif;letter-spacing: 0.1em;"> 
+<div class="mktEditable" id="date">
+<p style="margin: 0;">April 2019</p>
+</div> </td> 
+<td></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td height="30"></td> 
+<td></td> 
+</tr> 
+<tr> 
+<td width="20"></td> 
+<td style="line-height:1.5em; color: #000000; font-size: 15px;font-family:Helvetica, Arial, sans-serif;font-weight:300;"> 
+<div class="mktEditable" id="content-intro">
+<p>Hi, Spring fans! Welcome to another installment of <em>This Month in Spring</em>!</p> 
+<p>What a month it's been since we last talked! I've been to, among other places, Tel Aviv, Vienna, Amsterdam, Seattle, Montreal, and London. This week I'm in New York City for the Kafka Summit, where I'll be joining the <a href="https://twitter.com/tlberglund" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">legendary Tim Berglund</a>, Head of Developer Experience at Confluent, and <a href="https://twitter.com/WattersJames" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">James Watters</a>, SVP at Pivotal, to talk about why Pivotal (and Spring and Cloud Foundry) and Confluent (and Kafka and Kafka Streams) are better together. Then it's off to South Africa for the SpringOne Tour installments; Mauritius; Hangzhou, China; and then back to Los Angeles, among other places.</p> 
+<p>A particularly special note: Spring Framework was released on March 25, 2004! Happy 15th birthday, Spring!</p> 
+<table width="100%"> 
+<tbody> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+<tr></tr> 
+<tr> 
+<td> <p style="font-size: 14px; text-align: center;"><span style="color: #ffffff;"><strong><a href="https://content.pivotal.io/cloud-native-josh-long/this-month-in-spring-march-2019?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" style="padding: 10px 20px; text-decoration: none; background: #70ac50; border-radius: 5px; color: #ffffff;" target="_blank"><span color="#000000" face="Helvetica, 
+Arial, sans-serif" style="font-family: Helvetica, Arial, sans-serif;">The Long and short of it</span></a></strong></span></p> </td> 
+</tr> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+<tr></tr> 
+</tbody> 
+</table>
+</div> </td> 
+<td width="20"></td> 
+</tr> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" align="center" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody>
+<tr> 
+<td> 
+<div class="mktEditable" id="image">
+<p><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/tour-bus-image-CapeTown.jpg" width="600" height="203" constrain="true" imagepreview="false"></p>
+</div> </td> 
+</tr> 
+</tbody>
+</table> 
+<table width="600" cellpadding="0" align="center" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody>
+<tr> 
+<td> 
+<div class="mktEditable" id="content"> 
+<table> 
+<tbody> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td width="230px" valign="top" class="column"> <p style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">S1T&nbsp;Visits</p> <p style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">South Africa</p> <p style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">and Europe</p> </td> 
+<td class="column" valign="top" style="line-height: 1.5em; color: #000000; font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: 300;"> <p style="margin: 10px 0;">In early April, the SpringOne Tour will make stops in Johannesburg and Cape Town before heading to Istanbul and Paris in late April and May. Visit our <a href="https://springonetour.io/?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">tour page</a> for more information on upcoming stops.<br></p> 
+<table> 
+<tbody> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-size: 14px; text-align: center;"><a href="https://springonetour.io/?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" style="padding: 10px 20px; text-decoration: none; color: white; background: #70ac50; border-radius: 5px;" target="_blank">Get on board</a></p> </td> 
+</tr> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+<td></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="100%" style="border-collapse: collapse; background: white;"> 
+<tbody> 
+<tr> 
+<td height="30px" style="border-bottom: 2px solid #7ab25c;"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table> 
+<tbody> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td width="230px" valign="top" class="column"> 
+<div style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">
+Spring
+</div> 
+<div style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">
+Training
+</div> 
+<div style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">
+and
+</div> 
+<div style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;">
+Certification
+</div> </td> 
+<td class="column" valign="top" style="line-height: 1.5em; color: #000000; font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: 300;"> <p style="margin: 10px 0;">The Spring Professional Certification Exam is designed to test and validate your understanding of and familiarity with Spring. With Core Spring, Spring Boot and Spring Cloud training and certification, you can maximize your individual software proficiency or train your whole team in a modern approach!</p> 
+<table> 
+<tbody> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-size: 14px; text-align: center;"><a href="https://spring.io/services?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" style="padding: 10px 20px; text-decoration: none; color: white; background: #70ac50; border-radius: 5px;" target="_blank">Sign me up!</a></p> </td> 
+</tr> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+<td></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="100%" style="border-collapse: collapse; background: white;"> 
+<tbody> 
+<tr> 
+<td height="30px" style="border-bottom: 2px solid #7ab25c;"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table> 
+<tbody> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td></td> 
+<td width="230px" valign="top" class="column"> <p style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;"><span style="color: #262626; font-family: Helvetica, Arial, sans-serif; font-size: 33px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: 
+none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Links Spring</span></p> <p style="margin: 10px 0; color: #262626; font-size: 33px; line-height: 1.3em; font-family: Helvetica, Arial, sans-serif;"><span style="color: #262626; font-family: Helvetica, Arial, sans-serif; font-size: 33px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: 
+none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Eternal</span></p> </td> 
+<td class="column" valign="top" style="line-height: 1.5em; color: #000000; font-size: 15px; font-family: Helvetica, Arial, sans-serif; font-weight: 300;"> 
+<div>
+<strong>Upcoming Webinars</strong>
+</div> 
+<div>
+Thursday, April 11
+</div> 
+<div>
+<a href="https://content.pivotal.io/webinars/apr-11-6-things-you-need-to-know-to-safely-run-kubernetes-webinar?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=6-thing-kubernetes&amp;utm_term=q119" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">6 Things You Need to Know to Safely Run Kubernetes</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+Thursday, April 18
+</div> 
+<div>
+<a href="https://content.pivotal.io/webinars/apr-18-a-spring-developer-s-guide-to-the-pivotal-cloud-foundry-galaxy-webinar?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">A Spring Developer's Guide to the Pivotal Cloud Foundry Galaxy</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+Wednesday, April 24
+</div> 
+<div>
+<a href="https://content.pivotal.io/webinars/apr-24-how-pivotal-training-and-certification-can-make-a-difference-for-you-webinar?utm_campaign=train-cert-make-a-diff-q219&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">How Pivotal Training and Certification Can Make a Difference for You</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+<strong>Events</strong>
+</div> 
+<div> 
+<div>
+<strong><span style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: 
+#ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">May</span></strong>
+<strong><span style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 
+0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">16–17&nbsp;</span></strong>
+</div> 
+</div> 
+<div>
+<a href="https://2019.springio.net/" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">Spring I/O</a>&nbsp;in Barcelona. 
+<a href="https://reg.springio.net/event/sio2019/" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">Register today</a> and use code 
+<em>PVTL_10</em> to get 10% off your pass.
+</div> 
+<div>
+<br>
+</div> 
+<div>
+<strong>Product News</strong>
+</div> 
+<div>
+<a href="https://spring.io/blog/2019/03/29/spring-tools-4-2-0-released?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">Spring Tools 4.2.0 released</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+<a href="https://spring.io/blog/2019/03/22/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-m4-released?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">Spring Boot for Apache Geode and Pivotal GemFire 1.0.0.M4 released</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+<strong>Podcasts</strong>
+</div> 
+<div>
+<a href="https://spring.io/blog/2019/03/29/josh-mckenty-better-josh-on-data-sovereignty-microservices-cloud-foundry-python-the-cloud-pivotal-and-more?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">A Bootiful Podcast: Josh McKenty on data sovereignty, microservices, Cloud Foundry, Python, the cloud, Pivotal, and more</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+<a href="https://spring.io/blog/2019/03/15/a-bootiful-podcast-spring-security-engineer-and-oauth-slayer-joe-grandja?utm_campaign=newsletter-spring-april-q119&amp;utm_source=newsletter-email&amp;utm_medium=email" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">A Bootiful Podcast: Spring Security engineer and OAuth slayer Joe Grandja</a>
+</div> 
+<div>
+<br>
+</div> 
+<div>
+Visit our blog for even more Spring and Spring-adjacent 
+<a href="https://www.youtube.com/watch?v=y5CRiS8bRTw" target="_blank" style="color: #70ac50; text-decoration: none; font-weight: 600;">content</a>.
+</div> 
+<div>
+<br>
+</div> 
+<table> 
+<tbody> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-size: 14px; text-align: center;"><a href="https://spring.io/?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-march-2019" style="padding: 10px 20px; text-decoration: none; color: white; background: #70ac50; border-radius: 5px;" target="_blank">I want to go to there</a></p> </td> 
+</tr> 
+<tr> 
+<td height="10"></td> 
+</tr> 
+</tbody> 
+</table> <br></td> 
+<td></td> 
+</tr> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td width="20px"></td> 
+<td height="10px"></td> 
+<td></td> 
+<td></td> 
+<td width="20px"></td> 
+</tr> 
+</tbody> 
+</table> 
+</div> </td> 
+</tr> 
+</tbody>
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td height="40"></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<td width="46"></td> 
+<td style="display: inline-block;"> <a href="https://twitter.com/pivotal" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-twitter-gray-30.png" alt="Follow us on Twitter" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="http://www.linkedin.com/company/3048967" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-linkedin-gray-30.png" alt="Join the conversation on LinkedIn" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="https://www.facebook.com/pivotalsoftware" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-facebook-18.png" alt="Like us on Facebook" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="https://plus.google.com/105320112436428794490/posts" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-gplus-40.png" alt="Add us on Google+" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="http://www.youtube.com/gopivotal" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-youtube-38.png" alt="Visit our YouTube channel" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="https://medium.com/built-to-adapt" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/medium-logo-sm.png" alt="Visit us on Medium" border="0"> </a> </td> 
+<td width="46"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of social links // --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top">
+<!-- Start of footer --> 
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#999999; font-size:12px; line-height:18px;"> <p style="margin:0">&nbsp;</p> <p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0;font-family:Arial,sans-serif"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p> </td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:11px; line-height:1.5em;font-family: Helvetica, Arial, sans-serif;">Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.<br> © 2019 Pivotal Software, Inc. All rights reserved. 875 Howard Street, Fifth Floor, San Francisco, CA 94103. Published in the USA. <a href="https://pivotal.io/unsubscribe" style="color:#059a91; text-decoration:none;">Unsubscribe</a>. <a href="https://pivotal.io/subscription-management" style="color:#059a91; text-decoration:none;">Manage your subscription preferences</a>.</td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of footer // --> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+</body>
+</html>

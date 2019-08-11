@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Website_Registration.Registration Confirmation</name>
+    <style>none</style>
+    <subject>Welcome to Pivotal Web Services</subject>
+    <textOnly>WELCOME TO PIVOTAL WEB SERVICES
+Welcome to the future of agile development! You can rapidly update and scale across multiple environments and let Pivotal Web Services maintain your app’s health in production. Your 60-day free trial starts NOW.
+Start (http://docs.run.pivotal.io/starting/) by pushing your first app
+
+
+
+ - 
+Install the CF CLI (https://console.run.pivotal.io/tools)
+
+ - 
+Run the following commands:
+
+cf login -a api.run.pivotal.io
+git clone https://github.com/cloudfoundry-samples/spring-music
+cd spring-music/ ; ./gradlew assemble // use ./gradlew.bat on Windows
+cf push 
+
+
+
+See real-time log events (http://docs.run.pivotal.io/devguide/deploy-apps/streaming-logs.html):
+
+
+cf apps // see your application’s name and URL 
+cf logs spring-music
+
+
+
+Scale out:
+
+
+cf scale spring-music -i 2
+cf app spring-music // verify two instances started 
+
+
+
+Add a database service (http://docs.run.pivotal.io/devguide/services/adding-a-service.html):
+
+
+cf create-service cleardb spark spring-music-db
+cf bind-service spring-music spring-music-db
+cf push spring-music
+LOG IN NOW (https://console.run.pivotal.io)
+Questions? Email support@run.pivotal.io or post a question in our developer forums http://support.run.pivotal.io/.
+
+cf push,
+
+The Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

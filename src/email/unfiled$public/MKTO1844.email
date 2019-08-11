@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><img style="display: block;" title="GPDB Quarterly Newsletter" src="http://play.gopivotal.com/rs/pivotal/images/GPDBQuarterly.png" alt="GPDB Quarterly Newsletter" /></p></div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="margin: 0;"><strong style="font-size: 24px; line-height: 30px;">IN THIS ISSUE:</strong><br /> <br /> <strong>Data Science and Analytics News:</strong></p>
+<ol>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="#article-A">Morgan Stanley Recognizes Pivotal Software with &ldquo;CTO Award for Innovation&rdquo; for Greenplum Database</a></li>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="#article-B">Using GPDB for Graph Analysis on Billions of Records for Customer Segmentation</a></li>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="#article-C">New Tricks for Old Data Scientists</a></li>
+</ol>
+<p style="margin: 0;"><strong>Pivotal Greenplum DB Product News:</strong></p>
+<ol>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="#article-D">New Pivotal Query Optimizer Shows 5X Speed Improvement</a></li>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="#article-F">Open SSL Security Fixes</a></li>
+</ol> 
+<hr style="border: 0; color: #ccc; background: #CCC; height: 1px;" size="1" />
+<p><br /> <br /> <strong style="font-size: 24px; line-height: 30px;">DATA SCIENCE AND ANALYTICS NEWS</strong> <br /><br /></p>
+<p style="margin: 0;"><a name="article-A"></a> <strong style="font-size: 18px;">Morgan Stanley Recognizes Pivotal Software with &ldquo;CTO Award for Innovation&rdquo; for Greenplum Database</strong> <br /> <br /> At Morgan  Stanley&rsquo;s annual CTO Summit event in early June, <a style="color: 
+#3ea7bc; text-decoration: none;" href="http://blog.gopivotal.com/pivotal/news-2/pivotal-receives-morgan-stanleys-exclusive-cto-award-for-innovation-for-2014">Pivotal CEO Paul Maritz accepted their prestigious  &ldquo;CTO Award  for Innovation&rdquo;.</a><br /> <br /> Each year, Morgan Stanley    
+awards its &lsquo;CTO Award for Innovation&rsquo; honoring a technology solution that has been deemed innovative and has made a significant impact on Morgan Stanley&rsquo;s business.<br /> <br /> In this case, the  award recognizes  the role that Pivotal Greenplum plays within the Morgan    
+Stanley&rsquo;s next generation Big Data platforms for financial reporting and risk management, allowing massive scale while lowering the firm&rsquo;s total cost of ownership.
+    	<br /> <br /></p>
+<hr style="border: 0; color: #ccc; background: #CCC; height: 1px;" size="1" />
+<p><br /> <br /> <a name="article-B"></a> <strong style="font-size: 18px;">Using GPDB for Graph Analysis  of Billions of Records for Customer Segmentation</strong> <br /> <br /> Pivotal customers routinely ask our data scientists and data engineers from Pivotal Data Labs to help them build models  
+  on large volumes of unexamined or under-examined datasets.<br /> <br /> Typical challenges our customers  need to overcome include:</p>
+<ul>
+<li>Data stores housed in different silos, making it impossible to integrate them.
+ </li>
+<li>A very high scale that makes it infeasible for customers to examine them with their current technologies.</li>
+<li>Data-driven approaches not yet part of the customer&rsquo;s culture.</li>
+</ul>
+<p>PDL works with customers to solve challenges such as these in a range of applications from <a style="color: #3ea7bc; text-decoration: none;" href="http://blog.gopivotal.com/pivotal/case-studies-2/data-science-labs-using-predictive-models-to-improve-vaccine-quality-and-production">healthcare</a> 
+to <a style="color: #3ea7bc; text-decoration: none;" href="http://blog.gopivotal.com/pivotal/features/creating-the-digital-brain">smart   systems</a> to <a style="color: #3ea7bc; text-decoration: none;" 
+href="http://blog.gopivotal.com/pivotal/products/a-data-science-approach-to-detecting-insider-security-threats">security</a>.<br /> <br /> One common challenge facing companies in consumer-facing industries is linking data about   customers across their different customer interaction systems.
+      This problem typically occurs where consumers contact companies using a variety of modalities, such as through the website and call center.
+      Linking the same individual across these systems proves valuable for providing a consistent, continuous experience for the customer, and tracking their behavior to perform accurate customer segmentation.<br /> <br /> For one client, PDL approached this problem by <a style="color: #3ea7bc; 
+text-decoration: none;" href="http://blog.gopivotal.com/pivotal/products/graph-analytics-for-identity-resolution-transforming-billions-of-customer-records-in-one-minute">ingesting and processing billions of records</a> using the Pivotal Greenplum Database.
+      The team joined siloed data sources from disparate lines of business using a graph-based approach.
+      GPDB&rsquo;s massively parallel processing query optimization engine enabling PDL to perform the distributed computations within the database engine so that sensitive personally identifiable information would remain secure.
+      As a result, the client can now create up-to-date target marketing lists using their customer segmentation data model for target marketing in about one minute&hellip;(<a style="color: #3ea7bc; text-decoration: none;" 
+href="http://blog.gopivotal.com/pivotal/products/graph-analytics-for-identity-resolution-transforming-billions-of-customer-records-in-one-minute">Read more</a>).<br /> <br /> See more articles about <a style="color: #3ea7bc; text-decoration: none;" 
+href="http://blog.gopivotal.com/tag/greenplum-database">using GPDB in analytics and data science</a>.
+    	<br /> <br /></p>
+<hr style="border: 0; color: #ccc; background: #CCC; height: 1px;" size="1" />
+<p><br /> <br /> <a name="article-C"></a> <strong style="font-size: 18px;">New Tricks for Old Data Scientists</strong> <br /> <br /> Introducing new technology is rarely a trivial task, especially when you are working with  experienced  technologists such as data scientists.
+      Resistance to change often becomes higher when a company employs lots of statisticians.
+      Analysts fall in love with their tools and become accustomed to their tools&rsquo; limitations.
+      Sometimes tools and techniques have been in place so long that a data science department doesn&rsquo;t know what&rsquo;s possible with latest technologies and state of the art practices.<br /> <br /> Helping these kinds of customers achieve new breakthroughs is where Pivotal Data Labs (PDL)  
+    excels.
+      Typical initial engagements with clients of PDL include:</p>
+<ul>
+<li>Creating custom analytics roadmaps</li>
+<li>Creating &ldquo;art of possible&rdquo; show cases with clients&rsquo; data and latest technologies</li>
+<li>Training and coaching clients on latest techniques while solving clients&rsquo; actual problems.</li>
+</ul>
+<p style="margin: 0;">Take the example of one recent client of PDL customer, a major healthcare provider with a large research division.
+      This client is renown as a trailblazer in preventive healthcare and employs many accomplished clinicians and biostatisticians.
+      Yet this enormously talented team was limited by their use of dated analytics tools and practices.<br /> <br /> <img title="F1 Quarterly" src="http://play.gopivotal.com/rs/pivotal/images/F1revisedGPDBQuarterly.png" alt="F1 Quarterly" /><br /> <br /> <em style="font-size: 
+11px;"><strong>Figure      1.</strong> Example journey of a health care provider to improving their data science competency.</em><br /> <br /> The client invited PDL to show them what was possible with their data in a 24-hour engagement.
+      The team from PDL showed them how better technology would speed up discoveries by building three new models and two custom data applications in 24 hours.
+      Next the client challenged the PDL team to improve the quality of one of the client&rsquo;s models they had in production.
+      In 3 weeks the Pivotal team generated hundreds of features from structured and semi-structured data sources and built an ensemble model that doubled the accuracy of their baseline model.
+      In subsequent engagements PDL helped the client:</p>
+<ol>
+<li>Create effective visualizations and user experiences to make data and insights accessible to clinicians</li>
+<li>Showed how data science could impact other areas of the business</li>
+<li>Train in house data scientists in latest best practices and showed how to improve model accuracy for even their well-understood problems.</li>
+</ol>
+<p style="margin: 0;">If you would like to see what new breakthroughs your analysts and data scientists could achieve, <a style="color: #3ea7bc; text-decoration: none;" href="https://www.gopivotal.com/agile/pivotal-data-labs">contact Pivotal Data Labs</a> for discovery workshop to discover      
+&ldquo;art of the possible&rdquo; with your data!<br /> <br /> See more articles featuring <a style="color: #3ea7bc; text-decoration: none;" href="http://blog.gopivotal.com/tag/data-science">the work of Pivotal Data Labs</a>!</p>
+<p>&nbsp;</p>
+<hr style="border: 0; color: #ccc; background: #CCC; height: 1px;" size="1" />
+<p><br /> <br /> <strong style="font-size: 24px; line-height: 30px;">PRODUCT NEWS</strong> <br /> <br /></p>
+<p style="margin: 0;"><a name="article-D"></a> <strong style="font-size: 18px;">New Pivotal Query Optimizer for GPDB Blows Away Benchmark 5X Faster</strong> <br /> <br /> Earlier this month, <a style="color: #3ea7bc; text-decoration: none;" 
+href="http://blog.gopivotal.com/pivotal/products/new-benchmark-results-pivotal-query-optimizer-speeds-up-big-data-queries-up-to-1000x">Pivotal Software announced benchmark results</a> for Pivotal Query Optimizer on Pivotal Greenplum Database and Pivotal HD.
+      On GPDB, we are seeing individual query speeds up to 1000X faster, and in aggregate, the entire TCP-DS benchmark ran 5X faster.<br /> <br /> <img title="f2 quarterly" src="http://play.gopivotal.com/rs/pivotal/images/f2GPDBQuarterly.png" alt="f2 quarterly" /><br /> <br /> <em 
+style="font-size: 11px;"><strong>Figure 2.</strong> TCP-DS performance testing results of Pivotal Greenplum with Pivotal Query Optimizer vs.
+      Pivotal Greenplum with &ldquo;planner&rdquo; query optimizer.
+      &copy; 2014 ACM, used with permission.</em><br /> <br /> If you would like to try out this amazing new technology before it is generally available in the upcoming version 5.0 release, you can <a style="color: #3ea7bc; text-decoration: none;" 
+href="http://www.gopivotal.com/big-data/pivotal-greenplum-database/earlyaccess">sign up for the Early Access Program for Pivotal Greenplum Database.</a><br /> <br /> Potential benefits include:</p>
+<ul>
+<li>Speeding up queries by an average of 5X or more</li>
+<li>Optimizing your analytic workloads</li>
+<li>A chance to work closely with Pivotal Greenplum Database development team</li>
+</ul>
+<p style="margin: 0;">A few requirements:</p>
+<ol>
+<li>You must have a development or test instance of Pivotal Greenplum Database hardware available onto which to install the early access version.</li>
+<li>You must be able to dedicate someone to testing and providing feedback with Pivotal development.</li>
+<li>Your company must sign an early customer access agreement.</li>
+</ol>
+<p><a style="color: #3ea7bc; text-decoration: none;" href="http://www.gopivotal.com/big-data/pivotal-greenplum-database/earlyaccess">Sign up for early access today!</a> <br /> <br /></p>
+<hr style="border: 0; color: #ccc; background: #CCC; height: 1px;" size="1" />
+<p>&nbsp;</p>
+<p><a name="article-F"></a> <strong style="font-size: 18px;">GPDB  Security  Patches for OpenSSL Security Bugs</strong> <br /> <br /> On June 05, the Open SSL Project <a style="color: #3ea7bc; text-decoration: none;" href="https://www.openssl.org/news/secadv_20140605.txt">issued a  security   
+advisory</a> detailing several security vulnerabilities and fixes.<br /> <br /> This  finding <a style="color: #3ea7bc; text-decoration: none;" href="http://www.gopivotal.com/security/cve-2014-0224">affects GPDB software implementations</a>.
+      As a result, the development team has posted new versions of Greenplum Control Center and GPDB 4.3.1.0 on PivNet with fixes, and plans to post a new version of GPDB 4.2.8.0 by end of June.<br /> <br /> Security notices and for Pivotal Software are posted at <a style="color: #3ea7bc; 
+text-decoration: none;" href="http://www.gopivotal.com/security">the Pivotal Application Security Team Site</a></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:2px;"><a href="https://twitter.com/pivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-twitter.png" alt="Follow us on Twitter" border="0" style="display:block;"></a></td>
+<td style="padding-right:2px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-linkedin.png" alt="Join the conversation on LinkedIn" border="0" style="display:block;"></a></td>
+<td style="padding-right:2px;"><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-facebook.png" alt="Like us on Facebook" border="0" style="display:block;"></a></td>
+<td style="padding-right:2px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-google.png" alt="Add us on Google+" border="0" style="display:block;"></a></td>
+<td><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-youtube.png" alt="Visit our YouTube channel" border="0" style="display:block;"></a></td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#1D1D1D" style="padding-right:10px; padding-left:10px;">
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" style="padding-top:15px; padding-bottom:15px; border-bottom:1px solid #333333;"><a href="http://pivotal.io" target="_blank" style="color:#3EA7BC; text-decoration:none; font-size:16px;">www.pivotal.io</a></td>
+</tr>
+<tr>
+<td style="padding-top:30px; padding-bottom:25px; border-bottom:1px solid #333333;">
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="nested-full-block" style="border-collapse:collapse;">
+<tr>
+<td width="50" align="left" valign="top" style="padding-right:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-blockP-med.png" alt="Pivotal" border="0" style="display:block;"></a></td>
+<td align="left" valign="top" style="color:#999999; font-size:12px; line-height:14px;"><a href="http://pivotal.io" target="_blank" style="color:#3EA7BC; text-decoration:none;">Pivotal</a> offers a modern approach to technology that organizations need to thrive in a new era of business innovation. Our solutions intersect cloud, big data and agile development, creating a framework that increases data leverage, accelerates application delivery, and decreases costs, while providing enterprises the speed and scale they need to compete. More at <a href="http://pivotal.io" target="_blank" style="color:#3EA7BC; text-decoration:none;">www.pivotal.io.</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2014 Pivotal Software, Inc. All rights reserved. Published in the USA.<br>
+<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#3EA7BC; text-decoration:none;">Unsubscribe</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

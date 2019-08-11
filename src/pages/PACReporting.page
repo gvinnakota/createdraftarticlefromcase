@@ -1,0 +1,109 @@
+<apex:page id="PACReporting" controller="PACReportingController" docType="html-5.0">
+    <head>
+        <apex:includeScript value="{!$Resource.chartjs}"/>
+    </head>
+
+    <style>
+        .chart-container {
+            position:   relative;
+            width:      calc(100vw - 120px);
+        }
+
+    </style>
+
+    <apex:pageBlock title="PAC Reporting">
+        <apex:form >
+            <apex:pageBlockSection columns="2" collapsible="true" title="Settings">
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Starting Date Marker"/>
+                    <apex:input type="date" value="{!startDate}" title="Starting Date Marker"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="Closed Date Marker"/>
+                    <apex:input type="date" value="{!endDate}" title="Closed Date Marker"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText />
+                    <apex:commandButton value="Refresh" action="{!refresh}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" collapsible="false" title="Reporting" rendered="{!hasParams}">
+                <div class="chart-container">
+                    <canvas id="inventoryChart"/>
+                </div>
+
+                <script>
+                    var inventoryLabelMap = {!inventoryChartLabelMap};
+                    var inventoryLabels = [];
+
+                    var inventoryValueMap = {!inventoryChartValueMap};
+                    var inventoryValues = Object.values(inventoryValueMap);
+
+                    var pipelineValueMap = {!pipelineChartValueMap};
+                    var pipelineValues = [];
+
+                    Object.keys(inventoryValueMap).forEach(function(key, index){
+                        if(pipelineValueMap[key]!=undefined){
+                            pipelineValues.push(pipelineValueMap[key]);
+                        }else{
+                            pipelineValues.push(0);
+                        }
+                        inventoryLabels.push(inventoryLabelMap[key]);
+                    })
+
+                    window.onload = function(){
+                        var ctx = document.getElementById("inventoryChart").getContext("2d");
+                        window.myBar = new Chart('inventoryChart', {
+                            type: 'horizontalBar',
+                            data: {
+                                labels: inventoryLabels,
+                                datasets: [{
+                                    label:              'PACs in inventory',
+                                    data:               inventoryValues,
+                                    backgroundColor:    inventoryValues.map(function(value){
+                                        return 'rgba(100, 220, 157, 0.5)';//return value < 5 ? 'rgba(230, 20, 20, 0.5)' : value < 25 ? 'rgba(230, 230, 20, 0.5)' : 'rgba(100, 220, 157, 0.5)';
+                                    }),
+                                    borderColor:        inventoryValues.map(function(value){
+                                        return 'rgba(100, 220, 157, 0.8)';//return value < 5 ? 'rgba(230, 20, 20, 0.8)' : value < 25 ? 'rgba(230, 230, 20, 0.8)' : 'rgba(100, 220, 157, 0.8)';
+                                    }),
+                                    borderWidth:        1
+                                },{
+                                    label:              'PACs in pipeline',
+                                    data:               pipelineValues,
+                                    backgroundColor:    inventoryValues.map(function(value){
+                                        return 'rgba(230, 20, 20, 0.5)';//return value < 5 ? 'rgba(230, 20, 20, 0.5)' : value < 25 ? 'rgba(230, 230, 20, 0.5)' : 'rgba(100, 220, 157, 0.5)';
+                                    }),
+                                    borderColor:        inventoryValues.map(function(value){
+                                        return 'rgba(230, 20, 20, 0.8)';//return value < 5 ? 'rgba(230, 20, 20, 0.8)' : value < 25 ? 'rgba(230, 230, 20, 0.8)' : 'rgba(100, 220, 157, 0.8)';
+                                    }),
+                                    borderWidth:        1
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                scales: {
+                                    xAxes: [{
+                                        ticks: {
+                                            beginAtZero:    true,
+                                            max:            50,
+                                            stepSize:       10
+                                        }
+                                    }],
+                                    yAxes: [{
+                                        gridLines:  {
+                                            display:    false
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                    }
+                </script>
+
+            </apex:pageBlockSection>
+        </apex:form>
+        <apex:pageMessages />
+    </apex:pageBlock>
+</apex:page>

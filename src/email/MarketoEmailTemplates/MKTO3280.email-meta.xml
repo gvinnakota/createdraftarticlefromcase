@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>GPDB_Sandbox Downloads_Q116.Surv</name>
+    <style>none</style>
+    <subject>Tell us about your experience with Greenplum Database Sandbox</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for downloading the Greenplum Database Sandbox!
+
+Can we ask for 3 minutes of your time to answer a quick survey about your experience? Your feedback helps us make the Greenplum Database Sandbox better for everyone!
+
+Click here &lt;[[https://docs.google.com/forms/d/1CtIP_WcAVpZR8wk6Lp7ufKuu48n8WsL4BXD6joa_tIA/viewform?c=0&amp;w=1]]&gt; to start the survey.
+
+Thanks,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

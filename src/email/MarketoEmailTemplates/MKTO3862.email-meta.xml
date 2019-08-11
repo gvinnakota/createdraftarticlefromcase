@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.06-09-16 V4N7</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 4, No. 7</subject>
+    <textOnly>VOL. {#}, NO. {#}
+{Day, Month Date}
+Editor Welcome: {Editor Welcome Title} &lt;[[#editor-welcome]]&gt;
+Business Update: {Business Update Title} &lt;[[#business-update]]&gt;
+Product Update: {Product Update Title} &lt;[[#product-update]]&gt;
+Agile Update: {Agile Update Title} &lt;[[#agile-update]]&gt;
+My Name Is... {Name} &lt;[[#my-name-is]]&gt;
+EDITOR WELCOME
+
+{Editor Welcome Title}
+
+{Author&apos;s Name} &lt;[[#author-socialcast-profile]]&gt;, {Author&apos;s Corporate Title}
+This issue marks two years, 40 issues, and 238 articles with me as newsletter editor. Many of the earlier articles—much like the first Cloud Foundry Summit I attended in 2014—posited more of the &quot;what might be&quot; for Pivotal and customers. PCF, Spring, and our big data solutions were mutually interested but individual tribes. 
+
+ The recent Cloud Foundry Summit &lt;[[https://www.cloudfoundry.org/community/summits/]]&gt; in May revealed a sea change, and in our Business Update, Rich Seroter writes how Pivotal—and the platform movement it galvanized—has adapted and grown. Ford, Comcast, Allstate, and Microsoft all have Pivotal as a fulcrum of technical and cultural change. Cloud Foundry Product head James Bayer complements this with a report on on the PCF 1.7 release, which expands how developers and operators can create value. Nick Street from London writes our Agile update—a reminder that big things germinate from small shifts, as in the case with one retail client. 
+
+ If you haven&apos;t done so, watch the latest episode and other Vignettes &lt;[[https://sites.google.com/a/pivotal.io/vignettes/episode-s1e1?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=vignettes]]&gt;. This Netflix-style series captures the stories behind our interactions with all kinds of customers. Focusing on the human moments—the ups and downs—behind our work, they collectively help us tell the story of where we came from and who we are. For season 1, a new Vignette is posted every Tuesday through June, on Inside Pivotal. 
+
+ The idea that our actions should bring more benefits to more people has deep roots in XP. Sam Ramji described it as a &quot;positive sum game.&quot; In the swirl of change, Pivotal holds to that value. To me, it means pulling together each newsletter for the person who might be reading it for the first time. 
+
+ Here&apos;s to what we have become, and to discovery and adapting along the way. 
+
+ P.S. We have a stellar list of speakers and more than 70 sessions for our biggest event of the year, so bring it for Pivotal by getting your prospects and customers to SpringOne Platform &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/events/springone-platform-2016?utm_source=iphome&amp;utm_medium=slider&amp;utm_campaign=springone]]&gt;.
+BUSINESS UPDATE
+
+{Business Update Title}
+
+{Author&apos;s Name} &lt;[[#author-socialcast-profile]]&gt;, {Author&apos;s Corporate Title}
+Last week 1,600 people descended upon Santa Clara to attend the fourth Cloud Foundry Summit &lt;[[https://www.cloudfoundry.org/community/summits/program/about/?summitId=10016]]&gt;. This was the biggest Summit yet, and billed by organizers as the &quot;largest multi-cloud event in North America.&quot; I, along with over a hundred other Pivots, attended the Summit in order to present, listen, and learn. There were tons of sessions and the partner pavilion was packed with unique stories, but I was able to detect three big themes. 
+
+ 1. Cloud Foundry has matured.
+ Everywhere you looked, there were signals of maturity. Gone were optimistic customer keynotes about distant plans. They were replaced by real stories of meaningful deployments with measurable success metrics. No longer was the partner pavilion home to Cloud Foundry providers alone. Instead, attendees could also engage with industry leaders like Microsoft, Apigee, Tibco, and more. The Cloud Foundry Foundation—sporting over 60 members &lt;[[https://www.cloudfoundry.org/membership/members/]]&gt;—announced brand new participants like Allstate, Volkswagen, and Dynatrace. With over 130 full-time committers—or those that have gone through a Dojo and spend 80% of their time on the project—Cloud Foundry is on par with other large open source projects such as OpenStack and Linux. 
+
+ This isn&apos;t an incubation effort any longer. Cloud Foundry represents the industry standard platform for cloud-native apps. 
+
+ 2. Customers use platforms to &quot;make the hard things easy.&quot;
+ Industry analysts picked up on this at the Summit, and folks seem to be coming out of their container-induced haze to realize that value comes from focusing on applications, not infrastructure. Companies want to manage complexity with platforms, not get side-tracked trying to assemble their own platforms out of powerful, but disjointed, components. One Pivotal customer, Comcast &lt;[[http://www.xfinity.com/]]&gt;, said they were now running over 900 applications on Pivotal Cloud Foundry. And they&apos;re moving at unicorn-speed: as Comcast&apos;s Greg Otto put it, &quot;we get features in days, not weeks, and scale takes minutes, not months.&quot; 
+
+ Customer after customer got up on stage and talked about choosing Cloud Foundry because it abstracts away complex infrastructure automation tasks, and helps them focus on what matters: continuously delivering software that powers their 
+businesses. &quot;Transformation&quot; was a key part of the conversation at the Summit, and it was inspiring to see so many enterprises realize that it&apos;s not just about better tools, but a better way of working. 
+
+ 3. Velocity is increasing, and the path forward is exciting!
+ Foundation president Sam Ramji said that the &quot;biggest risk to an open source project is losing momentum.&quot; That&apos;s not happening here. Cloud Foundry ships full releases &lt;[[https://github.com/cloudfoundry/cf-release/releases]]&gt; nearly every two weeks. Customers are seeing nonstop progress, and there were some epic Summit presentations that highlighted upcoming capabilities. Cloud Foundry Diego is on its way to becoming the most scalable container orchestration engine available, persistent storage is coming to make it possible to run durable workloads, and container-to-container networking stands to unlock an entirely new class of service. 
+
+ And this is just in the open source platform! Pivotal continues to lead the charge on building a full complement of services for running .NET applications, logging and tracing distributed systems, managing Cloud Foundry deployments at scale, and helping customers fully transform how they design, deploy, and operate software. 
+
+ It&apos;s not all rainbows and unicorns. We still have work to do to evolve Cloud Foundry and help customers adopt it more easily. However, this year&apos;s Summit clearly demonstrated that a strong Foundation is in place and industry leaders are betting on Cloud Foundry’s success.
+PRODUCT UPDATE
+
+{Product Update Title}
+
+{Author&apos;s Name} &lt;[[#author-socialcast-profile]]&gt;, {Author&apos;s Corporate Title}
+Aenean eu leo quam. Pellentesque ornare sem &lt;[[#]]&gt; lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+
+
+
+Fusce Ullamcorper Dolor:
+
+ - Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+ - Nullam id dolor id nibh ultricies vehicula ut id elit.
+ - Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+
+Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+AGILE UPDATE
+
+{Agile Update Title}
+
+{Author&apos;s Name} &lt;[[#author-socialcast-profile]]&gt;, {Author&apos;s Corporate Title}
+Physical space facilitates quality work in digital space. Last month, I flew to Washington DC to work on a project that yielded the perfect opportunity to &quot;hack a space&quot; for optimal collaboration. Given the whiteboarding, brainstorming, and collaboration essential to the start of the project (a classic Discovery &amp; Framing &lt;[[https://blog.pivotal.io/labs/labs/discovery-and-framing-design-studio]]&gt; session), we thought it would be good to redesign the space to enable our work. 
+
+ Our Washington DC office is comprised of a series of rented rooms from the coworking space WeWork &lt;[[https://www.wework.com/]]&gt;. Our project had its own room, and one of its defining features was the island of standing desks combined in the middle of the room blocking open communication. More chairs and additional shorter tables claimed valuable space next to the walls, and we had to maneuver around these obstacles to reach each other across the room. 
+
+ In the spirit of Labs, we tried an experiment. Why not move the tall tables to the sides, and move the shorter desks to the middle? We could form a desk in the middle for workshops and impromptu meetings during the collaboration heavy portion of this research phase. If it didn&apos;t work out, we could move it back.
+
+
+
+Above: Before and after shots featuring teammates Mariesa Dale and Laurel Gray.
+
+
+ The room also had no whiteboards, so we used easel pad paper to serve the same purpose, lining the remaining two walls with the paper and placed our movable whiteboard by the workshop tables. Here is the front of the room, lined with an agenda and brief notes on why we conduct D&amp;Fs, and beautiful blank spaces eagerly waiting to be filled:
+
+
+
+With these simple changes the room opened up into an inviting space that set the tone for a Labs 
+engagement—or facilitating shared understanding, shared ownership, and equal voices in conversations. We often take a room arrangement as a given, but arranging the space to meet team needs is crucial for facilitating our best work. Space is fluid, not static. In fact, once we started development on this project, we changed it again. 
+
+ And guess what? Solving real needs by identifying problems, experimenting with solutions, and continuing to iterate: that&apos;s design.
+MY NAME IS...
+
+{Firstname LastName}
+
+{Author&apos;s Name} &lt;[[#author-socialcast-profile]]&gt;, {Author&apos;s Corporate Title}
+Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+Etiam porta sem malesuada magna mollis euismod.
+Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+
+
+
+ {Caption}
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

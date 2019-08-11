@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Adopting SV State of Mind_Q316.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: Adopting the Silicon Valley State of Mind</subject>
+    <textOnly>&lt;[[https://pivotal.io/event/adopting-the-silicon-valley-state-of-mind/london]]&gt;
+Hi {{lead.First Name:default=there}}, 
+
+ Thank you for registering for the upcoming Adopting the Silicon Valley State of Mind in London. See event details below: 
+
+ Date: 29 September 2016 {{my.Save the Date}}
+Time: 12:00-4:00 PM
+ Location: Pivotal London, The Warehouse, 211 Old Street, 2nd Floor, London EC1V 9NR 
+
+ AGENDA 
+
+ We look forward to meeting you soon! 
+
+ The Pivotal Team 
+
+ Questions? Please contact Nick Holden at nholden@pivotal.io &lt;[[mailto:nholden@pivotal.io]]&gt; 
+or Ines Schuller at ischuller@pivotal.io &lt;[[mailto:ischuller@pivotal.io]]&gt; or .</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.Lead_Influence_Partner__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Forecasted_New_Amount__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Forecast_ACV__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.ACVRollup__c.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>APJ Australia New Zealand</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FAMILY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Identify Business Problems,Gain Sponsorship,Discovery,Framing,Negotiate &amp; Close,Booked</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Forecast_ACV__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>USD 0</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Forecast_Status__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <name>AC - Top Deals  CQ - ACV</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

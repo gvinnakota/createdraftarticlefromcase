@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Gartner AADI_AU_Q218.Attended</name>
+    <style>none</style>
+    <subject>Thanks for connecting with Pivotal at Gartner AADI</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Thanks for connecting with us at Gartner AADI earlier this week. Should you wish revisit any of the content shared or learn more about what we do, please find some available resources below:
+
+- View the slides from our presentation with Service NSW at Gartner AADI: https://www.slideshare.net/Pivotal/gartner-addi-2018-pivotal-service-nsw
+- Register for the upcoming webinar &apos;The 3 Secrets of Successful, Modern Enterprises&apos; on 22nd August at 1pm AEST: https://www.brighttalk.com/webcast/14883/330517
+- Read our interview with IT Brief &apos;Why open source is critical to software development&apos; from earlier this week: https://itbrief.com.au/story/exclusive-why-open-source-critical-software-development/
+- Contact us to speak directly with your local Pivot: https://pivotal.io/contact
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

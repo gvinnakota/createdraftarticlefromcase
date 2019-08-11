@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_DenverOfficeOpeningQ215.Confirmation</name>
+    <style>none</style>
+    <subject>You are confirmed to attend the Pivotal Denver Grand Office Opening (June 11)</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+ 
+Thank you for registering for Pivotal Denver Grand Office Opening.
+See event details below.
+ 
+Date: Thursday, June 11, 2015
+Time: 5pm - 8pm
+Location: Pivotal Office &lt;https://www.google.ca/maps/place/1644+Platte+St,+Denver,+CO+80202,+USA/@39.7578395,-105.0070954,17z/data=!3m1!4b1!4m2!3m1!1s0x876c78eae6b4fa5d:0x9d7b7c5f936b1ef5&gt;, 1644 Platte St, Suite 200, Denver, CO, 80202
+
+ 
+Should you have any questions or would like more information, please email info@pivotal.io &lt;mailto:info@pivotal.io&gt;. See you on Thursday, June 11th!
+ 
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

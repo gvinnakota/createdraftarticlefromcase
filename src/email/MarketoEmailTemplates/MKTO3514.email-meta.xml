@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_NOTICE_NPM Modules_Q116.URGENT NPM Email Notification Email 3-24-16</name>
+    <style>none</style>
+    <subject>[NOTICE] Warning about NPM modules</subject>
+    <textOnly>[NOTICE] Warning about NPM modules
+If you&apos;re a Pivotal Web Services user who deploys Node applications, we&apos;d like to alert you to recent developments with NPM and module ownership in the Node community.
+
+A blog post &lt;[[https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.m5fvdzp22]]&gt; was published yesterday explaining why Azer Koçulu (github handle @azer), the owner of many popular Node modules, had un-published all of his modules from NPM&apos;s public repository.
+
+This un-publishing of modules left open the question of &quot;ownership&quot; for the module names, creating an opportunity for malicious actors to take over ownership of the module and publish a version of the module with malicious code.
+
+At this moment, it&apos;s not clear whether any of the new owners of Azer&apos;s modules have malicious intent or have acted maliciously.
+
+However, this is a great time to review how you&apos;re packaging your applications, and see if your application might be susceptible to running unexpected code.
+
+Who Might be Susceptible?
+
+If you&apos;re vendoring your node modules, you&apos;re probably fine (unless you pulled in a questionable module while vendoring since the unpublish event).
+
+If you&apos;re not using any of Azer&apos;s module, this particular unpublish event won&apos;t affect you. Unfortunately, it may not be easy to determine if this is the case.
+
+Check if you&apos;re using any of the affected packages.
+
+SSH into a running application container and check:
+
+ cf ssh  &lt;appname&gt;
+
+ export HOME=/home/vcap/app
+
+ cd $HOME
+
+ source ~/.profile.d/nodejs.sh
+
+ npm list
+
+You can correlate results against Azer’s published list of unpublished modules &lt;[[https://gist.githubusercontent.com/azer/db27417ee84b5f34a6ea/raw/50ab7ef26dbde2d4ea52318a3590af78b2a21162/gistfile1.txt]]&gt;.
+
+If you see any matches, you should investigate whether you staged your application after Azer unpublished that node module.
+
+Mitigation
+
+Azer is still maintaining modules on github, so you may be able to point your packages.json to pull from the github repository directly, instead of NPM.
+
+General instructions for declaring NPM dependencies are here &lt;[[https://docs.npmjs.com/files/package.json#dependencies]]&gt;.
+
+As an example, you could pull kik from github by declaring the dependency as:
+
+ ...
+
+ &quot;dependencies&quot;: {
+
+ &quot;kik&quot;: &quot;git://github.com/azer/kik&quot;,
+
+ ...
+
+However, we&apos;ve encountered difficulties resolving all of a project&apos;s dependencies in this way, so unfortunately, your mileage may vary.
+
+Good Practices
+
+If you&apos;re not vendoring your node modules, you should. This means that your modules are resolved once, before you push, and not during staging.
+
+To ensure your modules are vendored, before pushing run:
+
+ npm install # vendors into ./node_modules
+
+Any subsequent cf push will upload your vendored dependencies as part of your application code, and the buildpack will not attempt to resolve and download these modules at staging time.
+
+Thank you,
+
+The Pivotal Web Services team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

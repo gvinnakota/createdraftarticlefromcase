@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Webinar_FR_The Cloud Native Journey Q116.FR-Confirmation</name>
+    <style>none</style>
+    <subject>Wébinaire Confirmation: Introduction au Cloud Natif</subject>
+    <textOnly>Bonjour{{lead.First Name:default=edit me}},
+
+Merci de votre inscription au wébinaire Pivotal intitulé Migration vers le Cloud Natif qui se déroulera le 17 février à 16h00 CET. Vous trouverez ci-dessous les détails de l’événement: 
+
+Date : 17 février 2016 
+Heure : 16h00 CET
+
+Assistez à cette session  &lt;[[http://event.on24.com/wcc/r/1115902/8D927DB34EF9E822366F883FEEDE8CF4]]&gt;
+
+Information audio: 
+Vous pourrez écouter et visionner ce webinaire en streaming sur votre ordinateur. 
+
+N’oubliez pas de vous inscrire &lt;[[http://pivotal.io/fr/platform/webinar/reussir-votre-migration-vers-le-cloud-natif-par-ou-commencer]]&gt; au prochain wébinaire de la série intitulé 
+Réussir votre migration vers le cloud natif: Par où commencer? avec Erwan Bornier, Field Engineer, Pivotal.
+
+Nous serons ravis de vous compter parmi nos participants!
+
+Bien cordialement, 
+L’équipe Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

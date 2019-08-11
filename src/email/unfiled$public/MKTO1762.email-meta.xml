@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.1-15-15 V3N1</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 1</subject>
+    <textOnly>VOL. 3, NO. 1
+Thursday January 15, 2015
+Editor Welcome: In Position for 2015
+Business Update: Three Rules to Drive Customer Adoption of Pivotal Cloud Foundry
+Product Update: New Data Services Boost the Platform
+Agile Update: Mobility Makes the Case for PaaS
+People Update: New Architectural Specialists Drive Customer Success
+My Name Is...Abby Kearns
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ In Position for 2015
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+The definitive statement on the start of 2015 will come at our annual Sales Kick-off in February. But in this important year, teams have already positioned themselves for a journey down new roads and to higher expectations.
+ 
+ In this issue we unpack a few new teams and learn what they do – see Iain Gray and Farhan Thawar’s updates, and we get a product update on new 
+data services that continue to expand what our platform offers customers. Dekel Tankel rounds this off with important insights on what it takes to sell that platform.
+ 
+ Pivotal Chicago officially opens its doors on 29 January! Invite 
+your clients in the Chicago area to help us celebrate the occasion and come network with innovative experts and leaders across industries. Finally, check out the new Pivotal PeopleSource &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/departments/corporate-communications/news-archive/people-source&gt; tool, equipped with capabilities that make it easier 
+than ever to update your contact information and view fancy org charts.
+ 
+ Enjoy!
+BUSINESS UPDATE
+ Three Rules to Drive Customer Adoption of Pivotal Cloud Foundry
+ Dekel Tankel &lt;https://gopivotal-com.socialcast.com/users/919706-dekeltankel&gt;, Director of Global Customer Engagements, Cloud Foundry Products
+Happy New Year Pivotal!
+ 
+ As a founding member of the Cloud Foundry open source project almost four years ago, I’m fortunate to have a front-row view on the amazing growth of the technology, partner ecosystem, and most importantly, to witness rapid commercial success of Pivotal Cloud Foundry &lt;http://www.pivotal.io/platform-as-a-service/pivotal-cf&gt; (PCF) at large-scale organizations.
+ 
+ As Scott Aronson recently noted &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/departments/corporate-communications/news-archive/field-org-announcement&gt;, we closed the year for Pivotal Cloud Foundry in a way that tells the markets there is much more to come. I’ve been helping customers at almost every stage of the sales motion, and I thought it would be good to share a few important ground rules on what it takes for customers to make the strategic adoption of Pivotal Cloud Foundry.
+ 
+ First, you need to identify forward-thinking 
+technical leadership that is willing to adopt change and take risks. I like to call these leaders and teams “Innovate or Die” vs. “Same Mess for Less” champions. In a cloud-based world, customer expectations have changed drastically. The “Innovate or Die” leaders understand that they must be part of that change to survive and win.
+ 
+ Second and related, an organization has to view software as a strategic avenue to differentiate themselves and compete in this new dynamic, including significantly building out net new applications based on modern paradigms like 12 factor apps &lt;http://12factor.net&gt;, micro-services etc.
+ 
+ Third, you have to bring Development and Operations teams to the table together. Our value proposition is strongest where agility matters not only for developers, but equally for operators – for whom rapid deployments, continuous delivery, zero downtime upgrades, etc. are real business requirements. These go hand-in-hand.
+ 
+ And don’t forget the unique and powerful combination of Pivotal Cloud Foundry, Pivotal Labs &lt;http://www.pivotal.io/agile&gt; and Pivotal Data &lt;http://www.pivotal.io/big-data&gt;. I like to think of it as “Agile Development meets Agile Platforms”.
+ 
+ Everything we did points to us having turned a corner. I’m looking forward to a great 2015, and to surpassing our outstanding momentum in 2014.
+ 
+ All of us at the Cloud Foundry Product group &lt;https://gopivotal-com.socialcast.com/groups/79965-pivotalcf&gt; are 
+here for you, so don’t hesitate to contact us!
+PRODUCT UPDATE
+ New Data Services Boost the Platform
+ David Stevenson &lt;https://gopivotal-com.socialcast.com/users/965663-davidstevenson&gt;, Director of Engineering, Cloud Foundry
+The Pivotal Cloud Foundry 1.4.0 release is right around the corner, and will include a larger library of advanced data services! Both new and existing customers have expressed having good (and often game-changing) experiences using Pivotal Cloud Foundry to push applications.
+ 
+ But as we heard with mobility, customers desire a larger library of production-quality, on-premise data services to meet their development needs.
+ 
+ The new data services on Pivotal Cloud Foundry &lt;https://sites.google.com/a/pivotal.io/inside-pivotal-cf/services&gt; meet these demands, and help customers as follows:
+
+
+ - Users will be thrilled with the new HA clustered MySQL service – the most commonly requested service by potential customers, and based on Galera&apos;s &lt;http://galeracluster.com/&gt; synchronously replicated quorum-based clustering. Customers now get a high-quality relational data store for their Cloud Foundry applications.
+ - Redis &lt;http://www.pivotal.io/big-data/redis&gt; Service back-ups that give customers confidence that their data won’t be lost.
+ - A new Cassandra &lt;http://cassandra.apache.org/&gt; service that provides a highly scalable object store for next-generation applications.
+ - The new GemFire &lt;http://www.pivotal.io/big-data/pivotal-gemfire&gt; service, which will allow the caching of application sessions, helping customers like financial and healthcare institutions store critical session information reliably and quickly.
+ - Finally, a PoC beta file system-as-a-service backed by SSHFS &lt;http://en.wikipedia.org/wiki/SSHFS&gt;, which will give beta customers the ability to attach a persistent disk to their Pivotal CF applications.
+
+
+
+All of these continue to round off and help us build on one of the most complete platforms for modern application development. We’ll be sure to circle back with more on Pivotal CF 1.4!
+AGILE UPDATE
+ Mobility Makes the Case for PaaS
+ Farhan Thawar &lt;https://gopivotal-com.socialcast.com/users/952110-farhanthawar&gt;, Head of Mobile Services, Pivotal Cloud Foundry
+I’d like you to meet three customers:
+
+ 1 Kitty (Banking): Trying to manage customers who used to check their bank balances once a week online, but now check 40 times (on payday alone) from their phones.
+
+ 2 Sameer (Telco): Wants to build a new mobile application for his customers but can’t get IT to deploy a new server to support storing data for the mobile app.
+
+ 3 Tareq (Retailer): Sends out a weekly mobile email promotion to his customers, which crashes his servers when they open it around the same time.
+
+These are real scenarios faced by our customers, all solved with a combination of Pivotal Cloud Foundry &lt;http://www.pivotal.io/platform-as-a-service/pivotal-cf&gt; and Mobile Services &lt;https://sites.google.com/a/pivotal.io/inside-pivotal-cf/services#Mobile&gt;. They’re also proof that IT teams, used to scaling services for the world of the web, are out of luck in applying the same techniques to scale for mobile and Internet of Things (IoT).
+ 
+ Mobile and IoT have brought about a level of scale never before seen by today’s 
+enterprises. There is a strong pull from organizations to change their infrastructures to support mobile, analytics and IoT – resulting in every company realizing that they need to become a software company.
+ 
+ Right on cue, 2015 is the year of Pivotal Cloud Foundry, and we feel very strongly 
+that mobile is a convincing entry point for organizations to adopt a PaaS platform tailor-made for developers and IT operators who need to manage the new realities of the IoT, cloud-native services and mobile.
+ 
+ These represent just a few of the business drivers, trends and entry points 
+that are the focus of Pivotal Cloud Foundry Mobile Services group, which I’m delighted to lead. In 2015, I look forward to driving adoption of Pivotal Cloud Foundry for all our clients. Stay tuned for more mobile services – with analytics and IoT coming soon – and updates on our progress!
+PEOPLE UPDATE
+ New Architectural Specialists Drive Customer Success 
+ Iain Gray &lt;https://gopivotal-com.socialcast.com/users/1032873-iaingray&gt;, VP, Customer Success
+The goals of the Customer Success Organization (CSO) remain true to our name: Ensuring that our customers successfully design, build and operate business solutions based on Pivotal technology. CSO provides the technical support, education, technical account management and architectural guidance throughout customer engagements to achieve that.
+ 
+ We work closely with the Pivotal Field, Product Engineering, and our partners. To maximize our support around ambitious goals for Pivotal in 2015, we’ve also created Architectural Specialist teams for our PaaS and Data products.
+ 
+ Our CSO PaaS and Data architects will provide deep product and solutions expertise, supporting pre-sales activities alongside 
+our Field Engineers, and in post-sales implementation with our partners. These architects will assist customers with proof-of-concepts (POCs), pilot implementations and developing solutions architectures. They’ll also serve as Pivotal’s “technical quarterbacks” during solution implementations.
+ 
+ Dino Cicciarelli &lt;https://gopivotal-com.socialcast.com/users/1054542-dinocicciarelli&gt;, who 
+joined Pivotal last year and quickly built an architectural practice for Pivotal Cloud Foundry (PCF), will continue to expand our architectural capabilities in 2015 in support of a fast-growing PCF pipeline. Dino’s team will also develop repeatable assets and methodologies that can be leveraged by both the Field and our partners.
+ 
+ In 2015, Jacque 
+Istok will lead a new Pivotal Data Engineering (PDE) team to create and implement a similar architectural approach on data projects. Jacque’s team will work closely with our partner ecosystem on data products to expand Pivotal architectural expertise on both pre- and post-sale activities.
+ 
+ Our CSO architects add a critical piece to customer success, and will create a repeatable well of knowledge that can be 
+drawn from as we accelerate our Data and PCF businesses. We’ll be sure to keep you posted throughout the year as we progress!
+MY NAME IS...
+ Abby Kearns
+ Abby Kearns &lt;https://gopivotal-com.socialcast.com/users/1076781-abbykearns&gt;, Technical Marketing Manager, Pivotal Cloud Foundry
+Work on the newly formed Technical Marketing team where I build the brand assets and the story arc for Pivotal Cloud Foundry. This entails helping our customers and the broader market understand how Pivotal&apos;s Open Cloud Platform helps solve real world problems.
+In the Pivotal San Francisco office. If I’m not at my desk, you can usually find me roaming the office or taking meetings on Google hangout.
+Understanding everything I can about the Pivotal Cloud Foundry platform and figuring out how to tell our story in new and interesting ways. This includes writing content and blogs that describe our products and features in a way that everyone can understand.
+You’ll find me hanging out with my 3-year-old son, Nicolas, exploring San Francisco, hanging out with friends and cooking, or doing Pilates. Oh, and drinking coffee…lots of coffee.
+I love to eat. I’m happiest when I have good food, so am frequently on the lookout for new restaurants to try. Let&apos;s meet for lunch and find a new place to try together!
+An amazing opportunity to work with a talented team on a platform that will change the technology landscape. I can’t imagine a better place to be!
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from December 29th to January 12th
+ 
+ Alan Coad, Vice President, EMEA Sales
+ Amir Khan, Sr. Account Manager, EMEA
+ Cheryl Baranowski, Global Mobility Manager (HR)
+ Chuck Litzell, Sr. Member of Technical Staff, Austin, TX
+ Cristovao Dutra de Oliveira, Software Engineer, San Francisco
+ Desmond Pompa Alarcon Rawls, Software Engineer, New York
+ Didier Burkhalter, Sr. Field Engineer, Paris
+ Eileen Markatos, Director HR Solutions, US
+ Elena Sharma, Technical Writer, San Francisco
+ Erwan Bornier, Field Engineer, Paris
+ Faiz Parker, Director, Product Marketing
+ 
+Fei Zheng, Sr. Sales Manager, Beijing
+ Harlie Levine, Software Engineer, New York
+ John Lewis, Sales Account Manager, Americas West
+ Jonathan H Fuerth, Consultant Software Engineer, Toronto 
+ Joseph Jacks, Sales Account 
+Manager, Americas West
+ Katrina Rabanal, Sr. Financial Analyst, Palo Alto
+ Lyle Franklin, Software Engineer, San Francisco
+ Michael Cote, Director Technical Marketing
+ Michelle Medlock, Product Manager, Santa Monica, CA
+ Moumita Ghosh, Sr. Member of Technical Staff
+ Natalina Damayanthi, Sales Account Executive, Jakarta 
+ Nixon Wang Him Chau, Sales Account Executive, APJ
+ Rachel Brindle, Software Engineer, San Francisco
+ Richard Ross, Sr. Field Engineer, Americas West
+ Sanjay Aneja, Sr. Sales Account manager, APJ (Bangalore)
+ Simon Phillips, Sr. UX Designer, London
+ Thomas Osugi, Software Engineer, Denver, CO
+ 
+ And we welcome to Toronto, our new college co-ops!
+Ali Hirani, Arun Jeyaganeshan, Hayden Tsui, Joe Yang, Javier Rank, Kanishkan Kukarajah, Kwok Yin Tong, Linchung Tu, 
+Muhammad Ahmed, Navin Mahabir, Samiya Akhtar and Yang Jin Ou.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

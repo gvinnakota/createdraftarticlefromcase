@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>popp@pivotallabs.com</contactEmail>
+    <label>Pivotal Partner Program</label>
+    <oauthConfig>
+        <callbackUrl>https://partner-program.cfapps.io/salesforce_callbacks</callbackUrl>
+        
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>

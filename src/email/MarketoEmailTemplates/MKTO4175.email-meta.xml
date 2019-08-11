@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_7AM_Introducing CF Java Client 2.0_Q316.Reminder</name>
+    <style>none</style>
+    <subject>9/27 Webinar reminder - Introducing the Cloud Foundry Java Client 2.0</subject>
+    <textOnly>&lt;[[https://pivotal.io/platform/webinar/introducing-the-cloud-foundry-java-client-gmt]]&gt;
+Hi {{lead.First Name:default=there}},
+
+ Thank you for registering for tomorrow&apos;s webinar Introducing the Cloud Foundry Java Client 2.0 on Tuesday, September 27, 2016. 
+
+Please see event details below: 
+ Date: Tuesday, September 27, 2016 {{my.Save the Date:default=edit me}}
+Time: 7:00am PDT / 2:00pm GMT / 3:00pm CET
+ &lt;[[http://event.on24.com/wcc/r/1190422/2B5BECF5845424730286C5CACAAAA5BF]]&gt;
+ 
+Join the Session &lt;[[http://event.on24.com/wcc/r/1261537/CFEAF03C47DF695A99F42245B3232B76]]&gt; 
+
+Audio Information: This webinar will be streaming via your computer speakers. 
+ 
+We look forward to you joining us.
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

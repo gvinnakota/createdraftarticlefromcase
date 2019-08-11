@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign_Newsletter_FY17.Newsletter 1-31-17</name>
+    <style>none</style>
+    <subject>January 2017 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+Happy New Year from Pivotal Web Services. In this issue we’ll cover introduction of tasks - processes that run once and terminate at completion. We also have some upcoming buildpack changes that remove some versions of Go and PHP. If you have apps using those runtimes, be sure your apps are current. Lastly we have increased the amount of disk space available for apps.
+ 
+Best Regards,
+The Pivotal Web Services Team
+ 
+Introducing Tasks
+ 
+One of the most requested features on PWS is the ability to perform a singular job in Pivotal Cloud Foundry. These jobs typically fall into two categories:
+
+
+ - Those that improve how a web app runs (performing a database migration, or processing images)
+ - Those that run adjacent to the web app (running reports, processing data, uploading data to object storage).
+
+
+
+To address this use case, Pivotal Cloud Foundry (and PWS) has added support for “tasks.” Tasks on Pivotal Cloud Foundry are executions of previously deployed applications that will not be restarted on termination. Ideal applications for tasks are apps utilizing Spring Batch &lt;[[http://projects.spring.io/spring-batch/]]&gt; and Spring Cloud Data Flow &lt;[[https://cloud.spring.io/spring-cloud-dataflow/]]&gt;, database migrations, audit jobs and other similar one-off activities.
+ 
+ This is in contrast to what occurs today on Pivotal Cloud Foundry. When an app is pushed, the app is assumed to be a long running process (LRP). In the event of a termination (either by a crash or intentional act), Pivotal Cloud Foundry health checks will restart the app to bring it back to a running state.
+ 
+ Tasks use the ‘cf push’ command to create an application and to stage it. Once an app has been staged, you can use CLI commands to prepare and execute tasks against the app. The command for starting a task is cf run-task APP-NAME &quot;TASK&quot; --name TASK-NAME. To see the tasks running against the app, you can use the command cf tasks APP-NAME. Note that each running task has an id associated with it. To terminate the task, use the command cf terminate-task APP-NAME TASK-ID, where TASK-ID is the id from the cf tasks command.
+ 
+ Check out the Tasks documentation &lt;[[https://docs.cloudfoundry.org/devguide/using-tasks.html]]&gt; for additional details and examples.
+ 
+ Note that tasks are executed in real time and not scheduled - to initiate tasks on a schedule, you will need to execute it from a scheduling application.
+ 
+ Since tasks are just application runs, we bill for them the same way. Each billing period, we’ll sum up the total duration in Gigabyte Hours (GB HRs) used to execute tasks, and bill for them as if they were application runs.
+ 
+ We hope you’ll find uses for this oft-requested feature on PWS!
+ 
+ Buildpack for Go and PHP with Remove Certain Versions
+ 
+ In the first releases coming after February 9, 2017, the PHP and Go buildpacks will remove certain versions of the core environments. The Go buildpack will not include any versions of Go with 1.5.x version numbers. These Go versions are no longer supported upstream[1]. Please migrate your Go apps to supported Go versions before that time. The PHP buildpack will not include any versions of PHP with 5.5.x version numbers. These PHP versions are no longer supported upstream[2]. Please migrate your PHP apps to supported PHP versions before that time.
+ 
+ [1] https://golang.org/doc/devel/release.html#policy &lt;[[https://golang.org/doc/devel/release.html#policy]]&gt;
+ [2] http://php.net/supported-versions.php &lt;[[http://php.net/supported-versions.php]]&gt;
+ 
+ PWS Applications Now Support Up to 4GB of Local Disk
+ 
+ We know that applications are bundling more and more resources when they are deployed. In response, we have increased the maximum disk allocated to an application from 2GB to 4GB. To take advantage of this, when you push your app include the ‘-k’ parameter or specify the ‘disk_quota’ in your manifest. The default disk quota remains 1GB. Lastly, while there is more local disk available for your app, do not rely on local disk &lt;[[https://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html#filesystem]]&gt; for persistent storage as the container may be short lived.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

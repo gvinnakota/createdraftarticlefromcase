@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GemFire 功能及开发应用实例</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body style="margin:0; " ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tbody ><tr ><td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tbody ><tr>
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td>
+</tr>
+<tr>
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td>
+</tr>
+<tr>
+<td height="20"></td>
+</tr>
+<tr ><td ><div class="mktEditable" id="banner-main" ><a href="https://jinshuju.net/f/W3w5Cz" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/GemFire_Banner05255.png" width="600" height="215" border="0" alt="Pivotal GemFire功能及开发应用实例"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;">
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:25px 30px;" colspan="3">快速高容量的并发交易、自动实时的事件通知、以毫秒为单位的大数据的紧张动态计算、内存缓存中尤为快速的数据传输、甚至是跨广域网数据传输，这些都是 Pivotal GemFire 内存中分布式数据平台的独特功能。<br>
+<br>
+<!-- 我们将在第五期 Pivotalk 公开课中为您带来主题为<span style="font-family:'宋体'">“</span>轻松应战 Postgres & Greenplum 非法/歧义字符加载入库<span style="font-family:'宋体'">”</span>的在线讲解。我们欢迎关注 GP 的小伙伴们加入我们的课程讨论，与我们的技术专家互动分享。<br>
+<br> -->
+我们有很多鲜活案例：12306 采用 Pivotal GemFire 解决尖峰高流量并发问题， 其查询余票查询系统速度提高 75 倍以上； 世界第二大的铁路公司-印度铁路公司通过 GemFire 进行电子票务交易处理，原来需要 30 分钟才能完成的网上预定，现在可以处理超过 12 万个并发用户，完成预订只需几秒钟；工业巨头通用电器公司也采用了 GemFire 的内存事件处理和通知功能来对其燃气轮机产品进行跟踪。<br>
+<br>
+如您所见，内存数据网格正改变着企业利用数据的方式，您的企业是不是也需要数据革新呢？还等什么，赶快报名参加我们第五期 “Pivotalk 技术公开课” ， Pivotal 的大数据专家将为您详解 Gemfire 的最新功能与实践。欢迎小伙伴们加入课程讨论，与我们的技术专家互动分享。<br>
+<br>
+每位听课者均有机会赢取我们送出的最新技术书籍。赶快行动吧！</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>课程简介</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;">GemFire 可用于企业级的数据缓存、弹性的内存计算、大规模的实时交易应用、弹性流数据处理等。本此课程中，我们的技术专家将通过实例演示为您深入介绍 GemFire 的主要功能、最新功能。您将学习如何搭建集群？通过配合 Spring Boot 和 Spring Data GemFire 的开发实例如何配置和开发？我们也将与您分享很多实用的资源。机不可失！</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>课程要点</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:2.0em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;"><span style="color:#01ad9d">●&nbsp;</span> Pivotal GemFire 是什么？<br>
+<span style="color:#01ad9d">●&nbsp;</span> Pivotal GemFire 能完成什么功能？<br>
+<span style="color:#01ad9d">●&nbsp;</span> 如何启动一个简单的 Pivotal GemFire 集群？<br>
+<span style="color:#01ad9d">●&nbsp;</span> 如何使用 Spring Boot 和 Spring Data GemFire 进行开发，查询及更新数据？<br>
+<!-- <span style="color:#01ad9d">●&nbsp;</span>如何从其它数据库导出数据，将问题消灭在源头</td> --></td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>活动信息</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px"><span style="color:#01ad9d">课程主题：</span>Pivotal GemFire 功能及开发实例<br>
+<span style="color:#01ad9d">主讲嘉宾：</span>闫钢 &nbsp; Pivotal 大中华区数据资深架构师<br>
+<span style="color:#01ad9d">课程时间：</span>2017 年 5 月 25 日（周四）20：00 - 21：10<br>
+<!-- <span style="color:#01ad9d">适合对象：</span>架构师，CF 开发人员<br>
+<span style="color:#01ad9d">参与方式：</span>电脑或手机，只要你能上网即可参加。（直播平台的链接将在会前参会确认函中</td> --></td>
+</tr>
+<!-- <tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-left:95px;">下发，报名时请务必填写准确的联系方式）</td>
+</tr> -->
+<tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;"><span style="color:#01ad9d">在线小福利：</span>我们为您准备了最新技术书籍和 CSDN《程序员》杂志。赶快行动吧！</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>讲师介绍</strong></td>
+</tr>
+<tr>
+<td style="padding-left:30px;padding-right:20px" width="130" align="left" valign="middle"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/20170508.png" border="0" width="130" height="130" alt="闫钢"></td>
+<td colspan="2" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-right:30px;">闫钢&nbsp;&nbsp; Pivotal 大中华区数据资深架构师，先后就职于 HP，VMware，Pivotal 等公司，有超过 14 年的 Java 项目开发设计管理经验，对于企业级应用相关内容比较熟悉。主要服务于金融，电信和公共事业等行业。在 GemFire 及相关的分布式数据网格产品方面，有四年以上的经验， 负责大中国区相关项目的技术工作。</td>
+</tr>
+<tr>
+<td colspan="3" style="padding-bottom:27px;padding-top:27px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="240"></td>
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="https://jinshuju.net/f/W3w5Cz">立即报名</a></td>
+<td width="240"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>阅读分享</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px"><a style="color:#4F81BD;" href="https://mp.weixin.qq.com/s?__biz=MzA4NzE4MjIyNA==&mid=2651105124&idx=1&sn=6d4aa27ddfe464e93faac5df86f37ce8&chksm=8bcd599bbcbad08d130095eb777d5df7a7c3d57acc127c40092165f9b0c0641702116552e826#rd">Apche Geode/Pivotal GemFire 应用的最佳实践</a><br>
+<a style="color:#4F81BD;" href="https://mp.weixin.qq.com/s?__biz=MzA4NzE4MjIyNA==&mid=2651105128&idx=1&sn=7ec6c28d5cc04aaae86dcf76624f8d12&chksm=8bcd5997bcbad0813a4997257867625beec1abd968c23fb947b29ae0fdc2bef345dba50a017c#rd">Apche Geode/Pivotal GemFire 对下一代的数据需求</a><br>
+<a style="color:#4F81BD;" href="https://mp.weixin.qq.com/s?__biz=MzA4NzE4MjIyNA==&mid=2651104955&idx=1&sn=937a0c4c157203a9105dc0d5dd73b20d&chksm=8bcd5844bcbad152b615286f99aae3700c08c6a8c336db2e5d451764c71b2099630e0d6e6437#rd">大数据携手快数据，不只是打击欺诈而已</a><br>
+<br></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td height="20"></td>
+</tr>
+<tr>
+<td><span style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></span></td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tbody>
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<!-- start of social links // -->
+<!-- End of social links // -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a>
+<p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p>
+<span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2017 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br>
+<a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 <!--<p> --></td>
+<td width="30"></td>
+</tr>
+</tbody>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

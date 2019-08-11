@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><a href="http://run.pivotal.io/"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services" /></a></p></div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >Welcome to the March Madness edition of “Push With Success”! The action is not all on the basketball backboards, as in the collegiate basketball championship tournament here in the US.
+        Any sports fan is obsessed with metrics and statistics, and amazingly enough so are app developers.
+        This month we formally introduce PCF Metrics on PWS.
+        Read more in this issue.<br> <br> Speaking of statistics, <a style="color: #059a91; text-decoration: none;" href="https://www.pivotaltracker.com">Pivotal Tracker's</a> new Analytics feature allows your team to see the overall view of your project health, as well as dig deep into its details.
+        Tracker is the agile project management tool Pivotal uses to develop PWS and <a style="color: #059a91; text-decoration: none;" href="https://pivotal.io/platform">Pivotal Cloud Foundry</a>.
+        Get more <a style="color: #059a91; text-decoration: none;" href="http://www.pivotaltracker.com/why-tracker/?utm_source=pwsnewsletter&amp;utm_medium=email&amp;utm_campaign=pws">details</a> and sign up for a <a style="color: #059a91; text-decoration: none;" href="https://www.pivotaltracker.com/signup/new">free 30-day trial</a>.<br> <br> We also cover news that we have recently removed  
+ the      Ruby 2.0 runtime from the latest Ruby Buildpack on PWS, which may have implications the next time you push your app.
+        Cloud Foundry is a new platform for many, so we’re introducing our new “Getting Starting Guide” to help developers get on board.
+        Lastly, PWS has a new dedicated blog to keep you up to date with all the changes to the leading instance of Cloud Foundry on the internet.<br> <br> Thanks for reading and let us know what you think by tweeting at us <a style="color: #059a91; text-decoration: none;" href="https://twitter.com/pivotalws">@pivotalws</a>.<br> <br> Best Regards,<br> <br> The Pivotal Web Services    
+ Team<br> <br> <strong>Introducing PCF Metrics on PWS</strong><br> <br> Developers love Pivotal Web Services for the transformational benefits of speed and agility.
+        cf push is the path to production, but once there it’s not always so easy to find out how your app is performing.
+        We set out to address this pain with a focus on fast-feedback.<br> <br> With PCF Metrics, <a style="color: #059a91; text-decoration: none;" href="https://metrics.run.pivotal.io">available for all apps on PWS today</a>, developers can better understand the health and performance of their apps with a real-time stream of metrics data.<br> <br> Metrics include CPU, memory, and disk   
+     percentages (at 30 second resolution), counts for HTTP requests per second and HTTP errors per second, and request latency (at per-second resolution).
+        Events include creates, updates, starts, stops, and crashes.
+        Data is available for 24 hours.<br> <br> Best of all, there's nothing to install or configure: it just works.
+        <a style="color: #059a91; text-decoration: none;" href="https://metrics.run.pivotal.io">Log in to see it now</a>.<br> <br> We plan on using these metrics to help you write more performant apps, troubleshoot them when they're not, and much more.
+        Please let us know what you think at <a style="color: #059a91; text-decoration: none;" href="mailto:pcf-metrics-feedback@pivotal.io">pcf-metrics-feedback@pivotal.io</a>.<br> <br> <strong>Ruby 2.0 being deprecated from Ruby Buildpack</strong><br> <br> On March 17, 2016, we updated the PWS platform, and as part of that update the deprecated Ruby version 2.0 was removed from the 
+Ruby     buildpack.
+        We did this in response to the announcement of its <a style="color: #059a91; text-decoration: none;" href="https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/">end of support</a> by the Ruby maintainers.
+        As a consequence, applications that explicitly require that version of Ruby may fail on the next deploy of the application.
+        We recommend upgrading your application to support the latest version of Ruby in order to remain current with updates.
+        If during the upgrade process you require the older version of Ruby, you may explicitly link to an older version of the buildpack using the '-b' parameter of 'cf push'.
+        For example:<br> <br> cf push -b "<a style="color: #059a91; text-decoration: none;" href="https://github.com/cloudfoundry/ruby-buildpack#v1.6.13">https://github.com/cloudfoundry/ruby-buildpack#v1.6.13</a>" YOUR_APPNAME<br> <br> Should you have any questions, please contact <a style="color: #059a91; text-decoration: none;" href="mailto:support@run.pivotal.io">support@run.pivotal.io</a>.<br> <br> <strong>A New Getting Started Guide</strong><br> <br> Pivotal Web Services is built on Cloud  Foundry, and one of    the goals of PWS is to bring Cloud Foundry to those who cannot deploy their own private instance via Pivotal Cloud Foundry.
+        To show off this benefit, we have put together various getting started guides, and we recently launched a <a style="color: #059a91; text-decoration: none;" href="http://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry/introduction?utm_source=pushwithsuccess&amp;utm_medium=link&amp;utm_campaign=gettingstartedwithpcf">new version</a>.
+        Even if you are already familiar with the basics, this guide highlights some of the advantages of using Cloud Foundry that you might not have been familiar with, including service binding and scaling.
+        Take a look and let us know what you think.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="30" cellspacing="20" border="0" class="full-block" style="border-collapse:collapse;text-align:center;background:white;border-top:1px solid #f7f7f7">
+<tr>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-twitter.png" alt="Follow us on Twitter" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-linkedin.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-fb.png" alt="Like us on Facebook" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-gplus.png" alt="Add us on Google+" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-youtube.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/icon-instagram.png" alt="Follow us on Instagram" border="0"></a></td>
+</tr>
+<!-- End of social links // --></table>
+<table width="600" cellpadding="0" bgcolor="white" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #f7f7f7">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#666666; font-size:13px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+<p style='margin:0'>&nbsp;</p>
+<p style='margin:0; font-family: Helvetica,sans-serif;color:#999999; font-size:12px;'>Pivotal's Cloud Native platform drives software innovation for many of the world’s most admired brands. With millions of developers in communities around the world, Pivotal technology touches billions of users every day. After shaping the software development culture of Silicon Valley's most valuable companies for over a decade, today Pivotal leads a global technology movement transforming how the world builds software. More at <a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none;">pivotal.io.</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2016 Pivotal Software, Inc. 3495 Deer Creek Road, Palo Alto, CA 94304. All rights reserved. Published in the USA.<br>
+<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#059a91; text-decoration:none;font-weight:600">Unsubscribe</a></td>
+<td width="30"></td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

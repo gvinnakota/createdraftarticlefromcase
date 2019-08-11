@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 6 - July 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - July 2015</subject>
+    <textOnly>With the summer upon us, this issue of Push With Success focuses on ensuring your application is production ready in the first of a two part series. In this series of articles we’ll provide answers to some commonly asked questions about bringing your Pivotal Web Services (PWS) hosted application to production. We’ll follow up with our partner focus on 3scale, a SaaS provider that offers services for your APIs including authentication, security and analytics for your API tier. Lastly, we are deprecating our experimental consoleapi API endpoint this week, if you are using this endpoint read on to find out more.
+
+If you have not tried PWS in the past, visit http://run.pivotal.io &lt;http://run.pivotal.io&gt; for a 60 day free trial. If you have tried PWS in the past and want to see what’s new, drop our Product Manager Charles Wu a note at chwu@pivotal.io &lt;mailto:chwu@pivotal.io&gt; to explain what you are looking for and we’ll get you set up for another trial. 
+
+We hope you enjoy this month’s issue. Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws &lt;https://twitter.com/pivotalws&gt;.
+ 
+A Production-Ready Checklist for Apps on Pivotal Web Services
+The following is the first of a two part series covering a step-by-step checklist for preparing an application for production readiness on Pivotal Web Services. The questions below highlight the different decisions one needs to act upon in order to ready an application for production. Be sure to check out our Support Knowledge Base &lt;http://support.run.pivotal.io/forums/22251622-Cloud-Foundry-Knowledge-Base-Articles#recent&gt; and forums &lt;http://support.run.pivotal.io/forums#recent&gt; for answers to other questions as well. 
+
+1. How many instances do I require?
+
+When you enter production, you should deploy at least two instances of your front-facing application for availability purposes. Cloud Foundry ensures that applications are distributed across Amazon AWS availability zones (AZ) so you get the following forms of redundancy:
+
+
+ - Instance-level redundancy if an individual instance crashes
+ - Availability Zone-level redundancy: if AWS has an outage in the AZ where one instance of your app is running, the other will continue to run in a different AZ. Note that PWS is only deployed in one Amazon region, so if an Amazon region failure occurs, access to your app will be compromised as well.
+
+
+
+This also highlights the benefit of hosting apps on Cloud Foundry instead of directly on the IaaS layer, since the complexity of managing multiple redundancy strategies is handled by the platform instead of by the 
+application logic or deployment configuration.
+
+2. How much memory should I allocate for different languages and/or runtimes?
+
+Different runtimes require different amounts of memory. But the following are some guidelines to start with. You should also note that Cloud Foundry distributes CPU in proportion to the memory that is allocated for an application. So if your application requires substantial compute resource, you can increase your memory allocation to improve performance.
+ 
+
+ 
+3. How do I apply a customized domain to my apps on PWS?
+
+The default domain for PWS is cfapps.io. However, for most production deployments you will want to host at your own domain. Cloud Foundry supports the ability to support other domains. Please check out the documentation &lt;http://docs.run.pivotal.io/devguide/deploy-apps/domains-routes.html&gt; for instructions and this support post &lt;http://docs.run.pivotal.io/devguide/deploy-apps/domains-routes.html&gt; on this matter.  
+
+4. How do I support HTTPS or SSL?
+
+PWS offers SSL to all apps in the “cfapps.io” domain, so by default your apps can support SSL by being requested using https. If you require SSL on a custom domain that you own, PWS supports free SSL via our partner Cloudflare &lt;https://www.cloudflare.com/&gt; via these instructions &lt;http://docs.run.pivotal.io/marketplace/integrations/cloudflare/&gt;. If you need to bring your own SSL certificate, Cloudflare offers premium plans. 
+
+5. How does one monitor an application on PWS?
+
+It is possible to view your application’s behavior on PWS using the Applications Manager or CLI logs functionality. For more detailed data, you can follow the documentation &lt;http://docs.run.pivotal.io/marketplace/services/newrelic/&gt; to use PWS Marketplace partner New Relic &lt;http://www.newrelic.com&gt;. If you need greater logging history, please use a third party log drain product.
+
+Next month, we’ll cover questions about log archiving, shell access, blue green deploys and using external services. 
+
+3scale: Securing and securing your APIs
+Pivotal Web Services introduces 3scale &lt;http://www.3scale.net/&gt; to its services marketplace. PWS is increasingly being used to host the backend infrastructure of mobile applications. Where in the past energy and effort was focused on UI on top of the business logic, the mobile first world requires hardening your API layer with authentication, security and analytics. Much of this work is resource-intense, and this is where 3scale fits by easily adding these features to your existing API layer.
+
+3scale is a SaaS service that fronts your API layer with a 
+combination of their API program management cloud coupled with either a deployed gateway or linked application library to provide core API management services. In addition, for developers creating API-based service offerings, 3scale addresses marketplace needs including a developer portal, onboarding processes, application management, Swagger-based active API documentation or invoicing. It’s for these reasons that PWS added 3scale to the marketplace: to address the needs of developers hosting APIs.  
+
+Deprecating the &apos;consoleapi.run.pivotal.io&apos; endpoint for &apos;cf&apos; CLI tool on July 29, 2015 12:00 PM PDT 
+
+Developers who have set the &apos;cf&apos; CLI API endpoint to the host &apos;consoleapi.run.pivotal.io&apos; will need to change their API endpoint to &apos;api.run.pivotal.io&apos; This can be done by logging out of the CLI via &apos;cf logout&apos; and then entering &apos;cf api api.run.pivotal.io&apos; and the logging in again via &apos;cf login&apos;. Developers already using &apos;api.run.pivotal.io&apos; do not need to update their settings. If you have issues or questions, please contact support@run.pivotal.io &lt;mailto:support@run.pivotal.io&gt;
+
+ Best Regards,
+Pivotal Web 
+Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

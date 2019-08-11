@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.11-2-2015 V3N17</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 17</subject>
+    <textOnly>VOL. 3, NO. 17
+Thursday, November 5, 2015
+Editor Welcome: Surfing Moments  &lt;#14ebc20d8b820466_editor-welcome&gt;
+Business: Q3 in Review – Up, Up, and Away  &lt;#business-update&gt;
+Product: In GE&apos;s Industrial Internet, a PCF Connection &lt;#product-update&gt;
+Agile: Accelerating the Mercedes Experience &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People: Women Who Code Extends its Reach &lt;#people-update&gt;
+Hello, My Name Is... Bharath Sitaraman &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Surfing moments
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+Work, parenthood, and chance crash like successive waves against big dreams. Instead of whittling them down though, I find that you can surf some for a brief moment, and seek the next one. As our CFO reports in this issue on Pivotal’s standout Q3, I’m trying to keep that sense of proportion for the bigger waves we seem to be riding.
+
+The auto industry is racing to its connected future. Pivotal is helping shorten the horizon in getting there, nicely described in this issue’s Agile update, where we’re helping Mercedes-Benz get deeply digital. No less impressive is where we land with GE and Predix &lt;https://www.ge.com/digital/predix&gt;, its blueprint for industrial-size applications, and well described in our Product update by Claude Devarenne.
+
+We released Pivotal Cloud Foundry 1.6 &lt;http://blog.pivotal.io/pivotal-cloud-foundry&gt; in time for the CF Summit in Berlin, a rev that makes it easier than ever to go from idea to application, and where Spring services claims its central role in enabling cloud 
+native architectures. And in case you missed it, Pivotal made one the world’s best enterprise data warehouses—Greenplum, some two million lines of code strong—the first to go open source &lt;https://blog.pivotal.io/big-data-pivotal/news-2/introducing-greenplum-worlds-first-open-source-mpp-data-warehouse&gt;.
+
+For all that and the highfalutin’ talk on transformation, our strengths percolate best in our stripe of anti-culture: seek what’s 
+next, what can be better, what we can learn, and making you (Mr. and Mrs. Developer, IT Ops, Finance, Security, others in your company) the hero. Our People update well captures that spirit.
+
+We’re stealing moments and surfing a wave, but unlike the gods, mistaking this moment as something we’re entitled to is the instant we lose the board. Like the guy in that commercial says: stay thirsty my friends!
+
+Enjoy.
+BUSINESS
+q3 in review - up, up and away
+Robert O’Donovan &lt;https://gopivotal-com.socialcast.com/search?utf8=%E2%9C%93&amp;q=Robert+O%27Donovan&gt;, CFO
+Shortly after the news on Dell and EMC, Michael Dell made it clear that he fully supported EMC’s intent with Pivotal and our path to IPO &lt;http://info.pivotal.io/b0000CUN7Io0JYeR020l5oA&gt;. With another outstanding quarter and renewed buzz over Pivotal, we had good timing in backing up Mr. Dell’s confidence! We’re happy to report the quarter to our teams, but please remember that this information is internal to Pivotal only. 
+
+Among the high points of Q3 was Pivotal Cloud Foundry &lt;http://pivotal.io/platform&gt;, which for the second quarter in a row achieved bookings that put us beyond the $100 million mark on an annualized basis. Pivotal Labs, at 16 offices and growing, recorded its best quarter ever, and we made a big move in open source data with Apache HAWQ &lt;http://hawq.incubator.apache.org/&gt;. Pivotal grew revenues 19% year-on-year, and more importantly, ARR (annualized recurring revenue) grew 21% from last quarter, and up 270% year-on year, with solid performance in every geography and product area. Total ARR came in at $81 million for the quarter. As we have stated, ARR is one of the soundest indications of customer momentum in our business, and thus a key metric of our financial health.
+
+Those numbers are the outcomes of where we now land with customers—as essential partners to help shape and execute their digital 
+transformation. Among the many highlights of Q3:
+
+Pivotal has been building a relationship with Ford for three years, from Greenplum in 2012 to an engagement with Pivotal Labs, where Ford IT strongly endorsed Pivotal. In Q3 we added a $26M PCF and BDS deal.
+
+Covered in this issue’s Product update is our work with GE, which unveiled Predix &lt;https://www.ge.com/digital/predix&gt;, GE’s vision and bet on the industrial internet, and 
+the largest marketplace for industrial applications. GE expects 20,000 developers to be on Predix over the next year, and half a million applications to be written for the platform around which the company expects to generate many billions of business by 2020. With an $18M PCF deal recently closed, and Pivotal Labs in the mix, we’re a cornerstone of that strategy.
+
+Finally, we expanded the the circle for open source and community development in big data, with the launch of ODPi &lt;http://www.linuxfoundation.org/news-media/announcements/2015/09/odpi-doubles-membership-announces-technical-milestones-and-open&gt; and Apache HAWQ &lt;http://hawq.incubator.apache.org/&gt;, and the fruition of our work with 
+Mercedes-Benz included the Q3 ramp-up and recently announced “Mercedes Me” app (see the Agile update) in Germany in September. Mercedes is not generally known to comment on their partnerships, but they publicly lauded Pivotal as a partner in setting them up to innovate faster and create exceptional digital experiences.
+
+We’re in our strongest position ever, and have reshaped our technical, customer-facing services and support teams &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/corporate-communications/news-archive/cso-org-update&gt; to drive into 2016 through our subscription-based business model. All of you are helping us seize a remarkable opportunity. We’ll continue to push growth across verticals, and our footprint within the enterprise, and I’m looking forward to sharing our Q4 performance with you in January!
+PRODUCT
+In GE&apos;s Industrial Internet, a Pivotal Cloud Foundry Connection
+ &lt;https://gopivotal-com.socialcast.com/users/959793-leichang&gt;Claude 
+Devarenne, Advisory Field Engineer (GE)
+In October, GE &lt;http://www.ge.com/&gt; unveiled its IoT platform Predix &lt;https://www.gesoftware.com/predix&gt;, at its Minds and Machines conference &lt;https://www.gesoftware.com/news-events/events/minds-machines&gt; in San Francisco. Predictivity, specifically predictive maintenance is a major focus of the platform (hence its name). Being able to predict when maintenance is required ahead of any issues, on an industrial scale, translates into millions of dollars saved.
+
+Predix targets common capabilities typically required of industrial solutions: monitoring and diagnostics, controls, and business process 
+management. The initial version of Predix relied on OSGI &lt;http://www.osgi.org/&gt; (Open Service Gateway Initiative), a Java framework for developing and deploying modular software programs and libraries, which led to monolithic applications.
+
+Since January, the Predix team, with our help, has been re-implementing Predix as a platform based on Pivotal Cloud Foundry &lt;https://pivotal.io/platform&gt; to gain the flexibility, scale and speed of a services-oriented architecture. Predix is a catalog of Cloud Foundry services (e.g. time-series databases &lt;https://en.wikipedia.org/wiki/Time_series_database&gt;) and microservices, and in Q4, GE will run Predix very much like Pivotal Web 
+Services, but for the industrial sector.
+
+Use cases for Oil &amp; Gas and Healthcare
+
+APM (Asset Performance Management) is the first suite of microservices available on Predix, piloted by a large gas provider. Initially, APM provides alarm management and operator dashboards. Subsequent versions will provide analytics where a diagnosis can be made prior to sending out maintenance crews.
+
+GE Healthcare is rewriting its 2D and 3D viewers for medical images, and its cloud sharing application as microservices—the latter will help medical professionals 
+exchange health records.
+
+What does GE get out of this?
+
+By adopting Pivotal Cloud Foundry and working with Pivotal Labs, GE is creating the basis of its vision of the industrial internet and accelerating a digital transformation. The transformation at GE is not just one of technology or methodology, but cultural as well.
+AGILE
+Accelerating the Mercedes Experience 
+ &lt;https://gopivotal-com.socialcast.com/users/1093351-theronmccollough&gt;Richard Salloum &lt;https://gopivotal-com.socialcast.com/users/1079497-richardsalloum&gt;, Senior Product Manager, Pivotal Labs
+To meet its ambitious goal of launching a connected car app at the International Motor Show in Frankfurt in September, Mercedes-Benz engaged with Pivotal in early April 2015.
+
+Mercedes wanted a “sexy” native iOS and corresponding Apple Watch &lt;http://www.apple.com/watch/&gt; and Android apps to enhance the ownership experience. They didn’t want a quick marketing gimmick, but to create a lasting digital experience with customers.
+
+We conducted a Discovery and Framework exercise over four weeks to capture insights from users and validate app features. We interviewed numerous luxury car owners in Germany to identify needs, gain feedback on preliminary designs, and develop a user persona. We synthesized these findings in “Michael,” our primary app user persona. Michael provided us insights on his frustrations on his daily commute, how he deals with traffic, his navigation preferences and dislikes, and how he rated the importance of specific information about his car.
+
+
+Meet the drivers: Creating Michael from a variety of user experiences
+
+This helped us consolidate a feature list that represented Michael’s desires 
+balanced by the client’s requests. The app we built with Mercedes would allow Michael to remotely lock and heat his car, locate his car, view vehicle diagnostics such as gas levels and tire pressure, receive notifications, and enhance his in-car navigation abilities. This 1.0 MVP &lt;https://en.wikipedia.org/wiki/Minimum_viable_product&gt; (minimum viable product) would not only be delightful and useful, but easy to use and feasible.
+
+
+2x2 matrix – Mapping out product features
+
+The project involved an unusual number of people, and is one of the largest Pivotal Labs 
+engagements to date. At its peak, there were about 35 designers, developers, PM’s, and QA Pivots on the project across San Francisco, Palo Alto and Toronto. It included Pivotal Cloud Foundry and Spring teams (on which the app was created), and sales folks, EMC staff, and a client in Palo Alto and Germany—or a huge, distributed team.
+
+Outside of managing that, we initially had slow access to Mercedes’ complex backend 
+system, and no German-spec car on site in Palo Alto to test the app. But working closely with the client, we resolved these issues, and maintained a steady course to launch.
+
+The Mercedes me &lt;https://itunes.apple.com/de/app/mercedes-me/id1029372196?mt=8&gt; app made its appearance in the 
+German Apple store on Sept 15th, meeting our client’s key goal of having an app to showcase at the auto show! Feedback was overwhelmingly positive, and we scored big points with Mercedes through our ability to go from inception to delivery in less than five months. More recently, the Android app went live &lt;https://play.google.com/store/apps/details?id=com.daimler.mm.android&amp;hl=de&gt;, and future releases are being planned or are in flight!
+
+
+
+Meet Mercedes me, a whole new Mercedes digital experience.
+Customer Spotlight
+Capturing a Record Quarter
+The stories behind some incredible wins in Q3 are creating headlines and energizing the Pivotal customer base. You&apos;ve seen the press coming out of Germany &lt;http://www.businesscloudnews.com/2015/10/19/mercedes-benz-and-pivotal-forge-smart-car-apps-on-cloud-foundry/&gt; around our connected car strategy, now get the inside story on how Pivotal won 
+that and other deals.
+
+Our library of win slides on Inside Pivotal &lt;https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/assets/external-slides&gt; continues to grow, with more than 20 new reports from Q3, 
+including recorded interviews and business slides that capture how our customers are using Pivotal BDS, PCF and Pivotal Labs to power digital transformation. We had huge wins all across our target industries, including the automotive, industrial, media, and government. Check it out &lt;https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/assets/external-slides&gt; and as always, feel free to reach out to Sophia Tseng &lt;mailto:stseng@pivotal.io&gt; or Estelle Hayes &lt;mailto:ehayes@pivotal.io&gt; with your unique customer stories.
+PEOPLE
+Women who code extends its reach
+ &lt;https://gopivotal-com.socialcast.com/users/1072700-kimmarieruquet&gt;Sannidhi Jalukar &lt;https://www.linkedin.com/profile/view?id=AAkAAAVNqswBhXiCuz343C4EShMqdFfpUf1LsIo&amp;authType=NAME_SEARCH&amp;authToken=Mujy&amp;locale=en_US&amp;trk=tyah&amp;trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A88976076%2CauthType%3ANAME_SEARCH%2Cidx%3A2-5-7%2CtarId%3A1445899623247%2Ctas%3ASannidhi&gt;, Software Engineer
+For one day each week, over a six week period, some 40 professional women gathered for the Pivotal Palo Alto Algorithms &amp; Interview meetup &lt;http://www.meetup.com/Women-Who-Code-SF/events/147771972/&gt;. Pivotal sponsored this in conjunction with the Women Who Code &lt;https://www.womenwhocode.com/&gt; Silicon Valley Chapter, and our Pivots served as mentors to both help these professionals solve technical problems in whiteboard sessions, 
+and get comfortable presenting in front of peers. Each day, the meetup focused on an algorithm problem, capped in the final week by 1–to–1 interviews around one of the problems presented.
+
+The women represented a variety of backgrounds. Some of these women were switching tracks and taking careers in a new direction, while others had taken time to start a family. It was challenging and fulfilling to help them gain the confidence to interview again, while supplying the core tenets of agile in an environment where it was safe to learn, take risks, and fail and reset.
+
+As an event co-organizer, I gave a short presentation introducing the 
+“Pivotal Way” of software development. Colleagues and I set up a pairing station for the final meetup to introduce pair programming, test-driven development, and other time-honored Labs processes.
+
+
+Get technical (clockwise from top left): Explaining method; whiteboard session; the day’s recap
+
+We seemed to have struck the right chord. Sessions were extremely well received, and we’re currently in talks to host more Women Who Code events in Palo Alto. My thanks go especially to Pivots Jesse Zhang and Kavinder Dhaliwal, who regularly served as meetup mentors. We could always use more mentors, so please contact me at sjalukar@pivotal.io &lt;mailto:sjalukar@pivotal.io&gt; if you or any of your colleagues are interested in helping us on this initiative.
+HELLO MY NAME IS...
+ Bharath sitaraman
+Bharath Sitaraman &lt;https://gopivotal-com.socialcast.com/users/917207-bharathsitaraman&gt;, Product Manager, Greenplum database
+am the resurrector of projects! I am one of the Product Managers on Greenplum (GPDB) and lead projects/teams across analytics, UI, and workload management.
+usually at our headquarters in Palo Alto, or traveling. If I&apos;m not at my desk or in a meeting in the afternoons, I&apos;m probably at the ping pong table. :P
+three projects, including revamping our text analytics solution on GPDB (GPText), our UI component for GPDB (Greenplum Command Center), and bringing about the public release of the Workload Manager (GP-WLM).
+am usually outside. I need to maintain my natural tan somehow! I’m an avid triathlete and race around the country. I’m also a backpacking and camping fiend. There&apos;s something about not having access to electronics that really appeals to me. Maybe it&apos;s just the fact that I can&apos;t check work emails!
+ 
+
+Backpacking in Patagonia. The mountains in the background are the inspiration for the Patagonia logo!
+
+
+I&apos;m a huge fan of bad jokes! ...A SQL statement walks into a bar. It goes over to two tables and asks “May I JOIN you?&quot;
+is an amazing and visionary company to work for! It&apos;s really exciting to hear the positive feedback and remarks from big players in the industry, especially around our open source efforts. I&apos;m looking forward to seeing what&apos;s in store for the future!
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from Oct. 13th through Oct 26th:
+
+Ashwin Aravindan, Software Engineer, Washington, DC
+Ben Chapman, Senior Software Engineer, Dublin, Ireland
+Britt Williams, Senior 
+Administrative Assistant, Palo Alto
+Cameron Maher, Senior Marketing Specialist, Palo Alto
+Carl Daver, Senior Field Engineer, Pivotal, US
+Chi Xie, Senior Member of Technical Staff, US
+Clayton Richardson, Senior 
+Software Engineer, San Francisco
+Clint Baptiste, Senior Member of Technical Staff
+Daniel Joyce, Software Engineer, Washington DC
+Derik Evangelista, Software Engineer, London
+Ernest Burghardt, Senior Member of 
+Technical Staff, Beaverton, OR
+Jaron Parnala, Product Manager, San Francisco
+Jason Keene, Senior Software Engineer, Denver CO
+Jeffrey Southard, Principal UX Designer, San Francisco
+Kevin R Soll, Senior Member 
+of Technical Staff, US
+Kieran Donegan, Software Engineer, Dublin, IE
+Laura Kerksiek, Import/Export Manager, Palo Alto
+Laurel Gray, Product Manager, Washington DC
+Mark Dunn, Senior Director Program Management, 
+US
+Matthew Kleiman, Software Engineer, New York
+Michael Kent, Software Engineer, New York
+Mitul Sheth, Senior Member of Technical Staff, US
+Mukesh Gadiya, Senior Product Manager, San Francisco
+Ning 
+Wu, College Co-op Student, Beijing
+Nolan Varani, Software Engineer, San Francisco
+Oscar Ventura, Advisory Solutions Architect, London
+Phillip Williams, Account Manager, Pivotal
+Richard Goldstein, 
+Principal Product Manager, Denver CO
+Shanfan Huang, UX Designer, New York
+Takahiro Nakamura, Senior Account Manager, Pivotal, Tokyo
+Taylor Kearns, Software Engineer, Boston
+Werner Wehmeyer, Senior Manager 
+Finance, Toronto
+William Lindner, Senior Software Engineer, San Francisco
+Zoe Gagnon, Senior Software Engineer, New York</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

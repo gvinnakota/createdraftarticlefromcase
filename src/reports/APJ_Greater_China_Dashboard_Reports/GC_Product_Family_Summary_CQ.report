@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_95398732</developerName>
+        <masterLabel>Sales Area</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ROLLUP_DESCRIPTION</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Central North Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Central North Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Central South Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - TX / LATAM Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Southwest Sales Rep</sourceValue>
+            </sourceValues>
+            <value>AMER - West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - GE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - GE Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - New England / Canada Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - South East Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ General Markets Sales Rep</sourceValue>
+            </sourceValues>
+            <value>AMER - East</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Telco / Media Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Telco / Media Sales Rep</sourceValue>
+            </sourceValues>
+            <value>AMER - Telco/Media</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ Global Financial Services Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ Global Financial Services Sales Rep</sourceValue>
+            </sourceValues>
+            <value>AMER - FinServ</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Federal Sales Rep</sourceValue>
+            </sourceValues>
+            <value>AMER - Fed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>APJ - Australia New Zealand Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Greater China Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Greater China Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - India Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - India Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Japan Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Korea Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Southeast Asia Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Southeast Asia Sales Rep</sourceValue>
+            </sourceValues>
+            <value>APJ</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA - Central Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - North Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - South Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - South Sales Rep</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>User.Theater__c</field>
+    </columns>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Portfolio__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Name__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Forecast_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Forecast__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Portfolio__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Region__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>APJ Greater China</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Region_autofill__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>LABS</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OpportunityLineItem.Software_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>GC - Software Type Summary CQ</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

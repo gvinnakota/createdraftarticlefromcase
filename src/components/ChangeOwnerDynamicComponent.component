@@ -1,0 +1,40 @@
+<apex:component selfClosing="true"  controller="ChangeOwnerDynamicCtlr">
+   
+<!--<apex:attribute name="StandardSetController" type="String" description="TODO: Describe me"/>--> 
+<apex:attribute name="ChangeOwnerStandardCtlr" required="true" description="The standard controller to use." type="ApexPages.StandardSetController" assignTo="{!sController}"/>
+<apex:includeLightning /> 
+    <div id="Con" />
+ <script>
+   debugger;
+       $Lightning.use("c:ChangeOwnerApp", function() { 
+            $Lightning.createComponent("c:ChangeOwnerDynamic",{
+                selectRecIds:'{!selectRecIds}', listViewId : '{!listViewId}', listViewName : '{!listViewName}',sobjectName:'{!sobjectName}'}, "Con",
+                   function(cmp) {
+                    $A.eventService.addHandler({
+                      event: 'force:navigateToList',
+                      handler: function(event) {
+                        if (sforce && sforce.one) {
+                          console.log('First');
+                          // VF page in S1 or Lightning Exp
+                          // event.$params$.scope
+                          sforce.one.force.navigateToList(event.$params$.listViewId,event.$params$.listViewName,event.$params$.listViewName,sobjectName);
+                        } else {
+                          console.log('second');
+
+                          // VF page in Classic
+                          // Ugg! We need an if branch for each possible object type.
+                          // Is there a better way of doing this?
+                          if (event.$params$.scope === 'Opportunity') {
+                            window.location = '{!URLFOR($Action.Opportunity.Tab, $ObjectType.Opportunity)}';
+                          }
+                        }
+                      }
+                    });
+                     console.log("Component is created!");
+                     console.log(cmp);
+                });
+
+            });
+
+     </script>
+</apex:component>

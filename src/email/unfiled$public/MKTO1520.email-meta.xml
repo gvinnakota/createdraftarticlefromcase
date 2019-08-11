@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Reactor for asynch/non-blocking microservices.Confirmation 1</name>
+    <style>none</style>
+    <subject>Webinar Confirmation: Using Reactor for asych/non-blocking microservices</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Your registration is confirmed for the webinar Using Reactor for asych/non-blocking microservices. We are looking forward to having you join us. 
+To help maximize your webinar experience we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html.
+Event Details:
+
+Date: Tuesday, December 2, 2014 
+Europe: 3:00pm GMT (London, GMT)  Join the WebEx &lt;https://pivotal-io.webex.com/pivotal-io/onstage/g.php?MTID=e29dfffc0ff1a7c64a301f295eb7abaae&gt;
+Dial In:
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show toll-free dialing restrictions
+
+Access code: 666 310 255
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Reset Confirmation</name>
+    <style>none</style>
+    <subject>SpringOne Tour Password Reset</subject>
+    <textOnly>link &lt;https://localhost:8443/reset-password?resetCode={{lead.Addition Information:default=edit me}}&quot; target=&quot;_blank&quot; id=&quot;&quot;&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

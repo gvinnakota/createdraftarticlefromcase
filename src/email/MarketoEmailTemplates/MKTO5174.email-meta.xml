@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign_Newsletter FY16.Newsletter - 9-27-16</name>
+    <style>none</style>
+    <subject>September 2016 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+
+It’s back to school season and the theme of this edition is education. But first, some important information that may impact your application if you are relying on PWS’s Static IP list for whitelisting access to services behind your firewall. On September 29, 2016 these will be going away as described on our blog &lt;[[https://blog.run.pivotal.io/breaking-change-pws-static-outbound-ips-are-eliminated-after-9292016/]]&gt;. If you have not already addressed this, please do so ASAP. 
+
+ This month we also cover Pivotal’s partnership with Carnegie Mellon University (CMU) to teach cloud native principles to business students. Also noteworthy, PWS has been a fantastic platform for Java apps among others, but with the new .NET Core buildpack we can also host many .NET apps. 
+
+ Thanks for reading and let us know what you think by tweeting us @pivotalws or contacting us with any questions at support@run.pivotal.io. 
+
+ Best Regards, 
+
+ The Pivotal Web Services Team 
+
+ Deprecation of Publicly Visible External IP List 
+
+ The following is a repeat of last month’s announcement of this major change. Given the importance and impact of this change we are highlighting it again in this month’s newsletter. 
+
+ Pivotal Web Services currently provides a set of externally visible IPs &lt;[[https://docs.run.pivotal.io/marketplace/external-ips.html]]&gt; to enable customers to whitelist traffic from applications hosted on PWS. Some customers use this whitelist to ACL services and resources behind corporate firewalls. This has been at best an incomplete solution. While it allows for a customer&apos;s apps to cross the corporate firewall, it also allows this for any application hosted on PWS. This is a consequence of the PWS being a multi-tenant platform. 
+
+ PWS will be making some configuration changes to increase the performance and availability of the platform that will require the current set of public IPs to no longer be supported. We will no longer publish the external IP addresses, nor will these IP addresses remain static. Therefore if your application requires access to services behind a firewall that has been configured with these external IPs, it will be impacted and will no longer work consistently after September 29, 2016. 
+
+ The workaround to this change will be to use a service that provides a private static IP addresses that can be utilized by firewall configurations to provide the same functionality. The PWS marketplace offers the Statica &lt;[[https://console.run.pivotal.io/2/marketplace/services/f460748d-1983-4fba-9b7b-f97cd5127854]]&gt; service for this purpose with varying plans to meet your needs. More information can be found in Statica’s documentation &lt;[[http://docs.run.pivotal.io/marketplace/services/statica.html]]&gt;. There are other services that you can consider as well. While we know this causes an inconvenience and potential cost, we believe that this will increase the performance and security offered to your applications. Should you have any questions, please contact support@run.pivotal.io &lt;[[mailto:support@run.pivotal.io]]&gt;. 
+
+ Pivotal Web Services Used to Teach CMU Cloud Native principles 
+
+ Pivotal Web Services is used frequently as a fast start to learn more about Cloud Foundry and Cloud Native application development principles. PWS is part of the Cloud Computing for Business course offered by the Heinz College that provides “graduate students hands-on cloud technology programming experiences and provides real-world examples of how this technology is being utilized. Cloud Foundry will be a main focus area as the course dives into Platform as a Service (PaaS) enabling rapid and reliable software development.” You can read more about this one-of-a-kind course in the press release &lt;[[https://pivotal.io/platform/press-release/pivotal-teams-up-with-carnegie-mellon?utm_source=social&amp;account_id&amp;utm_medium=TWITTER&amp;pivotalcf&amp;utm_campaign=Paas&amp;20160909]]&gt;. 
+
+ .NET Core Buildpack Beta is Now Available on PWS 
+
+ .NET Core is a multiplatform framework that allows .NET developers the ability to write applications that are deployable on to more environments including Cloud Foundry and PWS. To help .NET developers, the .NET Core buildpack is now available on PWS. You can learn more about it on Microsoft’s .NET Core getting started pages &lt;[[https://docs.microsoft.com/en-us/dotnet/articles/core/getting-started]]&gt; and find out more about how to use the Cloud Foundry .NET Core Buildpack beta in this blog post &lt;[[https://blog.run.pivotal.io/introducing-the-net-core-buildpack-beta-on-pws/]]&gt;. Please let us know your experience with this new feature by tweeting us @pivotalws &lt;[[https://twitter.com/pivotalws]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

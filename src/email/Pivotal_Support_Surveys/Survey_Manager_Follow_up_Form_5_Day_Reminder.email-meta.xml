@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Clicktools Mgr Survey email - Reminder to complete after 5 days</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Survey - Manager Follow-up Form 5-Day Reminder</name>
+    <style>none</style>
+    <subject>Reaching SLO: your CES follow-up on case #{!Pivotal_Survey_Feedback__c.Case_Number_Feedback__c}</subject>
+    <textOnly>TASK REMINDER
+
+Please fill out your manager follow-up:
+https://survey.clicktools.com/app/survey/go.jsp?iv=rernlapx0f5v&amp;q11={!Pivotal_Survey_Feedback__c.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

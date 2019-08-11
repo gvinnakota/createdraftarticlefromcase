@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal Partner Days_2017.Boston SI Reminder</name>
+    <style>none</style>
+    <subject>See you Thursday, June 29 at Pivotal Partner Days, Boston!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+ 
+Thank you for signing up to attend Pivotal Partner Days &lt;[[https://pivotal.io/event/partner-days/boston/system-integrator-workshop]]&gt; taking place in Boston.
+ 
+Below you will find some helpful information about the event:
+ 
+Location:
+CIC &lt;[[https://cic.us/boston/]]&gt;
+50 Milk St / 20th Floor Boston, MA 02109
+Map &amp; Directions &lt;[[https://www.google.com/maps/place/50+Milk+St,+Boston,+MA+02109/@42.3569998,-71.0597768,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3708476089075:0xbc8dd70d06accf26!8m2!3d42.3569998!4d-71.0575881]]&gt;
+ 
+Building Access: 
+Upon arrival, take the elevator to the 20th of the building to check-in. The event will begin promptly at 11:00am. Please arrive 15 minutes early to check in.
+ 
+Space is limited for this event, so if you are no longer able to attend, we ask that you kindly let us know so that we may fill your spot. 
+ 
+Questions?
+Please contact Andrew Mackenzie at amackenzie@pivotal.io &lt;[[mailto:amackenzie@pivotal.io]]&gt;.
+ 
+We look forward to seeing you this week!
+ 
+- Pivotal Partner Alliances Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

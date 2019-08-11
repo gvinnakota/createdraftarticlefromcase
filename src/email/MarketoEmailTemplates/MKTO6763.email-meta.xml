@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Email_AppTx Drip and Nurture_Q418.Aaron Email 2: Tips for Application Trans</name>
+    <style>none</style>
+    <subject>Four Tips for Application Transformation</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+
+Through our work with some of the world&apos;s leading organisations &lt;[[https://pivotal.io/customers]]&gt; we’ve learned what works and what doesn’t on the journey to Application Transformation. From experience, here are our top 4 tips:
+
+
+1. Start Small - START WITH ONE BUSINESS UNIT AND A HANDFUL OF APPS
+We recommend starting with a set of 5-10 applications built over the 
+last five years using technology compatible with Pivotal Cloud Foundry (PCF) &lt;[[https://pivotal.io/platform]]&gt;. We use an approach called Snap Not Analysis Paralysis (SNAP) to quickly determine suitability and a TIME Analysis &lt;[[https://www.gartner.com/doc/1115314?ref=unauthreader]]&gt;, “2 x 2” business prioritization framework used as a conference room exercise to help target apps of low technical risk and of high business relevance.
+
+
+2. Learn by Doing - BUILD A COOKBOOK OF PATTERNS INFORMED BY MOVING INITIAL APPS INTO PROD
+We help you form an internal consulting function around app 
+transformation and then augment internal staff (who own and lead the initiative) with external resources (that can scale and offer economic advantage) in a way that ramps over time. The objective is to get 5-10 applications moved into production while capturing lessons/techniques as recipes to streamline and accelerate future efforts. Read this white paper &lt;[[https://content.pivotal.io/white-papers/pivotal-practices-application-transformation]]&gt; and learn how to 
+incrementally reduce time, cost, and operational inefficiencies while maintaining security, resilience, and compliance.
+
+
+3. Break Big Things Into Small Things - BREAK “SLICES” OF COMPLEX SYSTEMS INTO PIVOTAL CLOUD FOUNDRY (PCF)
+Monoliths often span multiple subsystems and data sources and dozens of 
+deployables across a network of servers and mainframe backends. By breaking down complex systems into lightweight microservices, you can scale horizontally on a cloud. 
+
+
+4. Automate Everything - REDUCE MANUAL PROCESS ACROSS THE PATH-TO-PRODUCTION
+To start, we recommend drawing a value stream map &lt;[[https://www.lucidchart.com/pages/value-stream-mapping]]&gt; ​of the end-to-end path to production (for the initial apps 
+only) to identify opportunities to reduce waste through automation.Additionally, there may be little to no automated test coverage within the existing portfolio. Pivotal recommends that all new code be written to include unit and integration tests. Existing code ported to PCF should include smoke tests for backing services, and potentially acceptance tests.
+
+
+If you have any questions or would like to discuss in more detail, I look forward to 
+hearing from you.
+
+
+Thank you,
+Aaron
+
+
+
+
+{{my.Aaron Signature:default=edit me}}
+
+© 2018 Pivotal Software, Inc. 875 Howard Street, Fifth Floor, San 
+Francisco, CA 94103. Published in the USA. Unsubscribe &lt;[[https://connect.pivotal.io/UnsubscribePage.html]]&gt;. Manage your subscription preferences &lt;[[https://pivotal.io/subscription-management]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

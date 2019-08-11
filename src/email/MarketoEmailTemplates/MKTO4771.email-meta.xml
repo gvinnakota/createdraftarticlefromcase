@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>2nd Apr nwslttr</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.04-24-2017 V5N6</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, 24 Apr</subject>
+    <textOnly>April 24, 2017
+Vol 5, No 6
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – Day 1, Again
+All Things Product &lt;[[#product-update]]&gt; – Going Reactive with Spring Framework 5.0
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Culture Takes Courage
+My Name Is &lt;[[#my-name-is]]&gt; – Annamaria Boheim
+day 1, again
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+Every year in his annual letter to shareowners &lt;[[https://www.recode.net/2017/4/12/15274220/jeff-bezos-amazon-shareholders-letter-day-2-disagree-and-commit]]&gt;, Amazon founder and CEO Jeff Bezos gets around to rekindling (no pun intended) the spirit of &quot;Day 1&quot;. This year he included thoughts on flushing out the perils of &quot;Day 2&quot;. To Bezos, Day 2 doesn&apos;t mean abandoning Amazon&apos;s commitment to customers, but quite the opposite. Day 2 is where process is no longer a means to an end, but an end in and of itself that degrades decision velocity and the will to take risks; or where market research compromises the deep, learned intuitions about customers.
+ 
+Amazon&apos;s CEO is cut from the same Valley cloth that gives leaders their existential aversion to stasis. Despite the trappings of bureaucracy to which Amazon is susceptible, Bezos still seems ruthlessly focused on the causes and not the effects of its runaway success. Courage is action, or avoiding the pitfalls of hierarchy or vanity that pull companies into slow death spirals. It&apos;s taking risks that open up leads that others simply have to follow. 
+ 
+Which brings us to this issue. We get a variation on the theme of courage from New York Office Director, Julie Babb, who muses on its value to clients and Pivots alike, in Labs+Culture. In All Things Product, engineer Rossen Stoyanchev writes on Spring Framework 5.0 and its dovetail with reactive programming—the loosely coupled, responsive system that is helping propel the most popular Java web framework bravely forward. 
+ 
+Finally, Pivotal takes the cloud native creed back on the road. This neat deck &lt;[[https://docs.google.com/presentation/d/1-4nmjStltqdDeAUIQ81cpRm_UafDvMt-hUHqIbVHug4/edit#slide=id.g207bd63830_0_14]]&gt; captures the roadshows and webinars you can get your customers and partners to attend.
+ 
+Enjoy.
+going reactive with spring framework 5.0 
+
+
+
+
+Rossen Stoyanchev &lt;[[#author-socialcast-profile]]&gt;, Senior Staff
+
+Spring emerged as an open source project in early 2003. Some of its earliest code was for web applications—what we know today as Spring MVC—which makes perfect sense as a starting point, since most applications need a web interface.
+ 
+Fourteen years later, Spring MVC continues to be the most popular web framework &lt;[[https://zeroturnaround.com/rebellabs/java-web-frameworks-index-by-rebellabs/]]&gt; on the JVM, having evolved through four major Java language versions, the rise of REST &lt;[[https://www.infoq.com/articles/tilkov-rest-doubts]]&gt;, single page apps, and more recently, microservice-style applications.
+ 
+Over the course of 15 years it’s likely to come up against something that requires deeper change. This is the case with Spring WebFlux &lt;[[https://spring.io/blog/2017/02/23/spring-framework-5-0-m5-update]]&gt;, the new web application stack in Spring Framework 5.0 scheduled to release in June 2017. Two years in the making, Spring WebFlux passes the duck test &lt;[[https://en.wikipedia.org/wiki/Wikipedia:The_duck_test]]&gt; in that it looks, feels, and behaves like Spring MVC, but runs on a completely different execution model aimed at creating responsive, resilient applications that scale better with less 
+resources. Enabled by Java 8+, Spring WebFlux also sports all-new functional programming models for client and server web applications.
+ 
+Why the big changes? Many of the benefits are described in the Reactive Manifesto &lt;[[http://www.reactivemanifesto.org/]]&gt; and companion specification &lt;[[http://www.reactive-streams.org/]]&gt; that includes contributions from Pivotal. In plain terms this is about applications that are non-blocking, and consequently event-driven, all the way to their core. This gives devs first-class options for addressing asynchronicity, concurrency, and latency for building scalable, resilient apps.
+
+
+One could say this: what Spring Boot did to provide Rails-style productivity to Java developers, Spring WebFlux does to bring a Node.js-style, execution model with an event-loop—and limited threads, versus the more traditional approach of scaling with large thread pools.
+ 
+For a real-world case study, take this Netflix blog post &lt;[[http://techblog.netflix.com/2016/09/zuul-2-netflix-journey-to-asynchronous.html]]&gt; describing their journey to asynchronous, non-blocking systems for the Netflix gateway, allowing their 
+developers to “benefit greatly by decreasing the cost of network connections to enable push and bi-directional communication to and from devices.” Spring Framework 5.0 enables Spring applications to make the same journey.
+ 
+Why does it matter for Pivotal and our customers? Cloud-native applications are distributed and asynchronous by nature, so techniques that embrace them while using less resources to do so are relevant and important. The Spring Framework is not the first to offer such features. What’s truly unique with Spring is the choice it offers to use the right technology for the job at hand. Even in a company like Netflix, there are countless applications that don’t need to change as deeply as the main gateway.
+ 
+“Reactive Spring” goes far beyond Spring Framework 5.0 and Spring WebFlux. For starters, we couldn’t have done it without Project Reactor &lt;[[https://github.com/reactor/reactor-core]]&gt;, the reactive library sponsored by Pivotal and underlying Spring Framework 5.0. Also later this year you can expect follow-up releases from Spring Data &lt;[[https://spring.io/blog/2016/11/28/going-reactive-with-spring-data]]&gt;, Spring Boot, Spring Security, and Spring Cloud. Each will include their own support for reactive-style applications.
+Interestings
+
+
+
+
+
+
+
+
+
+ - Read this: Polish investment bank recounts move to Spring for app development—what they needed, and how Spring helped &lt;[[https://blog.gft.com/blog/2017/04/07/migrating-to-spring-boot-in-an-investment-bank/]]&gt;
+ - Err...Rapid lunch consumption model? 313 Days of breakfast at Pivotal Sydney &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBTuLsXO8SpAMfh6taPomuXyq8WlQHB6retAlD-2BVzyF6f_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMSpb0OVvTfn3UEyHPexUnT5Yu1pkMfVdHny-2FQYAIAlR5BStrldtb71QAhfOD-2BPOia-2FhHuICqeHwM1N59jDitFV6TTjadU4wZTsuozTbYSCZ833PDrmO6A3QShVsC0yom1wNUDhDoSRzNC0VX5I1RhKwpXdtGW5Hs43CeLzdkdLtcSz-2B6WlLIfSRWvY0f4ivnL0-3D]]&gt; on video (thanks Christos Roussos).
+ - Out of the Hat—PCF brings on-demand services and more for go-to message broker with RabbitMQ for PCF &lt;[[http://docs.pivotal.io/rabbitmq-cf/1-8]]&gt;.
+ - Facebook adds VR dimension with launch of Facebook spaces &lt;[[https://www.facebook.com/spaces]]&gt;
+ - Bookish@Pivotal—Cornelia Davis expands the cloud native canon &lt;[[https://content.pivotal.io/ebooks]]&gt; (first 30 pages of her new book are free!)
+ - Technologists made tactile musical plants, and turned it into a Stanford talk on why the physical world is the next frontier &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBQQveVcXkXAkCQ4BMWlD7gT-2FWvqASbI53Z-2F9UTZNuPFB_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQJDZ9sXuT9P-2BYiZFeBsPveD18JHn6uJZVD2N0VELRtJfc3QdYGOYjcuKuL8sFfAhWXxxlHu5ds2mdRg8L6q6jaCS2dZfcx-2BXnLi3KsmTHnMKo6XhnjBBs3k1f5C2oPOfYCkrehvp2uqSOzV8WB5ht-2FHqGNTtDoXawrq5vpDAqQ2Il3jWdt5luHl7cf7JTNuKk-3D]]&gt;
+Courage
+
+
+
+
+Julie Babb &lt;[[#author-socialcast-profile]]&gt;, Office Director, Pivotal New York
+We recently had a large financial client&apos;s HR team visit us here in NY. They asked us, &quot;How do you shape a culture that supports the business outcomes you need?&quot;&lt;&lt;We discussed the tenets that are at the heart of our culture at Pivotal: Do What Works; Do the Right Thing; and Be Kind—three straightforward guardrails that help us calibrate our instincts about how to work well together. We talked about the agile manifesto &lt;[[http://agilemanifesto.org/]]&gt;, and how challenging it is to adopt and internalize it across a scaled organization. Lastly, we touched on other values that are dearly held by both our project and leadership teams at Pivotal: communication, transparency, simplicity, and courage. Pointing to how these values manifest themselves on the floor—through small empowered teams—made for a straightforward tour that helped our guests connect the dots between values and practices.
+ 
+Since that conversation, I’ve been thinking about how courage at Pivotal is ubiquitous, yet seldom discussed. It takes courage for our clients to partner with us and attempt something new, and it takes courage for our teams to lean on each other to prioritize with incomplete information. It also takes courage for leadership to open new offices and expand into new cities, and for the field to make cold calls to groups we think we can help. Most importantly, it takes incredible courage for us to hold each other accountable and own our results—both when they’re worth celebrating and especially when they’re not.
+ 
+Culture is a team sport. For our clients, what is unleashed by software will be absorbed across teams—and the billing of transformation will prove to be just that without the courage to change.
+ 
+The godfather of extreme programming, Kent Beck &lt;[[https://en.wikipedia.org/wiki/Kent_Beck]]&gt;, teaches us that 
+when courage is done well, it’s celebrated in the service of other values, not by itself individually. “If courage alone is dangerous, in concert with other values it is powerful. The courage to speak truths, pleasant or unpleasant, fosters communication and trust. The courage to discard failing solutions and seek real, concrete answers creates feedback.”
+ 
+It was a pleasure and inspiration to have clients who wanted to go deep on values. It’s more common in these types of conversations to frame the value of Labs through the tactical practices that allow us to execute. And it served as a good reminder of a quiet value we often exhibit and don’t often recognize.
+annamaria boheim
+
+
+
+
+Product Designer, Berlin
+At Pivotal I...
+Work as a Product Designer.
+You can find me...
+Until most recently, in the Berlin office, but at the moment and for the next year, I&apos;ll be in Paris to help kick off the new Labs location. If you don&apos;t find me in our WeWork space on the 7th floor, I&apos;m probably on the rooftop terrace enjoying the amazing view over Sacre Cœur. Magnifique!
+Currently, I am working on…
+Improving the e-commerce experience of our Orange B2B customers. I&apos;ve just started a D+F, which will focus on Orange pro user accounts, and how customers can manage their existing contracts.
+In my spare time…
+I enjoy getting lost! Both by randomly walking around a foreign city or area, and therefore discovering new places and hidden spots; or by getting lost in the rabbit holes of music libraries; intriguing movies or TV series; in deep conversations with good friends; or by dancing in the club like nobody&apos;s watching :) 
+Something you probably don’t know about me…
+I&apos;m not a morning person, so if I ever meet you at a Pivotal breakfast table, and give you the could shoulder… sorry!
+Your author (far left), cool black in Berlin; The view from Pivotal Paris c&apos;est tres bien.
+To me Pivotal…
+Is full of great and inspiring people that I enjoy learning from and working with every day, and I feel lucky to call some of them friends.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.December Spring News 2014</name>
+    <style>none</style>
+    <subject>December Spring News: Spring Boot 1.2 introduces new Java EE API support</subject>
+    <textOnly>DECEMBER 2014
+&lt;http://spring.io/blog/2014/12/11/spring-boot-1-2-0-released&gt;
+Spring Boot 1.2 introduces new Java EE API support
+Spring Boot 1.2 GA adds deeper support for key Java EE APIs like JAX-RS, JMS, JTA, JSR330, Servlet 3.1, and for popular open source like Jackson’s 
+JSON processor, RedHat’s undertow web server, and DropWizard’s Metrics library. For all the details, check out Phil Webb’s release blog &lt;http://spring.io/blog/2014/12/11/spring-boot-1-2-0-released&gt; and Josh Long’s blog “Bootiful Java EE support &lt;http://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2&gt;” for example code on how you can make Java EE dramatically more productive. First, Spring decoupled Java EE from the container, and now with Spring Boot, you’re decoupled from even the servlet engine! Lastly, with Spring IO platform we supply a versioned release of the entire platform in the same fashion Java EE does, so you can rest assured. Combine all this with deep Java 8 support and a strong community, and it’s easy to see why the Spring IO Platform is the open source leader in Java development.
+Learn More &lt;http://spring.io/blog/2014/12/11/spring-boot-1-2-0-released&gt;
+&quot;Bootiful&quot; Java EE Support in Spring Boot 1.2
+Spring Boot 1.2 just released &lt;http://spring.io/blog/2014/12/11/spring-boot-1-2-0-released&gt; and it&apos;s packed full of features. This month’s Tech Tip is on this example code and blog &lt;http://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2&gt; where I want to look at - and demonstrate - some of the many new features in Spring Boot 1.2 that make the lives of those coming from, or 
+otherwise building on, Java EE easier. It&apos;s worth mentioning that a lot of this support has been possible with Spring before, of course, but now with Spring Boot 1.2, it&apos;s just so darned easy! Also, here&apos;s an example program that demonstrates Boot&apos;s new JAX-RS auto-configuration &lt;http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jersey&gt; (in this case, using Jersey 2.x &lt;https://jersey.java.net/&gt;) in the GreetingEndpoint. It demonstrates global transactions with the new auto-configured JTA support &lt;http://docs.spring.io/spring-boot/docs/1.2.0.BUILD-SNAPSHOT/reference/htmlsingle/#boot-features-jta&gt;. This example also uses the Wildfly (from RedHat) application server&apos;s awesome Undertow embedded HTTP server &lt;http://undertow.io/&gt; instead of (the default) Apache Tomcat. Spring Boot now supports Servlet 3.1 by default with Jetty 9, Tomcat 8 and Undertow, while still supporting Servlet 3. This example also uses the new @SpringBootApplication annotation which combines @Configuration, @EnableAutoConfiguration and @ComponentScan. Nice!
+
+There are a slew of new features beyond these. Check out the release notes &lt;https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.2-Release-Notes&gt; for the full scoop!
+Suppress types in content-assist
+Are you annoyed by java.awt.List showing up in the content-assist when you would like to use the collections library instead? You can avoid that by excluding certain types from showing up in the content-assist via the Preferences -&gt; Java -&gt; Appearance -&gt; Type Filters. You can list concrete types as well as packages - and it helps a lot to clean up the content-assist proposal list. Enjoy!
+Building Scalable Data Applications with Spring and GemFire
+Speaker: Luke Shannon
+ 
+ GemFire is Pivotal&apos;s distributed In Memory Data grid. In this session we will cover simplifying configuring a GemFire grid using Spring Data GemFire, and explore how data is dynamically distributed and made highly available as the grid resources are increased or decreased to meet increased client demand. GemFire access and testing patterns using Spring will be reviewed in detail. 
+ 
+ We will walk through creating a domain object and using Spring Data GemFire Repositories to perform CRUD operations on a GemFire grid, creating a Spring MVC/Spring Boot application that uses GemFire as its persistence layer, review how Spring Boot and Spring Data GemFire can be used to help with GemFire test cases and how Spring Data GemFire can make creation and execution of GemFire functions easier. We will also explore how Spring XD can be used to load and monitor data changes in the grid. This will be a hands on, code oriented session.
+Europe
+Tuesday, January 13, 2015
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMBuildingScalableDataApplicationswithSpringandGemFire_Register.html&gt;
+North America
+Tuesday, January 13, 2015
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMBuildingScalableDataApplicationswithSpringandGemFire_Register.html&gt;
+Introducing the Java DSL for Spring Integration
+Speaker: Gary Russell
+ 
+ The Spring Integration JavaConfig and DSL extension provides a set of convenient Builders and a fluent API to configure Spring Integration message flows from Spring @Configuration classes. The Java DSL for Spring Integration is essentially a facade for Spring Integration. The DSL provides a simple way to embed Spring Integration Message Flows into your application using the fluent Builder pattern together with existing Java and Annotation configurations from Spring Framework and Spring Integration as well. Another useful tool to simplify configuration is Java 8 Lambdas.
+
+Developers joining this webinar will learn the DSL basics and see it in action.
+Europe
+Tuesday, January 27, 2015
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMIntroducingtheJavaDSLforSpringIntegration_Register.html&gt;
+North America
+Tuesday, January 27, 2015
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMIntroducingtheJavaDSLforSpringIntegration_Register.html&gt;
+SpringOne2GX 2014 Replay: Spring Boot and Netflix OSS
+Learn basic concepts about Spring Boot and Netflix OSS software and how to integrate Netflix OSS technologies into Spring Boot
+Watch Video &lt;http://spring.io/blog/2014/12/02/springone2gx-2014-replay-spring-boot-and-netflix-oss&gt;
+Archived videos
+ Webinar Replay: Using Reactor for Async/Non-blocking Microservices &lt;http://spring.io/blog/2014/12/11/webinar-replay-using-reactor-for-asynch-non-blocking-microservices&gt;
+ Webinar Replay: Spring Boot and JRebel 6.0 &lt;http://spring.io/blog/2014/11/24/webinar-replay-spring-boot-and-jrebel-6-0&gt;
+ SpringOne2GX 2014 Replay: Develop powerful Big Data Applications easily with Spring XD &lt;http://spring.io/blog/2014/12/09/springone2gx-2014-replay-develop-powerful-big-data-applications-easily-with-spring-xd&gt;
+ SpringOne2GX 2014 Replay: Java 8 Language Capabilities. What’s in it for you? &lt;http://spring.io/blog/2014/11/17/springone2gx-2014-replay-java-8-language-capabilities-what-s-in-it-for-you&gt;
+ SpringOne2GX 2014 Replay: Creating REST-ful, Hypermedia-based Micro-services with Spring Boot &lt;http://spring.io/blog/2014/11/24/springone2gx-2014-replay-creating-rest-ful-hypermedia-based-micro-services-with-spring-boot&gt;
+ SpringOne2GX 2014 Replay: Developing Microservices for PaaS with Spring and Cloud 
+Foundry
+ SpringOne2GX 2014 Replay: Running Your 
+Spring Apps in the Cloud
+ SpringOne2GX 
+2014 Replay: Security for Microservices with Spring and OAuth2
+ SpringOne2GX 2014 Replay: Spring Boot and Netflix OSS &lt;http://spring.io/blog/2014/12/02/springone2gx-2014-replay-spring-boot-and-netflix-oss&gt;
+ SpringOne2GX 2014 Replay: Building Reactive applications with Reactor and the Reactive Streams standard  &lt;http://spring.io/blog/2014/12/02/springone2gx-2014-replay-building-reactive-applications-with-reactor-and-the-reactive-streams-standa4d&gt;
+ SpringOne2GX 2014 Replay: Spring XD for Real-time Hadoop Workload 
+Analysis
+ SpringOne2GX 2014 Replay: 
+Implementing the Lambda Architecture with Spring XD
+ SpringOne2GX 
+2014 Replay: Spring XD - A Guided Tour
+ SpringOne2GX 2014 Replay: Developer Tooling – What’s New and What’s Next &lt;http://spring.io/blog/2014/11/17/springone2gx-2014-replay-developer-tooling-what-s-new-and-what-s-next&gt;
+ SpringOne2GX 2014 Replay: What’s new in Spring Data? &lt;http://spring.io/blog/2014/11/17/springone2gx-2014-replay-what-s-new-in-spring-data&gt;
+Converting a Spring Boot JAR Application to a WAR using Maven
+This guide walks you through the process of converting a runnable JAR application that was built with Spring Boot into a WAR file that you can run in any standard servlet container. What you’ll build: You’ll take a simple Spring MVC web app and build a WAR file using Spring Boot.
+View Guide &lt;http://spring.io/guides/gs/convert-jar-to-war-maven/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+http://spring.io/guides
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring IO Platform 1.0.3 &lt;http://spring.io/blog/2014/11/13/spring-io-platform-1-0-3-released&gt;
+ Spring Framework 4.1.3 &lt;http://spring.io/blog/2014/12/09/spring-framework-4-1-3-released&gt;
+ Spring Cloud 1.0.0.M3 &lt;http://spring.io/blog/2014/11/25/spring-cloud-1-0-0-m3-available-now&gt;
+ Spring Boot 1.2.0 released &lt;http://spring.io/blog/2014/12/11/spring-boot-1-2-0-released&gt;
+ Spring Boot 1.2.0.RC2 &lt;http://spring.io/blog/2014/11/21/spring-boot-1-2-0-rc2-available-now&gt;
+ Spring Boot 1.1.10 released &lt;http://spring.io/blog/2014/12/11/spring-boot-1-1-10-released&gt;
+ Spring XD 1.1 M1 and 1.0.2 &lt;http://spring.io/blog/2014/11/19/spring-xd-1-1-m1-and-1-0-2-released&gt;
+ Spring Session 1.0.0.RC1 &lt;http://spring.io/blog/2014/11/18/spring-session-1-0-0-rc1-released&gt;
+ Spring Security 4.0.0.RC1 Released &lt;http://spring.io/blog/2014/12/11/spring-security-4-0-0-rc1-released&gt;
+ Spring for Android 2.0.0M2 &lt;http://spring.io/blog/2014/12/09/spring-for-android-2-0-0-m2-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.3  &lt;http://spring.io/blog/2014/12/02/spring-tool-suite-and-groovy-grails-tool-suite-3-6-3-released&gt;
+ Spring for Apache Hadoop 2.1.0.M2  &lt;http://spring.io/blog/2014/11/14/spring-for-apache-hadoop-2-1-0-m2-released&gt;
+ Spring Roo 1.3.0 introduces JDK 8 &lt;http://spring.io/blog/2014/11/21/spring-roo-1-3-0-introduces-jdk-8-support&gt;
+ Spring Roo 1.3.1 RC1 available with important bug fixes &lt;http://spring.io/blog/2014/11/26/spring-roo-1-3-1-rc1-available-with-important-bug-fixes&gt;
+ Spring Integration Java DSL 1.0 GA &lt;http://spring.io/blog/2014/11/24/spring-integration-java-dsl-1-0-ga-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.3 &lt;http://spring.io/blog/2014/12/02/spring-tool-suite-and-groovy-grails-tool-suite-3-6-3-released&gt;
+ First Milestone of Spring Data Release Train Fowler &lt;http://spring.io/blog/2014/12/01/first-milestone-of-spring-data-release-train-fowler-available&gt;
+“Bootiful” Java EE Support in Spring Boot 1.2 &lt;http://spring.io/blog/2014/11/23/bootiful-java-ee-support-in-spring-boot-1-2&gt;
+ Latest Jackson integration improvements in Spring &lt;http://spring.io/blog/2014/12/02/latest-jackson-integration-improvements-in-spring&gt;
+ Screencast: How to create a RESTful app in five minutes or 
+less
+ Building a Spring Integration 4.1 WebSocket 
+Endpoint
+ Spring Integration Java DSL: Line by line 
+tutorial
+ Spring Integration Java DSL (pre Java 8): 
+Line by line tutorial
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;Search=Search&amp;subjectID=17750&amp;filters=subjectID&gt;
+
+Enterprise Integration with Spring &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Enterprise+integration+spring&amp;Search=Search&gt;
+
+Spring Web &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Spring+Web&amp;Search=Search&gt;
+
+What’s New in Spring (NEW) &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=What%27s+New+in+Spring&amp;Search=Search&gt;
+
+JPA with Spring (coming late 2014) - Current version ‘Hibernate with Spring’ &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=JPA&amp;Search=Search&gt;
+
+Groovy &amp; Grails &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Groovy&amp;Search=Search&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

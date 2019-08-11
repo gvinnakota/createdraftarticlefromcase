@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Evolving DevOps: The Benefits of PaaS and Application Dial Tone_Q</name>
+    <style>none</style>
+    <subject>Confirmation: Evolving DevOps: The Benefits of PaaS and Application Dial Tone 12/10</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar &quot;Evolving DevOps: The Benefits of PaaS and Application Dial Tone&quot; on Wednesday, December 10, 2014 at 10:00 AM PST. Please see the event details below:
+
+Date: Wednesday, December 10, 2014
+Time: 10:00AM PST (San Francisco)
+Event Number: 669 755 545
+Join the Webex &lt;https://pivotal-io.webex.com/pivotal-io/onstage/g.php?d=669755545&amp;t=a&gt;
+ Teleconferencing Information:
+This webinar will be streaming live, however dial-in options are available:
+
+
+
+ - US TOLL FREE: 1-855-749-4750
+ - Global call-in numbers &lt;https://pivotal-io.webex.com/pivotal-io/globalcallin.php?serviceType=EC&amp;ED=33226853&amp;tollFree=1&gt; 
+ - Toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt; 
+ - Access code: 669 755 545
+
+
+
+{{my.Save the Date:default=edit me}}
+ 
+We look forward to you joining us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

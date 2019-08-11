@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Support Success Teams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is User Active --></label>
+        <name>Is_User_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose &quot;Case Notification&quot; to be notified when a Case is created for this Account. 
+Choose &quot;Case Team&quot; to be emailed updates for all open Cases under this Account. --></help>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>New Case Notification</masterLabel>
+            <translation><!-- New Case Notification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Case Notification &amp; Case Team</masterLabel>
+            <translation><!-- New Case Notification &amp; Case Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unique Member Key --></label>
+        <name>Unique_Member_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Member --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only Standard and Customer Portal User can be on a Success Team --></errorMessage>
+        </lookupFilter>
+        <name>User__c</name>
+        <relationshipLabel><!-- Support Success Teams --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Support Success Team</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Support Success Teams</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Success Team Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Non Account related community users can not be added to success team!! --></errorMessage>
+        <name>Account_Related_Contacts</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Standard User is not SP Qualified --></errorMessage>
+        <name>SP_Qualified</name>
+    </validationRules>
+</CustomObjectTranslation>

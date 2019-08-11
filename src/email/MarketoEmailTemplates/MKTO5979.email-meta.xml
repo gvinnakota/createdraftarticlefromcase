@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter (Pre-2018).September 2014 Newsletter</name>
+    <style>none</style>
+    <subject>Introducing the new Spring Cloud</subject>
+    <textOnly>SEPTEMBER 2014
+&lt;http://projects.spring.io/spring-cloud/&gt;
+Introducing the new Spring Cloud
+We’ve changed the charter of Spring Cloud from what it was originally announced &lt;http://spring.io/blog/2014/06/03/introducing-spring-cloud&gt; to be – it is now an umbrella project like Spring Data, that contains the original Spring Cloud project (renamed Spring Cloud Connectors) &lt;http://cloud.spring.io/spring-cloud-connectors/&gt;. It’s charter now, inspired by NetFlixOSS, provides tools for developers to quickly build some of the common patterns in distributed systems (e.g. configuration management, service discovery, circuit breakers, intelligent routing, micro-proxy, control bus, one-time tokens, global locks, leadership election, distributed sessions, cluster state). Since the coordination of distributed systems leads to boiler plate patterns, Spring Cloud can address those patterns and help developers quickly stand up services and applications that leverage them. They will work well in any distributed environment, including the developer&apos;s own laptop, bare metal data centers, but will work best on distributed application platforms such as Pivotal Cloud Foundry.
+Spring Cloud &lt;http://projects.spring.io/spring-cloud/&gt;
+Using Spring Cloud&apos;s Distributed Configuration Support
+The nascent Spring Cloud project is *filled* with all sorts of goodies to support building microservices on top of Spring Boot &lt;http://spring.io/projects/spring-boot&gt; the Netflix OSS stack &lt;http://netflix.github.io/#repo&gt;. One of my favorite features is Eureka, a way to handle service discovery in a distributed system. The idea is simple: a system composed of microservices can get unweildy very quickly. Where do services live (and on what port)? Is the service *available*? Eureka can help with all of this, and more! 
+
+ You need to stand Eureka up somewhere. This example &lt;https://github.com/joshlong/spring-doge-microservice/tree/master/eureka-server&gt; demonstrates how Spring Cloud makes it as simple as using the `@EnableEurekaServer` to *install* Spring Cloud.
+
+
+
+You can open your browser to `http://127.0.0.1:8761` to see what Eureka gives you. Now, let&apos;s load up a service and have it register itself with Eureka. Spring Cloud provides the `@EnableEurekaClient` annotation. This annotation looks for the configured &apos;spring.application.name &lt;http://projects.spring.io/spring-cloud&gt;&apos; property value in your application&apos;s `application.yml` (or `application.properties`) and then looks for the Eureka 
+instance in the cluster (by default, at the location above) and attempts to register the client under that name. Here&apos;s a simple client example &lt;https://raw.githubusercontent.com/joshlong/spring-doge-microservice/master/account-service/src/main/java/doge/AccountApplication.java&gt; that&apos;ll automatically register itself with Eureka. Run this and wait a few seconds then refresh the Eureka server and you&apos;ll see it&apos;s registered itself!
+
+
+The final piece is to dynamically *discover* services from other services. In this example &lt;https://github.com/joshlong/spring-doge-microservice/blob/master/account-service/src/main/java/doge/AccountApplication.java&gt;, we use the auto-configured Netflix Eureka `DiscoveryClient` to look up a service from Eureka by its registered label (`doge-service`):
+enable @NonNull checks
+Java 8 also introduced advanced type annotations. One of the most famous use cases for those annotations are the @NonNull annotations that help you to write code that doesn’t throw NullPointerExceptions anymore. Even though the Eclipse Java compiler supports the @NonNull analysis for quite some time already, these checks got combined with the new type annotations to allow @NonNull annotations and the corresponding checks in even more sophisticated positions (like the generic element type of 
+collections). You can enable and configure these checks in the compiler errors/warnings preferences and you should definitely take a look at them. You find them in the “Null analysis” section in Spring Tool Suite &lt;http://spring.io/tools&gt;:
+Architecting for Continuous Delivery: Microservices with Pivotal CF and Spring Cloud
+Speaker: Matt Stine, Pivotal
+
+Join Matt Stine to hear how you can architect systems that are optimized for continuous delivery, allowing you to innovate and deliver value faster and safer.
+
+Microservices, Pivotal CF, and Spring Cloud combine to create an operationalized architecture that enables enterprises to continuously deliver value at scale through rapid, iterative development, and to meet the needs of a mobile-first world.
+Europe
+Tuesday, October 21 
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_MicroserviceswithPivotalCFandSpringCloud7AM_Register.html&gt;
+North America
+Tuesday, October 21
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_MicroserviceswithPivotalCFandSpringCloud10AM_Register.html&gt;
+Building “Bootful” UIs with Spring Boot and Vaadin
+It&apos;s been a long day, but you&apos;ve done it: you&apos;ve got a Spring Boot powered backend and now you need to build the UI that&apos;ll power the workforce and deliver next week. Vaadin, a UI framework that marries the ease of use of server-side Java and the rich, dynamic nature of client-side JavaScript, integrates well with Spring Boot and offers UI polish that would be hard to secure any other way.
+
+Join Spring developer advocate Josh Long and Vaadin evangelists for a look at how Vaadin and Spring Boot can get you to production quicker, and easier.
+Europe
+Thursday, October 23
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_BuildingBootfulUIswithSpringBootandVaadin7AM_Register.html&gt;
+North America
+Thursday, October 23
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_BuildingBootfulUIswithSpringBootandVaadin10AM_Register.html&gt;
+Security for Microservices with Spring and OAuth2
+OAuth2 is a lightweight security protocol that is well-suited for use with HTTP, the protocol at the heart of many modern architectures. Spring Security OAuth2 has a load of new features, not the least of which being the `@Configuration` support in version 2.0. Combine these with Spring Boot and you have a platform which can get you a secure HTTP service application in about 20 lines of code.
+
+This presentation shows how the combination of rapid development and production-ready features in the modern Spring stack are a perfect mixture for developing secure components in a system composed of microservices. We explore the new features in Spring OAuth2, guide you through the choice of which to use and when, and show how easy they are to enable quickly.
+Europe
+Tuesday, November 4
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SecurityforMicroserviceswithSpringandOAuth2_7AM_Register.html&gt;
+North America
+Tuesday, November 4
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SecurityforMicroserviceswithSpringandOAuth2_10AM_Register.html&gt;
+Building &quot;Bootiful&quot; Microservices with Spring Boot
+Listen to Josh Long as he introduces Spring&apos;s support for building microservice architectures, including both Spring Boot, and the new Spring Cloud project.
+Watch Video &lt;http://spring.io/blog/2014/09/17/webinar-replay-building-bootiful-microservices-with-spring-boot&gt;
+Archived videos
+ Webinar Replay: Process Driven Spring Applications with Activiti  &lt;http://spring.io/blog/2014/09/26/webinar-replay-process-driven-spring-applications-with-activiti&gt;
+ Webinar Replay: Why I Recommend Spring 
+ Demo: IoT Realized with Spring XD - The Connected Car &lt;http://spring.io/blog/2014/09/24/demo-iot-realized-with-spring-xd-the-connected-car&gt;
+ &lt;#link&gt;
+Building a RESTful Web Service with Spring Boot Actuator
+Spring Boot Actuator is a sub-project of Spring Boot. It adds several production grade services to your application with little effort on your part. 
+In this guide, you’ll build an application and then see how to add these services. This guide will take you through creating a &quot;hello world&quot; RESTful web service with Spring Boot Actuator.
+View Guide &lt;http://spring.io/guides/gs/actuator-service/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+
+
+http://spring.io/guides
+
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Framework 4.1 GA &lt;http://spring.io/blog/2014/09/04/spring-framework-4-1-ga-is-here&gt;
+ Spring Boot 1.1.7 released &lt;http://spring.io/blog/2014/09/26/spring-boot-1-1-7-released&gt;
+ Spring Integration 4.1 Milestone 1 &lt;http://spring.io/blog/2014/09/05/spring-integration-4-1-milestone-1-available&gt;
+ Spring Boot 1.2.0.M1 &lt;http://spring.io/blog/2014/09/08/spring-boot-1-2-0-m1-available-now&gt;
+ Spring Boot 1.1.6 &lt;http://spring.io/blog/2014/09/05/spring-boot-1-1-6-released&gt;
+ Spring Data Release Train Evans Goes GA &lt;http://spring.io/blog/2014/09/09/spring-data-release-train-evans-goes-ga&gt;
+ Spring for Apache Hadoop 2.1.0.M1 &lt;http://spring.io/blog/2014/09/08/spring-for-apache-hadoop-2-1-0-m1-released&gt;
+ Spring Integration Java DSL 1.0 Milestone 3 &lt;http://spring.io/blog/2014/09/07/spring-integration-java-dsl-1-0-milestone-3-available&gt;
+ Spring IO Platform 1.0.2 &lt;http://spring.io/blog/2014/09/07/spring-io-platform-1-0-2-released&gt;
+ Spring AMQP (for Java) 1.4 Milestone 1 &lt;http://spring.io/blog/2014/09/05/spring-amqp-for-java-1-4-milestone-1-available&gt;
+ Spring Data Dijkstra SR4 &lt;http://spring.io/blog/2014/08/27/spring-data-dijkstra-sr4-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.1 &lt;http://spring.io/blog/2014/08/28/spring-tool-suite-and-groovy-grails-tool-suite-3-6-1-released&gt;
+ Spring Security OAuth 2.0.3 &lt;http://spring.io/blog/2014/09/01/spring-security-oauth-2-0-3-available-now&gt;
+ Spring Security 4.0.0.M2 &lt;http://spring.io/blog/2014/08/18/spring-security-4-0-0-m2-released&gt;
+ Spring for Android 2.0.0.M1 &lt;http://spring.io/blog/2014/09/16/spring-for-android-2-0-0-m1-released&gt;
+SpringOne2GX 2014 Day 1 Wrap Up: NetFlix, Spring Boot, Groovy and Grails &lt;http://spring.io/blog/2014/09/10/springone2gx-2014-day-1&gt;
+ SpringOne2GX 2014 Day 2 Wrap Up: Spring Cloud, Microservices, Big Data &lt;http://spring.io/blog/2014/09/15/springone2gx-2014-day-2&gt;
+ SpringOne 2GX Conference Kicks Off in Dallas 
+with Focus on Microservices and Big Data
+ Updating PostgreSQL-based Open Source Machine Learning Library from Google Summer of Code &lt;http://blog.pivotal.io/pivotal/features/updating-postgresql-based-open-source-machine-learning-library-from-google-summer-of-code&gt;
+ Building a RESTful quotation service with Spring &lt;http://spring.io/blog/2014/08/21/building-a-restful-quotation-service-with-spring&gt;
+ Preview Spring Security WebSocket Support &lt;http://spring.io/blog/2014/08/21/preview-spring-security-websocket-support&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

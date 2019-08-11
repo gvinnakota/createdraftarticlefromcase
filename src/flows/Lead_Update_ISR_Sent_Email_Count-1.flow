@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Get_LeadID_from_PB</name>
+        <label>Get LeadID from PB</label>
+        <locationX>101</locationX>
+        <locationY>69</locationY>
+        <assignmentItems>
+            <assignToReference>LeadID</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProcessBuilderWhatID</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_the_Lead_Record_to_update</targetReference>
+        </connector>
+    </assignments>
+    <formulas>
+        <name>AddOne</name>
+        <dataType>Number</dataType>
+        <expression>{!ISRSentEmailCount} +1</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Lead - Update ISR Sent Email Count {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead - Update ISR Sent Email Count</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_the_Lead_Record_to_update</name>
+        <label>Get the Lead Record to update</label>
+        <locationX>247</locationX>
+        <locationY>244</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_the_count</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadID</elementReference>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <outputAssignments>
+            <assignToReference>ISRSentEmailCount</assignToReference>
+            <field>ISR_Email_Sent_Count__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_the_count</name>
+        <label>Update the count</label>
+        <locationX>518</locationX>
+        <locationY>241</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR_Email_Sent_Count__c</field>
+            <value>
+                <elementReference>AddOne</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+    <startElementReference>Get_LeadID_from_PB</startElementReference>
+    <variables>
+        <name>ISRSentEmailCount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>LeadID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ProcessBuilderWhatID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

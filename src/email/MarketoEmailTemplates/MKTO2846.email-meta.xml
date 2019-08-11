@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 7 - August 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - August 2015</subject>
+    <textOnly>We 
+close out the summer with the second and final installment of our checklist of questions to ask when deploying an app targeted for production on PWS. In our Marketplace spotlight, we cover Stamplay who has an innovative approach to backend services. 
+
+As much as we enjoy reaching out electronically, we at Pivotal love it when we get to meet you in person. Pivotal will be at the big Spring conference SpringOne2GX &lt;http://springone2gx.com/&gt; that is occurring from September 14 - 17, 2015 in Washington DC. The premier Spring, Groovy and Grails conference, it’ll cover why Cloud Native Java is changing the enterprise Java market, and how to use the latest releases of Spring with Cloud Foundry and by extension PWS. You can use the Promo Code ‘PWS150’ to receive a $150 discount on your registration. 
+
+Enjoy the rest of your summer and as always, let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws &lt;https://twitter.com/pivotalws&gt;.
+
+
+Part 2: A Production Ready Checklist for Apps on Pivotal Web 
+Services
+Last month, we started to cover some of the things to consider when deploying an application for production. These include choosing the number of instances, the amount of memory required, how to define a custom domain, how to support SSL and how to monitor your app. This month we finish up the list with the following items for consideration. 
+
+6. How do I access my logs later?
+
+The “cf logs” command allows you to tail logs or view recent logs. However, logs from the past are not accessible unless they are retained elsewhere. PWS supports the ability to “drain” or publish logs to any service provider that supports the syslog protocol. Use of a log drain extends the availability duration of your log data to help determine any issues you may encounter once deployed. Details of this functionality is available in the documentation &lt;http://docs.run.pivotal.io/devguide/services/log-management.html&gt;. Detailed instructions for popular log management services are available in this guide &lt;http://docs.run.pivotal.io/devguide/services/log-management-thirdparty-svc.html&gt;. Note the duration of your logs will be dependent on the policies and plans of the log drain provider. 
+
+7. How do I shell into my apps?
+
+If you absolutely require the ability to inspect the contents of the container hosting your applications there is a CLI plug in called cf-console which will allow you access to your application via a new instance. This is helpful for debugging application logic but may not be as useful for debugging long running issues. Note that this plug in is only available for Linux and Mac. For more details, visit the github repo &lt;https://github.com/danhigham/cf-console&gt;.
+
+8. How do I perform a zero downtime upgrade?
+
+Upgrades are a regular part of the software lifecycle and Pivotal Web Services takes advantage of the “blue green approach” to performing zero downtime upgrades. The essence of the approach is that you have both versions of your app up and running simultaneously. When the upgraded version is safely operational, traffic is then directed to the upgraded version. The older version of the application is then spun down. This is an improvement over rolling deploys in that it guarantees a full known good is in production. Rolling deploys that fail half way can lead to inconsistent state between instances. Details on performing a blue green deploy can be found in the PWS documentation &lt;http://docs.run.pivotal.io/devguide/deploy-apps/blue-green.html&gt;. 
+
+9. I want to use Amazon Services, which region is PWS deployed in?
+
+Currently PWS is hosted in Amazon US-East region. Therefore, any services where latency may be an issue should be created and maintained in US-East Region. 
+
+10. How do I whitelist my app on PWS to access external services?
+
+If your PWS hosted application needs to access services behind a firewall, make sure that you whitelist the externally visible IPs 
+which are covered in this documentation &lt;http://docs.run.pivotal.io/marketplace/external-ips.html&gt;. Do note that PWS is a shared Cloud Foundry instance and that when you open up your firewall to these IPs you are potentially providing access to any apps hosted on PWS. The PWS marketplace service Statica &lt;https://console.run.pivotal.io/marketplace/statica&gt; offers a private static IP address for your applications if you require greater control. 
+
+11. What are the appropriate workloads for PWS?
+
+PWS is ideal for any applications that can be deployed as a stateless web application that communicates via Ports 80, 443 or 4443. More details about what you need to consider when writing an application for PWS are available in the documentation &lt;http://docs.run.pivotal.io/devguide/deploy-apps/prepare-to-deploy.html&gt;.
+
+Putting an application in production involves a lot more than hosting code on a server. Pivotal Web Services has the hooks required to ensure that you are able to monitor and manage your application. 
+
+
+Stamplay: 
+Opening up the World of Third Party APIs
+PWS services 
+partner Stamplay &lt;https://stamplay.com?utm_medium=email&amp;utm_source=pws&amp;utm_campaign=partners&amp;utm_content=blurb&gt; is the latest addition to the PWS marketplace &lt;https://console.run.pivotal.io/marketplace/stamplay&gt;. Stamplay offers a unique integration layer that abstracts common application operations with third party services through a web configurable back end interface. This means that developers can use a standard set of APIs to perform functions such as authentication with the major identity providers such as Facebook, Twitter or Google+. Stamplay also provides integration with social features such as upvotes and comments, payments and messaging all through the same interface. What differentiates Stamplay is that it’s possible to implement business logic and configuration of these services not in code, but through their web user interface.  If you are looking for an alternate means of integrating your apps with third party and custom services, Stamplay is worth a look. 
+
+ Best Regards,
+Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

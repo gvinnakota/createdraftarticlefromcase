@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data_Workshop_Roadshow_2015.Denver Happy Hour Invite</name>
+    <style>none</style>
+    <subject>Join us for a Pivotal Happy Hour - Tuesday, April 28th</subject>
+    <textOnly>EVENT NAME
+Tagline
+HEADLINE GOES HERE AND IS ALL CAPS
+Hello {{lead.First Name:default=There}},
+
+You and a guest are invited to join us for happy hour after the  Pivotal Big Data Roadshow &lt;http://www.pivotal.io/big-data/data-roadshow/denver&gt;. Drinks and hors d&apos;oeuvres will be provided.
+
+Date: Tuesday, April 28th 
+Time: 4:30pm to 7:00pm
+
+
+Location:
+Cool River Cafe &lt;http://www.coolrivercafe.com/denver/?locId=cool-river-cafe-denver&gt;
+8000 E. Belleview Ave., Suite C10
+Denver, CO
+Map/Driving Directions
+
+
+Please RSVP directly to Ward Maddux &lt;mailto:wmaddux@pivotal.io&gt; or Paul Santos &lt;mailto:psantos@pivotal.io&gt;. We look forward to seeing you there!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

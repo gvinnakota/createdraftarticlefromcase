@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>System Master_Sales_Email.GS - Monthly Announcement June 2015</name>
+    <style>none</style>
+    <subject>Pivotal Field Operations: June Sales News Flash</subject>
+    <textOnly>PIVOTAL FIELD OPERATIONS
+A Message from Greg Stroud
+JUNE 2015 SALES NEWS FLASH
+Global Field Operations Team,
+
+As we focus on closing out the quarter and finishing 1H strong, please take a moment to read this communication carefully; as there are SFDC, Product, and Operational updates that you should be aware of. 
+
+Getting Started with Sales Productivity!
+If you haven&apos;t already worked with them...it&apos;s time to meet the Sales Productivity Team! The team is based in Toronto and supports all Pivotal offices. The team’s core focus includes proposal preparation, RFP responses, research and compiling information packages that include case studies, data sheets and handouts to assist in closing deals. Some recent work includes Honeywell &lt;https://docs.google.com/a/pivotal.io/file/d/0B8RQ9cLFOmfIYkVHSF9PQUtuMTQ/edit&gt;, Santande &lt;https://docs.google.com/a/pivotal.io/file/d/0B4OT7K3Akp0fZXpTQTdGbzJKdEE/edit&gt;r, Inttra &lt;https://docs.google.com/a/pivotal.io/file/d/0B4OT7K3Akp0fSzRLaFlvRG9DYlU/edit&gt;, Sparta Systems &lt;https://docs.google.com/a/pivotal.io/file/d/0B4OT7K3Akp0fNEZnYnBBS29Tckk/edit&gt;.
+
+We are excited to announce that Sales Productivity will be ramping up its support coverage to include the entire core sales team (all sales regions) 
+starting July 1, 2015. The team will be presenting its capabilities as part of the Spotlight Learning series on July 8th so please plan to attend. 
+
+In order to ensure scalable support, Sales Productivity will only support proposals for named accounts and RFPs for strategic opportunities with direct manager approval. To request support, just complete the Sales Productivity Support Request Form &lt;https://docs.google.com/a/pivotal.io/forms/d/1J-3BEnwZqgI-IzEJGcKNvtuA8oJ5fPMRg3WN3oXT1HA/viewform&gt; and you&apos;re done! For questions about the team, please email the general team DL: sales-productivity@pivotal.io &lt;mailto:sales-productivity@pivotal.io&gt;. You can also find more information on the team’s services via the Sales Productivity Roll-out deck &lt;https://docs.google.com/a/pivotal.io/file/d/0B5ObkKTwRMwEc2RJS08xckFDdWc/edit&gt;, also found on Inside Pivotal - Field Operations &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/departments/global_field-operations&gt;, under Sales Productivity.
+
+Still Time to Make More Money with the 1H Quota SPIF 
+As a reminder, Sales Reps, ISRs and Field Engineers* who are on a Pivotal commission plan, have signed a 2015 Goal Acknowledgment Form (GAF) and are full-time regular employees of Pivotal on the booking date are eligible for a SPIF of 10% 1H Variable OTE for making 1H quota during the 
+Effective Dates. Payable August 2015. Detail on the 1H Quota SPIF may be found here &lt;https://docs.google.com/presentation/d/1zOCuVNQX7vEa0F1zoTu1EA6V0GavDFHWDErktdkEEqU/edit#slide=id.g585bcb2bf_2_159&gt;. 
+
+SFDC – 
+What’s New
+LeanData implementation is now complete! Where applicable, Leads are now associated to Accounts and going forward, this association will drive Lead assignment.  As we stabilize the implementation, please expect existing Named Account Leads (not actively being worked on) to be re-assigned to appropriate ISR/Account Executive. Training may be found here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1J-LFcj4hAqqt9yjSOfbFi3bgw0V5Tv26kxMtixeRvE4/edit?usp=sharing&gt;.
+
+SFDC Modifications will be on hold during the 
+software platform integration, go-live and stabilization. Salesforce application updates and modification requests, as well as strategic projects impacting a significant user population or requiring budget, integration or resources will not be supported. Users may still submit these requests via &quot;SFDC Requests&quot; tab in Salesforce, but the requests will be backlogged until mid-late Q3. This does not impact user support/administration or day-to-day operations such as creating/updating new Leads, Accounts, Contacts and 
+Opportunities.
+
+Product Updates
+Important Update To Big Data Suite SKUs and Entitlements: due to export restrictions with Pivotal Cloud Foundry, a new set of BDS SKU and entitlements has been 
+released effective June 6, 2015, which no longer includes one PCF Foundation. 
+
+The latest release of BDS now includes the following: 
+
+
+ - Greenplum Database
+ - GemFire
+ - HAWQ
+ - Pivotal HD (cores consumed by Pivotal HD do not count towards the number of BDS cores licensed, but may not exceed the total amount of BDS cores licensed.)
+ - Pivotal RabbitMQ
+ - OSS Support for Redis
+ - OSS Support for RabbitMQ
+ - OSS Support for SpringXD
+ - Redis for Pivotal Cloud Foundry
+ - Pivotal RabbitMQ for Pivotal Cloud Foundry
+
+
+
+All new opportunities and quotes need to be created using the new models and SKUs. Existing opportunities may continue using the old BDS SKUs as long as the end user is not allowed to receive PCF. In doubt, please work with your business manager (Chris Braney, Chris Want, David Lo or Ian Bignell). DXP / CxP with the new models will be updated in Q3.
+
+The Pivotal Product Guide &lt;https://d1fto35gcfffzn.cloudfront.net/legal/Pivotal-Product-Guide-v13.pdf&gt; and Pivotal Master Price List &lt;https://docs.google.com/spreadsheets/d/1tfFpOi4NTyISBeQFI4S8WHnIAjddGxQ3goN5Z-Kc-3Q/edit#gid=1454657096&gt; have been updated accordingly. Please let Data Product Marketing &lt;mailto:data-prod-marketing@pivotal.io&gt; or Product Operations &lt;mailto:product_ops@pivotal.io&gt; know if you have any questions.
+
+
+Federation Updates
+Last week, Chicago Labs hosted an enablement workshop for VMware North Central Select SEs. This successful day-long workshop was a beta-test of a new direction for VMW field enablement - with topics including PCF use cases, engaging with Labs for Agile/Extreme development, the role of Big Data in Pivotal engagements, IOT, and joint Sales Plays. Every one of the VMW SEs came away from this session saying that they learnt something new, and that they wanted to bring every one of their customers into our Labs. The session was that powerful.
+
+
+We have more enablement workshops scheduled for July with the vCA Specialists on East and West coasts, and the EMEA Global Accounts SE team. Fore more information on these workshops, please contact amacdonald@pivotal.io &lt;mailto:amacdonald@pivotal.io&gt;.
+
+Be Bold!
+Greg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

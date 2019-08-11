@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>This list determines whether a Product Service Category is a Product or a service</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Category Type</label>
+    <visibility>Protected</visibility>
+    <listViews>
+        <fullName>Category_Type</fullName>
+        <columns>NAME</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Category Type</label>
+    </listViews>
+</CustomObject>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>01 - Problem Definition 2H 2018.01b - Problem Definition</name>
+    <style>none</style>
+    <subject>Read the Gartner &amp; Forrester Cloud Reports</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+As organisations adopt cloud applications, platforms and services to help drive their digital transformation initiatives, they are faced with a number of challenges including implementing hybrid cloud strategies, dealing with talent shortages and modernising legacy applications.
+
+To help you manage these challenges access the following reports:
+
+Gartner: Top Challenges Facing I&amp;O Leaders in 2018 &amp; What to Do About It: https://www.gartner.com/doc/reprints?id=1-4TLDXNQ&amp;ct=180321&amp;st=sb
+In this report Gartner outlines the key recommendations to help infrastructure and operations professionals effectively support their organisations&apos; digital business initiatives. 
+
+Forrester Predictions 2018: Cloud Computing Accelerates Enterprise Transformation Everywhere: https://reprints.forrester.com/#/assets/2/995/RES139611/reports
+In this report Forrester outlines the 10 key factors that will shape the cloud computing landscape in 2018 and advises infrastructure and operations leaders on how to respond.
+
+I trust these analyst reports will help you make transformation real for your organisation.
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

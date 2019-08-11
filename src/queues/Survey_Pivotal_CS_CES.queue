@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Survey - Pivotal CS CES</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Survey_CES_Survey</publicGroup>
+        </publicGroups>
+        <users>
+            <user>amarshall@pivotal.io</user>
+            <user>hgeisert@pivotal.io</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Pivotal_Survey_Feedback__c</sobjectType>
+    </queueSobject>
+</Queue>

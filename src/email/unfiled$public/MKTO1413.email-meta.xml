@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Follow Up - Atlanta</name>
+    <style>none</style>
+    <subject>Thank you for Attending the Pivotal Cloud Platform Workshop - Atlanta</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for attending the Pivotal Cloud Platform Roadshow in Atlanta, October 21, 2014. We hope our workshop gave you the opportunity to collaborate with your peers and get hands-on experience pushing an app on Pivotal Cloud Foundry. 
+
+ Your feedback is important! Please take our short survey &lt;https://www.surveymonkey.com/s/LRY3K9L&gt; so that we can continue to make future workshops informative and relevant. 
+
+We have made our presentation slides available here &lt;http://www.slideshare.net/Pivotal/tagged/pivotal%20cloud%20platform%20roadshow&gt; and invite you to visit run.pivotal.io &lt;http://www.google.com/url?q=http%3A%2F%2Frun.pivotal.io%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHuyCnQ-qnAEnP9k_3COqBzPeJ7Aw&gt; to try Pivotal Web Services - simply upload your files and your app just works! 
+
+Interested in learning more about what Pivotal CF can do for your organization? Contact us &lt;mailto:info@pivotal.io&gt; to schedule a technical evaluation with our team.
+
+Thank you again for joining us! We are looking forward to seeing you at the next event. 
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

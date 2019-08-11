@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Notification to Support Portal User Denied Portal access for DPL Restriction</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Denied Party List (DPL) User Blocked Email Notification</name>
+    <style>formalLetter</style>
+    <subject>Pivotal Support Portal Account Deactivated</subject>
+    <textOnly>Unfortunately, we are unable to provide you with access to Pivotal Support at this time.  To resolve this, please send an email to export@pivotal.io as follows:
+
+From: (use the same email you used in registering for Pivotal Support)
+To: export@pivotal.io
+Subject: Seeking help in accessing Pivotal Support
+Email Message: While attempting to access Pivotal Support, a screen appeared with instructions to email you for assistance. My full name is (insert here).
+
+NOTE: You will not have access to Pivotal Support until Export receives your email and addresses the issue. Please allow Export up to 24 hours to respond following receipt of your email.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

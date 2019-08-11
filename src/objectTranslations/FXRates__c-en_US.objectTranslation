@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Currency Exchange Rate --></help>
+        <label><!-- Exchange Rate --></label>
+        <name>Exchange_Rate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Foreign Currency (Always Non-USD) --></help>
+        <label><!-- From Currency --></label>
+        <name>From_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Converted To Currency (Always USD) --></help>
+        <label><!-- To Currency --></label>
+        <name>To_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exchange Rate Date --></help>
+        <label><!-- Valid From --></label>
+        <name>Valid_From__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exchange Rate Date --></help>
+        <label><!-- Valid To --></label>
+        <name>Valid_To__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>FXRates</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FXRates</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>FXRates Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

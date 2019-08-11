@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_The Cloud Native Journey Q415.No Show - Follow Up Email</name>
+    <style>none</style>
+    <subject>We&apos;re sorry we missed you!</subject>
+    <textOnly>&lt;http://pivotal.io/platform/webinar/the-cloud-native-journey?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar-replay&gt;
+Hi {{lead.First Name:default=There}},
+
+We&apos;re sorry you weren&apos;t able to attend Pivotal&apos;s Cloud Native Journey Webinar this week. Here&apos;s a quick recap: 
+
+
+ - We looked at the common patterns that distinguish cloud native companies and the architectures that they employ.
+ - We discovered that an opinionated platform, one that stretches from the infrastructure all the way to the application framework, rather than ad-hoc automation, is an essential component to an enterprise&apos;s cloud native journey.
+ - We showed that the combination of Pivotal Cloud Foundry and Spring is the complete cloud native platform.
+
+
+Want to see what you missed? We invite you to view the replay &lt;http://pivotal.io/platform/webinar/the-cloud-native-journey?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar-replay&gt; and check out the slides &lt;http://www.slideshare.net/slideshow/embed_code/key/3YhjVI8PiaogXU?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar-slides&gt;. 
+
+Did you know that Matt Stine recently published an O&apos;Reilly Microservices eBook? This report defines the unique characteristics of cloud native application architectures such as microservices and twelve-factor applications. Download it now &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar-matt-stine-ebook&gt;!
+
+Want more? Learn 
+how Pivotal is transforming how the world builds software and embark on your Cloud Native 
+Journey. 
+
+We hope to see you next time!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

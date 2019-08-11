@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Email Reminder - Munich</name>
+    <style>none</style>
+    <subject>Reminder: See you Thursday for the Pivotal Cloud Platform Workshop in Munich</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up this Thursday in Munich. We look forward to seeing you! 
+
+ Please bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Pivotal Cloud Platform 
+Workshop
+Thursday, October 23, 2014
+8:00am - 5:30pm (breakfast &amp; lunch provided)
+5:30pm - 7:00pm Cocktail Networking Reception
+Workshop Agenda &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/munich&gt;
+
+EMC Deutschland GmbH
+Osterfeldstrasse 84
+Ismaning 85737
+Map and Driving Directions &lt;https://www.google.com/maps/place/EMC+Deutschland+GmbH/@50.164874,8.532845,17z&gt;
+
+WORKSHOP PREREQUISITES
+All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest! 
+
+ - A FREE account on Pivotal Web Services - create a 60-day trial with no credit card at 
+https://run.pivotal.io
+
+
+
+QUESTIONS? 
+Contact us at info@pivotal.io &lt;mailto:info@pivotal.io&gt;
+
+We look forward to seeing you!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

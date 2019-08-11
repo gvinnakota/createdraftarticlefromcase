@@ -1,0 +1,22 @@
+<aura:component >
+    <aura:attribute name="expanded" type="Boolean" default="false"/>	    
+    <aura:attribute name="summary" type="String" />
+    <aura:attribute name="style" type="String" default=""/>
+    <aura:attribute name="contentStyle" type="String" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <li class="{!'slds-accordion__list-item printable-'+ v.printable}" style="{!v.style}">
+    <section class="{!'slds-accordion__section' + (v.expanded ? ' slds-is-open' : '')}">
+      <div class="slds-accordion__summary">
+        <h3 class="slds-text-heading_small slds-accordion__summary-heading">
+          <aura:if isTrue="{!!v.expanded}"><a onclick="{!c.expand}"><lightning:icon iconName="utility:chevronright" size="x-small"/></a></aura:if>
+          <aura:if isTrue="{!v.expanded}"><a onclick="{!c.collapse}"><lightning:icon iconName="utility:chevrondown" size="x-small"/></a></aura:if>
+          <span class="slds-truncate" style="margin-left:5px" title="Accordion summary">{!v.summary}</span>
+        </h3>
+      </div>
+      <div aria-hidden="{!!v.expanded}" class="slds-accordion__content" id="accordion-details-01" style="{!v.contentStyle}">
+          {!v.body}
+      </div>
+    </section>
+  </li>	
+</aura:component>

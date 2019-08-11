@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>zqu__Quote__c.zqu__Status__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>zqu__Quote__c.zqu__BillToContact__c</field>
+    </columns>
+    <columns>
+        <field>zqu__Quote__c.zqu__SoldToContact__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Saved quote with no Bill to or Sold to addresses</description>
+    <format>Tabular</format>
+    <name>Quotes w/out Bill to or Sold to</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$zqu__Quote__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>zqu__Quote__c.zqu__BillToContact__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

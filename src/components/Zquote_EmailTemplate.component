@@ -1,0 +1,12 @@
+<!--
+ - Created by bvadlamani on 2017-09-13.
+ -->
+
+<apex:component id="Zquote_EmailTemplate" controller="ZQuote_EmailTemplate_Controller" access="global">
+    <!--<apex:attribute name="zQuoteId" type="Id" description="Id of the Quote" assignTo="{!quoteId}"/> -->
+    <apex:attribute name="quoteRecordId" type="String" required="true" access="global" assignTo="{!quoteId}" description="A valid SOQL query in string form." />
+    <apex:attribute name="ApprovalProductType" type="String" required="true" access="global" assignTo="{!approvalType}" description=" A valid product type" />
+    
+    <apex:variable value="{!results}" var="varResults"/>
+    <apex:componentBody />
+</apex:component>

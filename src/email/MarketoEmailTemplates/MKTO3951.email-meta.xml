@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign_Newsletter FY16.Newsletter - 4-29-16</name>
+    <style>none</style>
+    <subject>April 2016 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+Welcome to the April edition of “Push With Success.” Spring is a time of renewal, and we’re announcing that PWS has revamped its trial program to give new users more time to try out the leading public instance of Cloud Foundry. We hope you’ll introduce your friends to the power of ‘cf push.’ In this issue we’ll also cover one of the main advantages of using a hosted Cloud Native platform like PWS. We&apos;d love to share your story in a future newsletter. Please tell us how you&apos;re succeeding with PWS. You can contact us by dropping Charles Wu (chwu@pivotal.io &lt;[[mailto:chwu@pivotal.io]]&gt;) a note and telling us how you&apos;re transforming with PWS. 
+
+ Moreover, Pivotal has a whole slate of products and one of the biggest is Spring Boot &lt;[[http://info.pivotal.io/z0002CN0000UARdiI0I0J00]]&gt;, with millions of downloads every month. If you are a Java developer who wants to increase your productivity, Spring Boot is worth a look as it brings the best of the scripting world to Java, while preserving reliability and performance. Spring Boot applications also deploy seamlessly onto PWS, so check it out using one of the many pre-built examples &lt;[[http://info.pivotal.io/qiJI0C00NJ0A0d02U00S000]]&gt;. 
+
+ Thanks for reading and let us know what you think by tweeting us at @pivotalws &lt;[[https://twitter.com/pivotalws]]&gt; or contacting us with any questions at support@run.pivotal.io &lt;[[mailto:support@run.pivotal.io]]&gt;. 
+
+ Best Regards, 
+
+ The Pivotal Web Services Team 
+
+ PWS Trial is Changing 
+
+ One of our most frequent requests is whether someone can extend their trial. To address this, we’ve changed our trial program from a 60-day free trial to a credit-based trial, good for up to one year. The old trial gave you 60 days to use a maximum of 2GB of application memory. The new trial works by providing you an equivalent value in credits that can be applied over a one year period. 
+
+ With the new trial, you receive:
+ - An entire year to try out PWS (so long 60-day trial!) 
+ - Greater flexibility during your trial: deploy larger apps for a shorter period of time, or try smaller apps over a longer period.
+
+ What stays the same with the new trial: 
+ -  The 2GB quota. If you’re interested in deploying more applications into an organization you will need to upgrade your plan (which we hope you will do). 
+ -  10 free trial services. 
+
+ Brand new trial orgs receive $87.00 in credit and existing trial orgs will receive a prorated balance of credit based on your trial start date. These credits expire one year from your trial start date. If you are currently in a trial, you’ll be able to view your credit on your org billing page today. If you have any questions, please don’t hesitate to contact us at support@run.pivotal.io &lt;[[mailto:support@run.pivotal.io]]&gt;. 
+
+ Buildpacks and Keeping Up To Date 
+
+ PWS, based on Pivotal Cloud Foundry &lt;[[http://info.pivotal.io/I0i0VI00N00MAC200d0UJ00]]&gt;, is a Cloud Native platform that enhances developer productivity, enables operational excellence and provides enterprise-grade security, scalability, high availability and operational control, so customers can accelerate their time to market for software solutions.. The Cloud Native platform components that an application are built upon, including the runtime environment, the networking and the libraries, are delivered as a service that an application “consumes.” In addition to pre-packaging all these dependencies, the platform is updated on a continuous basis, incorporating bug fixes, security patches and new versions automatically. Therefore, any time an application is redeployed, these fixes are incorporated. 
+
+ A major component of these patches is the new versions of libraries and runtimes for different programming languages and frameworks. The Cloud Foundry Buildpacks team supports the two newest versions of long-term-supported releases for the following languages &amp; applications: Go, NodeJS, PHP, Python, Ruby, httpd and Nginx. The team receives real-time notifications when each language contains an official update, which they schedule and work on weekly. In the case of security updates the team responds with a faster turn around. 
+
+ These updated buildpacks go through an intricate CI (Continuous Integration) pipeline which is open source and can be found at https://github.com/cloudfoundry/buildpacks-ci &lt;[[https://github.com/cloudfoundry/buildpacks-ci]]&gt;. All the PWS buildpacks can be found and inspected at https://github.com/cloudfoundry &lt;[[https://github.com/cloudfoundry]]&gt;. Each repository&apos;s release page contains a detailed list of changes made and a table of packaged binaries, including the versions supported. Component versions should be bumped when a security vulnerability has been announced, in order to use a patched version. It’s this continuous evaluation and release cycle that enables you to focus on the value of your application, instead of dealing with software patches. This is the value of PWS. 
+
+ Tell Us What You’re Doing On PWS 
+
+ We want to hear what you are doing on PWS. Are you hosting a personal website on PWS? Taking a class on web applications and using PWS to further your educational journey? Are you hosting a mobile backend? Are you running a business on PWS? We’d love to hear your story and if you’re open to it, maybe featuring it in a future issue of our newsletter. 
+
+ To share your story in a future issue of “Push With Success”—please email Charles Wu (chwu@pivotal.io &lt;[[mailto:chwu@pivotal.io]]&gt;). Thank you!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

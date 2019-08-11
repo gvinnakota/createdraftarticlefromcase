@@ -1,0 +1,2752 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Account_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayouts>
+        <fullName>Pivotal_Account_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Pivotal_Customer_Number__c</fields>
+        <fields>Special_Handling__c</fields>
+        <fields>EMC_S2_Customer__c</fields>
+        <label>Pivotal Account Compact Layout</label>
+    </compactLayouts>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Dashboard_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Dashboard URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Account_ID18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( Id )</formula>
+        <label>Account ID18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Notes__c</fullName>
+        <description>Account Notes - requested by Brandon Binder 3/5/18</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use to save internal notes about this account.</inlineHelpText>
+        <label>Account Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Plan_Complete_Attached__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Synergy Sales Rep will complete this</inlineHelpText>
+        <label>Account Plan Complete/Attached?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Plan__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please copy/paste the google doc URL for your Account Plan here</inlineHelpText>
+        <label>Account Plan</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>App_Modernization_D_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>App Modernization D Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>App_Modernization__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not a Target - Recent Decision/Cycle</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Recent Decision/Cycle</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Budget/Timing</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Budget/Timing</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Lacks Driver/Profile</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Lacks Driver/Profile</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Breadth</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Breadth</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Depth/Industry</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Depth/Industry</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Recent Decision/Cycle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Budget/Timing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Lacks Driver/Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Breadth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Depth/Industry</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>App_Modernization_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>App Mod Priority Account Quarterly Goals</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>App_Modernization__c</fullName>
+        <externalId>false</externalId>
+        <label>App Modernization Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A - Active Opportunity</fullName>
+                    <default>false</default>
+                    <label>A - Active Opportunity</label>
+                </value>
+                <value>
+                    <fullName>B - Target Accounts</fullName>
+                    <default>false</default>
+                    <label>B - Priority Accounts</label>
+                </value>
+                <value>
+                    <fullName>C - Limited KnowledgeUndo</fullName>
+                    <default>false</default>
+                    <label>C - Limited Knowledge</label>
+                </value>
+                <value>
+                    <fullName>D - No opp next 18-24 Months</fullName>
+                    <default>false</default>
+                    <label>D - No opp next 18-24 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Area__c</fullName>
+        <description>Area is determined by the account owner's area on the user record</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner.Area__c)</formula>
+        <inlineHelpText>If this is incorrect, please contact your sys admin</inlineHelpText>
+        <label>Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BAT_Unified_Weekly__c</fullName>
+        <description>Tracker story #165135035</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to BAT Unified Weekly report</inlineHelpText>
+        <label>BAT Unified Weekly</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Billing_Street_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+  CONTAINS(BillingStreet, MID($Label.TwoLine,3,1)), 
+  LEFT(
+    BillingStreet, 
+    FIND(MID($Label.TwoLine,3,1), BillingStreet)
+  ),
+  BillingStreet
+)</formula>
+        <label>Billing Street 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Street_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+CONTAINS(BillingStreet, MID($Label.TwoLine,3,1)), 
+
+SUBSTITUTE( 
+SUBSTITUTE( 
+
+RIGHT( 
+BillingStreet, 
+(LEN(BillingStreet) - (FIND(MID($Label.TwoLine,3,1), BillingStreet)))) 
+
+, 
+MID($Label.TwoLine,3,1) 
+, 
+'' 
+) 
+
+
+, 
+MID($Label.TwoLine,2,1) 
+, 
+'' 
+) 
+
+
+,'')</formula>
+        <label>Billing Street 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cleared_by_Compliance_Team__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is to be changed by Compliance team based on the status received from Visual Compliance Team</description>
+        <externalId>false</externalId>
+        <label>Cleared by Compliance Team</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cloud_Native_Security_D_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud Native Security D Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Cloud_Native_Security__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not a Target - Recent Decision/Cycle</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Recent Decision/Cycle</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Budget/Timing</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Budget/Timing</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Lacks Driver/Profile</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Lacks Driver/Profile</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Breadth</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Breadth</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Depth/Industry</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Depth/Industry</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Recent Decision/Cycle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Budget/Timing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Lacks Driver/Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Breadth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Depth/Industry</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cloud_Native_Security_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud-Nat Sec Priority Acct Qtrly Goals</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Cloud_Native_Security__c</fullName>
+        <externalId>false</externalId>
+        <label>Cloud Native Security Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A - Active Opportunity</fullName>
+                    <default>false</default>
+                    <label>A - Active Opportunity</label>
+                </value>
+                <value>
+                    <fullName>B - Target Accounts</fullName>
+                    <default>false</default>
+                    <label>B - Priority Accounts</label>
+                </value>
+                <value>
+                    <fullName>C - Limited Knowledge</fullName>
+                    <default>false</default>
+                    <label>C - Limited Knowledge</label>
+                </value>
+                <value>
+                    <fullName>D - No opp next 18-24 Months</fullName>
+                    <default>false</default>
+                    <label>D - No opp next 18-24 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Container_Orchestration_D_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Container Orchestration D Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Container_Orchestration__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not a Target - Recent Decision/Cycle</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Recent Decision/Cycle</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Budget/Timing</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Budget/Timing</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Lacks Driver/Profile</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Lacks Driver/Profile</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Breadth</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Breadth</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Depth/Industry</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Depth/Industry</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Recent Decision/Cycle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Budget/Timing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Lacks Driver/Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Breadth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Depth/Industry</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Container_Orchestration_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Container Orch Priority Acct Qtry Goals</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Container_Orchestration__c</fullName>
+        <externalId>false</externalId>
+        <label>Container Orchestration Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A - Active Opportunity</fullName>
+                    <default>false</default>
+                    <label>A - Active Opportunity</label>
+                </value>
+                <value>
+                    <fullName>B - Target Accounts</fullName>
+                    <default>false</default>
+                    <label>B - Priority Accounts</label>
+                </value>
+                <value>
+                    <fullName>C - Limited Knowledge</fullName>
+                    <default>false</default>
+                    <label>C - Limited Knowledge</label>
+                </value>
+                <value>
+                    <fullName>D - No opp next 18-24 Months</fullName>
+                    <default>false</default>
+                    <label>D - No opp next 18-24 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Container_Platforms_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Container Platforms Details</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Container_Platforms__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Container Platforms</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Coverage_of_Qualified_Opps__c</fullName>
+        <externalId>false</externalId>
+        <formula>HasOpenOppsAllDates__c  &gt; 0</formula>
+        <label>Coverage of Qualified Opps</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_Region__c</fullName>
+        <description>Region of the user that created this account, used for reporting only</description>
+        <externalId>false</externalId>
+        <formula>TEXT( CreatedBy.Region__c )</formula>
+        <label>Created By Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_by_Theater__c</fullName>
+        <description>Theater of the user who created this Account, used for reporting only</description>
+        <externalId>false</externalId>
+        <formula>TEXT(  CreatedBy.Theater__c  )</formula>
+        <label>Created by Theater</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Top</fullName>
+                    <default>false</default>
+                    <label>TOP</label>
+                </value>
+                <value>
+                    <fullName>BCS</fullName>
+                    <default>false</default>
+                    <label>BCS</label>
+                </value>
+                <value>
+                    <fullName>BAT</fullName>
+                    <default>false</default>
+                    <label>BAT</label>
+                </value>
+                <value>
+                    <fullName>PWS</fullName>
+                    <default>false</default>
+                    <label>PWS</label>
+                </value>
+                <value>
+                    <fullName>Customer Success</fullName>
+                    <default>false</default>
+                    <label>Customer Success</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DTS_GTO_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>DTS/GTO Name</label>
+        <length>60</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>D_Status_Reason__c</fullName>
+        <description>Added 3/14/2018 - Eric Landon request. PAS Account dependent field. If D chosen, this field is required.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Click here for help with definitions: https://pivotal.my.salesforce.com/sfc/#version?selectedDocumentId=0690P000003fqAq</inlineHelpText>
+        <label>PAS D Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>PAS__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not a Target - Recent Decision/Cycle</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Recent Decision/Cycle</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Budget/Timing</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Budget/Timing</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Lacks Driver/Profile</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Lacks Driver/Profile</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Breadth</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Breadth</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Depth/Industry</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Depth/Industry</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Target - Recent Decision/Cycle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Target - Budget/Timing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Target - Lacks Driver/Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Breadth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Depth/Industry</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>DellEMC_Cloud_Platform_Specialist_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DellEMC Cloud Platform Specialist</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Id</field>
+                <operation>equals</operation>
+                <value>001U000000aRbPx</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts (DellEMC Cloud Platform Specialist Name)</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DellEMC_Field_CTO__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DellEMC Field CTO</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts (DellEMC Field CTO)</relationshipLabel>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Dell_EMC_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Search for and select a Contact attached to a Dell account</inlineHelpText>
+        <label>Dell/EMC Rep</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <value>001U000000aRbPx</value>
+            </filterItems>
+            <infoMessage>Select a contact from the Dell Inc main account</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts (Dell/EMC Rep)</relationshipLabel>
+        <relationshipName>Account_DellEMCRep</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Dell_TPA_TLA_Target_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total TLA/TPA opportunity value</inlineHelpText>
+        <label>Dell TPA/TLA Target Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dell_TPA_TLA_Target_Quarter__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What Quarter is the TLA/TPA coming up for renewal or new TLA/TPA close date?</inlineHelpText>
+        <label>Dell TPA/TLA Target Quarter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dell_TPA_TLA_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Dell TPA/TLA Target?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Dell_TPA_Target__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Dell TPA Target</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Dell_Tech_Select_GAM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Dell Tech Select Contact lookup</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search for and select a Contact attached to a Dell account</inlineHelpText>
+        <label>Dell Tech Select/GAM</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <value>001U000000aRbPx</value>
+            </filterItems>
+            <infoMessage>Select a Contact from the Dell Inc main account</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Account_DellTechSelect</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Dell_X_SAB__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Jag Brar requested to track Dell X-SAB Alliances cross sell accts 3/9/2018</description>
+        <externalId>false</externalId>
+        <label>Dell X-SAB</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EMC_S2_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to identify a customer as 24/7 Sev 2 Support.</description>
+        <externalId>false</externalId>
+        <label>EMC S2 Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Field_Top_Accounts__c</fullName>
+        <externalId>false</externalId>
+        <label>Field Top Accounts</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AE Top Accounts</fullName>
+                    <default>false</default>
+                    <label>AE Top Accounts</label>
+                </value>
+                <value>
+                    <fullName>RD Top Accounts</fullName>
+                    <default>false</default>
+                    <label>RD Top Accounts</label>
+                </value>
+                <value>
+                    <fullName>Area Leader Top Accounts</fullName>
+                    <default>false</default>
+                    <label>Area Leader Top Accounts</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>First_Purchase_Date_Data_Products__c</fullName>
+        <description>This fields holds the first purchase of Data products</description>
+        <externalId>false</externalId>
+        <label>First Purchase Date - Data Products</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>First_Purchase_Date_Labs__c</fullName>
+        <description>This fields holds the first purchase date for Labs</description>
+        <externalId>false</externalId>
+        <label>First Purchase Date - Labs</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>First_purchase_Date_PCF__c</fullName>
+        <description>This field holds the first purchase date of PCF for this Account computing all the booked opportunities.</description>
+        <externalId>false</externalId>
+        <label>First purchase Date - PCF</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Year_End__c</fullName>
+        <externalId>false</externalId>
+        <label>Fiscal Year End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Focus_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Focus Account?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GUID__c</fullName>
+        <externalId>false</externalId>
+        <label>GUID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Global_2000_Rank__c</fullName>
+        <externalId>false</externalId>
+        <label>Global 2000 Rank</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Google_Drive_Folder__c</fullName>
+        <description>Custom link to Google Drive shared folder for this Account</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK("https://script.google.com/a/macros/pivotal.io/s/AKfycbxShw_bt0_HUQW2VRXDJU16MnToL-XrMGApstnyT9S0/dev?AccountID=" &amp; Id &amp; "&amp;AccountName=" &amp; SUBSTITUTE(Name, "&amp;", "%26"), "Click here to view Google Drive folder for this Account" , "_blank")</formula>
+        <inlineHelpText>Direct link to corresponding searchable shared Google Drive folder for all artifacts related to this Account.</inlineHelpText>
+        <label>Google Drive Folder</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Governance_Status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All newly created Accounts must be reviewed and approved by the Governance team.</inlineHelpText>
+        <label>Governance Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>true</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Governance__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(ISPICKVAL( Governance_Status__c , "Approved"),IMAGE("/resource/trac_Governance/approved.png","Approved"),
+IMAGE("/resource/trac_Governance/pending.png","Pending"))</formula>
+        <label>Governance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HasOpenOppsAllDates__c</fullName>
+        <externalId>false</externalId>
+        <label>QualifiedOpps</label>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Discovery, Framing, Negotiate &amp; Close, Gain Sponsorship</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>High_Priority__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is checked if the Targeted Account is a High Prioritized one.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in EMEA - This field is checked if the Targeted Account is a High Prioritized one.</inlineHelpText>
+        <label>High Priority</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ISR__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>ISR</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>NamedAccounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Innovative_AppDev_D_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Innovative AppDev D Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Innovative_AppDev__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not a Target - Recent Decision/Cycle</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Recent Decision/Cycle</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Budget/Timing</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Budget/Timing</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Lacks Driver/Profile</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Lacks Driver/Profile</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Breadth</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Breadth</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Depth/Industry</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Depth/Industry</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Target - Recent Decision/Cycle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Target - Budget/Timing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Target - Lacks Driver/Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Breadth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Depth/Industry</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Innovative_AppDev_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Priority Account Quarterly Goals</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Innovative_AppDev__c</fullName>
+        <externalId>false</externalId>
+        <label>Innovative AppDev Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A - Active Opportunity</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B - Priority Accounts</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C - Limited Knowledge</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D - No opp next 18-24 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsCustomerPortal</fullName>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Joint_Exec_Briefing_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Joint Exec Briefing Completed?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_EMC__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Legacy ID EMC</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_SPRING__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Legacy ID SPRING</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_VMWARE__c</fullName>
+        <externalId>false</externalId>
+        <label>Legacy ID VMWARE</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mintigo_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Mintigo - Industry</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mintigo_Predictive_Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Mintigo Predictive Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mintigo_Sub_Industry__c</fullName>
+        <externalId>false</externalId>
+        <label>Mintigo - Sub Industry</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mintigo_hash__c</fullName>
+        <externalId>false</externalId>
+        <label>Mintigo hash</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Mintigo_update_datetime__c</fullName>
+        <externalId>false</externalId>
+        <label>Mintigo Update Datetime</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Named_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Account?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Notes_from_Compliance_Team__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field will be filled by Compliance team for flagged/blocked accounts</inlineHelpText>
+        <label>Notes from Compliance Team</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NumberofEmployees__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Employees</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt; 99</fullName>
+                    <default>false</default>
+                    <label>&lt; 99</label>
+                </value>
+                <value>
+                    <fullName>100 - 499</fullName>
+                    <default>false</default>
+                    <label>100 - 499</label>
+                </value>
+                <value>
+                    <fullName>500 - 999</fullName>
+                    <default>false</default>
+                    <label>500 - 999</label>
+                </value>
+                <value>
+                    <fullName>1,000 - 4,999</fullName>
+                    <default>false</default>
+                    <label>1,000 - 4,999</label>
+                </value>
+                <value>
+                    <fullName>5,000 - 9,999</fullName>
+                    <default>false</default>
+                    <label>5,000 - 9,999</label>
+                </value>
+                <value>
+                    <fullName>&gt;10,000</fullName>
+                    <default>false</default>
+                    <label>&gt;10,000</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PAS__c</fullName>
+        <description>Added 3/14/2018.... Eric Landon and BBB requested field to track likelihood to convert on accts.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&lt;a href="https://pivotal.my.salesforce.com/sfc/#version?selectedVersionId=0680P0000046tAO"target="_blank"&gt;Click here&lt;/a&gt;</inlineHelpText>
+        <label>PAS Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A - Active Opportunity</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B - Target Accounts</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C - Limited Knowledge</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D - No opp next 18-24 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PA_Coverage_rollup__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>sum of Percentage of Effort of Team Member Platform Architects</inlineHelpText>
+        <label>PA Coverage</label>
+        <summarizedField>Team_Member__c.Percentage_of_Effort__c</summarizedField>
+        <summaryFilterItems>
+            <field>Team_Member__c.Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Platform Architect</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Team_Member__c.Account__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Federation Partner</fullName>
+                    <default>false</default>
+                    <label>Federation Partner</label>
+                </value>
+                <value>
+                    <fullName>Global System Integrator</fullName>
+                    <default>false</default>
+                    <label>Global System Integrator</label>
+                </value>
+                <value>
+                    <fullName>Outbound OEM/ISV</fullName>
+                    <default>false</default>
+                    <label>Outbound OEM/ISV</label>
+                </value>
+                <value>
+                    <fullName>Consulting Partner</fullName>
+                    <default>false</default>
+                    <label>Consulting Partner</label>
+                </value>
+                <value>
+                    <fullName>Service Provider</fullName>
+                    <default>false</default>
+                    <label>Service Provider</label>
+                </value>
+                <value>
+                    <fullName>Technology Alliance</fullName>
+                    <default>false</default>
+                    <label>Technology Alliance</label>
+                </value>
+                <value>
+                    <fullName>VAR</fullName>
+                    <default>false</default>
+                    <label>VAR</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Distributor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Federation Partner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Global System Integrator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Outbound OEM/ISV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Consulting Partner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Service Provider</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>Technology Alliance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partner</controllingFieldValue>
+                <valueName>VAR</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Account_Category__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>A - Prime: potential for $7M+ annual run rate
+B - Named: potential for $3-7M annual run rate
+C - Territory: potential for less than $3M run rate</inlineHelpText>
+        <label>Pivotal Account Category</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A - Prime</fullName>
+                    <default>false</default>
+                    <label>A - Prime</label>
+                </value>
+                <value>
+                    <fullName>B - Named</fullName>
+                    <default>false</default>
+                    <label>B - Named</label>
+                </value>
+                <value>
+                    <fullName>C - Territory</fullName>
+                    <default>false</default>
+                    <label>C - Territory</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Customer_Number__c</fullName>
+        <displayFormat>AN-{0000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Pivotal Customer Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Greenplum_Cores_Deployed__c</fullName>
+        <externalId>false</externalId>
+        <label>Pivotal Greenplum Cores Deployed?</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform_as_a_Product_D_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform as a Product D Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Platform_as_a_Product__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not a Target - Recent Decision/Cycle</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Recent Decision/Cycle</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Budget/Timing</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Budget/Timing</label>
+                </value>
+                <value>
+                    <fullName>Not a Target - Lacks Driver/Profile</fullName>
+                    <default>false</default>
+                    <label>Not a Target - Lacks Driver/Profile</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Breadth</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Breadth</label>
+                </value>
+                <value>
+                    <fullName>Not a Fit - Product: Functional Depth/Industry</fullName>
+                    <default>false</default>
+                    <label>Not a Fit - Product: Functional Depth/Industry</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Recent Decision/Cycle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Budget/Timing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Target - Lacks Driver/Profile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Breadth</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>D - No opp next 18-24 Months</controllingFieldValue>
+                <valueName>Not a Fit - Product: Functional Depth/Industry</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Platform_as_a_Product_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Plat as Prod Priority Acct Qtrly Goals</label>
+        <length>300</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Platform_as_a_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform as a Product Account Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>A - Active Opportunity</fullName>
+                    <default>false</default>
+                    <label>A - Active Opportunity</label>
+                </value>
+                <value>
+                    <fullName>B - Target Accounts</fullName>
+                    <default>false</default>
+                    <label>B - Priority Accounts</label>
+                </value>
+                <value>
+                    <fullName>C - Limited Knowledge</fullName>
+                    <default>false</default>
+                    <label>C - Limited Knowledge</label>
+                </value>
+                <value>
+                    <fullName>D - No opp next 18-24 Months</fullName>
+                    <default>false</default>
+                    <label>D - No opp next 18-24 Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Program__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <referenceTo>Program__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Publicly_Held__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Publicly Held</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Date__c</fullName>
+        <description>Date the Account was screened in Visual Compliance [PT # 126414043]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the Account was screened in Visual Compliance</inlineHelpText>
+        <label>RPS Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Status__c</fullName>
+        <defaultValue>"Pending"</defaultValue>
+        <description>RPS Screening Status in Visual Compliance [PT #126414043]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>RPS Screening Status in Visual Compliance</inlineHelpText>
+        <label>RPS Status</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Region of the Account Owner</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner.Region__c)</formula>
+        <inlineHelpText>Region of the Account Owner</inlineHelpText>
+        <label>Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SendSafely_Dropzone__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Special_Handling__c, "Standard", "https://securefiles.pivotal.io/dropzone/pdang", 
+"EH - Executive Handling", "https://securefiles-sp.pivotal.io/dropzone/pdang",
+"SP - Special Practices", "https://securefiles-sp.pivotal.io/dropzone/pdang",
+"EU - Safe Harbour", "https://securefiles-eu.pivotal.io/dropzone/pdang",
+"EU - Global Access","https://securefiles-eu.pivotal.io/dropzone/hgeisert",
+"https://securefiles.pivotal.io/dropzone/pdang")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SendSafely Dropzone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Special_Handling__c</fullName>
+        <description>Pivotal tracker #[121533025] : EHSP desgination/rules on Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies customers requesting Special Handling regarding their identity and data. This includes Federal Government or commercial entities that require specific processes and personnel for management of their support tickets.</inlineHelpText>
+        <label>Special Handling</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>true</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>EH - Executive Handling</fullName>
+                    <default>false</default>
+                    <label>EH - Executive Handling</label>
+                </value>
+                <value>
+                    <fullName>SP - Special Practices</fullName>
+                    <default>false</default>
+                    <label>SP - Special Practices</label>
+                </value>
+                <value>
+                    <fullName>EU - Safe Harbour</fullName>
+                    <default>false</default>
+                    <label>EU - Safe Harbour</label>
+                </value>
+                <value>
+                    <fullName>EU - Global Access</fullName>
+                    <default>false</default>
+                    <label>EU - Global Access</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Super_Parent_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(Parent.Account_ID18__c),Parent.Account_ID18__c,Account_ID18__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Super Parent Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Super_Parent_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Parent.Name &lt;&gt; "",Parent.Name, Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Super Parent Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Super_Parent_Country__c</fullName>
+        <description>Country for the Super Parent Company</description>
+        <externalId>false</externalId>
+        <formula>IF(Parent.Name &lt;&gt; "",Parent.BillingCountry ,  BillingCountry )</formula>
+        <label>Super Parent Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Support_Exceptions_Granted__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Displays Count of all cases associated to an account, where Entitlement is Support Exception, Resolution Code is Not-Entitled.</description>
+        <externalId>false</externalId>
+        <label>Support Exceptions Granted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Support_Exceptions_Rejected__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Displays Count of all cases associated to an account, where Entitlement is Support Exception, Resolution Code is not-Entitled.</description>
+        <externalId>false</externalId>
+        <label>Support Exceptions Rejected</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TCAP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Cloud Adoption Program - refers to customers who have ELAs or "unlimited" pcf deals</inlineHelpText>
+        <label>TCAP?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Theater__c</fullName>
+        <description>Theater of the Account Owner</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Owner.Theater__c)</formula>
+        <inlineHelpText>Theater of the Account Owner</inlineHelpText>
+        <label>Theater</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Buy_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Buy Count (Open)</label>
+        <summaryFilterItems>
+            <field>Opportunity.Buy_Count_Open__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Number_of__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>sum of Team Members with role of PA or Resident PA</inlineHelpText>
+        <label>Total Number of FTE PA's</label>
+        <summaryFilterItems>
+            <field>Team_Member__c.Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Resident PA, Platform Architect</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Team_Member__c.Account__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VMWare_ELA_Targetamt__c</fullName>
+        <externalId>false</externalId>
+        <label>VMWare ELA Target Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VMWare_Pivotal_Container_Specialist__c</fullName>
+        <externalId>false</externalId>
+        <label>VMWare Pivotal Container Specialist</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VMWare_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Search for and select a Contact attached to a VMWare account</inlineHelpText>
+        <label>VMWare Rep</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts (VMWare Rep)</relationshipLabel>
+        <relationshipName>Contact_VMW</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>VMWware_ELA_Target_Quarter__c</fullName>
+        <externalId>false</externalId>
+        <label>VMWware ELA Target Quarter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VMware_ELA_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>VMware ELA Target?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VMware_Target__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VMware Target</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Virtustream_Rep_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Virtustream Rep</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Year_Company_Was_Founded__c</fullName>
+        <externalId>false</externalId>
+        <label>Year Company Was Founded</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ZenDesk_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>FOR THE ZenDesk IDs for the Account.</description>
+        <externalId>true</externalId>
+        <label>ZenDesk ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>dts_account__c</fullName>
+        <description>Dell Technology 50 dashboard - this indicates the mapped account # (eg "Home Depot") to pull for extract.   Note that many SF Accounts (parent/children) may be mapped to a single DT50 ID.</description>
+        <externalId>false</externalId>
+        <label>DT50 ID</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>xBookedOpps__c</fullName>
+        <description>Temporary for data cleanup - count of booked Opps for this account</description>
+        <externalId>false</externalId>
+        <label>BookedOpps</label>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Booked</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>xDedupe_Include__c</fullName>
+        <description>Traction on Demand used for dedupe</description>
+        <externalId>false</externalId>
+        <label>xDedupe_Include</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>xOpenOpps__c</fullName>
+        <description>Temporary for data cleanup - count of currently open opportunities</description>
+        <externalId>false</externalId>
+        <label>OpenOpps</label>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Booked, Closed Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <compactLayoutAssignment>Pivotal_Account_Compact_Layout</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.TYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_STREET</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_STATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_ZIP</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>High_Priority__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.INDUSTRY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.ALIAS</customTabListAdditionalFields>
+        <listViewButtons>Change_Owner</listViewButtons>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_STREET</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_CITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_STATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_ZIP</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.URL</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Pivotal_Customer_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Named_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_COUNTRY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.INDUSTRY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Pivotal_Customer_Number__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts</label>
+        <sharedTo>
+            <group>All_Internal_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Governance_Pending_AMER</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Governance_Status__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Created_By_Region__c</columns>
+        <columns>Created_by_Theater__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Governance_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <filters>
+            <field>Created_by_Theater__c</field>
+            <operation>equals</operation>
+            <value>AMER</value>
+        </filters>
+        <filters>
+            <field>Created_By_Region__c</field>
+            <operation>notContain</operation>
+            <value>ISR</value>
+        </filters>
+        <label>Governance Pending AMER</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Governance_Pending_APJ</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Governance_Status__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Created_By_Region__c</columns>
+        <columns>Created_by_Theater__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Governance_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <filters>
+            <field>Created_by_Theater__c</field>
+            <operation>equals</operation>
+            <value>APJ</value>
+        </filters>
+        <label>Governance Pending APJ</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Governance_Pending_All</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Governance_Status__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Created_By_Region__c</columns>
+        <columns>Created_by_Theater__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Governance_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <label>Governance Pending All</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Governance_Pending_ISR</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Governance_Status__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Created_By_Region__c</columns>
+        <columns>Created_by_Theater__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Governance_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <filters>
+            <field>Created_By_Region__c</field>
+            <operation>contains</operation>
+            <value>ISR</value>
+        </filters>
+        <label>Governance Pending ISR</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Governance_Pending_LABS</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Governance_Status__c</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>Created_By_Region__c</columns>
+        <columns>Created_by_Theater__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Governance_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending</value>
+        </filters>
+        <filters>
+            <field>Created_by_Theater__c</field>
+            <operation>equals</operation>
+            <value>LABS</value>
+        </filters>
+        <label>Governance Pending LABS</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Named_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.URL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>ISR__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.ADDRESS1_COUNTRY_CODE</field>
+            <operation>equals</operation>
+            <value>GB</value>
+        </filters>
+        <label>Named Accounts</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PVTLAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>refedge__RUL_Last_Activity_Date__c</columns>
+        <columns>ACCOUNT.LAST_ACTIVITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>contains</operation>
+            <value>Pivotal</value>
+        </filters>
+        <label>Pivotal Accounts</label>
+        <sharedTo>
+            <group>All_Internal_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Partner_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Partner_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.TYPE</field>
+            <operation>equals</operation>
+            <value>Partner</value>
+        </filters>
+        <label>Partner Accounts</label>
+        <sharedTo>
+            <group>All_Internal_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>SP_Accounts</fullName>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Special_Handling__c</field>
+            <operation>equals</operation>
+            <value>SP - Special Practices</value>
+        </filters>
+        <label>SP Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Visual_compliance_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>Governance_Status__c</columns>
+        <columns>RPS_Date__c</columns>
+        <columns>RPS_Status__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RPS_Status__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>xBookedOpps__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>RPS_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Visual compliance Accounts</label>
+        <sharedTo>
+            <group>All_Internal_Users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>X1_My_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.URL</columns>
+        <columns>Focus_Account__c</columns>
+        <columns>Named_Account__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>1 - My Accounts</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <validationRules>
+        <fullName>AC001_Limit_Account_Owner_Change</fullName>
+        <active>true</active>
+        <description>Only SysAdmin and Business Operations or Order Management can change account owners</description>
+        <errorConditionFormula>NOT(($Profile.Name = "Pivotal - Business Operations") || ($Profile.Name = "System Administrator") || ($Profile.Name = "Pivotal - Order Management")) &amp;&amp; (PRIORVALUE(OwnerId ) &lt;&gt; OwnerId)</errorConditionFormula>
+        <errorMessage>Please contact your Business Manager to change account ownership [AC001].</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>AC002_Year_Company_was_founded</fullName>
+        <active>true</active>
+        <description>Year the company was founded should be a 4 digit number</description>
+        <errorConditionFormula>(!(ISNUMBER(Year_Company_Was_Founded__c)) 
+|| Len(Year_Company_Was_Founded__c) &gt; 4 
+|| VALUE(Year_Company_Was_Founded__c) &gt; YEAR(Today()) 
+|| VALUE(Year_Company_Was_Founded__c) &lt; 1800)
+&amp;&amp;!ISBLANK(Year_Company_Was_Founded__c)</errorConditionFormula>
+        <errorDisplayField>Year_Company_Was_Founded__c</errorDisplayField>
+        <errorMessage>Please enter a valid 4 digit year, example 2010 [AC002].</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Governance_status_Approval</fullName>
+        <active>true</active>
+        <description>Governance status can't be set to approved if the Account is flagged as risk country.
+
+This validation fires when account is flagged as risk country by compliance tool.</description>
+        <errorConditionFormula>NOT(OR(CONTAINS(RPS_Status__c,'No Matches'),CONTAINS(RPS_Status__c,"Pending"), ISBLANK(RPS_Status__c))) &amp;&amp;  ISPICKVAL(PRIORVALUE(Governance_Status__c), "Pending")&amp;&amp; TEXT(Governance_Status__c)= "Approved" &amp;&amp;  Cleared_by_Compliance_Team__c !=true</errorConditionFormula>
+        <errorMessage>This account is flagged by export compliance screening tool. Pivotal Trade Compliance has been notified,will review this account.
+If you have any questions in the meantime, please contact export@pivotal.io.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Account_Dashboard</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Account Dashboard</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>{!URLFOR(Account.Account_Dashboard_URL__c)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Change_Owner</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Change Owner</masterLabel>
+        <openType>sidebar</openType>
+        <page>ChangeOwnerAccount</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Clone</fullName>
+        <availability>online</availability>
+        <description>Button to clone Accounts</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/{!Account.Id}/e?clone=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Lucidchart_Account_Map</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Lucidchart Account Map</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://www.lucidchart.com/sfdc/accountMap/{!CASESAFEID(Account.Id)}?template=84862392-7dd2-446c-ba42-054a64a42887&amp;tag=pivotalaccountmap@environment=sandbox</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Delete</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Delete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/9.0/connection.js")}
+
+var records = {!GETRECORDIDS(  $ObjectType.Account )};
+
+if (records[0] == null) {
+alert("Please select at least one record.") }
+else {
+
+var errors = [];
+var result = sforce.connection.deleteIds(records);
+if (result &amp;&amp; result.length){
+var numFailed = 0;
+var numSucceeded = 0;
+for (var i = 0; i &lt; result.length; i++){
+var res = result[i];
+if (res &amp;&amp; res.success == 'true'){
+numSucceeded++;
+} else {
+var es = res.getArray("errors");
+if (es.length &gt; 0) {
+errors.push(es[0].message);
+}
+numFailed++;
+}
+}
+if (numFailed &gt; 0){
+alert("Failed: " + numFailed + "\nSucceeded: " + numSucceeded + " \n Due to: " + errors.join("\n"));
+} else {
+alert("Number of records deleted: " + numSucceeded);
+}
+}
+window.location.reload();
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+</CustomObject>

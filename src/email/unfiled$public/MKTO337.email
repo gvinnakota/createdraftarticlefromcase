@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring Newsletter by Pivotal</title>
+
+<style type="text/css">
+
+    body {margin:0; padding:0; background-color:#F1F1F1; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:14px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; width:100% !important;}
+    a, a:link, a:visited {color:#5FA134; text-decoration:underline;}
+    a:hover, a:active {text-decoration:none; color:#5FA134 !important;}
+    h1, h2, h3 {color:#333333 !important; padding:0px 0px 10px 0px; margin:0px 0px 10px 0px;}
+    p {margin:0 0 14px 0; padding:0;}
+    img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+    a img {border:none;}
+    table td {border-collapse:collapse;}
+    .highlighted {color:#5FA134;}
+
+    /**
+    * @tab Mobile Styles
+    * @section body image
+    * @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+    */
+
+    #bodyImage{height:auto !important; /*@editable*/ max-width:540px !important; /*@editable*/ width:100% !important;}
+
+   
+    /* Clients specific styles */
+    .ReadMsgBody {width: 100%;}
+    .ExternalClass {width: 100%;}
+    .yshortcuts {color: #333333;}
+    .yshortcuts a span {color: #333333; border-bottom: none !important; background: none !important; text-decoration:none !important;}
+    /* / Clients specific styles */
+    
+    /* Media queries */
+    @media only screen and (max-width: 640px) {
+        table[class=row] {width:580px !important;}
+        img[class=wideImage], img[class=banner] {width:100% !important; height:auto !important; max-width:100%;}
+    }
+    @media only screen and (max-width: 610px) {
+        table[class=row] {width:570px !important;}
+        td[class=container] {padding:0px !important;}
+    }
+    @media only screen and (max-width: 540px) {
+        table[class=row] {width:510px !important;}
+        td[class=oneFromFour] {font-size:14px !important; line-height:15pt !important;}
+    }
+    @media only screen and (max-width: 480px) {
+        table[class=row] {width:450px !important;}
+        td[class=oneFromTwo], td[class=twoColumns] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=column] {display:block; width:390px !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=website] {display:block; width:390px !important; padding:15px 30px 15px 30px !important; text-align:center;}
+        td[class=socialIcons] {display:block; width:390px !important; padding:0px 30px 15px 30px !important; text-align:center !important;}
+        img[class=phoneIcon] {display:none !important;}
+        img[class=wideImage] {width:auto !important;}
+        table[class=quoteContainer] {width:190px !important;}
+                td[class=videoFeature] {display:block; padding-top:15px !important; padding-right:15px !important; padding-bottom:15px !important; padding-left:15px !important; }
+    }
+    @media only screen and (max-width: 360px) {
+        table[class=row] {width:340px !important;}
+        td[class=column], td[class=website], td[class=socialIcons] {width:280px !important;}
+        td[class=logo] {display:block; width:280px !important; padding-bottom:0 !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=phone] {display:block; width:280px !important; padding:9px 20px 13px 20px !important; text-align:left !important; background-color:#EBF1E7;}
+        td[class=month] {display:block; width:280px !important; padding:8px 20px 8px 20px !important; text-align:left !important; /*border-top:1px solid #FFFFFF;*/}
+        td[class=icon] {padding-top:10px !important; padding-bottom:10px !important;}
+        table[class=quoteContainer] {width:140px !important;}
+        table[class=quoteContainer] td {font-size:12px !important; line-height:15pt !important;}
+        td[class=footer] {padding:0px 0px 25px 0px !important; text-align:left !important;}
+    }
+    @media only screen and (max-width: 320px) {
+        table[class=row] {width:300px !important;}
+        td[class=column], td[class=website], td[class=socialIcons], td[class=logo], td[class=phone], td[class=phone2] {width:240px !important;}
+        table[class=quoteContainer] {width:100% !important; border-bottom:1px solid #EEEEEE; margin-bottom:20px;}
+        table[class=quoteContainer] td {padding-left:0px !important;}
+        td[class=quoteAuthor] {padding-bottom:20px !important;}
+    }
+    @media only screen and (max-width: 240px) {
+        table[class=row] {width:220px !important;}
+        td[class=column], td[class=logo], td[class=phone], td[class=phone2] {width:160px !important;}
+        td[class=oneFromFour] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website], td[class=socialIcons] {width:220px !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website] {font-size:18px !important;}
+        img[class=wideImage] {width:100% !important;}
+        table[class=iconContainer], table[class=imgContainer] {width:100% !important;}
+        td[class=icon], td[class=authorPicture] {padding-right:0px !important; padding-bottom:20px !important; text-align:center;}
+        td[class=icon] img, td[class=authorPicture] img {display:inline !important;}
+    }
+    /* / Media queries */
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-color:#F1F1F1; background-image:url('http://play.gopivotal.com/rs/pivotal/images/BG_Brown_SpringEmail.png'); background-repeat:repeat-x; font-size:14px; line-height:24px; " ><tr ><td class="container" style="padding-left:15px; padding-right:15px; " ><table class="row" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; " ><tr ><td width="100%" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF; " ><tr ><td class="logo" width="50%" style="padding-top:10px; padding-right:15px; padding-bottom:15px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; line-height:25pt; color:#5fa134; font-weight:300;">
+<div style="margin-top:0px; margin-bottom:0px !important; padding:0px; line-height:100%;"><a href="http://www.spring.io" title="Spring Newsletter by Pivotal" style="color:#5fa134 !important;"><img src="http://play.gopivotal.com/rs/pivotal/images/Spring_FFF.png" alt="Spring by Pivotal" border="0" vspace="0" hspace="0" style="display:block; max-width:100%; height:auto !important;"></a></div>
+</td>
+<td class="month" width="50%" style="padding-top:4px; padding-right:20px; padding-bottom:0; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF; text-align:right; " ><div class="mktEditable" id="issue-month" ><div class="month" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-size: 12px; line-height: 24px; font-weight: 500; color: #ffffff !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">FEBRUARY 2014</div></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr ><td width="100%" align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#333333; padding-top:20px; padding-right:20px; padding-left:20px; " ><div class="mktEditable" id="lead-story-image-edit" ><span style="color: #6db33f;"><a href="http://spring.io/blog/2013/11/27/spring-integration-3-0-release-candidate-1-is-now-available"><img class="banner" style="display: block; max-width: 560px;" src="http://play.gopivotal.com/rs/pivotal/images/SpringNews_Feb2014_SpringIntegration300_560x200.png" border="0" alt="Spring Integration" hspace="0" vspace="0" width="560" height="200"></a></span></div>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-top:20px; padding-right:20px; padding-bottom:10px; padding-left:20px; " ><div class="mktEditable" id="lead-story-title" ><h2 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 20px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 22pt; color: #333333 !important; font-weight: 500;">Spring Integration 3.0.0 GA release</h2></div>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="lead-story-copy" >With all the Spring Framework 4.0 release excitement, you may have missed the Spring Integration 3.0.0 release in December 2013 (the 3.0.1 maintenance release is now available).   The 3.0.x release uses Spring Framework 3.2.x by default but is also compatible with Spring 3.1.x and 4.0.x, and has a ton of new features for you to enjoy: new and updated endpoints, inbound adapters, Redis support and much more.  Click the graphic above to get the release details, or click the learn more button to go directly to the project page.</div>
+<table width="120" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="lead-call-to-action" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://projects.spring.io/spring-integration/">Learn More</a></div>
+</td>
+</tr>
+</table>
+<br>
+<br></td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr>
+<td width="100%" style="padding-top:20px; padding-right:20px; padding-bottom:10px; padding-left:20px;">
+<h2 style="margin-top:0px; margin-bottom:5px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; line-height:22pt; color:#333333; font-weight:500;">Monthly Expert Tech-Tips</h2>
+<h4 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:18pt; color:#333333; font-weight:400;">By Josh Long and Martin Lippert</h4>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="techtip1-title" ><h3 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 20px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; line-height: 22pt; color: #333333; font-weight: 500;">Deploying Spring Boot Applications</h3></div>
+<div class="mktEditable" id="techtip1-content" >
+<p>When you use the default (Maven project) Spring Boot application generated from inside of the Spring Tool Suite wizard or from <a href="http://start.spring.io/">the Spring Initializr</a>, Spring Boot will - by default - build a <span style="font-family: 'courier new', courier;">.jar</span> file 
+which you can run like any other executable <span style="font-family: 'courier new', courier;">.jar: java -jar target/your-boot-app.jar</span>.
+ If you're using Spring Boot's web application support then Spring Boot will, by default, start up an embedded Tomcat 7 instance.
+ You can, by simply using Maven <span style="font-family: 'courier new', courier;">dependencyManagement</span> configuration (or the equivalent), bump those dependencies up to Tomcat 8 or <a href="https://spring.io/guides/gs/spring-boot/#_switch_from_tomcat_to_jetty">remove Tomcat all together and 
+simply import the <span style="font-family: 'courier new', courier;">spring-boot-starter-jetty</span> dependency</a>.
+ In this scenario, you'll get embedded Jetty, instead.</p>
+<p>But, I imagine you wondering, "how do I deploy it to an existing Tomcat, or even to more classic application servers like JBoss?" Easy! It's still just Spring, after all.
+ Comment out the declaration of the <span style="font-family: 'courier new', courier;">spring-boot-maven-plugin</span> plugin in your Maven <span style="font-family: 'courier new', courier;">pom.xml</span> file, then change the packaging type to <span style="font-family: 'courier new', 
+courier;">war</span>.
+ Then, you need only have your entry point class (<span style="font-family: 'courier new', courier;">Application.java</span> in the a default, generated project) extend <span style="font-family: 'courier new', courier;">SpringBootServletInitializer</span> and override the <span style="font-family: 
+'courier new', courier;">configure</span> method, like this:</p>
+<p><span style="font-family: 'courier new', courier;">``` // ...</span></p>
+<p>@ComponentScan @EnableAutoConfiguration public class Application extends SpringBootServletInitializer {</p>
+<p><span style="font-family: 'courier new', courier;">private static final Class APPLICATION_CLASS =         Application.class;</span></p>
+<p><span style="font-family: 'courier new', courier;">public static void main(String[] args) {     SpringApplication.run(APPLICATION_CLASS, args); }</span></p>
+<p><span style="font-family: 'courier new', courier;">@Override protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {     return application.sources(APPLICATION_CLASS); } }</span></p>
+<p>`` Not bad! You can run the application from your <span style="font-family: 'courier new', courier;">public static void mainentry-point</span> and use the embedded, lightweight web server, or deploy it to an application server as a proper.war.
+ Even better, Spring Boot benefits from Spring's vaunted portability.
+ You can take a regular Spring <span style="font-family: 'courier new', courier;">Boot.jaror.war</span>` archive and deploy it to more exotic destinations like a <a href="http://cloudfoundry.com/">Platform-as-a-Service cloud</a>, and it just works!</p>
+</div>
+<div style="height:20px">&nbsp;</div>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="techtip2-title" ><h3 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 20px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; line-height: 22pt; color: #333333; font-weight: 500;">Spring-specific validations in Spring Tool Suite (STS)</h3></div>
+<div class="mktEditable" id="techtip2-content" ><p>The Spring Tool Suite can run a huge number of validations on your Spring projects - to highlight possible bugs or to tell you about potential misuses of Spring. They run as part of the project build and can be configured via the preferences:</p>
+<p><img src="http://play.gopivotal.com/rs/pivotal/images/SpringNews_Feb2014_STSTechTips_560xheight.png" border="0" alt="STS Tech Tip" hspace="0" vspace="0" width="560" /></p></div>
+<div style="height:20px">&nbsp;</div>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr>
+<td width="100%" style="padding-top:20px; padding-right:20px; padding-bottom:10px; padding-left:20px;">
+<h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; line-height:22pt; color:#333333; font-weight:500;">Webinars</h2>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-right:20px; padding-bottom:10px; padding-left:20px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar1-title" ><h3 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 20px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; line-height: 22pt; color: #333333; font-weight: 500;">Spring Data Repositories &ndash; Best Practices</h3></div>
+</td>
+</tr>
+<tr ><td width="100%" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td width="340" class="column" valign="top" style="padding-right:15px; padding-bottom:25px; padding-left:20px; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar1-description" ><p>Speakers: Oliver Gierke and Thomas Darimont</p>
+<p>The repository abstraction layer is one of the core pieces of the Spring Data projects. It provides a consistent, interface-based programming model to allow implementing data access layers easily for relational and NoSQL databases.</p>
+<p>We will have a look at the lessons learned from the application of it in various customer projects and summarize best practices for you to apply in your projects. The session will also discuss advanced features like the Querydsl integration, the integration of custom implementation code as well as hooks into Spring MVC and Spring HATEOAS.</p></div>
+</td>
+<td width="220" class="column" valign="top" style="padding-top:5px; padding-right:20px; padding-bottom:25px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar1-emea-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">Europe</h3>
+<p>Tuesday, February 18<br /> 3:00pm GMT Time<br /> (London, GMT)</p></div>
+<table width="100" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="webinar1-emea-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_SpringDataRepositories7AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar1-noram-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">North America</h3>
+<p>Tuesday, February 18<br /> 10:00am PST<br /> (San Francisco, GMT-08:00)</p></div>
+<table width="100" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="webinar1-noram-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_SpringDataRepositories10AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-right:20px; padding-bottom:10px; padding-left:20px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar2-title" ><h3 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 20px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; line-height: 22pt; color: #333333; font-weight: 500;">Spring LDAP 2.0</h3></div>
+</td>
+</tr>
+<tr ><td width="100%" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td width="340" class="column" valign="top" style="padding-right:15px; padding-bottom:25px; padding-left:20px; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar2-description" ><p>Speaker: Mattias Arthusson</p>
+<p>The recently released 2.0 version has given the Spring LDAP project a significant facelift. With new features like Spring Data Repository and QueryDSL support, a fluent LDAP query builder, and XML namespace configuration, LDAP administration applications can now be built more efficiently than ever.</p>
+<p>This webinar will provide an overview of the goals and scope of Spring LDAP and demonstrate all the improvements in version 2.0, giving you plenty of hands-on tips along the way on how to make maximum use of the library.</p>
+<p><strong>More Upcoming Events:</strong></p>
+<p>Spring by Pivotal Webinar: Spring Framework 4 on Java 8 with Juergen Hoeller</p>
+<p>Click <a style="text-decoration: none; color: #6db33f;" href="http://play.gopivotal.com/OSS_Webinar_SpringFramework4onJava87AM_Register.html">here</a> to register for Europe<br />Click <a style="text-decoration: none; color: #6db33f;" href="http://play.gopivotal.com/OSS_Webinar_SpringFramework4onJava810AM_Register.html">here</a> to register for North America</p></div>
+</td>
+<td width="220" class="column" valign="top" style="padding-top:5px; padding-right:20px; padding-bottom:25px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar2-emea-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">Europe</h3>
+<p>Tuesday, March 18<br />2:00pm GMT Time<br /> (London, GMT)</p></div>
+<table width="100" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="webinar2-emea-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_SpringLDAP207AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="webinar2-noram-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">North America</h3>
+<p>Tuesday, March 18<br /> 10:00am PDT<br /> (San Francisco, GMT-07:00)</p></div>
+<table width="100" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="webinar2-noram-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_SpringLDAP2010AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-right:1px; border-bottom:1px; border-left:1px; border-color:#34302D; border-style:solid; " ><tr>
+<td width="100%" bgcolor="#34302D" style="padding-top:10px; padding-right:20px; padding-bottom:0; padding-left:20px;">
+<h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; line-height:22pt; color:#FFFFFF !important; font-weight:300;">Spring Videos</h2>
+</td>
+</tr>
+<tr ><td width="100%" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16pt; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td class="column" valign="top" style="padding-top:20px; padding-right:20px; padding-bottom:25px; padding-left:20px; " ><table width="100%" cellpadding="0" cellspacing="0" border="0" ><tr ><td bgcolor="#F4F4F4" ><table cellpadding="0" cellspacing="0" border="0" ><tr ><td width="198" valign="top" class="videoFeature" style="padding-top:15px; padding-right:15px; padding-bottom:15px; padding-left:15px; " ><div class="mktEditable" id="lead-story-image" ><img style="display: block; max-width: 198px;" src="http://play.gopivotal.com/rs/pivotal/images/SpringNews_FeaturedContent_198x160.png" border="0" alt="Monthly Feature" hspace="0" vspace="0" width="198" height="160"></div>
+</td>
+<td valign="top" class="videoFeature" style="padding-top:15px; padding-right:15px; padding-bottom:15px; padding-left:0; " ><div class="mktEditable" id="video-featured-title" ><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><span style="color: #6db33f;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/23/webinar-replay-introduction-to-spring-framework-4-0">Webinar Replay: Introduction to Spring Framework 4.0 </a></span></span></div>
+<div class="mktEditable" id="video-featured-description" ></div>
+<table width="100" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="video-featured-watch" ></div>
+</td>
+</tr>
+</table>
+<br clear="all"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-top:0; padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="archive-video-list" >
+<p><span style="line-height: 15pt; display: inline-block; padding-top: 15px; padding-bottom: 10px;"><strong>Archived videos</strong></span><br /><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" 
+href="http://spring.io/blog/2014/02/03/jsr-352-spring-batch-and-you">SpringOne2GX 2013 replay: JSR-352, Spring Batch and You</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" 
+href="http://spring.io/blog/2014/02/03/real-life-use-of-spring-integration-with-rabbitmq">SpringOne2GX 2013 replay: Real life use of Spring Integration with RabbitMQ</a></span><a 
+href="http://spring.io/blog/2014/01/21/springone2gx-2013-replay-intro-to-websocket-applications-with-spring-framework-4-0"><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><span style="color: #6db33f;">SpringOne2GX 2013 replay: Intro to WebSocket Applications    
+    with Spring Framework 4.0</span></span></a><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/21/webinar-replay-spring-security-3-2">Webinar Replay: Spring Security        
+3.2</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/21/springone2gx-2013-replay-spring-testing">SpringOne2GX 2013 replay: Spring Testing</a></span> <br /> <span 
+style="line-height: 15pt; display: inline-block;"><span style="color: #6db33f;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/10/build-a-robust-rest-ful-web-service-in-less-than-6-minutes">Build a robust REST-ful Web Service in less than 6 minutes 
+</a></span></span></p>
+<p><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/10/build-a-hello-world-rest-service-in-less-than-6-minutes">Build a Hello World REST service in less than 6 minutes </a></span><br 
+/> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="https://spring.io/blog/2014/01/14/springone2gx-2013-replay-rest-ful-api-evolution">SpringOne2GX 2013 Replay: REST-ful API Evolution</a></span><br /> <span 
+style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/14/springone2gx-2013-replay-integrating-spring-batch-and-spring-integration">SpringOne2GX 2013 Replay: Integrating Spring Batch and        
+Spring Integration</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/13/springone2gx-2013-replay-building-your-java-configuration-muscle-memory">SpringOne2GX 2013      
+  Replay: Building Your Java Configuration Muscle Memory</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" 
+href="http://spring.io/blog/2014/01/08/springone2gx-2013-replay-data-modelling-and-identity-management-with-oauth2">SpringOne2GX 2013 replay: Data Modeling and Identity Management with OAuth2 </a></span> <br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a 
+style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/08/springone2gx-2013-replay-spring-restbucks-a-hypermedia-driven-rest-webservice">SpringOne2GX 2013 replay: Spring RESTBucks &ndash; A hypermedia-driven REST webservice</a></span><br /> <span style="line-height: 
+15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/11/13/webinar-spring-with-immutability">Webinar Replay: Spring with Immutability </a></span><br /> <span style="line-height: 15pt; display: inline-block; 
+padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/17/webinar-replay-reactor-goes-ga">Webinar Replay: Reactor goes GA </a></span></p>
+<p><strong>Featured Guide:</strong></p>
+<p><a href="http://spring.io/blog/2014/01/14/webinar-replay-spring-with-immutability"> </a></p>
+<p><a style="text-decoration: none; color: #5fa134;" href="http://spring.io/guides/gs/integration/">Integrating Data</a></p>
+<p>Whatever you're building  -  these 15-30 minute guides are designed to get you productive as quickly as possible, using the latest Spring project releases and techniques as recommended by the Spring team.
+                     <a style="text-decoration: none; color: #5fa134;" href="http://spring.io/guides">http://spring.io/guides</a>.
+                    &nbsp;</p>
+<p>If you want to make contributions to an existing guide, there is a <a style="text-decoration: none; color: #5fa134;" href="https://github.com/spring-guides/draft-gs-template/wiki">set of guidelines</a> you can read.
+                    They include instructions on installing Asciidoctor as well as rendering the content to check out your edits.
+                    Just sign our <a style="text-decoration: none; color: #5fa134;" href="https://support.springsource.com/spring_committer_signup">contributor's agreement</a> and submit a pull request.</p>
+</div>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-right:1px; border-bottom:1px; border-left:1px; border-color:#34302D; border-style:solid; " ><tr>
+<td width="100%" bgcolor="#34302D" style="padding-top:10px; padding-right:20px; padding-bottom:0; padding-left:20px;">
+<h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; line-height:22pt; color:#FFFFFF !important; font-weight:300;">Spring Software Release Summary</h2>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-top:20px; padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="release-summary-list" ><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="https://spring.io/blog/2014/01/28/spring-framework-4-0-1-3-2-7-released-and-3-1-x-retired%20">Spring Framework 4.0.1 &amp; 3.2.7 &amp; 3.1.x retired 
+</a></span><br> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/29/first-release-candidate-of-spring-data-release-train-codd-released">Spring Data Release Train Codd 
+RC1</a></span><br> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/22/spring-boot-1-0-0-rc1-released">Spring Boot 1.0.0.RC1</a></span><br> <span style="line-height: 15pt; 
+display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/27/spring-web-flow-2-3-3-released">Spring Web Flow 2.3.3</a></span><br> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/28/spring-data-redis-1-1-1-released">Spring Data Redis 1.1.1</a></span></div>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-right:1px; border-bottom:1px; border-left:1px; border-color:#34302D; border-style:solid; " ><tr>
+<td width="100%" bgcolor="#34302D" style="padding-top:10px; padding-right:20px; padding-bottom:0; padding-left:20px;">
+<h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; line-height:22pt; color:#FFFFFF !important; font-weight:300;">Spring Blog Digest</h2>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-top:20px; padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="blog-digest-list" >
+<p><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/30/migrating-from-spring-framework-3-2-to-4-0-1">Migrating from Spring Framework 3.2 to 4.0.1</a></span><br /> <span 
+style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://www.slideshare.net/joshlong/have-you-seen-spring-lately">Have you seen Spring  lately? With Josh Long </a></span><br /> <span style="line-height: 15pt; display: 
+inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="https://github.com/pivotal/homebrew-tap">Pivotal Homebrew-Tap</a></span><br /> <span style="line-height: 15pt; display: inline-block;"><a style="text-decoration: none; color: #6db33f;" 
+href="https://speakerdeck.com/michaelisvy/hadoop-and-spring-data-hadoop-by-kailash-kutti">Hadoop and Spring Data Hadoop by Kailash Kutti</a></span></p>
+<p><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/23/it-s-easier-than-ever-to-create-or-contribute-to-a-getting-started-guide">Create or Contribute to a Getting Started Guide by   
+Greg Turnquist</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://blog.gopivotal.com/products/time-series-analysis-1-introduction-to-window-functions">Time Series Analysis #1: Introduction to 
+  Window Functions</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://blog.gopivotal.com/products/adding-years-to-your-rdbms-by-scaling-with-spring-and-nosql">Adding Years to your RDBMS by   
+Scaling with Spring and NoSQL</a></span><br /> <span style="line-height: 15pt; display: inline-block;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/20/exploiting-encrypted-cookies-for-fun-and-profit">Exploiting encrypted cookies for fun and   
+profit</a></span></p>
+<p><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://stackoverflow.com/questions/21346387/how-to-correctly-use-pagedresourcesassembler-from-spring-data">Correctly use PagedResourcesAssembler from Spring   
+Data</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://blog.gopivotal.com/case-studies-2/breaking-the-benchmark-moving-from-20k-to-1-million-complex-events-processed-per-second">Breaking the 
+  Benchmark: Moving from 20K to 1 Million Complex Events Processed Per Second</a></span><br /> <span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" 
+href="http://blog.gopivotal.com/products/3-steps-to-help-migrate-spring-apps-to-real-time-data-grids">3 Steps to Help Migrate Spring Apps to Real Time Data Grids</a></span><br /> <span style="line-height: 15pt; display: inline-block;"><a style="text-decoration: none; color: #6db33f;" 
+href="http://blog.gopivotal.com/case-studies-2/china-railway-corp-for-chinese-new-year-chunyun">Case Study: Scaling Reservations for the World&rsquo;s Largest Train System</a></span></p>
+<p><span style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://www.rabbitmq.com/blog/2014/01/23/preventing-unbounded-buffers-with-rabbitmq/">Using Consumer Priorities with RabbitMQ</a></span><br /> <span 
+style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/17/getting-started-with-client-side-development-in-spring">Getting Started with Client-Side Development in Spring </a></span><br /> <span 
+style="line-height: 15pt; display: inline-block; padding-bottom: 10px;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot">Serving Static Web Content with Spring Boot </a></span><br /> <span style="line-height: 
+15pt; display: inline-block;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2013/12/04/what-s-new-in-spring-data-mongodb-1-4-m1">What&rsquo;s new I Spring Data MongoDB 1.4 M1 </a></span></p>
+<p><span style="line-height: 15pt; display: inline-block;"><a style="text-decoration: none; color: #6db33f;" href="http://spring.io/blog/2014/01/03/utilizing-webjars-in-spring-boot">Utilizing WebJars in Spring Boot </a></span></p>
+</div>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#EBF1E7" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:0; " ><tr ><td valign="top" align="center" ><div class="mktEditable" id="long-banner" ><a href="http://www.gopivotal.com/training#spring" title="Spring Training from the Source" style="text-decoration:none; color:#6DB33F;"><img class="banner" src="http://play.gopivotal.com/rs/pivotal/images/AdBanner_SpringTraining_600x80.png" border="0" alt="SpringOne 2GX 2013" style="display:block; max-width:600px;" vspace="0" hspace="0"></a></div>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-right:1px; border-bottom:1px; border-left:1px; border-color:#00786E; border-style:solid; " ><tr>
+<td width="100%" bgcolor="#00786E" style="padding-top:10px; padding-right:20px; padding-bottom:0; padding-left:20px;">
+<h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; line-height:22pt; color:#FFFFFF !important; font-weight:300;">Spring Training by Pivotal</h2>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-top:20px; padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="training" ><span style="line-height:15pt; display:inline-block; padding-bottom:10px;"><a style="text-decoration:none; color:#5fa134;" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17750">Spring Core</a></span><br>
+<span style="line-height:15pt; display:inline-block; padding-bottom:10px;"><a style="text-decoration:none; color:#5fa134;" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17833">Enterprise Integration</a></span><br>
+<span style="line-height:15pt; display:inline-block; padding-bottom:10px;"><a style="text-decoration:none; color:#5fa134;" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=18355">Hibernate with Spring</a></span><br>
+<span style="line-height:15pt; display:inline-block; padding-bottom:10px;"><a style="text-decoration:none; color:#5fa134;" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=17834">Rich Web Applications</a></span><br>
+<span style="line-height:15pt; display:inline-block; padding-bottom:10px;"><a style="text-decoration:none; color:#5fa134;" href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=41320">Groovy and Grails</a></span><br></div>
+</td>
+</tr>
+</table>
+
+<table class="row" width="600" bgcolor="#F1F1F1" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; border-bottom:1px; border-bottom-color:#DDDDDD; 
+border-bottom-style:solid;">
+<tr>
+<td class="website" width="50%" valign="top" style="padding-top:24px; padding-right:15px; padding-bottom:20px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:100%; color:#6DB33F; font-weight:300;"><a style="text-decoration:none; 
+color:#6DB33F;" href="http://spring.io" title="Spring.io">spring.io</a></td>
+<td class="socialIcons" width="50%" style="padding-top:20px; padding-right:20px; padding-bottom:18px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; text-align:right;"><a href="http://twitter.com/springcentral" 
+style="color:#6DB33F;"><img alt="Twitter" src="http://play.gopivotal.com/rs/pivotal/images/Ico_Twitter.png" border="0" vspace="0" hspace="0"></a>&nbsp;&nbsp; <a href="https://plus.google.com/u/0/b/109970428231307622681/109970428231307622681" style="color:#6DB33F;"><img alt="Google Plus" 
+src="http://play.gopivotal.com/rs/pivotal/images/Ico_GPlus.png" border="0" vspace="0" hspace="0"></a>&nbsp;&nbsp; <a href="http://www.youtube.com/user/SpringSourceDev" style="color:#6DB33F;"><img alt="YouTube" src="http://play.gopivotal.com/rs/pivotal/images/Ico_YouTube.png" border="0" vspace="0" 
+hspace="0"></a>&nbsp;&nbsp; <a href="http://www.linkedin.com/groups/Spring-Users-46964" style="color:#6DB33F;"><img alt="Linkedin" src="http://play.gopivotal.com/rs/pivotal/images/Ico_LinkedIn.png" border="0" vspace="0" hspace="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="footer" width="100%" bgcolor="#F1F1F1" style="padding-top:0;padding-right: 20px;padding-bottom: 25px;padding-left: 20px; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:13pt; color:#333333; text-align:left; -webkit-text-size-adjust:none;">
+<div style="height:20px">&nbsp;</div>
+&copy; 2013 Spring by Pivotal.
+ The Spring and Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc.
+ in the United States and other countries.
+ All other trademarks used herein are the property of their respective owners.
+ © 2013 Go Pivotal, Inc.
+ All rights reserved.
+ Published in the USA.
+ To manage preferences for your Spring related communications, please click <a style="text-decoration:underline; color:#6DB33F;" href="http://play.gopivotal.com/OSSSubscriptions.html">here</a>.
+ To unsubscribe from all communications, please click <a style="text-decoration:underline; color:#6DB33F;" href="http://play.gopivotal.com/UnsubscribePage.html">here</a>.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

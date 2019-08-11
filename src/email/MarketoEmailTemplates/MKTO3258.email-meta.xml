@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_ Cloud Native Java Workshop_NYC_Q415.Follow Up Email</name>
+    <style>none</style>
+    <subject>Sorry we missed you</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for attending the Cloud Native Workshop in New York on December 16, 2015. We hope the event met your expectations and the hands-on workshop provided you with new knowledge on Pivotal Cloud Foundry and Spring. Access to the labs and technical content is located here &lt;[[https://github.com/joshlong/cloud-native-workshop/blob/1day/README.md#setup]]&gt;.
+
+Contact us &lt;[[mailto:kbastani@pivotal.io]]&gt; to schedule a technical evaluation with our team. Learn how to become Cloud Native today!
+
+Thank you again for joining us! For upcoming events visit us at Pivotal.io &lt;[[mailto:events@pivotal.io]]&gt; and select the events tab. We look forward to seeing you soon!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

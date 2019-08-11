@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Event_TechTalks_Q314.Invite from David Goudreau</name>
+    <style>none</style>
+    <subject>Invite to Tech Talks at Pivotal Labs HQ in San Francisco</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+ 
+We&apos;re hosting a new series of Tech Talks at Pivotal Labs headquarters in San Francisco &lt;http://pivotallabs.com/tech-talks-how-to-scale-software-team/&gt;, and we&apos;d love if you can join the launch on Thursday, July 31 at 6 p.m. PDT.
+ 
+Davis Frank, Associate Director at Pivotal Labs, will share his insights on how to successfully scale a software team. This Tech Talk will be followed by a breakout session and networking, all of which I&apos;m sure you will find of interest and value.
+ 
+If you can’t make it, please feel free to recommend someone else who could attend in your place. Additional details and link to register is below.
+ 
+RSVP HERE &lt;http://pivotallabs.com/tech-talks-how-to-scale-software-team&gt;
+ 
+Topic: Grow, Don&apos;t Break: How to Scale a Software Team
+Date: Thursday, July 31, 2014
+Time: 6 p.m. - 8 p.m. PDT
+Location: Pivotal Labs, 875 Howard Street, San Francisco, CA
+ 
+Looking forward to seeing you there {{lead.First Name:default=}}.
+ 
+Regards,
+David
+ 
+David Goudreau
+VP Engineering, West Coast
+Pivotal Labs</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Is_ISR_Region_Assigned</name>
+        <label>Is ISR Region Assigned?</label>
+        <locationX>280</locationX>
+        <locationY>523</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varISRId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_ISR_on_Named_Account</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varISRId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>Get the ISR  for a Named Account based on the Region of the Account OwnerId.</description>
+    <interviewLabel>Account-Get ISR by Region {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account-Get ISR by Region</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_ISR_for_Region</name>
+        <label>Get ISR for Region</label>
+        <locationX>281</locationX>
+        <locationY>385</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_ISR_Region_Assigned</targetReference>
+        </connector>
+        <filters>
+            <field>Region__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varRegion</elementReference>
+            </value>
+        </filters>
+        <object>ISR_Region__c</object>
+        <outputAssignments>
+            <assignToReference>varISRId</assignToReference>
+            <field>ISRId__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Named_Account</name>
+        <label>Get Named Account</label>
+        <locationX>276</locationX>
+        <locationY>280</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_ISR_for_Region</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAccountId</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>varOwnerId</assignToReference>
+            <field>OwnerId</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>varRegion</assignToReference>
+            <field>Region__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_ISR_on_Named_Account</name>
+        <label>Update ISR on Named Account</label>
+        <locationX>539</locationX>
+        <locationY>522</locationY>
+        <filters>
+            <field>ISR__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>varISRId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAccountId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ISR__c</field>
+            <value>
+                <elementReference>varISRId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Get_Named_Account</startElementReference>
+    <variables>
+        <description>Id of Named Account</description>
+        <name>varAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Id of the ISR for the Region</description>
+        <name>varISRId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>OwnerId of Named Account</description>
+        <name>varOwnerId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Owner Region</description>
+        <name>varRegion</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

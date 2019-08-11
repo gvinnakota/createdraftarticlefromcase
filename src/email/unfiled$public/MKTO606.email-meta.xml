@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Email_GPDB Alert_Q214.Email 1</name>
+    <style>none</style>
+    <subject>Product Advisory: GPCC 1.2.2.0</subject>
+    <textOnly>Hello {{lead.First Name:default=edit me}},
+
+GPCC 1.2.2.0 has a bug where users that are not &quot;gpadmin&quot; or &quot;gpmon&quot; cannot login to the GPCC UI/website. As this is fundamental functionality, the product was removed from download sites. 
+
+
+We are expecting the GPCC 1.2.2.1 version with the fix to be available in the week of May 12, 2014.
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

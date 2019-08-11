@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Certification_Name__c</fullName>
+        <description>Name of the certification record.
+Naming convention:
+[Pivotal Product] - [Partner Product]</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK("/" &amp; Id,Pivotal_Product_Version__r.Product_Name_Piv__r.Name &amp; ' ' &amp; Pivotal_Product_Version__r.Name &amp; ' - ' &amp; Partner_Product_Version__r.Product_Name_Partner__r.Name &amp; ' ' &amp; Partner_Product_Version__r.Name, "_top")</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Certification Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Effective_Date__c</fullName>
+        <description>Effective date of the certification.</description>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Partner_Account__c</fullName>
+        <description>Link to the Partner account.
+
+Note the complicated formula which allows the name to be properly displayed.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( '/' &amp; Partner_Product_Version__r.Product_Name_Partner__r.Account__r.Name,'') &amp; HYPERLINK( '/' &amp; Partner_Product_Version__r.Product_Name_Partner__r.Account__c, Partner_Product_Version__r.Product_Name_Partner__r.Account__r.Name, '_parent')</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Product_Version__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner Product Version</label>
+        <referenceTo>Partner_Product_Version__c</referenceTo>
+        <relationshipLabel>Certifications</relationshipLabel>
+        <relationshipName>Certifications</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Product_f__c</fullName>
+        <description>Links to the partner product.
+
+Note the complicated formula which allows the name to be displayed without error.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( '/' &amp; Partner_Product_Version__r.Product_Name_Partner__r.Name,'') &amp; HYPERLINK( '/' &amp; Partner_Product_Version__r.Product_Name_Partner__c, Partner_Product_Version__r.Product_Name_Partner__r.Name, '_parent')</formula>
+        <label>Partner Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Product_Version__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Pivotal Product Version</label>
+        <referenceTo>Pivotal_Integrated_Product_Version__c</referenceTo>
+        <relationshipLabel>Certifications</relationshipLabel>
+        <relationshipName>Certifications</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Product_f__c</fullName>
+        <description>This field links to the Pivotal Product.
+
+Note the complicated formula which allowed the name to be properly displayed.</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( '/' &amp; Pivotal_Product_Version__r.Product_Name_Piv__r.Name,'') &amp; HYPERLINK( '/' &amp; Pivotal_Product_Version__r.Product_Name_Piv__c, Pivotal_Product_Version__r.Product_Name_Piv__r.Name, '_parent')</formula>
+        <label>Pivotal Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>false</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>In Process</fullName>
+                    <default>false</default>
+                    <label>In Process</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Record of a Partner's certification.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Certification</label>
+    <nameField>
+        <displayFormat>{000}</displayFormat>
+        <label>Certification ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Certifications</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <listViewButtons>New_Certification</listViewButtons>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All_Certifications</fullName>
+        <columns>Certification_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Effective_Date__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Certifications</label>
+    </listViews>
+    <validationRules>
+        <fullName>notEmpty</fullName>
+        <active>true</active>
+        <description>The User must pick a value for Status.</description>
+        <errorConditionFormula>ISPICKVAL(Status__c, "")</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Must pick a field</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New_Certification</fullName>
+        <availability>online</availability>
+        <description>"New Certification" button displayed on Certifications sub-tab on the Integrated Products tab.
+
+Does not pass any params in URL.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Certification</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/newCertification</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Certification_Partner</fullName>
+        <availability>online</availability>
+        <description>"New Certification" button displayed on the related Certification list on a Partner Product Version detail page.
+
+Passes Partner Product Version ID as a param in URL so the New Certification page has the Partner Product info prefilled.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Certification</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/newCertification?partnerVer={!Partner_Product_Version__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>New_Certification_Pivotal</fullName>
+        <availability>online</availability>
+        <description>"New Certification" button displayed on the related Certification list on a Pivotal Product Version detail page.
+
+Passes Pivotal Product Version ID as a param in URL so the New Certification page has the Pivotal Product info prefilled.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Certification</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/newCertification?pivVer={!Pivotal_Integrated_Product_Version__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Product_Interoperability_Matrix</fullName>
+        <availability>online</availability>
+        <description>Button that takes the user the product interoperability matrix.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Product Interoperability Matrix</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/integratedProduct</url>
+    </webLinks>
+</CustomObject>

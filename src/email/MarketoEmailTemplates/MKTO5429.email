@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+<title>Inside Pivotal Newsletter</title> 
+</head> 
+<body style="">
+<a href="#top" name="top"></a>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; ">
+<tbody>
+<tr style="">
+<td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; ">
+<!-- Start of logo and month/year --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse;background-color:#ffffff" bgcolor="#FFFFFF"> 
+<tbody>
+<tr> 
+<td height="60" style="background-color:#ffffff&quot; bgcolor="></td> 
+</tr> 
+<tr> 
+<td width="40" bgcolor="#FFFFFF"></td> 
+<td bgcolor="#FFFFFF" align="center" valign="middle" class="stack brand-block"><a href="http://insidepivotal.com" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/logo-inside-pivotal-newsletter.png" alt="InsidePivotal" border="0" style="display:block;" /></a></td> 
+<td width="40" bgcolor="#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td height="40"></td> 
+</tr> 
+</tbody>
+</table> 
+<!-- End of logo and month/year --> 
+<!-- Start of date --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" bgcolor="#FFFFFF" style="border-collapse:collapse; ">
+<tbody>
+<tr> 
+<td height="15"></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr style="">
+<td width="40"></td> 
+<td align="left" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; "><strong style=""><span class="mktEditable" id="issue-date" style="font-size:12px; color:#4f504f; "><p style="margin: 0;">Nov 20, 2017</p></span></strong></td>
+<td align="right" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; "><strong style=""><span class="mktEditable" id="issue" style="font-size:12px; color:#4f504f; ">
+<div>
+Vol 5, No 14
+</div></span></strong></td>
+<td width="40"></td> 
+</tr>
+<tr> 
+<td height="10"></td> 
+<td style="border-bottom: solid 1px #F1F1F1;"></td> 
+<td style="border-bottom: solid 1px #F1F1F1;"></td> 
+<td></td> 
+</tr> 
+</tbody>
+</table>
+<!-- End of date --> 
+<!-- Start of toc --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white">
+<tbody>
+<tr> 
+<td height="40"></td> 
+</tr> 
+<tr style="">
+<td width="40"></td> 
+<td style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; "><p style="font-family:Helvetica, Arial, sans-serif;margin:0; font-size:34px; line-height:1.2em;color:#000000;font-weight: 300;padding-bottom: 7px;">In This Issue</p> 
+<div class="mktEditable" id="toc" style="">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 16px; line-height: 1.2em; padding-bottom: 7px; padding-top: 7px; font-weight: 300; margin: 0;"><a href="#letter-from-the-editor" style="color: #00ae9e; text-decoration: none;">Letter from the Editor</a> – The Magic of a Shoddiest Viable Product</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 16px; line-height: 1.2em; padding-bottom: 7px; padding-top: 7px; font-weight: 300; margin: 0;"><a href="#product-update" style="color: #00ae9e; text-decoration: none;">All Things Product</a> – Into the Strabosphere</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 16px; line-height: 1.2em; padding-bottom: 7px; padding-top: 7px; font-weight: 300; margin: 0;"><a href="#seen-update" style="color: #00ae9e; text-decoration: none;">Interestings</a> – Noteworthy Odds &amp; Ends</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 16px; line-height: 1.2em; padding-bottom: 7px; padding-top: 7px; font-weight: 300; margin: 0;"><a href="#culture-update" style="color: #00ae9e; text-decoration: none;">Labs + Culture</a> – The Quiet Customer: Gartner Peer Insights</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 16px; line-height: 1.2em; padding-bottom: 7px; padding-top: 7px; font-weight: 300; margin: 0;"><a href="#my-name-is" style="color: #00ae9e; text-decoration: none;">My Name Is</a> – Jeff Howard</p>
+</div>
+<!--end toc--></td>
+<td width="40px"></td> 
+</tr>
+<tr> 
+<td height="45"></td> 
+</tr> 
+</tbody>
+</table>
+<!-- End of toc // --> 
+<!-- Start of Letter from the Editor // --> <a href="#letter-from-the-editor" name="letter-from-the-editor"></a>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF">
+<tbody>
+<tr style="">
+<td width="40"></td> 
+<td style="color:#666666; font-size:14px; line-height:22px; font-family:Helvetica, Arial, sans-serif; font-weight:300; ">
+<table style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td bgcolor="#008774" width="178px" height="32px" align="center"> <p style="font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;">Letter&nbsp;from&nbsp;the Editor</p> </td> 
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td> 
+<td width="40"></td> 
+</tr> 
+</tbody>
+</table> 
+<div class="mktEditable" id="letter-from-the-editor-title" style="padding-bottom:20px; ">
+<p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/portrait-template-inside-pivotal-newsletter-2016-scasale.png" alt="" align="right" /></p> 
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td height="15'"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">the magic of a shoddiest viable product</p> </td> 
+</tr> 
+</tbody> 
+</table> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #008774; text-decoration: none;" href="#author-socialcast-profile">Steve Casale</a>, Pivotal Communications</p>
+</div>
+<div class="mktEditable" id="letter-from-the-editor-entry" style="padding-right:40px; "> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">At some point this past Spring, a team at Liberty Mutual started figuring on a better way to offer motorcyclists insurance that wasn't connect-the-dots over the phone, and more software app that would make these customers happier. To do this, the Liberty teams moved decision points on product development from the cloistered rooms of sales or product VIPs to an R&amp;D department that elicited ideas from a different wellspring: the bikers themselves. With the help of Labs teams pairing up with Liberty peers, the lines on design shifted too—from dictation and a full-blown vision, to a hypothesis, and intense collaboration for a basic user interface.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">In 28 days, a fraction of the time it would take to release product, they had not feature-palooza, but an SVP (the <a href="https://builttoadapt.io/svp-the-shoddiest-viable-product-5b05a27cad70" target="_blank" style="color: #008774; text-decoration: 
+none;">shoddiest viable product</a>—a term coined by a Pivot to capture and perhaps reframe the true spirit of the "MVP" for the enterprise, as being less than a feature-heavy 1.0 release).</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">It helped that Liberty was already seeing productivity and velocity gains through a microservices architecture, and the continuous deployment enabled by PCF. The team changed tack along the way, and pushed 45 releases in under 60 days. They also learned a heck of a lot about motorcycles. The app in turn exceeded expectations on quote requests and conversions.<br /><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">This has been the Pivotal and customer narrative for 2017: a company is smartly expanding a software footprint to build products that people want, with a culture to match, drawing upon and thus protecting their domain expertise (thanks Pivotal).<br /><br />As we head into the Thanksgiving holidays here in the US, we might be thankful for the myriad ways the unpredictable road to product and company-building has incrementally gotten more predictable. A consummate example of this can be found in "All Things Product", where Cloud Foundry lead Dwayne Forde explains Strabo, a story of increments and a Pivotal-built tool that is helping developers manage the torrent of code being generated in loosely-coupled architectures. Danielle Burrow follows in a "Labs+Culture" article on how field teams can use Gartner Peer Insights as a strategy to uncover story gems from our quieter customers.<br /><br />Pivotal will close 2017 with a gathering of some 2,000 fellow travelers in its business and developer community, through Built to Adapt and <a href="https://springoneplatform.io/" target="_blank" style="color: #008774; 
+text-decoration: none;">SpringOne Platform</a>. They too will recount their variations on a software and culture journey. It's nice to remember that for all the app instances consumed, and all the teams tearing up cubicles to pair up, it usually starts with a small team, and a humble product experiment.<br /><br />Enjoy.</p> 
+</div></td>
+</tr>
+<tr> 
+<td height="30"></td> 
+<td></td> 
+</tr> 
+</tbody>
+</table>
+<!-- End of Letter from the Editor // --> 
+<!-- Start of product update --> <a href="#product-update" name="product-update"></a>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF">
+<tbody>
+<tr style="">
+<td width="40"></td> 
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:40px; font-family:Helvetica, Arial, sans-serif; font-weight:300; ">
+<table style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td bgcolor="#00AE9E" width="178px" height="32px" align="center"> <p style="font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;">All&nbsp;Things&nbsp;Product</p> </td> 
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td> 
+<td width="40"></td> 
+</tr> 
+</tbody>
+</table> 
+<div class="mktEditable" id="product-title" style="padding-bottom:20px; ">
+<p style="color: #666666; font-weight: 300;"><img style="display: block;" title="McCoy" src="http://connect.pivotal.io/rs/pivotal/images/DForde portrait.png" alt="Dwayne" width="130" height="172" align="right" constrain="true" imagepreview="false" /></p> 
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td height="15'"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">into the strabosphere&nbsp;</p> </td> 
+</tr> 
+</tbody> 
+</table> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #00ae9e; text-decoration: none;" href="#author-socialcast-profile"></a><a href="#author-socialcast-profile" style="color: #008774; text-decoration: none;">Dwayne Forde</a><span style="color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline !important; float: none;">, Director, Cloud Foundry, Toronto</span><br /></p>
+</div>
+<div class="mktEditable" id="product-entry" style="padding-right:40px; ">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">The Pivotal Cloud Foundry (PCF) suite consists of over 60 teams across 7 offices in 5 timezones. That's a highly distributed team building a super scalable software. And if you work on PCF, you would know that we build software that is constantly in a state of being released—we both sell and breathe continuous delivery.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Pivotal is just one good example of the prodigious amounts of code companies can churn out on a regular basis. And the popularity of loosely coupled architectures (microservices), and gateway architectures, means that code is no longer the sole concern of individual teams. In this new and interconnected world, interfaces matter a lot, and any interface change can affect your whole organization.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">The following is a glimpse of how we’ve evolved our internal coordination and processes to deliver on the promise of velocity and ease in this new world, with speed and confidence.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>Some Background</strong></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Most of you know that PCF is our commercial platform on top of Cloud Foundry (CF). Part of this offering involves delivering production-grade services in the form of Pivotal Ops Manager Tiles (Tiles). As the name implies, Tiles provide an easy way for operators to provide add-ons to their PCF installation that can enhance developer usability, security, operability, etc.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Setting up PCF means installing the Runtime/Pivotal Application Service (PAS) Tile. When making a Tile, you’ll create a manifest that creates forms to show operators to configure your service. But you’ll also need to reference properties/settings from other Tiles installed in the system. For instance, the <a href="https://docs.pivotal.io/p-cloud-cache/1-0/index.html" target="_blank" style="color: #00ae9e; text-decoration: none;">Pivotal Cloud Cache</a> service will programmatically access the CF API url from the PAS Tile, via its metadata.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">What you end up with are all these cross-references is a matrixed ecosystem of dependencies that grows ever larger, and thus become harder to track. For example, Product C might depend on properties from Product A and Product B. And Product A itself might have hundreds of properties consumed from an unknown amount of products that teams are developing. And so on, and so on.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">This all begs the question of what happens when a team wants to change or deprecate one of these properties?</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>Enter Strabo</strong></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">At some point we realized that human communication alone couldn't keep up with ecosystem complexity, not at the speed with which we were growing and shipping, especially in a less meeting-centric culture like ours.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Strabo is Pivotal's asnwer to showing accurate, up-to-date Tile analytics, so we can make informed decisions about product interface changes that affect internal and external stakeholders.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>How Does it Work?</strong></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Strabo0-graphic.jpg" alt="Strabo0" width="530" height="170" constrain="true" imagepreview="false" border="" /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Strabo is a command-line tool that can read a folder of Ops Manager Tiles. In order to get the right Tiles for Strabo to process, we use the continuous integration tool, <a href="http://concourse.ci/" target="_blank" style="color: #00ae9e; text-decoration: none;">Concourse CI</a>, and its <a href="http://concourse.ci/concepts.html#resources" target="_blank" style="color: #00ae9e; text-decoration: none;">Resources</a> to download Tiles, and to keep constant watch for changes in process. Our main use case is using the Pivnet Resource to track all publicly facing Tiles on Pivotal Network.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">The Tiles are then fed into a Concourse Job where they are placed into a folder alongside Strabo. Strabo will subsequently process the folder of Tiles and produces output in the form of several JSON files. We then use the <a href="https://github.com/concourse/s3-resource" target="_blank" style="color: #00ae9e; text-decoration: none;">S3 Resource</a> to upload that output to an AWS S3 bucket. This pipelines enables us to have an always dataset in S3 which can be consumed by a number of clients. Having a loosely coupled data and clients also allows others to benefit from the data and build their own solutions around it.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">The primary client for this JSON output is a web application, mostly powered by D3.js, which allows us to chart and graph the data to allow us to reason about the data. Strabo is built with this JSON client in mind, so each file produced by Strabo serves as the dataset for a single chart or graph on its page. This application is hosted on <a href="https://run.pivotal.io/" target="_blank" style="color: #00ae9e; text-decoration: none;">Pivotal Web Services (PWS)</a>, and updates are handled as well via its Cloud Foundry Resource&nbsp;upon new commits that <a href="https://github.com/concourse/cf-resource" target="_blank" style="color: #00ae9e; text-decoration: none;">arrive in the git repository</a>.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong>The Insights<br /><br /></strong>Tile inputs come in the form of properties inside its <a href="https://docs.pivotal.io/tiledev/property-reference.html" target="_blank" style="color: #00ae9e; text-decoration: none;">metadata</a>. The most important part for analyzing dependencies are the properties prepended with a ‘..’ or ‘$’. The former being a property that is being access from a different Tile (its installation dependency), the latter is a function being provided by <a href="https://docs.pivotal.io/pivotalcf/1-12/customizing/index.html" target="_blank" style="color: #00ae9e; text-decoration: none;">Ops Manager itself</a>. These are cross-product cross-team interfaces that need to be tracked and treated with care.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Dendrograms are visually pleasing representation of products consuming properties. Reading from left to right, this shows a number of products consuming many $runtime properties (ie. $runtime.apps_domain, $runtime.login_url, etc). This is beneficial in two ways: The Ops Manager team can look at this graph to see who is consuming a property to assess the impact of possible changes, and there is a filtered view so teams can see exactly which products and properties they are depending on in real-time.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Strabo1-flow.jpg" alt="Strabo1" width="530" height="454" constrain="true" imagepreview="false" style="outline: black solid 1px; resize: none; color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: auto; text-align: -webkit-left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;" /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Security is also another area where Strabo helps out. Security updates are <a href="https://docs.pivotal.io/pivotalcf/1-12/security/process/pcf-security.html" target="_blank" style="color: #00ae9e; text-decoration: none;">first class citizens in the PCF</a>, and we’re heavily invested in making sure that all of our products are at the latest <a href="https://docs.pivotal.io/pivotalcf/1-12/security/pcf-infrastructure/stemcell-hardening.html" target="_blank" style="color: #00ae9e; text-decoration: none;">Stemcell release</a>. Strabo also extracts this information from Tiles so that our security teams can be aware of products updates in real-time when vulnerabilities in the ecosystem are discovered.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">It should be noted that these breaking changes and inconsistencies can be caught by CI pipelines that test the solution—that's their job. But the time required for feedback loops and the resulting adjustments grows in proportion to the number add-ons in a software suite. Fast feedback loops should be the goal, and this approach also allows us to be proactive instead of reactive.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">The amount of software being generated that is now connected in loosely-coupled architectures is pretty amazing. Any tool that helps developers understand the interfaces between codebases and products will greatly help them understand how to navigate a loosely-coupled software landscape, and is a very worthwhile investment. Strabo is just our approach in doing so.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p>
+</div><a href="#top" style="color:#00ae9e; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+<tr> 
+<td height="27"></td> 
+</tr> 
+</tbody>
+</table>
+<!-- End of product update // --> 
+<!-- Start of seen and heard --> <a href="#seen-update" name="seen-update"></a>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#026D63">
+<tbody>
+<tr style="">
+<td width="40"></td> 
+<td style="">
+<div class="mktEditable" id="seen-and-heard" style="">
+<table style="border-collapse: collapse;"> 
+<tbody> 
+<tr> 
+<td width="180px" height="32px" align="center" bgcolor="white"> <p style="font-family: Helvetica, Arial, sans-serif; color: #026d63; font-weight: 200; font-size: 17px; margin: 0;">Interestings</p> </td> 
+</tr> 
+<tr> 
+<td height="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<ul> 
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">In case you missed it: All you need to know about Pivotal's <a href="https://docs.google.com/document/d/1bhx9g5z73QOr6LXjnBobtoLiJgZr2E5r9HNPva_8QM8/edit" target="_blank" style="color: white;">new partnership with Accenture</a>.</li> 
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Top read: Pivot and long-time pairer on lessons learned, and other nuggets gained from<a href="http://sedano.org/toddsedano/2017/10/24/considerate-pair-programming.html" target="_blank" id="" style="color: white;"> coding with others</a>.</li> 
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Liberty Mutual is always learning—An established insurer's focus on user-centered product creation, <a href="https://builttoadapt.io/the-learning-never-stops-at-liberty-mutual-453a1bbeb70" target="_blank" id="" style="color: white;">in Built to Adapt</a>.</li> 
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">An ex-Pivot on the looking-stupid-routine <a href="https://be.helpful.com/why-looking-stupid-is-my-superpower-2ee3fe00a748" target="_blank" id="" style="color: white;">as superpower</a>—accepting small shocks, listening, and boldly moving on.</li> 
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Meituan-Dianping: China's <a href="https://techcrunch.com/2017/10/19/meituan-dianping-raises-4b/" target="_blank" id="" style="color: white;">new super-app</a> in O2O (offline-to-offline), has a super valuation. &nbsp;</li> 
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">Video bite: Why Navy SEALs really throw <a href="https://www.youtube.com/watch?v=bUvZNpFLtGs" target="_blank" id="" style="color: white;">cold water on themselves</a> (or what to do if you're really sore after that workout).</li> 
+</ul>
+</div></td>
+<td width="40"></td> 
+</tr>
+<tr> 
+<td height="40"></td> 
+<td></td> 
+<td></td> 
+</tr> 
+</tbody>
+</table>
+<!-- End of seen and heard // --> 
+<!-- Start of culture update // --> <a href="#culture-update" name="culture-update"></a>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white">
+<tbody>
+<tr> 
+<td height="60"></td> 
+</tr> 
+<tr style="">
+<td width="40"></td> 
+<td style="">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; ">
+<tbody>
+<tr style="">
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; ">
+<table style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td bgcolor="#87C876" width="178px" height="32px" align="center"> <p style="font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;">Labs&nbsp;+&nbsp;Culture</p> </td> 
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td> 
+<td width="40"></td> 
+</tr> 
+</tbody>
+</table> 
+<div class="mktEditable" id="culture-title" style="padding-bottom:20px; ">
+<p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/DanielleB-portrait.png" alt="DBurrow" width="130" height="172" align="right" constrain="true" imagepreview="false" /></p> 
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td height="15'"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;"><span id="docs-internal-guid-e54802cd-f4c7-eff0-3b15-652f5e7290fe"><span>the quiet customer: gartner peer insights</span></span></p> </td> 
+</tr> 
+</tbody> 
+</table> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #87c876; text-decoration: none;" href="#author-socialcast-profile">Danielle Burrow</a>, &nbsp;Product Marketing Manager</p>
+</div>
+<div class="mktEditable" id="culture-entry" style="padding-right:40px; "> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">For our folks in the field, it's important of course to win deals. But it's just as crucial to make sure our customers are successful with what they bought. A significant percentage of our business, after all, comes from expanding our footprint with the customers we already have.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">When interviewing Pivotal sales teams about customer wins, we always ask: Why did this customer ultimately chose Pivotal? Among the reasons sales reps usually cite, they just as often highlight the importance of a good customer reference as a key factor in helping them carry a deal across the finish line—deals that involve both new and existing customers. Customers like to be the smartest player in the room, they just don't want to be the only one in the room!</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><br /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">Customer references, case studies, and other public testimonials are all extremely valuable to our business. However, a good number of our customers are unable to take reference calls or speak publicly about what they’re doing with Pivotal. Luckily, there is another venue that the field can use to capture these valuable experiences with customers who want or are required to keep a low profile: Gartner Peer Insights.<br /><br />Gartner’s published reviews continue to reach executives and line-of-business decision makers, and they can further help build momentum for Pivotal’s products and brand by positively positioning Pivotal in the analyst community. Its Peer Insights is a trusted medium platform for anonymous ratings and reviews of enterprise technology solutions by end-user professionals, for end-user professionals. Each review is vetted by Gartner for authenticity, ensuring that all published reviews are by genuine users and devoid of conflicts of interest.<br /><br />Pivotal currently has 35 reviews published on Peer Insights across our core products, only six of which are for Pivotal Cloud Foundry. We've found that these reviews can have an impact that exceeds the small amount of effort on our part to facilitate these with customers.<br /><br />If you're a sales representative, start by asking your happy customers to participate in an anonymous 15-minute online survey with Gartner. We've created all the content to make your ask simple and painless. Check out the <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/departments/customer-marketing/reference-program#TOC-Gartner-Peer-Insights" target="_blank" style="color: #87c876; text-decoration: none;">Customer Marketing page</a> for your custom survey link, email template, and quick a guide for <a href="https://docs.google.com/document/d/175zimvbOs5UJfSAN6D41x-nL30X0qKtTHs-RGfejY3c/edit" target="_blank" style="color: #87c876; text-decoration: none;">determining a customer candidate</a>, as well as guidelines for reviewers. If you have any questions, or want to know more, reach out to Estelle Hayes (<a href="mailto:ehayes@pivotal.io" target="_blank" style="color: #87c876; text-decoration: none;">ehayes@pivotal.io</a>) or Danielle Burrow (<a href="mailto:dburrow@pivotal.io" target="_blank" style="color: #87c876; text-decoration: none;">dburrow@pivotal.io</a>).</p> 
+</div><a href="#top" style="color:#87c876; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table>
+<!-- End of culture update // --> 
+<!-- Start of my name is // --> <a href="#my-name-is" name="my-name-is"></a>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF">
+<tbody>
+<tr style="">
+<td width="40"></td> 
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; border-top:1px solid #f1f1f1; ">
+<table style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td bgcolor="#00A1E4" width="178px" height="32px" align="center"> <p style="font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin:0">My&nbsp;Name&nbsp;Is</p> </td> 
+</tr> 
+</tbody>
+</table> 
+<div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; ">
+<p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/JHoward.png" alt="JHoward" width="170" height="183" align="right" constrain="true" imagepreview="false" /></p> 
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td height="15'"></td> 
+</tr> 
+<tr> 
+<td> <p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;"><span style="font-family: Helvetica, Arial, sans-serif; font-size: 30px; font-weight: 300;">Jeff howard</span></p> </td> 
+</tr> 
+</tbody> 
+</table> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;">Account Executive, Federal, Washington DC</p>
+</div>
+<div class="mktEditable" id="my-name-is-entry" style="">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;">At Pivotal I...</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;">I'm the Account Executive for the US Department of Defense (DOD)—specializing in the United States Air Force, and have been with Pivotal for two years.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">How I got into tech...&nbsp;</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;">I really first got interested in tech when I was five, and saw Star Wars. I became obsessed with building a lightsaber. Later on, when I was in the Navy, I saw first-hand how people came up with incredibly innovative solutions to seemingly impossible problems, by leveraging different technologies in very unusual ways. That taught me how to appreciate creative, non-traditional approaches, and the people who think them up.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">In my spare time...&nbsp;</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;">I try to spend as much time with my wife and 7-year-old son as possible. I love to go hiking, and generally like to be outside whenever I can. But I have an "indoor" weakness: I love movies—all genres. If you gave me a list of your five favorite movies, I'd send you back a list back of at least five other movies that you've probably never heard of, but I think you'll love.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Something you probably don’t know about me…</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;">In honor of Halloween, I love to carve REALLY LARGE jack-o’-lanterns. The latest was three feet tall, weighed almost 500 pounds, and took three people to put it into position (I carved it with a 9-inch drywall saw).</p>
+</div></td>
+<td width="40"></td> 
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; ">
+<tbody>
+<tr style="">
+<td style="">
+<div class="mktEditable" id="my-name-is-photo" style="">
+<p><img src="http://connect.pivotal.io/rs/pivotal/images/JHoward-daredevil.jpg" alt="daredevil" width="600" height="483" constrain="true" imagepreview="false" /><img src="http://connect.pivotal.io/rs/pivotal/images/Pumpkin1.jpg" alt="pepper horse" width="600" height="673" constrain="true" imagepreview="false" title="amberS" /></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666; font-size: 12px; font-style: italic; margin: 20px auto 0; max-width: 520px;">Jeff and one stealthy protector (non-government); a toast to securing pumpkin pie for months to come.</p>
+</div></td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF">
+<tbody>
+<tr style="">
+<td width="40"></td> 
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-top:30px; padding-bottom:60px; font-family:Helvetica, Arial, sans-serif; font-weight:300; ">
+<div class="mktEditable" id="my-name-is-outro" style="">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">To me Pivotal…</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;">More than anything else, Pivotal is a way to right some wrongs. Throughout my career in and around the US Military, I've seen so many different software projects and development initiatives go horribly wrong. Even worse, I've seen the indifference of so many of the people responsible for that failure.</p> 
+<p>Every day when I start work, I feel an incredible sense of satisfaction, knowing that Pivotal will help change this situation forever, and that we will make a difference in the lives of the millions of men and women who serve this country.</p>
+</div><p style="font-family:Helvetica, Arial, sans-serif;color:#00a1e4;font-weight: bold"><a href="#top" style="color:#00a1e4; font-size:14px; text-decoration:none; display:block;font-weight:bold">Back to the Top</a></p> </td>
+<td width="40"></td> 
+</tr>
+</tbody>
+</table>
+<!-- End of my name is // --> 
+<!-- Start of end --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #008774; border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://connect.pivotal.io/rs/pivotal/images/white-i.png" alt="InsidePivotal" border="0" style="display:block;" /></td> 
+<td align="right" valign="middle" class="stack date-block" style="padding-top:20px; padding-right:40px; padding-bottom:20px; font-weight:300; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;font-family:Helvetica, Arial, sans-serif;">Find all issues on <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/newsletters" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a></span></td> 
+</tr> 
+</tbody>
+</table> 
+<!-- End of end --> 
+<!-- Start of social links --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="font-family:Helvetica, Arial, sans-serif;color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td> 
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;"> 
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;" /></a></td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+</tbody>
+</table> 
+<!-- End of social links // --> 
+<!-- Start of Copyright --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody>
+<tr> 
+<td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif;padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">© 2017 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td> 
+</tr> 
+</tbody>
+</table> 
+<!-- End of footer // --></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

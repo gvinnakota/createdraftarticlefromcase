@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.8-29 News Send</name>
+    <style>none</style>
+    <subject>Don’t miss the Pivotal event for Spring, Big Data and the Cloud</subject>
+    <textOnly>Issue 58  August 2013
+&lt;http://springone2gx.com/conference/santa_clara/2013/09/register&gt; 
+
+
+The 2013 formation of Pivotal brings major investment in Spring to carry forward its successful heritage, while still moving at the pace of modern open source. Spring&apos;s mission is to make Java developers more productive than ever before, across all major application types. We invite you to find out more this Autumn, with our SpringOne 2GX event for Spring, Groovy and Grails and our Platform summit for PaaS. Don&apos;t miss the Pivotal event for spring, Big Data and the Cloud!
+Register Here &lt;http://www.springone2gx.com&gt;
+Spring TechTip: The Spring Development Swiss Army Knife
+Spring has always sought to simplify the developer experience, and this applies both at development time and in production. In this tip, let&apos;s look at four of my favorite tools for development: the world-class IDE Spring Tool Suite &lt;http://www.springsource.org/STS&gt;, Spring REST Shell &lt;https://github.com/SpringSource/rest-shell&gt;, Spring Loaded &lt;http://github.com/SpringSource/spring-loaded&gt;, and Spring Boot &lt;http://github.com/SpringSource/spring-boot&gt;.
+
+The Spring Tool Suite and the Groovy/Grails Tool Suite - The Spring Tool Suite (or STS) and the Groovy/Grails Tool Suite &lt;http://grails.org/products/ggts&gt; (or GGTS) are open-source &lt;https://github.com/SpringSource/toolsuite-distribution&gt; environments for building Spring and Groovy/Grails applications. Both build on top of a stable cut of the latest and greatest Eclipse distribution, provide ready integration with all manner of Pivotal technologies like Cloud Foundry, Spring, and Grails, and integrate common utilities and plugins in one easy-to-use pre-packaged bundle. It also comes packed with great templates and samples that users may consume. As readers of this newsletter will know, we also include an STS tip every issue! Check it out!
+
+Spring Loaded - Ripping directly from the Spring Loaded README &lt;https://github.com/SpringSource/Spring-loaded&gt; is &quot;… a JVM agent for reloading class file changes whilst a JVM is running. It transforms classes at loadtime to make them amenable to later reloading. Unlike &apos;hot code replace&apos; which only allows simple changes once a JVM is running (e.g. changes to method bodies), Spring Loaded allows you to add, modify, and delete methods, fields, and constructors. The annotations on types, methods, fields, and constructors can also be modified and it is possible to add, remove, and change values in enum types.&quot; It&apos;s open source, extremely powerful and pre-integrated with STS!
+
+Spring Boot - the recently announced &lt;http://blog.springsource.org/2013/08/06/spring-boot-simplifying-spring-for-everyone/&gt; project Spring Boot &lt;https://github.com/SpringSource/spring-boot&gt; does its magic at runtime, that&apos;s for sure, but these days both development and production needs are often catered to at runtime. Spring Boot extends the idea of runtime as far as it can, handling everything beyond the code: it sets up the application server, monitoring, the Spring application contexts, and a whole lot more, all based on a convention-over-configuration-centric approach, all so that you focus on the code and nothing but the code at development time!
+
+Spring REST Shell - the Spring REST Shell is - as its name implies -a shell to work with REST resources. You can issue all the HTTP verbs with shell commands (like post, get, delete, put) to manipulate REST resources. If the REST resources supports HATEOAS (for example, as implemented using Spring HATEOAS &lt;http://github.com/SpringSource/Spring-HATEOAS&gt;), then you can discover the relationships exposed by the REST service. Handy!
+STS: JavaConfig support in the Spring Tool Suite
+You don’t use XML anymore in your Spring apps? We have some good news for you. Since version 3.3.0 the Spring Tool Suite directly supports those kinds of projects. You can configure your main @Configuration classes as Spring configs within your IDE instead of Spring XML config files:
+
+ This gives you all the nice Spring-specific IDE features like the Spring elements in your project explorer, content-assist for Spring annotations, hyperlink navigation for @Autowired elements, validations across your Spring projects and more.
+Getting Agile with Pivotal Tracker
+“Agile Software Development” is an ambiguous term. It’s an umbrella term. It’s a controversial term. But what does it really mean? The first principle of agile development is to keep feedback loops small to allow a team to make frequent, small corrections on the way to delivery.
+
+Pivotal Labs practices this every day, coaching our clients on how to re-view their problems and approach from first principles. We wrote Pivotal Tracker – the Agile project management app – to work the way we think.
+
+Come learn about tight feedback loops, how to use them in software, and how Pivotal Tracker can keep your backlog sane.
+EMEA
+
+Thursday, September 5
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=664375369&gt;
+NORAM
+
+Thursday, September 5
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;https://vmwareevents.webex.com/vmwareevents/onstage/g.php?t=a&amp;d=665766780&gt;
+Simplifying Spring with Spring Boot
+Modern systems are no longer the monolithic deployments that they once were. The promise of true &apos;service oriented architecture&apos; is finally here, and systems are now being composed from small, discrete, self contained units. But with more applications to write, and more deployments to manage, are you looking for something to help ease the pain? Are you fed up with searching stackoverflow for copy-paste configuration, do you want to write apps that can &apos;just run&apos;. Perhaps you are just starting out with Spring and want a quick way to learn the basics without manually downloading and installing half the Internet?
+
+In this webinar Phil Webb will demonstrate how Spring Boot can take you from zero to Spring with minimal fuss. We will look at how you can rapidly prototype Spring applications using Groovy, and how Spring Configuration in Java applications can be radically simpler. We will show how you can embed tomcat into your applications and turn a few lines of Java into a production ready, executable jar that is less the 8 Mb.
+
+Videos:
+Spring Scala &lt;http://parleys.com/play/51c1ad7ee4b0d38b54f4621e/chapter0/about&gt;
+Spring with Cucumber for Automation &lt;http://www.springsource.org/node/22661&gt;
+Functional Programming without Lambdas &lt;http://www.springsource.org/node/22660&gt;
+Spring REST Tutorial &lt;http://www.youtube.com/watch?v=SC0FPuDKei0&amp;list=FLg6OxemHTt-gKawaohgA00w&amp;index=2&gt;
+
+Featured Demo:
+Spring Data MongoDB &lt;https://www.youtube.com/watch?v=aY_JsfJM2eU&gt; 
+Spring Boot &lt;http://www.youtube.com/watch?v=dPDZHiucDCw&amp;feature=youtu.be&gt;
+EMEA
+
+Thursday, September 26
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=661328789&gt;
+NORAM
+
+Thursday, September 26
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=665169025&gt;
+Apache Tomcat 8.0.0-RC1(alpha) &lt;http://www.tomcatexpert.com/blog/2013/08/06/apache-tomcat-800-rc1-alpha-available&gt;
+ Spring Framework 3.2.4 &lt;http://www.springsource.org/node/22666&gt;
+ Spring XD 1.0.0.M2 &lt;http://www.springsource.org/node/22673&quot;&gt;&lt;span style=&gt;
+ Spring Security 3.2.0.RC1 &lt;http://blog.springsource.org/2013/08/21/spring-security-3-2-0-rc1-highlights-csrf-protection/&quot;&gt;&lt;span style=&gt;
+ Spring Data Babbage RC1 &lt;http://www.springsource.org/node/22662&gt;
+ Spring Data Redis 1.1 M2 and 
+1.0.6
+ Spring Social 1.1.0.M4 &lt;http://www.springsource.org/spring-social/news/1.1.0.m4-released&gt;
+ Spring Shell 1.0.1.M1 &lt;http://www.springsource.org/node/22656&gt;
+ Spring Batch 2.2.1.Release &lt;http://www.springsource.org/node/22658&quot;&gt;&lt;span style=&gt;
+ Spring Mobile 1.1.0.RC1 &lt;http://www.springsource.org/spring-mobile/news/1.0.2-released&quot;&gt;&lt;span style=&gt;
+ AspectJ 1.8.0.M1 &lt;http://dev.eclipse.org/mhonarc/lists/aspectj-dev/msg03031.html&quot;&gt;&lt;span style=&gt;
+Spring Framework 4.0 M2&apos;s support for Websocket Messaging 
+Architectures
+ Inspiration for the JSR &lt;http://www.infoq.com/news/2013/06/ee7-spring-batch&gt;
+ Pivotal and IBM Partnership &lt;http://blog.cloudfoundry.com/2013/07/24/cloud-foundry-is-open-and-pivotal-part-2/&gt;
+ Spring Boot - Simplifying Spring for Everyone &lt;http://blog.springsource.org/2013/08/06/spring-boot-simplifying-spring-for-everyone/&gt;
+ New features in SpringXD 1.0 M2 &lt;http://blog.springsource.org/2013/08/14/spring-xd-1-0-milestone-2-released/&gt;
+ Apache Tomcat 8:What it is, What you need to know &lt;http://blog.gopivotal.com/products/apache-tomcat-8-what-it-is-what-you-need-to-know&gt;
+
+To manage preferences for your Spring related communications, please go to play.gopivotal.com/osssubscriptions.html.  To unsubscribe from all communications, please go to play.gopivotal.com/unsubscribepage.html.
+&lt;http://www.springone2gx.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

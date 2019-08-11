@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><a href="http://run.pivotal.io/"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services"></a></p>
+</div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><span style="font-size: 15px;">Happy New Year from Pivotal Web Services.
+     In this issue we&rsquo;ll cover introduction of tasks - processes that run once and terminate at completion.
+     We also have some upcoming buildpack changes that remove some versions of Go and PHP.
+     If you have apps using those runtimes, be sure your apps are current.
+     Lastly we have increased the amount of disk space available for apps.</span></p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">&nbsp;</p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><span style="font-size: 15px;">Best Regards,</span></p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><span style="font-size: 15px;">The Pivotal Web Services Team</span></p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">&nbsp;</p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><strong><span style="font-size: 15px;">Introducing Tasks</span></strong></p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">&nbsp;</p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><span style="font-size: 15px;">One of the most requested features on PWS is the ability to perform a singular job in Pivotal Cloud Foundry.
+     These jobs typically fall into two categories:</span></p>
+<ul>
+<li><span style="font-family: helvetica; font-size: 14px;">Those that improve how a web app runs (performing a database migration, or processing images)</span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Those that run adjacent to the web app (running reports, processing data, uploading data to object storage).</span></li>
+</ul>
+<p><span style="font-family: helvetica; font-size: 14px;">To address this use case, Pivotal Cloud Foundry (and PWS) has added support for &ldquo;tasks.&rdquo; Tasks on Pivotal Cloud Foundry are executions of previously deployed applications that will not be restarted on termination.
+     Ideal applications for tasks are apps utilizing <a style="color: #059a91; text-decoration: none;" href="http://projects.spring.io/spring-batch/">Spring Batch</a> and <a style="color: #059a91; text-decoration: none;" href="https://cloud.spring.io/spring-cloud-dataflow/">Spring Cloud Data Flow</a>, database migrations, audit jobs and other similar one-off activities.</span><br /> <br /> <span 
+style="font-family: helvetica; font-size: 14px;">This is in contrast to what occurs today on Pivotal Cloud Foundry.
+     When an app is pushed, the app is assumed to be a long running process (LRP).
+     In the event of a termination (either by a crash or intentional act), Pivotal Cloud Foundry health checks will restart the app to bring it back to a running state.</span><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">Tasks use the &lsquo;cf push&rsquo; command to create an application and to stage it.
+     Once an app has been staged, you can use CLI commands to prepare and execute tasks against the app.
+     The command for starting a task is <span style="font-family: &quot;courier new&quot;, courier;">cf run-task APP-NAME "TASK" --name TASK-NAME</span>.
+     To see the tasks running against the app, you can use the command <span style="font-family: &quot;courier new&quot;, courier;">cf tasks APP-NAME</span>.
+     Note that each running task has an id associated with it.
+     To terminate the task, use the command <span style="font-family: &quot;courier new&quot;, courier;">cf terminate-task APP-NAME TASK-ID</span>, where TASK-ID is the id from the cf tasks command.</span><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">Check out the Tasks <a style="color: #059a91; text-decoration: none;" 
+href="https://docs.cloudfoundry.org/devguide/using-tasks.html">documentation</a> for additional details and examples.</span><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">Note that tasks are executed in real time and not scheduled - to initiate tasks on a schedule, you will need to execute it from a scheduling application.</span><br /> <br /> <span style="font-family: 
+helvetica; font-size: 14px;">Since tasks are just application runs, we bill for them the same way.
+     Each billing period, we&rsquo;ll sum up the total duration in Gigabyte Hours (GB HRs) used to execute tasks, and bill for them as if they were application runs.</span><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">We hope you&rsquo;ll find uses for this oft-requested feature on PWS!</span><br /> <br /> <strong><span style="font-family: helvetica; font-size: 
+14px;">Buildpack for Go and PHP with Remove Certain Versions</span></strong><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">In the first releases coming after February 9, 2017, the PHP and Go buildpacks will remove certain versions of the core environments.
+     The Go buildpack will not include any versions of Go with 1.5.x version numbers.
+     These Go versions are no longer supported upstream[1].
+     Please migrate your Go apps to supported Go versions before that time.
+     The PHP buildpack will not include any versions of PHP with 5.5.x version numbers.
+     These PHP versions are no longer supported upstream[2].
+     Please migrate your PHP apps to supported PHP versions before that time.</span><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">[1] <a style="color: #059a91; text-decoration: none;" href="https://golang.org/doc/devel/release.html#policy">https://golang.org/doc/devel/release.html#policy</a></span><br /> <span style="font-family: helvetica; font-size: 14px;">[2] <a 
+style="color: #059a91; text-decoration: none;" href="http://php.net/supported-versions.php">http://php.net/supported-versions.php</a></span><br /> <br /> <strong><span style="font-family: helvetica; font-size: 14px;">PWS  Applications Now Support Up to 4GB of Local Disk</span></strong><br /> <br /> <span style="font-family: helvetica; font-size: 14px;">We know that applications are bundling more 
+   and more resources when they are deployed.
+     In response, we have increased the maximum disk allocated to an application from 2GB to 4GB.
+     To take advantage of this, when you push your app include the &lsquo;-k&rsquo; parameter or specify the &lsquo;disk_quota&rsquo; in your manifest.
+     The default disk quota remains 1GB.
+     Lastly, while there is more local disk available for your app, <a style="color: #059a91; text-decoration: none;" href="https://docs.cloudfoundry.org/devguide/deploy-apps/prepare-to-deploy.html#filesystem">do not rely on local disk</a> for persistent storage as the container may be short lived.</span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="35"></td>
+<td height="20"></td>
+<td width="35"></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tr>
+<td height='20'></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td width='46'></td>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-twitter-gray-30.png" alt="Follow us on Twitter" border="0"></a></td>
+<td width='91'></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-linkedin-gray-30.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td width='96'></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-facebook-18.png" alt="Like us on Facebook" border="0"></a></td>
+<td width='91'></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-gplus-40.png" alt="Add us on Google+" border="0"></a></td>
+<td width='82'></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-youtube-38.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td width='46'></td>
+</tr>
+<tr>
+<td height='20'></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<!-- End of social links // -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#999999; font-size:12px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0;font-family:Helvetica,Arial,sans-serif"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;;font-family: Helvetica,sans-serif;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.<br>
+&copy; 2017 Pivotal Software, Inc. All rights reserved. 875 Howard Street, Fifth Floor, San Francisco, CA 94103. Published in the USA. <a href='http://connect.pivotal.io/UnsubscribePage.html' style="color:#059a91; text-decoration:none;">Unsubscribe</a>. <a href='http://connect.pivotal.io/subscription-management.html' style="color:#059a91; text-decoration:none;">Manage your subscription preferences</a>.</td>
+<td width="30"></td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

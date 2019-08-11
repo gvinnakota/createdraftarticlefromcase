@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Johannesburg_Venue</name>
+    <style>none</style>
+    <subject>SpringOne Tour Johannesburg: Change of Venue</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+ 
+Thank you for registering for SpringOne Tour Johannesburg. Please note that the venue location for this event has changed. The event will now take place at The Forum &lt;[[https://theforum.co.za/venues/the-forum-the-campus-conference/]]&gt; in Sandton. You can find the address, along with the agenda, on the SpringOne Tour Johannesburg page &lt;[[https://springonetour.io/2019/johannesburg?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=global-event-springone-tour-johannesburg]]&gt;. 
+ 
+We look forward to seeing you at the event!
+Thanks, 
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

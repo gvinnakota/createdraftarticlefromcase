@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Website_ContactForm.Confirmation</name>
+    <style>none</style>
+    <subject>We received your inquiry!</subject>
+    <textOnly>{{lead.First Name:default=edit me}} 様,
+この度は、Pivotalにお問い合わせをいただきまして、誠にありがとうございます。
+資料のご請求を承りました。近日中にご連絡を差し上げます。当社のユニークな活動内容につきましては、リソース &lt;http://connect.gopivotal.com/q1JI0C0VN50Akp02U1i700E%22%20%5Ct%20%22_blank&gt;およびブログ &lt;http://connect.gopivotal.com/c0k02EiI0NAU01CJ61V8p00%22%20%5Ct%20%22_blank&gt;にも記載されていますので、ご一読いただければ幸いです。
+-Pivotalチーム</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

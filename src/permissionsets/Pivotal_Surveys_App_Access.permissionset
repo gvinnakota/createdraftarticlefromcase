@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pivotal Surveys App Access</label>
+    <license>Salesforce</license>
+    <applicationVisibilities>
+        <application>Pivotal_Surveys</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Pivotal_Survey_Feedback__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>Pivotal_Survey_Feedback__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

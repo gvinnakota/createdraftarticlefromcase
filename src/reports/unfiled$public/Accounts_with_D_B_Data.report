@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$DNBoptimizer__DnBCompanyRecord__c.DNBoptimizer__BusinessName__c</field>
+    </columns>
+    <columns>
+        <field>Account$DNBoptimizer__DnBCompanyRecord__c.DNBoptimizer__DUNSNumber__c</field>
+    </columns>
+    <columns>
+        <field>Account$BillingCountryCode</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Accounts with D&amp;B Data</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_D_B_Data__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account$DNBoptimizer__DnBCompanyRecord__c.DNBoptimizer__BusinessName__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

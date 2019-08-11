@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>DailyReconciliationReportInstance__c.Is_Valid__c</field>
+    </columns>
+    <columns>
+        <field>DailyReconciliationReportInstance__c.Quote__c</field>
+    </columns>
+    <columns>
+        <field>DailyReconciliationReportInstance__c.Zuora_Subscription_Id__c</field>
+    </columns>
+    <columns>
+        <field>DailyReconciliationReportInstance__c.Reconciliation_Page__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Reconciliation Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$DailyReconciliationReport__c$DailyReconciliationReportInstance__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CUST_CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

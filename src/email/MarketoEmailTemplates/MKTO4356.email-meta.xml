@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Pivotal Academy - Spring Courses Announcement.Pivotal Academy - Spring Courses A</name>
+    <style>none</style>
+    <subject>Pivotal Academy Launches All-new Spring Curriculum</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+Are you interested in exploring the world of microservices? Do you want to learn how the Spring Framework helps developers build modern microservices architectures and deliver business value quickly?
+ 
+ Pivotal Academy is introducing several all-new training courses focused on the latest Spring technologies: Spring Boot and Spring Cloud Services. These instructor-led courses provide experienced Java developers with the skills needed to unleash the full capabilities of Spring. With hands-on, lab-based, curriculum taught by expert instructors, your team will learn how to develop and deploy applications, faster and easier:
+
+
+ - Spring Boot Developer &lt;[[https://pivotal.io/academy/course/spring-boot-developer]]&gt; is a two-day course designed for application developers who are responsible for creating enterprise-ready applications using Spring Boot. The course explores auto-configuration, data access, Actuator and more
+ - Spring Cloud Services &lt;[[https://pivotal.io/academy/course/spring-cloud-services]]&gt; is a two-day course that teaches participants how to develop Spring cloud-native applications. The course leverages Spring Boot and Spring Cloud to solve challenges associated with running a distributed, microservices-based architecture and explores the value that a Platform-as-a-Service adds in the microservices-based world
+
+
+
+Instructor-led Spring Cloud Services and Spring Boot Developer classes are available today. Learn more about our Spring portfolio and register for a class by visiting https://pivotal.io/academy &lt;[[https://pivotal.io/academy]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

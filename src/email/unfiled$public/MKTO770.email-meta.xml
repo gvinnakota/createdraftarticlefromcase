@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_Why do I recommend Spring? 10AM.Confirmation 2</name>
+    <style>none</style>
+    <subject>Webinar Confirmation:  Why do I recommend Spring?</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Your registration is confirmed for the webinar Why do I recommend Spring? with Michael Plöd. We are looking forward to having you join us. 
+
+To help maximize your webinar experience we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html.
+Event Details:
+Date: Tuesday, July 22, 2014 {{my.My Token:default=edit me}}
+
+ 
+North America: 10:00am PDT (San Francisco, UTC-07:00)
+Join the WebEx &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=665814886&gt;
+
+ 
+Dial In:
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show all global call-in numbers &lt;https://gopivotal.webex.com/cmp0401l/webcomponents/widget/globalcallin/globalcallin.do?siteurl=gopivotal&amp;serviceType=EC&amp;eventID=111195617&amp;tollFree=1&gt;
+Show toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt;
+
+ 
+Access code:   665 814 886
+
+ 
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

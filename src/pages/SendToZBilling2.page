@@ -1,0 +1,29 @@
+<apex:page sidebar="false" standardController="zqu__Quote__c">
+    <apex:includeLightning />
+    <script>
+    	var id = "{!$CurrentPage.parameters.id}";
+    	if(!id) id = "{!$CurrentPage.parameters.Id}";
+    
+    	var componentParams = {};
+    	
+    	if(id!=null && id!=''){
+    		componentParams["quoteId"]= id;
+        }
+    	
+        $Lightning.use("c:SendToZBillingApp", function() {
+          $Lightning.createComponent("c:SendToZBilling",
+          componentParams,
+          "lightning",
+          function(cmp) {
+            // do some stuff
+            document.getElementById("message").innerHTML = '';
+          });
+        });
+    </script>
+    
+    <div id="lightning">
+    	<div id="message">
+            Preparing...
+        </div>
+    </div>
+</apex:page>

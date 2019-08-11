@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_SF Labs Mixer_SF_Q317.Reminder Email</name>
+    <style>none</style>
+    <subject>Pivotal Happy Hour Reminder</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+We look forward to seeing you tomorrow for the Cloud-Native Workshop, hosted by Pivotal, Microsoft and Dynatrace in Des Moines. As a reminder, this will be a full, fun day to learn about patterns and technology. We’ll take care of lunch, so don’t worry about packing anything!
+
+
+
+Date:
+Wednesday, October 4, 2017 
+
+
+
+Time:
+
+
+11AM to 4PM
+
+
+
+
+Location: 
+Microsoft Des Moines
+1408 Locust Street, Suite 102
+Des Moines, IA 50309 (map &lt;[[https://www.google.com/maps/place/Microsoft/@41.5846255,-93.6348428,15z/data=!4m5!3m4!1s0x0:0xc578ec4b3f216240!8m2!3d41.5846255!4d-93.6348428]]&gt;)
+
+
+
+
+Should you have any questions or would like more information about this event, please contact the organizer at fieldevents@pivotal.io &lt;[[mailto:fieldevents@pivotal.io]]&gt;.
+
+We look forward to seeing you there!
+
+The Pivotal, Microsoft &amp; Dynatrace Teams
+See Agenda &lt;[[http://connect.pivotal.io/microsoft-cloud-native-roadshow-desmoines.html]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

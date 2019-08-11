@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Email_ApacheTomcat_EM_Q314.Email 1</name>
+    <style>none</style>
+    <subject>How well is your tomcat environment supported?</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Did you know Pivotal employs the leading code committers for Tomcat?  This means we provide the best support for Tomcat or our enterprise version - Pivotal tc Server &lt;http://www.gopivotal.com/products/pivotal-tc-server&gt;.
+
+If you answer yes to any of the following questions, then please follow-up with me for an in-depth discussion on tc Server/Tomcat:
+ 
+
+
+ - Do you need timely upgrades for security vulnerabilities?
+ - Do you need guaranteed response times and global 24x7 support?
+ - Do you need code level monitoring for your applications?
+ - Do you need intellectual property indemnification?
+ - Do you struggle provisioning large Tomcat deployments?
+
+
+Let me know when you&apos;re free to touch base.
+
+ Thanks and have a great day, 
+
+Estevan
+
+ Estevan McCalley | Account Manager
+Direct: 512-568-3753 | emccalley@gopivotal.com &lt;mailto:emccalley@gopivotal.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

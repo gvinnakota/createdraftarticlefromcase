@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:520px !important;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100% !important;}
+ol {margin-left: -20px !important;}
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+.section-icon {padding-left:20px !important;}
+.blog-link {padding-left:20px !important;}
+.blog-thumb {padding-bottom:20px;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.date-block {text-align:left !important; padding-left:20px !important; padding-top:5px !important; padding-bottom:5px !important;}
+.brand-block {text-align:left !important; padding-left:0px !important; padding-top:5px !important; padding-bottom:5px !important;}
+.footer-block {text-align:left !important; padding-left:20px !important; padding-top:10px !important; padding-bottom:10px !important;}
+}
+
+
+</style>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse; " ><tr ><td width="300" align="left" valign="middle" class="stack brand-block" style="padding-top:20px; padding-bottom:20px;"><a href="ttp://insidepivotal.com" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/nl-insidepivotal-logo.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack brand-block" style="padding-top:10px; padding-right:0; padding-bottom:0; padding-left:0; color:#3c3d42; font-size:16px; line-height:16px; " >NEWSLETTER<br>
+<span class="mktEditable" id="vol-no" style="font-size:12px; " >VOL. 3, NO. 4</span>
+</td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="background:#FFF; border-top:solid 6px #01786E; border-bottom:solid 1px #F1F1F1; border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="stack date-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px; " ><span class="mktEditable" id="issue-date" style="font-size:12px; text-transform:uppercase; " >Thursday, March 5, 2015</span>
+</td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" class="text-block" style="padding-top:30px; padding-right:40px; padding-bottom:20px; padding-left:40px; color:#666666; font-size:14px; line-height:22px; " ><p style="margin:0; font-size:20px; font-weight:bold; line-height:20px;">IN THIS ISSUE</p>
+<ol style="margin-left:-20px; color:#666666; font-size:14px; line-height:26px; " ><li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-editor" >Editor Welcome: <a style="color: #3ea7bc; text-decoration: none;" href="#editor-welcome">To Boldy Go...</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-business" >Business Update: <a style="color: #3ea7bc; text-decoration: none;" href="#business-update">2015 Worldwide Sales Kick-Off – Key Takeaways</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-product" >Product Update: <a style="color: #3ea7bc; text-decoration: none;" href="#product-update">It’s Not the Product: Context is King in Customer Discussions</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-agile" >Agile Update: <a style="color: #3ea7bc; text-decoration: none;" href="#agile-update">Pivotal Labs and its New Data Heartbeat </a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-customer" ><a href="#customer-spotlight" style="color:#059a91; text-decoration:none;">Customer Spotlight</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-people" >People Update: <a style="color: #3ea7bc; text-decoration: none;" href="#people-update">Data Science for Doing Good – Crisis Text Line</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-my-name-is" >My Name Is... <a style="color: #3ea7bc; text-decoration: none;" href="#my-name-is">Daniel Lynch</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-new-hire" >New Hires: <a href="#new-pivots" style="color:#059a91; text-decoration:none;">Welcome to Pivotal!</a></span>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of editor welcome // -->
+<a href="#editor-welcome" name="editor-welcome"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="editor-welcome-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/nl-portrait-scasale.png" alt="Stephen Casale" align="right"> <span style="color: rgb(102, 102, 102); font-size: 12px; line-height: 16px;">EDITOR WELCOME</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">To Boldy Go...</span><br> <span style="color: rgb(102, 102, 102); font-size: 14px; line-height: 18px;"><a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/1033819-stephencasale">Steve Casale</a>, Sr. Manager, Corporate Communications</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="editor-welcome-entry" >While I never made vocal claims to being a Trekkie, the recent passing of Leonard Nimoy nonetheless reminded me how much I enjoyed the original Star Trek series and the unflappable Vulcan that spawned an enduring, industrial-sized fan base.
+  I loved <a style="color: #3ea7bc; text-decoration: none;" href="https://www.youtube.com/watch?v=hdjL8WXjlGI" target="_blank">the opening</a>: “To boldly go where no man has gone before...” Cue the alien chorus!<br> <br> A lot has transpired the past few weeks, including Pivotal 
+<a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/events/pivotal-data-strategy-launch" target="_blank">boldly laying out a big data strategy</a> that garnered an unprecedented <a style="color: #3ea7bc; text-decoration: none;" href="http://app.trendkite.com/report?id=69b6995e-d4f5-44ac-83eb-83d508f506c7" target="_blank">share of voice, and media and analyst attention</a> for Pivotal (270 media mentions alone), followed by an exceptional 2015 Worldwide Sales Kick-Off.<br> <br> Scott Aronson offers excellent nuggets  
+from 2015 WWSKO.
+  Andrew Clay Shafer emphasizes how it isn’t just great products, but framing technology trends in the right context for customers, that is the key to winning them.
+  If you missed that Pivotal Data Science is now part of Pivotal Labs, Annika Jimenez offers a thoughtful summary on this new partnership.<br> <br> I discussed “data for doing good” with data scientist Noelle Sio, while our Field colleagues threw down the jam on community service 
+at  the WWSKO.<br> <br> Finally, the <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/events/pivotal-big-data-roadshow" target="_blank">Pivotal Data Roadshow</a> is coming to a city near you.
+  Please invite prospects to join and learn all about agile data.
+  We introduce a new section this issue, dedicated to customer stories – Customer Spotlight.<br> <br> As Spock said: “Change is the essential process of all existence.” Pivotal is working the intersection of change, helping customers understand where they are, and where they  
+can boldly go!<br> <br> Enjoy.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of Editor Welcome // -->
+<!-- Start of business update -->
+<a href="#business-update" name="business-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="business-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/nl-portrait-saronson.png" alt="Scott Aronson" align="right"> <span style="color: rgb(102, 102, 102); font-size: 12px; line-height: 16px;">BUSINESS UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">2015 Worldwide Sales Kick-Off – Key Takeaways</span><br> <span style="color: rgb(102, 102, 102); font-size: 14px; line-height: 18px;"><a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/927787-scottaronson">Scott Aronson</a>, SVP, Field Operations</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="business-update-entry" >
+<p>We recently wrapped our 2015 Worldwide Sales Kick-Off – where nearly 600 colleagues, along with our customers and partners, gathered in San Francisco.
+ After two days, four general, and 24 breakout sessions, our Field and GTM teams have a clear path on how to execute together in 2015.<br> <br> I encourage everyone to take time to review the wealth of presentations and videos from our executive staff and session speakers on the <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015" target="_blank">Inside Pivotal WWSKO page</a>.
+ The opportunity for customers to embrace our strategy around cloud, agile and data (as part of a common thread to drive customer transformation) has never been better.
+ And while there were many, here are my key takeaways.<br> <br> <strong>The Play’s the Thing<br> </strong>We have a lot of work ahead of us, and we’ve developed repeatable sales plays for 2015 to focus our execution.</p>
+<p>For Big Data</p>
+<ul>
+<li>Modernize the Data Infrastructure</li>
+<li>Leverage Advanced Analytics</li>
+<li>Deploy Data-Driven Apps at Scale</li>
+</ul>
+<p>For Cloud Platform</p>
+<ul>
+<li>Bring New Capabilities to the Enterprise – Rapid application development and continuous delivery (go-live)</li>
+<li>Modernize Infrastructure Middleware – Increase agility, lower cost and complexity</li>
+<li>Drive Productivity (DevOps) – Improve productivity, consistency and quality</li>
+</ul>
+<p><strong>Align and Focus</strong><br> The big things we need to focus on in the field and across the company:</p>
+<ul>
+<li>Align for Pivotal Cloud Foundry (PCF) Hyper Growth – We’ll continue to commit resources here to continue our growth trajectory.</li>
+<li>Year of the Platform – Pivotal Labs will extend the customer transformation they start with agile, by helping make Pivotal Cloud Foundry the customers’ platform choice.</li>
+<li>Maintain and Transform Data Business – We’ll maintain customer adoption of our big data products, while making the switch to open source.</li>
+<li>Finish the Rotation to Subscription – We started this in 2014, and we’ll complete it in 2015.</li>
+</ul>
+<p><strong>The Three “P’s”</strong><br> We need to proactively measure and manage our business around the “3 P's”: Productivity, Platform (attach) and Pipeline.
+ I drill down into each of these in my <a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/a/pivotal.io/file/d/0B1rVqn9ifV69VEdZakV5azc3Rjg/view" target="_blank">opening remarks</a>.<br> <br> <strong>Be Bold<br> </strong>Our rallying cry for 2015 is “Be 
+Bold”.
+ This is not about being cocky, but confident.
+ Learn and get comfortable with our plays.
+ This builds confidence and signals to customers that we’re engaged and the right partner to help them transform their business.<br> <br> <strong>Giving Back</strong><br> As Paul Maritz noted, we should always endeavor to give more than we take.
+ I’m very proud we made this Pivotal value part of WWSKO.
+ I want to thank our volunteers who took time to build a brand new computer lab at The San Francisco City Academy that will give kids in the Tenderloin district – 85% of whom live below the poverty line – a door of opportunity through technology.
+ In addition, our Bay Area offices will continue to support the work that we started there.
+ Find out all about it <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015/san-francisco-city-academy" target="_blank">here</a>.<br> <br> We didn’t stop there.
+ Pivotal also donated 446 meals to the San Francisco’s homeless over the course of the week.<br> <br> <img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/SKO-2015.jpg" alt="Pivotal SKO 2015"><br> <strong><em>Clockwise from top left</em></strong><em>: Scott 
+Aronson on stage; Pivotal Award Winners.
+ At the City Academy: New computers for Tenderloin students; Some of the Pivotal WWSKO community service team.</em><br> <br> Finally, it took a group effort of many teams, and months of preparation to pull this event off.
+ On behalf of the entire Field, I want to once again express my deepest gratitude to our expert speakers, our executive team, and our leaders and colleagues who supported WWSKO 2015.
+ We could never have done this without you!<br> <br> Good luck to everyone in Q1, and BE BOLD!</p>
+</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of business update // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="product-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/nl-portrait-acshafer.png" alt="Andrew Clay Shafer" align="right"> <span style="color: rgb(102, 102, 102); font-size: 12px; line-height: 16px;">PRODUCT UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">It’s Not the Product: Context is King in Customer Discussions</span><br> <span style="color: rgb(102, 102, 102); font-size: 14px; line-height: 18px;"><a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/1056492-andrewshafer">Andrew Clay Shafer</a>, Sr. Director, Technical Marketing (Pivotal Cloud Foundry)</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="product-update-entry" >At the 2015 WWSKO, I emphasized that we have an opportunity to change the world with a category-defining product, and a unique ecosystem of supporting services.<br> <br> The first year bookings for Pivotal Cloud Foundry (PCF) validate that the industry has a desire and need for a solution, 
+and that Pivotal has the leadership to deliver it.
+ In his excellent <a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/a/pivotal.io/file/d/0B1rVqn9ifV69Mlcyb09rUmhOS2s/view" target="_blank">presentation on Pivotal Cloud Foundry</a>, James Watters underscored the patterns and topics that help us close transactions in 
+a noisy, nascent market.
+ In the customer <a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/a/pivotal.io/file/d/0B1rVqn9ifV69ZDVKNV81YVNqNk0/view" target="_blank">panel discussion with Bill Cook</a>, industry titans implored Pivotal to help them transform how they deliver software, while 
+they also advised that we <em>could do better</em> at understanding domains and context.<br> <br> <strong>Framing Technology For Customers<br> </strong>Mobile and Internet of Things (IoT) initiatives that are budgeted <strong><em>now</em></strong> will challenge the way enterprise IT handles 
+everything.
+ Moderately successful build-outs will drive the pace and scale beyond what most organizations are accustomed to delivering.
+ DevOps, Continuous Delivery, and Microservices won’t just be optional buzzwords that excite in-the-know early adopters, they will become the de facto best practices to survive and compete in a software-defined world.<br> <br> In a new market, almost every opportunity hinges on 
+connecting the dots from the problems customers may not know they have, to a solution they can’t conceive themselves.
+ Our challenge is not just communicating product features, but articulating problems customers face in a language they comprehend around their business issues.
+ That requires us to educate ourselves – not just on products, but also on the challenges and opportunities that delivering these products pose for our customers.<br> <br> The PCF Technical Marketing team has invested resources in developing supporting material and pivotal.io microsites 
+to provide the vocabulary for conversations around DevOps, Continuous Integration / Continuous Delivery, and microservices.
+ This will include framing Pivotal products for specific industry verticals.
+ Material around DevOps, PaaS and the Financial Services vertical is being developed now, which we expect to go live in the next few weeks.
+ Please let us know how these impact your customer interactions, and send along any recommendations or ideas.
+ Stay current on our <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal-cf/" target="_blank">PCF products page</a>, and you can reach me at <a style="color: #3ea7bc; text-decoration: none;" href="mailto:ashafer@pivotal.io" target="_blank">ashafer@pivotal.io</a>.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of agile update // -->
+<a href="#agile-update" name="agile-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="agile-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/nl-portrait-ajimenez.png" alt="Annika Jimenez" align="right"> <span style="color: rgb(102, 102, 102); font-size: 12px; line-height: 16px;">AGILE UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Pivotal Labs and its New Data Heartbeat </span><br> <span style="color: rgb(102, 102, 102); font-size: 14px; line-height: 18px;"><a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/919397-annikajimenez">Annika Jimenez</a>, VP Pivotal Data Science </span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="agile-update-entry" >A lot happened the past few weeks, so you might have missed the announcement that Pivotal Data Science has merged with Pivotal Labs.
+ Given the strong synergies between data science and application development, this is a natural next step for both organizations.<br> <br> Pivotal Data Science has had its own technology-centric philosophy around agile, canonized in <a style="color: #3ea7bc; text-decoration: none;" href="http://db.cs.berkeley.edu/jmh/papers/madskills-032009.pdf" target="_blank">this white paper</a>.
+ Our team established a leadership position in <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/assets/data-science-story" target="_blank">data science</a> because we’re hiring the very best data scientists, and 
+empowering them with Pivotal’s distributed platform (Greenplum or Hadoop/HAWQ) and open data science tool kits (including <a style="color: #3ea7bc; text-decoration: none;" href="http://www.madlib.net" target="_blank">MADLib</a>, <a style="color: #3ea7bc; text-decoration: none;" href="https://spark.apache.org/docs/1.1.0/mllib-guide.html" target="_blank">MLLib</a>, <a style="color: #3ea7bc; text-decoration: none;" href="http://scikit-learn.org/" target="_blank">scikit-learn</a> and <a style="color: #3ea7bc; text-decoration: none;" href="http://www.r-project.org/" target="_blank">R</a>) that provide the analytical agility not achievable off-stack.<br> <br> We’ll now bring Pivotal Labs’ agile approach into our methodologies, helping us provide insights for customers even faster.
+ We’re currently assessing how to tweak our delivery processes to capitalize on Pivotal Labs’ core processes.
+ This includes testing pair modeling, exploring the role of <a style="color: #3ea7bc; text-decoration: none;" href="http://www.pivotaltracker.com/why-tracker" target="_blank">Pivotal Tracker</a> in our processes, and plugging into Pivotal Labs for operational efficiencies.<br> <br> But in the 
+new world order, insights alone are no longer the end goal.
+ What about analytic apps, you ask?<br> <br> This is Pivotal’s Holy Grail, and why it makes sense for Data Science to be a part of Pivotal Labs.
+ A predictive model needs an application front-end (or face) for customers to realize its full potential and value.
+ We already see a strong interest from prospects for this (CoreLogic, Honeywell, etc.).
+ How we drive the right integration points between a data science process that is fairly linear and assumes some degree of open-ended data exploration, and Pivotal Labs’ needs-focused iterative software development process, is perhaps the most important question.<br> <br> Our answer to 
+this will make Pivotal Labs (with its new data heartbeat) a force to be reckoned with when it comes to powering enterprise transformation.
+ We already have early lessons from 2014 Pivotal Labs and Data Science collaborations, which can be seen here: <a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/a/pivotal.io/folderview?id=0B6WODjb8RyJOcVZjdExpcjRyMGs&amp;usp=sharing#grid" target="_blank">Connected 
+Car</a>, <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/global-data-science/home/resources/topic-and-sentiment-analysis-demo" target="_blank">Social</a> and <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/global-data-science/home/resources/london-transport-demo" target="_blank">Transport London</a>.<br> <br> Driving app- and data-centric enterprise transformations have been the charters of Pivotal Labs and Pivotal Data Science, respectively.
+ Bringing these two groups together catalyzes a powerful integrated change capacity that is core to Pivotal’s vision.
+ We’re diving in now to make it happen, so stay tuned.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of agile update // -->
+<!-- Start of customer spotlight // -->
+<a href="#customer-spotlight" name="customer-spotlight"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="customer-spotlight-title" style="padding-bottom:20px; " ><span style="margin:0; font-size:20px; font-weight:bold; line-height:24px; text-transform:uppercase;">Customer Spotlight</span><br></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="customer-spotlight-entry" ><p>We're excited to shine a light on the customer content that provides insights on the transformation Pivotal is helping customers achieve. In this issue, we spotlight:</p>
+<ul>
+<li>Pivotal Strategy Update: <a style="color: #3ea7bc; text-decoration: none;" href="http://pivotal.io/new-approach-to-big-data" target="_blank">Catch Corelogic, Union Bank, and CS Stars sharing their opinions on Pivotal's data strategy</a>. On February 17th, Pivotal laid out our data business strategy, and key customers offered thoughts on how this impacts them.&nbsp; </li>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/" target="_blank">Q4 Customer Write-ups now Available: With Rep Interview Recordings!</a> Q4 marks a year's worth of business case and win write-ups. We now have over 50 write-ups in this repository and, starting this quarter, we’re providing the interviews with reps themselves in .MP4 format (for easy download and use on the road).&nbsp; </li>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="http://pivotal.io/customers" target="_blank">Check out the new Customer Page on Pivotal.io</a>. As part of the Pivotal website refresh in February, we have a slick, new customer section that can be accessed from the homepage. It’s easy to use, and customers are searchable by industry, products and services, and topic.&nbsp; </li>
+<li><a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015" target="_blank">Watch CoreLogic, JPMC, Allstate, Samsung Mobile and MasterCard discuss working with Pivotal</a>. It's a testament to our strategy that customers are willing to make time and share their perspectives at our annual Worldwide Sales Kick-Off. </li>
+</ul>
+<p>Have questions or stories? Please contact Sophia Tseng at: stseng@pivotal.io</p></div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of customer spotlight // -->
+<!-- Start of peole update // -->
+<a href="#people-update" name="people-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="people-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/nl-portrait-nsio.png" alt="Noelle Sio" align="right"> <span style="color: rgb(102, 102, 102); font-size: 12px; line-height: 16px;">PEOPLE UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Data Science for Doing Good — Crisis Text Line</span><br> <span style="color: rgb(102, 102, 102); font-size: 14px; line-height: 18px;"><a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/923574-noellesio">Noelle Sio</a>, Principal Data Scientist</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="people-update-entry" ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/featured-P4G-CrisisTextLine.png" alt=""><br>A teenager who sends five repeat text messages to a crisis texting hotline signals to counselors that he/she is at risk.
+  The word “hurt” shows a strong correlation with self-inflicted harm, while other word choices also suggest at-risk tendencies for youths.<br> <br>These  are the kinds of things that Principal Data Scientist, Noelle Sio, helped youth counselors from <a style="color: #3ea7bc; 
+text-decoration: none;" href="http://www.crisistextline.org/" target="_blank">Crisis Text Line</a> unearth from their data, and which I (your editor) had the pleasure of  finding out in <a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/open?id=0B8GCVlqTdMB-NFZrN1Y5Y1RmOWc&amp;authuser=0" target="_blank">a recent discussion we had</a> on her work in the community.<br> <br> Through the Pivotal Data Science community initiative,  Pivotal for Good, Noelle brought her data know-how to a three-month, 
+pro bono assignment with Crisis Text Line, a texting hotline that connects troubled teens to trained specialists who assist hundreds of at-risk teens every day.<br> <br> While the non-profit organization is data-driven, they  were either short on time or resources to put together predictive 
+models that sliced data many ways and yielded fast insights.
+  Good data gives counselors insights on behaviors and helps them make better decisions.
+  With Noelle’s help, Crisis Text Line has new ways to interpret more data - to make for a better human connection, and the results were both interesting and immediate.
+  <a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/open?id=0B8GCVlqTdMB-NFZrN1Y5Y1RmOWc&amp;authuser=0" target="_blank">L</a><a style="color: #3ea7bc; text-decoration: none;" href="https://drive.google.com/open?id=0B8GCVlqTdMB-NFZrN1Y5Y1RmOWc&amp;authuser=0" target="_blank">isten to our discussion</a> to learn more.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of peole update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/nl-portrait-dlynch.png" alt="Daniel Lynch" align="right"> <span style="color: rgb(102, 102, 102); font-size: 12px; line-height: 16px;">MY NAME IS...</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Daniel Lynch</span><br> <span style="color: rgb(102, 102, 102); font-size: 14px; line-height: 18px;"><a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/916829-daniellynch">Daniel Lynch</a>, Senior Software Engineer</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><span style="font-size:20px;">At Pivotal I&hellip;</span><div class="mktEditable" id="at-pivotal-i" style="padding-top:10px; " >I am a Software Engineer supporting the Pivotal Data Fabric products.</div>
+<br>
+<span style="font-size:20px;">You can find me&hellip;</span><div class="mktEditable" id="you-can-find-me" style="padding-top:10px; " >Over by the GSS (Global Support Services) war room in our Palo Alto office.</div>
+<br>
+<span style="font-size:20px;">Currently, I am working on&hellip;</span><div class="mktEditable" id="currently-i-am" style="padding-top:10px; " >Support readiness for Pivotal Hadoop 3.0, and supportability tool development for <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal-support/home" target="_blank">Global Support Services</a><br>.
+ <br> My Team and I recently published into production the <a style="color: #3ea7bc; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal-support/home/fun/hackathon#winners" target="_blank">GSS Hackathon</a> v.1 winning application named "<a style="color: #3ea7bc; 
+text-decoration: none;" href="http://redphone.cfapps.io/" target="_blank">redphone</a>".
+ This app interfaces with Zendesk, HipChat, Pivotal Tracker and mail applications.
+ It provides automated updates to business and product stakeholders during a live scenario in which customer data is unavailable.<br> <br> A special thanks to all the contributors <a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/1072873-christinadoane1" target="_blank">Christa Doane</a>, <a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/966359-nikhilsuvarna" target="_blank">Nikhil Suvarna</a>, <a style="color: #3ea7bc; 
+text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/925258-bhuvneshchaudhary" target="_blank">Bhuvnesh Chaudhary</a>, <a style="color: #3ea7bc; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/1032879-kyleroberts" target="_blank">Kyle Roberts</a>!</div>
+<br>
+<span style="font-size:20px;">In my spare time&hellip;</span><div class="mktEditable" id="in-my-spare-time" style="padding-top:10px; " >I enjoy spending time with my 3-year-old girl and 1-year-old boy.<br> <br> <img style="display: block;" src="http://play.gopivotal.com/rs/pivotal/images/lifestyle-dlynch.jpg" alt="Daniel and family strike a pose"> <br> <em>Daniel and family strike a pose</em></div>
+<br>
+<span style="font-size:20px;">Something you probably don’t know about me&hellip;</span><div class="mktEditable" id="something-you-dont-know" style="padding-top:10px; " >My wife and I enjoy a good First Person Shooter (video game) after a hard days work.&nbsp; I also like to tinker with DIY home automation projects in my spare time – such as replacing the house alarm control panel with a <a style="color: #3ea7bc; text-decoration: none;" href="http://www.raspberrypi.org/" target="_blank">raspberry pi</a>.</div>
+<br>
+<span style="font-size:20px;">To me Pivotal&hellip;</span><div class="mktEditable" id="to-me-pivotal" style="padding-top:10px; " >Is a great company with a bright future. The best part of working at Pivotal is the people.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of new pivots // -->
+<a href="#new-pivots" name="new-pivots"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="new-hire-title" style="padding-bottom:20px; " ><span style="margin:0; font-size:20px; font-weight:bold; line-height:24px; text-transform:uppercase;">Welcome to Pivotal!</span><br></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="new-hire-entry" >We’re happy you’re here! Please welcome the new employees who joined Pivotal from February 13th to March 2nd:<br> <br> <strong>Aaron Fortener</strong>, Senior Field Engineer, US<br> <strong>Antonio Petrole</strong>, Associate Data Engineer, US<br> <strong>Audra 
+Robles</strong>, Customer Support Tech 2, Palo Alto<br> <strong>Avery Yen</strong>, Software Engineer, Boston<br> <strong>Dean Bruckman</strong>, Sales Account Manager, US<br> <strong>Dongmei Yang</strong>, Senior Manager of Taxes (Finance), Palo Alto<br> <strong>Greg Eng</strong>, 
+Software Engineer, Denver, CO<br> <strong>Gwenn Etourneau</strong>, Senior Solutions Architect, Tokyo<br> <strong>Jamie Monserrate</strong>, Software Engineer, London<br> <strong>James Butera</strong>, Sales Account Manager, US<br> <strong>Jian Geng</strong>, Sales Account Executive, 
+Beijing<br> <strong>Jim Basler</strong>, Senior Field Engineer, US<br> <strong>John Gammon</strong>, Senior Field Engineer, US<br> <strong>John Niravong</strong>, Product Manager, Toronto<br> <strong>Joshua Epstein</strong>, Sales Account Manager, US<br> <strong>Joshua Plotkin</strong>, 
+Graduate Intern, US<br> <strong>Justin Smith</strong>, Director of Software Engineering, San Francisco<br> <strong>Kevin Flanagan</strong>, General Manager, Ireland<br> <strong>Kristi Grassi</strong>, UX Designer, Santa Monica, CA<br> <strong>Kyle Dunn</strong>, Associate Data Engineer, 
+US<br> <strong>Leonhardt Koepsell</strong>, Software Engineer, Santa Monica, CA<br> <strong>Louis Lo</strong>, Sales Account Manager, US<br> <strong>Marcelo Dasilva</strong>, Sales Account Manager, US<br> <strong>Megan Gaebler</strong>, Software Engineer, Chicago<br> <strong>Melissa 
+Doerken,</strong> Product Manager, San Francisco<br> <strong>Mengxin Zhu</strong>, Software Engineer, Toronto<br> <strong>Merlin Glynn</strong>, Advisory Solutions Architect, US<br> <strong>Patrick Noia</strong>, Senior Manager of Technical Operations, Palo Alto<br> <strong>Patrick 
+Crocker</strong>, Senior Field Engineer, US<br> <strong>Robert Neumann</strong>, College Intern, US<br> <strong>Sasanka Griddalur</strong>, Senior Member of Technical Staff, Palo Alto<br> <strong>Steven Lichtenstein</strong>, Technical Writer, San Francisco<br> <strong>Taisia 
+Postolati</strong>, Associate Business Analyst, Toronto<br> <strong>Tejaswini Kathiravelupillai</strong>, Senior Member of Technical Staff, Singapore<br> <strong>Timothy Butterworth,</strong> Software Engineer, New York<br> <strong>Tushar Dadlani</strong>, Software Engineer, San Francisco<br> <strong>Urvashi Reddy</strong>, Software Engineer, San Francisco<br> <strong>Victor Fonseca</strong>, Senior Field Engineer, Sao Paolo, Brazil<br> <strong>Yingbiao (Bill) Hong</strong>, Senior Account Manager, Beijing</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of new pivots // -->
+<!-- Start of tos -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #01786E; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://play.gopivotal.com/rs/pivotal/images/nl-pivotal-footer.png" alt="Pivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:10px; padding-right:40px; padding-bottom:10px; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;">Want More? Try <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a> or <a href="https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter?" style="color:#FFFFFF; text-decoration:none;">SocialCast: @PivotalNewsletter</a></span></td>
+</tr>
+</table>
+<!-- End of tos -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2016 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

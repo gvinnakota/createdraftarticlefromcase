@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>1st issue in April</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.04-05-17 V5N5</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, 5 Apr</subject>
+    <textOnly>April 5, 2017
+Vol 5, No 5
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – Strange Changes
+All Things Product &lt;[[#product-update]]&gt; – PCC: Reframing Cache in a Cloud Native World
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Product Management Redefined 1 Panel at a Time
+My Name Is &lt;[[#my-name-is]]&gt; – Paula Kennedy
+Change is all strange
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+Oh lookout, you rock and rollers  -David Bowie
+ 
+I recently caught up with two old friends over drinks on a warm Saturday evening. One was a software engineer who had fled a decaying regime in Bulgaria decades earlier, correctly anticipating that it would end badly. The other had left a morose economy in Argentina, eventually running US sales for a food products business before striking out on his own. The engineer landed in delirious New York, the other in sun-kissed California. Both had few ideas on how they would fill in the lines of their radically new landscapes; and both came to understand under the constant of uncertainty, that it was the right thing to do.
+ 
+That&apos;s one way to look at software as industries reframe themselves around it. One is to understand that sometimes you have to jump, another is to know that in the shifting framework of change lay new truths and value. So goes this issue, where Cornelia Davis outlines Pivotal Cloud Cache—not just the new wrinkles for software-abstracted data, but the importance of reframing cache in modern application architectures. Atlanta Pivot Jennifer Handler picks up that thread in an article on helping clients rethink product management, including her own transition from book editor to product manager.
+ 
+Change can be strange—or not, but it&apos;s a threshold we all face sooner or later.
+ 
+Enjoy.
+PCC: reframing cache in a cloud native world
+
+
+
+
+Cornelia Davis &lt;[[#author-socialcast-profile]]&gt;, Senior Director of Technology
+Pivotal Cloud Foundry &lt;[[https://pivotal.io/platform]]&gt; has made a heck of an impact, huh? We&apos;ve taken Cloud Foundry from an open source science project four years ago, to one of the most successful open source-based commercial products ever.
+ 
+And we want to do it again.
+
+
+PCF has proven itself as the best application platform out there, optimized for modern application architectures and development practices with capabilities such as Spring Cloud Services &lt;[[http://cloud.spring.io/]]&gt;, dynamic routing, health management and more. The logical extension of our work now is making PCF the best application and data platform ever. There are a host of things underway with that in mind, but collective Pivotal teams from Gemfire to PCF/BOSH—and Labs too!—dropped a huge component of that in our just released Pivotal Cloud 
+Cache (PCC).
+ 
+PCC is a truly cloud-native step for data. It provides application teams on-demand application caching for apps deployed onto PCF. It employs a service broker that lets users spin up in-memory data clusters that address specific use cases for customer and partners. You can find all the info you need on the product itself on Inside Pivotal &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/pivotal-cloud-foundry/pcf-services/pcc]]&gt;, and by browsing Pivotalk and other channels.
+ 
+I instead want to talk more about about why we all need to rethink caching in the context of today’s application architectures. This is where the hoopla and the signal—not noise—surrounding Cloud Cache lay.
+ 
+Not too long ago we asked a customer what their caching needs were, and they said, “Not much. We don’t have enough traffic where we need that optimization.” This reflects how caching was used for the last several decades, mainly to lower latency. But in the microservices architectures the industry is now embracing caching plays a much greater role. Sure, it still helps with latency, particularly when a single user request could fan out to touch a couple dozen microservices before returning a result. But there are many other factors now.
+ 
+First, what happens when a calling microservice fails to connect to or get a response from a dependent microservice? An important practice is to have the calling service implement fallback behavior that generates a response, even when the dependent service is unavailable. Accessing data from a cache, even if it is a bit stale, is likely better than failing outright. For example, it’s probably okay to have movie recommendations not reflecting the very latest score you’ve just provided.
+ 
+Second, caches are an important part of bridging from newer portions of your software architectures to legacy systems. We have a customer who reported to us, with a great deal of pain, that they were paying $2M per month in read-only MIPS costs to access data that was virtually never changed. Ouch! Putting a caching layer between the application logic and the mainframe database would not only save them millions every year, it would also be a great deal more performant, ultimately making their own customers that much happier.
+ 
+I cover these patterns and more in some work I’ve been doing with a number of customers to help them start to understand how to think about caching differently in their new software architectures. I recently gave this talk at the Cloud Native Field Exchange—you can find the slides for it here &lt;[[https://www.slideshare.net/cdavisafc/cloudnative-data-every-microservice-needs-a-cache]]&gt;, and the recording here &lt;[[https://pivotal.zoom.us/recording/play/2VBxpgQUm3dNYwqFXmxDrQ-EP4v9Or_u1bZMW4LyHvba7s5hnjYJ5A4ZKSVoaIoi]]&gt;.
+ 
+Many at Pivotal would argue we’ve nailed cloud-native applications. But we haven&apos;t come close to the end of history here. The wave that stands before us is just as exciting as anything before it—we’re helping our customers, and indeed an entire industry, define and implement solutions for cloud-native data. Nice work Pivotal, and here&apos;s to all that comes next from that.
+Interestings
+
+
+
+
+
+
+
+
+
+ - Go fast, go secure, go .NET—PCF 1.10 hits the market &lt;[[https://content.pivotal.io/blog/always-be-shipping-with-pivotal-cloud-foundry-1-10-go-fast-go-secure-and-go-net]]&gt;.
+ - Field &amp; Architects: Pivotal&apos;s Cloud-Native Roadshows &lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow]]&gt; are coming to a customer near you.
+ - Put your OS shoes on: Cloud Foundry Foundation introduces its new developer certification program &lt;[[https://techcrunch.com/2017/03/29/cloud-foundry-launches-its-developer-certification-program/]]&gt;.
+ - Pivotal Greenplum goes live on the AWS marketplace &lt;[[https://aws.amazon.com/marketplace/pp/B06XKQ8Z3H]]&gt;.
+ - The &quot;AEM Cube&quot; study on how cognitively diverse teams solve problems faster &lt;[[https://hbr.org/2017/03/teams-solve-problems-faster-when-theyre-more-cognitively-diverse]]&gt;. 
+ - VR&apos;s Google moment—Sophia Dominguez wants to build virtual reality&apos;s search engine &lt;[[https://techcrunch.com/2017/03/18/svrf-may-have-the-answer-to-vrs-search-problem/?ncid=rss]]&gt;.
+product management redefined 1 panel at a time
+
+
+
+
+Jennifer Handler &lt;[[#author-socialcast-profile]]&gt;, Principal Product Manager, Pivotal Atlanta
+Participating in Meetup-type events is something we Pivots do regularly. It’s definitely something we do a lot of in Atlanta, since we’re a new office getting the word out that we’re here—and a great office kick-off in late March helped! We did a goals/anti-goals exercise to extract what our office wanted out of all this outreach. We agreed that primarily, we want the best talent to look us up for their next job, and prospective clients to think of us when they seek to build better software.
+ 
+In that vein, I recently sat on a panel organized by General Assembly &lt;[[https://generalassemb.ly/]]&gt; titled, “How to Break into Product Management.” This presented us with an opportunity to show our coaching and collaboration skills, 
+explain the discipline, and even do a bit of recruiting.
+ 
+Our audience included a healthy mix of career-transitioners, Product Managers who were looking for more perspective (we even had a few former clients join), and General Assembly students who were just trying to get a feel for their options. Questions ranged from the expected (&quot;What is the difference between Product Manager and Project Manager?&quot;), to the less expected—at least for this crowd. There was particular interest in how technical a Product Manager needed to be. (Our answer: not that technical, but you have to know and ask the right questions.)
+ 
+I found myself giving qualified answers to basic, “How do you break in, and what is it in the first place?” questions, in large part because there are so many varieties of Product Management out there. In my 10-plus years in the discipline, I’ve seen it take all shapes and forms. My transition from children’s book editor to digital product manager involved a good deal of soul searching, moderate amounts of caffeine, and a little luck. I thought about my strengths and interests that could translate to other roles, had coffee dates with people in digital-oriented jobs that could be a good fit for me, and ultimately found a hiring manager who was willing to take a chance on someone with 70% of the experience and 200% interest in moving into a Digital Content Producer role—which, within the year, turned into a Product 
+Manager role. Now that I’ve been with a handful of companies around the world, I’ve found that this isn’t a standardized discipline, which can make it tough to master.
+ 
+At Pivotal Labs, we have a clean, powerful three-circle Balanced Team model &lt;[[https://content.pivotal.io/blog/balanced-team-janice-fraser]]&gt; that I’ve found to be both clarifying and empowering—not just for Product Management, but for 
+Product Design and Development as well. Many enterprises I’ve been with, and many of our clients in this market, splinter the PM role into several jobs: Product Manager, Project Manager, Product Owner, Scrummaster, Agile Coach, Business Analyst, Strategist—the list could go on. It can be hard to figure out how to break in, and it can be even harder to be successful in the role when you’re working in this much more complex Venn.
+ 
+ 
+
+ 
+Pivotal is showing clients a different way of defining the Product Manager role and organizing teams; and partnering with our Transformation team, we&apos;re helping them bring the most resonant ideas back to their functions. We help them transform. Through panels like “How to Break into Product Management,” we’re able to get in early to influence a new crop of Product Managers who seek to join large companies in Atlanta. We’re instilling a concept of Product Management that can be helpful to them in their career, and helping them provide greater value to the companies they end up joining. Reach out if you have any questions, or want to know more about the great work we&apos;re doing in Atlanta!
+paula kennedy
+
+
+
+
+Director of Delivery Account Management, EMEA
+At Pivotal I...
+Work as part of the Customer Success organisation, together with our Field and Services teams, to help our customers define strategic objectives, track progress, and measure 
+outcomes as they achieve the benefits and value of working with Pivotal and our products.
+You can find me...
+In the very fancy Pivotal London office most days or else working at home in Fleet, a lovely Hampshire town 40 miles 
+southwest of London.
+Currently, I am working on…
+Supporting existing and prospective customers, working closely as part of the Balanced Account Team, to use Engagement Plans as a joint framework to measure value and success. I’m also working with the Global Alliances team to grow and support our partner ecosystem within EMEA as we scale our services delivery and drive Pivotal Cloud Foundry adoption.
+In my spare time…
+I love organising events and co-organise two meetup groups in London, the London PaaS User Group (LOPUG &lt;[[https://www.meetup.com/London-PaaS-User-Group-LOPUG/]]&gt;) and the Coed:Code &lt;[[https://www.meetup.com/Coed-Code/]]&gt; group, which promotes diversity in tech. I’m also on the organising committee for the London DevOps Days 2017 &lt;[[https://www.devopsdays.org/events/2017-london/welcome/]]&gt; event and you might see me speaking at other events. When I’m not busy organising, you’ll likely find me running around after my two very active kids.
+Something you probably don’t know about me…
+Last September I had a minor midlife crisis and decided to take up running as a hobby for the first time in my life. After completing the “couch to 5km” course with a local running club, I recently ran the Fleet half marathon so have managed to do “couch to 13.1 miles” in 6 months.
+Presenting at Velocity Amsterdam (with author &amp; engineer, Lara Hogan &lt;[[https://g.co/kgs/45qZHi]]&gt;); logging the kilometers; Paula and her energetic little humans in Paris.
+To me Pivotal…
+Has been a great transition from co-founding and being COO of CloudCredo (acquired by Pivotal in 2015) to working as part of a much larger team, but still with the core values that I believe in of doing the right thing, doing what works, and being kind.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

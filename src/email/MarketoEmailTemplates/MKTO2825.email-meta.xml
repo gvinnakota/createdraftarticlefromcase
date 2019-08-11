@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Apache Geode Webinar 9-8-15.Confirmation 1</name>
+    <style>none</style>
+    <subject>Webinar Confirmation: Building Effective Apache Geode Applications with Spring Data GemFire</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Your registration is confirmed for the webinar Building Effective Apache Geode Applications with Spring Data GemFire. We are looking forward to having you join us. 
+Event Details:
+
+Date: Tuesday, September 8, 2015  {{my.My Token:default=Save the Date}}
+Time: 9:00AM PDT (San Francisco, GMT-07:00)  Join the Session &lt;https://meet57398766.adobeconnect.com/clubhouse/&gt;
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

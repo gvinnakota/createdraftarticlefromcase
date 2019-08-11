@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Splits Request --></label>
+        <name>Revenue_Splits_Request__c</name>
+        <relationshipLabel><!-- Product Split History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Hyperlink --></label>
+        <name>Subscription_Hyperlink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary Hyperlink --></label>
+        <name>Summary_Hyperlink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Add Product</masterLabel>
+            <translation><!-- Add Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation><!-- Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Subscription</masterLabel>
+            <translation><!-- New Subscription --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Split History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Product Split History</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

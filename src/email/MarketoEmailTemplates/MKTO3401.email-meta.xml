@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Webinar_FR_The Cloud Native Journey Q116.FR-Reminder</name>
+    <style>none</style>
+    <subject>Votre participation au wébinaire Pivotal - Lien d&apos;accès</subject>
+    <textOnly>&lt;[[http://pivotal.io/fr/platform/webinar/migration-vers-le-cloud-natif]]&gt;
+
+Bonjour {{lead.First Name:default=edit me}},
+
+Nous souhaitons vous rappeler que vous êtes inscrit à notre wébinaire Migration vers le Cloud Native. Vous trouverez ci-dessous les détails de l’événement :
+ 
+Veuillez noter que le lien d&apos;accès Assistez à cette session &lt;[[https://pivotal.webex.com/meet/avasseur]]&gt; a été mis à jour.
+
+Date : 17 février 2016
+Heure : 16h00 
+
+Assistez à cette session
+https://pivotal.webex.com/meet/avasseur
+
+Information audio :
+Vous pourrez écouter et visionner ce wébinaire en streaming sur votre ordinateur.
+
+
+Bien Cordialement, 
+
+L’É​quipe Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Partner Product --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary Contact for a Partner Product --></help>
+        <label><!-- Primary Contact --></label>
+        <name>Partner_Contact__c</name>
+        <relationshipLabel><!-- Integrated Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Continuity</masterLabel>
+            <translation><!-- Business Continuity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Intelligence</masterLabel>
+            <translation><!-- Business Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Service Provider</masterLabel>
+            <translation><!-- Cloud Service Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration</masterLabel>
+            <translation><!-- Data Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Modeling</masterLabel>
+            <translation><!-- Data Modeling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database Tools</masterLabel>
+            <translation><!-- Database Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deployment/Monitoring</masterLabel>
+            <translation><!-- Deployment/Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platform/Manageability</masterLabel>
+            <translation><!-- Platform/Manageability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search</masterLabel>
+            <translation><!-- Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Products</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Integrated Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Product_Interoperability_Matrix --></label>
+        <name>Product_Interoperability_Matrix</name>
+    </webLinks>
+</CustomObjectTranslation>

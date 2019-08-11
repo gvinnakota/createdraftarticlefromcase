@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_NextGenDataLake_Session1_Q114.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: You are registered for our upcoming webinar</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We are looking forward to you joining us for our next installment in the &quot;What You Can Do With Hadoop&quot; webinar series. Please find event details below:
+
+Date: Thursday, March 27, 2014
+Time: 9:00AM PST (San Francisco)/4:00PM GMT (London)
+Join the Webex &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?d=667292280&amp;t=a&gt;
+Event Number: 667 292 280
+Teleconferencing Information:
+This webinar will be streaming live, however dial-in options are available:
+
+ - Global call-in numbers &lt;https://gopivotal.webex.com/gopivotal/globalcallin.php?serviceType=EC&amp;ED=112132122&amp;tollFree=1&gt; 
+ - Toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt; 
+ - Access code: 663 114 322
+
+ 
+Thank you,
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_JK_DS-Cybersecurity_Q117.SWMY 1-26-17</name>
+    <style>none</style>
+    <subject>Sorry you missed Data Science for Cybersecurity Webinar</subject>
+    <textOnly>&lt;[[https://content.pivotal.io/webinars/using-data-science-for-cybersecurity]]&gt;
+Hi {{lead.First Name:default=there}},
+
+ We&apos;re sorry you missed our webinar, Data Science for Cybersecurity: Detecting Anomalous User Behavior within a Large Enterprise. You can, however, watch the replay of the webinar on-demand at your leisure and download the slide deck using the links below:
+
+ - Watch the webinar recording  &lt;[[https://content.pivotal.io/webinars/using-data-science-for-cybersecurity]]&gt;
+ - Download the webinar presentation &lt;[[http://www.slideshare.net/Pivotal/using-data-science-for-cybersecurity]]&gt;
+
+Additional data science and analytics resources:
+
+ - Download: Greenplum Database &lt;[[http://greenplum.org/]]&gt; and Apache MADlib (incubating)  &lt;[[http://madlib.incubator.apache.org/]]&gt;
+ - Data Sheet: Pivotal&apos;s Approach to Threat Detection: Cybersecurity Analytics at Scale  &lt;[[https://pivotal.io/securityanalytics]]&gt;
+ - Blog: Sequential Pattern Mining Approach for Watering Hole Attack Detection  &lt;[[https://blog.pivotal.io/data-science-pivotal/case-studies/sequential-pattern-mining-approach-for-watering-hole-attack-detection-2]]&gt;
+ - Podcast: Don’t Let Your Data Science Models Die A Lonely PowerPoint Death &lt;[[https://blog.pivotal.io/pivotal-insights/features/09-dont-let-your-data-science-models-die-a-lonely-powerpoint-death]]&gt;
+
+And don’t miss future data science, big data and analytics webinars and other events from Pivotal. Check Pivotal’s upcoming webinars here &lt;[[https://pivotal.io/resources/1/webinars]]&gt;. 
+
+ If you would like more information or have any questions about data science and analytics, submit your question and contact information at pivotal.io/contact &lt;[[http://pivotal.io/contact]]&gt;. 
+
+ Sincerely, 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

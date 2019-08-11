@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.February 2015 Spring News (4-webinar)</name>
+    <style>none</style>
+    <subject>Spring XD 1.1 GA goes big on streaming data</subject>
+    <textOnly>FEBRUARY 2015
+&lt;https://spring.io/blog/2015/02/12/spring-xd-1-1-ga-and-1-0-4-released&gt;
+Spring XD 1.1 GA goes big on streaming data
+Spring XD addresses numerous IoT, Analytics, Batch Workflow, and CEP challenges within a unified platform – just to name a few. Whether through continuous data streams with Spark, Python, RxJava or Reactor, or schedule-based data movements, Spring XD provides end-to-end data pipeline capabilities to consume, process, analyze, and stage data where and how you need it. It offers thousands of combinations of data pipelines that can be built out of the box, with no coding required – but if you want to code and extend Spring XD, you can use proven extension points like Spring Integration channel adapters. Unlike other stream processing frameworks, this feature is backed by the enterprise-trusted Spring Integration project, which is recognized as the market share leader &lt;https://spring.io/blog/2014/11/12/pivotal-recognized-in-dzone-s-2014-guide-to-enterprise-integration&gt;. If you’ve ever felt the pain of learning too many Hadoop projects, each with a different programming and configuration model, this is the solution for you. Best of all, it works with all the major Hadoop distributions – Apache, Cloudera and Hortonworks.
+Learn More &lt;https://spring.io/blog/2015/02/12/spring-xd-1-1-ga-and-1-0-4-released&gt;
+Spring XD 1.1’s Stream Processing
+This tip is drawn heavily from this Wiki-page on Spring XD&apos;s streaming support &lt;https://github.com/spring-projects/spring-xd/wiki/Creating-a-Data-Stream-Processor-Module#reactor-streams&gt; by various Spring XD team-members, and 
+particularly the amazing Ilayaperumal Gopinathan &lt;https://github.com/ilayaperumalg&gt; Spring XD 1.1 is packed with lots of new features. One theme for this release is rich stream processing support. Spring XD 1.1 provides integration with Project Reactor &lt;https://github.com/reactor&gt; Streams, RxJava &lt;https://github.com/ReactiveX/&gt; Observables, and Spark&apos;s &lt;https://spark.apache.org/&gt; streaming. Let&apos;s look specifically at using Reactor, though the concepts are similar across all of the supported streaming APIs. Messages that are delivered on the Message Bus are accessed from the input Stream. The return value is the output Stream that is the result of applying various operations to the input stream. The content of the output Stream is sent to the message bus for consumption by other processors or sinks. Ready for the code sample and tech tip details? Click here to view the rest of the article on the Spring blog &lt;http://spring.io/blog/2015/02/20/stream-processing-in-spring-xd-1-1&gt;.
+Camel case support in code completion
+Code completion support in Eclipse and the Spring Tool Suite is aware of the camel case shortcuts. You don’t need to write NullPointerException, for example. It is enough to type in NPE and hit code completion to let it propose the right class name. This also works with lower case characters in between, so typing on “NuPoiEx” will also trigger the code completion to propose NullPointerException as class name.
+Introducing Spring Session
+Speaker: Josh Long
+
+Back in the era of the application server, HTTP Session replication was a common way to scale out user session data, as well as make it fault tolerant. In today&apos;s world of lightweight containers, PaaS, and virtualization, Spring session offers a 100% server and/or container portable HTTP Session. Spring Session easily plugs in implementations like Redis, scales out across a cluster, handles multiple users&apos; browser sessions, works with WebSocket, and allows header based authentication within REST apps. It&apos;s a perfect fit for working with user data, particularly in a highly distributed environment like the cloud, or on a Platform like Cloud Foundry.
+Europe
+Tuesday, February 24, 2015
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMIntroducingSpringSession_Register.html&gt;
+North America
+Tuesday, February 24, 2015
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMIntroducingSpringSession_Register.html&gt;
+A Single-Page Application with Spring Security and Angular JS
+Speaker: David Syer
+
+Spring Security, Spring Boot and Angular JS all have nice features for making it really easy to produce modern applications, so there is potentially a lot of value in making them work together very smoothly. Things to consider are cookies, headers, native clients, various security vulnerabilities and how modern browser technology can help us to avoid them.
+
+In this session we show how nice features of the component frameworks can be integrated simply to provide a pleasant and secure user experience. We start with a very basic single-server implementation and scale it up in stages, splitting out backend resources and authentication to separate services. The final state includes a simple API Gateway on the front end implemented declaratively using Spring Cloud, and using this we are able to neatly sidestep a lot of the problems people encounter securing a javascript front end with a distributed back end.
+Europe
+Tuesday, March 10, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMSinglePageApp-SpringSecurity-AngularJS_Register.html&gt;
+North America
+Tuesday, March 10, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMSinglePageApp-SpringSecurity-AngularJS_Register.html&gt;
+JHipster for Spring Boot
+Speaker: Julien Dubois
+
+JHipster focuses on generating a high quality application with a Java back-end using an extensive set of Spring technologies; Spring Boot, Spring Security, Spring Data, Spring MVC (providing a framework for websockets, REST and MVC), etc. an Angular.js front-end and a suite of pre-configured development tools like Yeoman, Maven, Gradle, Grunt, Gulp.js and Bower. JHipster creates a fully configured Spring Boot application with a set of pre-defined screens for user management, monitoring, and logging. The generated Spring Boot application is specifically tailored to make working with Angular.js a smoother experience.
+
+Join Julien for a quick-live coding session to build a simple application, and deploy it to Cloud Foundry.
+Europe
+Tuesday, March 17, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMJHipster_Register.html&gt;
+North America
+Tuesday, March 17, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMJHipster_Register.html&gt;
+Building a secure Polymer app with Spring backend
+Speaker: Scott Deeg
+
+Polymer is the latest web framework out of Google. Designed completely around the emerging Web Components standards, it has the lofty goal of making it easy to build apps based on these low level primitives. Along with Polymer comes a new set of Elements (buttons, dialog boxes and such) based on the ideas of &quot;Material Design&quot;. These technologies together make it easy to build responsive, componentized &quot;Single Page&quot; web applications that work for browsers on PCs or mobile devices. But what about the backend, and how do we make these apps secure?
+
+In this talk Scott Deeg will take you through an introduction to Polmyer and its related technologies, and then through the build out of a full blown cloud based app with a secure, RESTful backend based on Spring REST, Spring Cloud, and Spring Security and using Thymeleaf for backend rendering jobs. At the end he will show the principles applied in a tool he&apos;s currently building. The talk will be mainly code walk through and demo, and assumes familiarity with Java/Spring and JavaScript.
+
+Other Events:
+
+Thursday, February 26th 
+Speaker: Roman Shaposhnik
+Meetup: Introduction to Hadoop Security
+Pivotal Office in San Francisco, CA  
+Register here: bit.ly/POSH0063 &lt;bit.ly/POSH0063&gt;
+
+ &lt;bit.ly/POSH0063&gt;Monday, March 16th
+Speaker: Matt Stine
+Deep Dive Training: Learn about Cloud Native Application Architecture with Spring and Cloud Foundry. Join Matt Stine for this $2,500.00 workshop deep dive at the O&apos;Reilly Software Architecture Conference in Boston, MA. 
+Schedule &amp; Details &lt;http://softwarearchitecturecon.com/sa2015/public/schedule/detail/39989&gt;   
+
+Tuesday, March 17th 
+Speaker: Scott Deeg 
+Meetup: Building a secure Polymer app with Spring backend  
+Pivotal Office in Palo Alto, CA 
+ Register here: bit.ly/POSH0065  &lt;bit.ly/POSH0065&gt;
+Europe
+Tuesday, March 24, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMBuildingasecurePolymerappwithSpringbackend_Register.html&gt;
+North America
+Tuesday, March 24, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMBuildingasecurePolymerappwithSpringbackend_Register.html&gt;
+Spring XD - A Platform for data at scale and developer productivity
+Worried about Big Data and the challenges inherent in making a real application? You don’t have to worry anymore! Spring XD provides a one-stop shop solution that spans traditional enterprise to Big Data use cases - both batch and streaming. Watch and learn how to develop data-driven use cases much faster than other big data solutions on the out of the box XD runtime.
+Watch Video &lt;http://spring.io/blog/2015/02/20/webinar-replay-spring-xd-a-platform-for-data-at-scale-and-developer-productivity&gt;
+Archived videos
+ SpringOne2GX 2014 Replay: &quot;Bootiful&quot; Applications with Spring Boot  &lt;http://spring.io/blog/2015/02/17/springone2gx-2014-replay-bootiful-applications-with-spring-boot&gt;
+ SpringOne2GX 2014 Replay: Testing with Spring Framework 4.x &lt;http://spring.io/blog/2015/02/17/springone2gx-2014-replay-testing-with-spring-framework-4-x&gt;
+ SpringOne2GX 2014 Replay: Reactive Oriented Architecture with Grails &lt;http://spring.io/blog/2015/02/17/springone2gx-2014-replay-reactive-oriented-architecture-with-grails&gt;
+ SpringOne2GX 2014 Replay: Ratpack Web Framework &lt;http://spring.io/blog/2015/02/10/springone2gx-2014-replay-ratpack-web-framework&gt;
+ SpringOne2GX 2014 Replay: Rethinking API Design with Traits &lt;http://spring.io/blog/2015/02/10/springone2gx-2014-replay-rethinking-api-design-with-traits&gt;
+ SpringOne2GX 2014 Replay: Testing Grails &lt;http://spring.io/blog/2015/02/10/springone2gx-2014-replay-testing-grails&gt;
+ SpringOne2GX 2014 Replay: Web Clustering, Integration with Terracotta, BigMemory, Quartz &amp; Grails &lt;http://spring.io/blog/2015/02/10/springone2gx-2014-replay-web-clustering-integration-with-terracotta-bigmemory-quartz-grails&gt;
+ 
+SpringOne2GX 2014 Replay: Building a 
+Continuous Delivery Pipeline with Gradle and Jenkins
+ SpringOne2GX 2014 Replay: Securing your Grails App - Beyond Authentication &amp; Authorization &lt;http://spring.io/blog/2015/02/10/springone2gx-2014-replay-securing-your-grails-app-beyond-authentication-authorization&gt;
+ SpringOne2GX 2014 Replay: The Quest for the Holy Grails &lt;http://spring.io/blog/2015/02/09/springone2gx-2014-replay-the-quest-for-the-holy-grails&gt;
+ SpringOne2GX 2014 Replay: RESTful Grails 2 &lt;http://spring.io/blog/2015/02/09/springone2gx-2014-replay-restful-grails-2&gt;
+ SpringOne2GX 2014 Replay: Grails 3.0 Preview &lt;http://spring.io/blog/2015/02/09/springone2gx-2014-replay-grails-3-0-preview&gt;
+ SpringOne2GX 2014 Replay: Scalable Big Data stream processing with Storm and Groovy &lt;http://spring.io/blog/2015/02/09/springone2gx-2014-replay-scalable-big-data-stream-processing-with-storm-and-groovy&gt;
+ SpringOne2GX 2014 Replay: Testing Java, Groovy, Spring and Web Applications with 
+Spock
+ Webinar Replay: Introducing the Java DSL for Spring Integration &lt;http://spring.io/blog/2015/02/10/webinar-replay-introducing-the-java-dsl-for-spring-integration&gt;
+ Webinar Replay: Documenting RESTful APIs &lt;http://spring.io/blog/2015/01/20/webinar-documenting-restful-apis&gt;
+ 
+Webinar Replay: Building Scalable Data Applications 
+with Spring and GemFire
+ SpringOne2GX 2014 Replay: Deep 
+dive into Spring WebSockets
+ SpringOne2GX 2014 Replay: Applications of Enterprise Integration Patterns to Near-Real Time Radar Data Processing &lt;http://spring.io/blog/2015/01/20/springone2gx-2014-replay-applications-of-enterprise-integration-patterns-to-near-real-time-radar-data-processing&gt;
+ SpringOne2GX 2014 Replay: Cassandra, Couchbase and 
+Spring Data in the Enterprise
+ SpringOne2GX 2014 Replay: Spring 4 Web Applications &lt;http://spring.io/blog/2015/01/20/springone2gx-2014-replay-spring-4-web-applications&gt;
+ SpringOne2GX 2014 Replay: Caching and Messaging Improvements in Spring Framework 4.1 &lt;https://spring.io/blog/2015/01/14/springone2gx-2014-replay-caching-and-messaging-improvements-in-spring-framework-4-1&gt;
+ SpringOne2GX 2014 Replay: From 0 to Spring Security 4.0 &lt;https://spring.io/blog/2015/01/14/springone2gx-2014-replay-from-0-to-spring-security-4-0&gt;
+ SpringOne2GX 2014 Replay: Hadoop 201 – Deeper into the Elephant &lt;http://spring.io/blog/2015/01/26/springone2gx-2014-replay-hadoop-201-deeper-into-the-elephant&gt;
+ SpringOne2GX 2014 Replay: Boot up Spring Social &lt;http://spring.io/blog/2015/01/26/springone2gx-2014-replay-booting-up-spring-social&gt;
+ SpringOne2GX 2014 Replay: Fastest Servlets in the West? &lt;http://spring.io/blog/2015/01/26/springone2gx-2014-replay-fastest-servlets-in-the-west&gt;
+ SpringOne2GX 2014 Replay: Groovy for System Administrators &lt;http://spring.io/blog/2015/01/26/springone2gx-2014-replay-groovy-for-system-administrators&gt;
+ SpringOne2GX 2014 Replay: Groovy, in the light of Java &lt;http://spring.io/blog/2015/02/02/springone2gx-2014-replay-groovy-in-the-light-of-java-8&gt;
+ SpringOne2GX 2014 Replay: Introduction to Spring for Apache Hadoop &lt;http://spring.io/blog/2015/02/02/springone2gx-2014-replay-introduction-to-spring-for-apache-hadoop&gt;
+ SpringOne2GS 2014 Replay: Making Spring Boot Even Groovier &lt;http://spring.io/blog/2015/02/02/springone2gx-replay-making-spring-boot-even-groovier&gt;
+ SpringOne2GX 2014 Replay: Working with Databases and Groovy &lt;http://spring.io/blog/2015/02/02/springone2gx-2014-replay-working-with-databases-and-groovy&gt;
+ 
+Webinar Replay: Documenting RESTful APIs &lt;https://spring.io/blog/2015/02/10/webinar-replay-documenting-rest-ful-apis&gt;
+ Webinar Replay: Building Scalable Data Applications with Spring and 
+GemFire
+Creating a stream of live twitter data using Spring XD
+You’ll set up Spring XD (eXtreme Data) &lt;https://github.com/spring-projects/spring-xd/wiki&gt;, create a stream to monitor a live twitter feed, and pipe it into a file. You’ll need about 15 minutes and JDK 1.7 or later. If you are on a Mac there are some simple instructions to Install Homebrew &lt;http://spring.io/guides/gs/spring-xd/#scratch&gt;. If you don’t have a Mac or you aren’t interested in installing Homebrew, then you can skip that and jump right to Installing Spring XD &lt;http://spring.io/guides/gs/spring-xd/#initial&gt;.
+View Guide &lt;http://spring.io/guides/gs/spring-xd/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+
+
+http://spring.io/guides
+
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Reactor 2.0.0.RC1 with native Reactive Streams 
+support now available!
+ Spring Cloud 1.0.0.RC3 Available Now &lt;http://spring.io/blog/2015/02/13/spring-cloud-1-0-0-rc3-available-now&gt;
+ 
+Spring XD 1.1 GA and 1.0.4 released &lt;http://spring.io/blog/2015/02/12/spring-xd-1-1-ga-and-1-0-4-released&gt;
+ Spring Integration Kafka Extension 1.0.GA is available &lt;http://spring.io/blog/2015/02/09/spring-integration-kafka-extension-1-0-ga-is-available&gt;
+ Spring for Apache Hadoop 2.1 Released &lt;http://spring.io/blog/2015/02/09/spring-for-apache-hadoop-2-1-released&gt;
+ Spring Batch and Spring Batch Admin &lt;http://spring.io/blog/2015/01/16/spring-batch-and-spring-batch-admin-releases&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.3.SR1 &lt;http://spring.io/blog/2015/01/19/spring-tool-suite-and-groovy-grails-tool-suite-3-6-3-sr1-released&gt;
+ Spring Roo 1.3.1 RC2 Available &lt;http://spring.io/blog/2015/01/19/spring-roo-1-3-1-rc2-available-now&gt;
+ Spring Social Slideshare 1.0.0 &lt;https://github.com/ttddyy/spring-social-slideshare&gt;
+ Spring XD 1.1 RC1 &lt;http://spring.io/blog/2015/01/29/spring-xd-1-1-rc1-released&gt;
+ Spring Data Evans SR 2 and Dijkstra SR 5 &lt;http://spring.io/blog/2015/01/28/spring-data-evans-sr-2-and-dijkstra-sr-5-released&gt;
+ Spring Roo 1.3.1.RELEASE &lt;http://spring.io/blog/2015/02/02/spring-roo-1-3-1-release-now-available&gt;
+ Spring Security OAuth 2.0.6.RELEASE &lt;http://spring.io/blog/2015/02/02/spring-security-oauth-2-0-6-release-available-now&gt;
+ Spring Cloud 1.0.0.RC2 &lt;http://spring.io/blog/2015/02/02/spring-cloud-1-0-0-rc2-available-now&gt;
+ Introducing Spring Social Slideshare &lt;http://spring.io/blog/2015/02/03/introducing-spring-social-slideshare&gt;
+Spring XD: Data-Driven Connectivity Within a Unified 
+Platform
+ Better application events in Spring Framework 
+4.2
+ Java Doesn’t Suck - Rockin&apos; the JVM &lt;http://spring.io/blog/2015/02/11/java-doesn-t-suck-rockin-the-jvm&gt;
+ Introducing JHipster for Spring Boot &lt;http://spring.io/blog/2015/02/10/introducing-jhipster&gt;
+ Microservice Registration and Discovery with Spring Cloud and Netflix’s Eureka &lt;http://spring.io/blog/2015/01/20/microservice-registration-and-discovery-with-spring-cloud-and-netflix-s-eureka&gt;
+ 
+The Resource Server: Angular JS and Spring Security Part 
+III
+ 12-Factor App-Style Backing Services with 
+Spring and Cloud Foundry
+ The API Gateway Pattern: 
+Angular JS and Spring Security Part IV
+ Why 12 Factor Application Patterns, Microservices and CloudFoundry Matter &lt;http://spring.io/blog/2015/01/30/why-12-factor-application-patterns-microservices-and-cloudfoundry-matter&gt;
+ SSO with OAuth2: Angular JS and Spring Security Part V &lt;http://spring.io/blog/2015/02/03/sso-with-oauth2-angular-js-and-spring-security-part-v&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;Search=Search&amp;subjectID=17750&amp;filters=subjectID&gt;
+ Enterprise Integration with Spring &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Enterprise+integration+spring&amp;Search=Search&gt;
+ Spring Web &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Spring+Web&amp;Search=Search&gt;
+ What’s New in Spring (NEW) &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=What%27s+New+in+Spring&amp;Search=Search&gt;
+ 
+Hibernate with Spring’ &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=JPA&amp;Search=Search&gt;
+ Groovy &amp; Grails &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Groovy&amp;Search=Search&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

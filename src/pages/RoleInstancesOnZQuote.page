@@ -1,0 +1,98 @@
+<apex:page id="RoleInstancesOnZQuote" standardController="zqu__Quote__c" extensions="RoleInstancesOnZQuoteController"
+        showChat="false" showHeader="false" sideBar="false">
+    <style>
+        #loading-modal {
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .loader {
+            position: fixed;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #bdbd75;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script>
+        function openModal() {
+            document.getElementById('loading-modal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('loading-modal').style.display = "none";
+        }
+        function openRolesPopup(qrpcId){
+             window.open("/apex/RolesToAssign?qrpcId=" + qrpcId,"mywindow","location=1, status=1,scrollbars=1,width=700px,height=200px");
+        }
+        function populateSKUs(){
+            populateSKUsAF();
+        }
+    </script>
+    <apex:sectionHeader title="This quote has no related roles" rendered="{!NOT(hasRoles)}"/>
+    <apex:form rendered="{!hasRoles}">
+        <apex:actionFunction name="populateSKUsAF" action="{!populateSKUs}" reRender="RolesOnQuotePB"/>
+        <apex:pageBlock id="RolesOnQuotePB">
+            <apex:outputLabel value="Rate Type"/> &nbsp;
+            <apex:selectList value="{!selectedOption}" size="1">
+                <apex:selectOptions value="{!SOWOptions}"/>
+                <apex:actionSupport event="onchange" action="{!populateSKUs}"
+                                    rerender="RolesOnQuotePB" onSubmit="openModal();"
+                                    onComplete="closeModal();" immediate="false"/>
+            </apex:selectList>
+            <apex:pageMessages />
+            <apex:repeat value="{!roleOnQRPCWrappers}" var="roleOnCharge">
+                <apex:pageBlockSection title="{!roleOnCharge.qrpc.Name}" columns="1">
+
+                    <apex:outputField value="{!roleOnCharge.qrpc.SKU__c}" />
+                    <apex:outputField value="{!roleOnCharge.qrpc.Listed_Price__c}" />
+                    <apex:commandButton value="Add Role" onClick="openRolesPopup('{!roleOnCharge.qrpc.Id}');" rendered="{!roleOnCharge.isCustomQRPC}" />
+                    <apex:inputField value="{!roleOnCharge.qrp.SOW_Type__c}" />
+                    <apex:pageBlockTable value="{!roleOnCharge.instances}" var="instance">
+                        <apex:column value="{!instance.Name}"/>
+                        <apex:column value="{!instance.Role_Quantity__c}" rendered="{!NOT(editMode)}"/>
+                        <apex:column headerValue="{!$ObjectType.Role_Instance__c.fields.Role_Quantity__c.Label}" rendered="{!editMode}">
+                            <apex:inputField value="{!instance.Role_Quantity__c}"/>
+                        </apex:column>
+                        <apex:column value="{!instance.Hourly_rate__c}"/>
+                        <apex:column value="{!instance.Daily_rate__c}"/>
+
+                        <apex:column value="{!instance.Hours_Per_Role__c}" rendered="{!NOT(editMode)}"/>
+                        <apex:column headerValue="{!$ObjectType.Role_Instance__c.fields.Hours_Per_Role__c.Label}" rendered="{!editMode}">
+                            <apex:inputField value="{!instance.Hours_Per_Role__c}"/>
+                        </apex:column>
+                        <apex:column value="{!instance.Days_per_role__c}"/>
+                        <apex:column value="{!instance.Total_Hours__c}"/>
+                        <apex:column value="{!instance.Total_Days__c}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:repeat>
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton value="Save and Calculate" action="{!saveAndCalculate}" reRender="RolesOnQuotePB" onClick="openModal();" onComplete="closeModal();"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    <div id="loading-modal">
+        <div class="loader"></div>
+    </div>
+</apex:page>

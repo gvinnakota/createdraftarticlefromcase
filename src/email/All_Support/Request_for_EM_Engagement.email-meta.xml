@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When an internal user escalates a case by checking the &quot;Request to Escalation Management&quot; box in SFDC, it should email the Escalation Management team (Shaun O&apos;brien&apos;s team)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Request for EM Engagement</name>
+    <style>formalLetter</style>
+    <subject>ATTN: Support Escalation {!Case.CaseNumber}</subject>
+    <textOnly>{!Case.OwnerFullName} is requesting support from the Escalation Management team. Please acknowledge the request by clicking the EM Acceptance box in the case.
+
+Case Number: {!Case.CaseNumber}.
+Product: {!Case.Products__c}.
+Product Version: {!Case.Versions__c}.
+Case Creation Date: {!Case.CreatedDate}.
+
+Link to case:
+https://pivotal.lightning.force.com/one/one.app?source=alohaHeader#/sObject/{!Case.Id}/view
+
+{!Case.ThreadId__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

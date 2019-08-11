@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sales Inquiry</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Support:Helpdesk:Sales Inquiry</name>
+    <style>freeForm</style>
+    <subject>Information Needed for Quote Inquiry</subject>
+    <textOnly>***Here is the latest information on contacts for Sales Opportunities. Please send an email to the appropriate email alias according to the region.
+
+For EMEA: emea_isr@pivotal.io
+For EMEA Theatre:
+All inquiries should be sent directly to, emea_isr@pivotal.io. Andrea Carli is the ISR manager for EMEA, and will ensure that the inquiry is followed up on.
+
+For APJ Theatre:
+
+For Chinese Customer ONLY all inquiries should be sent directly to:
+Sherlyn Wan &lt;sherlyn.wan@gominemail.cn&gt;,
+Andy Cui &lt;andy.cui@gominemail.cn&gt;,
+Lisa Liu &lt;lisa.liu@gominemail.cn&gt;
+and cc  Cindy Chen &lt;cchen@pivotal.io&gt;. They will then distribute to the appropriate in country team members for follow up.
+
+All OTHER APJK inquiries should be sent directly to 	Jade Tan &lt;jtan@pivotal.io&gt; . Jade will then distribute to the appropriate in country team members for follow up. 
+
+For AMER Theatre:
+Please forward all requests for the AMER theatre directly to the ISR-internal@pivotal.io. All of the ISR team members in Americas are listed on this DL and the rep assigned to that account and/or territory will claim it and respond accordingly within the 48 hour window. ***
+
+Hi {!Contact.FirstName}​,
+
+Thanks for contacting Pivotal Customer Support.
+
+In order to better assist with this quote request, would you please provide us with the following information:
+
+Full Name:
+Email Address:
+Phone Number:
+Company Name:
+Location:
+Role:
+Interested Products:
+
+Once we confirm this information with you, we can pass it along to the Sales team on your behalf and they will reach out to you directly.
+
+We look forward to hearing from you.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

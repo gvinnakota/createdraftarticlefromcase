@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Open House &amp; DTF_Dubai_Q416.Reminder 10-31-16</name>
+    <style>none</style>
+    <subject>Reminder: Pivotal Digital Transformation Forum</subject>
+    <textOnly>&lt;[[https://pivotal.io/event/digital-transformation-forum/dubai]]&gt;
+Hi {{lead.First Name:default=there}}, 
+
+ Thank you for registering for tomorrow&apos;s Digital Transformation Forum in Dubai. See event details below: 
+
+ Date: 1 November 2016 {{my.Save the Date}}
+Time: 8h30 - 15h00
+ Location: The St. Regis Dubai &lt;[[http://www.stregisdubai.com/]]&gt;, Al Habtoor City, Sheikh Zayed Road, PO Box 124405, Dubai, UAE
+Map &lt;[[https://www.google.com/maps/place/The+St.+Regis+Dubai/@25.1832502,55.2520289,17z/data=!4m8!1m2!2m1!1sThe+St.+Regis+Dubai,+Al+Habtoor+City,+Sheikh+Zayed+Road,+Dubai,+UAE!3m4!1s0x3e5f69db64aec29b:0x3ce56b0d6a3a0da0!8m2!3d25.1833542!4d55.2542858]]&gt;
+
+ We look forward to meeting you soon! 
+
+ The Pivotal Team 
+
+ Questions? Please contact Phil Reay at preay@pivotal.io &lt;[[mailto:preay@pivotal.io]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

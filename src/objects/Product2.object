@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>ApprovalType__c</fullName>
+        <externalId>false</externalId>
+        <label>Zuora Approval Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Labs</fullName>
+                    <default>false</default>
+                    <label>Labs</label>
+                </value>
+                <value>
+                    <fullName>Tracker</fullName>
+                    <default>false</default>
+                    <label>Tracker</label>
+                </value>
+                <value>
+                    <fullName>CSO</fullName>
+                    <default>false</default>
+                    <label>CSO</label>
+                </value>
+                <value>
+                    <fullName>Alliances</fullName>
+                    <default>false</default>
+                    <label>Alliances</label>
+                </value>
+                <value>
+                    <fullName>App TX</fullName>
+                    <default>false</default>
+                    <label>App TX</label>
+                </value>
+                <value>
+                    <fullName>PCFS</fullName>
+                    <default>false</default>
+                    <label>PCFS</label>
+                </value>
+                <value>
+                    <fullName>Data</fullName>
+                    <default>false</default>
+                    <label>Data</label>
+                </value>
+                <value>
+                    <fullName>BCS</fullName>
+                    <default>false</default>
+                    <label>BCS</label>
+                </value>
+                <value>
+                    <fullName>Transformation</fullName>
+                    <default>false</default>
+                    <label>Transformation</label>
+                </value>
+                <value>
+                    <fullName>Education &amp; Enablement</fullName>
+                    <default>false</default>
+                    <label>Education &amp; Enablement</label>
+                </value>
+                <value>
+                    <fullName>Engagement Director</fullName>
+                    <default>false</default>
+                    <label>Engagement Director</label>
+                </value>
+                <value>
+                    <fullName>APLE</fullName>
+                    <default>false</default>
+                    <label>APLE</label>
+                </value>
+                <value>
+                    <fullName>Partner</fullName>
+                    <default>false</default>
+                    <label>Partner</label>
+                </value>
+                <value>
+                    <fullName>Royalty</fullName>
+                    <default>false</default>
+                    <label>Royalty</label>
+                </value>
+                <value>
+                    <fullName>SAAS</fullName>
+                    <default>false</default>
+                    <label>SAAS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Availability__c</fullName>
+        <description>Availability status of software</description>
+        <externalId>false</externalId>
+        <label>Availability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>General</fullName>
+                    <default>true</default>
+                    <label>General</label>
+                </value>
+                <value>
+                    <fullName>Controlled</fullName>
+                    <default>false</default>
+                    <label>Controlled</label>
+                </value>
+                <value>
+                    <fullName>Pre-Release</fullName>
+                    <default>false</default>
+                    <label>Pre-Release</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>Ed Services</fullName>
+                    <default>false</default>
+                    <label>Ed Services</label>
+                </value>
+                <value>
+                    <fullName>Partner Program</fullName>
+                    <default>false</default>
+                    <label>Partner Program</label>
+                </value>
+                <value>
+                    <fullName>Resell</fullName>
+                    <default>false</default>
+                    <label>Resell</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DisplayUrl</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ExternalDataSourceId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalId</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Overridden_T_E_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Overridden T&amp;E Percentage</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PSO_Custom_Package__c</fullName>
+        <externalId>false</externalId>
+        <label>PSO - Custom/Package</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+                <value>
+                    <fullName>Package</fullName>
+                    <default>false</default>
+                    <label>Package</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ProductFamily__c</fullName>
+        <externalId>false</externalId>
+        <label>Zuora Product Family</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Data</fullName>
+                    <default>false</default>
+                    <label>Data</label>
+                </value>
+                <value>
+                    <fullName>PaaS</fullName>
+                    <default>false</default>
+                    <label>PaaS</label>
+                </value>
+                <value>
+                    <fullName>Agile</fullName>
+                    <default>false</default>
+                    <label>Agile</label>
+                </value>
+                <value>
+                    <fullName>App</fullName>
+                    <default>false</default>
+                    <label>App</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ProductServiceCategory__c</fullName>
+        <externalId>false</externalId>
+        <label>Zuora Product Service Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product</fullName>
+                    <default>false</default>
+                    <label>Product</label>
+                </value>
+                <value>
+                    <fullName>Services</fullName>
+                    <default>false</default>
+                    <label>Services</label>
+                </value>
+                <value>
+                    <fullName>Ed Services</fullName>
+                    <default>false</default>
+                    <label>Ed Services</label>
+                </value>
+                <value>
+                    <fullName>Partner Program</fullName>
+                    <default>false</default>
+                    <label>Partner Program</label>
+                </value>
+                <value>
+                    <fullName>SaaS</fullName>
+                    <default>false</default>
+                    <label>SaaS</label>
+                </value>
+                <value>
+                    <fullName>Resell</fullName>
+                    <default>false</default>
+                    <label>Resell</label>
+                </value>
+                <value>
+                    <fullName>Royalty</fullName>
+                    <default>false</default>
+                    <label>Royalty</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID( Id )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Report_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Portfolio</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agile - APLE</fullName>
+                    <default>false</default>
+                    <label>Agile - APLE</label>
+                </value>
+                <value>
+                    <fullName>Agile - App Trans</fullName>
+                    <default>false</default>
+                    <label>Agile - App Trans</label>
+                </value>
+                <value>
+                    <fullName>Agile - CSD</fullName>
+                    <default>false</default>
+                    <label>Agile - CSD</label>
+                </value>
+                <value>
+                    <fullName>Agile - Data Trans</fullName>
+                    <default>false</default>
+                    <label>Agile - Data Trans</label>
+                </value>
+                <value>
+                    <fullName>Agile - DS</fullName>
+                    <default>false</default>
+                    <label>Agile - DS</label>
+                </value>
+                <value>
+                    <fullName>Agile - Labs</fullName>
+                    <default>false</default>
+                    <label>Agile - Labs</label>
+                </value>
+                <value>
+                    <fullName>Agile - Tx</fullName>
+                    <default>false</default>
+                    <label>Agile - Tx</label>
+                </value>
+                <value>
+                    <fullName>App</fullName>
+                    <default>false</default>
+                    <label>App</label>
+                </value>
+                <value>
+                    <fullName>App - Edu</fullName>
+                    <default>false</default>
+                    <label>App - Edu</label>
+                </value>
+                <value>
+                    <fullName>Customer Service</fullName>
+                    <default>false</default>
+                    <label>Customer Service</label>
+                </value>
+                <value>
+                    <fullName>Data - BCS</fullName>
+                    <default>false</default>
+                    <label>Data - BCS</label>
+                </value>
+                <value>
+                    <fullName>Data - Big Data Suite</fullName>
+                    <default>false</default>
+                    <label>Data - Big Data Suite</label>
+                </value>
+                <value>
+                    <fullName>Data - DS</fullName>
+                    <default>false</default>
+                    <label>Data - DS</label>
+                </value>
+                <value>
+                    <fullName>Data - Edu</fullName>
+                    <default>false</default>
+                    <label>Data - Edu</label>
+                </value>
+                <value>
+                    <fullName>Data - GemFire</fullName>
+                    <default>false</default>
+                    <label>Data - GemFire</label>
+                </value>
+                <value>
+                    <fullName>Data - GPDB</fullName>
+                    <default>false</default>
+                    <label>Data - GPDB</label>
+                </value>
+                <value>
+                    <fullName>Data - HAWQ</fullName>
+                    <default>false</default>
+                    <label>Data - HAWQ</label>
+                </value>
+                <value>
+                    <fullName>Data - HD</fullName>
+                    <default>false</default>
+                    <label>Data - HD</label>
+                </value>
+                <value>
+                    <fullName>Data - Resell</fullName>
+                    <default>false</default>
+                    <label>Data - Resell</label>
+                </value>
+                <value>
+                    <fullName>Data - Services</fullName>
+                    <default>false</default>
+                    <label>Data - Services</label>
+                </value>
+                <value>
+                    <fullName>PaaS</fullName>
+                    <default>false</default>
+                    <label>PaaS</label>
+                </value>
+                <value>
+                    <fullName>PaaS - App Trans</fullName>
+                    <default>false</default>
+                    <label>PaaS - App Trans</label>
+                </value>
+                <value>
+                    <fullName>PaaS - BCS</fullName>
+                    <default>false</default>
+                    <label>PaaS - BCS</label>
+                </value>
+                <value>
+                    <fullName>PaaS - CC</fullName>
+                    <default>false</default>
+                    <label>PaaS - CC</label>
+                </value>
+                <value>
+                    <fullName>PaaS - Edu</fullName>
+                    <default>false</default>
+                    <label>PaaS - Edu</label>
+                </value>
+                <value>
+                    <fullName>PaaS - Eng Director</fullName>
+                    <default>false</default>
+                    <label>PaaS - Eng Director</label>
+                </value>
+                <value>
+                    <fullName>PaaS - PAL</fullName>
+                    <default>false</default>
+                    <label>PaaS - PAL</label>
+                </value>
+                <value>
+                    <fullName>PaaS - PKS</fullName>
+                    <default>false</default>
+                    <label>PaaS - PKS</label>
+                </value>
+                <value>
+                    <fullName>PaaS - Resell</fullName>
+                    <default>false</default>
+                    <label>PaaS - Resell</label>
+                </value>
+                <value>
+                    <fullName>PaaS - Services</fullName>
+                    <default>false</default>
+                    <label>PaaS - Services</label>
+                </value>
+                <value>
+                    <fullName>Partner - Payment</fullName>
+                    <default>false</default>
+                    <label>Partner - Payment</label>
+                </value>
+                <value>
+                    <fullName>Tracker</fullName>
+                    <default>false</default>
+                    <label>Tracker</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Selling_Motion__c</fullName>
+        <externalId>false</externalId>
+        <label>Selling Motion</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agile</fullName>
+                    <default>false</default>
+                    <label>Agile</label>
+                </value>
+                <value>
+                    <fullName>Data</fullName>
+                    <default>false</default>
+                    <label>Data</label>
+                </value>
+                <value>
+                    <fullName>PaaS</fullName>
+                    <default>false</default>
+                    <label>PaaS</label>
+                </value>
+                <value>
+                    <fullName>Customer Service</fullName>
+                    <default>false</default>
+                    <label>Customer Service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Services_Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(text(ApprovalType__c), 
+"Alliances", "CSO", 
+"App TX", "CSO", 
+"APLE", "CSO", 
+"BCS", "CSO", 
+"CSO", "CSO", 
+"Data", "CSO", 
+"Education &amp; Enablement", "CSO", 
+"Engagement Director", "CSO", 
+"Labs", "Lab", 
+"Partner", "Product", 
+"PCFS", "CSO", 
+"Product", "Product", 
+"Royalty", "Product", 
+"SAAS", "Product", 
+"Tracker", "Product", 
+
+"None"
+)</formula>
+        <label>Services/Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>T_E_Percentage_Override__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>T&amp;E Percentage Override</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Measure</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X18_Digit_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <label>18 Digit ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Selling_Motion__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Report_Category__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.DESCRIPTION</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.FAMILY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.DESCRIPTION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.FAMILY</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Report_Category__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Selling_Motion__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.ACTIVE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
+        <fullName>Active_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>zqu__SKU2__c</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>zqu__Category__c</columns>
+        <columns>Category__c</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>ProductFamily__c</columns>
+        <columns>Report_Category__c</columns>
+        <columns>Selling_Motion__c</columns>
+        <columns>ProductServiceCategory__c</columns>
+        <columns>zqu__ZuoraId__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Products</label>
+    </listViews>
+    <listViews>
+        <fullName>AllProducts</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Products</label>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>Report_Category__c</columns>
+        <columns>Selling_Motion__c</columns>
+        <columns>zqu__ZuoraId__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>zqu__ZuoraId__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>SF Inactive Products</label>
+    </listViews>
+    <listViews>
+        <fullName>Zuora_Products</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>zqu__SKU2__c</columns>
+        <columns>PRODUCT2.ACTIVE</columns>
+        <columns>zqu__Deleted__c</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>Selling_Motion__c</columns>
+        <columns>ProductFamily__c</columns>
+        <columns>ProductServiceCategory__c</columns>
+        <columns>Report_Category__c</columns>
+        <columns>Availability__c</columns>
+        <columns>zqu__ZuoraId__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>zqu__ZuoraId__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>zqu__Deleted__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Zuora Products - Deleted</label>
+    </listViews>
+    <listViews>
+        <fullName>Zuora_ProductsSvc</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>zqu__SKU2__c</columns>
+        <columns>PRODUCT2.FAMILY</columns>
+        <columns>Selling_Motion__c</columns>
+        <columns>ProductFamily__c</columns>
+        <columns>ProductServiceCategory__c</columns>
+        <columns>Report_Category__c</columns>
+        <columns>Availability__c</columns>
+        <columns>zqu__ZuoraId__c</columns>
+        <columns>zqu__Deleted__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>zqu__Deleted__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>zqu__ZuoraId__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Zuora Products - not Deleted</label>
+    </listViews>
+    <webLinks>
+        <fullName>Mass_Delete</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Delete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/9.0/connection.js")}
+
+var records = {!GETRECORDIDS(  $ObjectType.Product2 )};
+
+if (records[0] == null) {
+alert("Please select at least one record.") }
+else {
+
+var errors = [];
+var result = sforce.connection.deleteIds(records);
+if (result &amp;&amp; result.length){
+var numFailed = 0;
+var numSucceeded = 0;
+for (var i = 0; i &lt; result.length; i++){
+var res = result[i];
+if (res &amp;&amp; res.success == 'true'){
+numSucceeded++;
+} else {
+var es = res.getArray("errors");
+if (es.length &gt; 0) {
+errors.push(es[0].message);
+}
+numFailed++;
+}
+}
+if (numFailed &gt; 0){
+alert("Failed: " + numFailed + "\nSucceeded: " + numSucceeded + " \n Due to: " + errors.join("\n"));
+} else {
+alert("Number of records deleted: " + numSucceeded);
+}
+}
+window.location.reload();
+}</url>
+    </webLinks>
+</CustomObject>

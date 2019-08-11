@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$DoNotCall</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$Email</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$HasOptedOutOfEmail</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingAddress</field>
+    </columns>
+    <columns>
+        <field>Account.Contacts$MailingCountry</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Ab Initio Software,Accenture,Acclaim Consulting,Aerospike,Agile Defense,AgileCraft,Alfresco Software,AltimetriK,Altoros,Anaconda Anynines,appdirect,AppDynamics,Apptio,Aqua Security,Ascendum,Aspirent,Assurity,Aunigma,Avid Systems,Aviture,Axway,Azuqua,Backbase,Bart,BeyondSOA,Birlasoft,Black Duck Software,Blue Medora,BlueTalon,Booz Allen Hamilton,Boundless,Bracket Computing,BuddhiTech,BUSINESS INTEGRA,CACI,Capgemini,Carahsoft,Cardinal Solutions,Centrify,Ceremity,CGI,ChaiOne,chaosiq,Ciber Global</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contacts$HasOptedOutOfEmail</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Partners - Part 1</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Contacts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

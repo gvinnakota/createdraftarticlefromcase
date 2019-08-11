@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Dallas Grand Opening_Q317.Confirmation Open House Only</name>
+    <style>none</style>
+    <subject>You’re confirmed for the Pivotal Dallas Grand Opening Event Thursday, September 28, 2017</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+ 
+ Thank you for registering for the upcoming Dallas Grand Opening. See event details below.
+
+Date: Thursday, September 28, 2017 {{my.Dallas Grand Opening:default=edit me}}
+
+Time: 6:00PM to 9:00PM
+ Location: Pivotal Dallas
+ Address: 3001 Hackberry Road, Irving, TX 75063 (map &lt;[[https://www.google.com/maps/place/3001+Hackberry+Rd,+Irving,+TX+75063/@32.9267769,-96.9880699,17z/data=!3m1!4b1!4m5!3m4!1s0x864c299f70a09d63:0xcd7539901d756fdf!8m2!3d32.9267769!4d-96.9858812]]&gt;)
+
+Questions? Please contact Peter Schmitt via email at pschmitt@pivotal.io &lt;[[mailto:pschmitt@pivotal.io]]&gt; or visit our website &lt;[[https://pivotal.io/events?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=northam-event-dallas-grand-opening-q317]]&gt;.
+
+Sincerely,
+The Pivotal Team
+See Agenda &lt;[[https://pivotal.io/event/dallas-grand-opening?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=northam-event-dallas-grand-opening-q317]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>CSV_Separator__c</fullName>
+        <defaultValue>","</defaultValue>
+        <externalId>false</externalId>
+        <label>CSV Separator</label>
+        <length>1</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Deal_Notification_Emails__c</fullName>
+        <defaultValue>'product_ops@pivotal.io'</defaultValue>
+        <externalId>false</externalId>
+        <label>New Deal Notification Emails</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PAC_Email__c</fullName>
+        <defaultValue>'product_ops@pivotal.io'</defaultValue>
+        <externalId>false</externalId>
+        <label>PAC Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <label>PAC Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.03-22-17 V5N4</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, 24 Mar</subject>
+    <textOnly>March 24, 2017
+Vol 5, No 3
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – Pivotalisticle
+All Things Product &lt;[[#product-update]]&gt; – 2017: The Year of .NET!
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – You Belong—Everyday D&amp;I in San Francisco
+My Name Is &lt;[[#my-name-is]]&gt; – Natalie Bonifede
+pivotalisticle
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+The Pivotal experience, as surfaced on Twitter, Pivotal blogs, and Instagram is running at peak loads. That suggests a diffusion of Pivots whirring at higher RPMs than usual to expand the tent and make more space on the cloud-native business and cultural canvas. Pivotal&apos;s March madness looked like this:
+
+
+ - Pivotal Acceleration Lab launch—cohort #2 of partners train up on cloud-native
+ - Partnering with Google on GCP &lt;[[https://content.pivotal.io/announcements/pivotal-cloud-foundry-and-google-cre-together-driving-customer-anxiety-towards-zero]]&gt;; BOSH and Kubernetes cook up KUBO &lt;[[https://content.pivotal.io/announcements/meet-kubo-bosh-powered-web-scale-release-engineering-for-kubernetes]]&gt; (then there was thing about being one of Google&apos;s partners of the year).
+ - #ImAPivot &lt;[[https://pivotal.io/imapivot]]&gt;—The many voices and dimensions of software development. Add yours!
+ - Enter Pivotal Atlanta (the mayor dropped in to say hello)
+ - Published our latest D&amp;I numbers &lt;[[https://content.pivotal.io/blog/diversity-and-inclusion-in-everyday-work]]&gt;
+
+
+In this issue, Zach Brown adds to the canvas, writing up on what&apos;s percolating with the .NET side of the canvas with Microsoft, in our big PCF release in April (keep that internal-only). Pivotal offices have become wellsprings of activity around D&amp;I, and in &quot;Labs + Culture&quot;, two Pivots provide a glimpse on the approach from San Francisco.
+ 
+Finally, next Friday, March 31 is Transgender Day of Visibility &lt;[[http://www.transstudent.org/tdov]]&gt; (TDOV). Offices are encouraged to celebrate, and show what Pivots support and are all about—tag @Pivotal, and use #tdov to share any celebration shots from you and your office.
+ 
+Enjoy.
+2017: The Year of .NET!
+
+
+
+
+Zach Brown &lt;[[#author-socialcast-profile]]&gt;, Strategic Product Owner, Cloud Foundry
+Java and the .NET frameworks represent the two largest 
+footprints in custom enterprise software. It follows that they are also the two largest areas of opportunity for moving new and existing workloads onto Pivotal Cloud Foundry.
+
+As for 
+Java, it’s been said that “PCF and Spring go together like peanut butter and jelly.” Certainly the elegant integration between the two has made Java feel like a first-class citizen on the platform. But what about .NET?
+
+In late 2015, Pivotal debuted the ability to deploy and run .NET apps on Windows 2012 R2 cells running in Cloud Foundry. Since then, many customers have adopted the technology and several are running production .NET workloads on the stack today. However, our customers’ feedback has been that the experience lacks the first-class feel of the Spring integration.
+
+Taking this feedback into consideration, R&amp;D teams have put tremendous effort into improving the experience for developers and operators running .NET and Windows workloads on PCF. With the release of PCF 1.10 (April) and a new tile, PCF Runtime for Windows, .NET developers and operators will get some important new features that make for a significantly upgraded PCF experience.
+
+Operators will get Ops Manager integration, BOSH-management of Windows cells, and support for BOSH add-ons including IPSec; developers will get a new HWC buildpack for deploying 
+traditional ASP .NET apps to Windows. Additionally, the Steeltoe OSS project &lt;[[https://steeltoe.io/]]&gt; will GA this month, bringing the power of Spring Cloud Services to .NET developers, along with connectors that automatically wire up common PCF backing services.
+
+Taken together with existing support for the .NET Core buildpack (for deploying new .NET Core apps to Linux) and the broader platform support for Microsoft Azure, this becomes a very compelling solution for .NET/Windows shops, giving developers here all the speed, automation, and scalability of cloud-native architectures. This rings especially true for shops moving from a .NET legacy to a future of polyglot microservices.
+
+It’s often said that the features you ship in the first quarter of the year end up driving the big software deals that close in the end of the year (given the extended sales cycles common in enterprise software).
+
+With a first-class .NET experience we are poised to make 2017 into the year of .NET.
+Interestings
+
+
+
+
+
+
+
+
+
+ - 451 Research teed up a convincing profile &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/analyst-relations/reports-for-customers/reports-for-paas-cloud/451pivotalpitchesspringclouddataflowforcontinuousdataprocessing]]&gt; on Spring Cloud Dataflow&apos;s command of continuous data integration and microservices.
+ - FTW: Spring Boot &amp; Spring Cloud downloads &lt;[[https://twitter.com/rseroter/status/844221783637217281]]&gt; keep going. And going.  
+ - Ready for blockchain applications beyond digital currency? IBM is. Check it out &lt;[[https://arstechnica.com/business/2017/03/canadian-banks-chinese-energy-company-to-use-ibms-blockchain-service/]]&gt;. 
+ - Customer Alert: The Pivotal Analytics Innovation Roadshow &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/events/pivotal-analytics-innovation-roadshow]]&gt; is coming to US and EMEA, Apr–Aug.
+ - Picking up #Slack— Pointers &lt;[[https://docs.google.com/a/pivotal.io/presentation/d/1pLixKt-uoff0d-dvsyUf_MvQqTDps0mKDJe6sh8PHLk/edit?usp=sharing]]&gt; for taking an inclusive approach at project kick-offs.
+ - UX Matters: Deep and broad meditation &lt;[[http://www.uxmatters.com/mt/archives/2017/03/design-for-fingers-touch-and-people-part-1.php]]&gt; on mobile design.
+YOU BELONG—Everyday D&amp;I in San Francisco
+
+
+
+
+Sarah Day &lt;[[#author-socialcast-profile]]&gt;, Senior Technical Writer, Cloud Foundry
+This article was co-written with Cloud Foundry Technical Program Manager, Tom Lee.
+ 
+The work to create an inclusive culture is well represented by Pivotal’s values to “Do the right thing,” “Do what works,” and to “Be kind.” At Pivotal, grassroots Diversity &amp; Inclusion groups have developed across many offices—which has created a real platform for people from a wide variety of backgrounds and life experiences. Listening to a broad range of voices—underrepresented ones in particular—is one way of “doing the right thing.”
+ 
+Moreover, diversity efforts are about “doing what 
+works” in a way that makes for an office where everyone feels included—not in everything that goes on, but in making people feel like they belong here. When folks feels happy, safe, and respected, it’s easier to concentrate on building better things. The workplace itself has to work for its employees.
+
+Lastly, a spirit of kindness, curiosity, and empathy makes the issues diverse groups face impossible to ignore. “Be” is a verb, and “being kind” is not just an attitude. It’s an action.
+
+In 2016, the Pivotal values coalesced as the Diversity Council and grassroots teams in Pivotal offices around the world. Their efforts further the goals of a truly inclusive culture. The San Francisco office came together early on to discuss what D&amp;I means to us, and we came up with a set of core statements &lt;[[https://docs.google.com/a/pivotal.io/document/d/1c3uJJfdc9ConkkowvNQFlU2FxlJpfOCwSjxUY1byGkY/edit?usp=sharing]]&gt; (some might call this our mission statement). From there, we founded initiatives that were meaningful to us.
+
+From that we saw both dialogue and action: We had over a dozen initiatives ranging from getting more mugs with women on them, to bringing Implicit Bias &lt;[[https://en.wikipedia.org/wiki/Implicit-association_test]]&gt; and Ally trainings &lt;[[https://frameshiftconsulting.com/ally-skills-workshop/]]&gt; to San Francisco, to celebrating LGBTQ Pride. You can see a list of what we did in 2016 here &lt;[[https://docs.google.com/a/pivotal.io/presentation/d/1E2koR51P76xKTHdD2xProZZkYGOCGV-gVwc0WvUwMgw/edit?usp=sharing]]&gt;.
+
+The neon sign we installed in our common area that says &quot;You belong Here&quot; encapsulates our efforts:
+ 
+
+ 
+For 2017, our office is looking to “diversify” our 
+efforts. This will include a “Bring your child to work day”, and increasing cross-office coordination and initiatives. Check out this document &lt;[[https://docs.google.com/a/pivotal.io/document/d/1iWkbWLpE_sBNUiaXudmr0w4be-HsMiLUrMr9xbf3kgM/edit?usp=sharing]]&gt; to  see our current ideas.
+
+We&apos;re excited in San Francisco to share our stories, but there are so many other great stories out there from other offices! I 
+wish we could share them all. All of us can continue to make D&amp;I an everyday part of our culture, and each one of us can work to make Pivotal even more inclusive. Some ways to do that include:
+
+
+ - Get involved locally by reaching out to your grassroots team and start to participate;
+ - Join the #diversity slack channel and jump into the conversation;
+ - If your office is one of the few without a D&amp;I Grassroots team, you can help start one. If that sounds daunting, don’t worry! You have a whole slew of other offices to help you
+
+
+Let’s continue to ensure that everyone feels like they belong at Pivotal. Let’s be kind to each other by listening to everyone’s stories. Let’s do the right thing by amplifying the voices of those who aren’t being heard. And let’s do what works by getting involved.
+Natalie Bonifede
+
+
+
+
+Diversity &amp; Inclusion Business Partner
+At Pivotal I...
+Help us become a fairer, more equitable company. I work across the company to develop programs, processes, and structural changes that will enable all Pivots to thrive and do amazing work.
+You can find me...
+In the SF office, bouncing around at my desk (yoga ball chair) or discovering new work nooks. On weekends, I’m typically dog watching around Lake Merritt &lt;[[http://www.lakemerritt.org/]]&gt;.
+Currently, I am working on…
+The strategy and roadmap for 2017. This is my fourth week on the job, so I’m learning as much as I can while hitting the ground running with some tactical improvements. Some of those include working with grassroots teams to determine how we can better support their efforts, adding new members (and perspectives) to the D&amp;I council, and increasing communications and collaboration across offices.
+ 
+More broadly, I&apos;m interested in expanding the conversation by engaging more allies, providing Pivots with the tools and resources they need to feel effective and happy in their roles, and helping the company develop a strategy that integrates D&amp;I into all facets of the business and how we work every day.
+In my spare time…
+More often than not I’m working on a side project outside of my day job. Currently, I’m helping write a book about women and the culture of Silicon Valley. Unfortunately, I spend a fair share of time on BART (ugh)... but, fortunately that means I do a lot of reading and listening (yay!). At present I’m reading Swing Time and listening to Pod Save America (I highly recommend both!). I’m also (slowly) learning Spanish.
+Something you probably don’t know about me…
+I love to travel solo and take one solo trip per year. So far I&apos;ve done South Africa, Malawi, Mexico, Panama, Hong Kong, and Vietnam. Don’t have my 2017 destination yet and always looking for suggestions.
+Friends: Canine greetings in the East Bay; Natalie with bestie, whom she met in Cape Town.
+To me Pivotal…
+Uniquely positioned to be a leader in the D&amp;I conversation, particularly because we have the top companies across various industries looking to us to show them the way. Ultimately, we’re in the business of building and replicating great teams. I&apos;m thrilled to be part of that.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

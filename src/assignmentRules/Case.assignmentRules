@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Case Assignment Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Special_Practices_US_Citizen_US_Soil</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISNEW(),  RecordType.Name == 'Technical',  OR(IsPIckVal( Account.Special_Handling__c ,'SP - Special Practices') ,  IsPIckVal( Account.Special_Handling__c ,'EH - Executive Handling') )    )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Special_Practices_CSR</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISNEW(),  RecordType.Name == 'Non-Technical',  OR(IsPIckVal( Account.Special_Handling__c ,'SP - Special Practices') ,  IsPIckVal( Account.Special_Handling__c ,'EH - Executive Handling') )   )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EU_Safe_Harbour</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISNEW(),   IsPIckVal( Account.Special_Handling__c ,'EU - Safe Harbour')  )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>PKS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISNEW(),ISPICKVAL(Products__c, 'Pivotal Container Service (PKS)'))</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Customer_Engineers</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND( ISNEW(), RecordType.Name == 'Technical', NOT(IsPIckVal(Origin ,'Email'))  )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Customer_Service</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  ISNEW(),  RecordType.Name == 'Non-Technical',  NOT(IsPIckVal(Origin ,'Email'))   )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>NOT(ISNEW())</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

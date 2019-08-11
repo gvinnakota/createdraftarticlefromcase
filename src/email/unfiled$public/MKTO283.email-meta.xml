@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_MORE Spring Framework 4.0.1 7AM.Reminder 1</name>
+    <style>none</style>
+    <subject>Webinar Reminder: Introduction to Spring Framework 4.0.1 on January 23rd</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+We are looking forward to having you join us for the webinar Introduction to Spring Framework 4.0.1 with Juergen Hoeller and the Spring Team.
+If you haven&apos;t done so yet, we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html.
+Event Details:
+
+Date: Thursday, January 23, 2014
+Europe: 3:00pm GMT (London, GMT)  Join the WebEx &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=660434321&gt;
+Dial In: 
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show all global call-in numbers
+Show toll-free dialing restrictions
+
+Access code: 660 434 321
+ 
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>to people who filled out Benchmark teaser form</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Website_Benchmark_Early Access.Notification - full survey is live</name>
+    <style>none</style>
+    <subject>Learn how to innovate in a software-driven world</subject>
+    <textOnly>&lt;[[https://benchmark.builttoadapt.io/overall]]&gt;
+Hi {{lead.First Name:default=there}},
+
+The Built to Adapt Benchmark is now live. The Benchmark assessed more than 1,600 respondents from the world&apos;s top organizations to explore how they align their product development and IT operations with business goals to build software that delivers desirable outcomes.
+
+
+Take the questionnaire to see how your results compare.
+View the Benchmark &lt;[[https://benchmark.builttoadapt.io/overall]]&gt;
+Regards, 
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

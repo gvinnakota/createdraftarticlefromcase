@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign_Newsletter FY16.Newsletter 10-31-16</name>
+    <style>none</style>
+    <subject>October 2016 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+It’s the spooky season here in the United States with Halloween closing out the month. Here at Pivotal we’d rather give out treats. So at the end of this issue, we’ll share a special treat for our customers who have active accounts on PWS. (Hint: if you create a paid account now you can still collect the treat). This issue also reviews some upcoming buildpack changes and an introduction to &apos;cf ssh&apos;. May your code be free of ghosts and goblins. 
+
+ Best Regards,
+The Pivotal Web Services Team 
+
+ Node 0.10 being removed from the PWS Node Buildpack on October 31, 2016 
+
+ Long-term support for Node.js 0.10.x provided by the Node.js LTS Working Group will end on October 31, 2016. Therefore, the Node.js 0.10.x binary dependency provided by the Node.js buildpack will no longer be available in the first release of the buildpack as of November 1, 2016. The release will be available immediately on PWS. Please adjust your Node.js buildpack applications on PWS to use a supported version of Node.js by that time. 
+
+ See the Node.js Long-term Support Schedule &lt;[[https://github.com/nodejs/LTS#lts_schedule]]&gt; for more detailed information. 
+
+ Default version of Go in the Go Buildpack will change to 1.7.x after November 18, 2016 
+
+ The version of Go in the Go Buildpack will change from version 1.6.3 to the latest 1.7.x version (currently 1.7.2) in the first release of the Go Buildpack as of November 19, 2016. If you would like to continue using Go 1.6.3 with your PWS app after that date, please set the $GOVERSION environment variable in your app, or use your choice of Go dependency management utility to lock your version of Go to 1.6.3. For more information, refer to the documentation that can be found here: http://docs.cloudfoundry.org/buildpacks/go/ &lt;[[http://docs.cloudfoundry.org/buildpacks/go/]]&gt; 
+
+ Production release of the .Net Core Buildpack now available. Beta release will be unavailable after November 18, 2016 
+
+ The .Net Core Buildpack version 1.0.2 is now available as “dotnet_core_buildpack” on PWS. The 1.0.0 beta version of the buildpack will continue to be available until November 18, 2016. If you have apps on PWS that explicitly depend on the “dotnet_core_buildpack_beta” buildpack, please adjust these apps to depend on the newer “dotnet_core_buildpack” buildpack by that date. 
+
+ Inspecting your application via SSH on PWS
+ 
+We recently took a look at our forums and surveys and noticed many customers were asking to ssh into their app. We have good news! PWS has had this capability for a while. All you have to do is use the cf CLI and the command `cf ssh  &lt;APPNAME&gt;’ and you are in. Note that any changes you make will only be applied temporarily to that instance and that those changes will lost when the instance restarts. To clean up and restore the instance that was modified to a pristine state, execute the command `cf restart-app-instance  &lt;APPNAME&gt;  &lt;INDEX&gt; `. 
+
+ More details are covered in the documentation &lt;[[http://docs.run.pivotal.io/devguide/deploy-apps/ssh-apps.html]]&gt;, including the method for using other SSH clients directly. You can use these other SSH clients to log into your container and copy files back and forth to it securely with `scp` and `sftp`, which could be useful as a last-ditch effort to recover your app source code should something happen to your source-code repository. We hope you find the ability to ‘shell’ into your apps enables you to manage and develop your code more efficiently. 
+
+ Halloween Treat 
+
+ As a treat to our loyal customers, we are giving those customers who have an account on PWS with an active credit card an extra $10 of app usage credit on their account. You can claim this credit by visiting the billing page, and clicking on the “Promo Code” button and entering ‘PWSTREAT’. Note that this offer expires on November 7, 2016.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

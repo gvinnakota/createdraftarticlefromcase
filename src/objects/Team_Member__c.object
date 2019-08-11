@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Account_Area__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Area__c</formula>
+        <label>Account Area</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Area__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Region</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Theater__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Theater__c</formula>
+        <label>Account Theater</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Team Members</relationshipLabel>
+        <relationshipName>Team_Members</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>App__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>App</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Designated_Advisory__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If Team Member Role is Engagement Director, then Designated / Advisory is required</inlineHelpText>
+        <label>Designated / Advisory</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Team_Member_Role__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Designated</fullName>
+                    <default>false</default>
+                    <label>Designated</label>
+                </value>
+                <value>
+                    <fullName>Advisory</fullName>
+                    <default>false</default>
+                    <label>Advisory</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Engagement Director</controllingFieldValue>
+                <valueName>Designated</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engagement Director</controllingFieldValue>
+                <valueName>Advisory</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Number_of_FTE_PA_s_on_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.PA_Coverage_rollup__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>formula looking up to account</inlineHelpText>
+        <label>Number of FTE PA's on Account</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ops__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Ops</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Percentage_of_Effort__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>enter a number between 1 and 100, required if Team Member Role is PA or ED</inlineHelpText>
+        <label>Percentage of Effort</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Resident__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Resident</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team_Member_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Team Member Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Team_Members</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Team_Member_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Team Member Role</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Engagement Director</fullName>
+                    <default>false</default>
+                    <label>Engagement Director</label>
+                </value>
+                <value>
+                    <fullName>DSE</fullName>
+                    <default>false</default>
+                    <label>DSE</label>
+                </value>
+                <value>
+                    <fullName>Executive Sponsor</fullName>
+                    <default>false</default>
+                    <label>Executive Sponsor</label>
+                </value>
+                <value>
+                    <fullName>Platform Architect</fullName>
+                    <default>false</default>
+                    <label>Platform Architect</label>
+                </value>
+                <value>
+                    <fullName>PA 1</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PA 1</label>
+                </value>
+                <value>
+                    <fullName>PA 2</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PA 2</label>
+                </value>
+                <value>
+                    <fullName>PA 3</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PA 3</label>
+                </value>
+                <value>
+                    <fullName>PA 4</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PA 4</label>
+                </value>
+                <value>
+                    <fullName>PA 5</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PA 5</label>
+                </value>
+                <value>
+                    <fullName>Resident PA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Resident PA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>populated by automated process</inlineHelpText>
+        <label>Team</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Team</fullName>
+                    <default>false</default>
+                    <label>Sales Team</label>
+                </value>
+                <value>
+                    <fullName>PA Team</fullName>
+                    <default>false</default>
+                    <label>PA Team</label>
+                </value>
+                <value>
+                    <fullName>ED Team</fullName>
+                    <default>false</default>
+                    <label>ED Team</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Number_of_FTE_PA_s__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Number_of__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>formula field looking up to account</inlineHelpText>
+        <label>Total Number of FTE PA's</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>junction object for (BAT) Balance Account Team members</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Team Member</label>
+    <nameField>
+        <displayFormat>BAT-{0000}</displayFormat>
+        <label>Team Member Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Team Members</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>Engagement_Directors</fullName>
+        <columns>Account_Area__c</columns>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Engagement Director</value>
+        </filters>
+        <label>Engagement Directors- All</label>
+        <sharedTo>
+            <role>AMER_EAST_Engagement_Directors</role>
+            <role>AMER_NORTH_Central_North_Engagement_Directors</role>
+            <role>AMER_New_England_Engagement_Directors</role>
+            <role>AMER_SOUTH_Engagement_Directors</role>
+            <role>AMER_West_Engagement_Directors</role>
+            <role>APJ_Australia_New_Zealand_Engagement_Director</role>
+            <role>APJ_Engagement_Directors</role>
+            <role>EMEA_Engagement_Directors</role>
+            <role>FED_Engagement_Directors</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Engagement_Directors_Central</fullName>
+        <columns>Account_Area__c</columns>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Engagement Director</value>
+        </filters>
+        <filters>
+            <field>Account_Area__c</field>
+            <operation>contains</operation>
+            <value>AMER South,Federal</value>
+        </filters>
+        <label>Engagement Directors - South/Federal</label>
+        <sharedTo>
+            <role>AMER_SOUTH_Engagement_Directors</role>
+            <role>FED_Engagement_Directors</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Engagement_Directors_Central1</fullName>
+        <columns>Account_Area__c</columns>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Engagement Director</value>
+        </filters>
+        <filters>
+            <field>Account_Area__c</field>
+            <operation>contains</operation>
+            <value>Central</value>
+        </filters>
+        <label>Engagement Directors - Central</label>
+        <sharedTo>
+            <role>AMER_NORTH_Central_North_Engagement_Directors</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Engagement_Directors_East</fullName>
+        <columns>Account_Area__c</columns>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Engagement Director</value>
+        </filters>
+        <filters>
+            <field>Account_Area__c</field>
+            <operation>contains</operation>
+            <value>East</value>
+        </filters>
+        <label>Engagement Directors - East</label>
+        <sharedTo>
+            <role>AMER_EAST_Engagement_Directors</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Engagement_Directors_NE_Canada</fullName>
+        <columns>Account_Area__c</columns>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Engagement Director</value>
+        </filters>
+        <filters>
+            <field>Account_Area__c</field>
+            <operation>contains</operation>
+            <value>New England,Canada</value>
+        </filters>
+        <label>Engagement Directors - NE/ Canada</label>
+        <sharedTo>
+            <role>AMER_New_England_Engagement_Directors</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Engagement_Directors_West</fullName>
+        <columns>Account_Area__c</columns>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Engagement Director</value>
+        </filters>
+        <filters>
+            <field>Account_Area__c</field>
+            <operation>contains</operation>
+            <value>West</value>
+        </filters>
+        <label>Engagement Directors - West</label>
+        <sharedTo>
+            <role>AMER_West_Engagement_Directors</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PA_Teams</fullName>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>App__c</columns>
+        <columns>Ops__c</columns>
+        <columns>Resident__c</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Total_Number_of_FTE_PA_s__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Team_Member_Role__c</field>
+            <operation>equals</operation>
+            <value>Resident PA,Platform Architect</value>
+        </filters>
+        <label>Platform Architects</label>
+    </listViews>
+    <listViews>
+        <fullName>Team_Member_List</fullName>
+        <columns>Account__c</columns>
+        <columns>Team_Member_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Team_Member_Role__c</columns>
+        <columns>Percentage_of_Effort__c</columns>
+        <columns>Designated_Advisory__c</columns>
+        <columns>App__c</columns>
+        <columns>Ops__c</columns>
+        <columns>Resident__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Team Members</label>
+    </listViews>
+    <validationRules>
+        <fullName>if_ED_app_ops_resident_must_be_false</fullName>
+        <active>true</active>
+        <errorConditionFormula>ispickval( Team_Member_Role__c , 'engagement Director')
+&amp;&amp;
+or(
+ App__c = true,
+ Ops__c = true,
+ Resident__c = true
+)</errorConditionFormula>
+        <errorMessage>If Role is Engagement Director, App, Ops, and Resident must be False (unchecked)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>if_ED_then_Designated_Advisory_is_requir</fullName>
+        <active>true</active>
+        <errorConditionFormula>ispickval( Team_Member_Role__c, 'Engagement Director')
+&amp;&amp;
+ispickval( Designated_Advisory__c, '' )</errorConditionFormula>
+        <errorMessage>If Team Member Role is Engagement Director, then Designated / Advisory is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>if_PA_or_ED_Effort_is_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(
+ ispickval(Team_Member_Role__c, 'PA1'),
+ ispickval(Team_Member_Role__c, 'PA2'),
+ ispickval(Team_Member_Role__c, 'PA3'),
+ ispickval(Team_Member_Role__c, 'PA4'),
+ ispickval(Team_Member_Role__c, 'PA5'),
+ ispickval(Team_Member_Role__c, 'Engagement Director')
+)
+&amp;&amp;
+isblank( Percentage_of_Effort__c )</errorConditionFormula>
+        <errorMessage>If Team Member Role is PA or ED, then Percentage of Effort is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>if_effort_is_less_than_1</fullName>
+        <active>true</active>
+        <errorConditionFormula>or(
+ Percentage_of_Effort__c &lt; 0.01
+,
+ Percentage_of_Effort__c &gt; 1
+)</errorConditionFormula>
+        <errorMessage>Percentage of Effort must be between 1 and 100</errorMessage>
+    </validationRules>
+</CustomObject>

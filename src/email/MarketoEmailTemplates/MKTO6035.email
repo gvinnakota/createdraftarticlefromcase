@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Kubernetes的运维之殇与PKS的解决之道</title> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; "> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody style=""> 
+<tr style=""> 
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody style=""> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td> 
+</tr> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr style=""> 
+<td style=""> 
+<!-- <div class="mktEditable" id="banner-main" style=""> --> <a href="http://connect.pivotal.io/Session10_registration-page.html.html" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_05_14.png" width="600" border="0" alt="Kubernetes的运维之殇与PKS的解决之道"></a> 
+<!-- </div> --></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:25px 30px;" colspan="3">作为目前最火热的开源容器编排引擎，在为软件开发和运维团队提供了跨云平台、分布式自动化部署、大规模可伸缩、应用容器化管理等功能的同时，Kubernetes 也给运维和管理团队带来了新的问题。为此，Pivotal 联手 Google 和 VMWare，基于开源的 Kubo 项目推出了完整的解决方案，即Pivotal Container Service（以下称PKS）。<br><br> 
+<!-- 我们将在第五期 Pivotalk 公开课中为您带来主题为<span style="font-family:'宋体'">“</span>轻松应战 Postgres & Greenplum 非法/歧义字符加载入库<span style="font-family:'宋体'">”</span>的在线讲解。我们欢迎关注 GP 的小伙伴们加入我们的课程讨论，与我们的技术专家互动分享。<br>
+<br> --> 机会来了，赶快报名参加我们<b>第 10 期<span style="font-family:'宋体'">“</span>Pivotalk技术公开课<span style="font-family:'宋体'">”</span></b>。Pivotal 的云计算专家将为您详解 PKS 系统性 ，来帮助大家了解这一系列运维难题的解决之道。 欢迎小伙伴们加入课程讨论，每位听课者均有机会赢取我们送出的T恤衫和精美小礼品。赶快行动吧！ </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>活动信息</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 0px 30px;"> 
+<table width="100%"> 
+<tbody>
+<tr> 
+<td style="width:;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" width="67"><span style="color:#01ad9d">课程主题：</span></td>
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">Kubernetes的运维之觞与PKS的解决之道</td> 
+</tr> 
+<tr> 
+<td style="width:;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color:#01ad9d">主讲嘉宾：</span></td>
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> Steven Ge（葛宁伟） &nbsp;Pivotal 大中华区云计算资深架构师</td> 
+</tr> 
+<tr> 
+<td style="width:;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color:#01ad9d">课程时间：</span></td>
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">2018 年 5 月 29 日晚 20：00 - 21：10</td> 
+</tr> 
+<tr> 
+<td style="width:;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top"><span style="color:#01ad9d">适合对象：</span></td>
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">包括但不限于开发、运维团队成员及所有对Kubernetes、容器技术、PaaS/CaaS感兴趣的技术和管理人员</td> 
+</tr> 
+</tbody>
+</table> 
+<!--<br>
+<span style="color:#01ad9d">参与方式：</span>电脑或手机，只要你能上网即可参加。（直播平台的链接将在会前参会确认函中</td> --></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="padding-bottom:25px;padding-top:27px"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td width="240"></td> 
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="http://connect.pivotal.io/Session10_registration-page.html.html">立即报名</a></td> 
+<td width="240"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>课程简介</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;">本次课程从 Kubernetes 的运维痛点出发，分析并指出可能的技术解决方案，并以此为切入点，介绍 Google 与 Pivotal 联合给出的解决方案之一：PKS的背景、技术架构、产品特性、以及对应的竞品分析。</td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>学习要点</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;"> 
+<table width="100%"> 
+<tbody>
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color:#01ad9d">●</span> &nbsp;问题是什么？--Kubernetes运维中面临的困难和挑战</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color:#01ad9d">●</span> &nbsp;可能的解决方案是什么？</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> <span style="color:#01ad9d">●</span> &nbsp;PKS是什么？--PKS简介</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top"><span style="color:#01ad9d">●</span> &nbsp;PKS是如何解决这些问题的？--PKS的架构与特性</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top"><span style="color:#01ad9d">●</span> &nbsp;为什么要选择PKS？--竞品分析</td> 
+</tr> 
+</tbody>
+</table> 
+<!-- <span style="color:#01ad9d">●&nbsp;</span> 问题是什么？--Kubernetes运维中面临的困难和挑战<br> <span style="color:#01ad9d">●&nbsp;</span>可能的解决方案是什么？<br> <span style="color:#01ad9d">●&nbsp;</span> PKS是什么？--PKS简介<br> <span style="color:#01ad9d">●&nbsp;</span>PKS是如何解决这些问题的？--PKS的架构与特性<br> 
+ <span style="color:#01ad9d">●&nbsp;</span>为什么要选择PKS？--竞品分析 --> </td> 
+</tr> 
+<!-- <tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-left:95px;">下发，报名时请务必填写准确的联系方式）</td>
+</tr> --> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>讲师介绍</strong></td> 
+</tr> 
+<tr> 
+<td style="padding-left:30px;padding-right:20px" width="130" align="left" valign="middle"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018514.png" border="0" width="130" height="130" alt="闫钢"></td> 
+<td colspan="2" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-right:30px;">Steven Ge（葛宁伟）&nbsp;&nbsp; Pivotal 大中华区云计算资深架构师，职业生涯曾就职于Infosys，HP，Tuev-Nord, ModixGmbH，国信朗讯等企业，专注于系统架构设计与实现，软件产品研发，技术管理等工作；在电商、零售、金融、电信、汽车等行业有丰富的行业领域知识和经验。</td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="white">&nbsp;</td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="padding-bottom:27px;padding-top:27px"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody>
+<tr> 
+<td width="240"></td> 
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="https://jinshuju.net/f/W3w5Cz">立即报名</a></td> 
+<td width="240"></td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr>  --> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>阅读分享</strong></td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px"><a style="color:#4F81BD;" href="https://mp.weixin.qq.com/s?__biz=MzA4NzE4MjIyNA==&amp;mid=2651105124&amp;idx=1&amp;sn=6d4aa27ddfe464e93faac5df86f37ce8&amp;chksm=8bcd599bbcbad08d130095eb777d5df7a7c3d57acc127c40092165f9b0c0641702116552e826#rd">Apche Geode/Pivotal GemFire 应用的最佳实践</a><br> <a style="color:#4F81BD;" href="https://mp.weixin.qq.com/s?__biz=MzA4NzE4MjIyNA==&amp;mid=2651105128&amp;idx=1&amp;sn=7ec6c28d5cc04aaae86dcf76624f8d12&amp;chksm=8bcd5997bcbad0813a4997257867625beec1abd968c23fb947b29ae0fdc2bef345dba50a017c#rd">Apche Geode/Pivotal GemFire 对下一代的数据需求</a><br> <a style="color:#4F81BD;" href="https://mp.weixin.qq.com/s?__biz=MzA4NzE4MjIyNA==&amp;mid=2651104955&amp;idx=1&amp;sn=937a0c4c157203a9105dc0d5dd73b20d&amp;chksm=8bcd5844bcbad152b615286f99aae3700c08c6a8c336db2e5d451764c71b2099630e0d6e6437#rd">大数据携手快数据，不只是打击欺诈而已</a><br> <br></td> 
+</tr> --> 
+<tr> 
+<td colspan="3" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;"> 
+<!-- Pivotalk 系列技术公开课是 Pivotal 打造的在线互动平台，内容聚焦硅谷和行业的前沿技术，且与实践紧密相连。我们欢迎小伙伴们加入我们的技术社区，与我们的技术大咖互动分享。<br><br> --> 
+<div style="color:#4F8EBD;"> 
+<b>「Pivotalk系列公开课」视频回顾</b> 
+</div> 
+<table width="100%" style="padding-left:24px;"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #4F8EBD; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top"> 1. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/3364">如何使用Spring Boot/Spring Cloud 实现微服务应用</a><br> 2. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/3478">如何使用Spring XD/Spring Cloud Data Flow构建Data Microservices</a><br> 3. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/4407">Cloud Foundry技术新纪元 2017年发展趋势前瞻</a><br> 4. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/4777">轻松应战Postgres &amp; Greenplum非法/歧义字符加载入库</a><br> 5. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/5012">Pivotal GemFire功能及开发应用实例</a><br> 6. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/5393">Greenplum DB在企业中的最佳实践</a><br> 7. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="https://edu.csdn.net/course/detail/6334">持续集成工具之Concourse </a> <br> 8. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://www.itdks.com/liveevent/detail/9886">新一代PaaS 平台 --- Pivotal Cloud Foundry 2.0平台全面解析 </a> <br> 9. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://www.itdks.com/liveevent/detail/11476">50分钟get你也许不知道的Spring Boot2.0新特性</a> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td><span style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></span></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<!-- Start of footer --> 
+<!-- start of social links // --> 
+<!-- End of social links // --> 
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> <span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2017 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+<!--<p> --></td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of footer // --></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

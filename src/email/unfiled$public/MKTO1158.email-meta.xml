@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Website_iOS8.Confirmation</name>
+    <style>none</style>
+    <subject>iOS 8 Cheat Sheet</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+ 
+Thank you for your interest in the iOS 8 Cheat Sheet &lt;http://pivotallabs.com/wordpress/wp-content/uploads/2014/09/iOS-8-Cheat-Sheet-Pivotal-Labs1.pdf&gt; by Pivotal Labs. We hope you find this report useful and informative.
+ 
+You can download the report here. &lt;http://pivotallabs.com/wordpress/wp-content/uploads/2014/09/iOS-8-Cheat-Sheet-Pivotal-Labs1.pdf&gt;
+ 
+If you have any questions, please don&apos;t hesitate to reply to this email or Contact Us &lt;pivotallabs.com/contact&gt; on our website.
+ 
+Regards,
+The Pivotal Labs team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

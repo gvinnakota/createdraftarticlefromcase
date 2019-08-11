@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_HAWQ &amp; Hortonworks_Q315.Reminder</name>
+    <style>none</style>
+    <subject>Reminder: Pivotal HAWQ &amp; Hortonworks Data Platform Webinar</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar Pivotal HAWQ and Hortonworks Data Platform: Modern Data Architecture for IT Transformation this Wednesday, July 22, 2015. We look forward to you joining us! Please see event details below:
+
+Date: Wednesday, July 22, 2015
+Time: 10:00AM PDT/5:00PM GMT
+
+Join the Session &lt;http://event.on24.com/wcc/r/1010039/B2E81CE3D813692E72E975CC510A3100&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date:default=edit me}}
+See you Wednesday!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

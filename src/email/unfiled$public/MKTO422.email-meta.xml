@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.Newsletter March 2014</name>
+    <style>none</style>
+    <subject>Spring Data “Codd” release train GA</subject>
+    <textOnly>MARCH 2014
+&lt;https://spring.io/blog/2014/02/24/spring-data-release-train-codd-goes-ga&gt;
+Spring Data &quot;Codd&quot; release train GA!
+Spring Data’s release train is getting more and more shiny new boxcars added! Team leads Oliver Gierke and Thomas Darimont are coordinating an impressive community of projects, all making coordinated releases, with more new projects on the way in the upcoming “Dijkstra” release. The “Codd” release offers relational access via JPA, noSQL stores like MongoDB and Neo4J, search providers like Solr, and technology like Data REST – all while kicking 260 bugs off the train. While more blogs are coming about the release, you can read about some of the new features &lt;https://spring.io/blog/2014/02/07/what-s-new-in-spring-data-codd-rc1&gt; in the RC1 release announcement blog. Go ahead, jump on the train and take the release for a spin!
+Learn More &lt;http://spring.io/blog/2014/02/24/spring-data-release-train-codd-goes-ga&gt;
+Give Your Data a REST with Spring Data REST
+Spring Data Codd is upon us. Spring Data has long featured the concept of a repository: a class that facilitates data-access. With Spring Data, defining such a class can be as easy as defining an interface! Did you know that, thanks to Spring Data REST, you can also transparently expose those services as a REST endpoint? Spring Data REST makes it dead simple to automatically get a REST interface that exposes the repository and its CRUD-style endpoints. Here&apos;s a working Spring Boot application that uses Spring Data JPA and Spring Data REST.
+
+ 
+You can easily test out the service using curl, like this: curl http://localhost:8080/bookings -H&quot;Accept: application/json&quot;.
+To build this application, I simply went to the Spring Initializr and chose JPA, Web, and REST Repositories, then chose Generate Maven Project. Finally, I added the H2 embedded database for rapid prototyping and an in-built DataSource bean: 
+&lt;dependency&gt;
+ &lt;groupId&gt;com.h2database&lt;/groupId&gt; 
+ &lt;artifactId&gt;h2&lt;/artifactId&gt; 
+&lt;/dependency&gt;
+Using the quick fix feature in Eclipse to type less
+The Java tooling in Eclipse provides a nice and simple way to help you typing less - using the quick-fix mechanism. You might be aware of that mechanism helping you fixing problems and errors, but it can do more for you. Imagine you would like to call a method that returns an object of a certain type and you would like to assign that to a new local variable - a fairly common task. Using the quick-fix mechanism in Eclipse, you don’t need to write down the type and the name of the local variable. Just call the method and press quick fix (Ctrl/Cmd-1): Select the “assign statement to new local variable” and you are done.
+Spring LDAP 2.0
+The recently released 2.0 version has given the Spring LDAP project a significant facelift. With new features like Spring Data Repository and QueryDSL support, a fluent LDAP query builder, and XML namespace configuration, LDAP administration applications can now be built more efficiently than ever.
+
+This webinar will provide an overview of the goals and scope of Spring LDAP and demonstrate all the improvements in version 2.0, giving you plenty of hands-on tips along the way on how to make maximum use of the library.
+Europe
+
+Tuesday, March 18
+ 2:00pm GMT Summer Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringLDAP207AM_Register.html&gt;
+North America
+
+Tuesday, March 18
+10:00 PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringLDAP2010AM_Register.html&gt;
+Spring Framework 4 on Java 8
+Spring has a track record of providing dedicated support for new Java generations in a timely fashion, and now it’s right about time to go Java 8: With Spring Framework 4.0, we&apos;re providing in-depth support for all relevant OpenJDK 8 features, including lambda expressions, JSR-310 Date and Time, parameter name discovery, and java.util.concurrent enhancements.
+
+This talk will illustrate basic Spring Framework 4.0 concepts, and selected Java 8 features within Spring&apos;s programming model, exploring the impact on application architectures.
+
+ 
+
+Upcoming Meetups:
+
+3/18 Security and Privacy Considerations for the Big Data Lake with Robert Geiger &lt;http://bit.ly/POSH0027&gt;
+3/19 Intro to Hadoop: Hype or Reality - you decide with Kevin Crocker &lt;http://bit.ly/POSH0028&gt;
+3/20 NYC: Next Generation Hadoop Architecture - talk and hands-on Pivotal Hadoop &lt;http://bit.ly/POSH0030&gt;
+3/25 The Spring Data Stack with Josh Long &lt;http://bit.ly/POSH0029&gt;
+Europe
+
+Tuesday, March 25
+ 2:00pm GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringFramework4onJava87AM_Register.html&gt;
+North America
+
+Tuesday, March 25
+ 10:00am PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringFramework4onJava810AM_Register.html&gt;
+Spring Data Repositories - Best Practices &lt;http://spring.io/blog/2014/03/05/webinar-replay-spring-data-repositories-best-practices&gt;
+Watch Video &lt;http://spring.io/blog/2014/03/05/webinar-replay-spring-data-repositories-best-practices&gt;
+Archived videos
+ SpringOne2GX 2013 Replay: Pragmatic JavaScript – A great JS app dev primer! &lt;http://spring.io/blog/2014/03/11/springone2gx-2013-replay-pragmatic-javascript&gt;
+ SpringOne2GX 2013 Replay: Thymeleaf - improving your Spring view layer with natural templates &lt;http://spring.io/blog/2014/03/11/springone2gx-2013-replay-thymeleaf-improving-your-spring-view-layer-with-natural-templates&gt;
+ SpringOne2GX 2013 replay: AngularJS, Backbone.js and Client-Centric Design &lt;http://spring.io/blog/2014/02/11/springone2gx-replay-angularjs-backbone-js-and-client-centric-design&gt;
+ 
+SpringOne2GX 2013 replay: Real World Applications with Spring Data Neo4j &lt;http://spring.io/blog/2014/02/11/springone2gx-2013-replay-real-world-applications-with-spring-data-neo4j&gt;
+ Introduction to Apache Hadoop and Spring Data Hadoop &lt;http://spring.io/blog/2014/02/06/introduction-to-apache-hadoop-and-spring-data-hadoop&gt;
+ Introduction to Spring Data JPA and 
+Spring Data MongoDB
+ SpringOne2GX 2013 replay: Spring and Sencha – A Match Made in Heaven (or at least the cloud) &lt;http://spring.io/blog/2014/02/18/springone2gx-2013-replay-spring-and-sencha-a-match-made-in-heaven-or-at-least-the-cloud&gt;
+ SpringOne2GX 2013 replay: Running Spring in Amazon Web Services &lt;http://spring.io/blog/2014/02/18/springone2gx-2013-replay-running-spring-in-amazon-web-services&gt;
+ SpringOne2GX 2013 replay: Spring Data Community Lightning Talks &lt;http://spring.io/blog/2014/02/25/springone2gx-2013-replay-spring-data-community-lightning-talks&gt;
+ SpringOne2GX 2013 replay: Researching Cancer in the Cloud using Spring, Neo4J, Mongo and Redis &lt;http://spring.io/blog/2014/02/25/springone2gx-2013-replay-researching-cancer-in-the-cloud-using-spring-neo4j-mongo-and-redis&gt;
+ SpringOne2GX 2013 replay: RabbitMQ is the new King &lt;http://spring.io/blog/2014/03/04/springone2gx-2013-replay-rabbitmq-is-the-new-king&gt;
+ SpringOne2GX 2013 replay: Spring Integration Internals &lt;http://spring.io/blog/2014/03/04/springone2gx-2013-replay-spring-integration-internals&gt;
+ SpringOne2GX 2013 replay: JSR-352, Spring Batch and You &lt;http://spring.io/blog/2014/02/03/jsr-352-spring-batch-and-you&gt; Webinar replay: Introduction to Apache Tomcat 8 &lt;http://spring.io/blog/2014/02/18/webinar-replay-introduction-to-apache-tomcat-8&gt;
+ Webinar replay: Spring Security 3.2 &lt;http://spring.io/blog/2014/01/21/webinar-replay-spring-security-3-2 &gt;
+
+Featured Guide:
+
+Accessing Data with MongoDB &lt;http://spring.io/guides/gs/accessing-data-mongodb/&gt;
+
+Whatever you&apos;re building - these 15-30 minute guides are designed to get you productive as quickly as possible, using the latest Spring project releases and techniques as recommended by the Spring team. http://spring.io/guides &lt;http://spring.io/guides&gt;.  
+
+If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor&apos;s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Data Redis 1.2 GA &lt;http://spring.io/blog/2014/03/04/spring-data-redis-1-2-ga-released&gt;
+ Spring Integration 3.0.1 &lt;http://spring.io/blog/2014/02/04/spring-integration-3-0-1-release-is-now-available&gt;
+ Apache Tomcat 6.0.39 &lt;http://www.tomcatexpert.com/blog/2014/02/04/apache-tomcat-6039-released&gt;
+Spring Data Elasticsearch 1.0 M1 &lt;http://spring.io/blog/2014/02/11/spring-data-elasticsearch-1-0-m1-released&gt;
+Spring for Apache Hadoop 2.0 M5 &lt;http://spring.io/blog/2014/02/06/spring-for-apache-hadoop-2-0-m5-released&gt;
+Spring Data Couchbase 1.0 RC1 &lt;http://spring.io/blog/2014/02/06/spring-data-couchbase-1-0-rc1-released&gt;
+Spring Tool Suite and Groovy/Grails Tool Suite 3.5.0.M2 &lt;http://spring.io/blog/2014/02/05/spring-tool-suite-and-groovy-grails-tool-suite-3-5-0-m2-released&gt;
+Spring Framework 4.0.2 &amp; 3.2.8 &lt;http://spring.io/blog/2014/02/18/spring-framework-4-0-2-3-2-8-released&gt;
+ Spring Data Release Train Babbage – SR3 &lt;http://spring.io/blog/2014/02/17/spring-data-release-train-babbage-sr3-released&gt;
+Spring Boot 1.0.0.RC2 &lt;http://spring.io/blog/2014/02/12/spring-boot-1-0-0-rc2-released&gt;
+ Spring Data Release Train Codd Goes GA &lt;http://spring.io/blog/2014/02/24/spring-data-release-train-codd-goes-ga&gt;
+ Spring Batch 3.0 Milestone 3
+
+ Spring Security 3.2.1 and 3.1.5 &lt;http://spring.io/blog/2014/02/19/spring-security-3-2-1-and-3-1-5-released&gt;
+ Spring LDAP 2.0.1 &lt;http://spring.io/blog/2014/02/19/spring-ldap-2-0-1-released&gt;
+ Spring Data Redis 1.2.0 RC1 &lt;http://spring.io/blog/2014/02/19/spring-data-redis-1-2-0-rc1-released&gt;
+ Spring Boot 1.0.0.RC4 &lt;http://spring.io/blog/2014/03/04/spring-boot-1-0-0-rc4-available-now&gt;
+ Spring AMQP 1.3.0 RC &lt;http://spring.io/blog/2014/03/07/spring-amqp-1-3-0-release-candidate-available&gt;
+ Final Service Release for Spring Data Release Train Babbage &lt;http://spring.io/blog/2014/03/10/final-service-release-for-spring-data-release-train-babbage&gt;
+ CVE-2014-009 Fixed in Spring Security 3.2.2 and 3.1.6 &lt;https://spring.io/blog/2014/03/11/cve-2014-0097-fixed-in-spring-security-3-2-2-and-3-1-6&gt;
+Open Source is Pivotal &lt;http://blog.gopivotal.com/products/open-source-is-pivotal&gt;
+ Deploying Spring Boot Applications &lt;http://spring.io/blog/2014/03/07/deploying-spring-boot-applications&gt;
+ Groovy Bean Configuration in Spring Framework 4 &lt;http://spring.io/blog/2014/03/03/groovy-bean-configuration-in-spring-framework-4&gt;
+ Spring YARN Application Model &lt;http://spring.io/blog/2014/02/06/spring-yarn-application-model&gt;
+ The Evolution and Acceleration of the Open PaaS Movement &lt;http://blog.gopivotal.com/news-2/pivotal-moves-to-establish-open-governance-model-for-cloud-foundry&gt;
+ What’s new in Spring Data Codd RC1 &lt;http://spring.io/blog/2014/02/07/what-s-new-in-spring-data-codd-rc1&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,42 @@
+<apex:page standardController="case"  extensions="UpdateCase" id="page">
+<apex:form >
+<apex:actionFunction name="getDossierAF" action="{!getResponse}" immediate="true"/>
+  </apex:form>
+   
+   
+   <script Language="JavaScript">
+    window.attachEvent('onload',getDossierData('{!case.Id}'))
+    function getDossierData(id){
+    
+        if('{!Case.Status}' == 'Closed')
+        {
+            window.confirm("{!$Label.Request_Update_on_Closed_Case}"); 
+            window.parent.location.href= "{!$Label.Community_support_url}{!CaseId}";
+        } else if('{!case.ContactId}' != '{!usr.ContactId}'){
+            window.alert("{!$Label.Request_Update_this_case}");
+            window.parent.location.href= "{!$Label.Community_support_url}{!CaseId}"; 
+        }else if('{!case.Requestupdate__c}' =='true'){ 
+            window.alert("{!$Label.Request_Update_already_notified}");
+            window.parent.location.href= "{!$Label.Community_support_url}{!CaseId}";
+        }
+        
+        else
+        {
+            if(window.confirm("{!$Label.Request_Update_notified} {!Case.Owner.Name}") == true)
+            {
+ 
+                window.parent.location.href= "{!$Label.Community_support_url}{!CaseId}";
+                 getDossierAF(id);
+                
+
+            }
+            else
+            {
+              window.parent.location.href= "{!$Label.Community_support_url}{!CaseId}";
+            }
+        }
+    }
+    </script>   
+ 
+  
+</apex:page>

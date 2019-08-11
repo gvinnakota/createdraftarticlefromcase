@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>System Master_Sales_Email.GS - Monthly Announcement July 2015</name>
+    <style>none</style>
+    <subject>Pivotal Field Operations: July Sales News Flash</subject>
+    <textOnly>PIVOTAL FIELD OPERATIONS
+A Message from Greg Stroud
+JULY 2015 SALES NEWS FLASH
+Global Field Operations Team,
+
+As we are now in the back half of the year, please take a moment to read this communication carefully as there are SFDC, Product, and Compensation updates that you should be aware of.
+
+Compensation Update - New 2H SPIFs!
+As you read in Bill’s note, we have 3 new SPIFs that are now in effect. Details on these SPIFs have been added to the FY15 Compensation deck &lt;https://docs.google.com/presentation/d/1zOCuVNQX7vEa0F1zoTu1EA6V0GavDFHWDErktdkEEqU/edit#slide=id.gc36c4b54f_0_0&gt; on the Field Operations Inside Pivotal page. The SPIFs are:
+
+More Subscriptions = More 
+Rewards
+ 
+
+
+ - Earn an additional .4x Base Commission Rate (BCR) uplift on ACV Bookings.
+ - Sales Reps/Managers booking PCF .4x BCR and Data Reps/Managers .4x on Data Bookings.
+ - The Acceleration, Multi-Year Prepaid uplift, and Bundle SPIF do not apply to the .4x BCR Uplift.
+ - SPIFs are capped at $20K payout per sales representative.
+ - Eligibility: Sales Reps/Managers (PCF), Data Sales Reps/Managers (BDS). 
+
+
+The Subscription Club
+
+
+ - Sales Reps/Managers who achieve their 2H product quota threshold with &gt; 90% being subscription bookings; and data Sales Reps/Managers who achieve their 2H Product quota threshold with &gt; 90% being BDS bookings will attend a mini-club event celebrating our Subscription growth. In addition Five FE’s or FE Managers nominated by Geo leads, will also attend.
+ - Eligibility: Sales Reps, Data Sales Reps, Field Engineers and Field Engineer Managers. 
+
+
+Cash 4 Second Half 
+
+
+ - A SPIF of 10% of 2H 2015 Variable OTE for making 2H quota during the Effective Dates. Payable February 2016.
+ - Eligibility: Field Engineers, FE Managers, Labs Reps, Alliance Sales, Alliance FEs and Vertical Product Sales.
+
+
+SFDC Updates
+Enhanced Opportunity and Quote features NOW available in Salesforce!
+Big changes went into place in Salesforce this week!  Please spend some time this week familiarizing yourself with the new updates and making sure your data is accurate for Q3. 
+
+Remind me - what&apos;s changed?
+Pivotal now has a full-blown quoting module in Salesforce!  Quotes will contain details previously entered in the product selector on the Opportunity, and will be used for pricing approvals.  All reps are expected to create quotes for deals closing in Q3 by the end of July.
+
+Pivotal has also implemented a new set of 
+SKUs for opportunity forecasting and quoting.  Opportunities with selected products have been converted to the new SKUs, but contact the support team through ask@pivotal.io &lt;mailto:ask@pivotal.io&gt; if you are unable to adjust your opportunities to 
+correctly represent your forecasted deals.
+
+How do I access the new quoting module?
+
+Please click on the &apos;Quotes&apos;  tab at the top of the Salesforce screen when you log in.
+
+If you don’t see the Quotes tab, please click on the + tab and find it in the list.  If you want to add it to your tabs at the top of your screen, please contact ask@pivotal.io &lt;mailto:ask@pivotal.io&gt; and the support team will walk you through that.
+
+This is helpful, but is there any additional training available to me?
+
+A recording from the Spotlight Series 
+training, presented on July 15th and 16th, is available here &lt;https://pivotalfield.biglms.com/courses/PFS/SW139/VWZ/about&gt; on the Field Enablement 
+site of Pivotal Academy.  There are also step-by-step instructions you can access on the SFDC home page under &quot;Salesforce Quick Tips&quot; section on the left.  Lastly, you are required to complete an eLearning training on the changes by the end of August – you will receive a message on how to access the training this week.
+
+What do I do if I have 
+questions?
+
+Please send any and all questions to ask@pivotal.io &lt;mailto:ask@pivotal.io&gt; and a support team member will answer your query.  We’ll help walk you through creating quotes and will answer system questions to help you get comfortable with the new functionality.
+
+Product 
+Update
+Session State Caching Powered by GemFire for PCF is now GA!
+Session State Caching Powered by GemFire for PCF GAed on July 1st.
+This is a turnkey service purpose-built for session state caching. Customers purchasing the Elastic Runtime are entitled to use this service, which does not count towards application instances.  Links to resources (and more coming) can be found on Inside Pivotal CF Services &lt;https://sites.google.com/a/pivotal.io/inside-pivotal-cf/services#SessionStateCaching&gt;. Should you have additional questions, please contact data-prod-mktg@pivotal.io &lt;mailto:data-prod-mktg@pivotal.io&gt;.
+
+New Big Data Suite SKUs
+Due to export restrictions with Pivotal Cloud Foundry, a new set of BDS SKU and entitlements has been released effective June 6, 2015, which no longer includes one PCF 
+Foundation.
+The latest release of BDS now includes the following:
+
+
+
+ - Greenplum Database
+ - GemFire
+ - HAWQ
+ - Pivotal HD (cores consumed by Pivotal HD do not count towards the number of BDS cores licensed, but may not exceed the total amount of BDS cores licensed).
+ - Pivotal RabbitMQ
+ - OSS Support for Redis
+ - OSS Support for RabbitMQ
+ - OSS Support for Spring XD
+ - Redis for Pivotal Cloud Foundry
+ - Pivotal RabbitMQ for Pivotal Cloud Foundry
+
+
+All new opportunities and quotes need to be created using the new models and SKUs. Existing opportunities may continue using the old BDS SKUs as long as the end-user is allowed to receive PCF. In doubt, please work with your business manager (Chris Braney, Chris Want, David Lo or Ian Bignell). DxP / CxP with the new models will be updated on August 10. Please contact product_ops@pivotal.io &lt;mailto:product_ops@pivotal.io&gt; or data-prod-marketing@pivotal.io &lt;mailto:data-prod-marketing@pivotal.io&gt; if you have questions regarding these changes.
+
+PCF 1.5 is now GA!
+1.5 PCF Ops Manager / Elastic Runtime Release have been live on Pivotal Network since July 6, 
+2015. New features include:
+
+
+
+ - OpenStack support (beta)
+ - vSAN support
+ - Local disk support on vSphere
+ - AWS multi-region support
+ - New Accounting Report in Apps Manager showing monthly average and max app instance counts across organizations
+ - An AWS CloudFormation template is now provided that vastly simplifies AWS configuration
+ - Runtime security features
+ - Single sign-on support
+ - Static file buildpack
+ - Diego / .NET support (beta)
+
+
+Should you have any questions, please contact pcf-concierge@pivotal.io &lt;mailto:pcf-concierge@pivotal.io&gt;.
+
+New MPL Available
+Following the Zuora implementation, Pivotal now has its own set of products in SKUs for directly. Pivotal Master Price List and related document have been updated accordingly. Please go to the MPL folder &lt;https://drive.google.com/drive/folders/0BzmUp3rDlANdaTF2MXA1cno2Y0k&gt; to access all these documents. 
+Feel free to contact product_ops@pivotal.io &lt;mailto:product_ops@pivotal.io&gt; if you have questions related to MPL, Product availability or new 
+product catalog and SKUs. 
+
+Services Update
+
+ 
+New Services SKUs at EMC! As of July 13, 2015, Pivotal introduced brand new services models (aka SKUs) at EMC. The new models are aimed to align with Pivotal’s most recent Service GTM motions and organizations. They will also perfectly align with Pivotal’s services SKUs that will be used in Zuora and Salesforce.com for Services deals on Pivotal paper.  
+The old custom models are still active in order to close existing opportunities. For brand new opportunities, please use the new models as much as possible.
+ 
+Please consult 
+the FAQ &lt;https://docs.google.com/document/d/1owQADArYw3IkfGJ-vbd-QK7OUC99q4l7UfYZ6bysJbw/edit&gt; for more information. Should you have additional questions, please contact groadman@pivotal.io &lt;mailto:groadman@pivotal.io&gt; or product_ops@pivotal.io &lt;mailto:product_ops@pivotal.io&gt;.
+
+Enablement Update – VMworld
+VMwold is taking place August 30 – September 3 in San Francisco and VMware has just added a new track for this year: DevOps. Pivotal will be playing a major role in this track with presentations and workshops. Planning is underway for an executive breakfast, lab tours and opportunities for customer meetings. Please contact amacdonald@pivotal.io &lt;mailto:amacdonald@pivotal.io&gt; for more information on how to get your customers involved at the show.
+
+New Sales 
+Assets
+
+ 
+New customer videos &lt;http://pivotal.io/customers&gt; and case studies for EMC IT &lt;http://pivotal.io/platform-as-a-service/case-study/emc-it&gt;, Humana &lt;http://pivotal.io/platform-as-a-service/case-study/humana&gt;, Corelogic &lt;http://pivotal.io/customers/corelogic&gt; and 
+CenturyLink are now posted and available for your customers to watch/read.
+
+Missed the CF Summit? You can also now watch every public CF Summit presentation at the 
+Cloud Foundry YouTube page.
+
+Be Bold!
+Greg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

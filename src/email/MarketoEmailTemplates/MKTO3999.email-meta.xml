@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Post-event (No Show) Munich</name>
+    <style>none</style>
+    <subject>Sorry we missed you</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Sorry we missed you at the Pivotal Cloud Native Roadshow in Munich on July 13th, 
+2016. If you are interested in having Pivotal present cloud native content to your organization or want to learn more about Pivotal, contact us &lt;[[mailto:emea_isr@pivotal.io]]&gt; to schedule a follow up with our team. 
+
+We 
+have made our presentation slides available here &lt;[[https://drive.google.com/folderview?id=0BwA78Sj43bSPalhLbmI0UTMxWDA&amp;usp=sharing]]&gt;. 
+
+If you want to see more in depth presentations on cloud native topics and everything else to do with delivering software, please join us again at SpringOne Platform &lt;[[http://springoneplatform.io/]]&gt;, August 
+1–4.
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

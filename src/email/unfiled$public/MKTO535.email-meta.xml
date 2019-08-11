@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.4-17 V2N8</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.8</subject>
+    <textOnly>&lt;http://www.gopivotal.com&gt;
+PIVOTAL NEWSLETTER
+ Vol. 2, No. 8
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+EDITOR WELCOME
+Rhonda Baldwin
+ Chief of Staff, Products
+
+
+
+
+
+
+
+Energy and Determination
+
+ I feel energized this week! I can only attribute it to what I’ve been working on and who I’ve been working 
+with. It’s motivating to take on a new challenge, learn new things, exercise creativity and build something that matters. It’s even more inspiring to watch this happening all over the company.
+
+ This edition of the biweekly Pivotal Newsletter has example after example of teams that are determined to help us accomplish our goals: APJ is changing their pipeline, the Big Data Suite has 
+launched, Pivotal Labs are building, transforming, and enabling the enterprise, and our company reached a significant legal milestone.
+
+ Don’t forget the Town Hall is next week – on Tuesday 4/22 at 4:30pm PT. Those of you in the Bay Area can attend live in Palo Alto and we’re looking forward to folks in other locations participating via the broadcast!
+
+“A small body of determined spirits, fired by an unquenchable faith in their mission, can alter the course of 
+history.”—Mahatma Gandhi
+
+
+
+
+
+
+
+
+
+
+
+BUSINESS UPDATE
+Melissa Ries
+ Vice President &amp; General Manager
+ Asia Pacific &amp; Japan
+
+
+
+
+
+
+
+Pipeline is Changing in APJ!
+
+ I’m pleased to report that we made our number in APJ in Q1 and I’m encouraged by our opportunities in 
+Q2!
+
+ Having Scott Yara in the region a couple of weeks ago made such an impact with our employees, customers, the media and analysts. We had a very busy week, including a Pivotal media roundtable focusing on the Big Data Suite announcement &lt;http://www.arnnet.com.au/article/542131/pivotal_enables_companies_dive_data_lake/&gt;, the Qrious customer story &lt;http://www.zdnet.com/qrious-to-fill-new-zealand-data-scientist-gap-with-new-academy-7000028006/&gt; and Gavin Jones’ appointment &lt;http://www.crn.com.au/News/381928,pivotal-nabs-good-technologys-ex-anz-boss.aspx&gt; as our first managing director in Australia and New Zealand. We’ve seen a total of 51 new articles across five markets in APJ – including coverage in top-tier media such as ARN &lt;http://www.arnnet.com.au/article/542270/pivotal_discusses_australian_big_data_plans/&gt;, 
+ZDNet &lt;http://www.zdnet.com/qrious-to-fill-new-zealand-data-scientist-gap-with-new-academy-7000028006/&gt;, CIO &lt;http://www.cio.com.au/article/541990/pivotal_looks_simplify_building_business_data_lakes_/?fp=16&amp;fpid=1&gt;.
+
+ We were energized by Scott’s messaging around the opportunity in front of us – it’s all about bringing together three unique 
+capabilities: 
+
+ - PaaS &lt;http://www.gopivotal.com/platform-as-a-service&gt; – A cloud operating system that allows data to be moved around to different clouds.
+ - Big Data &lt;http://www.gopivotal.com/big-data&gt; – Fundamental to power applications in the next wave of cloud computing.
+ - Agile &lt;http://www.gopivotal.com/agile&gt; – Technologies are emerging for the next wave of cloud computing, but there’s a skills gap in agile development and data services. 
+
+ We saw a great example of PaaS, Big Data, and Agile coming together in Japan. Congratulations to Takumi Masai and the Japan team – including Tomohiro Kawakami (Sales), Tomohiro Ichimura (Pre Sales), and Tsuyoshi Miyake (Architect) – for closing the first Pivotal One &lt;http://www.gopivotal.com/press-center/11122013-pivotal-one&gt; deal in Japan with Toshiba Solutions Corporation, one of our strategic customers in 2014: 
+
+
+ - Toshiba Solutions is an IT subsidiary of Toshiba Corporation, providing system integration and data center services for the Toshiba group of companies. They are leading a &quot;Smart Community&quot; project like GE’s &quot;Industrial Internet.&quot; 
+ - The deal included Pivotal CF, Pivotal HD/HAWQ, and Pivotal Rabbit MQ.
+ - Toshiba Solutions completed an agile development engagement at Pivotal Labs in Q1’14 to enhance their development capability. The Toshiba engineers traveled to San Francisco to pair with our software engineers, confirmed Pivotal CF’s advantage through this engagement, and reported it back to Toshiba Solutions executives. 
+ - It also helped that we introduced them to GE’s CMO to convince them that Pivotal will be an excellent partner for their next-generation IT environment, covering both Big Data and Cloud.
+
+
+As many of you know, APJ historically has been focused on the Enterprise Data Warehouse market. I’m very encouraged to see that everyone is now focused on the three sales plays and our pipeline is definitely changing to the Big Data Suite and Pivotal CF.
+
+ We’ve also successfully implemented our new services model with Pivotal’s Customer Success Organization (CSO) &lt;https://docs.google.com/a/gopivotal.com/file/d/0B8gq5KRcTGfWT3lGMWNMREdzVUk/edit&gt; and Pivotal Services @ EMC (PSE). Please join me in congratulating Roz Gregory as our CSO Leader and Odia Ukoko as our PSE Leader in APJ! I’ll close by describing the APJ Management team’s fun Vision and Charity exercise at our QBR last week. The Charity work was with Feeding Hong Kong &lt;http://feedinghk.org/&gt; and the Vision exercise required a newspaper article with headlines, articles, quotes and sidebars on Pivotal two years from now. The two headlines were, &quot;Pivotal = Android + Amazon?&quot; and &quot;Pivotal Powers the World&quot; with the next statement being, “AWS and RedHat throw their hat in the ring with Pivotal.” Realism was supposed to be part of the exercise. The headlines for Other News were &quot;Prince William and Kim Kardashian an item?&quot; and &quot;Gates brought back to save Microsoft!” Realism or not…a lot of fun was had by all and we finished by looking at the APJ priorities.
+
+
+
+ Thanks to the whole APJ team for a great Q1 and thanks to Scott Yara and others who traveled to APJ to help us kickoff Q2!
+
+
+
+
+
+
+
+
+
+
+
+PRODUCT UPDATE
+Josh Klahr
+ VP of Product Management, Data Fabric
+
+
+
+
+
+
+
+Big Data Suite In One Slide
+
+ Q1 was a Big Quarter for Big Data!
+
+ We launched Pivotal HD 2.0 &lt;http://www.gopivotal.com/press-center/03172014-PHD-20&gt;, which included the GA of Pivotal GemFire XD &lt;http://www.gopivotal.com/big-data/pivotal-hd&gt; and a ton of powerful 
+new features: 
+
+
+ - Enhancements In HAWQ provide new broad analytical capabilities, open and accessible support for common data analyst language functions, and flexible support for the popular open storage format, Parquet. This release drastically increases the analytical capabilities and value Pivotal delivers over its enterprise Hadoop distribution. 
+ - The addition of Pivotal GemfireXD provides unmatched real-time ingest and SQL processing capabilities. The combination delivers today’s most advanced analytic data lake. 
+ - Integration into Spring Source enables the entire Spring community to leverage this powerful stack, without learning new technologies, speeding integrations and development of enterprise Big Data applications. 
+ - This release delivers on the vision of a business data lake for powering next-generation Big Data analytics and rapid development of applications powered by Big Data. 
+
+
+We hosted a great set of sessions at WWSKO &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/sales-kick-off-2014&gt;, including a main stage demo with Hugh Williams and James Watters, a &quot;Big Data: Go-to-Market &amp; Sales Plays&quot; &lt;https://docs.google.com/a/gopivotal.com/file/d/0B8gq5KRcTGfWMWJTWWxpZmRqMEU/edit&gt; session and a &quot;Pivotal Product Roadmap&quot; &lt;https://docs.google.com/a/gopivotal.com/file/d/0B8gq5KRcTGfWYTc3b3hCdUVKcVE/edit&gt; session.
+
+ We also launched the Big Data Suite &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal-data-services/2014-data-services&gt; with tons of great feedback. For a summary of analyst reaction, take a look at Avi Orenstein’s Google Site &lt;https://sites.google.com/a/gopivotal.com/analyst-relations/home/analystreaction-pivotalbigdatasuite-internalexternal?pli=1&gt; and David Oro’s press summaries &lt;http://www.gopivotal.com/news-events&gt;.
+
+Big Data Suite in One Slide 
+Pivotal Big Data Suite &lt;http://www.gopivotal.com/big-data/pivotal-big-data-suite&gt; is going to be one of our major selling motions in 2014. So, when you are out talking to customers, or at conferences, or boring your significant other with what Pivotal does, here’s how to pitch Pivotal Big Data Suite in just a few minutes: 
+
+
+ - Support for all the major Big Data workload types required today – batch, interactive, and real-time 
+ - Unlimited Hadoop and HDFS at the core 
+ - Purpose built for creating data-driven applications 
+ - Flexible, simple licensing model allowing customers to take advantage of our great capabilities today (with Pivotal GemFire and Pivotal Greenplum Database) and an eye towards a Hadoop-based platform in the future. 
+
+
+
+
+ For more in depth deep dives on positioning all of this, see the Spotlight Webinar on Pivotal HD 2.0 &lt;https://emc.webex.com/emc/ldr.php?RCID=bc4787b3fc9831910af69950407d5b5e&gt; and the Spotlight Webinar on Big Data Suite &lt;https://emc.webex.com/emc/ldr.php?RCID=bb334c60ed60094048eb3a637efbe39d&gt;.
+
+ Finally, we just wrapped up a series of planning sessions with Hugh Williams. I’d like to thank everyone across all of Pivotal’s products for their hard work! You’ll hear more on that topic at next week’s Town Hall.
+
+
+
+
+
+
+
+
+
+
+
+AGILE UPDATE
+Imtiaz Jaffer
+ Director of Marketing, Pivotal Labs
+
+
+
+
+
+
+
+Pivotal Labs: Build, Transform, Enable
+
+ Over the past six months, our team has been focused on integrating the Xtreme Labs brand and transitioning 
+our digital properties (and messaging about mobile) accordingly. Q1 was geared towards supporting the Field Sales team with content and resources to help drive Pivotal Labs deals in the enterprise. We also focused efforts towards executing “the big three” (conferences) to kick off the year – CES &lt;http://ces.cnet.com/&gt;, Mobile World Congress &lt;http://www.mobileworldcongress.com/&gt; and SXSW &lt;http://sxsw.com/&gt; – all of which were successful endeavors for us.
+
+ In Q2, we will concentrate efforts on 
+driving outreach within the startup segment in the San Francisco Bay Area (by way of VC and developer engagement) and leverage insights to spread across other major startup hubs.
+
+ In addition, after last year’s success producing LAUNCH Mobile &amp; Wearables &lt;http://events.launch.co/mobile/&gt;, we’re excited to be partnering with the team at LAUNCH again to produce an event in New York called Beacon &lt;http://events.launch.co/beacon&gt; – focused on the future of retail, payments and location. Beacon will feature the who’s who in startups, VCs and enterprises making waves in these respective segments.
+
+ In Q2, our Pivots will represent Pivotal Labs at these strategic developer conferences, amongst many others: Build &lt;http://www.buildwindows.com/&gt; (earlier this month), Facebook F8 &lt;https://developers.facebook.com/blog/post/2014/03/08/announcing-f8-2014/&gt;, WWDC &lt;https://developer.apple.com/wwdc/&gt; and finally Google I/O &lt;https://www.google.com/events/io&gt;. Last but not least, our team is working to reinforce the role Pivotal Labs plays within Pivotal and driving the mobile story through the eyes of the former Xtreme Labs team. An easy way to think about the Pivotal Labs value proposition is as follows:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PEOPLE UPDATE
+Cyrus Wadia
+ Associate General Counsel - Strategic Intellectual Property, Office of the General Counsel (OGC)
+
+
+
+
+
+
+
+We’re Officially Pivotal!
+
+ As part of Pivotal’s Office of the General Counsel (OGC), I focus on maintaining, protecting, and enforcing 
+Pivotal’s valuable intellectual property (IP). Two recent examples of the IP work done by Pivotal’s OGC:
+
+ We recently launched an Intellectual Property Website &lt;https://sites.google.com/a/gopivotal.com/ip/%20&gt; on Inside Pivotal as a resource for 
+everyone to learn about Pivotal’s intellectual property program including information about our patents, trademarks, copyrights, trade secrets and open source program.
+
+ Thanks in large part to the efforts of Kimberly Lytikainen, on April 1, 2014, Pivotal reached a significant 
+legal milestone – registration of the PIVOTAL® trademark in the United States. Trademarks are any word, name, symbol or device that’s used to identify and distinguish one party’s goods from those that are manufactured and sold by others. Trademarks are a sign of quality and a measure of distinction. Trademarks are often seen as the single largest source of intangible value in a company, and to provide some context, EMC’s brand is currently valued at $6.3 billion &lt;http://www.boston.com/business/news/2014/03/18/brand-finance-survey-emc-has-the-state-most-valuable-brand/P3MV2dEVFz4WhiLMvDr30L/story.html&gt;. While Pivotal has 250 pending applications and registered marks around the world, the U.S. PIVOTAL® trademark holds a special place in our company’s legal formation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELLO, MY NAME IS…
+Cameron Cundiff
+ Software Engineer, Pivotal Labs, New York
+
+
+
+
+
+
+
+At Pivotal, I…
+ am leading the development effort on Pivotal Network &lt;https://network.gopivotal.com/&gt;. I hold a technical expert role in web accessibility &lt;http://pivotallabs.com/author/ccundiff/&gt;, and I’m also the host of the bi-weekly Lunchtime Drawtime &lt;http://lunchtimedrawtime.com/&gt; event. 
+
+You can find me…
+ at the Pivotal Labs office in NYC or in Carroll Gardens, Brooklyn.
+
+Currently, I’m working on…
+ Pivotal Network – a place where Pivotal customers can learn about and evaluate our software. 
+
+In my spare time…
+ I love to paint and draw &lt;http://art.ckundo.com/&gt;. I’m a host of the monthly NYC Accessibility and Inclusive Design Meetup &lt;http://www.meetup.com/a11ynyc/&gt;. On weekends, I take time to tend to our garden or work on accesslint.com &lt;http://www.accesslint.com/&gt;. 
+
+Something you probably don’t know about me…
+ In school, I studied illustration and interactive art. 
+
+To me, Pivotal…
+ embodies a balance of skill and grace. Our skill builds confidence in our customers, and our grace creates space in them for change. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+WELCOME TO PIVOTAL!
+ 
+ 
+
+
+
+
+
+
+Please join us in welcoming employees who have joined between 4/1 - 4/14:
+
+Trevor Ackerman, Pivotal Labs – Software Engineer, Boulder
+Shalini Agarwal, R&amp;D 
+– Chief of Staff, Palo Alto
+Sabby Anandan, App Fabric – Product Manager, San Francisco
+Monique Bonneau, Tracker – Product Marketing Manager, San Francisco
+Shadia Damra, Finance – Manager, San Francisco
+Ellie Dobson, Pivotal Data Labs – Data Scientist, London
+Vickie Fu, Marketing – Graphic Designer, Toronto
+Anand Gaitonde, Pivotal CF – Software Engineer, San Francisco
+Vineet Goel, Data Fabric 
+– Product Manager, Palo Alto
+Eric Goirand, Sales – Field Engineer, Paris
+Michael Kenyon, Pivotal Labs – Software Engineer, New York
+Jasper Yang Li, Data Fabric – QA, Beijing
+Renhou Li, 
+Sales – Field Engineer, Shanghai
+Qing Lin, Data Fabric QA – College Co-op Student, Beijing
+Christopher Mueller, Sales – Account Manager, Americas West
+Balakrishnan Natarajan, Security – Information Security 
+Manager, Palo Alto
+Matthew Polick, Sales – Account Manager, Americas West
+Jennifer Rigby, Sales – Account Manager, Americas West
+Kyle Roberts, GSS – Customer Engineering, Palo Alto
+Richard 
+Rosi, Sales – Account Manager, Americas West
+Swagata Roy, GSS – Customer Engineering, New York
+Dany San, Pivotal Labs – UX Designer, San Francisco
+Sridhar Vennela, GSS – Customer Engineering, San 
+Francisco
+Bo Wang, Hadoop – College Co-op Student, Shanghai
+Christopher Want, Sales – Business Ops Manager, Irvine 
+
+
+
+
+
+
+
+
+
+
+Want more? Try InsidePivotal.com &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/&gt; or Socialcast: @PivotalNewsletter &lt;https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter&gt;
+ &lt;http://www.gopivotal.com&gt;
+ BUILT FOR THE SPEED OF BUSINESS | www.gopivotal.com &lt;http://www.gopivotal.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

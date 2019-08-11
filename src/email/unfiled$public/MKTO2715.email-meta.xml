@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Summit_Q315.Follow Up</name>
+    <style>none</style>
+    <subject>Thank You for Joining Pivotal at Data Science Summit!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}}, 
+
+Thanks for visiting Pivotal at the Data Science Summit in San Francisco. We hope you enjoyed learning about how enterprises are using data science to drive modern software experiences for their customers.
+
+In the Pivotal session at the event, Principal Data Scientist, Rashmi Ragu &lt;http://conf.dato.com/speakers/rashmi-raghu/&gt; provided a unique look at how organizations are starting to get value from the Internet Of Things (IoT) and analyzed the implications of IoT for the enterprise. The presentation slides are available here &lt;http://www.slideshare.net/Pivotal/data-science-case-studies-the-internet-of-things-implications-for-the-enterprise&gt;.
+
+Want to learn more about new developments in the rapidly-changing world of IoT and data science?
+
+
+ - Watch &lt;https://www.youtube.com/watch?v=ha5X5lOvzvI&gt; a recording of Pivotal’s session at Hadoop Summit, IoT: How Data Science-Driven Software is Eating the Connected World.
+ - Download &lt;http://pivotal.io/building-iot-applications&gt; Pivotal’s four-step primer on Building Data-Driven Internet of Things Applications.
+
+
+
+We look forward to seeing you at our next event &lt;http://pivotal.io/news-events#events&gt;!
+
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

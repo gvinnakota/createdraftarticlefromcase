@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Cloud Native Roadshow</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body style="margin:0; " ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tbody ><tr ><td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tbody ><tr>
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: '宋体'; font-size: 13px; font-weight: normal">&nbsp;<br>
+如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a><br>
+<br></td>
+</tr>
+<tr>
+<td><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td>
+</tr>
+<tr>
+<td height="20"></td>
+</tr>
+<tr ><td valign="top" style="padding-bottom:15px; " ><div class="mktEditable" id="banner-main" ><img title="roadshow" src="http://connect.pivotal.io/rs/625-IUJ-009/images/original_cloud_email_0727_600x199.jpg" alt="Pivotal_云原生机制下的微服务" width="600" height="199"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;">
+<tbody>
+<tr>
+<td width='35'></td>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="3" style="padding-top:29px;color: #595757; font-size: 13px;text-align:left;font-family: '宋体'; line-height:23px;">由 <span style="font-family: Arial;">Pivotal</span> 携手 <span style="font-family: Arial;">InfoQ</span> 为您打造的“云原生机制下的微服务”应用实践技术沙龙正在如火如荼的报名中，我们诚邀您一同参与我们的活动。</td>
+</tr>
+<tr>
+<td colspan="3" style="padding-top:22px;padding-bottom:23px;color: #01ad9d; font-size: 17px; font-weight:bold;text-align:center;font-family: '宋体';">活动亮点</td>
+</tr>
+<tr>
+<td style="text-align: left;padding-bottom:26px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-family:'微软雅黑'; font-size:13px;color:#01ad9d;line-height:24px;" width="10" valign="top">●</td>
+<td style="color: #595757; font-size: 13px; line-height:23px; font-family: '宋体'; text-align: left;padding-left:5px;padding-bottom:10px">全球顶级 <span style="font-family: Arial;">Spring</span> 技术权威 <span style="font-family: Arial;">Joshua Long</span>(龙之春)对微服务架构的权威阐释以及大量现场 <span style="font-family: Arial;">Demo</span>，助您洞察全球互联网架构领域的前沿发展趋势。</td>
+</tr>
+<tr>
+<td style="font-family:'微软雅黑'; font-size:13px;color:#01ad9d;line-height:24px;" width="15" valign="top">●</td>
+<td style="color: #595757; font-size: 13px; line-height:23px; font-family: '宋体'; text-align: left;padding-left:5px;padding-bottom:10px">从微服务着手，讨论如何建立起“快速试错”和“自动化第一”的 <span style="font-family: Arial;">DevOps</span> 文化，确保微服务策略的成功。</td>
+</tr>
+<tr>
+<td style="font-family:'微软雅黑'; font-size:13px;color:#01ad9d;line-height:24px;" width="15" valign="top">●</td>
+<td style="color: #595757; font-size: 13px; line-height:23px; font-family: '宋体'; text-align: left;padding-left:5px;">用案例说明如何利用 <span style="font-family: Arial;">Spring Boot</span> 和 <span style="font-family: Arial;">Spring Cloud</span> 来降低工作的复杂性，缩短投产期，从而提高阿里、票务大师以及网飞这样的企业的生产效率。</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width='35'></td>
+</tr>
+<tr>
+<td colspan="3" height="15" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td width='35'></td>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="3" style="padding-top:29px;padding-bottom:20px;color: #01ad9d; font-size: 17px; font-weight:bold;text-align:center;font-family: '宋体';">活动安排</td>
+</tr>
+<tr>
+<td colspan="3" style="color: #666666; font-size: 13px; line-height: 22px; text-align: center; font-family: '宋体';padding-bottom:20px;">时间：<span style="font-family: Arial;">2016</span>年<span style="font-family: Arial;">8</span>月<span style="font-family: Arial;">13</span>日（周六）<br>
+地点：在线直播（​只要你有网络，无论电脑或手机​）</td>
+</tr>
+<tr>
+<td width="225"></td>
+<td width="150" height="33" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: '宋体';font-size: 13px;color: white; text-decoration: none;" href="http://icampaign.com.cn/pivotal/cloud_native/index.html">在线会议报名</a></td>
+<td width="225"></td>
+</tr>
+<tr>
+<td colspan="3" height="32"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width='35'></td>
+</tr>
+<tr>
+<td colspan="3" height="15" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td width='35'></td>
+<td style="padding-bottom:30px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="3" style="padding-top:30px;padding-bottom:17px;color: #01ad9d; font-size: 17px; font-weight:bold;text-align:center;font-family: '宋体';">会议议程</td>
+</tr>
+<tr>
+<td style="font-size: 13px; text-align: center; margin: 0; font-family:Arial, Helvetica,sans-serif;padding-top:9px;color: #595757;padding-bottom:3px;">9:00&nbsp;-&nbsp;9:30<br></td>
+</tr>
+<tr>
+<td style="font-size: 13px; text-align: center; margin: 0; font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:12px;"><span style="font-family:'宋体';font-weight:bold">签到及欢迎致辞</span><br></td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;padding-top:5px ;color: #595757;padding-bottom:3px">9:30&nbsp;-&nbsp;10:40</td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:12px"><span style="font-weight:bold">Keep Calm and Push Apps-aas&nbsp;&nbsp;</span>Sergiu Bodiu，Pivotal <span style="font-family:'宋体'">高级解决方案架构师</span></td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;padding-top:5px ;color: #595757;padding-bottom:3px;line-height:23px">10:40&nbsp;-&nbsp;12:40</td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:12px"><span style="font-family:'宋体';font-weight:bold">使用</span> <span style="font-weight:bold">Spring</span> <span style="font-family:'宋体';font-weight:bold">快速构建微服务架构应用</span>&nbsp;&nbsp;Joshua Long，Pivotal Spring <span style="font-family:'宋体'">技术专家</span></td>
+</tr>
+<tr>
+<td style="font-size: 13px;color: #595757; text-align: center; margin: 0; font-family:Arial, Helvetica,sans-serif;padding-top:4px;padding-bottom:3px;">12:40&nbsp;-&nbsp;14:00</td>
+</tr>
+<tr>
+<td style="font-size: 13px;color: #595757; text-align: center; margin: 0; font-family:Arial, Helvetica,sans-serif;padding-bottom:12px;"><span style="font-family:'宋体';font-weight:bold">午餐</span></td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;padding-top:5px ;color: #595757;padding-bottom:3px">14:00&nbsp;-&nbsp;15:00</td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:12px;font-weight:bold">Pivotal <span style="font-family:'宋体'">的云原生应用和</span> PaaS&nbsp;&nbsp;<span style="font-weight:normal;font-family:'宋体'">周晖，</span><span style="font-weight:normal;">Pivotal</span> <span style="font-weight:normal;font-family:'宋体'">大中华区云计算首席架构师</span></td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;padding-top:5px ;color: #595757;padding-bottom:3px">15:00&nbsp;-&nbsp;16:00</td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:12px"><span style="font-family:'宋体';font-weight:bold">快速构建微服务体系</span>&nbsp;&nbsp;<span style="font-family:'宋体';">王福强，挖财技术</span> VP <span style="font-family:'宋体';">兼首席架构师</span></td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:3px">16:00&nbsp;-&nbsp;16:20</td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:12px"><span style="font-family:'宋体';font-weight:bold">茶歇</span></td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;padding-top:5px ;color: #595757;padding-bottom:3px">16:20&nbsp;-&nbsp;17:00</td>
+</tr>
+<tr>
+<td align="center" style="font-size: 13px; text-align: center;font-family:Arial, Helvetica,sans-serif;color: #595757;padding-bottom:7px"><span style="font-family:'宋体';font-weight:bold">圆桌论坛</span>&nbsp;&nbsp;Joshua，Sergiu，<span style="font-family:'宋体';">周晖，王福强</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width='35'></td>
+</tr>
+<tr>
+<td colspan="3" height="15" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td width='35'></td>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td colspan="2" style="color: #01ad9d; font-size: 17px; line-height: 23px;font-family: '宋体'; text-align: center;padding-top:28px;padding-bottom:22px; font-weight:bold" align="center">演讲主题摘要</td>
+</tr>
+<tr>
+<td style="color: #01ad9d; font-size: 16px; line-height: 23px;font-family: '宋体'; text-align: center;padding-bottom:20px; font-weight:bold" align="center">演讲主题一：<span style="font-family: Arial;">Keep Calm and Push Apps-aas</span></td>
+</tr>
+<tr>
+<td style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;"><span style="font-weight:bold">主题摘要：</span>你是否能为客户每周都推出新功能？那么每天呢？每小时呢？难道新的开发人员能在第一天就能部署代码吗？难道他们在面试的时候也能部署代码吗？你能在新员工部署应用后，确信万无一失，一觉睡到天亮吗？全面推行云原生战略需要对文化和技术做出改变，<span style="font-family: Arial;">DevOps</span> 正是我们应对这些改变的方法。</td>
+</tr>
+<tr>
+<td style="color: #01ad9d; font-size: 16px; line-height: 23px;font-family: '宋体'; text-align: center;padding-bottom:20px;padding-top:30px; font-weight:bold" align="center">演讲主题二：云原生 <span style="font-family: Arial;">Java</span></td>
+</tr>
+<tr>
+<td valign="top" style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;"><span style="font-weight:bold">主题摘要：</span>过去，企业级用户实现应用系统通常需要花费比较长的时间进行应用的开发、测试和投产，最终支撑业务的运行。而企业客户的业务需求产生到最终业务系统上线的速度，对于有效提升企业用户的业务开展速度和市场响应速度是至关重要的。在当前的市场环境下，每个企业的 <span style="font-family: Arial;">IT</span> 能力，包括企业应用系统的快速投产和安全高效运行，并及时满足业务变化的要求的能力，是至关重要的。<br>
+<br>
+过去企业级用户实现传统应用都是采用一体化的架构来实现，但是其固有架构存在架构臃肿难以扩展维护等问题。微服务，是通过对大型软件进行分解多个可独立部署的部件的方式来架构应用实现的方式，具有易于扩展和后期升级维护等特别，特别适用于面向互联网用户的大型应用。<br>
+<br>
+在这一个演讲中，我们可以了解到像票务大师、阿里巴巴、<span style="font-family: Arial;">Netflix</span> 等这样的著名企业如何利用 <span style="font-family: Arial;">Spring Cloud</span> 和 <span style="font-family: Arial;">Spring Boot</span> 实现微服务架构并降低工作复杂度，提升业务上线速度。</td>
+</tr>
+<tr>
+<td style="color: #01ad9d; font-size: 16px; line-height: 23px;font-family: '宋体'; text-align: center;padding-bottom:20px; font-weight:bold;padding-top:30px" align="center">演讲主题三：<span style="font-family: Arial;">Pivotal</span> 的云原生应用和 <span style="font-family: Arial;">PaaS</span></td>
+</tr>
+<tr>
+<td valign="top" style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;padding-bottom:26px;"><span style="font-weight:bold">主题摘要：</span>云原生应用<span style="font-family: Arial;">(Cloud Native)</span>首先是由 <span style="font-family: Arial;">Pivotal</span> 的 <span style="font-family: Arial;">Matt Stine</span> 提出，并且通过一系列的著作定义了 <span style="font-family: Arial;">Cloud Native</span>。<span style="font-family: Arial;">2016</span>年云原生概念开始火热起来，各方各面都宣称自己是云原生，从各自的角度来定义、阐述自己和云原生的关系。本次演讲会介绍 <span style="font-family: Arial;">Matt Stine</span> 定义的 <span style="font-family: Arial;">Cloud Native</span> 是什么？分析云原生应用的技术发展方向和目前的一些进展，以及 <span style="font-family: Arial;">Pivotal</span> 在云原生上的工作。<br>
+<br>
+云原生应用天生就适合部署在 <span style="font-family: Arial;">PaaS</span> 平台，而 <span style="font-family: Arial;">PaaS</span> 平台很多特性也是专为适应云原生应用而设计的，本次演讲也会介绍 <span style="font-family: Arial;">Pivotal Cloud Foundry (PCF)</span> 的 <span style="font-family: Arial;">PaaS</span> 云如何适应云原生应用，以及在 <span style="font-family: Arial;">PCF</span> 上实现的 <span style="font-family: Arial;">PaaS</span> 和云原生微服务框架的集成。<br>
+<br>
+除了 <span style="font-family: Arial;">PaaS</span> 运行平台，云原生应用也可以部署在 <span style="font-family: Arial;">CaaS</span> (容器即服务)平台上，<span style="font-family: Arial;">PaaS</span> 和 <span style="font-family: Arial;">CaaS</span> 有哪些区别？从 <span style="font-family: Arial;">PaaS</span> 理论和功能上对比 <span style="font-family: Arial;">PaaS</span> 和 <span style="font-family: Arial;">CaaS</span>，同时对比对云原生应用支持上的一些差异。</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="35"></td>
+</tr>
+<tr>
+<td colspan="3" height="15" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td width='35'></td>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td colspan="2" style="color: #01ad9d; font-size: 17px; line-height: 23px;font-family: '宋体'; text-align: center;padding-top:28px;padding-bottom:22px; font-weight:bold" align="center">演讲嘉宾介绍</td>
+</tr>
+<tr>
+<td style="padding-right:24px" valign="top"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Landing_page0714_Joshua_Long_136x137.jpg" width='116' height="116" alt="参会嘉宾：Josh Long"></td>
+<td valign="top" style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;"><span style="font-family: Arial;color:#01ad9d">Joshua Long</span>，<span style="font-family: Arial;">Pivotal</span> 公司 <span style="font-family: Arial;">Spring</span> 技术开发的倡导者，<span style="font-family: Arial;">Spring</span> 技术权威，<span style="font-family: Arial;">Java</span> 专家，拥有《云原生 <span style="font-family: Arial;">Java</span>：利用 <span style="font-family: Arial;">Spring Boot、Spring Cloud</span>，以及 <span style="font-family: Arial;">Cloud Foundry</span> 来设计弹性系统》等<span style="font-family: Arial;">5</span>本著作；<span style="font-family: Arial;">3</span>套 <span style="font-family: Arial;">Spring</span>，微服务的畅销视频。</td>
+</tr>
+<tr>
+<td colspan="2" height="20"></td>
+</tr>
+<tr>
+<td width="116px" valign="top" style="padding-right:24px"><!--方形图片转换为圆形-->
+<img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Landing_page0714_Sergiu_Bodiu_136x136.jpg" width='116' height="116" alt="参会嘉宾：Sergiu Bodiu"></td>
+<td valign="top" style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;"><span style="font-family: Arial;color:#01ad9d">Sergiu Bodiu</span>，<span style="font-family: Arial;">Pivotal</span> 亚太及日本地区的高级解决方案架构师。他热衷于开源，是 <span style="font-family: Arial;">Spring</span> 技术社区的主要贡献者。<span style="font-family: Arial;">Sergiu</span> 曾为金融服务行业构建过大型系统，特别是在使用开源软件来构建系统方面有着丰富的经验。</td>
+</tr>
+<tr>
+<td colspan="2" height="20"></td>
+</tr>
+<tr>
+<td style="padding-right:24px" valign="top"><!--方形图片转换为圆形-->
+<img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Landing_page0714_Zhou_Hui_136x136.jpg" width='116' height="116" alt="参会嘉宾：周晖"></td>
+<td valign="top" style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;"><span style="color:#01ad9d">周晖</span>，<span style="font-family: Arial;">Pivotal</span> 大中华区云计算首席架构师和 <span style="font-family: Arial;">Cloud Foundry</span> 开源社区中国推广人，从<span style="font-family: Arial;">2009</span>年开始从事 <span style="font-family: Arial;">PaaS</span> 云相关的项目工作，主导或是参加了多个的公有、私有 <span style="font-family: Arial;">PaaS</span> 云的建设。<span style="font-family: Arial;">2014</span>年开始参与组织过国内所有的 <span style="font-family: Arial;">Cloud Foundry Meetup</span> 或做专题分享。</td>
+</tr>
+<tr>
+<td colspan="2" height="20"></td>
+</tr>
+<tr>
+<td style="padding-right:24px"><!--方形图片转换为圆形-->
+<img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WangFulong_150x151.jpg" width='116' height="116" alt="参会嘉宾：王福强"></td>
+<td valign="top" style="color: #666666; font-size: 13px; line-height: 22px; font-family: '宋体'; text-align: left;"><span style="color:#01ad9d">王福强</span>，挖财技术 <span style="font-family: Arial;">VP</span> 兼首席架构师，原阿里资深架构师。 <span style="font-family: Arial;">Cobarclient</span> 分布式数据访问层作者;《<span style="font-family: Arial;">Spring</span> 揭秘》作者；<span style="font-family: Arial;">Scala</span> 早期接受者与布道者。</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td style="font-size: 13px; color: #666666; text-align: center;line-height: 23px; font-family: '宋体'; padding-top: 43px;padding-bottom:43px;">获取更多的产品信息和资料下载，请关注 <span style="font-family: Arial;">Pivotal</span> 微信公众号，搜索 <span style="font-family: Arial;">ID</span>：<span style="font-family: Arial;">pivotal_china</span>，<br>
+也可以扫描下方二维码关注。<br>
+<a style="color:#666666;" href="http://icampaign.com.cn/pivotal/resources/index.php"><span style="line-height: 22px; font-family: Arial;">Pivotal 2016</span> 云原生环球路演精彩回顾，<span style="font-family: Arial;">ppt</span> 免费下载！</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="35"></td>
+</tr>
+<tr>
+<td width="35"></td>
+<td style="background-color:#f5f5f5"></td>
+<td width="35"></td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td width="35"></td>
+<td height="20"></td>
+<td width="35"></td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tbody>
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<!-- start of social links // -->
+<!-- End of social links // -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center" style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;;font-family:宋体;"><a href="https://pivotal.io/cn" target="_blank" style="font-family: Arial; color:#008774;text-decoration: none;">Pivotal</a> 为企业在业务创新的新时代中蓬勃发展提供了现代化的关键技术和方法。我们基于云、大数据和敏捷开发提供了全面的解决方案，使企业能够创建全新的框架，以提升数据价值，加快应用交互速度和降低成本，并通过应用加速和高效扩展来提升其竞争能力。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="font-family: Arial; color:#008774;text-decoration: none;">www.pivotal.io/cn.</a>
+<p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p>
+<span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2016 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br>
+<a href="http://connect.pivotal.io/CommercialSubscription.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a> 您的订阅信息或&nbsp; <a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 <!--<p> --></td>
+<td width="30"></td>
+</tr>
+</tbody>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

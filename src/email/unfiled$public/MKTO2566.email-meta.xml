@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 4 - May 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - May 2015</subject>
+    <textOnly>May has been a huge month for Pivotal Web Services and Cloud Foundry &lt;http://www.cloudfoundry.org/&gt;. Earlier this month, the Cloud Foundry Summit &lt;http://cfsummit.com&gt; was held in Santa Clara, CA on May 11 - 12. We will briefly cover the highlights of the big event. Next, we talk about how PWS supports “polyglot pricing” for the different language runtimes on Cloud Foundry and how you can benefit from that flexibility. In our partner focus, we talk about Temporize, a SaaS based scheduler for jobs in your application. Lastly, a reminder that we will be moving to the new cflinuxfs2 stack on May 28, 2015 and you should migrate your critical apps before then. 
+
+We hope you enjoy this month’s issue. Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws &lt;https://twitter.com/pivotalws&gt;.
+ 
+Highlights from the Cloud Foundry Summit May 11-12, 2015
+On May 11 and 12, over 1500 application developers, operators and IT experts met to hear about the future of Cloud Foundry, the open source software PaaS that is the base for Pivotal Web Services. One of the benefits of hosting your application on PWS is that you can follow the roadmaps and plans for the platform through participation in the open source project and events like CF Summit. If you couldn’t make it or want to see some of the sessions again, the Cloud Foundry Foundation has published videos of the sessions which are available at http://www.cfsummit.com/program/session-videos &lt;http://www.cfsummit.com/program/session-videos&gt;. If you want to follow the progress of Cloud Foundry features, check out the public Pivotal Tracker projects &lt;https://github.com/cloudfoundry-community/cf-docs-contrib/wiki/Pivotal-Tracker-Instructions&gt;. 
+
+
+“Polyglot Pricing” for Maximal Value
+One of the challenges of using software as a service is rightsizing your resources to meet your needs. If you provision a Virtual Machine on an IaaS provider, you have to choose which size meets your needs. Choose too large and you underutilize your resources, choose too little and you have to redeploy. Other application hosting platform offerings are sized in arbitrary discrete units which makes utilization equally as difficult. PWS takes advantage of the capabilities of Cloud Foundry to let you deploy your applications with the exact memory your applications needs. Java apps can be deployed with 1GB of system RAM, while Node.js apps can be provisioned with 128 MB or even less. Golang apps can be even more thrifty as seen in this example &lt;http://blog.pivotal.io/cloud-foundry-pivotal/features/running-elasticsearch-and-kibana-using-go-on-pivotal-web-services-for-less-than-1-per-mo&gt;. In all cases, you are paying by the GB/hr. This polyglot pricing means that you pay for the resources your app requires and not more. You can find out more about PWS’s pricing structure at https://run.pivotal.io/pricing/ &lt;https://run.pivotal.io/pricing/&gt;. 
+
+So what are the implications of this pricing flexibility? A common industry unit of application containers is 512 MB. This is well targeted for Ruby on Rails applications or small Java apps. However, if your app is a smaller Node.js app, you see the benefit of polyglot pricing. It is possible to host 4 instances of that Node.js app for the same 512 MB. Alternatively, consider the following: you deploy two instances of that application for 256 MB of compute and obtain high availability as these two instances are automatically distributed over two availability zones. The application receives both application availability and data center availability for half the cost. Polyglot pricing enables developers to take advantage of more efficient app environments that the modern Cloud Foundry PaaS provides.
+
+Temporize, an External Scheduler for PWS
+Temporize provides a flexible and secure web service for scheduling cron jobs, saving you the development time and infrastructure costs of deploying and 
+maintaining your own dedicated job-scheduling system. At the predetermined time, Temporize makes a POST request to your application at the specified URL, providing any required data and triggering whatever task your app is set up to perform.
+
+Temporize offers a REST API that can be used with standard libraries in Java, Ruby, Python, Node.js, Clojure, Scala and more. Temporize is available in PWS Marketplace &lt;https://console.run.pivotal.io/marketplace&gt; and more details can be found in the documentation &lt;http://docs.run.pivotal.io/marketplace/services/temporize.html&gt;.  
+
+Moving to the 
+New Trusty Stack on Pivotal Web Services
+Developers with applications currently hosted on Pivotal Web Services will need to re-push their applications to explicitly use the 
+new cflinuxfs2 stack by May 28, 2015. A stack is a prebuilt file system, including an operating system, that supports running applications. PWS is moving to the new stack vendor in order to support future security fixes.
+
+We encourage developers to deploy their applications using the new cflinuxfs2 stack as a separate 
+“test” application to verify that their applications are not impacted before deploying to production. If you are using a custom buildpack, you should verify that it functions with the new stack. More details are available in our knowledge base article. &lt;http://support.run.pivotal.io/entries/80927999-Migrating-applications-from-the-lucid64-stack-to-the-cflinuxfs2-i-e-trusty-stack&gt;
+
+ Best Regards,
+Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,164 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="PortalNewCaseController" >
+    <ltng:require scripts="{!join(',', $Resource.jquery, $Resource.sendsafely)}"  />
+    <aura:attribute name="cObj" type="case" default="{'sobjectType': 'Case',}"/>
+	<aura:attribute name="origin" type="String"/>
+    <aura:attribute name="cUser" type="User"/>
+    <!-- Drop Zone Attributes -->
+	<aura:attribute name="widget" type="Object"/>
+    <aura:attribute name="status" type="boolean"/>
+    <aura:attribute name="accsplIds" type="String"/>
+    <!-- Drop Zone Attributes End-->
+    <!--********** Profile Details **********-->
+	<aura:attribute name="cAdmin" type="String" default="{!$Label.c.Pivotal_Community_Manager}"/>
+    <aura:attribute name="pUser" type="String" default="{!$Label.c.	Pivotal_Community_User}"/>
+    <!--********** Profile Details End**********-->     
+	<aura:attribute name="accounts" type="account[]"/>
+	<aura:attribute name="contacts" type="contact[]"/>
+    <aura:attribute name="entitles" type="Entitlement[]"/>
+	<aura:attribute name="Product" type="String" />
+    <aura:attribute name="priority" type="String" />
+    <aura:attribute name="depMap" type="map"/>
+    <aura:attribute name="productVersions" type="String[]"/>
+    <aura:attribute name="rComponents" type="String[]"/>
+    <aura:attribute name="rSubComponents" type="String[]"/>
+    <!--  <aura:handler event="aura:waiting" action="{!c.showSpinner}"/> -->
+
+    <aura:handler name="init"  value="{!this}" action="{!c.setInitialData}"/>
+    
+        <div> 
+           <label id="lab"><abbr class="slds-required" title="required">*</abbr>Account Name </label>&nbsp;
+            <aura:if isTrue="{!and(v.origin =='caseTab', v.accounts.length > 1)}">
+                <div> 
+                    <ui:inputSelect aura:id="accountIds" class="slds-input"
+                      labelClass="slds-form-element__label" required="true" change="{!c.onChangeOfAccount}">            
+						<ui:inputSelectOption text="None" label="Please Select"/>	
+                    	<aura:iteration items="{!v.accounts}" var="acc">
+							<ui:inputSelectOption text="{!acc.Id}" label="{!acc.Name}" />
+						</aura:iteration>
+					</ui:inputSelect>               
+                </div>
+                <aura:set attribute="else">
+                   <div>
+                       <ui:outputText aura:id="accountName" value="{!v.accounts[0].Name}"/>
+                   </div>
+   			   </aura:set>
+            </aura:if>
+         </div>
+         <div> 
+           <label id="lab"><abbr class="slds-required" title="required">*</abbr>Contact Name </label>
+           <aura:if isTrue="{!v.contacts.length > 1}">
+                <div> 
+                    <ui:inputSelect aura:id="contactIds" class="slds-input"
+                      labelClass="slds-form-element__label" required="true" change="{!c.onValueChange}">            
+						<ui:inputSelectOption text="None" label="Please Select"/>	
+                    	<aura:iteration items="{!v.contacts}" var="con">
+							<ui:inputSelectOption text="{!con.Id}" label="{!con.Name}" />
+						</aura:iteration>
+					</ui:inputSelect>               
+                </div>
+               <aura:set attribute="else">
+                   <div>
+                       <ui:outputText aura:id="contactName" value="{!v.contacts[0].Name}" />
+                   </div>
+   			   </aura:set>
+            </aura:if>
+         </div>
+          	
+			<div> <label id="lab"><abbr class="slds-required" title="required">*</abbr>Severity (Select One)</label>
+			<div class="slds-radio--button-group" >
+				<label class="slds-button slds-radio--button" for="sev4">
+					<input name="severity" type="radio" id="sev4" value="Severity 4 - Cosmetic"  onclick="{!c.Radiovalueset}"/>
+					<span class="slds-radio--faux slds-text-align--left" ><b>Low (S4)</b><br/>{!$Label.c.Portal_Severity4}</span>
+				</label>
+				<label class="slds-button slds-radio--button" for="sev3">
+					<input name="severity" type="radio" id="sev3" label="s3" value="Severity 3 - Minor" onclick="{!c.Radiovalueset}" />
+                    <span class="slds-radio--faux slds-text-align--left"><b>Medium (S3)</b><br/>{!$Label.c.Portal_Severity3}</span>
+				</label>
+				<label class="slds-button slds-radio--button" for="sev2">	 
+					<input name="severity" type="radio" id="sev2" value="Severity 2 - Major" onclick="{!c.Radiovalueset}" />
+                    <span class="slds-radio--faux slds-text-align--left"><b>High (S2)</b><br/>{!$Label.c.Portal_Severity2}</span>
+				</label>
+				<label class="slds-button slds-radio--button" for="sev1">
+					<input name="severity" type="radio" id="sev1" value="Severity 1 - Critical" onclick="{!c.Radiovalueset}" />
+                    <span class="slds-radio--faux slds-text-align--left"><b>Critical (S1)</b><br/>{!$Label.c.Portal_Severity1}</span>
+				</label>
+			</div>
+			</div>
+
+    		<aura:if isTrue="{!v.entitles.length > 1}">
+                <div>
+                    <label id="lab"><abbr class="slds-required" title="required">*</abbr>Product Subscription </label>
+                    <ui:inputSelect aura:id="entitleIds" class="slds-input"
+                                labelClass="slds-form-element__label" disabled="{! empty(v.entitles)}" required="true" change="{!c.onChangeOfEntitlement}" >            
+                        <ui:inputSelectOption text="None" label="Please Select"/>
+                        <aura:iteration items="{!v.entitles}" var="ent">
+                            <ui:inputSelectOption text="{!ent.Id}" label="{!ent.Name}" />
+                        </aura:iteration>
+                    </ui:inputSelect>
+               </div>
+               <aura:set attribute="else">
+               	<div>
+                    <div><label id="lab"><abbr class="slds-required" title="required">*</abbr>Product Subscription</label> </div>
+                	<b><ui:inputText aura:id="entitleName" value="No Product Subscriptions to display. Please select another account" disabled="true"/></b>
+                </div>
+            	</aura:set>
+            </aura:if> 
+			
+    		<aura:if isTrue="{! !empty(v.entitles)}">
+            <div>
+                <label id="lab"><abbr class="slds-required" title="required">*</abbr>Product Version</label>
+                    <ui:inputSelect aura:id="ProductVersion" class="slds-input" labelClass="slds-form-element__label" change="c.onValueChange" disabled="{!empty(v.productVersions)}">            
+                                <ui:inputSelectOption text="None" label="Please Select"/>
+                                <aura:iteration items="{!v.productVersions}" var="version">
+                                    <ui:inputSelectOption text="{!version}" label="{!version}"  />
+                                </aura:iteration>
+                   </ui:inputSelect>
+            </div>  
+             <div>
+                 <label id="lab"><abbr class="slds-required" title="required">*</abbr>Component</label>
+                    <ui:inputSelect aura:id="Components" class="slds-input" labelClass="slds-form-element__label" change="c.onValueChange" disabled="{!empty(v.rComponents)}">            
+                        <ui:inputSelectOption text="None" label="Please Select"/>
+                        <aura:iteration items="{!v.rComponents}" var="comp">
+                            <ui:inputSelectOption text="{!comp}" label="{!comp}"  />
+                        </aura:iteration>
+                 </ui:inputSelect>
+             </div>
+             <div>
+                            <label id="lab">Sub-Component</label>
+                            <ui:inputSelect aura:id="subComponents" class="slds-input" labelClass="slds-form-element__label" change="c.onValueChange" disabled="{!empty(v.rSubComponents)}">            
+                                <ui:inputSelectOption text="None" label="Please Select"/>
+                                <aura:iteration items="{!v.rSubComponents}" var="subComp">
+                                    <ui:inputSelectOption text="{!subComp}" label="{!subComp}"  />
+                                </aura:iteration>
+                            </ui:inputSelect>
+             </div>
+    </aura:if> 
+			
+			
+    	<div class="sfdcpicklists1"  id="pickmain" >
+            <label id="lab"><abbr class="slds-required" title="required">*</abbr>Environment</label>
+            <div >
+                 <ui:inputSelect aura:id="environ" class="slds-select"  change="{!c.onValueChange}"/>
+            </div>
+        </div>
+        <div class="sfdcpicklists2"  id="pickmain2" >
+                    <label id="lab"><abbr class="slds-required" title="required">*</abbr>What action were you performing?</label>
+                    <div >
+                         <ui:inputSelect aura:id="perform" class="slds-select"  change="{!c.onValueChange}"/>
+                    </div>
+                </div>
+
+
+      <div class="form-group">
+			<label id="lab"><abbr class="slds-required" title="required">*</abbr>Subject</label>
+			<ui:inputText class="form-control" value="{!v.cObj.Subject}"  required="true"/>
+        </div>
+      <div>
+		<label id="lab"><abbr class="slds-required" title="required">*</abbr>Description</label>
+        <ui:inputTextArea class="form-control" value="{!v.cObj.Description}" />
+      </div>
+   <!-- <center><ui:spinner aura:id="spinner"/></center>-->
+ 
+    <c:ValidateCaseData aura:id="child"/>
+    <div class ="senddiv" id="dropzone-replacement-div"></div>
+</aura:component>

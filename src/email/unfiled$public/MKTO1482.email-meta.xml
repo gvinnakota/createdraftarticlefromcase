@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Email Reminder - Singapore</name>
+    <style>none</style>
+    <subject>See you Thursday 11/6 at the Pivotal Cloud Platform Workshop - Singapore</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up this Thursday in Singapore. We look forward to seeing you! 
+
+Please bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Pivotal Cloud Platform Workshop
+Thursday, November 6, 2014
+1:30pm - 7:00pm (tea break &amp; happy hour)
+Workshop Agenda &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/singapore&gt;
+
+IDA Lab @ National Design Center
+#03-04
+111 Middle Road
+Singapore
+Driving Directions &lt;https://www.google.com/maps/place/National+Design+Centre/@1.298824,103.853511,17z/data=!3m1!4b1!4m2!3m1!1s0x31da19bad62a795f:0xebd6bcfaf5795f03&gt;
+
+WORKSHOP PREREQUISITES
+All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest! 
+
+ - A FREE account on Pivotal Web Services - create a 60-day trial with no credit card at 
+https://run.pivotal.io
+
+
+
+QUESTIONS? 
+Contact us. &lt;mailto:info@pivotal.io&gt;
+
+We look forward to seeing you!
+The Pivotal Team
+
+P.S.- Only a few spots remain! If you have a colleague interested 
+in attending please forward on this link to the workshop details &amp; registration &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/singapore&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

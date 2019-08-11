@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>If email is sent to ehsp-escalations@pivotal.io email box, an email notification with case number will be sent to all CSRs during all business hours 24x7</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Internal Support Notification for Escalated EH/SP Case</name>
+    <style>formalLetter</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>EH/SP SUPPORT ESCALATION  FIRST EH/SP RESPONDER: REPLY-ALL TO THIS EMAIL INTERNALLY TO INDICATE OWNERSHIP.  
+
+EH/SP CASE DETAILS 
+----------------------- 
+URL: {!Case.Link} 
+Case: {!Case.CaseNumber} 
+Contact: {!Contact.Email} 
+Subject: {!Case.Subject} 
+Description: 
+{!Case.Description}
+
+{!Case.ThreadId__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

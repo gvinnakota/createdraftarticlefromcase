@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><a href="http://run.pivotal.io/"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services"></a></p>
+</div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><span style="font-size: 15px;"><strong>July 2017 Push With Success</strong> <br /><br /> Wow! We&rsquo;re still recovering from last month&rsquo;s Cloud Foundry Summit where our enterprise customer base  shared their Pivotal Cloud Foundry success stories about how they  
+   transformed their software development traditional waterfall shops into agile powerhouses.
+     Pivotal Web Services can offer the same benefits to smaller companies and individuals that Pivotal Cloud Foundry offers to the Fortune 500.
+     <br /><br /> In this edition, we&rsquo;ll cover the ability to self provision Container-to-Container Networking (C2CN) on PWS.
+     Now you can take advantage of the performance and security benefits of C2CN more easily.
+     We&rsquo;ll also share a little shortcut for Ruby on Rails developers to access the Rails console.
+  Then we will close with a customer profile on Structurizr, a startup that takes advantage of PWS capabilities.
+      <br /><br /> Please follow us on Twitter at <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://twitter.com/pivotalws?lang=en">@PivotalWS</a> for the latest news and check out our <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://blog.run.pivotal.io">blog</a> for the latest platform updates.
+      <br /><br /> Best Regards, <br />The Pivotal Web Services Team <br /><br /> <strong>Self Service Container to Container Networking on PWS</strong> <br /><br /> Container to container networking (C2CN) has been available as a beta feature since early 2017.
+     Details about the benefits of C2CN are available <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://docs.run.pivotal.io/concepts/understand-cf-networking.html#policies">here</a>.
+      Until recently, users had to contact PWS support to request access to this feature, but now container networking is enabled for all PWS users and the update is backwards compatible and fully supported.
+     Any Space Developer can configure network policies for applications in their space(s).
+     The commands are executed from the CLI Network Access plug-in and the resulting &lsquo;cf allow-access&rsquo; command.
+     More details are covered in our <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://content.pivotal.io/blog/building-spring-microservices-with-cloud-foundrys-new-container-networking-stack">original blog post</a>.
+     If you are a beta user of this feature, your applications will continue to work with no further action required.
+     To help us improve the product, we&rsquo;re looking for feedback from our users, which can be provided <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://goo.gl/forms/u36QD15ea1vsb60u2">here</a>.
+     Thank you in advance for sharing your experience with us <br /><br /> <strong>Accessing the Rails Console on PWS </strong> <br /><br /> One of the common requests when running Rails apps on PWS is 'how do I get a Rails console to inspect my app?' In the past, there wasn&rsquo;t a way to access the terminal, but that has changed with the addition of the &lsquo;cf ssh&rsquo; command to the  
+Cloud Foundry cf CLI tool.
+     You should be able to access the Rails console once you have shelled in, however that&rsquo;s not the case as you need to execute and load the environment.
+     <br /><br /> However, there is a work around, by typing the following: <br /><br /> $ cf ssh myapp -t -c &ldquo;/tmp/lifecycle/launcher /home/vcap/app &lsquo;rails c&rsquo; &rdquo;&rdquo; <br /><br /> <em>Substitute myapp with the name of your app</em>.
+     <br /><br /> A more elegant solution is in the public backlog, which is available in this Pivotal Tracker <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://www.pivotaltracker.com/n/projects/1042066/stories/146900873">story</a>.
+      One of the benefits of Cloud Foundry is that, as an open source project, it&rsquo;s possible to see how future features get included.
+     If you want to contribute to Cloud Foundry, become a committer by visiting the <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://www.cloudfoundry.org/engineering/">Cloud Foundry Foundation</a>.
+     <br /><br /><strong> Customer Profile: Structurizr</strong> <br /><br /> Earlier this month, on the PWS blog, we had a <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="https://blog.run.pivotal.io/a-conversation-with-pws-customer-simon-brown-on-architecture-and-platforms/">conversation</a> with Simon Brown of <a style="color: #00ae9e; font-weight: 400; 
+text-decoration: none;" href="https://structurizr.com/">Structurizr</a>, a service that helps visualize your code to improve your design.
+     In that conversation, Brown talked about the advantages of using a platform like PWS.
+   <br /><br /> &ldquo;There&rsquo;s a lot of hype around things like Docker at the moment.
+     And I&rsquo;m a huge fan, but I don&rsquo;t necessarily like the way that it&rsquo;s being marketed as &ldquo;a way to build better apps&rdquo;.
+     There are certainly a number of benefits to creating a single shippable unit that includes everything needed to run the various parts that make up any given software system.
+     However, I&rsquo;m concerned that many developers are jumping on this without the prerequisite operations knowledge about patching infrastructure, hardening containers, scaling, clustering, failover, log aggregation, monitoring, etc.
+     <br /><br /> I think that PaaS provides a much better set of abstractions for developers to work with.
+     In addition to the software architecture training and consulting that I do, I also have a startup called Structurizr, which is a collection of tooling to help teams visualise, document and explore their software architecture.
+     Part of this is a Software as a Service offering, and it&rsquo;s hosted on Pivotal Web Services.
+     As an early stage startup, I have a couple of options for getting something running on the web.
+     The first is to go down the Infrastructure as a Service route, where I build and provision all of the web and database servers that I need, potentially with Docker.
+     As a software developer myself, (1) this is a lot of work and (2) it&rsquo;s not necessarily my core skill set.
+     With PaaS, I simply push my applications (Java .war files in my case) and the platform (PWS) does the rest.&rdquo; <br /><br /> If you have an interesting use case or application on PWS and want to share your experience, please reach out to Charles Wu at <a style="color: #00ae9e; font-weight: 400; text-decoration: none;" href="mailto:chwu@pivotal.io">chwu@pivotal.io</a>.
+ </span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="35"></td>
+<td height="20"></td>
+<td width="35"></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tr>
+<td height='20'></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td width='46'></td>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-twitter-gray-30.png" alt="Follow us on Twitter" border="0"></a></td>
+<td width='91'></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-linkedin-gray-30.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td width='96'></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-facebook-18.png" alt="Like us on Facebook" border="0"></a></td>
+<td width='91'></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-gplus-40.png" alt="Add us on Google+" border="0"></a></td>
+<td width='82'></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/icon-youtube-38.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td width='46'></td>
+</tr>
+<tr>
+<td height='20'></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<!-- End of social links // -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#999999; font-size:12px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0;font-family:Helvetica,Arial,sans-serif"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;;font-family: Helvetica,sans-serif;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.<br>
+&copy; 2017 Pivotal Software, Inc. All rights reserved. 875 Howard Street, Fifth Floor, San Francisco, CA 94103. Published in the USA. <a href='http://connect.pivotal.io/UnsubscribePage.html' style="color:#059a91; text-decoration:none;">Unsubscribe</a>. <a href='http://connect.pivotal.io/subscription-management.html' style="color:#059a91; text-decoration:none;">Manage your subscription preferences</a>.</td>
+<td width="30"></td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

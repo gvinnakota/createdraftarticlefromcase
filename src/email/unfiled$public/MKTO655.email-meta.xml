@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Event_WWDCDinner_Q214.Reminder invite from Michael Kahn</name>
+    <style>none</style>
+    <subject>Seats filling up fast – RSVP today for dinner with Pivotal Labs</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+Spots are filling up fast for our WWDC dinner at Absinthe in Hayes Valley on Monday, June 2, 2014 at 6:30 p.m. Simply reply to this email to RSVP.
+
+Date: Monday, June 2, 2014 
+Time: 6:30 p.m. PDT
+Location: Absinthe SF, 398 Hayes St, San Francisco, CA 94102
+Looking forward to having you join us for this invite-only dinner with some of the top mobile experts in the industry.
+
+Regards,
+Michael
+Michael Kahn
+Director, Business Development
+Pivotal Labs 
+650.422.1198</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

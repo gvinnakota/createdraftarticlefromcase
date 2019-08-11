@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title> 应用无忧Spring</title> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; "> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: '宋体'; font-size: 13px; font-weight: normal">&nbsp;<br> 如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a><br> <br></td> 
+</tr> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td valign="top" style=""><img title="roadshow" src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06_01.png" alt="应用无忧 Spring" width="600"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; "> 
+<tbody> 
+<tr> 
+<td style="font-family:Helvetica, Arial, sans-serif;line-height: 1.5em;color:#555555; font-size:12pt; line-height:1.5em;padding:35px 30px 20px" colspan="3"><b><span style="color:#0049b6">活动介绍</span></b></td> 
+</tr> 
+<tr> 
+<td width="30">&nbsp;</td> 
+<td style="font-family:Helvetica, Arial, sans-serif;line-height: 1.5em;color:#555555; font-size:10pt; line-height:1.5em;padding:20px 0px; border-top:solid #0049b6 1.5pt;"> 关注Spring、Cloud Foundry、微服务、Java 等热门技术的开发者和企业级客户，还记得去年夏天那场火热的Spring Summit 2017吧？包括Spring 技术布道师Josh Long，Pivotal 首席技术专家、技术布道师Mark Heckler在内的多位Spring领域技术大咖，分享了《微服务中的最终一致性》、《有了Spring，内部框架还缺什么》等精彩话题。<br><br>7月21日，Spring Summit 2017的发起者——Pivotal与极客邦科技InfoQ，将继续联合主办以Spring为主题的沙龙活动。如果说Spring Summit 2017致力于展示Spring生态的强大，此次Spring沙龙则把目光锁定在Spring技术、工具是如何帮助开发者解决业务转型和创新中的实际问题，也就是落实到实践和实操层面上。伴随Spring社区在中国的发展和进一步活跃，我们除了“懂它”之外，更关心如何“用好它”。所以此次沙龙主题定为——应用无忧Spring实战营。 </td> 
+<td width="30">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="30">&nbsp;</td> 
+<td> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td width="52%" style="font-family:Helvetica, Arial, sans-serif;line-height: 1.5em;color:#555555; font-size:10pt; line-height:1.5em;"> <b>活动费用：</b>免费<br> <b>拟邀人数：</b>150人（限额免票）<br> <b>活动时间：</b>2018.7.21（周六）<br> <b>活动地点：</b>具体地址报名成功后通过短信通知</td> 
+<td align="center" style="font-family:Helvetica, Arial, sans-serif;"><a href="http://etrack07.com/track/click/eyJtYWlsbGlzdF9pZCI6IDQ5NTY4NywgInRhc2tfaWQiOiAiMTA3NzY3NyIsICJlbWFpbF9pZCI6ICIxNTMwODMxODAwMjkyXzQ1MDE4XzEyOTA5Xzk3OTYuc2MtMTBfOV82M18xNjEtaW5ib3VuZDkwJGdyZWF0ZXJjaGluYV9tYXJrZXRpbmdAcGl2b3RhbC5pbyIsICJzaWduIjogIjc5MmM4ZTU1N2U2NThhYjZjOTlmODUzNTM1MzllMmU5IiwgInVzZXJfaGVhZGVycyI6IHt9LCAibGFiZWwiOiAiNjE1ODE2IiwgImxpbmsiOiAiaHR0cHMlM0EvL3d3dy5iYWdldmVudC5jb20vZXZlbnQvMTAyODM0NiUzRmJhZ190cmFjayUzRGVkbSIsICJ1c2VyX2lkIjogNDUwMTgsICJjYXRlZ29yeV9pZCI6IDE0ODMwMH0=.html" target="_blank" style="color:#ffffff;text-decoration:none"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06button.jpg"></a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+<td width="30">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="30">&nbsp;</td> 
+<td> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 12pt; line-height: 1.5em; text-align: left; margin: 0;padding-top:20px;padding-bottom:20px;border-bottom:solid #0049b6 1.5pt;"><b><span style="color:#0049b6">活动日程</span></b></td> 
+</tr> 
+<tr>
+<td>
+<table width="80%" border="1" cellspacing="0" cellpadding="0" style="border: 1px solid rgb(204, 204, 204);"> 
+<tbody>
+<tr> 
+<td style="color: white;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;background:#3366ff;width:22%;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">时间</td> 
+<td style="color: white;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;background:#3366ff;width:42%;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">主题</td> 
+<td style="color: white;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin:0;background:#3366ff;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">演讲嘉宾</td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-width:1.0pt;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">13:30 ～ 14:00</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-width:1.0pt;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);" colspan="2">签到</td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">14:00 ～ 14:40</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">论Devops创新的五大关键要素</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin:0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);"> Andrew Clay Shafer，Pivotal高级技术总监</td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">14:40 ～ 15:20</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">如何使用Spring Cloud Data Flow/Skipper编排和持续交付微服务</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin:0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">Ilayaperumal Gopinathan，Spring Cloud Skipper/Stream/Data Flow committer </td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">15:20 ～ 15:30</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);" colspan="2">茶歇</td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">15:30 ～ 16:10</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">分布式跟踪和Zipkin概念及实践 </td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin:0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">Adrian Cole，Spring Cloud OSS分布式跟踪技术员</td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">16:10 ～ 16:50</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">Spring Cloud Netflix-Ribbon深度解析</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin:0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);"> 张凡，京东金融资深研发</td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">16:50 ～ 17:30</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin: 0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">Spring Cloud Netflix-Eureka原理揭秘</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size:10pt; text-align: center; margin:0;border-top:1px solid rgb(204, 204, 204);border-left:1px solid rgb(204, 204, 204);">李刚，Pivotal高级解决方案架构师</td> 
+</tr> 
+</tbody>
+</table></td>
+</tr> 
+<!-- <tr> 
+<td> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td style="background-color:#888888;color:#ffffff;padding:10px 0;font-family:Helvetica, Arial, sans-serif;font-size: 15px;text-align:center">我们为8:30前完成现场签到的前300位朋友准备了一份小礼品，先到先得。</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> --> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 12pt; line-height: 1.5em; text-align: left; margin: 0;padding-top:20px;padding-bottom:20px; border-bottom:solid #0049b6 1.5pt;"> <b><span style="color:#0049b6">演讲主题</span></b> </td> 
+</tr> 
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style=""> 
+<tbody>
+<tr> 
+<td style="width:13px;padding-top:5px;">&nbsp;</td> 
+<td style="width:94px;padding-top:5px;" valign="top"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06a.png"></td> 
+<td style="width:12px;padding-top:5px;">&nbsp;</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 10pt;padding-top:5px;" valign="top"><b><span style="font-size:11.5pt;color:#0049b6;">分享主题：论Devops创新的五大关键要素</span></b><br><br><b>Andrew Clay Shafer：</b>Pivotal高级技术总监。多年来一直是开源领域的使用者和贡献者。他在技术和商业领域拥有深厚从业背景，是Puppet Labs联合创始人。创立该公司后从事有关CloudStack和OpenStack生态系统的工作，在构建开源业务和社区方面颇有见地，因发表关于DevOps和组织学习的论述而出名。<br><br><b>演讲摘要：</b>在本次演讲中，将从推动企业发展变革的五个要素， 即文化、自动化、精益思维、指标与共享五个方面详细介绍企业如何从个人层面开始，再转向团队和组织，通过使用模型并回答问题以确定投入时间和资源配置。</td> 
+</tr> 
+<tr> 
+<td style="width:13px;padding-top:20px;">&nbsp;</td> 
+<td style="width:94px;padding-top:20px;" valign="top"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06b.png"></td> 
+<td style="width:12px;padding-top:20px;">&nbsp;</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 10pt;padding-top:20px;" valign="top"><b><span style="font-size:11.5pt;color:#0049b6;">分享主题：如何使用Spring Cloud Data Flow/Skipper编排和持续交付微服务</span></b><br><br><b>Ilayaperumal Gopinathan：</b>又名Ilaya，Spring Cloud Skipper/Stream/Data Flow committer 。致力于Spring Cloud项目，如Spring Cloud Stream，Spring Cloud Data Flow，Spring Cloud Skipper和其他相关项目生态系统建设。 他还是Spring XD的提交者。 在加入Spring之前，他曾在VMware的vFabric App Suite，Cloud Foundry和Hyperic HQ等产品领域工作过。 在开始作为软件开发人员旅程之前，他是Wipro Technologies的QA工程师。 <br><br><b>演讲摘要：</b>本次分享介绍如何使用Spring Cloud Data Flow执行数据集成和实时数据处理流水线并将它们部署到Cloud Foundry和Kubernetes等多个平台。演示中将使用Spring Cloud Data Flow的DSL和Designer User Interface来展示在不用编写任何代码的情况下，针对常见用例组装数据流水线。此外，还将介绍如何使用Spring Cloud Skipper持续交付这些处理流水线。Spring Cloud Skipper是一个CI/CD平台，可用于发现、安装、升级和回滚多个云平台上的应用程序。</td> 
+</tr> 
+<tr> 
+<td style="width:13px;padding-top:20px;">&nbsp;</td> 
+<td style="width:94px;padding-top:20px;" valign="top"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06c.png"></td> 
+<td style="width:12px;padding-top:20px;">&nbsp;</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 10pt;padding-top:20px;" valign="top"><b><span style="font-size:11.5pt;color:#0049b6;">分享主题：Spring Cloud OSS分布式跟踪技术员 </span></b><br><br><b>Adrian Cole：</b>Spring Cloud OSS分布式跟踪技术员。是云互操作性圈子中的活跃人士。他是几个热门开源项目的创始人，其中比较著名的有 Apache jclouds 和 Netflix feign 项目。最近，他正集中精力研究分布式跟踪，特别是 OpenZipkin 项目中的分布式跟踪。Adrian 在 Pivotal 的 Spring Cloud OSS 团队工作。<br><br><b>演讲摘要：</b>此演示将对概念、数据模型和架构做出评述，还将探讨日志记录、指标和跟踪之间的区别。演示产品中包含代码，但不需要专业编程知识。结束之后，你将对分布式跟踪有所了解，从而做出正确判断！</td> 
+</tr> 
+<tr> 
+<td style="width:13px;padding-top:20px;">&nbsp;</td> 
+<td style="width:94px;padding-top:20px;" valign="top"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06d.png"></td> 
+<td style="width:12px;padding-top:20px;">&nbsp;</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 10pt;padding-top:20px;" valign="top"><b><span style="font-size:11.5pt;color:#0049b6;">分享主题：Spring Cloud Netflix-Ribbon深度解析</span></b><br><br><b>张凡：</b>京东金融资深研发。拥有10余年软件研发经验，5年金融保险行业架构经验，原大型保险公司系统架构师，现京东金融资深研发。曾经多次主导一体式架构的分布式拆分。一直关注微服务技术，长期关注spring cloud 开源社区，精通Spring Cloud部分相关组件源码。<br><br><b>演讲摘要：</b>客户端负载均衡组件Spring Cloud Netflix-Ribbon深度解析，主要通过一部分代码讲述Ribbon如何作用在客户端来拦截请求，完成负载均衡；默认配置如何生效；怎样获得服务列表；有哪些负载均衡算法，并从代码中找一些负载算法的例子来看Ribbon是怎么实现等等。</td> 
+</tr> 
+<tr> 
+<td style="width:13px;padding-top:20px;">&nbsp;</td> 
+<td style="width:94px;padding-top:20px;" valign="top"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06e.png"></td> 
+<td style="width:12px;padding-top:20px;">&nbsp;</td> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 10pt;padding-top:20px;" valign="top"><b><span style="font-size:11.5pt;color:#0049b6;">分享主题：Spring Cloud Netflix-Eureka原理揭秘</span></b><br><br><b>李刚：</b>Pivotal高级解决方案架构师。在加入Pivotal之前曾参与过金融行业系统的开发，拥有开发大型金融系统和保险系统的经验。他热爱并且一直关注微服务技术架构，是Spring Cloud开源项目的贡献者。 <br><br><b>演讲摘要：</b>随着微服务技术日趋成熟，越来越多的企业使用Spring Cloud构建微服务架构。Eureka作为Spring Cloud微服务架构中的注册中心，扮演着重要的角色。本演讲从源码角度出发，详细介绍Eureka的实现机制。</td> 
+</tr> 
+</tbody>
+</table></td>
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 10pt;padding-top:20px;padding-bottom:20px;">报名中遇到任何问题都请及时联系<b><a href="mailto:daisy@infoq.com" target="_blank" style="color:#2a6bad;">ella.chang@geekbang.org</a></b>。 </td> 
+</tr> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 15px; line-height: 1.5em; padding-bottom:20px;" align="center"><a href="http://etrack07.com/track/click/eyJtYWlsbGlzdF9pZCI6IDQ5NTY4NywgInRhc2tfaWQiOiAiMTA3NzY3NyIsICJlbWFpbF9pZCI6ICIxNTMwODMxODAwMjkyXzQ1MDE4XzEyOTA5Xzk3OTYuc2MtMTBfOV82M18xNjEtaW5ib3VuZDkwJGdyZWF0ZXJjaGluYV9tYXJrZXRpbmdAcGl2b3RhbC5pbyIsICJzaWduIjogIjc5MmM4ZTU1N2U2NThhYjZjOTlmODUzNTM1MzllMmU5IiwgInVzZXJfaGVhZGVycyI6IHt9LCAibGFiZWwiOiAiNjE1ODE2IiwgImxpbmsiOiAiaHR0cHMlM0EvL3d3dy5iYWdldmVudC5jb20vZXZlbnQvMTAyODM0NiUzRmJhZ190cmFjayUzRGVkbSIsICJ1c2VyX2lkIjogNDUwMTgsICJjYXRlZ29yeV9pZCI6IDE0ODMwMH0=.html" target="_blank" style="color:#ffffff;text-decoration:none"> <img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06button.jpg"></a></td> 
+</tr> 
+<!-- <tr> 
+<td style="padding:20px 0 35px;"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td style="color: #555555;font-family:Helvetica, Arial, sans-serif;font-size: 15px;text-align: left; " colspan="3"><span style="font-weight:bold">联系我们：</span> </td> 
+</tr> 
+<tr> 
+<td style="line-height:20px;font-size: 13px;font-family:'Helvetica','sans-serif';color:#595757 ;"> <p style="margin-top:-10px;font-family:'Helvetica','sans-serif';">会务和 Pivotal 技术咨询：400-135-8900<br> 会务邮箱：<a href="mailto:spingsummit@pivotal.io" style="color:#01ad9d;text-decoration:none">spingsummit@pivotal.io</a><br> 商务合作：<a href="mailto:greaterchina_marketing@pivotal.io" style="color:#01ad9d;text-decoration:none">greaterchina_marketing@pivotal.io</a><br> 活动网站：<a href="http://www.pivotal-china.com" style="color:#01ad9d;text-decoration:none">http://www.pivotal-china.com</a></p> </td> 
+<td width="114" style="font-size: 10px;font-family:'Helvetica','sans-serif';color:#595757 ;padding-bottom:0;padding-top:0px;text-align:center;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/email_erweima_01.png"><br> <span style="line-height:23px">Pivotal官方微博</span></td> 
+<td width="120" style="font-size:10px;font-family:'Helvetica','sans-serif';color:#595757 ;padding-bottom:0;text-align:center;padding-right:10px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/email_erweima_02.png"><br> <span style="line-height:23px">Pivotal官方微信号</span></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>  --> 
+</tbody> 
+</table> </td> 
+<td width="30">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;background:white;"> 
+<tbody> 
+<tr> 
+<td><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_07_06footer.png"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;background:white;"> 
+<tbody> 
+<tr> 
+<td height="60">&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="border-top:solid #dddddd 1.0pt;width:100px;"></td> 
+<td>&nbsp;</td> 
+</tr> 
+<tr> 
+<td style=""><a href="http://etrack07.com/track/unsubscribe.do?p=eyJ1c2VyX2lkIjogNDUwMTgsICJ0YXNrX2lkIjogIjEwNzc2NzciLCAiZW1haWxfaWQiOiAiMTUzMDgzMTgwMDI5Ml80NTAxOF8xMjkwOV85Nzk2LnNjLTEwXzlfNjNfMTYxLWluYm91bmQ5MCRncmVhdGVyY2hpbmFfbWFya2V0aW5nQHBpdm90YWwuaW8iLCAic2lnbiI6ICJjMDFkNDQ0YjAwZTg2N2RjYWE0Nzg4M2U5MDRhYWFmYyIsICJ1c2VyX2hlYWRlcnMiOiB7fSwgImxhYmVsIjogIjYxNTgxNiIsICJyZWNlaXZlciI6ICJncmVhdGVyY2hpbmFfbWFya2V0aW5nQHBpdm90YWwuaW8iLCAibWFpbGxpc3RfaWQiOiA0OTU2ODcsICJjYXRlZ29yeV9pZCI6IDE0ODMwMH0%3D"><span style="font-size:9.0pt;color:#a6a6a6;background:#dddddd;text-decoration:none;">点击这里取消订阅</span></a></td> 
+<td>&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;background:white;"> 
+<tbody> 
+<tr> 
+<td width="35"></td> 
+<td height="20"></td> 
+<td width="35"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="35"></td> 
+<td height="20"></td> 
+<td width="35"></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<!-- Start of footer --> 
+<!-- start of social links // --> 
+<!-- End of social links // --> 
+<!-- <table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;;font-family:Helvetica, Arial, sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="font-family: Arial; color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="font-family: Arial; color:#008774;text-decoration: none;">www.pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> © Pivotal，以及 Pivotal 徽标均为 Pivotal Software, Inc.在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。© 2018 Pivotal Software, Inc.保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+</td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table>  --> 
+<!-- End of footer // --></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

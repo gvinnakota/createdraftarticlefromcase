@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For Dan Drury's team that books VMW subs and renewals manually, allow them to set Previous Term Opportunity lookup</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Edit Previous Term Opportunity</label>
+    <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Previous_Term_Opportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

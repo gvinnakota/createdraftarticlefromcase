@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CaseDep__c.Product__c</field>
+    </columns>
+    <columns>
+        <field>CaseDep__c.ProductVersion__c</field>
+    </columns>
+    <columns>
+        <field>CaseDep__c.Component__c</field>
+    </columns>
+    <columns>
+        <field>CaseDep__c.Subcomponent__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>CaseDep__c.Subcomponent__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Parititioning,Clock</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CaseDep__c.Component__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>mapreduce</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>CaseDep Records with Misspells</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$CaseDep__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

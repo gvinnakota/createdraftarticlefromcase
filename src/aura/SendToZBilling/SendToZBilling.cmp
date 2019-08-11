@@ -1,0 +1,110 @@
+<aura:component controller="PivLP_SendToZBillingAuraController" implements="force:lightningQuickAction">
+    <aura:attribute name="quoteId" type="Id"/>	
+    <aura:attribute name="primaryQuote" type="Object"/>	
+    <aura:attribute name="state" type="String" default="Loading..."/>	
+    <aura:attribute name="chargeKeys" type="List"/>	
+    <aura:attribute name="errors" type="String[]"/>	
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <div class="container">
+        <aura:if isTrue="{!v.errors.length>0}">
+            <div class="errors">
+                This quote cannot be sent to Zuora!<br/><br/>
+            <aura:iteration items="{!v.errors}" var="e">
+                {!e}<br/>
+            </aura:iteration>
+            </div>
+        </aura:if>
+        
+        <div style="width:100%">
+        <c:accordion>
+            <c:accordionItem summary="Quote Details" expanded="true">
+                <aura:if isTrue="{!v.primaryQuote}"><c:DisplayFieldSet sobject="{!v.primaryQuote}" sobjectType="zqu__Quote__c" fieldSetName="Quote_Information_Custom"/></aura:if>
+            </c:accordionItem>
+            <c:accordionItem summary="Account Details" expanded="true">
+                <aura:if isTrue="{!v.primaryQuote}"><c:DisplayFieldSet sobjectType="zqu__Quote__c" fieldSetName="Account_Details_Custom" sobject="{!v.primaryQuote}"/></aura:if>
+            </c:accordionItem>
+            <c:accordionItem summary="Subscription Details" expanded="true">
+                <aura:if isTrue="{!v.primaryQuote}"><c:DisplayFieldSet sobjectType="zqu__Quote__c" fieldSetName="Subscription_Terms_Custom" sobject="{!v.primaryQuote}"/></aura:if>
+            </c:accordionItem>
+        </c:accordion>
+        </div>
+        
+        <aura:if isTrue="{!and(v.chargeKeys.length>0,v.errors.length==0)}">
+        <c:accordion>
+            <c:accordionItem summary="Subscriptions" expanded="true">
+                <div class="actions-container">
+                    <lightning:button aura:id="splitButton" label="Split Quote" onclick="{!c.onClickSplit}" disabled="true"/>
+                    <lightning:button aura:id="sendButton" label="Send Quotes" onclick="{!c.onClickSend}" disabled="true"/>
+                    <div class="state">{!v.state}</div>
+                </div>
+                
+                <div class="quote-table">
+                <aura:iteration items="{!v.chargeKeys}" var="ck">
+                    <div class="subscriptions-container">
+                    <c:accordionItem summary="{!'Subscription ' + ck.key}" expanded="true">
+                    <div class="quote-table-header">
+                        <!--<div class="quote-table-column">Key</div>-->
+                        <div class="quote-table-column">Start Date</div>
+                        <div class="quote-table-column">Split Status</div>
+                        <div class="quote-table-column">Sub-Quote ID</div>
+                        <div class="quote-table-column">Sub-Quote Status</div>
+                        <div class="quote-table-column">Zuora Error Message</div>
+                        <div class="quote-table-column">Zuora Subscription</div>
+                        <div class="quote-table-column">Zuora Account</div>
+                    </div>
+                    <div class="quote-table-row">
+                        <!--<div class="quote-table-column">{!ck.key}</div>-->
+                        <div class="quote-table-column">{!ck.startDate}</div>
+                        <div class="quote-table-column">{!ck.splitStatus}</div>
+                        <div class="quote-table-column"><a href="{!'/'+ck.quoteId}">{!ck.quoteId}</a></div>
+                        <div class="quote-table-column">{!ck.quoteStatus}</div>
+                        <div class="quote-table-column">{!ck.quoteErrorMessage}</div>
+                        <div class="quote-table-column"><a href="{!'https://services451.zuora.com/apps/Subscription.do?method=view&amp;id='+ck.zuoraSubscriptionId}">{!ck.zuoraSubscriptionName}</a></div>
+                        <div class="quote-table-column"><a href="{!'https://services451.zuora.com/apps/CustomerAccount.do?method=view&amp;id='+ck.zuoraAccountId}">{!ck.zuoraAccountNumber}</a></div>
+                    </div>
+                    <div class="charges-container">
+                    <aura:iteration items="{!ck.ratePlans}" var="ratePlan">
+                        <c:accordionItem summary="{!ratePlan.productName + ':' + ratePlan.name}" expanded="true">    
+                            <div class="charge-table-header">
+                                <div class="charge-table-column">Name</div>
+                                <div class="charge-table-column">Type</div>
+                                <div class="charge-table-column">Start Date</div>
+                                <div class="charge-table-column">End Date</div>
+                                <div class="charge-table-column">Model</div>
+                                <div class="charge-table-column">List Price</div>
+                                <div class="charge-table-column">Discount</div>
+                                <div class="charge-table-column">Effective Price</div>
+                                <div class="charge-table-column">Quantity</div>
+                                <div class="charge-table-column">UOM</div>
+                                <div class="charge-table-column">Period</div>
+                                <div class="charge-table-column">Total</div>
+                            </div>
+                            <aura:iteration items="{!ratePlan.charges}" var="charge">
+                                <div class="charge-table-row">
+                                    <div class="charge-table-column">{!charge.name}</div>
+                                    <div class="charge-table-column">{!charge.chargeType}</div>
+                                    <div class="charge-table-column">{!charge.startDate}</div>
+                                    <div class="charge-table-column">{!charge.endDate}</div>
+                                    <div class="charge-table-column">{!charge.model}</div>
+                                    <div class="charge-table-column"><lightning:formattedNumber value="{!charge.listPrice}" style="currency"/></div>
+                                    <div class="charge-table-column">{!charge.discount}</div>
+                                    <div class="charge-table-column"><lightning:formattedNumber value="{!charge.effectivePrice}" style="currency"/></div>
+                                    <div class="charge-table-column">{!charge.quantity}</div>
+                                    <div class="charge-table-column">{!charge.uom}</div>
+                                    <div class="charge-table-column">{!charge.period}</div>
+                                    <div class="charge-table-column"><lightning:formattedNumber value="{!charge.total}" style="currency"/></div>
+                                </div>
+                            </aura:iteration>
+                        </c:accordionItem>
+                    </aura:iteration>
+                    </div>
+                    </c:accordionItem>
+                    </div>
+                </aura:iteration>
+                </div>
+            </c:accordionItem>
+        </c:accordion>
+        </aura:if>
+    </div>
+</aura:component>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Cloud Platform Roadshow - CenturyLink_Q215.NY - Day Before Reminder</name>
+    <style>none</style>
+    <subject>See you Tomorrow at the Cloud Platform Seminar - NY</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for signing up to attend the Cloud Platform Seminar coming up tomorrow in New York. We look forward to seeing you! 
+
+Please also bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Cloud Platform Seminar
+Thursday, July 16, 2015
+8:30am - 4:00pm (breakfast &amp; lunch provided)
+Workshop Agenda
+
+Pivotal New York
+625 Avenue of the Americas, 2nd Floor
+New York, NY10011
+Take the Subway 1 to 18th Street
+
+WORKSHOP PREREQUISITES
+All Hands-on Sections
+
+
+
+ - Git (http://git-scm.com/downloads &lt;http://git-scm.com/downloads&gt;) (&quot;brew install git&quot;)
+ - The Cloud Foundry CLI (https://github.com/cloudfoundry/cli/releases &lt;https://github.com/cloudfoundry/cli/releases&gt;) - download the latest!
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+
+
+
+QUESTIONS?
+Contact Kim Marie Ruquet at kruquet@pivotal.io &lt;mailto:kruquet@pivotal.io&gt;  or via cell at 631-388-0569 &lt;tel:631-388-0569&gt;.
+
+We look forward to seeing you!
+The Pivotal &amp; CenturyLink team! 
+
+P.S.- Only a few spots remain! If you have a colleague interested in attending please forward on this link to the workshop details &amp; registration &lt;http://pivotal.io/event/cloud-platform-seminar/nyc&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

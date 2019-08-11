@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$Subscription__c</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$Subscription_Product_Charge__c</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$EndDate</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Entitlements$EndDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>7/8/2018</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Entitlements$LastModifiedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>7/9/2018 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Expired Entitlements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Entitlements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

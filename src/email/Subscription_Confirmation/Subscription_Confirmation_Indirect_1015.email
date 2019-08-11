@@ -1,0 +1,87 @@
+<messaging:emailTemplate subject="Order Confirmation for {!relatedTo.zqu__Opportunity__r.Account_Name__c}" recipientType="User" relatedToType="zqu__Quote__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <STYLE type="text/css">
+                    TH {font-size: 11px; font-face: arial;background: #CCCCCC;
+                    border-width: 1;  text-align: center; padding: 0.5rem }
+                    TD  {font-size: 11px; font-face: verdana}
+                    TABLE {border: solid #CCCCCC; border-width: 1}
+                    TR {border: solid #CCCCCC; border-width: 1}
+                </STYLE>
+                <font face="arial" size="2">
+
+
+                    <apex:image id="PivotalLogo" value="https://pivotal--c.na12.content.force.com/servlet/servlet.ImageServer?id=015U0000003J2XR&oid=00DU0000000YQaz" 
+                    height="64" width="200"/>
+                    
+                  <p><b>ORDER CONFIRMATION FOR {!relatedTo.zqu__Opportunity__r.Account_Name__c}</b></p>
+                  <p/>
+                  <p><b>Pivotal Customer Number:</b>&nbsp;{!relatedTo.Pivotal_Customer_Number__c}</p>
+                  <p><b>Purchase Order Number:</b>&nbsp;{!relatedTo.PurchaseOrder__c}</p>
+                  <p><b>Sales Order #:</b>&nbsp;{!relatedTo.ChannelOrderID__c }</p>
+                  <p><b>Order Date:</b>  &nbsp; <apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText></p>
+                  <p/>
+                  <p>Dear {!relatedTo.Ship_To_First_Name__c},</p>  
+                  <p><b>Thank you for licensing Pivotal products!</b></p>
+
+                  <p>{!relatedTo.zqu__Opportunity__r.Account_Name__c} has licensed the Pivotal product(s) below on Sales Order Number {!relatedTo.ChannelOrderID__c} on&nbsp;<apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText>.</p>
+
+                  <p>All software and documentation can be found on <a href="https://network.pivotal.io">Pivotal Network</a>.</p> 
+                    
+                               
+                    
+                    <table border="1" >
+                        <tr>
+                            <th>Product</th>
+                            <th>Product Description</th>
+                            <th>Qty</th>
+                            <th>UOM</th>
+                            <th>Duration (No. of Years)</th>
+                            <th>Subscription Period</th>
+                        </tr>
+                        <apex:repeat var="cx" value="{!relatedTo.OrderConfLines__r}">
+                            <tr>
+                                <td>{!cx.Product_Name__c}</td>
+                                <td>{!cx.Product_Description__c}</td>
+                                <td align="center"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!cx.Qty__c}"/> </apex:outputText></td>
+                                <td align="right">{!cx.UOM__c}</td>
+                                <td align="center"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!cx.Duration__c}"/> </apex:outputText></td>
+                                <td align="right"> {!cx.Subscription_Period__c}</td>
+                            </tr>
+                        </apex:repeat>                
+                    </table>
+                    
+                    <p />
+                    <b>To get Pivotal software:</b>
+                    <ol>
+                        <li>Go to Pivotal Network: <a href="https://network.pivotal.io">network.pivotal.io</a> </li>
+                        <li><a href="https://network.pivotal.io/registrations/new">Join</a> or <a href="https://login.run.pivotal.io">Sign In</a> with your <b>work email address</b></li> 
+                        <li>Download the latest versions of products</li>
+                        <li>Subscribe to email updates on products of interest</li>
+                        <li>Everyone in your organization can register for Pivotal Network and evaluate the complete line of available products</li>
+                    </ol>
+
+                    <p>Thank you for your business. We're excited to see what you build and we're always here to help.</p>
+
+                    <p>We look forward to providing you with a world-class customer experience.</p>
+
+                    Need help?
+                    <ul>
+                        <li><a href="mailto:info@pivotal.io">Email us</a> with general questions</li>
+                        <li>Register for <a href="http://support.pivotal.io">Product Support</a> using your Pivotal customer number:&nbsp;{!relatedTo.Pivotal_Customer_Number__c}</li>  
+                        <li>If you have purchased an EMC DCA (Data Computing Appliance) to run your Pivotal Greenplum Database software, Pivotal HDP or Pivotal HDB, please register for and use <a href="https://www.emc.com/customer-services/online-support-tools-resources.htm">EMC Support</a> as your primary support contact for EMC DCA related requests</li>       
+                        <li>Always include your sales order number in your request</li>
+                        <li>Maximize the full capabilities of your Pivotal products with hands-on, role-based training classes from <a href="http://pivotal.io/academy">Pivotal Academy</a></li>
+                    </ul>
+
+                    <p>-Pivotal Product Team</p>
+                    <p/>
+                    <p/>
+                    <p/>
+                    <font size="1">ref: {!relatedTo.Id}</font>
+                </font>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

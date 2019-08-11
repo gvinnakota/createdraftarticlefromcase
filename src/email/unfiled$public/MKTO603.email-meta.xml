@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Webinar_Google_Wallet_Fanatics_Q214.Confirmation</name>
+    <style>none</style>
+    <subject>Webinar Reminder: Google Wallet - The Fanatics Experience (Friday, May 9 at 10am PDT/1pm EDT)</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar &quot;Google Wallet - The Fanatics Experience &lt;http://pivotallabs.com/webinar-google-wallet-fanatics-experience-live/&gt;&quot; on Friday, May 9, 2014 at 10:00 AM PDT/1:00PM EDT. Please see the event details below:
+
+Date: Friday, May 9, 2014
+Time: 10:00 AM PDT (San Francisco)//1:00PM EDT (New York)
+Event Number: 667 301 812
+
+ 
+
+Join the Webex &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=667301812&gt;
+
+ &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=667301812&gt;
+Teleconferencing Information:
+This webinar will be streaming live, however dial-in options are available:
+
+
+
+ - Global call-in numbers &lt;https://gopivotal.webex.com/gopivotal/globalcallin.php?serviceType=EC&amp;ED=112132122&amp;tollFree=1&gt;
+ - Toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt;
+ - Access code: 667 301 812
+
+
+
+
+{{my.Save the Date:default=}}
+ 
+
+Thank you,
+The Pivotal Labs Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

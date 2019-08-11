@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Scoping__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Scoping Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Cancel a scoping if it was requested in error or the deal is closed / lost.&lt;/p&gt;</info>
+        <picklistValueName>Cancelled</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;When the scoping meeting has occurred with the customer, move the status to completed. The scoper will upload the scoping notes to the files area (on the top right of this page). The delivery team will work with the account team to update the opportunity and ensure it has the recommended amount of services and product. Depending on the recommended services:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;For custom services: a Statement Of Work will be produced&lt;/li&gt;&lt;li&gt;For packaged services: products will be added to the opportunity so that the packaged services can be added to a quote for the customer; service brief(s) will be added to the quote so that the customer can procure the packaged services by writing a purchase order that references the quote&lt;/li&gt;&lt;li&gt;&lt;b&gt;Note that deal desk prohibits the inclusion of packaged services on SOWs&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Completed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Type__c</fieldNames>
+        <fieldNames>Background__c</fieldNames>
+        <fieldNames>Opportunity__c</fieldNames>
+        <info>&lt;p&gt;Please select a &lt;b&gt;Scoping Type&lt;/b&gt; and enter &lt;b&gt;Background Information&lt;/b&gt; that will help the scoper understand the opportunity and the customer’s needs. &lt;b&gt;You should not specify a scoping date&lt;/b&gt;. When you create the scoping request, the relevant delivery team (PCFS / AppTx / Labs / DataTx) will reach out to you via chatter (on the bottom right of this page) to coordinate the scoping date, send you a data collector, and conduct the scoping.&lt;/p&gt;</info>
+        <picklistValueName>Requested</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Scoping_Date__c</fieldNames>
+        <fieldNames>Primary_Scoper__c</fieldNames>
+        <info>&lt;p&gt;When the scoping is scheduled, the account team may receive a data collector from the delivery team to help transfer context from the account team to the delivery team. If necessary, a pre-scoping meeting will be scheduled to ensure the customer has the best possible scoping experience.&lt;/p&gt;</info>
+        <picklistValueName>Scheduled</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

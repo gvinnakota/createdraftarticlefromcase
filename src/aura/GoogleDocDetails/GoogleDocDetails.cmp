@@ -1,0 +1,354 @@
+<aura:component controller ="GoogleDocCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+
+    <aura:attribute name="googleLst"  type="list" />
+    <aura:attribute name="allGoogleLst"  type="list" />  
+    <aura:attribute type="list"    name="currentList" /> 
+    <aura:attribute name="width" type="String"/> 
+    <aura:attribute name="parentId" type="String" /> 
+    <aura:attribute name="parent" type="String" /> 
+    <aura:attribute name="googleDocRec" type="list" />
+    <aura:attribute name="isEditMode" type="boolean" default="false"/>
+
+    <aura:attribute name="docName" type="string" />
+    <aura:attribute name="docUrl" type="string" />
+    <aura:attribute name="WarningMsg" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+
+			<div class="slds-spinner_container slds-grid slds-hide" aura:id="spinner" >
+				<div class="slds-align--absolute-center slds-p-top--large" >
+					<div class="slds-spinner slds-spinner--medium slds-spinner--brand" >
+						<span class="slds-assistive-text" data-aura-rendered-by="342:0">Loading...</span>
+						<div class="slds-spinner__dot-a" data-aura-rendered-by="344:0"></div>
+						<div class="slds-spinner__dot-b" data-aura-rendered-by="345:0"></div>
+					</div>
+				</div>
+			</div>  
+
+			<div class="slds-grid slds-grid--vertical " >
+				<div class="slds-page-header--object-home slds-page-header_joined slds-page-header_bleed slds-page-header slds-shrink-none test-headerRegion ">
+					<div class="slds-grid slds-wrap" >
+
+						<div class="slds-media__figure" >
+            				<lightning:icon iconName="doctype:gdocs" size="large" />      
+        				</div>
+
+						<div class="slds-col slds-size_3-of-12 slds-has-flexi-truncate " > 
+							<div class="slds-m-top_small slds-media slds-no-space slds-grow" >
+								<div class="slds-media__body slds-align-middle" >
+									<nav role="navigation" >
+										<ol class="slds-breadcrumb slds-list--horizontal" >
+											<li class="slds-breadcrumb__item slds-line-height--reset" >
+												<a href="" >Opportunites</a> 
+											</li>
+											<li class="slds-breadcrumb__item slds-line-height--reset" >
+												<a href="{!'/'+v.parentId}" title="" >{!v.parent}</a> 
+											</li> 
+										</ol>
+									</nav>
+									<h1 class="slds-page-header__title slds-truncate" >
+										Google Docs
+									</h1>
+								</div>
+							</div>
+						</div>
+						<div class="slds-col slds-size_3-of-12 slds-align_absolute-center">
+							<div class="border-radius-medium slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_success slds-hide" role="alert" style="border-radius:0.25rem;" aura:id="createSuccess">
+		                      <span class="slds-assistive-text">warning</span>
+		                      <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Description of icon when needed"></span>
+		                      <h2>{!v.WarningMsg} </h2>
+	                   		</div>
+                   		</div>
+
+						 <div class="slds-col slds-size_3-of-12 slds-no-flex">
+		                    <ul class="branding-actions slds-float_right slds-m-top_small slds-button-group slds-m-left--xx-small" onclick="{!c.openModel}" >
+		                        <li class="slds-button slds-button--brand slds-truncate" >
+		                            <a href="" class="slds-text-link_reset" > 
+		                                <div> Add Google Doc</div>  
+		                            </a>
+		                        </li>
+		                    </ul>
+		                </div> 
+					</div>
+				</div>
+			</div>
+
+
+<div>
+    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+        <thead>
+            <tr class="slds-text-title--caps">
+                <th scope="col">
+                    <div onclick="{!c.sortByDocName}"
+                         class="slds-truncate"
+                         title="Agreement Name">
+                        Google Doc Name
+                        <aura:if isTrue="{!v.sortField=='name'}">
+                            <span>
+                            	<aura:if isTrue="{!v.sortAsc}">
+                                    &#8593;
+                                    <aura:set attribute="else">
+                                        &#8595;
+                                    </aura:set>
+                                </aura:if>
+                            </span>
+                        </aura:if>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="slds-truncate"
+                         title="Agreement Date">
+                        Google Doc URL
+                    </div>
+                </th>
+                <th scope="col">
+                    <div onclick="{!c.sortByLastModifiedDate}"
+                         class="slds-truncate"
+                         title="Status">
+                        Last Modified Date 
+                        <aura:if isTrue="{!v.sortField=='lastModifiedDate'}">
+                            <span>
+                            	<aura:if isTrue="{!v.sortAsc}">
+                                    &#8593;
+                                    <aura:set attribute="else">
+                                        &#8595;
+                                    </aura:set>
+                                </aura:if>
+                            </span>
+                        </aura:if>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+   
+ 
+        <tbody>
+            <aura:iteration items="{!v.currentList}" var="record">
+                <tr>
+                	<th data-label="docName">
+                        <div class="slds-truncate" title="Google Doc Name">
+                            <a href="" onclick="{!c.openRecordDetail}" data-docid="{!record.docId}" >{!record.docName}</a> 
+                        </div>
+                    </th>
+                	<th data-label="docURL">
+                        <div class="slds-truncate" title="Google Doc URL"> 
+                        	<a href="{!record.docURL}" target="_blank" >{!record.docURL}</a> 
+                        </div>
+                    </th>
+                	<th data-label="docModifiedDate">  
+                        <div class="slds-truncate" title="Last Modified Date">
+                            {!record.docModifiedDate}
+                        </div>
+                    </th>
+                </tr>  
+            </aura:iteration>
+        </tbody> 
+    </table>
+	</div> 
+
+
+
+	<div role="dialog" tabindex="-1" aria-labelledby="header99" id ="modal-showEditRecord" class="slds-modal slds-fade-in-close slds-modal_small ">
+           <div class="slds-modal__container">
+              <div>
+                    <!-- Modal/Popup Box Header Starts here-->
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close closeIcon slds-button_icon-bare slds-button_icon-inverse" title="Close" onclick="{!c.closeRecordDetail}">
+                       <lightning:icon iconName="utility:close" variant="close" size="xx-small" />
+                       <span class="slds-assistive-text">Close</span>  
+                    </button>
+                    <h2 id="header99" class="slds-text-heading--medium">Add/Edit Google Docs</h2> 
+                </div>
+                <div class=" slds-p-around_medium slds-modal__content" id="modal-content-id-1"> 
+                   <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error  slds-hide" role="alert" aura:id="fieldId">
+                      <span class="slds-assistive-text">warning</span>
+                      <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Description of icon when needed"></span>
+                      <h2>{!v.WarningMsg} </h2>
+                   </div>  
+                    
+                   <div class="slds-panel__section">
+                      <div class="slds-page-header slds-page-header_record-home forceRecordLayout" style="padding-top: 0rem; padding-bottom: 0rem;" >
+        <div class="slds-grid"> 
+                <div class="slds-grid slds-col slds-has-flexi-truncate slds-media--center" >
+                    <div class="slds-media slds-no-space" >
+                        <div class="slds-media__figure slds-icon" >
+                            <span>
+                      <lightning:icon iconName="doctype:gdocs" size="medium" />
+                            </span> 
+                        </div>
+                    </div>    
+                
+             <div class="slds-media__body" >
+              <h1>
+                  <nav>
+                      <ol class="slds-breadcrumb slds-line-height_reset" >
+                            <li class="slds-breadcrumb__item" >
+                              <span >Google Docs</span>
+                                <aura:iteration items="{!v.googleDocRec}" var="doc">
+                                  <div class="slds-m-top_small">{!doc.parent}</div> 
+                                </aura:iteration> 
+                            </li>
+                        </ol>
+                    </nav> 
+                </h1>
+             </div>      
+
+                </div>
+                <div class="slds-col slds-no-flex slds-grid slds-align-middle actionsContainer" >
+                  <ul class="branding-actions slds-button-group slds-m-left--xx-small oneActionsRibbon forceActionsContainer" >
+                    <aura:if isTrue="{!v.isEditMode}" > 
+                        <li class="slds-button slds-button--neutral slds-truncate" onclick="{!c.saveDocRecord}" >
+                          <a href="" class="slds-text-link_reset">Save</a>
+                        </li>
+                        <li class="slds-button slds-button--neutral slds-truncate" onclick="{!c.cancelDocUpdate}" >
+                          <a href="" class="slds-text-link_reset">Cancel</a>
+                        </li> 
+                        
+                    <aura:set attribute="else" >
+                        <li class="slds-button slds-button--neutral slds-truncate" onclick="{!c.editMode}" >
+                          <a href="" class="slds-text-link_reset">Edit</a>
+                        </li>
+                    </aura:set>
+                  </aura:if>
+                        <li class="slds-button slds-button--neutral slds-truncate" onclick="{!c.deleteDocRecord}" >
+                          <a class="slds-text-link_reset"  >Delete</a> 
+                        </li> 
+                    </ul>
+                </div>
+                
+                <div style="height:77px;">
+                
+                </div>
+                
+             </div>
+      
+    </div>
+   <article class="slds-card" >
+    <div class="slds-grid slds-wrap slds-grid--pull-padded" id="searchForm" style="padding-top: 10px;padding-left: 15px;"> 
+
+<aura:iteration items="{!v.googleDocRec}" var="doc">
+
+    <div class="slds-form-element slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2" style="padding-right: 0px;">
+      <label class="slds-form-element__label label" for="text-input-01">Google Doc Name</label>
+        <aura:if isTrue="{!v.isEditMode}" >
+            <div class="slds-form-element__control">
+        <ui:inputText class="slds-input" aura:id="MFFormName" value="{!doc.docName}" maxlength="80" placeholder="Name your form"/>
+      </div> 
+            <aura:set attribute="else" >
+      <div class="slds-form-element__control">
+          
+          <span style="font-size:14px;"> <ui:outputText  aura:id="MFFormName" value="{!doc.docName}" /> </span>
+		  
+      </div> 
+                </aura:set>
+        </aura:if>
+    </div>  
+      
+    <div class="slds-form-element slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2" style="padding-right: 0px;">
+      <label class="slds-form-element__label label" for="text-input-02">Owner</label>
+                <div class="slds-form-element__control">
+			      <span class="slds-text-color--default slds-text-body--regular"> 
+				      <a style="font-size:14px;" href="{!'/'+doc.ownerId}"  targe="_blank">{!doc.owner}</a>  
+				  </span>
+	  		    </div> 
+         
+    </div>
+       
+    <div class="slds-form-element slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2" style="padding-right: 0px;">
+      <label class="slds-form-element__label label" for="text-input-01">Google Doc URL</label>
+      <aura:if isTrue="{!v.isEditMode}" >
+            <div class="slds-form-element__control">
+        <ui:inputText class="slds-input" aura:id="MFFormName" value="{!doc.docURL}" maxlength="80" placeholder="Name your form"/>
+      </div> 
+            <aura:set attribute="else" >
+        <div class="slds-form-element__control">
+          <span style="font-size:14px;"> 
+              
+              <!--<div class="slds-truncate slds-grow slds-cell-wrap">{!doc.docURL} </div> -->
+            <a href="{!doc.docURL}" target="_blank" >{!doc.docURL}</a> 
+            </span>
+      </div>   
+          </aura:set>
+        </aura:if>
+    </div> 
+
+        <div class="slds-form-element slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2" style="padding-right: 0px;">
+        
+    </div>  
+    
+    <div class="slds-form-element slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2" style="padding-right: 0px;">
+      <label class="slds-form-element__label label" for="text-input-02">Created By</label>
+     
+      <div class="slds-form-element__control">
+	      <span class="slds-text-color--default slds-text-body--regular"> 
+		      <a style="font-size:14px;" href="{!'/'+doc.createdById}"  targe="_blank">{!doc.createdby} &nbsp; </a>   {!doc.createdDate}  
+		   </span>
+	  </div> 
+        
+    </div>   
+     
+    <div class="slds-form-element slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2" style="padding-right: 0px;" >
+      <label class="slds-form-element__label label" for="text-input-02">Modified By</label>
+     
+     	<div class="slds-form-element__control">
+	      <span class="slds-text-color--default slds-text-body--regular"> 
+		      <a style="font-size:14px;" href="{!'/'+doc.lastModifiedById}"  targe="_blank">{!doc.lastModifiedBy} &nbsp;   </a>  {!doc.docModifiedDate}
+		   </span>
+	    </div>
+         
+    </div>   
+        </aura:iteration>
+  </div>     
+    </article>
+                   </div>
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button--neutral" onclick="{!c.closeRecordDetail}" >Cancel</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--close" id ="modal-dropEditRecord" ></div>
+
+
+
+            <div role="dialog" tabindex="-1" aria-labelledby="header99" id ="modal-pop" class="slds-modal slds-fade-in-close slds-modal_small ">
+           <div class="slds-modal__container" style="width:30%">
+              <div>
+                    <!-- Modal/Popup Box Header Starts here-->
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close closeIcon slds-button_icon-bare slds-button_icon-inverse" title="Close" onclick="{!c.closeModel}">
+                       <lightning:icon iconName="utility:close" variant="close" size="xx-small" />
+                       <span class="slds-assistive-text">Close</span>  
+                    </button>
+                    <h2 id="header99" class="slds-text-heading--medium">Add/Edit Google Docs</h2> 
+                </div>
+                <div class=" slds-p-around_medium slds-modal__content" id="modal-content-id-1"> 
+                   <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error  slds-hide" role="alert" aura:id="createWarning">
+                      <span class="slds-assistive-text">warning</span>
+                      <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="Description of icon when needed"></span>
+                      <h2>{!v.WarningMsg} </h2>
+                   </div>  
+                    
+                   <div class="slds-panel__section">
+                      <B> <lightning:input  name="Google Doc Name" required="true" label="Google Doc Name"
+                          messageWhenValueMissing="This field is required." value="{!v.docName}"/>  </B>
+                      <B> <lightning:input  type="url" label="Google Doc URL" required="true" name="Google Doc URL" messageWhenValueMissing="This field is required." value="{!v.docUrl}" /> </B>
+                   </div>
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button--neutral" onclick="{!c.closeModel}" >Cancel</button>
+                    <button class="slds-button slds-button--brand" onclick="{!c.submitDetails}">Save</button>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--close" id ="modal-Shadow" ></div> 
+
+
+
+	 
+</aura:component>

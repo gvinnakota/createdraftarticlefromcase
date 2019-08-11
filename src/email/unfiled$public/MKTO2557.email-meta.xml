@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Powering Enterprise Transformation with Cloud and Data Seminar_KY_</name>
+    <style>none</style>
+    <subject>Thank you for Attending!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for attending the Pivotal Strategies for Digital Transformation Seminar in Louisville on March 21st. We hope our seminar gave you the opportunity to collaborate with your peers and learn more about the modern technology capabilities needed to become a successful digital business.
+
+Your feedback is important. Please take our short survey &lt;https://www.surveymonkey.com/r/NXNCBBJ&gt; so that we can continue to make future workshops informative and relevant.
+
+Thank you again for joining us. For upcoming events, visit us at http://pivotal.io/news-events &lt;http://pivotal.io/news-events&gt;. We look forward to seeing you soon!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

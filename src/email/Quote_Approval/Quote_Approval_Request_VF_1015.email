@@ -1,0 +1,77 @@
+<messaging:emailTemplate subject="Request for an Approval: {!relatedTo.Name}" recipientType="User" relatedToType="zqu__Quote__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <STYLE type="text/css">
+                    TH {font-size: 11px; font-face: arial;background: #CCCCCC;
+                    border-width: 1;  text-align: center; padding: 0.5rem }
+                    TD  {font-size: 11px; font-face: verdana}
+                    TABLE {border: solid #CCCCCC; border-width: 1}
+                    TR {border: solid #CCCCCC; border-width: 1}
+                </STYLE>
+                <font face="arial" size="2">
+                    <p>Quote <b>{!relatedTo.Name}</b> requires your approval.</p>
+                    
+                    <p><i>Please approve/reject by replying to this email with <b>APPROVED</b> or <b>REJECTED</b>, followed by any comments on the second line. 
+                        You can also approve/reject within Salesforce in the <b>Items to Approve</b> section of your Home tab.</i></p>
+                    
+                    <table border="0">
+                        <col width="130"/>
+                        <tr><td><b>Deal Amount:</b></td><td><apex:outputText value="{0,number,$###,###,##0}"><apex:param value="{!relatedTo.Test_TCV_USD__c}"/> </apex:outputText> USD</td></tr>
+                        <tr><td><b>Payment Term:</b></td><td>{!relatedTo.zqu__PaymentTerm__c}</td></tr>
+                        <tr><td><b>Initial Term (Months):</b></td><td><apex:outputText value="{0,number,###,##0}"><apex:param value="{!relatedTo.zqu__InitialTerm__c}"/> </apex:outputText></td></tr>
+                        <tr><td><b>Max Product Discount:</b></td><td>{!relatedTo.ApproveProdDisc__c}% </td></tr>
+                        <tr><td><b>Max PS Discount:</b></td><td>{!relatedTo.ApprovePSDisc__c}% </td></tr>
+                        <tr><td><b>Max CSO Discount:</b></td><td>{!relatedTo.ApproveCSODisc__c}% </td></tr>
+                        <tr><td><b># Controlled Products:</b></td><td>{!relatedTo.ApproveAvailablityCount__c} </td></tr>
+                        <tr><td><b>Payment Plan:</b></td><td>{!relatedTo.Payment_Plan__c} </td></tr>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td><b>Account Name:</b></td><td>{!relatedTo.zqu__Opportunity__r.Account_Name__c}  </td></tr>
+                        <tr><td><b>Pivotal Rep:</b></td><td>{!relatedTo.zqu__Opportunity__r.Sales_Rep__c}  </td></tr>
+                        <tr><td><b>Forecast Status:</b></td><td>{!relatedTo.zqu__Opportunity__r.ForecastCategoryName}  </td></tr>
+                        <tr><td><b>Close Date:</b></td><td><apex:outputText value="{0,date,MM.dd.yyyy}"><apex:param value="{!relatedTo.zqu__Opportunity__r.CloseDate}"/> </apex:outputText> </td></tr>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td><b>Special Terms and Notes:</b></td><td>{!relatedTo.zqu__Terms__c} </td></tr>
+                        <tr><td><b>Pricing Justification:</b></td><td>{!relatedTo.Pricing_Justification__c} </td></tr> 
+                        <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td><b>Incumbent:</b></td><td>{!relatedTo.zqu__Opportunity__r.Incumbent__c}  </td></tr>
+                        <tr><td><b>Primary Competitor:</b></td><td>{!relatedTo.zqu__Opportunity__r.Primary_Competitor__c}  </td></tr>
+                        <tr><td><b>Indirect Partner:</b></td><td>{!relatedTo.zqu__Opportunity__r.Indirect_Partner__c} </td></tr>
+                        <tr><td><b>Federation Rep:</b></td><td>{!relatedTo.zqu__Opportunity__r.Core_Rep__c}  </td></tr>
+                        <tr><td><b>Core Order Processor:</b></td><td>{!relatedTo.zqu__Opportunity__r.Core_Order_Processed__c} </td></tr>
+                    </table>
+                    <p/>
+                    
+                 <c:Zquote_EmailTemplate quoteRecordId="{!relatedTo.id}"  ApprovalProductType="">    
+                    <table border="1" >
+                        <tr >
+                            <th>Product Name</th>          
+                            <th>Total Unit List Price</th>
+                            <th>Qty</th>
+                            <th>UoM</th>
+                            <th>Discount%</th>
+                            <th>TCV</th>
+                        </tr>
+                        <apex:repeat var="cx" value="{!varResults}">
+                            <tr>
+                                <td>{!cx.Name}</td>            
+                                <td align="right"><apex:outputText value="{0,number,###,###,##0.00}"><apex:param value="{!cx.zqu__TotalPrice__c}"/> </apex:outputText> USD</td>
+                                <td align="right"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!cx.zqu__Quantity__c}"/> </apex:outputText></td>
+                                <td align="right">{!cx.zqu__UOM__c}</td>
+                                <td align="right"><apex:outputText value="{0,number,#0.0}"><apex:param value="{!cx.ApproveDiscount__c}"/> </apex:outputText></td>     
+                                <td align="right"><apex:outputText value="{0,number,###,###,##0.00}"><apex:param value="{!cx.Custom_TCV_Formula__c}"/> </apex:outputText> USD</td>
+                            </tr>
+                        </apex:repeat>                
+                    </table>
+                    </c:Zquote_EmailTemplate>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr>
+                        
+                    </tr> 
+                    <p />
+                    <b>Link to Quote:</b> https://pivotal.my.salesforce.com/{!relatedTo.Id}
+                </font>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

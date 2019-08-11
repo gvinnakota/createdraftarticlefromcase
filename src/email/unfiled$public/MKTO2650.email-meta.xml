@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 5 - June 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - June 2015</subject>
+    <textOnly>With the summer upon us, this issue of Push With Success focuses on the up-and-coming programming language Go, or golang. Created by Bell Labs alumni at Google, golang is an incredible language for systems and applications. A particularly efficient runtime, Golang web apps and API backend apps run with a remarkably small memory footprint. Go is also the language in which many of the components of Cloud Foundry are written. In our Marketplace spotlight, we cover Redis Labs, Redis Cloud, and Memcached Cloud offerings.
+
+We hope you enjoy this month’s issue. Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws &lt;https://twitter.com/pivotalws&gt;.
+ 
+Pivotal is a sponsor of GopherCon, July 7 - 10, 2015 Denver, CO
+Given that Golang is a critical part of the Cloud Foundry experience, Pivotal is a proud sponsor of this year’s Gophercon &lt;http://www.gophercon.com/&gt; in lovely Denver, CO from July 7 - 10, 2015. Come hear about the latest developments in the Go language. Pivotal is happy to offer a $50 registration discount: just use the Promo Code “Pivotal2015” when you register.
+
+
+Older Runtimes Being Discontinued
+On June 25, 2015, PWS will be deploying new buildpacks that remove support for some of the older versions of runtimes. If your deployed applications rely on these older versions, your app may be impacted the next time your application is deployed. If you believe you may be impacted, please visit this knowledge base article &lt;http://support.run.pivotal.io/entries/82311705-What-runtime-language-and-server-versions-are-support-for-a-build-pack-&gt; for more 
+details. 
+
+CloudFoundry and Go
+Cloud Foundry, the base platform for PWS, has a long history. Originally written in Ruby, many of the components of the platform have been rewritten to take advantage of the efficiencies of golang that are ideal for APIs, including built in native concurrency support. For instance, the CLI ‘cf’ application was rewritten in golang, which enabled binary distribution. This made it easier for developers to interface with PWS without configuring their systems for Ruby. In Cloud Foundry’s backend, the router and the application servers respectively have been and are being rewritten in Go. To see some sample golang code in production, be sure to visit our Github repository &lt;https://github.com/cloudfoundry/&gt; and look for the Gorouter and CLI components. The application server code known as Diego is available at the incubator Github repository &lt;https://github.com/cloudfoundry-incubator/diego-release&gt;.
+
+Deploying Go apps on PWS
+Deploying Go applications on PWS is a simple ‘cf push’ from your application’s source directory with just a few preparatory steps beforehand. The first step is to include a manifest.yml file that includes a start command entry naming your binary. Second, ensure that you have run the “godep save” command to declare any dependencies that may exist. If you are not familiar the godep dependency manager, you can obtain it from the godep repository &lt;https://github.com/tools/godep&gt;. Lastly, ensure that your application is not listening for incoming connections on Port 80, but is referencing its port from the PORT environment variable via the os.Getenv(&quot;PORT&quot;) instruction. The popular Martini web framework does this already. You can find more details on deploying Go apps in this Knowledge Base Article &lt;http://support.run.pivotal.io/entries/79613525-How-do-I-run-an-application-on-PWS-&gt;. 
+
+RedisCloud and MemcacheCloud free tiers now 30 MB
+PWS partner 
+Redis Labs &lt;https://redislabs.com/&gt; has updated the free plan offering of their Redis 
+Cloud and Memcached Cloud &lt;https://console.run.pivotal.io/marketplace/memcachedcloud&gt; services to 30 MB, so you can try these services with larger projects than before. Both these services provide rapid access to data at scale for caching applications. If your applications are making a lot of database requests for the same data, both are worth looking at. 
+
+ Best Regards,
+Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data_Workshop_Roadshow_2015.Singapore Follow Up</name>
+    <style>none</style>
+    <subject>Thank you for Attending the Pivotal Big Data Workshop - Singapore</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for attending the Pivotal Big Data Roadshow. It was a great turnout and we really appreciated your input and participation. We hope you left with fresh ideas and the hands-on knowledge to transform your data infrastructure with Spring HD, Gemfire, Pivotal HD and Pivotal HAWQ in your data environment.
+
+Next Steps:
+
+
+ - Give us your feedback! Please take our short survey &lt;https://www.surveymonkey.com/r/QQ7Y78T&gt; so that we can continue to make future workshops informative and relevant. 
+ - Review the workshop presentation slides available here &lt;http://www.slideshare.net/Pivotal/big-data-roadshow&gt;.
+ - Public AMI in Amazon for the environment: ami-aaf1dac2
+ - Access the labs and technical content here &lt;https://github.com/Pivotal-Field-Engineering/BigDataRoadshow-labs&gt;    &lt;https://github.com/Pivotal-Field-Engineering/BigDataRoadshow-labs&gt;                
+
+
+
+Contact us &lt;mailto:info@pivotal.io&gt; to schedule a technical evaluation with our team. Learn how Pivotal Big Data Suite can transform your data-driven organization.
+
+Thank you again for joining us! For upcoming events visit us at  &lt;http://pivotal.io/&gt;http://pivotal.io/news-events &lt;http://pivotal.io/news-events&gt;. We are looking forward to seeing soon! 
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

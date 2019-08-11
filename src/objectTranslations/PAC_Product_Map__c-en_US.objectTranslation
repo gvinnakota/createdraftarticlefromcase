@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- PAC Product --></label>
+        <name>PAC_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product2 --></label>
+        <name>Product2__c</name>
+        <relationshipLabel><!-- PAC Product Maps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ZProduct --></label>
+        <lookupFilter>
+            <errorMessage><!-- Selected ZProduct is Deleted --></errorMessage>
+        </lookupFilter>
+        <name>ZProduct__c</name>
+        <relationshipLabel><!-- PAC Product Maps --></relationshipLabel>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>PAC Product Map</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PAC Product Maps</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Chicago White Sox Baseball Game_Q315.Confirm - Sox Game</name>
+    <style>none</style>
+    <subject>You are confirmed: Chicago White Sox vs. Boston Red Sox - August 24, 2015</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+You are confirmed for the Chicago White Sox vs. Boston Red Sox game.
+
+When:
+Monday, August 24th
+6:00pm  - Conference &amp; Learning Center
+7:10pm - Box Suite #125
+
+Where:
+U.S. Cellular Field
+333 W 35th St
+Chicago, IL 60616
+
+{{my.Chicago White Sox vs Boston Red Sox Game}}
+
+We look forward to spending time with you at the upcoming Chicago White Sox vs. Boston Red Sox game!
+
+See you there!
+
+Questions? Contact Paul Santos at psantos@pivotal.io &lt;mailto:psantos@pivotal.io&gt; or 408 425 9302.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

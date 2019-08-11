@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring by Pivotal: Live Webinar Series</title>
+
+<style type="text/css">
+
+    body {margin:0; padding:0; background-color:#F1F1F1; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:14px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; width:100% !important;}
+    a, a:link, a:visited {color:#5FA134; text-decoration:underline;}
+    a:hover, a:active {text-decoration:none; color:#5FA134 !important;}
+    h1, h2, h3 {color:#333333 !important; padding:0px 0px 10px 0px; margin:0px 0px 10px 0px;}
+    p {margin:0 0 14px 0; padding:0;}
+    img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+    a img {border:none;}
+    table td {border-collapse:collapse;}
+    .highlighted {color:#5FA134;}
+
+    /**
+    * @tab Mobile Styles
+    * @section body image
+    * @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+    */
+    #bodyImage{height:auto !important; /*@editable*/ max-width:560px !important; /*@editable*/ width:100% !important;}
+    
+    /* Clients specific styles */
+    .ReadMsgBody {width: 100%;}
+    .ExternalClass {width: 100%;}
+    .yshortcuts {color: #333333;}
+    .yshortcuts a span {color: #333333; border-bottom: none !important; background: none !important; text-decoration:none !important;}
+    /* / Clients specific styles */
+    
+    /* Media queries */
+    @media only screen and (max-width: 640px) {
+        table[class=row] {width:580px !important;}
+        img[class=wideImage], img[class=banner] {width:100% !important; height:auto !important; max-width:100%;}
+    }
+    @media only screen and (max-width: 610px) {
+        table[class=row] {width:570px !important;}
+        td[class=container] {padding:0px !important;}
+    }
+    @media only screen and (max-width: 540px) {
+        table[class=row] {width:510px !important;}
+        td[class=oneFromFour] {font-size:14px !important; line-height:15pt !important;}
+    }
+    @media only screen and (max-width: 480px) {
+        table[class=row] {width:450px !important;}
+        td[class=oneFromTwo], td[class=twoColumns] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=column] {display:block; width:390px !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=website] {display:block; width:390px !important; padding:15px 20px 15px 20px !important; text-align:center;}
+        td[class=socialIcons] {display:block; width:390px !important; padding:0px 20px 15px 20px !important; text-align:center !important;}
+        img[class=phoneIcon] {display:none !important;}
+        img[class=wideImage] {width:auto !important;}
+        table[class=quoteContainer] {width:190px !important;}
+    }
+    @media only screen and (max-width: 360px) {
+        table[class=row] {width:340px !important;}
+        td[class=column], td[class=website], td[class=socialIcons] {width:280px !important;}
+        td[class=logo] {display:block; width:280px !important; padding-bottom:0 !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=phone] {display:block; width:280px !important; padding:9px 20px 13px 20px !important; text-align:left !important; background-color:#EBF1E7;}
+        td[class=month] {display:block; width:280px !important; padding:8px 20px 8px 20px !important; text-align:left !important; /*border-top:1px solid #FFFFFF;*/}
+        td[class=icon] {padding-top:10px !important; padding-bottom:10px !important;}
+        table[class=quoteContainer] {width:140px !important;}
+        table[class=quoteContainer] td {font-size:12px !important; line-height:15pt !important;}
+        td[class=footer] {padding:0px 0px 25px 0px !important; text-align:left !important;}
+    }
+    @media only screen and (max-width: 320px) {
+        table[class=row] {width:300px !important;}
+        td[class=column], td[class=website], td[class=socialIcons], td[class=logo], td[class=phone], td[class=phone2] {width:240px !important;}
+        table[class=quoteContainer] {width:100% !important; border-bottom:1px solid #EEEEEE; margin-bottom:20px;}
+        table[class=quoteContainer] td {padding-left:0px !important;}
+        td[class=quoteAuthor] {padding-bottom:20px !important;}
+    }
+    @media only screen and (max-width: 240px) {
+        table[class=row] {width:220px !important;}
+        td[class=column], td[class=logo], td[class=phone], td[class=phone2] {width:160px !important;}
+        td[class=oneFromFour] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website], td[class=socialIcons] {width:220px !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website] {font-size:18px !important;}
+        img[class=wideImage] {width:100% !important;}
+        table[class=iconContainer], table[class=imgContainer] {width:100% !important;}
+        td[class=icon], td[class=authorPicture] {padding-right:0px !important; padding-bottom:20px !important; text-align:center;}
+        td[class=icon] img, td[class=authorPicture] img {display:inline !important;}
+    }
+    /* / Media queries */
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-color:#F1F1F1; background-image:url('http://play.gopivotal.com/rs/pivotal/images/BG_Brown_SpringEmail.png'); background-repeat:repeat-x; font-size:14px; line-height:24px; " ><tr ><td class="container" style="padding-left:15px; padding-right:15px; " ><table class="row" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF;">
+<tr>
+<td class="logo" width="50%" style="padding-top:10px; padding-right:15px; padding-bottom:15px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; line-height:25pt; color:#FFFFFF; font-weight:300;">
+<div style="margin-top:0px; margin-bottom:0px !important; padding:0px; line-height:100%;"><a href="http://www.springsource.org" title="Spring Newsletter by Pivotal" style="color:#FFFFFF !important;"><img src="http://play.gopivotal.com/rs/pivotal/images/Spring_FFF.png" alt="Spring by Pivotal" border="0" vspace="0" hspace="0" style="display:block; max-width:100%; height:auto !important;"></a></div>
+</td>
+<td class="month" width="50%" style="padding-top:4px; padding-right:20px; padding-bottom:0; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF; text-align:right;">
+<div class="month" style="margin-top:0px; margin-bottom:0px; padding:0px; font-size:22px; line-height:24px; font-weight:300; color:#FFFFFF !important; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">Live Webinar Series</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr ><td width="100%" style="padding-top:30px; padding-right:20px; padding-bottom:10px; padding-left:20px; " ><h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; line-height:22pt; color:#333333 !important; font-weight:500;"></h2>
+<div class="mktEditable" id="Webinar1-title" ><h2 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 22pt; color: #333333 !important; font-weight: 500;">Building 'Bootiful'&shy; Applications with Spring Boot</h2></div>
+</td>
+</tr>
+<tr ><td width="100%" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td width="340" class="column" valign="top" style="padding-right:15px; padding-bottom:25px; padding-left:20px; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar1-description" >Alright, so maybe "bootiful" won't ever work, but I tried, and it was worth it too because you're reading this. Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development not just fly, but pleasant! <br> <br> Join Spring developer advocate Josh Long for a look at what Spring Boot is, why it's turning heads, why you should consider it for your next application (REST, micro services, web, batch, big data, integration, whatever!) and how to get started.<br> <br></div>
+</td>
+<td width="220" class="column" valign="top" style="padding-top:5px; padding-right:20px; padding-bottom:25px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar1-emea-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">Europe</h3>
+<p>Tuesday, April 15, 2014<br />3:00pm BST Time<br /> (London, UTC+01:00)</p></div>
+<table width="90" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="Webinar1-emea-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_BuildingbootifulAppswithSpringBoot7AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar1-noram-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">North America</h3>
+<p>Tuesday, April 15, 2014<br /> 10:00am PDT<br /> (San Francisco, UTC-07:00)</p></div>
+<table width="90" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="Webinar1-noram-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_BuildingbootifulAppswithSpringBoot10AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr ><td width="100%" style="padding-top:30px; padding-right:20px; padding-bottom:10px; padding-left:20px; " ><h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; line-height:22pt; color:#333333 !important; font-weight:500;"></h2>
+<div class="mktEditable" id="Webinar2-title" ><h2 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 22pt; color: #333333 !important; font-weight: 500;">Connecting Eclipse to the Cloud-Based Era of Developer Tooling with Project Flux</h2></div>
+</td>
+</tr>
+<tr ><td width="100%" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td width="340" class="column" valign="top" style="padding-right:15px; padding-bottom:25px; padding-left:20px; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar2-description" ><p>The Eclipse IDE (as one example) is great, but increasingly we are seeing new projects and companies working in the cloud-based developer tooling space, using a front-end that runs purely in the browser. The Eclipse Orion project is one example of this. While the new approaches look promising, they are usually completely disconnected from the existing desktop-class IDEs and are still lightyears away from working well for Java developers.</p>
+<p>In this webinar we will provide a sneak peek into Project Flux, a new project that is hosted at Eclipse and that we've been working on that aims at bridging this gap between existing desktop-class IDEs and future cloud-based developer tooling.  While this project is still far away from shipping a ready-to-use release, the webinar provides an  insight into the prototype and what is coming in the future.<br /> <br /></p></div>
+</td>
+<td width="220" class="column" valign="top" style="padding-top:5px; padding-right:20px; padding-bottom:25px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar2-emea-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">Europe</h3>
+<p>Tuesday, April 22, 2014<br /> 3:00pm BST Time<br /> (London, UTC+01:00)</p></div>
+<table width="90" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="Webinar2-emea-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_ConnectingEclipseProjectFlux7AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar2-noram-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">North America</h3>
+<p>Tuesday, April 22, 2014<br /> 10:00am PDT<br /> (San Francisco, UTC-07:00)</p></div>
+<table width="90" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="Webinar2-noram-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_ConnectingEclipseProjectFlux10AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div style="height:20px">&nbsp;</div>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr ><td width="100%" style="padding-top:30px; padding-right:20px; padding-bottom:10px; padding-left:20px; " ><h2 style="margin-top:0px; margin-bottom:10px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:26px; line-height:22pt; color:#333333 !important; font-weight:500;"></h2>
+<div class="mktEditable" id="Webinar3-title" ><h2 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 26px; line-height: 22pt; color: #333333 !important; font-weight: 500;">Web Application Diagnostics with Java and JavaScript</h2></div>
+</td>
+</tr>
+<tr ><td width="100%" ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; color:#333333; " ><tr ><td width="340" class="column" valign="top" style="padding-right:15px; padding-bottom:25px; padding-left:20px; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar3-description" >There is more and more usage of Javascript on the client side today. Many are starting down the difficult path of full blown application development in JS on the client side, going beyond having a simple rollover menu logic or presentation component. But tracking and tracing effectively means looking at the whole application, not just the front end. New Relic can be used either in development or production to diagnose hybrid JavaScript/Java applications. <br> <br>In this session, Josh Long (Pivotal) and Ashley Puls (New Relic) will show how you can track and trace your way through today's hybrid JavaScript+Java web apps - resolving slow page loads, blocked threads, slow queries, etc.<br> <br></div>
+</td>
+<td width="220" class="column" valign="top" style="padding-top:5px; padding-right:20px; padding-bottom:25px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; " ><table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar3-emea-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">Europe</h3>
+<p>Wednesday, April 30, 2014<br /> 3:00pm BST Time<br /> (London, UTC+01:00)</p></div>
+<table width="90" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="Webinar3-emea-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_WebAppdiagnosticswJavaJavascript7AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; margin-bottom:15px; " ><tr ><td width="100%" bgcolor="#F4F4F4" style="padding-top:15px; padding-right:15px; padding-bottom:18px; padding-left:15px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="Webinar3-noram-sum" ><h3 style="margin-top: 0px; margin-bottom: 0 !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; color: #333333;">North America</h3>
+<p>Wednesday, April 30, 2014<br /> 10:00am PDT<br /> (San Francisco, UTC-07:00)</p></div>
+<table width="90" cellpadding="0" cellspacing="0" align="left" ><tr ><td align="center" ><div class="mktEditable" id="Webinar3-noram-register" ><a style="background-color: #34302d; border: solid 2px #6DB33F; color: #ffffff; display: block; font-size: 14px; text-align: center; text-decoration: none; font-family: Helvetica, Arial, sans-serif; margin-top: 15px; padding: 5px;" href="http://play.gopivotal.com/OSS_Webinar_WebAppdiagnosticswJavaJavascript10AM_Register.html">Register</a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table class="row" width="600" bgcolor="#F1F1F1" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; border-bottom:1px; border-bottom-color:#DDDDDD; 
+border-bottom-style:solid;">
+<tr>
+<td class="website" width="50%" valign="top" style="padding-top:24px; padding-right:15px; padding-bottom:20px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:100%; color:#6DB33F; font-weight:300;"><a style="text-decoration:none; 
+color:#6DB33F;" href="http://spring.io" title="Spring.io">spring.io</a></td>
+<td class="socialIcons" width="50%" style="padding-top:20px; padding-right:20px; padding-bottom:18px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; text-align:right;"><a href="http://twitter.com/springcentral" 
+style="color:#6DB33F;"><img alt="Twitter" src="http://play.gopivotal.com/rs/pivotal/images/Ico_Twitter.png" border="0" vspace="0" hspace="0"></a>&nbsp;&nbsp; <a href="https://plus.google.com/u/0/b/109970428231307622681/109970428231307622681" style="color:#6DB33F;"><img alt="Google Plus" 
+src="http://play.gopivotal.com/rs/pivotal/images/Ico_GPlus.png" border="0" vspace="0" hspace="0"></a>&nbsp;&nbsp; <a href="http://www.youtube.com/user/SpringSourceDev" style="color:#6DB33F;"><img alt="YouTube" src="http://play.gopivotal.com/rs/pivotal/images/Ico_YouTube.png" border="0" vspace="0" 
+hspace="0"></a>&nbsp;&nbsp; <a href="http://www.linkedin.com/groups/Spring-Users-46964" style="color:#6DB33F;"><img alt="Linkedin" src="http://play.gopivotal.com/rs/pivotal/images/Ico_LinkedIn.png" border="0" vspace="0" hspace="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="footer" width="100%" bgcolor="#F1F1F1" style="padding-top:0;padding-right: 20px;padding-bottom: 25px;padding-left: 20px; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:13pt; color:#333333; text-align:left; -webkit-text-size-adjust:none;">
+<div style="height:20px">&nbsp;</div>
+&copy; 2014 Spring by Pivotal.
+ The Spring and Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc.
+ in the United States and other countries.
+ All other trademarks used herein are the property of their respective owners.
+ © 2014 Go Pivotal, Inc.
+ All rights reserved.
+ Published in the USA.
+ To manage preferences for your Spring related communications, please click <a style="text-decoration:underline; color:#6DB33F;" href="http://play.gopivotal.com/OSSSubscriptions.html">here</a>.
+ To unsubscribe from all communications, please click <a style="text-decoration:underline; color:#6DB33F;" href="http://play.gopivotal.com/UnsubscribePage.html">here</a>.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

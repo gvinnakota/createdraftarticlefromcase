@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_5663990</developerName>
+        <masterLabel>Age</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>AGE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>168</to>
+            </sourceValues>
+            <value>0-6 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>168</from>
+                <to>360</to>
+            </sourceValues>
+            <value>7-14 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>360</from>
+                <to>720</to>
+            </sourceValues>
+            <value>15 -29 days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>720</from>
+            </sourceValues>
+            <value>30+ days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>PRIORITY</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATEONLY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>Case.Products__c</field>
+    </columns>
+    <columns>
+        <field>Case.Component__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>emea paas engineers ticket count per age</description>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Open,On Hold,Escalated,Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case.Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Open Source Apache HTTP Server,Open Source Apache Tomcat,Open Source Groovy &amp; Grails,Open Source PostgreSQL,Open Source RabbitMQ,Open Source Redis,Open Source Spring.io,Open Source SpringXD,OSS Support for Spring Cloud Data Flow,Pivotal Cloud Foundry Elastic Runtime Suite,Pivotal Application Service (formerly Elastic Runtime),Pivotal Cloud Foundry Operations Manager,Pivotal Cloud Foundry Operations Manager v2,Pivotal RabbitMQ,Pivotal RabbitMQ for Pivotal Cloud Foundry,Pivotal Services Suite,Pivotal Services Suite for Pivotal Cloud Foundry,Pivotal tc Server,Redis for Pivotal Cloud Foundry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Aitor Cedres,Anser Arif,Brian O&apos;Connell,Cyrille Lebas,David Farrell,David O&apos;Sullivan,Eddie Murphy,Faisal Ali,Jairo Pastrana,Berti,Mark Nagle,Peter Ryan,Sinead McDonnell,Stephen Higgins,Tao Deng,Erica Dowling,Andrew Jeffers,Alexander Graham,Leslie McCarthy</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_5663990</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>emea-backlog-paas-1</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

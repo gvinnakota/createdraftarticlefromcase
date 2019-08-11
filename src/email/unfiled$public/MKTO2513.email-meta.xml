@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.5-21-15 V3N9</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 9</subject>
+    <textOnly>VOL. 3, NO. 9
+Thursday, May 21, 2015
+Editor Welcome: It&apos;s All Jazz &lt;#editor-welcome&gt;
+Business Update: The Customer Difference - Cloud Foundry Summit &lt;#business-update&gt;
+Product Update: The Amazing Data March Goes On &lt;#product-update&gt;
+Agile Update: Agile People Development &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: Pivotal China Innovates around the 3rd Platform &lt;#people-update&gt;
+My Name Is... Rebecca Putinski &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ IT&apos;S ALL JAZZ
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+If you could pluck a meme from the recent Cloud Foundry Summit &lt;http://pivotal.io/cfsummit&gt;, it might have been: “This really works!” That message reverberated throughout the halls of the 2015 platform showcase in 
+Santa Clara. The difference this year was the messenger. It wasn’t the platform creators offering hypotheses of change, but an expanding base of customers who have adopted the platform and came to present their findings on dizzyingly fast development and cultural transition. (Pivotal’s Michael Coté just issued a strong 
+argument on the centrality of DevOps in the new code cycle). 
+
+In this issue, Kelly Indrieri shows us the deep imprint that Pivotal and our customers made at the Summit. Greg Chase continues our chronicle of the road to open source data at its mind-bending pace, with highlights of key releases. And a twist: Our agile update comes from an unexpected and welcome source - the People team, who have embraced agile for a top initiative. R&amp;D China leader Ray Feng also circles back to show us a team plugged in and innovating on top initiatives.
+
+My only argument with the past week was the vision of building cathedrals via the platform. Cathedrals are soaring but obdurate marvels. I hear instead a new jazz - grounded yet fluid, and ever exploring.
+
+Enjoy.
+BUSINESS UPDATE
+ THE CUSTOMER DIFFERENCE - CLOUD FOUNDRY SUMMIT
+ Kelly Indrieri &lt;https://gopivotal-com.socialcast.com/users/1109848-kellyindrieri&gt;, Marketing Communications Lead, Pivotal Cloud Foundry
+What a difference a year makes. While the hosting rights for the Cloud Foundry Summit now rest firmly in the good hands of the Cloud Foundry Foundation &lt;http://cloudfoundry.org/about/index.html&gt; and the leadership of Sam Ramji, there was an unmistakable storyline of customer transformation throughout the summit, and Pivotal had its fingerprints all over it &lt;http://pivotal.io/cfsummit&gt;.
+
+It was Pivotal customers who delivered the electric moments and sense of momentum this 
+year. Companies as different as AllState &lt;https://www.youtube.com/watch?v=04QFKBt6LCI&gt;, Garmin &lt;https://www.youtube.com/watch?v=7vd4_IVr2sg&gt;, Humana &lt;https://www.youtube.com/watch?v=xL-icG1tfcA&gt;, CoreLogic &lt;https://www.youtube.com/watch?v=qw8PLi0-QV4?autoplay=1&gt;, Lockheed Martin &lt;https://www.youtube.com/watch?v=CvpAqflUj0o&gt;, and more, shared their common story of generating code for the business, adopting the tools and vocabulary of a transformation framework that Pivotal delivers: The platform; microservices, continuous delivery, agile and 
+DevOps; big and fast data.
+
+One year in, customers related experiences of radical improvements in how IT helps the business: of greater speed and developer efficacy on the technical side, but just as important how the enabler of change - agile - is helping enterprises 
+fundamentally change their culture to do business as cloud natives.
+
+ 
+
+
+
+
+Clockwise from top - Transformation tales: Humana, Lockheed Martin; the Pivotal booth wall
+
+Check out the key articles, tweets, and videos &lt;http://blog.pivotal.io/cloud-foundry-pivotal/news-2/by-the-numbers-a-cloud-foundry-summit-2015-recap&gt; blog summary to get a taste of these remarkable stories of transformation. Some of the Pivotal highlights at the Summit include:
+
+
+
+ - Key announcements with, Dell &lt;http://www.businesswire.com/news/home/20150512006231/en/Dell-Expands-Digital-Services-Portfolio-Include-End%E2%80%93To-End#.VVZNllVVhBe&gt;, GE Industrial Dojo &lt;http://www.cbronline.com/news/enterprise-it/software/ge-unlocks-open-source-with-industrial-dojo-4575378&gt;, and our new partnership with Mirantis &lt;https://pivotal.io/platform-as-a-service/press-release/pivotal-and-mirantis-forge-partnership-to-deliver-cloud-foundry-on-openstack&gt;, spurring 19 articles with Pivotal mentions
+ - Pivotal dominated the share of voice (SOV) at Summit: 224 mentions and 57% SOV (GE followed with 14.5%, EMC was third with 6.1%)
+
+ - Pivotal trended on Twitter: We grabbed 700,000 impressions, and added 21,583 clicks, and 1,043 site visits to pivotal.io &lt;http://pivotal.io/&gt;, including 812 visits of which 706 were new to the Pivotal-CF Summit landing page &lt;http://pivotal.io/cfsummit&gt;
+
+
+
+The 2015 Summit distilled the distance we have traveled in two years, and the momentum Pivotal has with enterprises and its vision for a new, cloud-native platform. Stay tuned for our Spring Cloud launch, and a cloud-native application roadshow coming in Q3!
+PRODUCT UPDATE
+ THE AMAZING DATA MARCH GOES ON
+ Greg Chase &lt;https://gopivotal-com.socialcast.com/users/1034459-gregorychase&gt;, Director, Big Data Open Source Product &amp; Community Marketing
+It’s been amazingly busy for the Pivotal Big Data team since we launched a bold new data strategy in February. We’ve been working since then to execute on big promises - and execute we have! The line up of announcements and new releases since the last update in this newsletter has been staggering. 
+
+Becoming the most open data platform
+Releasing open source versions of all proprietary components of the Pivotal Big 
+Data Suite, was central to this strategy, the first of which was Pivotal GemFire &lt;https://pivotal.io/big-data/pivotal-gemfire&gt;. Known as “Geode” the open source core of GemFire has recently been accepted into The Apache Software Foundation incubator program under its official moniker, Apache Geode &lt;http://geode.incubator.apache.org/&gt;. We’ve already seen high interest with customers to join as contributors, including Southwest Airlines, ADP, CDK, Goldman Sachs, and Citi. Next up: open sourcing the core of Pivotal HAWQ &lt;http://pivotal.io/big-data/datasheet/pivotal-hawq&gt; - stay tuned for the details.
+
+Opening the “open source” Hadoop market
+Another major strand of our February announcement was the Open Data Platform &lt;https://pivotal.io/big-data/press-release/hortonworks-ibm-pivotal-accelerate-big-data-solutions&gt; initiative with HortonWorks, IBM, GE, SAS, and a total 
+of 17 key big data solution providers and customers. Through our close partnership with HortonWorks, Pivotal has followed up with two important releases:
+
+
+ - An ODP-compliant version of Hadoop, dubbed Pivotal HD 3.0 &lt;http://pivotal.io/big-data/press-release/pivotal-big-data-suite-accelerates-digital-transformation&gt;
+ - An ODP-compliant version of Pivotal HAWQ that runs on both Pivotal HD and Hortonworks Data Platform &lt;http://pivotal.io/big-data/press-release/pivotal-hawq-now-certified-on-hortonworks-data-platform&gt;.
+
+
+
+And more...
+That’s not all. We’ve made two significant software releases this spring. The first was GPDB version 4.3.5 &lt;http://pivotal.io/big-data/press-release/pivotal-big-data-suite-accelerates-digital-transformation&gt;, which for the first time includes the Pivotal Query Optimizer (reported in this newsletter in April &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/newsletters/pivotal-newsletter-april-2-2015#product-update&gt;). This innovative, cost-based query optimizer is exceptional at speeding advanced SQL queries like those generated by SAS analytics packages.
+
+Next up is a Spring XD 1.2 release that will include new support capabilities for Pivotal HD 3.0, data loading for GPDB and Pivotal 
+HAWQ, and improved integration with RabbitMQ &lt;http://www.rabbitmq.com/&gt;, Sqoop &lt;http://sqoop.apache.org/&gt;, Kafka &lt;http://kafka.apache.org/&gt;, and Spark &lt;https://spark.apache.org/&gt; Streaming. This helps Spring XD be the critical “data glue” to manage pipelines and data, as it’s ingested and processed across the components of the Pivotal Big Data Suite.
+
+In just three short months, Pivotal data has transformed the business into an open source, 
+community-driven model...with more to come.
+AGILE UPDATE
+AGILE 
+PEOPLE DEVELOPMENT
+ Pam Holmberg &lt;https://gopivotal-com.socialcast.com/users/951865-pamholmberg&gt; and Victoria Payne &lt;https://gopivotal-com.socialcast.com/users/923522-victoriapayne&gt;, Pivotal People Team
+Last year Pivotal scrapped the formal annual performance review which used to include performance ratings. This was the first step to building an environment of continuous learning that better reflects Pivotal’s culture. Feedback and coaching play a big role in fostering an environment where people have opportunities to learn and grow, and contribute to company goals.
+
+We started with managers, using training opportunities to encourage frequent feedback loops. That approach is supported by recent Pulse Survey findings &lt;https://docs.google.com/presentation/d/1Sfo-Q1hQSj5F2A9Mst5impbiWJ0ADzCtAlnkuGsq98g/edit#slide=id.p4&gt;, with employees expressing a desire for guidance and support, where frequent 
+feedback is the norm - much like a coach to a team.
+
+More recently, we gathered with resident agile guru Janice Fraser &lt;https://www.linkedin.com/profile/view?id=7034973&amp;authType=NAME_SEARCH&amp;authToken=WN9Q&amp;locale=en_US&amp;trk=tyah&amp;trkInfo=clickedVertical%3Amynetwork%2Cidx%3A1-3-3%2CtarId%3A1432087624919%2Ctas%3AJanice&gt;, in a facilitated workshop that included representatives 
+from R&amp;D, the Field, Pivotal Labs, and G&amp;A. Our aim was to “productize” continuous learning and improvement, and put it out there for testing. 
+
+From there, a sample of teams received feedback every day for a week. Most participants found the exercise constructive because colleagues wanted each other to succeed. Other findings included the importance of the right cadence - teams have varying preferences here; and that the quality of feedback is a function of how employees ask for or give feedback. Based on this and other data, we formulated an MVP (minimum viable product) that included: 
+
+
+ - Templates on action planning, collecting feedback, and coaching for managers and staff
+ - Pivotal Labs building a &quot;Feedback&quot; app, which three teams are now piloting
+ - Recommendations on a feedback cadence that suits different functions, and tips for employees to drive self-led feedback loops
+
+
+
+This is a lot more than getting feedback everyday, and here’s where we’ll be offering next: 
+
+
+ - Team-specific guidelines on a feedback cadence, and tools to leverage your HR business partners to determine the best approach 
+ - Additional employee and manager trainings focused on the importance of feedback
+ - Manager trainings on “The Role of a Manager as a Coach” 
+
+
+
+You’ll be hearing more from us as we continue to develop and adapt the process for more groups. In the meantime, here are some techniques &lt;https://drive.google.com/a/pivotal.io/folderview?id=0B-2Q2y__X9M8T2FWN1B5RUMxbkk&amp;usp=sharing&gt; to try out, including a growth/career conversation template &lt;https://docs.google.com/spreadsheets/d/1sY7kVyhAs_B23FV4hkfyxkXIAJzEfDe4B7KmUEjrR3Y/edit&gt;.
+Customer Spotlight
+Customers Succeed at the Cloud Foundry Summit, GE Partnership Touted in White Paper
+In between inspired presentations, lively breakouts - and Guitar Hero, six key customers took the time to share their Pivotal stories. We filmed high-level representatives from Core Logic, CenturyLink, GE, EMC, Humana and Kroger. We’ll spin this all into a series of external videos and case studies that highlight big data strategies and agile transformation. Stay tuned.
+
+Check out the Pivotal POV blog &lt;http://blog.pivotal.io/big-data-pivotal/case-studies-2/new-ge-performance-whitepaper-shows-pivotal-gemfire-to-be-industrial-strength&gt; for further insights into the 
+powerful GE and Pivotal partnership. This new white paper describes the strength of utilizing Pivotal GemFire and Pivotal HAWQ to achieve scalable, real-time results in industrial big data.
+
+Questions? Contact us at: customer-marketing@pivotal.io &lt;mailto:customer-marketing@pivotal.io&gt;
+PEOPLE UPDATE
+ Pivotal China Innovates Around the 3rd platform
+ Ray Feng &lt;https://gopivotal-com.socialcast.com/users/954293-rayfeng&gt;, Head of China R&amp;D Center
+After establishing a full-fledged virtual Pivotal China R&amp;D center including R&amp;D, Global Support Services, and G&amp;A, from within EMC China in 2014, we officially launched the Pivotal China legal entity in Beijing in 2015. We’ve now migrated all Beijing-based employees from EMC and VMWare China to Pivotal China. 
+
+We’re all officially Pivots now! 
+
+The China engineering leadership and team has been busy innovating and supporting all fronts of the 3rd-platform. The Pivotal PWS (Pivotal Web Services &lt;http://blog.pivotal.io/tag/pivotal-web-services&gt;) team, under the leadership of Simon Gao, Ning Fu, and Jack Wu, works closely with our peers in San Francisco, to operate PWS instances 24x7, and 
+develop tools that power automation.
+
+The Pivotal HAWQ team led by Lei Chang and Jiali Yao, made important contributions to the recent Pivotal HAWQ 1.3 release &lt;https://network.pivotal.io/products/pivotal-hawq&gt;, and 
+are busy rolling out the flagship 2.0 release that will become the definitive SQL engine on Hadoop. And Yandong Yao leads the Greenplum Database team that has shipped the 4.3.4.1; 4.3.5.0; 4.2.8.3; and 4.2.8.4 releases with our Palo Alto team, responding quickly to customer demands. The GSS teams, under the leadership of Rein Jin and James Wang, are part of our global 24x7 support services, and also cover our customers in APJ.
+
+We have generated more than 20 US patents &lt;https://drive.google.com/a/pivotal.io/folderview?id=0BzqKv9kBqSQ9Sm0yY2thS2RXVzQ&amp;usp=sharing&gt; and a few world-class papers &lt;https://drive.google.com/open?id=0B8GCVlqTdMB-LUJBd1hLcGJ0bWM&amp;authuser=0&gt;. On behalf of all the engineering leaders here in China, we’re super excited to elevate our China R&amp;D center as a hub of thought leadership on the cloud-native platform, and we look forward to helping customers transform their businesses.
+
+ 
+
+Comrades in innovation - The Pivotal China team says hello
+MY NAME IS...
+ Rebecca Putinski
+ Rebecca Putinski, Engineering Manager, Pivotal Toronto
+Am an engineering manager based out of the Toronto office. Besides awesome labs projects, I&apos;m working on the co-op program, and core practice initiatives in Toronto. I came from Xtreme Labs.
+In a variety of places, sometimes other offices. I&apos;m likely on the 11th floor somewhere, or in the kitchen trying to decide on a snack.
+A new enablement project that includes remote pairing with clients in New York. We&apos;re modernizing their existing codebase to Apple&apos;s latest guidelines.
+I like to bake things. Cakes, cookies, etc. You may have had something I&apos;ve made before if you&apos;re from Toronto and reading this. Otherwise, I&apos;m outside as much as possible. (in the summer…)
+
+ 
+
+Japan dojo: (l to r): Summit of Mt. Misen (Miyajima island, Hiroshima); Kegon falls in Nikko (north of Tokyo)
+I used to fly small planes and held a recreational pilot&apos;s licence (it&apos;s expired now).
+Is a fast-paced environment to work with smart, amazing people.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome new employees who joined Pivotal from May 5th through 
+18th.
+
+
+
+Adrian O&apos;Connell, Senior Accountant, Cork Ireland
+Bas Lemmens, Sales Account Executive, Netherlands
+Benjamin Grohbiel, Software Engineer, London
+Brian France, Senior Member of Technical Staff, US 
+Chao Ran, Senior Member of Technical Staff, US
+Charles Yorek, Sales Account Manager, US
+David Alvarado, Software Engineer, Santa Monica
+David Wallraff, Senior Solutions Architect, US 
+Dawoud Ibrahim, Senior Technical Account Manager, 
+US
+Duncan Fedde, Software Engineer, Denver
+Edwin Coy, Software Engineer, Boulder, CO
+Elizabeth Dahlstrom, Software Engineer, Seattle
+Elliot Powell, Senior IT Technical Specialist, Chicago
+Emily Casey, Software Engineer, Chicago
+Eugene Meaney, Accountant, Cork Ireland
+Han 
+Chen, Software Engineer, San Francisco
+Molly Norris, Senior UX Designer, London
+Jeffrey Glenn, Sales Account Manager, US
+Jeffrey 
+Jewett, Senior Field Engineer, US 
+Jeffrey Stone, Director, Business Operations, US
+JeongHwan Kim, Sales Account Executive, Seoul
+Justin 
+Roozeboom, UX Designer, Denver
+Kalyan Dudala, Senior Product Manager, San Francisco
+Kelly Elizabeth O&apos;Rourke, Principal Program Manager, US
+Kiel 
+Levy, Product Manager, Toronto
+Mayur Mahadeshwar, Data Engineer, US
+ Michael Lee, Senior Director Communications, Palo Alto
+ Michael 
+Smykowski, College Intern Student, San Francisco
+ Noah Denton, Software Engineer, Seattle
+ Oleksandr Diachenko, Senior Member of Technical Staff,  
+ 
+Paul Sullivan, Senior Manager,UX Design, New York
+ Pierce Lamb, Member of Technical Staff 2, Beaverton, OR
+ Samuel Nelson, Software Engineer, Boulder, CO
+ 
+Thomas Leplatre, Inside Sales Representative, London
+ Ting Yao, Senior Product Manager, Palo Alto
+ Vijay Rajagopal, Senior Field Engineer, Dubai
+ 
+Violet Yuan Cheng, Member of Technical Staff 3, Beijing
+ Zachary Hansen, Associate Data Engineer, US</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

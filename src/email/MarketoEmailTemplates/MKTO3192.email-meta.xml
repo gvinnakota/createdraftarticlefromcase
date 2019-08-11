@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Ensuring Cloud Native Success: Working with Legacy IT_Q415.Follow</name>
+    <style>none</style>
+    <subject>Thank you for joining us on Tuesday</subject>
+    <textOnly>Hey {{lead.First Name:default=There}},
+
+I&apos;m glad you were able to join us on Tuesday for our webinar. Legacy IT can be pretty tough to work with, but as Coté reviewed, it&apos;s where and how companies are making their money. Moving from legacy applications to the cloud can be challenging and risky, but companies that fail to transform will soon be left behind. 
+
+After checking out the replay &lt;http://pivotal.io/platform/webinar/ensuring-cloud-native-success-working-with-legacy-it&gt; and slides &lt;http://www.slideshare.net/chloejackson771/ensuring-cloud-native-success-working-with-legacy-it?ref=http://pivotal.io/platform/webinar/ensuring-cloud-native-success-working-with-legacy-it&gt;, please share with your colleagues and think about whether your organization is on the right track to transformation. I would love the opportunity to have a deeper conversation about how Pivotal can help you in your journey to become Cloud Native. Call or email me and we&apos;ll schedule time to discuss.
+
+Thanks and I look forward to talking with you,
+
+{{lead.Lead Owner First Name:default=The Pivotal Team}} {{lead.Lead Owner Last Name:default=edit me}}
+{{lead.Lead Owner Email Address:default=edit me}} 
+{{lead.Lead Owner Phone Number:default=edit me}} 
+
+P.S. I hope you can join Coté and team for Part 3 &lt;http://pivotal.io/platform/webinar/ensuring-cloud-native-success-organization-transformation&gt; of Ensuring Cloud Native Success: Organization Transformation on Tuesday, December 10 @ 10AM PST/1PM EST.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

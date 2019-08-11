@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_89462403</developerName>
+        <masterLabel>EMEA South Italy/Spain/Israel</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>User.Region__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA UK General</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA UKI</sourceValue>
+            </sourceValues>
+            <value>EMEA UK General</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_33415097</developerName>
+        <masterLabel>Region Grouping</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity.Is_ISR__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA MEA</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Middle East</sourceValue>
+            </sourceValues>
+            <value>EMEA MEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA ISR</sourceValue>
+            </sourceValues>
+            <value>EMEA Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA South Italy</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA South Israel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA South Spain</sourceValue>
+            </sourceValues>
+            <value>EMEA South Italy/Spain/Israel</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA South</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA South France</sourceValue>
+            </sourceValues>
+            <value>EMEA South France</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA UK</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA UK General</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA UKI</sourceValue>
+            </sourceValues>
+            <value>EMEA UK General</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA UK FSI</sourceValue>
+            </sourceValues>
+            <value>EMEA UK FSI</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Opportunity.ACV_Total__c.CONVERT</column>
+        </chartSummaries>
+        <chartType>Funnel</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>Opportunity.Fiscal_Period__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.ACV_Total__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Total_All_Services__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FORECAST_CATEGORY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Omitted,Pipeline,Best Case,Commit,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Identify Business Problems,Gain Sponsorship,Discovery,Framing,Negotiate &amp; Close,Booked</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Theater__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>EMEA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Fiscal_Period__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_33415097</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EMEA Forecast_FY_Summary</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

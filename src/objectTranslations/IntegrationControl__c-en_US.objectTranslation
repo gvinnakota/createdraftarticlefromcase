@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExportID --></label>
+        <name>ExportID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExportType --></label>
+        <name>ExportType__c</name>
+        <picklistValues>
+            <masterLabel>CreditBalanceAdjustment</masterLabel>
+            <translation><!-- CreditBalanceAdjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InvoiceAdjustment</masterLabel>
+            <translation><!-- InvoiceAdjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InvoiceItem</masterLabel>
+            <translation><!-- InvoiceItem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InvoiceItemAdjustment</masterLabel>
+            <translation><!-- InvoiceItemAdjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InvoicePayment</masterLabel>
+            <translation><!-- InvoicePayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RefundInvoicePayment</masterLabel>
+            <translation><!-- RefundInvoicePayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RevenueEventItemInvoiceItem</masterLabel>
+            <translation><!-- RevenueEventItemInvoiceItem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RevenueEventItemInvoiceItemAdjustment</masterLabel>
+            <translation><!-- RevenueEventItemInvoiceItemAdjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RevenueScheduleItem</masterLabel>
+            <translation><!-- RevenueScheduleItem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RevenueScheduleItemInvoiceItem</masterLabel>
+            <translation><!-- RevenueScheduleItemInvoiceItem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RevenueScheduleItemInvoiceItemAdjustment</masterLabel>
+            <translation><!-- RevenueScheduleItemInvoiceItemAdjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TaxationItem</masterLabel>
+            <translation><!-- TaxationItem --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FileID --></label>
+        <name>FileID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastProcessedDate --></label>
+        <name>LastProcessedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Value Processed --></label>
+        <name>Last_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to SAP</masterLabel>
+            <translation><!-- Sent to SAP --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Integration Control</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Integration Controls</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Integration Change Control Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

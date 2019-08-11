@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An email to be sent to the CFMS team when there is a mobile or IoT opp added.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Mobile or IoT Opp</name>
+    <style>none</style>
+    <subject>New Mobile/IoT Opportunity Alert: {!Opportunity.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

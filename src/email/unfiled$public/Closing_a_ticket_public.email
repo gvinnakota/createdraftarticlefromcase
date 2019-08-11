@@ -1,0 +1,373 @@
+Hi Niraj,<br />
+<br />
+Thanks for the update.<br />
+This message is to confirm that Pivotal Support ticket #81635 has been closed out. &nbsp;I hope that your experience with Pivotal Support has been a pleasant one and that I have been able to provide you with help for all of your issues.<br />
+<br />
+If you have any additional questions or need further assistance on the issues discussed in this ticket, you can simply reply to this notification and the ticket will be reopened.<br />
+<br clear="none" />
+Thanks<br />
+Shuvro<br clear="none" />
+<br clear="none" />
+--------------- Original Message ---------------<br clear="none" />
+<b>From:</b> Shrestha, Niraj [niraj.shrestha5@t-mobile.com]<br clear="none" />
+<b>Sent:</b> 6/8/2018 1:33 AM<br clear="none" />
+<b>To:</b> support@pivotal.io<br clear="none" />
+<b>Cc:</b> sdas@pivotal.io<br clear="none" />
+<b>Subject:</b> RE: changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]<br clear="none" />
+&nbsp;
+<div class="WordSection1">
+<p class="MsoNormal">Hi</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">Mysql issue got fixed &hellip; and I opened a new case for scs smoke test failure.</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">Thanks</p>
+
+<p class="MsoNormal">Niraj</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><b>From:</b> General Support [mailto:support@pivotal.io]<br clear="none" />
+<b>Sent:</b> Wednesday, June 6, 2018 10:51 PM<br clear="none" />
+<b>To:</b> Shrestha, Niraj &lt;Niraj.Shrestha5@T-Mobile.com&gt;<br clear="none" />
+<b>Cc:</b> sdas@pivotal.io<br clear="none" />
+<b>Subject:</b> RE: changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">Hi Niraj,<br clear="none" />
+<br clear="none" />
+Could you please confirm if mysql issue has beed resolved? To avoid confusion could you please open a separate ticket for the SCS issue it will help us to track the issue in future as well<br clear="none" />
+If the mysql issue still persist please upload the complete log to investigate the issue further.<br clear="none" />
+<br clear="none" />
+Thanks<br clear="none" />
+Shuvro Das<br clear="none" />
+<br clear="none" />
+--------------- Original Message ---------------<br clear="none" />
+<b>From:</b> Shrestha, Niraj [niraj.shrestha5@t-mobile.com]<br clear="none" />
+<b>Sent:</b> 6/7/2018 12:38 AM<br clear="none" />
+<b>To:</b> support@pivotal.io<br clear="none" />
+<b>Cc:</b> sdas@pivotal.io<br clear="none" />
+<b>Subject:</b> RE: changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]<br clear="none" />
+&nbsp;</p>
+
+<div>
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Hi</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Now I see the problem on scs deploy-service-broker errand.</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><b>$ cf apps</b></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Getting apps in org system / space p-spring-cloud-services as nshrest5...</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">OK</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; requested state&nbsp;&nbsp; instances&nbsp;&nbsp; memory&nbsp;&nbsp; disk&nbsp;&nbsp; urls</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">spring-cloud-broker-venerable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; started&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp;&nbsp;&nbsp;&nbsp; spring-cloud-broker-venerable.apps.px-stg02.cf.t-mobile.com</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">spring-cloud-broker-worker-venerable&nbsp;&nbsp; started&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp; &nbsp;&nbsp;&nbsp;spring-cloud-broker-worker.apps.px-stg02.cf.t-mobile.com</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">spring-cloud-broker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; started&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp;&nbsp;&nbsp;&nbsp; spring-cloud-broker.apps.px-stg02.cf.t-mobile.com</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">spring-cloud-broker-worker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; started&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1/1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1G&nbsp;&nbsp;&nbsp;&nbsp; spring-cloud-broker-worker.apps.px-stg02.cf.t-mobile.com</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; requested state: started&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instances: 1/1&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;usage: 1G x 1 instances&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;urls: spring-cloud-broker-worker.apps.px-stg02.cf.t-mobile.com&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;last uploaded: Wed Jun 6 17:42:12 UTC 2018&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stack: cflinuxfs2&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;buildpack: client-certificate-mapper=1.6.0_RELEASE container-security-provider=1.13.0_RELEASE java-buildpack=</span><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#3498DB">v4.12</span><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">-offline-https://github.com/cloudfoundry/java-buildpack.git#5dca820 java-main java-opts java-security jvmkill-agent=1.12.0_RELEASE open-jdk-...&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;state&nbsp;&nbsp;&nbsp;&nbsp; since&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cpu&nbsp;&nbsp;&nbsp; memory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; disk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; details&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#0&nbsp;&nbsp; running&nbsp;&nbsp; 2018-06-06 05:44:09 PM&nbsp;&nbsp; 0.0%!K(MISSING) of 1G&nbsp;&nbsp; 12K of 1G&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cf app spring-cloud-broker-venerable --guid&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;defda6cd-efe4-4fe8-97ff-616f40bd2528&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cf unmap-route spring-cloud-broker-venerable apps.px-stg02.cf.t-mobile.com --hostname spring-cloud-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removing route spring-cloud-broker.apps.px-stg02.cf.t-mobile.com from app spring-cloud-broker-venerable in org system / space p-spring-cloud-services as admin...&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OK&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Route to be unmapped is not currently mapped to the application.&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starting to wait for venerable broker to become idle&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Failed to fetch https://spring-cloud-broker-venerable.apps.px-stg02.cf.t-mobile.com/idle_time: status code 404.&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Operation eventually failed: Failed to fetch https://spring-cloud-broker-venerable.apps.px-stg02.cf.t-mobile.com/idle_time: status code 404&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deploy-service-broker failed: Failed to fetch https://spring-cloud-broker-venerable.apps.px-stg02.cf.t-mobile.com/idle_time: status code 404&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">Stderr&nbsp;&nbsp;&nbsp;&nbsp; ++ readlink -nf /var/vcap/packages/deploy-errand&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ DEPLOY_ERRAND_PACKAGE=/var/vcap/data/packages/deploy-errand/6ad50e44e8e5cbe9c54d3f19d3731abf2105d9cc&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ export PATH=/var/vcap/data/packages/deploy-errand/6ad50e44e8e5cbe9c54d3f19d3731abf2105d9cc/bin:/var/vcap/packages/cf-cli/bin:/var/vcap/packages/cf-uaac/bin/bin:/var/vcap/packages/jq/bin:/usr/sbin:/usr/bin:/sbin:/bin&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ PATH=/var/vcap/data/packages/deploy-errand/6ad50e44e8e5cbe9c54d3f19d3731abf2105d9cc/bin:/var/vcap/packages/cf-cli/bin:/var/vcap/packages/cf-uaac/bin/bin:/var/vcap/packages/jq/bin:/usr/sbin:/usr/bin:/sbin:/bin&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ export GEM_HOME=/var/vcap/packages/cf-uaac/bin/&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ GEM_HOME=/var/vcap/packages/cf-uaac/bin/&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++ dirname /var/vcap/jobs/deploy-service-broker/bin/run&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ SCRIPT_DIR=/var/vcap/jobs/deploy-service-broker/bin&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ JOB_NAME=deploy-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ RUN_DIR=/var/vcap/sys/run/deploy-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ LOG_DIR=/var/vcap/sys/log/deploy-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ PIDFILE=/var/vcap/sys/run/deploy-service-broker/pid&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ export CF_DIAL_TIMEOUT=30&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ CF_DIAL_TIMEOUT=30 &nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ export TEMP_DIRECTORY=/var/vcap/data/tmp&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ TEMP_DIRECTORY=/var/vcap/data/tmp&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ mkdir -p /var/vcap/data/tmp&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++ pwd&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ export UAAC_HOME=/var/vcap/bosh/home/uaac&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ UAAC_HOME=/var/vcap/bosh/home/uaac&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ mkdir -p /var/vcap/bosh/home/uaac&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++ pwd&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ export CF_HOME=/var/vcap/bosh/home/cf&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ CF_HOME=/var/vcap/bosh/home/cf&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ mkdir -p /var/vcap/bosh/home/cf&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ mkdir -p /var/vcap/sys/run/deploy-service-broker /var/vcap/sys/log/deploy-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ chown -R vcap:vcap /var/vcap/sys/run/deploy-service-broker /var/vcap/sys/log/deploy-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ PACKAGE_NAME=spring-cloud-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ PACKAGE_PATH=/var/vcap/packages/spring-cloud-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ cd /var/vcap/packages/spring-cloud-service-broker&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ exec deploy-errand /var/vcap/jobs/deploy-service-broker/bin/props.json&nbsp; </span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">1 errand(s)</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">&nbsp;</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">===== 2018-06-06 17:44:32 UTC Finished &quot;bosh2 --no-color --non-interactive --tty --environment=10.135.140.11 --deployment=p-spring-cloud-services-dad9a1249ec1545ff80b run-errand deploy-service-broker&quot;; Duration: 296s; Exit Status: 1</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">{&quot;type&quot;: &quot;step_finished&quot;, &quot;id&quot;: &quot;errands.running.p-spring-cloud-services-dad9a1249ec1545ff80b.deploy-service-broker&quot;}</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">Exited with 1.</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;background:#273747"><span style="font-size:9.0pt;font-family:&quot;Courier New&quot;;color:#E6E7E8">could not execute &quot;apply-changes&quot;: installation was unsuccessful</span></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><br clear="none" />
+&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><b>From:</b> General Support [mailto:support@pivotal.io]<br clear="none" />
+<b>Sent:</b> Tuesday, June 5, 2018 10:13 PM<br clear="none" />
+<b>To:</b> Shrestha, Niraj &lt;Niraj.Shrestha5@T-Mobile.com&gt;<br clear="none" />
+<b>Cc:</b> sdas@pivotal.io<br clear="none" />
+<b>Subject:</b> RE: changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Hi Niraj,<br clear="none" />
+<br clear="none" />
+From the artifacts I see smoke test VM Ephemeral disk size is almost full. Could you please change the smoke test VM type to medium.disk and try the same again<br clear="none" />
+You can change the vm type form p-MySql&nbsp;1.10.13 tile-&gt;Resource config<br clear="none" />
+<br clear="none" />
+++++++++++++++++++++++++++++++++++++<br clear="none" />
+Instance &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Process State &nbsp;AZ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;IPs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VM CID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VM Type &nbsp; &nbsp; Active &nbsp;VM Created At &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Uptime &nbsp;Load &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CPU &nbsp; &nbsp;CPU &nbsp; CPU &nbsp; CPU &nbsp; Memory &nbsp; &nbsp; &nbsp; &nbsp;Swap &nbsp; &nbsp; &nbsp; &nbsp; System &nbsp; &nbsp; &nbsp;Ephemeral &nbsp; Persistent &nbsp;<br clear="none" />
+<br clear="none" />
+smoke-tests/6781711a-6664-48cb-ba04-a79cb7ac2686 &nbsp; &nbsp; &nbsp;stopped &nbsp; &nbsp; &nbsp; &nbsp;PX-STG02-AZ3 &nbsp;10.135.147.28 &nbsp; vm-9ad5d91d-6cbb-45aa-9b6f-3d8e75d53a2e &nbsp;small &nbsp; &nbsp; &nbsp; - &nbsp; &nbsp; &nbsp; Fri Jun &nbsp;1 12:43:19 UTC 2018 &nbsp;- &nbsp; &nbsp; &nbsp; 0.00, 0.00, 0.00 &nbsp;- &nbsp; &nbsp; &nbsp;0.0% &nbsp;0.0% &nbsp;0.0% &nbsp;7% (140 MB) &nbsp; 0% (496 kB) &nbsp;37% (30i%) &nbsp;99% (4i%) &nbsp; - &nbsp;<br clear="none" />
+<br clear="none" />
+++++++++++++++++++++++++++++++++++++<br clear="none" />
+<br clear="none" />
+Please let us know if you face any difficulty&nbsp;<br clear="none" />
+<br clear="none" />
+Thanks,<br clear="none" />
+Shuvro&nbsp;<br clear="none" />
+<br clear="none" />
+<br clear="none" />
+--------------- Original Message ---------------<br clear="none" />
+<b>From:</b> Shrestha, Niraj [niraj.shrestha5@t-mobile.com]<br clear="none" />
+<b>Sent:</b> 6/5/2018 9:57 PM<br clear="none" />
+<b>To:</b> support@pivotal.io<br clear="none" />
+<b>Subject:</b> RE: changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]<br clear="none" />
+&nbsp;</p>
+
+<div>
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Hi</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Please find the output below:</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><b>bosh/0:/home/vcap# df -h /var/vcap/data</b></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Filesystem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Size&nbsp; Used Avail Use% Mounted on</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">/dev/sdb2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91G&nbsp; 1.4G&nbsp;&nbsp; 85G&nbsp;&nbsp; 2% /var/vcap/data</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><b>bosh/0:/home/vcap# df -h</b></p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">Filesystem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Size&nbsp; Used Avail Use% Mounted on</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">udev&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.9G&nbsp; 4.0K&nbsp; 3.9G&nbsp;&nbsp; 1% /dev</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">tmpfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 799M&nbsp; 448K&nbsp; 798M&nbsp;&nbsp; 1% /run</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">/dev/sda1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.9G&nbsp; 1.6G&nbsp; 1.2G&nbsp; 58% /</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.0K&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 4.0K&nbsp;&nbsp; 0% /sys/fs/cgroup</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5.0M&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 5.0M&nbsp;&nbsp; 0% /run/lock</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.9G&nbsp; 4.0K&nbsp; 3.9G&nbsp;&nbsp; 1% /run/shm</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100M&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 100M&nbsp;&nbsp; 0% /run/user</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">/dev/sdb2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91G&nbsp; 1.4G&nbsp;&nbsp; 85G&nbsp;&nbsp; 2% /var/vcap/data</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">tmpfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.0M&nbsp;&nbsp; 56K&nbsp; 968K&nbsp;&nbsp; 6% /var/vcap/data/sys/run</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">/dev/sdc1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 99G&nbsp;&nbsp; 41G&nbsp;&nbsp; 53G&nbsp; 44% /var/vcap/store</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><b>From:</b> General Support [mailto:support@pivotal.io]<br clear="none" />
+<b>Sent:</b> Tuesday, June 5, 2018 4:35 AM<br clear="none" />
+<b>To:</b> Shrestha, Niraj &lt;Niraj.Shrestha5@T-Mobile.com&gt;<br clear="none" />
+<b>Subject:</b> RE: changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto">&nbsp;</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><br clear="none" />
+Hi Niraj,<br clear="none" />
+<br clear="none" />
+Form the logs I see&nbsp; &quot;no space left on device&#39;, stderr: &quot;<br clear="none" />
+Could you please also confirm available disk space on director VM&nbsp; by&nbsp;<strong><span style="font-family:&quot;Calibri&quot;,sans-serif">ssh vcap@&lt;director vm&gt;</span></strong>&nbsp;(Use the VM credentials from the Ops Manager Director GUI credentials tab).</p>
+
+<p>Then run&nbsp;<strong><span style="font-family:&quot;Calibri&quot;,sans-serif">df -h /var/vcap/data</span></strong>&nbsp;</p>
+
+<p>My shift has ended if you need immediate support please call our support number + 1-877-477-2269 to&nbsp; re-queue the ticket.<br clear="none" />
+<br clear="none" />
+Thanks,<br clear="none" />
+Shuvro</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><br clear="none" />
+<br clear="none" />
+<br clear="none" />
+--------------- Original Message ---------------<br clear="none" />
+<b>From:</b> General Support [support@pivotal.io]<br clear="none" />
+<b>Sent:</b> 6/5/2018 9:18 AM<br clear="none" />
+<b>To:</b> niraj.shrestha5@t-mobile.com<br clear="none" />
+<b>Subject:</b> changes applied from opsmanager failing on mysql [ ref:_00DU0YQaz._5000Pi4J8t:ref ]<br clear="none" />
+&nbsp;</p>
+
+<p>Hi Niraj,<br clear="none" />
+<br clear="none" />
+My name is Shuvro, and I am a Customer Engineer with Pivotal. Thanks for contacting Pivotal Support. I have received your request could you please provide us below information to investigate the issue further.<br clear="none" />
+<br clear="none" />
+1. Ops Manager Diagnostic Report.</p>
+
+<p>This report is available by navigating to Settings -&gt; Advanced. Then right click on View Diagnostic Report and Save Link As&hellip; to download the report as a file.<br clear="none" />
+<br clear="none" />
+2. Instalation error logs<br clear="none" />
+<br clear="none" />
+3. Out put of the bosh instance --ps<br clear="none" />
+<br clear="none" />
+4. Output of the vms&nbsp;--vitals<br clear="none" />
+<br clear="none" />
+<br clear="none" />
+Thanks,<br clear="none" />
+Shuvro Das</p>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:12.0pt"><span style="border:solid windowtext 1.0pt;padding:0in"><img alt="Image removed by sender." height="100" src="https://pivotal--c.na37.content.force.com/servlet/servlet.FileDownload?file=00P0P00000rtQmx" style="width:1.0416in;height:1.0416in" width="100" /></span><br clear="none" />
+<br clear="none" />
+ref:_00DU0YQaz._5000Pi4J8t:ref<br clear="none" />
+<br clear="none" />
+Thanks and Regards,<br clear="none" />
+Shuvro Das | Sr Customer Engineer |sdas@pivotal.io<br clear="none" />
+Mon-Fri 8:30 am to 5:00pm IST | 1-877-477-2269<span style="border:solid windowtext 1.0pt;padding:0in"><img alt="Image removed by sender." height="100" src="https://pivotal--c.na37.content.force.com/servlet/servlet.FileDownload?file=00P0P00000rtQmx" style="width:1.0416in;height:1.0416in" width="100" /></span></p>
+</div>
+
+<p class="MsoNormal" style="mso-margin-top-alt:auto;margin-bottom:12.0pt"><br clear="none" />
+<br clear="none" />
+Thanks and Regards,<br clear="none" />
+Shuvro Das | Sr Customer Engineer |sdas@pivotal.io<br clear="none" />
+Mon-Fri 8:30 am to 5:00pm IST | 1-877-477-2269<span style="border:solid windowtext 1.0pt;padding:0in"><img alt="Image removed by sender." height="100" src="https://pivotal--c.na37.content.force.com/servlet/servlet.FileDownload?file=00P0P00000rtQmx" style="width:1.0416in;height:1.0416in" width="100" /></span></p>
+</div>
+
+<p class="MsoNormal" style="margin-bottom:12.0pt"><br clear="none" />
+<br clear="none" />
+Thanks and Regards,<br clear="none" />
+Shuvro Das | Sr Customer Engineer |sdas@pivotal.io<br clear="none" />
+Mon-Fri 8:30 am to 5:00pm IST | 1-877-477-2269<span style="border:solid windowtext 1.0pt;padding:0in"><img alt="Image removed by sender." height="100" src="https://pivotal--c.na37.content.force.com/servlet/servlet.FileDownload?file=00P0P00000rtQmx" style="width:1.0416in;height:1.0416in" width="100" /></span></p>
+</div>
+<br />
+<br />
+Thanks and Regards,<br />
+Shuvro Das | Sr Customer Engineer |sdas@pivotal.io<br />
+Mon-Fri 8:30 am to 5:00pm IST | 1-877-477-2269

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Certification --></label>
+        <name>Certification_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Certification --></label>
+        <name>Certification__c</name>
+        <relationshipLabel><!-- Certification Tests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependencies --></label>
+        <name>Dependencies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Engineer --></label>
+        <name>Partner_Engineer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Engineer --></label>
+        <name>Pivotal_Engineer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Testing Begun --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process - Pending Partner</masterLabel>
+            <translation><!-- In Process - Pending Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process - Pending Pivotal</masterLabel>
+            <translation><!-- In Process - Pending Pivotal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Partner Self Certification</masterLabel>
+            <translation><!-- Partner Self Certification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Certification</masterLabel>
+            <translation><!-- Pivotal Certification --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Certification Test</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Certification Tests</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Certification Test Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- New_Certification_Test --></label>
+        <name>New_Certification_Test</name>
+    </webLinks>
+</CustomObjectTranslation>

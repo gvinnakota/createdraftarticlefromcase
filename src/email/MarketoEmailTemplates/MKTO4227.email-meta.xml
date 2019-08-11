@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Tech Workshops_Q3-416.Confirmation - Palo Alto</name>
+    <style>none</style>
+    <subject>Registration Confirmed for Data Science Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=there,}}
+
+ You are now registered for the Pivotal Data Science Technical Workshop in Palo Alto. 
+
+ Date &amp; Location
+Tuesday, November 15th, 2016 
+8:30AM to 12:30PM 
+
+Pivotal Palo Alto
+3495 Deer Creek Road
+Palo Alto, CA 94304 
+
+ Palo Alto Agenda 
+8:00AM-8:30AM Registration &amp; Breakfast
+8:30AM-12:30PM Hands on Data Science Technical Workshop
+ 
+{{my.Save the Date Palo Alto}}
+
+
+ Prepare your system for the workshop 
+If you are planning to follow the workshop labs, you will need to have a client ssh program installed. 
+
+ There are several open source / free programs available:
+
+
+ 
+ - Windows: Putty http://www.putty.org/ &lt;[[http://www.putty.org/]]&gt; or MobaXterm http://mobaxterm.mobatek.net/download.html &lt;[[http://mobaxterm.mobatek.net/download.html]]&gt; (MobaXterm is preferred) 
+ - MacOS: Native built in 
+ - Linux: Native built in
+
+
+
+ You are also welcome to use any commercial version of ssh if you have it. 
+
+ Questions? 
+ If you have a question about the workshop, please contact us at events@pivotal.io &lt;[[mailto:events@pivotal.io]]&gt;. 
+
+ We look forward to seeing you at the workshop. 
+
+ Best Regards, 
+Pivotal Data Science Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

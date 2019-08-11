@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Pivotal IT Comm.Casper V3</name>
+    <style>none</style>
+    <subject>An Important Message from Pivotal IT - Casper Update</subject>
+    <textOnly>Hello to all Pivotal employees!
+
+
+
+First, thank you for taking the time to enroll your computer with Casper. We&apos;re excited to roll out things like Self-Service for software and easy access to Pivotal VPN in the near future, and getting your machine enrolled helps us get those tools to you more easily. There have been a few issues that we know have been frustrating or confusing, so we wanted to give you an update on common questions:
+
+Windows Computers
+
+
+
+Given the difficulty resolving the Casper enrollment issue with Windows systems we&apos;re going to hold off enrolling them for now. If your primary and only system is Windows there&apos;s nothing more you need to do at the moment. We have a Windows-native management system coming soon and we&apos;d rather focus our efforts on that to provide the greatest benefit to our Windows users. Look for more news in the near future, and our apologies for the confusion.
+
+
+Enrolling Contractors and Non-Pivotal Employees
+
+
+A number of people have asked us if they should enroll their personal machine, or a machine managed by another company (EMC, VMware, etc.). In order to avoid management conflicts with partner companies, we only want to enroll Pivotal-owned computers with Casper.
+
+Enrolling while connected to EMC&apos;s VPN/Network
+EMC&apos;s firewall intentionally blocks traffic to other Casper servers, so trying to enroll while connected to EMC VPN or network will fail. Disconnecting from VPN or moving to a different network that has access to the open internet will allow you to enroll your computer with Casper.
+
+Shoot an email to askIT@gopivotal.com &lt;mailto:askIT@gopivotal.com&gt; if you have any questions or concerns.
+
+
+Regards, 
+
+Chris Curtis
+Vice President IT</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

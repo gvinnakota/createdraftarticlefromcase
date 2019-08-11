@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Request Update</name>
+    <style>formalLetter</style>
+    <subject>Received: Your request for update on Pivotal Support case #{!Case.CaseNumber}</subject>
+    <textOnly>Hello {!Case.Contact_FirstName__c},
+Your request for status on case #{!Case.CaseNumber} has been received. Please allow 24 hours for a response.
+
+Thank you,
+Pivotal Support</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Columbus Reminder Email</name>
+    <style>none</style>
+    <subject>See you tomorrow at SpringOne Tour Columbus!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+We look forward to seeing you at SpringOne Tour Columbus tomorrow. Please review the event details here &lt;[[https://springonetour.io/2019/columbus]]&gt; and feel free to email the team at springonetour@pivotal.io &lt;[[mailto:springonetour@pivotal.io]]&gt; with any questions.
+
+
+Location:
+Vue Columbus
+95 Liberty St. 
+Columbus, OH 43215
+
+
+Getting There:
+If you choose to drive to the event, the venue offers discounted parking rates in the nearby parking garage, the Grange Garage (600 S. Front Street, Columbus, OH 43215). To receive the $3 daily rate, you will need to place a sticker, that will be provided during morning registration, on your ticket. You&apos;ll then place the ticket in the machine when leaving the garage and pay the $3 at that point. The garage will stay open until 8:00pm on February 27th, and 7:00pm on February 28th. For more information, please click here &lt;[[https://drive.google.com/file/d/0B5Z_2cBSiBMOUVlhNWRZcUZPa1ZvZmV5c0gwamJMZ2doaHpJ/view?usp=sharing]]&gt;.
+For those of you planning on using public transport, please find more information here &lt;[[https://drive.google.com/file/d/0B5Z_2cBSiBMOMW1pOEhFZWZwaFhTUTdCRmpmRGk1SmExaHM4/view?usp=sharing]]&gt;.
+
+
+Thanks,
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,95 @@
+<apex:page standardController="Certification__c" extensions="certExtension">
+<apex:sectionHeader title="Certification Edit" subtitle="New Certification"/>
+<apex:form >
+    <apex:pageblock title="Certification Edit" mode="edit">
+    <apex:pageMessages />
+        <apex:pageBlockButtons >  
+            <apex:commandButton action="{!save_record}" value="Save"/>  
+            <apex:commandButton action="{!cancel_record}" value="Cancel" immediate="true"/>  
+        </apex:pageBlockButtons> 
+        
+        <apex:pageBlockSection title="Information">
+            <apex:pageBlockSectionItem >
+                <apex:outputlabel value="Pivotal Product"/>
+                <apex:actionRegion >
+                    <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:selectList size="1" value="{!pivProduct}">
+                            <apex:selectoptions value="{!PivProdObj}"/>
+                            <apex:actionSupport event="onchange" reRender="PivVersions"/>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                    </apex:actionRegion>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Partner Account"/>
+                <apex:actionRegion >
+                    <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>      
+                    <apex:selectList size="1" value="{!partnerAcct}">
+                        <apex:selectOptions value="{!partnerAcctObj}"/>
+                        <apex:actionSupport event="onchange" reRender="partnerProducts"/>
+                        <apex:actionSupport event="onblur" reRender="PartnerVersions"/>           
+                    </apex:selectList>
+                    </apex:outputPanel>
+                    </apex:actionRegion>
+            </apex:pageBlockSectionItem>
+             
+         
+            <apex:pageblockSectionItem >
+                <apex:outputLabel value="{!$ObjectType.Certification__c.fields.Pivotal_Product_Version__c.label}"/>
+                <apex:actionRegion >
+                    <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>               
+                    <apex:selectList size="1" value="{!pivProdVersion}" id="PivVersions" >
+                        <apex:selectoptions value="{!PivProdVersionObj}"/>
+                    </apex:selectList>
+                    </apex:outputPanel>
+                </apex:actionRegion>
+            </apex:pageblockSectionItem> 
+            
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputlabel value="Partner Product"/>
+                <apex:actionRegion >
+                    <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                        <apex:selectList size="1" value="{!partnerProduct}" id="partnerProducts">
+                            <apex:selectoptions value="{!PartnerProdObj}"/>
+                            <apex:actionSupport event="onchange" reRender="PartnerVersions"/>
+                        </apex:selectList>
+                    </apex:outputPanel>
+                </apex:actionRegion>
+            </apex:pageBlockSectionItem>
+           
+            <apex:pageblockSectionItem ></apex:pageblockSectionItem>
+            
+            <apex:pageblockSectionItem >
+                <apex:outputLabel value="{!$ObjectType.Certification__c.fields.Partner_Product_Version__c.label}"/>
+                <apex:actionRegion >
+                    <apex:outputPanel styleClass="requiredInput" layout="block">
+                    <apex:outputPanel styleClass="requiredBlock" layout="block"/>               
+                    <apex:selectList size="1" value="{!partnerProductVersion}" id="PartnerVersions">
+                        <apex:selectoptions value="{!PartnerProdVersionObj}"/>
+                    </apex:selectList>
+                    </apex:outputPanel> 
+                </apex:actionRegion>                   
+            </apex:pageblockSectionItem> 
+            <apex:pageblockSectionItem ></apex:pageblockSectionItem>
+            <apex:pageblockSectionItem ></apex:pageblockSectionItem>
+            
+
+            <apex:inputField value="{!Certification__c.Status__c}" required="true" />
+    
+            <apex:pageblockSectionItem ></apex:pageblockSectionItem>
+            <apex:inputField value="{!Certification__c.Effective_Date__c}" />
+            <apex:pageblockSectionItem ></apex:pageblockSectionItem>
+            <apex:inputField value="{!Certification__c.Notes__c}"/>
+
+        </apex:pageBlockSection>  
+    </apex:pageblock>
+</apex:form>
+
+<script>function setFocusOnLoad(){ /*NOOP*/ }</script>
+</apex:page>

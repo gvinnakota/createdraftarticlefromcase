@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Project Time Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Completed --></label>
+        <name>Date_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task --></label>
+        <name>Task__c</name>
+        <picklistValues>
+            <masterLabel>MOD</masterLabel>
+            <translation><!-- MOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meetings</masterLabel>
+            <translation><!-- Meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Projects</masterLabel>
+            <translation><!-- Projects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For Time Spent the Unit of Measure is minutes. --></help>
+        <label><!-- Time Spent --></label>
+        <name>Time_Spent__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Time Entry</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Time Entries</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Project Time Entry Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

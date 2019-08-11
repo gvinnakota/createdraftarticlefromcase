@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_10AM MongoDB and Spring: Two leaves of the same tree.Confirmation 2</name>
+    <style>none</style>
+    <subject>Webinar Confirmation:  MongoDB and Spring - Two leaves of the same tree</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar MongoDB and Spring: Two leaves of the same tree on Thursday, October 29, 2015. 
+
+Please see event details below:
+
+Date: Thursday, October 29, 2015 
+Time: 10:00AM PDT/5:00PM GMT
+
+Join the Session &lt;http://event.on24.com/wcc/r/1059411/07164490EF1A47474F770C42A938312A&gt; 
+ Audio Information: 
+This webinar will be streaming live via your computer speakers. 
+Save the Date &lt;{{my.My Token:default=Save the Date}}&gt; 
+
+We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

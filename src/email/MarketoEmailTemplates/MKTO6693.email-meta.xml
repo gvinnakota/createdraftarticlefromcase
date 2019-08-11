@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Website_Paid Social Ad LinkedIn_PARENT_AU_NZ_Q418.Business Form Submission C</name>
+    <style>none</style>
+    <subject>Thank you</subject>
+    <textOnly>Dear {{lead.First Name:default=edit me}},
+
+Thank you for registering for the Pivotal assets. Please find the links to these assets here &lt;[[https://content.pivotal.io/au-linkedin-transform?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=apj-website-social-linkedin]]&gt;.
+
+Should you be interested in speaking with a Pivotal representative, please contact us &lt;[[https://pivotal.io/contact?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=apj-website-social-linkedin]]&gt;.
+
+Regards,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Legal Docs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is this an Addendum or Amendment? --></label>
+        <name>Addendum_Status__c</name>
+        <picklistValues>
+            <masterLabel>Addendum</masterLabel>
+            <translation><!-- Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation><!-- Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Base Agreement --></label>
+        <name>Base_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+        <picklistValues>
+            <masterLabel>EMC Addendum</masterLabel>
+            <translation><!-- EMC Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eval Agreement</masterLabel>
+            <translation><!-- Eval Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOA</masterLabel>
+            <translation><!-- MOA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NDA</masterLabel>
+            <translation><!-- NDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSA</masterLabel>
+            <translation><!-- PSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participation Agreement</masterLabel>
+            <translation><!-- Participation Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Channel Partner</masterLabel>
+            <translation><!-- Pivotal Channel Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Channel Partner Plus</masterLabel>
+            <translation><!-- Pivotal Channel Partner Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Partner Program</masterLabel>
+            <translation><!-- Pivotal Partner Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLA</masterLabel>
+            <translation><!-- SLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subcontractor Agreement</masterLabel>
+            <translation><!-- Subcontractor Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Addendum to MOA</masterLabel>
+            <translation><!-- Third Party Addendum to MOA --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Legal Doc</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Legal Docs</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>Addendum Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.6-26-14 V2N13</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.13</subject>
+    <textOnly>&lt;#top&gt;
+
+
+
+
+
+
+
+ &lt;http://gopivotal.com&quot; target=&quot;_blank&quot;&gt;&lt;img style=&gt;
+NEWSLETTER
+VOL. 2, NO. 13
+
+
+
+
+
+
+Thursday, June 26, 2014
+
+
+
+
+
+
+
+
+
+
+
+IN THIS ISSUE
+
+
+
+ - Editor Welcome: June Bugs &lt;#editor-welcome&gt;
+
+ - Business Update: PaaS is Here – and it’s all About Cloud Foundry &lt;#business-update&gt;
+
+ - Product Update: Spring IO 1.0 Release: Simpler, Faster Java App Development &lt;#product-update&gt;
+
+ - Agile Update: Labs Gets Lean Startup Gurus, and More &lt;#agile-update&gt;
+
+ - People Update: R&amp;D Has its Execution Rhythm &lt;#people-update&gt;
+
+ - Hello My Name Is… Surinder Pal Singh Bindra &lt;#my-name-is&gt;
+
+ - New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#editor-welcome&gt; 
+
+
+
+
+
+
+
+
+EDITOR WELCOME
+JUNE BUGS
+Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+
+
+
+
+There’s hardly been a mid-summer’s pause at Pivotal. It’s just as well. The company has been out in force, articulating how the intersection of data and agile development, enabled by the software workshop of PaaS, are the modern tools of next generation computing. You’ll see snapshots of how that is all coming together in all of this issue’s updates. 
+
+ We’ve tweaked the newsletter format to make it a bit easier to navigate (hat tip to comrade Dararith in Corporate Marketing). Click to read what you want, continue on, or head back to the top. We&apos;re now looking to make it responsive to your mobile device, for an easy read anywhere. Stay tuned.
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#business-update&gt; 
+
+
+
+
+
+
+
+
+BUSINESS UPDATE
+PAAS IS HERE – AND IT’S ALL ABOUT CLOUD FOUNDRY
+James Watters &lt;https://gopivotal-com.socialcast.com/users/920258-jameswatters&gt;, VP Product and Ecosystem for Cloud Foundry
+
+
+
+
+Nowhere was it more evident that PaaS is the software workshop for an application economy (and that Cloud Foundry is it) than at the recent Cloud Foundry Summit &lt;http://www.gopivotal.com/platform-as-a-service/cloud-foundry-summit-2014&gt;. The event affirmed the Cloud Foundry community’s open source core, and the power of commercial PaaS as lead by Pivotal CF.
+
+Summit snapshots (l to r: James Watters with David Lewis and Dr. Swamy Kocherlakota from BNY Mellon; Pivotal CF powers Atos’ cloud; Pivotal’s Cornelia Davis)
+
+ I started Day 2 with why 
+PaaS is the center of a new software-centric world. And the passion and creativity that developers and customers are bringing to PaaS through Cloud Foundry and Pivotal CF are testament to this trend. Their stories included: 													 
+
+
+ - Cisco’s Ken Owens extolling the virtues of running next-generation WebEx on Cloud Foundry
+ - Germany’s largest publisher, Axel Springer, using Pivotal CF to remake itself as a digital publisher &lt;https://www.youtube.com/watch?v=GKJ6YgIZm88&gt;
+ - BNY Mellon, selecting Pivotal CF as the platform to evolve its enterprise
+ - Core Logic fueling innovation through Pivotal CF &lt;https://www.youtube.com/watch?v=HZWkfOe1-tc&gt;
+ - Monsanto building on Pivotal CF &lt;https://www.youtube.com/watch?v=RJCB7OGeY9o&gt; to realize a cloud vision for data-driven agriculture
+ - SAP using Cloud Foundry as the cornerstone of its platform strategy &lt;https://www.youtube.com/watch?v=V-SfC1lsun0&gt; to serve 200,000 customers across 170 countries
+ - Philips Digital Health leveraging Pivotal CF to ignite an agile innovation engine &lt;https://www.youtube.com/watch?v=62wTc-YS_Yw&gt;
+ - NTT building auto-scaling with BOSH &lt;http://www.slideshare.net/Pivotal/tue-1430-breakoutyudaintt&gt;
+ - HP unveiling its Helion Cloud based on Cloud Foundry
+ - IBM growing its billion-dollar investment in BlueMix (Open Stack + Cloud Foundry cloud!)
+
+
+From Pivotal, James Bayer’s Cloud Foundry roadmap and Onsi Fakhouri, who created fireworks around DIEGO &lt;https://www.youtube.com/watch?v=1OkmVTFhfLY&gt;, were just a few of the many bright spots.
+
+ Pivotal CF continues to 
+spearhead a commercial PaaS &lt;http://www.gopivotal.com/platform-as-a-service/press-release/06102014-pivotal-extends-lead-in-enterprise-paas-with-new-pivotal-cf-services-and-new-customers&gt; that offers developers and IT operators the 
+automation, data access and ease essential for agile, application-driven businesses. We released Version 1.2 in May, and remain on track for 1.3 by the end of June. This includes portability (we now run on vCHS); add-on services 													such as Redis, MongoDB, Elastic Search; and additional networking controls.
+
+ We’re building awareness and delivering to market all the great things we’ve developed together, and the pipeline 
+and upside grows. Want to help build this powerful platform? Sign up for a Pivotal Web Services account &lt;run.pivotal.io&gt; and push at least one app to the cloud now!
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#product-update&gt; 
+
+
+
+
+
+
+
+
+PRODUCT UPDATE
+SPRING IO 1.0 RELEASE: SIMPLER, FASTER JAVA APP DEVELOPMENT
+Al Sargent &lt;https://gopivotal-com.socialcast.com/users/914434-alsargent&gt;, Director, Product Marketing, Application Fabric
+
+
+
+
+Spring IO™ 1.0 has arrived &lt;https://www.gopivotal.com/agile/press-release/06262014-pivotal-releases-spring-io-platform&gt;, making it easier than ever for the largest Java developer community to build enterprise applications. Spring IO unites dozens 														of Spring and third-party artifacts &lt;http://docs.spring.io/platform/docs/1.0.0.RELEASE/reference/htmlsingle/&gt; into 													a cohesive, versioned release – giving developers a solid 
+foundation to build mobile, Big Data and web applications, as well as cloud microservices &lt;http://www.slideshare.net/mstine/microservices-cf-summit&gt;.
+
+ Before Spring IO, developers tested foundation components on their own (a 
+time-consuming task). With Spring IO, Pivotal took care of that testing, enabling developers to focus on building application functionality.
+
+ Spring IO extends Pivotal’s core product plays. It runs on Pivotal CF commercial PaaS or Cloud Foundry and integrates with Pivotal Big Data Suite &lt;http://www.gopivotal.com/big-data/pivotal-big-data-suite&gt; components, including Pivotal HD &lt;http://www.gopivotal.com/big-data/pivotal-hd&gt; and Pivotal 													GemFire. &lt;http://www.gopivotal.com/big-data/pivotal-gemfire&gt; The open source Spring IO is freely downloadable &lt;http://platform.spring.io/platform/&gt;, while Spring IO support comes with the purchase of Pivotal CF. Customers running Spring IO independently of Pivotal CF can purchase support via the Pivotal App Suite &lt;https://network.gopivotal.com/products/pivotal-app-suite&gt;.
+
+ Spring IO honors the commitment to portability. It runs anywhere Java 7 or 8 does – and, in addition to Cloud Foundry or Pivotal CF, it runs on standalone Java Virtual Machines (JVMs), servlet engines like Apache Tomcat, Pivotal tc Server &lt;http://www.gopivotal.com/products/pivotal-tc-server&gt; and Jetty, or Java EE 1.6 + application servers such as Oracle WebLogic, IBM WebSphere and RedHat JBoss.
+
+ Spring IO 1.0 is another step in our journey to define an agile culture of modern app 
+development.
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#agile-update&gt; 
+
+
+
+
+
+
+
+
+AGILE UPDATE
+LABS 
+GETS LEAN STARTUP GURUS, AND MORE
+Danny Burkes &lt;https://gopivotal-com.socialcast.com/users/983881-dannyburkes&gt;, Director of Pivotal Labs, San Francisco
+
+
+
+
+We’re delighted to welcome Janice Fraser and Jason Fraser (from the Lean Startup consultancy, Luxr &lt;http://www.luxr.co/&gt;) to our San Francisco offices, and they have hit the ground running. Both joined Pivotal in early June, with two more Luxr specialists set to join us shortly. Since their start in 2010, Luxr has partnered with Pivotal Labs around product strategy and lean and agile methods for many startups and enterprises. Bringing Luxr’s high caliber Design and Product Management team to Pivotal Labs is a natural extension of a great partnership. Read more about this in Janice’s blog &lt;http://blog.gopivotal.com/pivotal/news-2/our-agile-team-grows-stronger&gt;.
+
+ Janice represented Pivotal at the recent and outstanding Pivotal Labs’ sponsored LAUNCH Beacon event &lt;http://blog.launch.co/blog/launch-beacon-wrap-up-thanks-for-coming.html&gt; in New York on June 16, which brought together more than 300 attendees from the hottest emerging companies and disrupters at the intersection of retail, payments and locations.
+
+ We continue to help customers large and small create new experiences and ways to do business. Current projects span enterprises like Nordstrom, AT&amp;T, CoreLogic and Capital One, and start-ups and innovators such as Funding Circle, MetroMile, Perforce, and Euclid Analytics (Adam Wilson, Euclid Analytics CMO &amp; SVP of Product, gave a standout presentation at LAUNCH Beacon).
+
+ We’re moving at the speed of the cloud (or fog in SF). See you next round!
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#people-update&gt; 
+
+
+
+
+
+
+
+
+PEOPLE UPDATE
+R&amp;D HAS ITS EXECUTION RHYTHM
+Hugh Williams &lt;https://gopivotal-com.socialcast.com/users/980045-hughwilliams&gt;, SVP, Research &amp; Development
+
+
+
+
+We’re assembling the products modern companies need to thrive in a cloud world: PaaS, application fabrics, and the products and science to master data. To build them in the right way, Rob Mee and I have spent a lot of time these past few months creating a common framework of software engineering principles, which we shared at an engineering all hands around how to “Build It Right” at Pivotal.
+
+ With the formation of our weekly Data business review team and processes, we’re getting into the right execution rhythm. We’ve also reoriented the Data Fabric team around the key functions of quality, product management, and development. I’m pleased to welcome Suhail Ansari &lt;https://gopivotal-com.socialcast.com/users/1050221-suhailansari&gt; and Jamie Buckley (who starts at the end of the month) to Pivotal to lead our Data Fabric Development and 
+Data Fabric Product Management, respectively. Both come from eBay and were instrumental in the innovation and quality that helped reinvigorate the company. Additionally, the capable Randy Macblane &lt;https://gopivotal-com.socialcast.com/users/913927-randymacblane&gt; now leads our consolidated App Fabric team.
+
+ The results are winning over customers. Our Pivotal Greenplum Database story resonates so completely with Morgan Stanley that they recently awarded us their CTO 
+Award for Innovation. We won the pro-Spring battle inside of Netflix. Expedia is all-in on Pivotal GemFire to match their users to real-time hotel offers. There are racks of Pivotal HD and Pivotal GPDB at Walmart. Most exciting are the POCs (such as at John Deere) using the entire Pivotal stack – from Pivotal Labs, to Pivotal CF, to Pivotal Big Data Suite.
+
+ I couldn’t be more excited for the team at the 2014 halfway point, and I look forward to a great second half!
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#my-name-is&gt; 
+
+
+
+
+
+
+
+
+HELLO MY NAME IS…
+SURINDER PAL SINGH BINDRA
+Surinder Pal Singh Bindra &lt;https://gopivotal-com.socialcast.com/users/1032723-surinderpalsinghbindra&gt;, Sr. Mgr. Product Development, Pivotal Real-Time Database, and Head of Pune R&amp;D Center
+
+
+
+At Pivotal I…
+Manage Pivotal’s Pune R&amp;D Center (located on the VMware campus in Pune, India). This includes managing the Pivotal GemFire, Pivotal SQLFire and Pivotal GemFire XD product lines from Pune, and working with my team to get quality releases out on time.
+
+You can find me…
+In my office of course! Or at home playing with my kids.
+
+Currently, I am working on…
+We just released Pivotal GemFire XD 1.0.1, which allows our enterprise customers to leverage the latest and greatest XD features in stand-alone mode. I’m also focused on ensuring a timely release of Pivotal GemFire 7.5, which adds lots of exciting features that allow developers to write more advanced applications.
+
+ I’m also planning and facilitating the work for new product features, including one of the most desired features for Pivotal GemFire XD 1.1 – “non-collocated joins”. I am also in the process of setting-up a customer support organization for Pivotal GemFire, Pivotal SQLFire and Pivotal GemFire XD. The organization will be based in Pune and grow over time.
+
+In my spare time…
+I meditate and read religious material. I dabble in Android development (I have a couple of apps in the Play store). I love to mentor kids, and visit and work with underprivileged children in and around Pune.
+
+Something you probably don’t know about me…
+My two loving daughters help me hone my teaching skills at home.
+
+
+Surinder Pal Singh with his daughters (and student teachers)
+
+To me Pivotal…
+Is an opportunity to work on great products enabled by a group of extremely talented people.
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ &lt;#new-pivots&gt; 
+
+
+
+
+
+
+
+
+Welcome to Pivotal!
+
+
+
+
+We’re happy you’re here! Please welcome new employees who joined Pivotal between June 12 and 23:
+
+Sumbil Alvi, Software Engineer, Toronto
+Tom 
+Anderson, Software Engineer, London 
+Richard Arturo, Account Manager, Americas West
+Maxim Avezbakiev, Advanced Field Engineer, Global
+Mahdi Azarafrooz, Software Engineer
+Mary Baldwin, Product Manager, Santa Monica
+Jennifer Black, Technical Writer, San Francisco
+Jennifer Cruz, Customer Support Tech 2, Palo Alto
+Andrew Declerk, College Intern, Palo Alto
+Robert Dimsdale, Software Engineer, San Francisco
+Shelby Doolittle, Software Engineer, San Francisco
+Nancy Finnegan, Account Manager, Americas West
+Spencer Gibb, Engineer
+Daxiang Hao, College Co-op Student, Beijing
+Ashley Heys, Global 
+Support Services
+Anirudh Jain, College Intern, Beaverton
+Sufyaan Kazi, Senior Field Engineer, London
+Sahil Khanna, College Intern, San Francisco
+Rosemary King, Product Manager, London
+Sadasivan 
+Krishnamoorthy, Senior Field Engineer, Americas West
+Madhura Kulkani, College Intern, Beaverton
+Emery Lee, College Intern, Palo Alto
+Christian Lewis, Senior Field Engineer, Americas West
+David Mareiro, Principal Product Marketing Manager, Hopkinton
+Tamara Moona, Product Manager, Toronto
+Joe Nagy, Marketing Director, London
+Anthony Oliveri, Account Manager, Americas West
+Ian Ornstein, College Intern, Santa Monica
+Veronica Orzechowski, Associate Marketing Program Manager, Toronto
+James Osborn, ISR Product, Austin
+Naomi Plasterer, Software Engineer, San Francisco
+Prasad, Radhakrishnan, Senior Field Engineer, Americas West
+Steven Schoenhaus, Account Manager, Americas West
+Andrew Shafer, Senior Director and Software Engineer, Pittsburgh
+Aakash Shah, Software Engineer, San Francisco
+Anirudh Sharma, Product Manager, Toronto
+Yaw Tan, Senior Data Scientist, Singapore
+Nicole Wilczynski, College Intern, Palo Alto
+Charles Wu, Principal Product Manager, San Francisco
+Eddie Zuniga, College Intern, Palo Alto
+
+*Corrections* - Last issue many new hires listed had incorrect title correlations. Below are the names, with their correct titles. - Editor
+
+Janice Fraser, Senior UX Designer
+Xiaochen Yuan, UX designer
+Joe Grandja, Senior Solutions Architect
+Nader Ziada, Senior Solutions Architect
+Jason Fraser, 
+Senior Product Manager
+Neela Chaudhari, Senior Product Marketing Manager
+Cora Iberkleid, Senior Field Engineer
+Timothy Spann, Senior Field Engineer
+Charles Svodboda, Senior Field Engineer
+Domenic Curro, Software Engineer
+Jean De Klerk, Software Engineer
+Mark Hetherington, Software Engineer
+Qihong Chen, Senior MTS
+Giovanni Echon, Principal Risk Analyst
+Christopher 
+Woodstock, IT Client Support Specialist
+Jay Froehling, Pivotal Sales Director
+Sudha Duvvuri, Designated Support Engineer I
+Wendy Kha, College Intern
+Pradeepkumar Konda, College Intern
+Jerry Lin, College Intern
+Leonardo Neves, College Intern
+Xin Qi, College Intern
+Ankur Uprit, College Intern
+Sina Vaziri, College Intern
+Christopher Rovtar, Account 
+Manager
+BACK TO TOP ↑ &lt;#top&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+InsidePivotal &lt;http://insidepivotal.com&gt;       SocialCast: @PivotalNewsletter &lt;https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter?&gt;
+
+
+
+
+
+
+www.gopivotal.com &lt;http://gopivotal.com&gt;
+
+
+
+
+ &lt;http://gopivotal-com.socialcast.com/&gt;
+ &lt;http://twitter.com/gopivotal&gt;
+ &lt;http://www.linkedin.com/company/gopivotal&quot; target=&quot;_blank&quot;&gt;&lt;img style=&gt;
+ &lt;https://www.facebook.com/gopivotal&gt;
+ &lt;https://plus.google.com/105320112436428794490/posts&gt;
+ &lt;http://www.youtube.com/gopivotal&gt;
+
+
+
+
+
+
+
+
+
+
+© 2013-2014 Pivotal Software, Inc. All rights reserved. Priviledge &amp; Confidential.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

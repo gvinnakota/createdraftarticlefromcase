@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.12-5 V5</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 1, No. 4</subject>
+    <textOnly>&lt;http://www.gopivotal.com&gt;
+PIVOTAL NEWSLETTER
+ Vol. 1, No. 4
+
+EDITOR WELCOME
+Rhonda Baldwin
+ Chief of Staff, Products
+
+Positive Vision
+
+ Every two weeks we have a Products Leadership Team (PLT) meeting, where we hear readouts on Go To Market (GTM) status across our portfolio. The GTM Teams meet regularly, prioritize, and crank through an activity backlog. I find myself sincerely impressed by the goals the teams set, their drive, and their achievements.
+
+ This edition of the biweekly Pivotal Newsletter shows all the benefits of setting goals and marching towards a vision; benefits like the emerging trends around Pivotal One and 
+Big Data in EMEA, Cloud Foundry and Hadoop alignment in App Products, 24x7 global coverage in Customer Support, and GTM support in Legal.
+
+ Have you joined the conversation on Socialcast &lt;http://www.socialcast.com/&gt; yet? I joined @PivotalEMEA &lt;https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter&gt; this week and love reading their “WinFlash” updates! Please send 
+“Letters to the Editor” @PivotalNewsletter &lt;https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter&gt;.
+
+“In order to carry a positive action we must develop here a 
+positive vision.”—Dalai Lama
+
+
+BUSINESS UPDATE
+Russell Acton
+ Vice President - EMEA
+
+No Shortage of Activity in EMEA!
+
+ Off the top, I have to give a shout out to my team on a strong Analytics win - a €14M deal at one of Germany’s leading insurers, R+V! This was one of IBM’s 
+longest-standing and largest accounts in Germany. What a great win for Andre Muenger and the Central team! This success comes on the heels of continued progress at Vodafone on RTI—with the team led by Tony Parker. Again, hitting IBM hard in one of their most strategic accounts. The impact of these types of deals, and their validation of Pivotal, can&apos;t be underestimated. I hope IBM isn&apos;t taking this personally…we are not picking on them alone! A point demonstrated by great wins in Russia against Oracle at Ingosstrakh and in South Africa against SAP at Pick n Pay.
+
+EMEA usually lags behind the ‘US tech trends’ and, true to form, some things are now just gaining momentum:
+
+
+ - Pivotal One:We continue to gain universal acceptance of our vision. Our view of the market and it’s direction is unchallenged, especially from the business executive level down. Interestingly, we are seeing a sense of urgency building, even in more conservative organizations - which is something I have not seen before. Some of this messaging still needs to ripple through to lower levels, but it now feels inevitable. Of course, this means nothing if we can&apos;t convert it to value. We are beginning to see traction to match the interest, especially in Cloud Foundry - with deals at Swisscom, Deutsche Telecom and FjordIT. I have a strong feeling this will be a big hit in the market!
+ - Big Data: For a while, the ‘Big Data’ hype was just that in EMEA. Now it&apos;s becoming reality with real pipeline and revenue emerging. Coupled with Data Science (team led by Michael Natusch), we have meaningful wins like 4C Group, a UK company that provides independent marketing information for retail trends. Check out their cool demo powered by Pivotal at http://www.wgsninstock.com &lt;http://www.wgsninstock.com/&gt;
+
+
+We’ve been in the thick of EMEA EMC Forums &lt;http://www.emc.com/campaign/global/forum2013/index.htm&gt; over the last few months. EMC is very supportive in EMEA and always keen to engage with us and give us center stage! In Amsterdam on November 26, Paul Maritz provided a keynote &lt;http://translate.google.com/translate?hl=en&amp;sl=nl&amp;u=http://netherlands.emc.com/campaign/global/forum2013/event.htm&amp;prev=/search%3Fq%3Drussell%2Bacton%2Bemc%2Bforum%2Bamsterdam%26espv%3D210%26es_sm%3D91%26biw%3D1241%26bih%3D551&gt; and we also presented at one of the breakouts. Pivotal was front and center in audience interest and mindshare. Paul is still with us in Europe again this week meeting Prime Minister David Cameron and doing tier-one interviews (e.g., Financial Times, Reuters). We’ll also have a Senior Minister at the opening of our new Pivotal office in London.
+
+ In addition to the Forums, EMC has involved us in a series of marketing presentations. One very cool example was the Dublin 2013 Web Summit &lt;http://2013.websummit.net/&gt;, Europe’s largest tech conference on October 30-31, where 10,000+ of the world’s brightest minds in tech came 
+together from all over the globe. Pivotal participated in two speaking sessions, including the Cloud Stage &lt;http://2013.websummit.net/schedule/cloud-stage.html&gt;. We were able to share Pivotal’s success and have friendly debates with Amazon, Rackspace and others. We will return next year in force!
+
+ Finally, I’ll take this opportunity to welcome two new senior members of the team to the Pivotal: Les Klein heading up Field Engineering and Steve Gracey leading our Northern European Business. Please wish them well as they join our family!
+
+ Check the pulse in EMEA by joining our Socialcast group: @PivotalEMEA &lt;https://gopivotal-com.socialcast.com/groups/81750-pivotalemea&gt;
+
+PRODUCT UPDATE
+Al Sargent
+ Director, App Fabric Product Marketing
+
+Pivotal App Fabric Aligns with Pivotal CF and Pivotal HD
+
+ In the past month the App Fabric team released core pieces of the Pivotal CF platform, strengthened our Big Data ingest capabilities, and put the final touches on the first major release of Spring Framework in four years.
+
+ Pivotal CF Java Buildpack: A key technology in Pivotal CF, launched on November 12, is the Java buildpack &lt;http://blog.cloudfoundry.com/2013/09/06/introducing-the-cloud-foundry-java-buildpack/&gt; built by the Pivotal tc Server team. With the Java buildpack, most Spring applications require no changes &lt;http://docs.gopivotal.com/pivotalcf/devguide/deploy-apps/java-tips.html&gt; to get started on Pivotal CF and, once there, enjoy zero-touch integration &lt;http://docs.gopivotal.com/pivotalcf/devguide/services/spring-service-bindings.html&gt; with services such as MySQL and Pivotal RabbitMQ. The Java buildpack automatically configures itself so that developers can focus on writing code, not configuring middleware.
+
+ Pivotal CF RabbitMQ service: Pivotal CF RabbitMQ &lt;http://docs.gopivotal.com/rabbitmq-cf/index.html target=&gt;, released on November 12, is a fast, scalable, and reliable messaging service that enables applications deployed on Pivotal CF to communicate with each other and with apps running outside Pivotal CF, such as SAP. For more, see the Pivotal CF Internal FAQ &lt;https://docs.google.com/a/gopivotal.com/document/d/1bpsf8Ucl8m2W3TUbQx4aDCyY0CVsBUvsrfanTt7CDp4/edit&gt; and Pivotal CF RabbitMQ Group &lt;https://groups.google.com/a/gopivotal.com/forum/#!forum/p1-rabbit&gt;.
+
+Spring XD: Spring XD &lt;http://projects.spring.io/spring-xd/&gt; is ideally suited for data ingest into Pivotal HD. Spring XD 1.0 recently hit milestone 4 &lt;https://spring.io/blog/2013/11/14/spring-xd-1-0-0-m4-released&gt;, with GA expected in 2014. Learn how Spring XD will help you increase your win rate and deal sizes in this presentation &lt;https://docs.google.com/a/gopivotal.com/file/d/0Bx9BfssjLaobU0FGdW5ldVBpZUk/edit&gt; and FAQ &lt;https://docs.google.com/a/gopivotal.com/document/d/1rwOAsGR5LVya-uMoXeU6buGIUZGsEjaXZLXE5c_xN2g/edit&gt;.
+
+Redis support: As one of the most popular NoSQL databases, used by over 1 million developers in some of the most demanding applications (Twitter &lt;http://blog.gopivotal.com/case-studies-2/case-study-staple-yourself-to-a-tweet-to-understand-30-billion-redis-updates-per-day&gt;, LinkedIn &lt;http://engineering.linkedin.com/cluster-management/auto-scaling-apache-helix-and-apache-yarn&gt;, etc.), Redis &lt;http://redis.io/&gt; is a great way to get a foothold into new accounts. We now offer Redis support: details here &lt;https://docs.google.com/a/gopivotal.com/document/d/1mvo77XFcriqc0xjf35V6AJDixla5USlstWVJStY9Yg8/edit&gt;.
+
+ Spring Framework 4.0: On 
+December 12, we’ll release Spring Framework &lt;https://spring.io/&gt; 4.0, used by over 3 million enterprise developers worldwide, which: 
+
+
+ - Offers developer productivity on par with dynamic languages like Ruby and Python
+ - Facilitates modular micro-service architectures &lt;http://yobriefca.se/blog/2013/04/29/micro-service-architecture/&gt; in support of mobile applications
+
+ - Enables reactive applications &lt;https://spring.io/blog/2013/05/13/reactor-a-foundation-for-asynchronous-applications-on-the-jvm&gt; via websockets &lt;http://blog.gopivotal.com/products/websocket-architecture-in-spring-4-0&gt; and REST
+ - Improves annotation-driven programming model and dependency injection
+
+
+Supports the forthcoming Java 8 &lt;http://en.wikipedia.org/wiki/Java_8#Java_SE_8&gt; and recently released Java EE7 &lt;http://www.oracle.com/us/corporate/press/1957557&gt;
+
+PEOPLE UPDATE
+Kani Munidasa
+ Global Support Lead
+
+We’ve Got You Covered, 24x7 Globally!
+
+ Since Pivotal’s inception, support teams from both VMWare and EMC have come together and united under one roof to support of all Pivotal products, 24x7 globally. This includes the hosted and commercial versions of Cloud Foundry and plans are being put in place to transition and support Pivotal AX, Pivotal VRP and Pivotal GemFire XD soon.
+
+ We are also happy to share with you today the launch of the new Pivotal Support website &lt;http://gopivotal.com/support&gt;. While the site launched as a minimal viable product, it will serve as the foundation on which we build and grow a new support experience for our customers. The site allows anyone to post and answer questions in forums, lookup knowledge base articles, search documents, and also allows our paid customers to submit support tickets. Click HERE &lt;https://docs.google.com/a/gopivotal.com/file/d/0Bw_2vrhZgfEVbVlERnVzZFFDelk/edit&gt; for more information on the website.
+
+ Last, but not the least, if you need to escalate an issue on 
+behalf of a customer, please send an email to gss-escalations@gopivotal.com &lt;mailto:gss-escalations@gopivotal.com&gt; and we will take care of the rest - regardless of product and/or time zone.
+
+PEOPLE UPDATE
+Andy Cohen
+ VP, General Counsel
+
+Pivotal’s Office of the General Council: Our Goals and Team
+
+ The worldwide legal context in which we do business is complex, but 
+Pivotal’s Office of the General Counsel is focused on two primary goals: (i) supporting Pivotal’s go-to-market (“GTM”), and (ii) promoting integrity.
+
+ Legal supports Pivotal’s GTM in a number of ways, including with the creation and protection of Pivotal intellectual property, licensing and compliance issues relating to open source software, and the negotiation of agreements with our customers and partners. In every deal, we seek to strike the appropriate balance between transaction velocity and getting the most favorable business and risk terms for Pivotal.
+
+ In addition to supporting the GTM, we are focused on integrity, which is not merely an abstract risk reduction concept; it 
+is core to Pivotal’s success. No company becomes truly great - in a sustainable way - without a foundation of integrity. The Legal team is focused on cross-functional efforts to put in place appropriate policies and training. This includes driving fairness in the workplace, protecting the validity of our books and records, and ensuring compliance with the law. If you have any concerns about integrity or compliance, please raise them with your management, through HR, via our worldwide hotline - 1.855.729.4278 (US), 855.729.4277 (International), or online at http://gopivotal.ethicspoint.com &lt;http://gopivotal.ethicspoint.com&gt;. You may also call me directly, any time, day or night. My mobile phone number is 1.508.560.1726.
+
+ In closing, I note that no amount of compliance infrastructure is a substitute for each Pivotal employee having the inclination and the courage to do the right thing.
+
+ The Legal Team:
+
+Cyrus Wadia 
+is responsible for intellectual property; he joined Pivotal last month, after heading San Francisco law firm Cooper, White &amp; Cooper LLP&apos;s IP practice. Among many other talents, Cyrus is a classical pianist and a skier.
+
+ Kimberly Lytikainen is responsible for partner transactions, open source and compliance. Prior to joining Pivotal she was a leading attorney at Nvidia Corporation. When she’s not at work, Kimberly enjoys spending time with her husband and three kids.
+
+ Susie Gilfix is responsible for customer sales transactions. She recently joined Pivotal from EMC, where she was consistently recognized for her ability to efficiently and favorably close complex transactions. When not working, Susie can be found on mountain tops doing yoga.
+
+ We were lucky to recently inherit an excellent legal team from Xtreme Labs. Urmi Chowdhury, lead attorney who joined Xtreme from Mercer Consulting, Kevin Wentzel, who supports commercial contracts, and support from Jessica Whitford.
+
+Jane Jue is Pivotal’s wonderful Paralegal, who supports all critical legal processes and infrastructure. Jane enjoys hiking and testing out new recipes.
+
+Norma Stanton enthusiastically provides critical EA support to the team.
+
+HELLO, MY NAME IS…
+Craig Nowell
+ Sr Account Executive, Americas - NY/NJ
+
+At Pivotal, I…
+ Sell to a mixture of media and financial accounts in New York City.
+
+You can find me…
+ At the new Pivotal office in Manhattan or at home with my wife and 2-year-old son in Williamsburg, Brooklyn.
+
+Currently, I’m working on…
+ Closing out a strong quarter and year. We have been working with the NBCUniversal Ad Sales team to build a new set of analytical applications for the 2014 upfront season and deploying a Big Data platform in preparation for the Winter Olympics. As a result, we just had an exciting Pivotal HD+HAWQ+Chorus win over Teradata and Hortonworks! We won by selling to business sponsors within the Ad Sales team, while in parallel gaining support from the CIO. Dr. Arni (Raghvender Arni), my partner in Field Engineering, did a great job of helping our champions craft an architectural vision for supporting analytical apps and data science transformation. Ultimately we succeeded by leading with our Strategic Services - collaborating with Alex Luttschyn and Chris Stephens. NBCUniversal has engaged Pivotal Labs to meet their tight app developement deadlines and our Data Science team is helping NBCUniversal transform them into a data science driven enterprise.
+
+In my spare time…
+ I like to spend time with my wife and 
+son, take pictures with my dSLR, (very rarely) play golf at Bethpage, read up on sports analytics, play soccer and basketball and watch North Carolina State athletics and Manchester United.
+
+Something you probably don’t know about me…
+ I have a 
+degree in Computer Engineering and was the lead singer and guitarist for a punk band while growing up on the coast of North Carolina.
+
+To me, Pivotal…
+ Provides an opportunity to truly make an impact and drive change throughout the industry. 
+
+Want more? Try InsidePivotal.com &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/&gt; or Socialcast: @PivotalNewsletter &lt;https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter&gt;
+ &lt;http://www.gopivotal.com&gt;
+ BUILT FOR THE SPEED OF BUSINESS | www.gopivotal.com &lt;http://www.gopivotal.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

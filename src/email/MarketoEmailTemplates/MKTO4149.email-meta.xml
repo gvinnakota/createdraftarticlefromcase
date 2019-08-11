@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_10AM Data Microservices in the Cloud_Q316.Confirmation</name>
+    <style>none</style>
+    <subject>You&apos;re confirmed!</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar Data Microservices in the Cloud on Thursday, September 29, 2016.
+
+Please see event details below:
+
+Date: Thursday, September 29, 2016   {{my.Save the Date:default=Save the Date}}
+ Time: 10:00AM PDT
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1261133/801646E0671138B79D9455E665D881DE]]&gt;
+ 
+
+Audio Information:
+ This webinar will be streaming live via your computer speakers.
+ {{my.My Token:default=Save the Date}}
+ 
+ We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne_Platform_2016.Waitlist Confirmation</name>
+    <style>none</style>
+    <subject>Thank you!</subject>
+    <textOnly>&lt;[[https://springoneplatform.io/]]&gt;
+Hello {{lead.First Name:default=there,}}
+
+Thank you for adding your name to the waitlist for the API-First Development workshop with Apigee and Pivotal Cloud Foundry. 
+
+We will reach out on a first-come, first served basis if seats open up. 
+
+Date: Monday, August 1st  {{my.Save the Date:default=Save the Date!}}
+Time: 9:00am - 12:00pm PT 
+Location: Aria Hotel &lt;[[https://springoneplatform.io/travel]]&gt;
+Room: Bristlecone 6 [Level 1]
+
+Thanks!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Second Request for Case Update</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer: 2nd Request for Case Update</name>
+    <style>freeForm</style>
+    <subject>Update Requested for Case {!Case.CaseNumber}</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+I am checking in on my previous email requesting more detail. If you&apos;d like us to troubleshoot, please reply to this message with the information requested. If we don&apos;t hear from you in the next &lt;CE to insert number of hours 24, 48 or 72&gt; hours, we will avoid taking more of your time and close the case. You are welcome to contact us again when the time is right for you.
+
+If you no longer need assistance with this issue, please simply disregard this message and the case will close automatically.
+
+Kind regards,
+&lt;CE name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Virtual User Group Beta_2018.Feb 27 session announcement email</name>
+    <style>none</style>
+    <subject>Registration Required: February 27 EMEA Virtual PCF User Group and Upcoming Meeting Reminders!</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+
+
+PCF User Group members!
+
+We are excited to announce our first EMEA PCF User Group of 2019! Hear from Juergen Sussner, IT Architect at DATEV eG sharing their experience implementing PCF.
+
+Here is additional information about upcoming meetings in February &amp; April.
+
+
+	- February 19th Virtual Meeting with T-Mobile &lt;[[https://connect.pivotal.io/pcf-user-group-feb-2019.html]]&gt; Come hear James Webb from the T-Mobile platform engineering team on how T-Mobile leveraged their success with PCF to deliver production Kubernetes using PKS.
+
+	- Feb 27th EMEA Virtual PCF User Group &lt;[[https://connect.pivotal.io/emea-pcf-user-group-feb27-2019]]&gt; Juergen Sussner, IT Architect at DATEV eG, will share some of the
+technical details of the Pivotal Cloud Foundry implementation at DATEV, the experiences they&apos;ve had so far, and what they expect for the future.
+	- April 1st In-Person Meeting at CF Summit, Philadelphia &lt;[[https://connect.pivotal.io/pcf-user-group-april-2019.html]]&gt; Join Pivotal and your peers on April 1 for a special user group meeting with the theme Containers, Kubernetes and the Pivotal Container Service (PKS). 
+
+
+
+The Webex details for our virtual meetings will be in your confirmation email, along with a way to download a calendar appointment. If you have any questions please reach out to Madison Schlegel at mschlegel@pivotal.io &lt;[[mailto: mschlegel@pivotal.io]]&gt;.
+
+Looking forward to seeing you at these upcoming meetings!
+
+Your hosts,
+Dormain Drewitz &amp; John Allwright</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

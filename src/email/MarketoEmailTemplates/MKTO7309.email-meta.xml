@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Johannesburg Reminder Email</name>
+    <style>none</style>
+    <subject>See you on Monday at SpringOne Tour Johannesburg!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+We look forward to seeing you at SpringOne Tour Johannesburg on Monday. Please review the event details here &lt;[[https://springonetour.io/2019/johannesburg]]&gt; and feel free to email the team at springonetour@pivotal.io &lt;[[mailto:springonetour@pivotal.io]]&gt; with any questions.
+
+
+Location:
+The Forum | The Campus
+Wanderers Building
+57 Sloane 
+Street
+Bryanston, Sandton, 2191, South Africa
+
+
+Parking:
+The venue has 120 parking bays in the lower basement as well as approximately 400 bays on the field overflow parking. Please note the best entrance to the campus is by Sloane Street. Please find a map of the venue here &lt;[[https://drive.google.com/file/d/185hcbw9hBQV-HH0clOtNP5_MrdFhh3G7/view?usp=sharing]]&gt;.
+
+
+Thanks,
+
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

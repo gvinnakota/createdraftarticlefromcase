@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Submit VMware Request</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Support:Helpdesk:How to Submit VMware Request</name>
+    <style>freeForm</style>
+    <subject>How to get VMware Support - Case {!Case.CaseNumber}</subject>
+    <textOnly>Hi {!Contact.FirstName}​,
+
+We received your request for assistance. Our research has revealed your entitlement was processed through VMware, and therefore your fastest path for support will be through VMware. They will then engage the right level of assistance from Pivotal.
+
+You may access the VMware support request system at: https://my.vmware.com/web/vmware/login
+
+This support case will now be closed.
+
+Thank you for using Pivotal.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

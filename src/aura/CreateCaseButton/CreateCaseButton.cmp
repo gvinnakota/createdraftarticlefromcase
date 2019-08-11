@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <div>   
+        <button class="slds-button slds-button--brand buttonColor" variant="brand" label="CREATE CASE" title="Brand action" onclick="{!c.navigateToMyComponent}" > CREATE CASE </button>
+    </div>    
+</aura:component>

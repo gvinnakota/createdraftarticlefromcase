@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.7-23-15 V3N12 From Template</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 12</subject>
+    <textOnly>VOL. 3, NO. 12
+Thursday, July 23, 2015
+Editor Welcome: Of a Different Stripe &lt;#editor-welcome&gt;
+Business: One for the Books - Pivotal’s Great Q2 &lt;#business-update&gt;
+Product: IT Operations Gets Agile! &lt;#product-update&gt;
+Agile: Pivotal Moments: With Siobhan McFeeney &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People: Pivotal Pulse - Cultural Momentum &lt;#people-update&gt;
+Hello, My Name Is... Michael Lee &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Of a Different Stripe
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+Every few months a butterfly flits into the cloud arena, with new colors. Earlier this week Google put its Kubernetes play into greater focus &lt;http://googlecloudplatform.blogspot.com/2015/07/Kubernetes-V1-Released.html&gt;, adding “Cloud Native” to the moniker of its new open source container-based community. While few doubt the staying power of Google, Pivotal has the honor of having provided either the early blueprint for cloud-native (Cloud Foundry), or serving as the welcoming party to its playing field. See James Watters’ OSCON summary &lt;http://blog.pivotal.io/pivotal-cloud-foundry/features/mapping-the-cloud-native-journey&gt; for proof points.
+
+In its belief on how widely software casts the net of transformation across any business, Pivotal looks beyond what more transactional vendors see. In its unique preparation to offer the software, the way, and a generous vision to meet all of those needs, it stands apart. 
+
+We see that distinction throughout this issue: In our CFO’s business update on one of our best ever quarters, and immersive deals tapping cloud-native, analytics, and agile; in a revealing conversation I had with new VP of Transformation, Siobhan McFeeney, who has navigated the choppy waters of change, and sees our unique ability to lead it. It’s also present in IT’s account of its agile approach to a critical business tool.
+
+The Pivotal bench is equipped for the duration of the game, and all of its twists and turns. 
+
+Enjoy.
+BUSINESS
+ One for the Books - Pivotal’s Great Q2
+ Robert O’Donovan &lt;https://gopivotal-com.socialcast.com/users/950116-robertodonovan&gt;, CFO
+JPMorgan Chase head Jamie Dimon put it well in a recent letter to shareholders, writing: “Get ready. Silicon Valley is coming.” 
+
+If Silicon Valley is charging ahead, Pivotal’s outstanding second quarter tells us that we’re leading the front of a software renaissance that aims to include all industries. We’re helping more enterprises in more industries, through more immersive engagements, to build software from Pivotal’s cloud-native and analytics platforms. 
+
+Highlights of the second quarter—one of our best ever at Pivotal—include: 
+
+
+ - Pivotal crossed $100 million in bookings in Q2, the second time we’ve done this. A strong player was Pivotal Cloud Foundry (PCF) &lt;http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt;, which continues to make the best case as the industry’s leading open, cloud-native platform
+ -  We exceeded or hit our key performance measures in bookings, revenues, and EBIT Pivotal Labs and our agile engine remain very hot, showing no signs of slowing down.
+ -  Rounding out an outstanding quarter for Pivotal, and progressing in its bold shift to an open source foundation, big data once again came in strong.
+
+
+
+
+Subscription Prescription!
+
+ We’re well on the way to completing our rotation to a software subscription business model. ARR (annual recurring revenue, or revenues that re-occur yearly, creating an annuity stream into the future), remains a key performance metric. We saw very strong momentum in Q2, exiting the quarter with total ARR of $60 million, up 57% from the last quarter and 350% year-on-year, with solid performances across all geographies and products.
+
+ Pivotal had reported 2014 combined subscription bookings for Pivotal Cloud Foundry (PCF) and the Pivotal Big Data Suite (BDS) of approximately $80 million in the first year these products were available. PCF—accounting for nearly half of that $80 million—became the fastest growing open source software product in history. We believe Pivotal’s subscription bookings of PCF and BDS will grow approximately 100% this year, and in the high double-digits over the next few years. 
+
+ We closed Q2 with 40-plus new customers that each represent more than $250K of ARR, a 100% increase over the subscription customer base, exiting 2014. This means a healthier foundation into 2016, both for new subscription business and for renewals. 
+
+ Tipping Points
+
+ We’ve reached important tipping points with companies that want to learn the secret of Silicon Valley from Pivotal. Driven by the emergence of Tesla &lt;http://www.teslamotors.com/&gt;, Uber &lt;https://www.uber.com/&gt; and Zipcar &lt;http://www.zipcar.com/&gt; competing with incumbents on product, business model, and new experiences, Pivotal now works with 3 of the top 5 global automotive manufactures.
+
+ Financial Services is at a similar inflection, where Pivotal works with 3 of the top 5 North American financial services institutions. This is driven by the emergence of Wealthfront &lt;https://www.wealthfront.com/&gt;, Lending Club &lt;https://www.lendingclub.com/&gt; and Apple Pay &lt;https://www.apple.com/apple-pay/&gt;, which all use software to compete with traditional banks competing on products, business models, and even experience. 
+
+ Head to Ring the Bell &lt;https://gopivotal-com.socialcast.com/groups/89227-ringthebell&gt; on Socialcast to follow the strong current of recent Pivotal deals. 
+
+ In sum, we’re very well positioned in the second half to lock in more immersive deals that bring extended partnerships, and grow our software proposition. Well done, and full speed ahead!
+PRODUCT
+ IT Operations Gets Agile!
+ Colin Deeb &lt;https://gopivotal-com.socialcast.com/users/936736-colindeeb&gt;, Head of IT Product Development
+At the beginning of 2015, IT Support Operations set out to improve our software development process. With our small team, the traditional approach of lengthy feature lists and long-term project teams wasn’t going to work for us. We needed to build things quickly without sacrificing our daily responsibilities in IT operations, so we looked to Pivotal Labs &lt;http://pivotal.io/labs&gt; as a guide.
+
+We started with our outdated computer imaging 
+system—an unwieldy tool with a monolithic image. Pivotal developer teams need to spin up or replace computers quickly, with minimal effort, and a reliable, standardized imaging system removes the friction in making a computer development-ready.
+
+We started by asking teams using the image (engineering, IT, and others) to 
+tell us how it could be improved. That feedback helped us decide to pull apart the monolith and provide a simpler, more sustainable platform that could be customized. We held a scoping meeting to determine the project’s goals and gathered a small team to work in the same office for two weeks, focusing only on the feature stories in Pivotal Tracker &lt;http://www.pivotaltracker.com/&gt; that 
+we’d prioritized in our inception and iteration planning meetings.
+
+Our MVP (minimum viable product) is actually two products:
+
+
+ - A lightweight image builder that installs the building blocks for a workstation. Every component can be modularly replaced—including the Mac OS, drastically reducing the time it takes to test and update our imaging systems company-wide. 
+ - A tool that automatically builds and manages our local imaging servers. We can deploy updates to the entire company from a single source, guaranteeing a consistent experience in every office, and easy recovery if a server ever fails. 
+
+
+
+With a sturdier platform, we’re testing both of the new tools with engineering teams, gathering feedback, and planning our next phase of development, which will focus on making post-image setups simpler and faster for engineers. Special thanks go to Diego Iaconelli &lt;https://gopivotal-com.socialcast.com/users/995205-diegoiaconelli&gt; and Karel 
+vanBeekom, our first IT Support Ops Developers, for traveling thousands of miles and upending their schedules to make this project successful.
+AGILE
+Pivotal Moments: With Siobhan McFeeney
+Siobhan McFeeney swears she lives a boring life. Kinetic and engaging, with the lean countenance of the runner that she is, I caught up with Siobhan in San Francisco to discuss her new role as Pivotal’s VP of Transformation. From having been left at the mercy of nature on an ice-white ledge at the heights of the world on Mt. Everest, when everything firm collapsed around her, to resolutely raising four kids in San Francisco with her husband, where no space is wasted, boring didn’t come to mind.
+
+As a former COO, CFO and CEO of AAA &lt;http://aaa.com&gt;, Siobhan is a sleeves-rolled-up executive who believes we can do almost anything. Our conversation uncovered the unexpected twinning of personal and professional moments that yielded her particular path. I’ve included our discussion in full.
+
+
+Siobhan McFeeney
+
+Some may look at your impressive resume and say why Pivotal? Explain your new role for 
+us.
+
+Clients are coming here for great software and all we bring with that. When you change how you develop software, you’ll change how you run your company. That’s a big reality, and that latter part is why I’m here. I’ve never seen a big change that doesn’t have a ripple effect throughout a company. It almost always starts with technology, and then it means that the whole organism has to move and change together. 
+
+What sticks out for you as an ‘a-ha’ moment when it became real—that said, this is my role?
+
+One thing about AAA—known for towing assistance—when I started 11 years ago, is that we believed the customer wanted us there fast. We built built an entire and expensive operation around speed and volume—keeping extra tow trucks in reserve so we could hit the speed metric. The only problem was our sophisticated Net Promoter scores and feedback went from average to average. 
+
+Someone finally asked: “Is it really about speed?” It turns out that we were all about speed, and not the customer.
+
+We went through a whole process to find out that what they actually wanted was an accurate time of arrival. I led a big shift in software and operations around accurate times of arrival. Not only was it was cheaper, but it changed us entirely as a company. And our Net Promoter scores went way up.
+
+What did you learn? 
+
+I learned that if you’re always in a frantic situation from one to the next, something is probably wrong. That pivotal question changed everything in the employees’ perceptions of AAA, their role, and their perceptions of our customers. We spent time at AAA making sure every single person knew how their work mattered and linked that to customer value. It was exhausting at times. But it was worth every minute of effort. 
+
+This is a classic hurdle. A lot of companies believe they have a sophisticated understanding about what customers need. The lesson for transformation and any company is to unearth the real thing that is driving the company and business, and not to drive what you think it is. 
+
+What does Transformation mean for Pivotal’s mission, and for customers? 
+
+I get why people come here. Software is deeply connected to change, and we have a powerful formula. I ask customers why do you want to transform? It shouldn’t be to do the cool new thing, but often it is. I’ve talked to Pivotal customers who cite that they’re retooling how they do software because of time-to-market. And I ask, is this what it’s really about, does it stop there?
+
+The difference between doing what customers want, and listening and getting to what they need is world’s apart. If you can really articulate this, and be religious about it, you have something special. In Pivotal Labs we have wonderful fail-safes to avoid going down rabbit holes of what Labs could do as opposed to what they should do. Most companies don’t have these fail-safes, to remind them that it’s not about them. 
+
+It starts with a simple user story. At the end of the day our purpose is to ensure the customer has a good experience, and that’s true whether you’re producing software or selling Tide. 
+
+So it’s a lot more than changing developers and the software teams?
+
+It has to be. Shipping code every day really gives you a tangible sense that you’re doing profound work. But where is that same sense of reward for an executive sponsor or line of business owner, where it’s less tangible on a daily basis, or for legal or compliance?
+
+Most companies tick through compliance, overhead, and governance processes. When an entire organization becomes curious, you’re on the path to change. Curiosity is a big part of success. One of the things that triggers people across organizations to be curious is that they feel included. They think, hey we can connect to this change. 
+
+It’s early days, but what is your vision to help make our sales teams even more successful? 
+
+Our sales teams have been successful at selling an integrated solution. We owe them the ability to translate, at the very beginning, what a project means in the long term for a customer. We owe them the vocabulary, the ability to draw a thoughtful timeline of change across the business, and we owe them the support as these changes trigger.
+
+It could be anything from hiring differently, to planning the layout of a new office. We want to help sales help customers understand all the impacts so they can translate that and say this is a company transformation—and that they can pull in help from all Pivotal places to get that help.
+
+When we can give that to the field, we help customers understand that this is a many year journey for them, and with us. For example, Susie Gilfix, our Associate General Counsel for the Commercial Legal team, suggested getting legal into this discussion a lot earlier, and she’s exactly right. The same goes for HR. No one likes surprises. This is a way we can give all stakeholders a heads up and to say that they’re involved.
+
+What drives you to believe that we can do anything?
+
+I was on Mt. Everest this past April when a huge earthquake triggered an avalanche. Everything around us collapsed. A lot of people think you’re terrified, but it’s not like that. You just get angry. I thought no way—not this way, not now. It was awful. People went missing and many did not make it, but at its core, our group had the luxury of access to help. One reason I climb though is to raise money for Water for Nepal &lt;&gt;. Climbing is connected to building thousands of water wells. Raising a sum of $5,000 for this means clean water for 35 years—nothing is more direct and transformative than that.
+
+It’s the same with running. If you told me six years ago I could run a 100K, I would have thought it not even remotely possible. I used to think that it was god-like to do things like that. But it’s just a process, and you just have to start somewhere. Some days it’s awful, and you head home, and you have a beer and start again tomorrow. 
+
+I think that’s part of my whole thing about transformation. If you strip down all the things that surround us—the process and the titles—they’re comforts. The minute you flatten organizations, you become vulnerable. I get that. I think it’s very brave and honorable to take leaps. But it always, always pays off in the end. It’s the same for software transformation. It’s not god-like. People have been doing industrial-size change for hundreds of years. Let’s make sure it relates to practical things, where folks are included, and have a basic roadmap. Most people do adapt.
+
+Parting thoughts?
+
+We can link continuous improvement to a wider arena of business change. We’re miles away from this, but we’ll get there. Doing something over and over again makes it real, and makes it part of your DNA.
+Customer Spotlight
+Pivotal Cloud Foundry &lt;http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; customers continue to go on record about the critical impact Pivotal is having on their business. They&apos;re talking about how streamlining the development, deployment and management of applications is transforming how they innovate, engage with customers, and run their businesses. 
+
+
+Leaders in change CoreLogic, CenturyLink, Documentum and Humana all partnered with Pivotal at the Cloud Foundry Summit &lt;http://www.cfsummit.com/&gt; to produce new and powerful customer reference videos and case studies. Check out Pivotal&apos;s YouTube channel &lt;https://www.youtube.com/channel/UCzd8R3vkpllD4CJn_5g5sKg&gt; for these latest and other customer videos, and our case studies &lt;http://pivotal.io/customers&gt; on the Pivotal website. There&apos;s no stronger message for our future customers than for them to hear about organizations making bold leaps to the world’s leading cloud-native platform!
+PEOPLE
+ Pivotal Pulse - Cultural Momentum
+ Joe Militello &lt;https://gopivotal-com.socialcast.com/users/937505-joemilitello&gt;, VP, Pivotal People
+Thanks to those who participated in our third Pivotal Pulse survey &lt;https://docs.google.com/presentation/d/1fdryus-WdSBwi228GNFz_51Ee58hDKXKKBZK28BTYg4/edit#slide=id.p4&gt;, where we had solid participation of 63% of those invited. By keeping it brief and soliciting feedback from roughly a quarter of our employees each quarter, we have a reliable feedback loop against which we can continuously improve and build upon the Pivotal experience.
+ 
+ Overall scores are trending upward, and the results from 
+this round in where we’re strong, and where we can improve, are summarized below: 
+ 
+ Strengths  
+
+
+ - We see a strong belief and confidence in the future of the company, and in your motivation to help Pivotal succeed.
+ -  You’ve indicated again that Pivotal provides a real opportunity to grow your skills.
+ -  We see clear progress involving the immediate manager-employee relationship (a key focus) with room for improvement. 
+
+
+
+Improvement  
+
+
+ - We’ll continue to focus on managerial basics—specifically on treating employees with respect, and the art of feedback.
+ -  An emerging and important focus area: Helping employees feel they are free to speak their ideas. This is essential for our creativity and innovation.
+ -  You want to see greater clarity on the roles of business units, and more consistency in process between them.
+ -  We need to evaluate how we manage our talent, including how to help individuals progress and find new challenges in their careers. 
+
+
+
+More details on the survey and your feedback can be found here &lt;https://docs.google.com/presentation/d/1fdryus-WdSBwi228GNFz_51Ee58hDKXKKBZK28BTYg4/edit#slide=id.p4&gt;. 
+
+ Following our previous survey, we 
+ramped up efforts to help our managers. We held focus groups to shine a light on the areas we can improve, to gather insights on manager effectiveness, and on the ability to foster open environments. And this month we’ve rolled out a new Management Fundamentals program, with the inaugural module focused on effective 1:1 meetings.
+
+Please reach out to your manager, your HR Business partners, or to me with suggestions on how we can help. The Pulse survey and other feedback loops from you continue to be the most important guideposts for our initiatives, so thank you for the feedback.
+
+The fourth survey (and the final in this cycle) will take place some time in October.
+HELLO, MY NAME IS...
+ Michael Lee
+ Michael Lee, Head of Communications
+am responsible for teams handling public relations, social media, brand, executive, employee and financial communications.
+in the San Francisco office (4th floor).
+our script for EMC’s earnings call on July 22nd, content for our upcoming Board meeting on July 28th, working with leadership, sales and marketing to evolve our corporate story, and collaborating with our talents in PR (in-house and agency) to get more creative in how we tell the world about the genius within our four walls.
+I’m kickin’ it with my wife (Sara). I’m an avid surfer. Dropped in on waves from Bali to Barbados. A recent surf trip to Costa Rica resulted in ten sutures, administered by someone that I believe was masquerading as a physician, operating out of a shabby hut.
+I wrote television and film properties for Comedy Central, Cartoon Network, Fox, Showtime and Lionsgate. The highlight was a Wu-Tang Clan &lt;http://wutangclan.com/wu-music-group/&gt; sketch comedy series. 
+
+
+Michael Lee (l to r): Don Draperlike with Sara; contemplating a new Pivotal brand promise
+is a Batphone &lt;https://en.wikipedia.org/wiki/Bat_phone&gt;. For over two decades, when Silicon Valley’s most influential and valuable start-ups encountered really hard engineering problems, the person on the other end of the proverbial Batphone was Rob Mee and Pivotal Labs. 
+
+ 
+Fast-forward to today, the world’s most admired global brands needs access to that same Batphone. They need to climb Mount Everest (e.g., transform into great software companies), but have no Sherpa. 
+
+
+When you couple our open cloud-native (PCF) and analytics (BDS) platforms with our unique approach to software development, you fundamentally alter the future of large enterprises—to one where they can use software to become active participants in shaping the future of our world.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees and college co-ops who joined Pivotal from June 30 - July 20:
+ 
+
+
+ 
+Alais De Hoogh, Customer Support Tech 3, Palo Alto
+Amin Jamali, Software Engineer, New York
+Benjamin Calegari, Software Engineer, Palo Alto
+Benson Chang, IT Technical Specialist, Toronto 
+Cameron Stewart, Associate Field Engineer, US
+Caroline Taymor, Software Engineer, San Francisco
+Cesar Rojas, Director of Product Marketing, Palo Alto 
+Christian Amadori, Member of Technical Staff 3, Cork IE
+Darcie Fitzpatrick, Senior UX Designer, Santa Monica CA
+David Farrell, Senior Member of Technical Staff, Cork IE
+David Walter, Software Engineer, Santa Monica CA
+Derek Bikoff, Software Engineer, New York
+Devin Brown, Software Engineer, Denver CO
+Dong Li, College Co-op Student, Beijing
+Enrico Teotti, Principal Software Engineer, Boulder CO
+Giuseppe Privitera, Senior Member of Technical Staff, London
+Gregory Chattin-McNichols, Software Engineer, Seattle
+Herbert Jordan, Software Engineer, New York
+Ian Swift, Software Engineer, Chicago
+Inna Fedoseyeva, Senior Product Manager, San Francisco
+Jane Snider, Account Manager, US
+Jenna Baleix, Executive Assistant, Palo Alto
+Joshua Cutler, Technical Support Engineer 2, Denver, CO 
+Karina Sils, UX Designer, Palo Alto
+Kazunari Hanao, Senior Account Manager, Tokyo
+Kevin Smith, Senior Workplace Advocate, Chicago
+Konstantinos Antzakas, Senior Field Engineer, London
+Kumar Sudhindra Rao, Advisory Solutions Architect, US
+Michael Heath, Technical Staff 1, San Francisco 
+Morgan Holzer, Senior Marketing Specialist, San Francisco
+Natalie Bennett, Software Engineer, San Francisco
+Partho Bardan, Associate Data Engineer, US
+Perrisa Joorabchi, Business Operations Principal, San Francisco
+Peter Kinnecom, Software Engineer, Denver CO
+Qian Yu, Software Engineer, Boston
+TaeHoon Koo, Senior Data Scientist, Seoul
+Travis Longoria, Principal Software Engineer, Boulder CO
+Sam Cunneen, Infosec Associate Engineer, Cork IE
+Sara Mitchell, Advisory Field Engineer, London
+Shimian Zhang, Software Engineer, San Francisco
+Shoabe Shariff, Software Engineer, Palo Alto
+Shoaib Lari, Technical Staff 2, Palo Alto
+Shane Galvin, Member of Technical Staff 3, Cork IE
+Siobhan McFeeney, VP Transformation, San Francisco
+Sohail Sarwar, Technical Staff 1, Palo Alto 
+Srinivas Sreekakolapu, Senior Technical Education Consultant, US
+Stephen Gravrock, Principal Software Engineer, Seattle WA
+William Moss, Account Manager, US
+
+Zhouping Xu, Advisory Solutions Architect, Beijing</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

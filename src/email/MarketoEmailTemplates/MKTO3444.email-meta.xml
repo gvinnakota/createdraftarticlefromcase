@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 11 - February 2016</name>
+    <style>none</style>
+    <subject>February 2016 Push With Success</subject>
+    <textOnly>We lead off this newsletter with the announcement of our new SSL offering on PWS. We have long offered free SSL with our partner Cloudflare &lt;[[http://www.cloudflare.com]]&gt;, but many users have asked for the ability to bring their own certs and we have listened. The new year also brings new tasks, so we’ll close this issue with information about a recently publicized CVE or security announcement that will require action if you have not done so already.
+
+Introducing Pivotal SSL for Custom Domains on Pivotal Web Services
+Security is a base requirement for today’s applications. Transport level security and authentication of identity are two items that are resolved through the use of the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) that are often referred to as ‘https’ support. Pivotal Web Services has always provided based level transport layer encryption by providing all applications secure transport for the domain .cfapps.io. We also work with Cloudflare to offer free SSL with certain restrictions including using Cloudflare’s DNS. However, some users needed more flexibility including full certificate management. To meet their needs, we are announcing native SSL for Custom Domain support on PWS. For $20 USD per month, developers can bring their own SSL certificates to use for their applications utilizing a custom or private domain. To enable this new service, developers can go to the marketplace and provision the “Pivotal SSL &lt;[[https://console.run.pivotal.io/marketplace/ssl]]&gt;” service. Unlike most services which operate on the Cloud Foundry space level, Pivotal SSL works for all applications using that domain on PWS. So there is no need to provision multiple instances of the service in each space. The Pivotal SSL for Custom Domains is available now.
+
+Security Vulnerability in Spring Socia, Update Recommended
+Pivotal recently announced CVE-2016-0708 &lt;[[https://pivotal.io/security/cve-2016-0708]]&gt; [1] and 
+CVE-2016-0715 &lt;[[https://pivotal.io/security/cve-2016-0715]]&gt; [2], both of which are applicable to Pivotal Web Services.
+
+In summary, Java or PHP applications that were staged and deployed to Pivotal Web Services between April 8, 
+2014 - January 7, 2016 may have been vulnerable to remote information disclosure, including, but not limited to environment variables and bound service details.
+
+Note that although non-standard and less likely, applications written in Ruby, Node.js, Python or Go that were configured to 
+serve files from the root of the application server’s local file system as well as applications using the static buildpack may also have been vulnerable.
+
+For applications to be vulnerable, they must have been staged using automatic buildpack detection and configured to allow the 
+serving of static content from within the deployed artifact.
+
+Pivotal has remediated these vulnerabilities on Pivotal Web Services and applications are not  vulnerable at this time.  However, it is possible that sensitive application information may have been disclosed before the remediation.
+
+Therefore, it is recommended that applications that meet the above criteria rotate credentials including environment variables for bound services, user-provided service instances, and developer provided environment variables. Most Services provide new credentials to each application using an unbind-service and bind-service sequence of commands.
+
+In additional, Pivotal recommends re-staging your application so that sensitive information is not written to disk even if that information is no longer vulnerable 
+to disclosure. Please contact support@run.pivotal.io &lt;[[mailto:support@run.pivotal.io]]&gt; if you have any questions.
+
+Best Regards,
+The Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

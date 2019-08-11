@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.05-17-2017 V5N7</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, May 17</subject>
+    <textOnly>April 24, 2017
+Vol 5, No 7
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – Code Matters
+All Things Product &lt;[[#product-update]]&gt; – No Bull With BOSH
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Continuous Feedback Builds Great Teams
+My Name Is &lt;[[#my-name-is]]&gt; – Jay Hum
+code matters
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+At the core of the Pivotal genome lies a ‘what’ (software tools), and a ‘how-to’ (agile methods). And in their expression they aim to help enterprises transform themselves through software—to sprint fast and release products that move customers and markets.
+ 
+BOSH is one part of that proposition. Now five years-old, this open source tool chain is to software what RNA is to an organism&apos;s genome. Where RNA is essential to the coding, regulation, and expression of genes, BOSH is central to deploying, packaging, managing, and the expression of software and software systems, as intended.
+ 
+In his update this issue on BOSH and its features new and old, product lead Amit Gupta reminds us of the tool chain&apos;s staying power and the tribe of Pivots who have nurtured it along the way. We’re also pleased to offer a related &apos;how-to&apos; story and flash of creation from BOSH software developer, Saman Alvi, who writes on her team&apos;s successful experiment with continuous feedback. 
+ 
+Finally, tune in to next week&apos;s Town Hall &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/pivotal-town-hall]]&gt; on Tuesday, May 23 at 12:30 PM (pst). The slate includes Rob Mee, Edward Hieatt, an update on R&amp;D from Elisabeth Hendrickson and James Bayer, and something new: Pivot Neha Batra will host. Submit your questions during the event on the #townhall Slack channel.
+ 
+Enjoy.
+no bull with bosh 
+
+
+
+
+Amit Gupta &lt;[[#author-socialcast-profile]]&gt;, Director of Product Management, Cloud Foundry
+For operators who want to package, deploy, and manage cloud software with greater velocity and availability, BOSH continues to show its versatility as a cloud-native workhorse. Thanks to the good folks at Pivotal, this open source project and tool chain for release engineering, deployment, and life-cycle management continues to get better.
+ 
+What&apos;s New?
+ 
+We officially shipped v2 of the BOSH CLI &lt;[[https://lists.cloudfoundry.org/archives/list/cf-bosh@lists.cloudfoundry.org/thread/L6GNJMAVZEJX7ZQFOINWBRO7NDG56Y5H/]]&gt; (command line interface), totally rewritten in Go! It 
+supports all the same functionality of the old CLI, but is a much faster beast with a snappier UX. Installation is a lot easier now too—just download the right binary for your platform, so no more tears and hand-wringing from Windows users!
+ 
+We’re wrapping up some last-mile items on CredHub &lt;[[https://docs.google.com/document/d/1iG28J2Lm8RY3BXCZqqNWO7v-G1ppcdK8cizlhbN_o4g/edit#heading=h.jofxvvvari4y]]&gt; integration. On our journey to get plaintext credentials out of PCF, the first major step is getting them out of the BOSH manifests.  BOSH and Ops Manager now enable this in PCF, so tiles will soon migrate over.
+ 
+What&apos;s Coming?
+ 
+The team is hard at work on BOSH DNS. Today, apps talk to services via addresses in their VCAP_SERVICES; those addresses are IPs, which means apps have to be restaged every time a service’s IP changes. BOSH DNS lets service brokers put a stable DNS hostname in VCAP_SERVICES, and enables apps to correctly resolve this hostname.
+ 
+Separately, Consul &lt;[[https://www.consul.io/]]&gt;, a distributed tool used for service discovery and registration of components internal to Elastic Runtime, has historically been a major source of instability.  BOSH DNS is being explored as a replacement to that. Further, this effort also supports the longer-term goal of making BOSH HA, by replacing the old PowerDNS Single-Point-Of-Failure (SPOF).
+ 
+You might ask, how often does a service’s IP really change? More than you think. Enter HotSwap. We’re working on smarter update strategies for instances with persistent disk.  Recreating the VM where your service instance lives (e.g. an on-demand MySQL instance) incurs downtime that can run minutes long—a lag which impacts your app. HotSwap will significantly reduce this downtime by starting a new VM before stopping the processes on the original VM.
+ 
+What&apos;s Old?
+
+
+We regularly release BOSH features that only a small tribe knows about. As BOSH continues to emerge as a player in the open source DevOps community, we hope to communicate more on these features. For instance, did you know:
+
+
+
+ - bosh run-errand --when-changed is a smart way to run errands in a CI pipeline, such 
+that they are no-ops, unless they’ve changed or failed on the last run. This feature is used in Ops Manager 1.10 to drastically cut down updates by an order of magnitude;
+ - BOSH addons can be blacklisted and whitelisted, so you can focus on the exact deployments and instance groups you want to co-locate with. Use this, for example, to co-locate a Syslog addon with tiles that don’t already provide syslog functionality, without clashing with tiles that do. 
+ - The BOSH Director accepts multiple CPI configurations for the same IaaS, allowing you to target multiple vCenter datacenters, or multiple AWS regions, etc. We haven’t seen much mileage on this yet, but we’re considering incorporating it into Ops Manager for the 1.12 timeframe.
+
+
+Connect with Team BOSH 
+ 
+We’re working to transform the way the world operates software, and we want your involvement! How-to questions, architectural questions, UX feedback, feature ideas, and pull requests are welcome. Hit us up on the mailing lists (cf-bosh &lt;[[https://lists.cloudfoundry.org/archives/list/cf-bosh@lists.cloudfoundry.org/]]&gt;), Pivotal Slack (#cf-bosh-core &lt;[[https://pivotal.slack.com/messages/cf-bosh-core]]&gt;), CFF Slack (#bosh &lt;[[https://cloudfoundry.slack.com/messages/bosh]]&gt;), GitHub (bosh &lt;[[https://github.com/cloudfoundry/bosh]]&gt;, bosh-cli &lt;[[https://github.com/cloudfoundry/bosh-cli]]&gt;, bosh-agent &lt;[[https://github.com/cloudfoundry/bosh-agent]]&gt;, dns-release &lt;[[https://github.com/cloudfoundry/dns-release]]&gt;), and Pivotalk (#bosh &lt;[[https://www.pivotalk.io/tags/bosh]]&gt;).
+Interestings
+
+
+
+
+
+
+
+
+
+ - Read it: Why Kubernetes and Cloud Foundry are better together &lt;[[https://www.suse.com/communities/blog/cloud-foundry-kubernetes/]]&gt;.
+ - Seen on Pivotalk: Nice technical notes &lt;[[https://www.pivotalk.io/t/build-2017-technical-notes/25843]]&gt; on Azure features and where PCF might play, from 2017 Microsoft Build conference. 
+ - Google&apos;s widely discussed SRE book on all it&apos;s learned running massive production systems is now online for free &lt;[[https://landing.google.com/sre/book/index.html]]&gt;. 
+
+ - Ex- (and honorary) Pivot Sara Mei muses on testing philosophies in a post on &apos;5-factor Testing.&apos; &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBWRAeb4gkmvmCxZAYc82jNEt03czZgcjO4JGtQH2xGhlIky5U-2FhwExP4p3ssnpbzlw-3D-3D_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMSS6ppK3ETSuTQnvQsZdgkzRTK7mGgHV58y-2B9cHs6JVpiQxMYG9gpIlrEQ8diqL-2BU7jVuv7yLSLoaZAwC8wbyPNBE9QSyDJDi4pFMEYudJHqs7tcgYBmflguOiaQjaNu5PXdKUhqnmC3HNWtTG7wBh2ZeTX2-2Frje8seaqQuPQA2086nspVy-2F2UeyktVgzIxQZ4-3D]]&gt;
+
+ - And from Singapore—Future of Ops &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=R1gW3EcHRGI3Tt-2BMy4vQHHfQbt7Cs6QDKlhVsfNDhdx6tVhtccQuoOXCpUqnANXREVVP0ehecs-2BMzjjNf5sHOg-3D-3D_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQdBfSmQUpNSA4Yoqg4UVKNIRWMCaqYJL-2BMiP4CPd-2FiXCJ6LiO-2BLmSJ89V2Q0vBb5Oa-2FgmHBM0sA4PfvcXTwSBql0-2FtU-2BczpQJwN6XwKKT1SmUyjO6bT0K9xLkko-2FbVNEJBvydXw2V3wkYPszui8q4nfkFz5HbpEA1nUEVvGm-2BqJrPIhxTUuCapwxuJLyj1jds-3D]]&gt;, Experimental syntax AI for React.js &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBXnkTE0CUqIWK1WlpQjyjtR0b-2BdaoUeQOcLxBamOx8gyJ8OVgoay-2BRa9LdrX9Dxfv-2FfXyFEV6ryrxBZF-2BCwaCxQjv3RyHVaRploLp9OSqsgm_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQdBfSmQUpNSA4Yoqg4UVKNIRWMCaqYJL-2BMiP4CPd-2FiXKzDjpabaxUvk4xNkB9v2GGkuLOTX59FnzFqxBKoCn8iDZD4lWLpTRtjH-2BOleZHdkyaNcu31eZD-2FC-2B4-2BexueCBi1-2F8IiTk42IBgNobE8cY2zxt7QGfzpFG0sWqd3IOpWlZCO7oy3kf10o9NOKnP-2F96A-3D]]&gt; ... and Wikipedia has cancer &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBbj0xkYKE92175yTG5G-2Bk9RBgs2DnhfuSjC48RHTIW1GlRu-2Bz5-2FVo1I9vMDZkDTfayaQ2BAmOoYCZMifvk5Wp9MF7UYWuGbqoqFBr0A6hJFm_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQdBfSmQUpNSA4Yoqg4UVKNIRWMCaqYJL-2BMiP4CPd-2FiXL8GhUfUCoiXLwz57MqHRQFrCZ0PGRrBXD6f6cXFtZ7-2BjMO-2B07hCiCrEFQszRILF6RQ-2FGIiufJt0urhUgqX-2FKQfQrQ5FUs4XzLqg3wPZ7tpSQXh-2FbxvcaIMfqxGi0rYE8HF3DxnFApuGT5dWqMFiYzc-3D]]&gt; :(.
+
+ - Just out: Speedy data ingestion bridge GemFire-GreenPlum connector 3.0.0 now available on the Pivotal Network &lt;[[https://network.pivotal.io/products/pivotal-gemfire/#/releases/5376/file_groups/495]]&gt;!
+continuous feedback builds great teams 
+
+
+
+
+Saman Alvi &lt;[[#author-socialcast-profile]]&gt;, Senior Software Engineer, Cloud Foundry
+If you give a mediocre idea to a brilliant team, they will either fix it or throw it away and come up with something 
+better. – Ed Catmul, Creativity Inc., President of Pixar and Walt Disney Animation Studios
+ 
+At Pivotal, we understand that building great products comes from great teams of motivated, kind, empathetic individuals who do their best work together. To keep great people around, they need to continuously grow their skills. And if you pair as much as we do at Pivotal, one way to grow is to provide quick feedback loops on their performance and work.
+ 
+Feedback loops are familiar territory for Pivots—our software tests are characterized by short feedback cycles that allow us to quickly catch mistakes. It&apos;s why we streamline our pipelines and parallelize them where we can. We look for bottlenecks in our code bases, and spread the load.
+ 
+We can apply a similar approach to our teams. In order for people to see their progress and growth, we advocate short, quick feedback loops. These short cycles are vital for Pivots to grow, and to resolve issues within a team that can cause greater pain much further down the line if left unaddressed.
+ 
+When we tested our theory on the benefits of short feedback loops on the BOSH &lt;[[https://github.com/cloudfoundry/bosh]]&gt; team, we found a lot of personal growth and success. This practice has since expanded to the OSL, Push, CloudOps, and Pivnet teams. The format is simple—within each pair both individuals ask each other these questions &lt;[[https://groups.google.com/a/pivotal.io/forum/#!msg/cf-all/1sOG9aLBVV4/3ed7Cth5BQAJ]]&gt; once a week (assuming weekly rotations). The questions are broad in nature to address different issues that a pair may have experienced that week. They are good prompts to get folks thinking in terms of how the previous week went. As the feedback is provided one-on-one, its ephemeral nature allows it to be delivered more easily as well.
+ 
+Feedback from these teams has allowed us to realize the following:
+
+
+ - It helps to tell your pair specifically what you&apos;re looking for with regard to feedback, at the beginning of the week;
+
+ - It&apos;s good to hear things that are going well, but notably more valuable to hear about what went wrong or could be better—while tougher to deliver, it&apos;s worth it. Keep the following in mind when delivering critical feedback. 
+
+
+ - The discussion should happen in a measured, level tone&gt;
+ - The pair should have an established rapport&gt; 
+ - Provide a clear action for improvement, do not just use it an opportunity to vent.
+
+
+
+
+ - It helps to write down the feedback someone gives you, so you can track your progress 
+
+
+
+
+
+
+
+After a period of time, you should be able to see the change in yourself, which can be extremely rewarding. If a team does daily rotations, you have the option of giving feedback every day, or choosing a specific day in a week with whomever you are pairing on that given day. Daily feedback can be harder, so weekly feedback is recommended.
+ 
+With time and regular check-ins with your pair or team, you should grow beyond your expectations. You can make a plan of where you want to end up, but by consistently checking in and making small iterative improvements along the way, you can go much further than you thought you could. This is summed up by Ed Catmul fairly well with the following image:
+ 
+
+
+ 
+David McClure has written 
+about his experience with and improvements on the feedback technique described above. Try it out on your team, and see how you progress!
+jay Hum
+
+
+
+
+Product + Growth, San Francisco
+At Pivotal I...
+Work on the Labs Team in a hybrid role that involves product management, business development, and strategic partnerships.
+You can find me...
+Working on the Labs Team in a hybrid role that involves product management, business development, and strategic partnerships!
+Currently, I am working on…
+
+
+ - Developing the Corporate Innovation practice, which helps enterprise companies innovate like startups;
+ - Leading the Pivotal for Startups program, which helps startups go from stealth to scale by providing access to Pivotal&apos;s products and services; and
+ - Managing strategic partnerships with startup organizations and accelerators such as 500 Startups, Acceleprise, and Startup Leadership.
+
+
+In my spare time…
+I surf cold, unforgiving breaks in NorCal; 
+I snowboard down black diamond runs in Lake Tahoe; 
+I skateboard through the sketchy streets of San Francisco; 
+and I mentor and advise seed-stage startups.
+Something you probably don’t know about me…
+I have a 4 Win – 0 Loss record with 1 TKO in amateur Muay Thai.
+A pursuit for every season: Jay at play in the Golden State.
+To me Pivotal…
+Is an adventure.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

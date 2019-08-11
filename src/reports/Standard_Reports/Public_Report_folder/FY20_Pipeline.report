@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_69324753</developerName>
+        <masterLabel>Product Category</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OpportunityLineItem.Product_Portfolio__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS</sourceValue>
+            </sourceValues>
+            <value>PAS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - PKS</sourceValue>
+            </sourceValues>
+            <value>PKS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - CC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - GemFire</sourceValue>
+            </sourceValues>
+            <value>PCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>App</sourceValue>
+            </sourceValues>
+            <value>APP</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Agile - App Trans</sourceValue>
+            </sourceValues>
+            <value>AppTX</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Agile - Labs</sourceValue>
+            </sourceValues>
+            <value>Labs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - Services</sourceValue>
+            </sourceValues>
+            <value>PCFS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - PAL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PaaS - Eng Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PaaS - Edu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - Resell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - BCS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>App - Edu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agile-APLE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agile - Tx</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - DS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - Edu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PaaS - BCS</sourceValue>
+            </sourceValues>
+            <value>Other Services</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Data - Big Data Suite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - HAWQ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - GPDB</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - HD</sourceValue>
+            </sourceValues>
+            <value>Data Products</value>
+        </values>
+    </buckets>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Renewal__c.CONVERT</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Forecast_ACV__c.CONVERT</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Number__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Name__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Fiscal_Period__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>FORECAST_CATEGORY</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Account.Pivotal_Account_Category__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_ID</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_CUSTOMER_ID</field>
+    </columns>
+    <columns>
+        <field>Account.Theater__c</field>
+    </columns>
+    <columns>
+        <field>User.Area__c</field>
+    </columns>
+    <columns>
+        <field>Account.First_purchase_Date_PCF__c</field>
+    </columns>
+    <columns>
+        <field>Account.Super_Parent_Account__c</field>
+    </columns>
+    <columns>
+        <field>Product2.Report_Category__c</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Identify Business Problems,Gain Sponsorship,Discovery,Framing,Negotiate &amp; Close</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.ACV_Total__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>USD 49999</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FY20 Pipeline</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURNEXT3</interval>
+    </timeFrameFilter>
+</Report>

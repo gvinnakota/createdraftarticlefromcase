@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_CN Advocate Tour South_Milan_Q418.Milan Oct 22 Confirmation</name>
+    <style>none</style>
+    <subject>Thank you for registering!</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+
+Thank you for registering for the [EVENT NAME] Event.
+
+
+
+Date:
+DAY-EMEA, Month DAY-NA, 2017 {{my.SAMPLE Save the Date:default=edit me}}
+
+
+Time:
+X:xxAM to Y:yyPM
+
+
+Location: 
+Venue Name
+Venue Address
+City, State, ZIP (map &lt;[[https://www.google.com/maps/place/Ponce+City+Market,+675+Ponce+De+Leon+Ave+NE,+Atlanta,+GA+30308/data=!4m2!3m1!1s0x88f50410912c7be9:0x275114353ab5ce34?sa=X&amp;ved=0ahUKEwjihMixwoPSAhWowlQKHY0MCAMQ8gEIGTAA]]&gt;)
+
+
+
+
+We look forward to seeing you there.
+
+Should you have any questions or would like more information about this event, please email CONTACT at contact@pivotal.io &lt;[[mailto:events@pivotal.io]]&gt;. - be sure to update this hyperlink
+
+Sincerely,
+
+The Pivotal Team
+See Agenda &lt;[[]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

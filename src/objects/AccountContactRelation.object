@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>IsDirect</fullName>
+    </fields>
+    <fields>
+        <fullName>Roles</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <validationRules>
+        <fullName>C2MA_Role_Required_Validation_Rule</fullName>
+        <active>false</active>
+        <description>User must select a Relationship Role.</description>
+        <errorConditionFormula>(NOT (ISNEW() &amp;&amp; IsDirect)) &amp;&amp; (NOT ISCHANGED(IsDirect))
+&amp;&amp;
+ISNULL(Roles)</errorConditionFormula>
+        <errorDisplayField>Roles</errorDisplayField>
+        <errorMessage>Account Relationship Validation: Relationship Role must be selected to create relationship.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>C2MA_Single_Role_Validation_Rule</fullName>
+        <active>true</active>
+        <description>Only allow User to select ONE Role from the Multi-Select Picklist for Relationship Role.</description>
+        <errorConditionFormula>IF(INCLUDES(Roles, "Partner"),1,0) + 
+IF(INCLUDES(Roles, "Multiple PCNs"),1,0) + 
+IF(INCLUDES(Roles, "Partner View All"),1,0) + 
+IF(INCLUDES(Roles, "Multiple PCN View All"),1,0) 
+ &gt; 1</errorConditionFormula>
+        <errorDisplayField>Roles</errorDisplayField>
+        <errorMessage>Account Contact Validation:  Only ONE Role can be selected for an Account Contact Relationship.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>C2MA_Validation_Rule</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(INCLUDES(Roles, "Partner"),1,0) + 
+IF(INCLUDES(Roles, "Multiple PCNs"),1,0) + 
+IF(INCLUDES(Roles, "Partner View All"),1,0) + 
+IF(INCLUDES(Roles, "Multiple PCN View All"),1,0) 
+ &gt; 1</errorConditionFormula>
+        <errorMessage>You can select only one role for a contact</errorMessage>
+    </validationRules>
+</CustomObject>

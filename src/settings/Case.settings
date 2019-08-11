@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseFeedItemSettings>
+        <characterLimit>5000</characterLimit>
+        <collapseThread>true</collapseThread>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
+    <defaultCaseOwner>Customer_Service</defaultCaseOwner>
+    <defaultCaseOwnerType>Queue</defaultCaseOwnerType>
+    <defaultCaseUser>support-admin@pivotal.io</defaultCaseUser>
+    <emailToCase>
+        <enableE2CSourceTracking>true</enableE2CSourceTracking>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>true</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>true</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <preQuoteSignature>true</preQuoteSignature>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>customer-service.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>customer-service.dev@8-1rk1g97kkgn4vl4188v30g48kkxh7uax5v61l7pd0332d43q1n.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Customer Service</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>federation-support.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>federation-support.dev@2n3rmfmibe32yvm2duhlygvfkrolg22ygw1xhm5j0jk0ktdvm7.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Federation Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ondemand-support.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>ondemand-support.dev@l-23ts15gl96qutwo7xgmmvj6rbc281csin695rv0nwatshv8y33.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Ondemand Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>poc-support.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>poc-support.dev@cvvqjwhu902ja2825c6f0mexin3udci660u6oo8cnoa0vax6r.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>POC Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>pws-account.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>pws-account.dev@29u79rfwqhdeimrizmwifvgk3sk0tae0bhqo55n11s92qixgvw.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>PWS Account Service</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>pws-feedback.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>pws-feedback.dev@d-1l5bzncsh4onzrby3qri7wvjbbmevolwpcf1r76xw043xdtx62.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>PWS Feedback Service</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>pws-support.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>pws-support.dev@12al7jmkkllxg2kj7xutm1z7kk320tekyjlgs45byehzw4hxmn.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>PWS Support Service</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>support.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>support.dev@4-1s1lzap4dlmxzclyt0svlnz3j8yqbazinw7oa29w359v1gyzj1.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Pivotal Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email - EHSP Escalations</caseOrigin>
+            <caseOwner>EH_SP_Escalations</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 1 - Critical</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ehsp-escalations.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>ehsp-escalations.dev@c-11i4z9td1284l9zuw9nxxj43aftbnd7h8n2priady08gare1ko.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SP Escalations</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email - EHSP Support</caseOrigin>
+            <caseOwner>Special_Practices_CSR</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 3 - Minor</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>ehsp-support.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>ehsp-support.dev@8-1qihjnuy2sbernyqj7ugqch3p1zo3b4psmc3k5fqkdajv55mj8.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>SP Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email - Support Escalations</caseOrigin>
+            <caseOwner>Customer_Service</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Severity 1 - Critical</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>support-escalations.dev@pivotal.io</emailAddress>
+            <emailServicesAddress>support-escalations.dev@r-uys11yd0kf34c4jvdrgs41q5sth26eh1dmchtpfbiws2p51xp.56-9rhfeau.cs42.case.sandbox.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Support Escalations</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>true</enableCaseFeed>
+    <enableDraftEmails>false</enableDraftEmails>
+    <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
+    <enableEmailActionDefaultsHandler>false</enableEmailActionDefaultsHandler>
+    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
+    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
+    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
+    <enableSuggestedSolutions>true</enableSuggestedSolutions>
+    <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>true</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>false</notifyOwnerOnCaseOwnerChange>
+    <showEmailAttachmentsInCaseAttachmentsRL>true</showEmailAttachmentsInCaseAttachmentsRL>
+    <systemUserEmail>automatedcase@00du0000000yqazmag.ext</systemUserEmail>
+    <useSystemEmailAddress>true</useSystemEmailAddress>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
+    <webToCase>
+        <enableWebToCase>false</enableWebToCase>
+    </webToCase>
+</CaseSettings>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_Dynamic Routing with Spring Integration 10AM.Reminder</name>
+    <style>none</style>
+    <subject>Reminder: Dynamic routing at 1 million per second with Spring Integration 10am PST</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+We are looking forward to having you join us for Dynamic routing at 1 million per second with Spring Integration and John Davies and Josh Long. 
+If you haven&apos;t done so yet, we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html.
+Event Details:
+
+Date: Tuesday, November 19, 2013
+North America: 10:00am PST (San Francisco, GMT-08:00)  
+Join the WebEx &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=667483116&gt;
+Dial In:
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show all global call-in numbers
+Show toll-free dialing restrictions
+
+Access code: 667 483 116
+
+ 
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

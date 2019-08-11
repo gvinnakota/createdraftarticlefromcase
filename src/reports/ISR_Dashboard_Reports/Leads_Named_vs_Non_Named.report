@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_6768709</developerName>
+        <masterLabel>Theater</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER_ROLE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA - Central Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - France Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - France Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - South Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - South Support Resources</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - Support Resources</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - UKI Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - Vice President</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Canada Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Canada Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Central North Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Central South Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Federal Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ General Markets Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ Global Financial Services Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - New England Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Southwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - South East Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Support Resources</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - TX / LATAM Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Telco / Media Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - West Support Resources</sourceValue>
+            </sourceValues>
+            <value>AMER</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Lead.Product_Data__c</column>
+        </chartSummaries>
+        <chartType>Pie</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Lead.Is_Matched_Account_Named__c</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>true</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead.Product_Data__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead.Product_Apps__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead.Agile__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Lead.PaaS__c</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>Lead.Most_Recent_Lead_Source_Description__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>tom kadlick,corey norton,justin young,jim osborn,scott dickson,matthew butter,estevan mccalley,wesley hackett,paul ramirez,patrick dennard,luis vazquez,julian mardirosian,john mezger,tony simpson,sarah clayton,andrea carli,thomas leplatre</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STATUS</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Back to Marketing,Working,Accepted,Rejected</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LEAD_SOURCE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jigsaw,Sales - EMC Referral,Sales - Pivotal Generated,Sales - VMware Referral</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_6768709</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Lead.Is_Matched_Account_Named__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Leads - Named vs Non-Named</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>COMPANY</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

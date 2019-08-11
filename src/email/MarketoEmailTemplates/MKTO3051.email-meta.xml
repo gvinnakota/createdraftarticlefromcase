@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.Drew Kramer</name>
+    <style>none</style>
+    <subject>Introducing Pivotal’s new conferencing service</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+This is a reminder that beginning on October 26, 2015 our conferencing service will switch to a new Pivotal-branded experience.
+
+Within the next couple of days you will receive a welcome email from the service provider, BT, containing your new account details, which you may begin using immediately. Please be sure to update any scheduled or recurring calls with your new account details.
+
+Please note, as a part of the switch, your existing account through EMC will be closed down on November 30, 2015.
+
+If you require any assistance, please contact the BT Conferencing team &lt;mailto:bt_helpdesk@emcconferencing.com&gt;.
+
+Thank you,
+
+Drew Kramer
+VP &amp; CIO</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

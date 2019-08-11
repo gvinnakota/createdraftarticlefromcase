@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Follow Up Target - Seattle</name>
+    <style>none</style>
+    <subject>Thank you for attending - Pivotal Cloud Platform Roadshow</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for attending the Pivotal Cloud Platform Roadshow in Seattle on Thursday, August 21. We hope our workshop gave you the opportunity to collaborate with your peers and get hands-on experience pushing an app on Pivotal CF. Whether you attended one or all of the sessions, our workshop was designed to give you a deep dive into PaaS and how it can change the way you develop, deploy and scale applications for the cloud generation. 
+
+We are interested in your feedback - please take our short survey &lt;https://www.surveymonkey.com/s/8TCS78Q&gt; so that we can continue to make future workshops 
+informative and relevant. 
+
+Interested in learning more about what Pivotal CF can do for your organization? Contact us &lt;mailto:info@pivotal.io&gt; to schedule a technical evaluation 
+with our team. 
+
+We have made our presentation slides available here &lt;http://www.slideshare.net/Pivotal/tagged/pivotal%20cloud%20platform%20roadshow&gt; and invite you to 
+visit run.pivotal.io &lt;run.pivotal.io&gt; to try Pivotal Web Services - simply upload your files and your app just works!
+
+Thank you again for joining 
+us,
+
+Andrew Clay Shafer</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

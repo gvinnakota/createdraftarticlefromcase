@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Website_PCF Services.Alert</name>
+    <style>none</style>
+    <subject>Alert: Contact request for PCF Services {{company.Company Name:default=edit me}}</subject>
+    <textOnly>Hello,
+
+A PCF Services request for information has been submitted. Please see below for contact details:
+
+Name: {{lead.First Name:default=edit me}} {{lead.Last Name:default=edit me}}
+Company: {{company.Company Name:default=edit me}}
+Email: {{lead.Email Address:default=edit me}}
+Service: {{lead.Product Selection:default=edit me}}
+
+Should you have any questions, please email marketing operations &lt;[[mailto:pivotal-operations@pivotal.io]]&gt;.
+
+Thanks!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

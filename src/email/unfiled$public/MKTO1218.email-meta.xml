@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Event_SFCustomerDinner_Q314.Reminder to attend - David Goudreau</name>
+    <style>none</style>
+    <subject>Reminder - Cocktail reception tonight 6:30-9pm at Town Hall</subject>
+    <textOnly>Hey {{lead.First Name:default=there}},
+ 
+We’re looking forward to seeing you tonight for the Pivotal Labs Cocktail Reception.
+ 
+Along with yourself, we will be joined by a group of mobile &amp; technology professionals in the Bay area from companies like First Round Capital, Google, Macys, Lyft, ENIAC Ventures, Core Logic and more.
+If you’d like to bring a colleague along, please feel free to do so.
+ 
+Looking forward to seeing you this evening.
+ 
+Time: 6:30-9 p.m.
+Location: Town Hall, 342 Howard St, San Francisco, CA
+Reservation under Pivotal Labs
+ 
+Thanks!
+David</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

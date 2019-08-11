@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Hadoop-Strata-BigDataJam_Q414.Email Confirmation</name>
+    <style>none</style>
+    <subject>Registration Confirmation: Big Data Jam Session</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for registering for the Big Data Jam Session with Pivotal and Isilon. You will be joining EMC Chief Solution Strategist, Ryan Peterson, and Ailey Crow, Pivotal Senior Data Scientist for an intimate round table discussion, sharing customer stories, tips and lessons learned in the big data analytics trenches.
+
+We look forward to seeing you in New York City at Strata + Hadoop World 2014! Be sure to swing by the Pivotal booth in the expo hall to meet our world-class data science team and get a demo of Pivotal Big Data Suite &lt;http://www.dev.pivotal.io/big-data/pivotal-big-data-suite&gt; or our joint Big Data solution with Isilon.
+
+Event Details: 
+
+When: Thursday, October 16 2014 @ 1:30-2:30 PM
+Where: Javits Center &lt;http://www.javitscenter.com/&gt;, Room 2D02, 655 W 34th Street, New York, NY 10001
+
+{{my.Save the Date:default=edit me}}
+
+We look forward to seeing you!
+The Pivotal 
+Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

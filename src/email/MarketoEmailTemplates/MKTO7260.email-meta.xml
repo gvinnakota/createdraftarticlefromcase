@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Pivotal Breakfast_Sydney_Q119.No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you at breakfast</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Sorry we missed you at the Pivotal breakfast. Should you wish to visit any of the content shared or learn more about what we do, please find some available resources below:
+
+- View the slides presented at the event: https://connect.pivotal.io/rs/625-IUJ-009/images/Pivotal_Breakfast_Slides_27.03.19.pdf
+- Register for the live webinar &apos;Build Your Multi-Cloud Strategy and Avoid Cloud Lock-in&apos; featuring Shaun Norris, CIO APJ, Pivotal: https://content.pivotal.io/webinars/apr-29-build-your-multi-cloud-strategy-and-avoid-cloud-lock-in-webinar
+- Read the blog &apos;My DevOps Reading List&apos;: https://content.pivotal.io/blog/my-devops-reading-list
+- Contact us to speak directly with your local Pivot: https://pivotal.io/contact
+
+Regards,
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

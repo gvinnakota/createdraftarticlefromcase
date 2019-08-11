@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For pivotal account verification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Pivotal Account Verification Template</name>
+    <style>freeForm</style>
+    <subject>Pivotal Account Verification</subject>
+    <textOnly>Your email address was used to create an account with Pivotal and requires verification.
+
+Verify your email address by clicking on this ({!Target_User.UAA_Verification_Link__c})
+
+If you did not sign up for this account, just ignore this message.
+
+
+
+
+The Pivotal logo is a registered trademark of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.
+
+© 2015 Pivotal Software, Inc. All rights reserved. Terms of Service — Privacy Policy</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

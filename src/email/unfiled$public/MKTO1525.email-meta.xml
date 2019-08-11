@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Website_USBankingReport2014_Q414.Nurture 1</name>
+    <style>none</style>
+    <subject>Following up on the U.S. Banking Report you recently downloaded</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+You recently downloaded our 2014 U.S. Banking and Financials Trends Report &lt;http://connect.pivotal.io/rs/pivotal/images/US-Banking-and-Financial-Services-Mobile-Trends-Report-Pivotal-Labs.pdf&gt;, which I hope you found informative. I thought you might also be interested in a related blog about push notifications and analytics.
+ 
+In this post, Pivotal&apos;s mobile expert Mark D&apos;Cunha shares recent learnings based on our development of more than 400 mobile applications. He explains why push notifications and analytics are important in mobile banking, provides examples on how mobile push is used by consumers, and outlines the best way to develop software.
+ 
+Blog post: Driving Loyalty, Engagement and Profit in Mobile Banking Through Agile, Push Notifications and Analytics.  &lt;http://blog.pivotal.io/pivotal/features/driving-loyalty-engagement-and-profit-in-mobile-banking-through-agile-push-notifications-and-analytics&gt;
+ 
+If you have any questions, reply to this email and we&apos;ll respond right away.
+ 
+Sincerely,
+Imtiaz Jaffer
+Director of Marketing</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

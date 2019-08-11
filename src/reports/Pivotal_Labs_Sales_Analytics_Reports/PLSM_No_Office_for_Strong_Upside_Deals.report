@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_37502236</developerName>
+        <masterLabel>Sales Area</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>ROLLUP_DESCRIPTION</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Northeast Central Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Northwest Central Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Northwest Central Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Southwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Southwest Regional Director</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Telco / Media Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Telco / Media Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - TX / LATAM Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - TX / LATAM Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - South East Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - South</sourceValue>
+            </sourceValues>
+            <value>South</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>APJ - Japan Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ - Australia New Zealand Sales Rep</sourceValue>
+            </sourceValues>
+            <value>APJ</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Federal</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Civilian Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Civilian Regional Director</sourceValue>
+            </sourceValues>
+            <value>Federal</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Executive Level</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Global</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Support Resources</sourceValue>
+            </sourceValues>
+            <value>Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - North</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - New England / Canada Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - New England / Canada Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ Global Financial Services Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - NY / NJ General Markets Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - GE</sourceValue>
+            </sourceValues>
+            <value>North</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA - Central Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - Central Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - North Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA - South Sales Rep</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>TOTAL_PRICE</column>
+        </chartSummaries>
+        <chartType>HorizontalBarGrouped</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>OPPORTUNITY.NAME</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>MEMBER_NAME</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Next_Step__c</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>MEMBER_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Joseph Sagrati,Michael Kahn,Sheetal Jaitly,Eric LaRosa,Jeremy Black,Allen Nizi,Guillermo Rivera Jr.,Moray Hickes,Ryan Vaudry,Chris Rovtar,Arunan Sri,Stephen Derksen,John Brookmyre,Matt O&apos;Leary,David Wright,Ashok Sivanand,Eric Schmalzbauer,Ally Contardi,Andy Khorshid</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Forecast_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Strong Upside,Commit,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pivotal_Labs_Delivery_Office__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Forecast_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>MEMBER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>PLSM - No Office for Strong Upside Deals</name>
+    <params>
+        <name>prod_lkp</name>
+        <value>01tU0000001YFgM</value>
+    </params>
+    <params>
+        <name>dummy</name>
+        <value></value>
+    </params>
+    <params>
+        <name>team_lkp</name>
+        <value>000000000000000</value>
+    </params>
+    <params>
+        <name>include</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityTeamProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

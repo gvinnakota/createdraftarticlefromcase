@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY16.Newsletter - 3-29-16</name>
+    <style>none</style>
+    <subject>March 2016 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+
+Welcome to the March Madness edition of “Push With Success”! The action is not all on the basketball backboards, as in the collegiate basketball championship tournament here in the US. Any sports fan is obsessed with metrics and statistics, and amazingly enough so are app developers. This month we formally introduce PCF Metrics on PWS. Read more in this issue.
+ 
+ Speaking of statistics, Pivotal Tracker&apos;s &lt;[[https://www.pivotaltracker.com]]&gt; new Analytics feature allows your team to see the overall view of your project health, as well as dig deep into its details. Tracker is the agile project management tool Pivotal uses to develop PWS and Pivotal Cloud Foundry &lt;[[https://pivotal.io/platform]]&gt;. Get more details &lt;[[http://www.pivotaltracker.com/why-tracker/?utm_source=pwsnewsletter&amp;utm_medium=email&amp;utm_campaign=pws]]&gt; and sign up for a free 30-day trial &lt;[[https://www.pivotaltracker.com/signup/new]]&gt;.
+ 
+ We also cover news that we have recently removed the Ruby 2.0 runtime from the latest Ruby Buildpack on PWS, which may have implications the next time you push your app. Cloud Foundry is a new platform for many, so we’re introducing our new “Getting Starting Guide” to help developers get on board. Lastly, PWS has a new dedicated blog to keep you up to date with all the changes to the leading instance of Cloud Foundry on the internet.
+ 
+ Thanks for reading and let us know what you think by tweeting at us @pivotalws &lt;[[https://twitter.com/pivotalws]]&gt;.
+ 
+ Best Regards,
+ 
+ The Pivotal Web Services Team
+ 
+ Introducing PCF Metrics on PWS
+ 
+ Developers love Pivotal Web Services for the transformational benefits of speed and agility. cf push is the path to production, but once there it’s not always so easy to find out how your app is performing. We set out to address this pain with a focus on fast-feedback.
+ 
+ With PCF Metrics, available for all apps on PWS today &lt;[[https://metrics.run.pivotal.io]]&gt;, developers can better understand the health and performance of their apps with a real-time stream of metrics data.
+ 
+ Metrics include CPU, memory, and disk percentages (at 30 second resolution), counts for HTTP requests per second and HTTP errors per second, and request latency (at per-second resolution). Events include creates, updates, starts, stops, and crashes. Data is available for 24 hours.
+ 
+ Best of all, there&apos;s nothing to install or configure: it just works. Log in to see it now &lt;[[https://metrics.run.pivotal.io]]&gt;.
+ 
+ We plan on using these metrics to help you write more performant apps, troubleshoot them when they&apos;re not, and much more. Please let us know what you think at pcf-metrics-feedback@pivotal.io &lt;[[mailto:pcf-metrics-feedback@pivotal.io]]&gt;.
+ 
+ Ruby 2.0 being deprecated from Ruby Buildpack
+ 
+ On March 17, 2016, we updated the PWS platform, and as part of that update the deprecated Ruby version 2.0 was removed from the Ruby buildpack. We did this in response to the announcement of its end of support &lt;[[https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/]]&gt; by the Ruby maintainers. As a consequence, applications that explicitly require that version of Ruby may fail on the next deploy of the application. We recommend upgrading your application to support the latest version of Ruby in order to remain current with updates. If during the upgrade process you require the older version of Ruby, you may explicitly link to an older version of the buildpack using the &apos;-b&apos; parameter of &apos;cf push&apos;. For example:
+ 
+ cf push -b &quot;https://github.com/cloudfoundry/ruby-buildpack#v1.6.13 &lt;[[https://github.com/cloudfoundry/ruby-buildpack#v1.6.13]]&gt;&quot; YOUR_APPNAME
+ 
+ Should you have any questions, please contact support@run.pivotal.io &lt;[[mailto:support@run.pivotal.io]]&gt;.
+ 
+ A New Getting Started Guide
+ 
+ Pivotal Web Services is built on Cloud Foundry, and one of the goals of PWS is to bring Cloud Foundry to those who cannot deploy their own private instance via Pivotal Cloud Foundry. To show off this benefit, we have put together various getting started guides, and we recently launched a new version &lt;[[http://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry/introduction?utm_source=pushwithsuccess&amp;utm_medium=link&amp;utm_campaign=gettingstartedwithpcf]]&gt;. Even if you are already familiar with the basics, this guide highlights some of the advantages of using Cloud Foundry that you might not have been familiar with, including service binding and scaling. Take a look and let us know what you think.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

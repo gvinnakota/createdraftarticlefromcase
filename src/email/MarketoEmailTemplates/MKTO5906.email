@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>spring boot 2.0新特性技术公开课</title> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; "> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td> 
+</tr> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td> 
+<div class="mktEditable" id="banner-main">
+<a href="https://jinshuju.net/f/qKDm4F" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_04_09_01.jpg" width="600" border="0" alt="pivotal 技术公开课"></a>
+</div> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>*课程主题*</strong></td> 
+</tr>
+ <tr>
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:24px; padding:0px 30px 25px 30px;" colspan="3">
+Spring Boot 2.0新特性介绍<br>
+<span style="color:#4F8EBD;">● &nbsp;&nbsp;</span><a style="color:#4F8EBD;" href="https://www.iplaysoft.com/p/win10-fall-creators-update-features">Win10 秋季创意者更新有什么新功能？新特性介绍汇总</a><br>
+<span style="color:#4F8EBD;">● &nbsp;&nbsp;</span><a style="color:#4F8EBD;" href="https://onevcat.com/2017/06/ios-11-sdk/">开发者所需要知道的iOS 11 SDK 新特性</a><br>
+<span style="color:#4F8EBD;">● &nbsp;&nbsp;</span><a style="color:#4F8EBD;" href="http://mobile.zol.com.cn/599/5991673.html">关于新的iOS10 你应该知道的28个新特性</a><br>
+<span style="color:#4F8EBD;">● &nbsp;&nbsp;</span><a style="color:#4F8EBD;" href="http://www.10tiao.com/html/558/201703/2650964364/1.html">五分钟get 你也许不知道的前端新特性</a><br>
+<span style="color:#4F8EBD;">● &nbsp;&nbsp;</span><a style="color:#4F8EBD;" href="https://technews.cn/">LINE 添新功能，聊天室直播全球同步上線</a>
+
+</td>
+</tr> --> 
+<tr> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:25px 30px;" colspan="3"> 
+<!-- <span style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:18px;">Pivotal第九期技术公开课</span> <br><br>--> 天生自信的 Spring 开放式编程模型是全球数百万开发人员所广泛使用的模型。它借鉴了分布式 Java 十多年的经验，如今，Spring 可以完全满足企业关键任务的严格要求和大规模的网络工作负载。<br><br> 近期 Pivotal 官方发布 Spring Boot 2.0 版本，这是继 1.0 发布四年之后，推出的第一个主要版本的更新。我们将在本次<span style="font-family:'宋体'">“</span>Pivotalk 技术公开课<span style="font-family:'宋体'">”</span>中为大家介绍 Spring Boot 2.0 新特性，希望通过本课程能够让广大开发者快速了解这些新增组件，并能够更好地在 Spring Boot 应用开发中使用这些新特性。 </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>*活动信息*</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 0px 30px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" width="13%" valign="top"> <span style="color:#01ad9d;"><b>课程主题：</b></span> </td> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> 真金不怕火炼，Spring Boot 2.0 新特性技术公开课 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" width="13%"> <span style="color:#01ad9d;"><b>课程时间：</b></span> </td> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> 2018 年 04 月 26 日 &nbsp;周四（晚） 20：00 - 21：10 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" width="13%" valign="top"> <span style="color:#01ad9d;"><b>适合对象：</b></span> </td> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> 开发人员、运维人员、项目经理、产品经理以及对云原生、Spring/Spring Boot 有兴趣的所有相关人员 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;"> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" width="13%"> <span style="color:#01ad9d;"><b>演讲人：</b></span> </td> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> 刘凡, Pivotal大中华区资深架构师 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" style="padding-bottom:25px;padding-top:0px"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td width="240"></td> 
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="https://jinshuju.net/f/qKDm4F">立即报名</a></td> 
+<td width="240"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>*课程简介*</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;"> 在 2018 年 3 月份， Pivotal 官方发布 Spring Boot 2.0 版本，这是继 1.0 发布四年之后，推出的第一个主要版本。在 2.0 版本中，不仅全面支持了 Spring Framework 5.0，提供 Spring WebFlux/WebFlux.Fn 对响应式 Web 编程的支持，还对 Actuator 进行了重构来更好地支持应用的监控和管理，以及引入了 Micrometer 来管理应用运维指标等新的功能。本课程将对 Spring Boot2.0 新特性做一个概要介绍，希望通过本课程能够让广大开发者快速了解这些新增组件，并能够更好地在 Spring Boot 应用开发中使用这些新特性。 </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>*学习要点*</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;"> 
+<table width="100%"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"> ● &nbsp;&nbsp; Spring Boot 2.0 新特性概要介绍<br> ● &nbsp;&nbsp; 响应式编程和响应式Spring<br> ● &nbsp;&nbsp; Actuator/Actuator Endpoint<br> ● &nbsp;&nbsp; Metrics/Micrometer<br> ● &nbsp;&nbsp; Configuration Properties binding </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>*讲师介绍*</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;"> 刘凡先生长期从事软件研发和技术创新工作，曾先后就职于石化盈科、Adobe 中国研发中心、IBM 等大型国内外IT企业，从事软件产品研发，系统架构设计，研发管理等工作。在十多年的软件行业从业经历中，积累了丰富的分布式系统架构设计、自动化平台运维和系统稳定性调优等相关经验。近期主要专注于微服务云原生应用的开发和设计，支持多个知名客户企业进行数字化转型，对敏捷开发和传统巨石应用拆分以及往云上迁移拥有丰富的实战经验。 </td> 
+</tr> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"> 
+<!-- 欢迎小伙伴们加入课程讨论，与我们的技术专家互动分享。每位听课者均有机会赢取我们送出的最新技术白皮书套装以及精美的记事本。 --> 欢迎小伙伴们加入课程讨论，与我们的技术专家互动分享。每位听课者均有机会赢取我们送出的最新技术白皮书套装（共7本）以及精美的记事本。 </td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;" align="center"> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_01_11_content.jpg"> </td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="padding-bottom:25px;padding-top:0px"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody>
+<tr> 
+<td width="240"></td> 
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="">立即报名</a></td> 
+<td width="240"></td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> --> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"> 
+Pivotalk 系列技术公开课是 Pivotal 打造的在线互动平台，内容聚焦硅谷和行业的前沿技术，且与实践紧密相连。我们欢迎小伙伴们加入我们的技术社区，与我们的技术大咖互动分享。 </td> 
+</tr> --> 
+<tr> 
+<td colspan="3" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px;"> Pivotalk 系列技术公开课是 Pivotal 打造的在线互动平台，内容聚焦硅谷和行业的前沿技术，且与实践紧密相连。我们欢迎小伙伴们加入我们的技术社区，与我们的技术大咖互动分享。<br><br> 
+<div style="color:#4F8EBD;"> 
+<b>「Pivotalk系列公开课」视频回顾</b> 
+</div> 
+<table width="100%" style="padding-left:24px;"> 
+<tbody> 
+<tr> 
+<td style="line-height:24px;color: #4F8EBD; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top"> 1. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/3364">如何使用Spring Boot/Spring Cloud 实现微服务应用</a><br> 2. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/3478">如何使用Spring XD/Spring Cloud Data Flow构建Data Microservices</a><br> 3. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/4407">Cloud Foundry技术新纪元 2017年发展趋势前瞻</a><br> 4. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/4777">轻松应战Postgres &amp; Greenplum非法/歧义字符加载入库</a><br> 5. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/5012">Pivotal GemFire功能及开发应用实例</a><br> 6. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://edu.csdn.net/course/detail/5393">Greenplum DB在企业中的最佳实践</a><br> 7. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="https://edu.csdn.net/course/detail/6334">持续集成工具之Concourse </a> <br> 8. &nbsp;&nbsp; <a style="color:#4F8EBD;" href="http://www.itdks.com/liveevent/detail/9886">新一代PaaS 平台 --- Pivotal Cloud Foundry 2.0平台全面解析 </a></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px;">
+我们期待您的参与！<br>
+如果您有任何问题，请致电我们的客户中心：400-135-8900。
+</td> 
+</tr> --> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td><span style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></span></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<!-- Start of footer --> 
+<!-- start of social links // --> 
+<!-- End of social links // --> 
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> <span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2018 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+<!--<p> --></td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of footer // --></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

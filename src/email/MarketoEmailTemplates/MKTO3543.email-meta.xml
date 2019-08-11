@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_ISR_Netezza_Take_Out_Q116.Email: Justin Young</name>
+    <style>none</style>
+    <subject>Is it time to migrate off your data warehouse, like Netezza? Here’s how</subject>
+    <textOnly>Dear {{lead.First Name:default= }},
+ 
+ In the last year, the data warehouse market has seen a major shake-up. After years of trailing behind the open source database innovation that has transformed the application stack, data warehousing caught up.
+ 
+ So, now customers like you are faced with the question: Does it make sense to continue with our existing data warehouse platform based on proprietary software, tightly coupled to hardware?
+ 
+ With it’s best-in-class 
+query optimizer, Pivotal Greenplum &lt;[[http://pivotal.io/big-data/pivotal-greenplum]]&gt;, has emerged as the most viable massively parallel Data Warehouse (DW) platform for migrations from legacy data warehouse platforms, like IBM PureData System for Analytics 
+(“IBM Netezza”). Here are the reasons:
+
+ 
+
+
+
+ - 
+PostgreSQL heritage: Pivotal Greenplum is based on PostgreSQL. This significantly simplifies the SQL migration effort and deployment to the new Greenplum platform from other PostgreSQL-based systems, like IBM Netezza.
+
+
+ - 
+Based on open source: Pivotal Greenplum is based on open source Greenplum Database software, lowering TCO and increasing development transparency.
+
+
+ - 
+Innovative: Solid future roadmap and strong commitment to DW innovation.
+
+
+ - 
+Analytics: Comprehensive library of in-database machine learning and statistical algorithms.
+
+
+ - 
+Flexible deployment: Greenplum can be deployed as an appliance, software-only, and in the cloud.
+
+
+
+
+ 
+Generally, data warehouse migrations are driven by the technology groups of the enterprise. As the business is not directly involved, it demands additional planning to make the DW replacement transparent (or near transparent) to business activities. Pivotal understands these operational challenges and has designed a proven program that allows customers to deploy a low risk migration.
+ 
+If you are concerned about your existing data warehouse meeting your 
+new technology requirements, facing end of license/support contracts, or otherwise concerned about the longevity of the platform, let&apos;s have a conversation about what Pivotal can do for you.
+ 
+ Thanks,
+ 
+ Justin Young
+ 
+ If you&apos;re interested, please contact me at JYoung@pivotal.io &lt;[[mailto:jyoung@pivotal.io]]&gt; 
+or (817) 995-0168.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_PCF 1.6 Launch_Q415.Reminder</name>
+    <style>none</style>
+    <subject>Webinar Reminder: See you in a few hours!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We are looking forward to seeing you at today&apos;s webinar Expand Your Cloud Native Platform&apos;s Capabilities With The Newest Release of Pivotal Cloud Foundry at 10:00AM PST. Please see event details below:
+
+Date: Today, November 19, 2015
+Time: 10AM PST- 1:00PM EST
+Join the Session &lt;http://event.on24.com/wcc/r/1084533/BADF02F8BC6EB0B824A341447DFA9647&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+
+See you in a few hours!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

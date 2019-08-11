@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.5-1-14 V2N9</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.9</subject>
+    <textOnly>&lt;http://www.gopivotal.com&gt;
+PIVOTAL NEWSLETTER
+ Vol. 2, No. 9
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+EDITOR WELCOME
+Rhonda Baldwin
+ Chief of Staff, Products
+
+
+
+
+
+
+
+Feedback
+
+ I like to think about optimization. In school, it was mathematical optimization; when I started at Greenplum it was query optimization; lately, I’ve focused on program/process optimization. I believe we can make some of the most significant improvements simply by collecting, analyzing and acting upon data. With this in mind, we’re interested in gathering feedback on last week&apos;s Town Hall &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/employee-information/pivotal-town-hall&gt; – please 
+participate in the Pivotal Town Hall 22 April &lt;https://docs.google.com/a/gopivotal.com/forms/d/1_2ghll628OVBpw-wnQzqBBGN7H6OfTkr1sB1bbCCfyU/viewform&gt; survey. If you’re interested in collecting survey data of your own, here’s a quick tutorial on Creating a Google Form &lt;https://support.google.com/drive/answer/87809?hl=en&gt;.
+
+ We rely on feedback 
+everywhere at Pivotal. In this edition of the biweekly Pivotal Newsletter, we learn how feedback is used in the Field in our Business Update, creates a unified plan in our Products Update, is collected from customers in our Agile Update, and helps make this an awesome place to work in the People Update.
+
+ Speaking of feedback, I really like some of the recent improvements to the Inside Pivotal &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/&gt; landing page. If you check it out this week, you’ll find the Pivotal Town Hall Replay &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/employee-information/pivotal-town-hall&gt;, James Watters at ApacheCon &lt;https://www.youtube.com/watch?v=KX8ngnl5cRc&gt; and Big Data &amp; Brews: Milind Bhandarkar 
+Explains Pivotal.
+
+“I think it’s very important to have a feedback loop, where you’re constantly thinking about what you’ve done and how you could be doing it better.”—Elon Musk
+
+
+
+
+
+
+
+
+
+
+
+BUSINESS UPDATE
+John Jahnke
+ Head of Global Field Engineering
+
+
+
+
+
+
+
+Champion Teams
+
+Can you believe how this year is flying by? I have had the great pleasure to be at the Pivotal office in NYC on our anniversary day 
+and at the town hall celebration in Palo Alto. It’s amazing to see our momentum continue to grow!
+
+ In this update, I want to focus on not only what is going on in Field Engineering, but also share some things that are happening in the Field at large.
+
+ Our goal in Field Engineering is for our team to be the best in the world. Doing this is great, but we need our Field system to be the best in the world – which means we need to build the most integrated team in the world. In sports, it is very difficult to win with a great offense alone; we need the offense, defense, special teams and team support all performing in harmony to become world champions. I’ll circle back to this theme later.
+
+ In the Field, it’s about three very simple things: 
+
+
+ - Organization: The right people, leadership structure and support.
+ Along these lines, I’m excited to announce that Todd Ulrich will be joining Pivotal to lead the Field Engineering team in the Americas. Todd spent the last eight years in presales at VMware, ultimately leading the technical team supporting their global accounts program. Prior to VMware, Todd spent 11 years at RSA in Field, support and product roles. Todd will operate in a transitional capacity starting next week and will join full time on June 2nd.
+ - Focus: Committing to clear selling motions driven by the Go To Market (GTM) teams, prioritizing the right accounts, having a plan and winning seven-figure software deals.
+ - Execution: Making it happen.
+
+ Field Engineering is focused on two things: 
+
+ - Being Pivotal experts that help our customers get started and evolve their journey to change the way they build software and leverage data. 
+ - Acting as “the glue” that helps ensure success.
+
+Pivotal Experts
+ I think everyone understands the expert side of presales. Our current priority is building scale in the Field to support Cloud Foundry. All areas around the world have dedicated private instances of Pivotal CF for experimentation. We are running a global base Pivotal CF presentation/demo certification for every FE, worldwide. In May, we are also running a team of 13 FEs through a deeper, two-day session with the product team to build second-level opportunity support. All of these opportunities will help us lean into having both private and public cloud options for demos and POCs.
+
+ Once we complete building the base of skill we need for Pivotal CF, we will expand our efforts to include Pivotal Big Data Suite.
+
+The 
+Glue
+ We have customers at different stages of implementation, products at different points in their adoption/maturity cycle and teams at different phases of their journey at Pivotal. I have the great pleasure of traveling all around the world and meeting teams and customers from different places – what sets some of our teams apart is their ability to be “the glue.”
+
+ To me, this means you have a genuine desire to help your customers and peers 
+and are willing to fill holes whenever and wherever necessary to ensure success. Our most amazing teams (knowingly or unknowingly) embrace this simple concept and live it. My challenge to everyone in the Field is to determine how you can become “the glue” in your systems. The more glue we have, the more we all stick together and truly form a championship team.
+
+ Lastly, I think a key part of being “the glue” and being a great team member is soliciting feedback. There’s no better time to evaluate than when you are in the moment. After every customer meeting, we should ask the customer how we did, what we could have done better and listen, reflect and refine. As a team, we should ask each other’s the same questions and then listen, reflect and refine. To me, feedback isn’t something that always happens between a manager and an employee, it should happen as a team, and there’s no time like the present. This creates closer relationships, and leads to more positive interactions, both internally and externally.
+
+ We have amazing people. We have a story that is already starting to change the world. Now we really have to double down on our focus and execution. When we do, the sky is the limit! Here is to making it happen in Q2 and beyond! I look forward to seeing you all in the Field over the coming days, weeks and months.
+
+
+
+
+
+
+
+
+
+
+
+PRODUCT UPDATE
+Hugh Williams
+ SVP, R&amp;D
+
+
+
+
+
+
+
+Collaboration is Key
+
+ I’m having a blast here at Pivotal and would like to share what’s happening around our R&amp;D organization and Engineering culture.
+
+ In March, our senior leaders came together across eight product themes within Data Fabric and Pivotal CF. I’m sure you’ve all seen us huddling, keeping busy and creating materials. These are our goals for planning: 
+
+ - Building a prioritized plan that delivers our strategy
+ - Being clear on Ins and Outs
+ - Promising and delivering
+ - Ensuring we all understand each other’s plans
+ - Reconciling cacophony and overlaps
+ - Helping everyone understand product plans
+
+ We broke down our product offerings in eight work streams to prioritize the backlog: 
+
+
+ - Pivotal HD++ (Pivotal HD, HAWQ, Pivotal GemFire XD)
+ - Pivotal Greenplum Database
+ - Pivotal CF Data Services
+ - Pivotal CF and Pivotal One
+ - Pivotal GemFire and Pivotal SQLFire
+ - Pivotal Data Platform Management, Monitoring and Cross DF initiatives
+ - Federation, Partners and Ecosystem
+ - Real Time Intelligence and Analytics
+
+
+As part of this process, we had three meetings where we shared plans, received feedback, and refined plans from Pivotal CF and across the Data Fabric. We walked Scott Yara, Rob Mee, Bill Cook, and our leadership team in R&amp;D through plans for a realistic, 90%-locked Q2. I’m really proud of all the work that was done. Folks worked incredibly hard across the team to build a collaborative, transparent plan that has us all focused on building enterprise-grade, high-quality software. It’s going to be a really great Q2! We plan to meet again in May to lock down Q3, and bring it up from 70% to 90% locked, and to also bring Q4 up from 50% to 70% locked. Additionally, we plan to continue to prioritize the work from across the EMC Federation of companies (EMC, Pivotal, RSA and VMware), and we’ll be building more of that into our roadmap for Q3.
+
+ Last week, we celebrated Pivotal’s first anniversary and shared our plans at the Town Hall &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/employee-information/pivotal-town-hall&gt;. For more videos and presentations, please check out the R&amp;D Site &lt;https://sites.google.com/a/gopivotal.com/r-d/q1-14-planning&gt;.
+
+
+
+ This year we came in mid-flight for planning, and (as mentioned at Town Hall) we will kickoff yearly planning in September/October for all products that will include App Fabric, Data Fabric, Cloud Foundry and across the Federation.
+
+ On May 6th, Rob Mee and I are jointly hosting an Engineering All Hands, which we are both very excited about! Rob and I are passionate about creating a single Engineering culture at Pivotal. Engineers should be able to move between teams easily, have a shared understanding of what “doing it right” means at Pivotal and understand that we can build one of the greatest teams the world has seen by working together. Furthermore, we have a ton in common, and look forward to sharing our thoughts on how to bring Pivotal Labs, Pivotal CF, and everything we do on the R&amp;D team closer together at the Engineering All Hands.
+
+ To foster global collaboration and fun, please join us at Hackday &lt;https://sites.google.com/a/gopivotal.com/hackday/&gt; on May 20-21!
+
+
+
+ Lastly, I would like to welcome two new members to our R&amp;D staff: Shalini Agarwal, our Chief of Staff, and Lan Haarmann, our Planning Lead.
+
+ Cheers,
+ Hugh
+
+
+
+
+
+
+
+
+
+
+
+AGILE UPDATE
+Sunny Madra
+ CTO, Mobile, Pivotal Lab / Cloud Foundry
+
+
+
+
+
+
+
+Mobile Services for Every Developer
+
+ I joined Pivotal through the acquisition of Xtreme Labs, where I was the CTO and co-founder. As Pivotal’s CTO of Mobile, I head up an initiative to build our Mobile Backend as a Service (mBaaS) and Mobile Application Development Platform (MADP) products.
+
+ Since joining Pivotal, my team has focused on bringing our technology to Pivotal CF. We are currently planning on launching the following mobile services for Pivotal CF in the next quarter: 
+
+ - Push Notifications
+ - Data Storage/Sync
+ - API Gateway 
+
+ My team strongly believes that the MADP and mBaaS offering will converge into PaaS and our strategy puts Pivotal at the forefront of this trend.
+
+ Just as developers have Data and App Fabric services (e.g., Pivotal HD, Pivotal RabbitMQ and MySQL) available to them within Pivotal CF today, soon they will have mobile services available to them as well.
+
+ Next week, I will be at EMC World &lt;http://www.emcworld.com/index.htm&gt; showcasing our brand new technology in the Area 53 &lt;http://www.youtube.com/watch?v=HcJY5uLNHpc&gt; keynote alongside Jeremy Burton, EMC’s President of Products and Marketing. I’m looking forward to meeting current and future customers and getting their feedback. Tune in for a preview of what’s to come!
+
+
+
+ 
+
+
+
+
+
+
+
+
+PEOPLE UPDATE
+Mike LeBlanc
+ Products and G&amp;A Finance Lead, Finance
+
+
+
+
+
+
+
+Help us Save Millions
+
+ In Functional Finance, we believe highly-effective strategic relationships with the business become possible once tactical foundational elements are in place, including: 
+
+
+ - Budgeting/forecasting and reporting
+ - Effective Finance-related process, policies, systems and controls
+ - Active Engagement and Collaboration
+
+
+To help get us where we need to be fast, we’ve formed a cross-functional finance group called the PACE (Process Agility and Cost Efficiency) Team, with the following focus: 
+
+
+
+ - Process Agility 
+
+
+ - Review and improve finance-related processes impacting the business
+ - Mitigate the negative impact to morale and productivity of inefficient, poorly-defined/communicated finance processes
+
+
+
+
+ - Cost Efficiency 
+
+
+ - Enable the business to have visibility and control over the strategic allocation of its finite resources
+ - Partner to identify and reduce non-strategic spend. (i.e., is every dollar spent a good one)
+ - Insert lightweight, smart control mechanisms to ensure the appropriate level of compliance and oversight.
+
+
+
+
+
+We’re focusing on the areas of greatest impact to Pivotal, considering new ways of doing things, holding ourselves (and others) accountable and sharing the knowledge we gain with the entire company.
+
+ Spotlight on Travel &amp; Expenses
+ Pivotal invests roughly $20M per year on travel and expenses (T&amp;E). In addition, almost all employees have some level of exposure to T&amp;E related systems and processes. Given this, we recognize it is important to be thoughtful about ensuring that we are making the processes reasonably efficient and lightweight and that managers have the right level of visibility and control. We are admittedly not there yet, but are actively focusing on a number of improvement initiatives including: 
+
+
+ - T&amp;E Reimbursement and Travel Bookings Exception Processes
+ - Concur Workflow issues related to PAS R2 Transition 
+ - Pivotal Specific Preferred Hotel Selections
+ - Ongoing Systems and Process Education
+ - Management tools to ensure appropriate levels of T&amp;E Investment
+
+
+How can you help? 
+
+
+ - Discuss the strategic need for travel with Managers prior to booking (i.e. how critical is it to travel vs other alternatives like TelePresence or hangout). 
+ - Read and comply with the T&amp;E policy &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/resources-tools/travel-expense-t-e&gt;. Be prepared to provide business context if you have an exception request. 
+ - Book flights in advance whenever possible (see next section).
+
+
+As an example of how being disciplined could directly impact Pivotal’s success: We found that if we all booked travel a little earlier, we could save the company almost a million dollars! This is money that could otherwise be invested in more strategic initiatives.
+
+
+
+ Thanks for taking the time to read about the PACE initiative. If you have any questions or ideas to share, please contact me directly, or another member of our PACE Team listed below with their areas of responsibility. PACE Team members are (from left to right): Kim Vu, Lakshmi Kalyanaraman, Ryan Kelly, Mike LeBlanc, Dan Carducci, Eric Nelson
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELLO, MY NAME IS…
+Mike Maxey
+ Senior Director, Corporate Development
+
+
+
+
+
+
+
+Hello, my name is…
+ Mike Maxey, but nobody calls me Mike. I’ve been “Maxey” since the first grade.
+
+At Pivotal, I…
+ I work in Corporate Development and Strategy. We execute big projects for Pivotal that typically involve people, products, dollars and Board approval. I started with Greenplum about four years ago in a Product Marketing role for GPDB (anyone remember the five plays?). In the last year, I’ve been fortunate to work with an amazing set of colleagues on projects such as the investment from GE, the Xtreme Labs acquisition (wuzzup, Tor-on-no!), and working with EMC on the transfer of Chris Birtwhistle’s services team. I also assist in juicy challenges like Open Source, real estate and a bunch of other stuff I can’t talk about.
+
+You can find me…
+ pretty easily as I’m usually one of the more vocal participants in meetings. Others use my big hair to track me down over a distance.
+
+Currently, I am working on…
+ The Cloud Foundry Foundation. I’m part of the team driving the Foundation governance structure, operational details and creation of the non-profit entity.
+
+In my spare time…
+ I lose golf balls by the dozen.
+
+Something you probably don’t know about 
+me…
+ I’m from Montana and have been known to skateboard to work.
+
+To me Pivotal…
+ Is a collection of amazing individuals across all disciplines that, together, will change the industry.
+
+
+
+
+
+
+
+
+
+
+
+WELCOME TO PIVOTAL!
+ 
+ 
+
+
+
+
+
+
+Please join us in welcoming employees who have joined between 4/15 - 4/28:
+
+Sivan Aharon, College Intern Student, Toronto
+Mohannad Azer, College Intern Student, 
+Toronto
+Nicholas Calugar, CF – Software Engineer, San Francisco
+Stephen Casale, Marketing – Writer, San Francisco
+Gregory Chase, PMM – Product Marketing Manager, Palo Alto
+Shadia Damra, 
+Finance – Manager, San Francisco
+Ilse De La Torre, Facilities - Workplace Advocate, Palo Alto
+Jennifer L Dodd, Pivotal Labs - UX Designer, New York
+Quintin Donnelly, IT – System Administrator, San Francisco
+Roy Fraticelli, Sales – Account Manager, Americas West
+Anand Gaitonde, CF – Software Engineer, San Francisco
+Neil Guy, IT - Client Support Tech Lead, London
+Shane Hogan, Pivotal Labs – Software Engineer, Palo Alto
+Sahil Jain, College Intern Student, Toronto
+Alan Jamieson, Sales – Account Manager, EMEA
+William Keizer, College Intern Student, Toronto
+Michael R Kenyon, Pivotal Labs – 
+Software Engineer, New York
+Soheil Koushan, College Intern Student, Toronto
+Matthew J Lapointe, College Intern Student, Toronto
+Kristin Smaby, GSS – Customer Service Manager, Palo Alto
+Jerry Lin, 
+College Intern Student, Toronto
+Roger Martin, Finance – Field Operations, Palo Alto
+Giliam F Meeussen, College Intern Student, Toronto
+Jeet Mehta, College Intern Student, Toronto
+Balakrishnan 
+Natarajan, IT – Information Security Manager, Palo Alto
+Anthony Pasquariello, College Intern Student, Toronto
+Dany San, Pivotal Labs – UX Designer, San Francisco
+Yu Yang Si, College Intern Student, Toronto
+Daksh Sikri, College Intern Student, Toronto
+Cary Sit, College Intern Student, Toronto
+Gurtej Suri, College Intern Student, Toronto
+Ali Reza Takht-Ravanchi, College Intern Student, Toronto
+Kyle 
+Roberts, GSS – Customer Engineering, Palo Alto
+Richard Rosi, Sales – Account Manager, Americas West
+Kyle Travis, Sales – Field Engineer, Americas West
+Aaron Triantafyllidis, Pivotal Labs – 
+Software Engineer, New York
+Jeremy Wong, College Intern Student, Toronto
+Jessica Wu, College Intern Student, Toronto
+Victor Wung, Pivotal Labs – Quality Engineer, Toronto
+Kevin Xiao, College Intern 
+Student, Toronto
+Kenan Yao, GSS - Business Critical Support, Beijing
+Tony Zhang, College Intern Student, Toronto
+Bing Can Zhou, College Intern Student, Toronto
+
+
+
+
+
+
+
+
+
+
+Want more? Try InsidePivotal.com &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/&gt; or Socialcast: @PivotalNewsletter &lt;https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter&gt;
+ &lt;http://www.gopivotal.com&gt;
+ BUILT FOR THE SPEED OF BUSINESS | www.gopivotal.com &lt;http://www.gopivotal.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

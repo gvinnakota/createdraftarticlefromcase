@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is part A of the A/B send.  Subject is: Serverless, Heptio, and Cluster Management - Pivotal 5-Point Friday Sent from: cmcshane@emc.com</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Email_Dell Sales Newsletter_5 Point Friday_2018.018 February 15 2019 News</name>
+    <style>none</style>
+    <subject>Serverless, Heptio, and Cluster Management - Pivotal 5-Point Friday</subject>
+    <textOnly>February 15, 2019
+
+Hello, I’m Steve Watkins. I’m a Platform Architect with the Dell Synergy Team supporting the Western region. I focus on bringing technical expertise to customer engagements and an element of fun to SAB enablement sessions. I’ve been working with customers on cloud transformation since 2008 (and see no reason to stop). In this 5 Point Friday we’ll cover skills investment for Infrastructure and Operations pros, some good news on PKS, a CIO’s view on serverless compute, and an update on the data analytics appliance.
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+1. Investing (and protecting) a Career in I&amp;O
+
+It’s no secret that career expectations are changing if you are in the Infrastructure &amp; Operations (I&amp;O) field. Gartner’s new report &lt;[[https://www.gartner.com/doc/3885383/analyzing-role-skills-io-professional]]&gt; recommends I&amp;O professionals invest in cloud, platform, and automation skills. Google takes a similar approach with their SRE methodology &lt;[[https://landing.google.com/sre/]]&gt;. Pivotal has combined the SRE discipline with the practical lessons from a couple hundred customer transformations to produce the Platform as Product strategy &lt;[[https://content.pivotal.io/blog/in-2019-put-a-platform-as-a-product-strategy-in-place]]&gt;. These practices extend all the way to the underlying hardware with solutions like Pivotal Ready Architecture &lt;[[https://pivotal.io/pivotal-ready-architecture]]&gt;, which combines VxRail, vSphere, and PCF into a robust, on-prem platform &lt;[[https://www.emc.com/collateral/solution-overview/pivotal-ready-architecture-solution-overview.pdf]]&gt;. It’s a great place to be for I&amp;O professionals. The full stack I&amp;O reliability approach is what helped close Prime Therapeutics.
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+2. Heptio Turbo-Charges PKS Sales
+
+
+Heptio founder Craig McLuckie has assumed the role of VP of R&amp;D within VMware now that the acquisition is final (as of Dec’18). Heptio’s incorporation within VMware’s sales force will turbo-charge the adoption of PKS and Cloud PKS. Here is an interview &lt;[[https://searchitoperations.techtarget.com/news/252456196/VMware-Heptio-roadmap-to-refine-enterprise-Kubernetes]]&gt; where he and Paul Fazzone, VMware’s SVP of Cloud Native Apps, answer questions on Enterprise PKS, NSX-T integration, and why VMware. For those who would rather watch than read, here is the 6 min recorded interview &lt;[[https://www.eweek.com/cloud/how-vmware-is-advancing-kubernetes-cloud-native-technology-with-heptio]]&gt;.
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+3. Kubernetes is Better with Clusters
+
+
+Speaking of PKS, the strategy of creating multiple clusters rather than one or two mega-clusters has been proven in the field. We advocate multiple cluster for secure separation and multi-tenancy &lt;[[https://youtu.be/a1ORgUtOeis]]&gt; in enterprises. Recently, retailer Target’s Distinguished Engineer Dan Woods wrote an article describing his test environment’s cascading failure on kubernetes. While the production systems were not affected, it further underscored Dan’s mantra &lt;[[https://twitter.com/danveloper/status/1078828168339996674]]&gt; of “smaller clusters, more of them”. We at Pivotal heartily agree. Other vendors still cling to just 1 or 2 clusters (I’m looking at you Amazon EKS). Punish them.  
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+4. Challenging Views on Serverless
+
+Pivotal recently launched Pivotal Function Service &lt;[[https://content.pivotal.io/blog/the-first-open-multi-cloud-serverless-platform-for-the-enterprise-is-here-try-out-pivotal-function-service-today]]&gt;. It’s gotten lots of initial interest and more than a few Pivotal customers are testing the offering. However, it’s probably fair to say that there is still a bit of hype around serverless compute. It’s relatively new to most enterprises, and they are not sure where to deploy. Here is a blog &lt;[[https://m.subbu.org/contemporary-views-on-serverless-and-implications-1c5907c611d8]]&gt; by Subbu Allamaraju the VP of Technology at Expedia exploring the different conceptions (and limitations) of serverless. Hint: guide your customers towards the outcome desired, not the shiny new tech.
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+5. Greenplum Building Blocks
+ 
+If your customers mention analytics,machine learning, AI, or even brags/complains about Hadoop or Kafka, it would be a good time to introduce Pivotal Greenplum &lt;[[https://pivotal.io/pivotal-greenplum]]&gt;. Greenplum is battle proven data analytics platform, based on open source software and value added by Pivotal. Greenplum Building Blocks &lt;[[https://pivotal.io/pivotal-greenplum/greenplum-partner-marketplace/hardware-and-storage]]&gt; (GBB) is a highly scalable solution that replaced the old DCA offering last year. Frisco von Dort did a pretty good intro to GBB &lt;[[https://www.cloudlabnode.com/articles/dell-emcs-greenplum-building-blocks-gbb/]]&gt; on his blog that I would recommend. With Netezza EOL and the future of Hadoop &lt;[[https://www.datanami.com/2018/10/18/is-hadoop-officially-dead/]]&gt; in question, now is a good time to offer a scaleable, stable solution. Data is the new currency. Help make your customers rich.
+- Steve Watkins
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
+Upcoming Events
+Pivotal Days Customer Workshop:
+
+
+
+
+Conshohocken, PA - Feb 26 
+New York, NY - Feb 27 &lt;[[https://connect.pivotal.io/Pivotal-Days-New-York-February-2019.html]]&gt;
+Cambridge, MA - Mar 12 &lt;[[https://connect.pivotal.io/Pivotal-Days-Boston-March-2019.html]]&gt;
+Fairfield, CT - Mar 26 &lt;[[https://connect.pivotal.io/Pivotal-Days-Fairfield-March-2019.html]]&gt; 
+Minneapolis, MN
+Chicago, IL - March 5 &lt;[[https://connect.pivotal.io/Pivotal-Days-Chicago.html]]&gt;
+
+Cleveland, OH - Apr 2 &lt;[[https://connect.pivotal.io/Pivotal-Days-Cleveland.html]]&gt;
+Atlanta, GA
+Dallas, TX
+Seattle, WA- Mar 15 &lt;[[https://connect.pivotal.io/Pivotal-Days-Seattle.html]]&gt;
+Denver, CO - Mar 19 &lt;[[https://connect.pivotal.io/Pivotal-Days-Seattle.html]]&gt;
+
+
+
+
+
+PKS Roadshow Cities &lt;[[https://urldefense.proofpoint.com/v2/url?u=http-3A__vmware.cvent.com_events_multicloud-2Dkubernetes-2Dseminar_event-2Dsummary-2Defe4f4942fba4c3bb11c6298f5e0b2bb.aspx&amp;d=DwMGaQ&amp;c=lnl9vOaLMzsy2niBC8-h_K-7QJuNJEsFrzdndhuJ3Sw&amp;r=z2OUpB4hmCNKIsEQKqBgxJGZJotrI9RgX88d4-wviUs&amp;m=79tRyTmOEJiNX7aupi6XUHY_gB2o6B63I1BjVb5HgnQ&amp;s=BYrb6VEIUybHp9L7WdPHpL2NErulgZjh2imrmBVCujs&amp;e=]]&gt;:
+
+
+
+
+Irvine, TX - Feb 12
+Phoenix, AZ - Febr 13
+Austin, TX - Feb 19
+Dallas, TX - Feb 20
+Philadelphia, PA - Feb 21
+
+Miami, FL - Feb 26
+Raleigh, NC - Feb 28
+Toronto, Canada - Mar 19
+San Jose, CA - Mar 12
+Vancouver, Canada - Apr 2
+
+
+
+
+Digital Knowledge
+
+
+	- Pivotal Pulse Podcasts:
+
+
+
+
+	- The Operations behind Daimler’s Self-Parking App, Customer Interview &lt;[[https://soundcloud.com/user-606338988/the-operations-behind-daimlers-self-parking-app-customer-interview/s-5CtDb]]&gt;
+	- &quot;Pivotal Changed My Life&quot; T.Mobile Customer Interview &lt;[[https://soundcloud.com/user-606338988/pivotal-changed-my-life-customer-interview-with-t-mobile/s-cSA1a]]&gt;
+	- $2.3M Win: AutoZone Hits the Gas to Deploy Apps Faster &lt;[[https://soundcloud.com/user-606338988/pks-win-at-autozone-with-james-thibadeau-pivotal/s-hWXES]]&gt;
+	- Winning Mental Strategy for $30M PRA &amp; PKS Win at Telecom Italia &lt;[[https://soundcloud.com/user-606338988/pra-pks-win-at-telecom-italia/s-TTCUE]]&gt;
+
+
+
+
+	- Webinar: Ensure High Performance Apps on PRA &lt;[[https://www.riverbed.com/forms/webinars/how-to-ensure-the-performance-of-your-cloud-native-apps.html?utm_source=pivotal%20target=%E2%80%9D_blank]]&gt;, Riverbed
+	- Website: Pivotal Pulse &lt;[[https://partners.pivotal.io/English/General_DT_Info.aspx]]&gt;, designed exclusively for Dell Tech
+
+	- Now Available! Pivotal Pulse Exclusive &lt;[[https://partners.pivotal.io/English/?ReturnUrl=%2fEnglish%2fGlobal%2fsales%2fdell-tech.aspx]]&gt;, confidential
+
+	- Win of the Week: $15M PAS, PKS Win at DATEV &lt;[[https://partners.pivotal.io/English/Global/sales/dell-tech.aspx#wins]]&gt;
+
+	- Customer Video: Kroger &amp; Pivotal in the News &lt;[[https://pivotal.io/customers/kroger]]&gt;
+	- Chad Sakac Blog: PKS 1.3 Happy New Year! &lt;[[https://virtualgeek.io/pks-1-3-happy-new-year-and-peak-into-2019/]]&gt;
+
+	- SpringOne Conference Videos: Security &lt;[[https://content.pivotal.io/springone-2018-security]]&gt;, Kubernetes &lt;[[https://content.pivotal.io/springone-platform-2018-kubernetes]]&gt;
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steve Watkins
+Platform Architect
+AskDellTech@Pivotal.Io &lt;[[mailto:AskDellTech@Pivotal.Io]]&gt; 
+ Forwarded this email? Sign up here &lt;[[https://partners.pivotal.io/English/General_DT_Info.aspx#newsletter]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

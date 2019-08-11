@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Strata-Hadoop World_Q415.Customer Dinner</name>
+    <style>none</style>
+    <subject>Thank you for joining us!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+It was a pleasure having you at our Strata + Hadoop World &lt;http://pivotal.io/event/strata-ny-2015&gt; dinner last night at Keens. We hope you enjoyed the opportunity to network, catch up with friends and discuss the ever-changing world of big data with Pivotal and our partner, EMC &lt;http://www.emc.com/big-data&gt;.
+
+If you haven&apos;t already, please visit 
+our booth (# 531) to get the latest Open Source Big Data news, learn more about Apache HAWQ &lt;http://hawq.incubator.apache.org/&gt; and the ODPi &lt;http://odpi.org/&gt;, or 
+just speak with our industry experts.
+
+Also, check out the most recent Pivotal news &lt;https://pivotal.io/big-data/press-release/pivotal-open-sources-top-analytics-engine&gt; and blogs &lt;http://blog.pivotal.io/big-data-pivotal&gt;.
+
+We look forward to seeing you at our next event &lt;http://pivotal.io/news-events/#events&gt;!
+
+Cheers,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

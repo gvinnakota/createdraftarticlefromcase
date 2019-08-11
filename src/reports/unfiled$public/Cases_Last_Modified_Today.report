@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Case$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Priority</field>
+    </columns>
+    <columns>
+        <field>Case$Status</field>
+    </columns>
+    <columns>
+        <field>Case$First_Response_Time__c</field>
+    </columns>
+    <columns>
+        <field>Case$Case_Owner_Role__c</field>
+    </columns>
+    <columns>
+        <field>Case$Contact</field>
+    </columns>
+    <columns>
+        <field>Case$Contact_Email_Address__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case$LastModifiedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>12/21/2018 4:57 PM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$LastModifiedDate</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>12/21/2018 7:35 PM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$LastModifiedBy</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Pivotal Admin</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cases Last Modified Today</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Owner_Hierarchy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Case$LastModifiedBy</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

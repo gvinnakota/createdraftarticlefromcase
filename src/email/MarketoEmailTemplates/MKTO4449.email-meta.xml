@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Hortonworks_Future of Data Roadshow(HFDR)_Q3-416.SWMY - Atlanta</name>
+    <style>none</style>
+    <subject>Sorry We Missed You at the Future of Data Roadshow!</subject>
+    <textOnly>&lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow]]&gt;
+Hello {{lead.First Name:default=there}}, 
+
+We’re sorry you were unable to attend the Hortonworks Future of Data Roadshow. 
+
+ We’d like to offer you a taste of the event and some inspiration to help you find new ways to drive value in your enterprise with data. 
+
+ Pivotal has put together a collection of related resources, including the Pivotal HDB on Hortonworks HDP sandbox, that you can check out here &lt;[[https://pivotal.io/event/future-of-data/resources]]&gt;. 
+
+ Pivotal and Hortonworks continue to work together to offer enterprises a comprehensive and powerful platform for managing, analyzing and operationalizing data at scale. Watch this webinar &lt;[[http://hortonworks.com/webinar/high-performance-interactive-sql-analytics-machine-learning-hadoop/]]&gt; to learn more about the role of Hadoop Native SQL in turning data into insight and action. 
+
+ Ready to talk to Pivotal about the future of data at your enterprise? Contact us today &lt;[[https://pivotal.io/contact]]&gt;! 
+
+ Thanks, 
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

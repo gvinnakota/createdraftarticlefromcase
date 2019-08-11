@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <description>Currency Exchange Rate</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Currency Exchange Rate</inlineHelpText>
+        <label>Exchange Rate</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>10</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Currency__c</fullName>
+        <description>Foreign Currency (Always Non-USD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Foreign Currency (Always Non-USD)</inlineHelpText>
+        <label>From Currency</label>
+        <length>3</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_Currency__c</fullName>
+        <description>Converted To Currency (Always USD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Converted To Currency (Always USD)</inlineHelpText>
+        <label>To Currency</label>
+        <length>3</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Valid_From__c</fullName>
+        <description>Exchange Rate Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Exchange Rate Date</inlineHelpText>
+        <label>Valid From</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Valid_To__c</fullName>
+        <description>Exchange Rate Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Exchange Rate Date</inlineHelpText>
+        <label>Valid To</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object stores the foreign exchange rate retrieved from EMC SAP.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>FXRates</label>
+    <nameField>
+        <displayFormat>FX-{MM}{DD}{YYYY}_{0}</displayFormat>
+        <label>FXRate Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>FXRates</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>OBJECT_ID</columns>
+        <columns>NAME</columns>
+        <columns>From_Currency__c</columns>
+        <columns>To_Currency__c</columns>
+        <columns>Exchange_Rate__c</columns>
+        <columns>Valid_From__c</columns>
+        <columns>Valid_To__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>EMC121217</fullName>
+        <columns>NAME</columns>
+        <columns>Valid_From__c</columns>
+        <columns>Valid_To__c</columns>
+        <columns>From_Currency__c</columns>
+        <columns>To_Currency__c</columns>
+        <columns>Exchange_Rate__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Valid_From__c</field>
+            <operation>equals</operation>
+            <value>12/12/2017</value>
+        </filters>
+        <filters>
+            <field>Valid_To__c</field>
+            <operation>equals</operation>
+            <value>12/12/2017</value>
+        </filters>
+        <label>12/12/2017</label>
+    </listViews>
+    <listViews>
+        <fullName>Errors</fullName>
+        <columns>NAME</columns>
+        <columns>Valid_From__c</columns>
+        <columns>Valid_To__c</columns>
+        <columns>From_Currency__c</columns>
+        <columns>To_Currency__c</columns>
+        <columns>Exchange_Rate__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Valid_From__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>12/30/2016</value>
+        </filters>
+        <filters>
+            <field>Valid_From__c</field>
+            <operation>lessThan</operation>
+            <value>1/2/2017</value>
+        </filters>
+        <filters>
+            <field>From_Currency__c</field>
+            <operation>equals</operation>
+            <value>EUR</value>
+        </filters>
+        <label>FX Rates Errors 12/30 and 1/1</label>
+    </listViews>
+</CustomObject>

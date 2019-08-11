@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>任意云</title> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; "> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td> 
+</tr> 
+<!-- {{system.viewAsWebpageLink}} http://icampaign.com.cn/pivotal/Big_Data_Roadshow/sshh/sun.html--> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td valign="top"> 
+<div class="mktEditable" id="banner-main">
+<a href="http://connect.pivotal.io/cloud-event.html" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_04_24.jpg" border="0" alt="任意云"></a>
+</div> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table> 
+<tbody> 
+<tr> 
+<td height="20px" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<!-- <tr>
+   <td>
+   	<table>
+   		<tr>
+   		<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:20px 20px;">真金不怕火炼！天生自信的 Spring 开放式编程模型是全球数百万开发人员所广泛使用的模型。Spring 技术解锁了微服务方法<br><br>们将在“Pivotalk”第一期在线公开课中为您带来主题为“如何使用 Spring Boot／Spring Cloud 实现微服务应用”的讲座。这个新栏目是 Pivotal 携手 CSDN 开设的系列公开课，技术内容将聚焦硅谷和行业的前沿技术，且与实践紧密相连。欢迎小伙伴们加入我们的技术社区，与Pivotal 海内外的技术大咖互动分享。</td>
+   			<td width="50%">
+   					<img src="http://connect.pivotal.io/rs/625-IUJ-009/images/201707182.jpg" style="padding-left:230px;">
+   			</td>
+   		</tr>
+   	</table>
+   </td>
+	
+</tr> --> 
+<tbody> 
+<tr> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:30px 30px;padding-bottom:30px;">PaaS在近几年的IT技术领域一直是一个受到广泛关注、持续火爆的话题，但是如果告诉你金融、电信、电力甚至政府这些传统意义上的保守行业，也开始使用Docker、Kubernetes等容器 PaaS来改造他们的业务，以降低运营成本、加速产品创新，并实现数字化变革，是不是听起来很带劲儿？<br><br>Kubernetes的出现与其说是从最初的容器编排解决方案，倒不如说是为了解决应用上云（即云原生应用）这个难题。如果你对微服务、云原生这些话题感兴趣，想要了解构建企业级PaaS平台的更多技术细节和实践经验，以实现自身企业“任意云”的目标，那么这场活动不容错过。<br><br>Pivotal作为云计算PaaS领域以及开源软件技术领先公司，一直致力于构建企业级PaaS平台产品。在这场活动中，来自Pivotal以及VMware的多位技术大咖，将带来包括Pivotal Cloud Foundry、Fountion as a Service、Spring Boot、Spring Cloud等技术的剖析，这场讨论既有话题热度，又直击企业数字化转型最直接诉求，让我们一起寻找实现<span style="font-family:'宋体'">“</span>任意云<span style="font-family:'宋体'">”</span>之路。 </td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td height="25px" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td height="30px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-top:0px;padding-bottom:0px" align="center"><b style="font-size:13pt;color: #19b9a5;" align="center">*会议亮点*</b><br><br> </td> 
+</tr> 
+<tr> 
+<td style="width:100%;padding-left:30px;padding-right:30px;"> 
+<table border="0" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<td style="color: #19b9a5;padding-bottom:20px;" valign="top" width="15">●</td> 
+<td style="color: #555555;line-height: 17pt;font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-bottom:20px;valign:top;" valign="top"> 
+<div style="margin-bottom:5px;"> 
+<b>技术细节全方位解读</b> 
+</div>企业级PaaS平台技术细节的全方位解读，包括Pivotal Cloud Foundry、Fountion as a Service、Spring Boot、Spring Cloud等技术的深度剖析；</td> 
+</tr> 
+<tr> 
+<td style="color: #19b9a5;padding-bottom:20px;" valign="top" width="15">●</td> 
+<td style="color: #555555;line-height: 17pt;font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-bottom:20px;valign:top;" valign="top"> 
+<div style="margin-bottom:5px;"> 
+<b>理论与实践深度结合</b> 
+</div>技术剖析之外，从实践角度，阐述传统客户如何通过与Pivotal的合作引入云原生理念，流程，工具和方法论，实现企业的数字化转型；</td> 
+</tr> 
+<tr> 
+<td style="color: #19b9a5;padding-bottom:20px;" valign="top" width="15">●</td> 
+<td style="color: #555555;line-height: 17pt;font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-bottom:20px;valign:top;" valign="top"> 
+<div style="margin-bottom:5px;"> 
+<b>话题直击当前热点</b> 
+</div>PaaS、微服务、云原生等热点话题受到企业普遍关注，这场讨论既有话题热度，又直击企业数字化转型最直接诉求。</td> 
+</tr> 
+<tr> 
+<td style="color: #19b9a5;padding-bottom:20px;" valign="top" width="15">●</td> 
+<td style="color: #555555;line-height: 17pt;font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-bottom:20px;valign:top;" valign="top"> 
+<div style="margin-bottom:5px;"> 
+<b>一大波好礼相送</b> 
+</div>我们不仅为你准备了一大摞最新技术白皮书，更有互动好礼、红包抽奖等活动，就等你来摇一摇！</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="30px">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td height="25px" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td height="30px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-top:0px;padding-bottom:0px" align="center"><b style="font-size:13pt;color: #19b9a5;" align="center">*活动讯息*</b><br><br> </td> 
+</tr> 
+<!-- <tr> 
+<td style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 20px 30px;"> <span style="color: #19b9a5;">会议日期：</span>2018 年 5 月 19 日 （周六全天）<br> <span style="color: #19b9a5;">会议地点：</span>北京海淀区中关村车库咖啡<br> <span style="color: #19b9a5;">交通路线：</span>海淀区海淀西大街48号鑫鼎宾馆2楼(在北京大学西南角海淀桥的东南角，海淀图书城步行街内，中国书店往南100米路东，4号线地铁中关村站下车往西过3条马路，约400米)。</td> 
+</tr>  --> 
+<tr> 
+<td style="width:100%;padding-left:30px;padding-right:30px;color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-bottom:20px;"> 
+<table border="0" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<td style="width:68px;color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color: #19b9a5;">会议日期：</span></td> 
+<td style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">2018 年 5 月 19 日 （周六全天）</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color: #19b9a5;">会议地点：</span></td> 
+<td style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">北京海淀区中关村车库咖啡</td> 
+</tr> 
+<tr> 
+<td valign="top" style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;"><span style="color: #19b9a5;">交通路线：</span></td> 
+<td style="color: #555555; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">海淀区海淀西大街48号鑫鼎宾馆2楼(在北京大学西南角海淀桥的东南角，海淀图书城步行街内，中国书店往南100米路东，4号线地铁中关村站下车往西过3条马路，约400米)。</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td> 
+<table> 
+<tbody> 
+<tr> 
+<td width="250">&nbsp;</td> 
+<td style="font-family: Helvetica,Arial,sans-serif;  background-color: #19b9a5; color: white;padding:7px 0" width="100" align="center" valign="middle"><a href="http://connect.pivotal.io/cloud-event.html" style="text-decoration:none;color: white;font-family: Helvetica,Arial,sans-serif;  font-size:13pt;">参会报名</a></td> 
+<td width="250">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="30px">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="padding:30px 30px 20px 30px;"> 
+<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+<tbody> 
+<tr> 
+<!-- <td style="background-color: #19b9a5; color: #ffffff; font-family: Helvetica,Arial,sans-serif; font-size: 17px;" width="141" height="30" align="center" valign="middle">AGENDA</td> --> 
+<td style="color: #19b9a5;font-family: Helvetica,Arial,sans-serif; font-size: 13pt;" align="center" valign="middle"><b>*日程安排*</b></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding: 0px 30px;"> 
+<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+<tbody> 
+<tr> 
+<td style="background-color: #19b9a5;padding:7px 5px;color: #ffffff; line-height: 22px; font-size: 13px;font-family: Helvetica,Arial,sans-serif;" width="100"><b>会议时间</b></td> 
+<td style="background-color: #19b9a5;padding:7px 10px 7px 0px;color: #ffffff; line-height: 22px; font-size: 13px;font-family: Helvetica,Arial,sans-serif;" width="160"> <b>演讲主题</b></td> 
+<td style="background-color: #19b9a5;padding:7px 10px 7px 0px;color: #ffffff; line-height: 22px; font-size: 13px;font-family: Helvetica,Arial,sans-serif;"> <b>演讲嘉宾</b></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding: 8px 30px 30px 30px;"> 
+<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+<tbody> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="100" valign="top">09:00 – 09:30 </td> 
+<td style="color: #595757; padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">签到</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"></td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90">09:30 – 09:45 </td> 
+<td style="color: #595757; padding:  5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">开场致辞 </td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"><p><b>冯雷，Pivotal中国研发中心总经理</b></p></td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc;" width="90"> 09:45 – 10:30 </td> 
+<td style="color: #595757; padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc;" width="160">Pivotal PaaS平台新技术概览</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>俊刚， Pivotal云计算技术总监</b> 
+</div> 
+<div>
+ 在本次分享中，我们会为您介绍Pivotal构建企业级PaaS平台的历程，以及当前的产品解决方案；您将了解如何通过现代化的支撑平台去有效支撑企业级的不同应用类型的高效平稳运行。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 10:30 – 11:15 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">微服务应用在Pivotal Cloud Foundry上的最佳实践</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>刘凡，Pivotal云计算资深架构师</b> 
+</div> 
+<div>
+ 本次分享将针对云原生微服务应用以及更为复杂的巨石应用，将介绍如何采用PKS（Pivotal Container Service）帮助开发运维人员创建、运维，管理生产可用的原生Kubernetes集群，支持复杂场景的应用云上迁移和微服务拆分改造。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 11:15 – 12:00 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">你的平台距离Platform as a product有多远？</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>李锐祥, Pivotal云计算资深架构师</b> 
+</div> 
+<div>
+ 本次分享将基于PaaS平台，阐述如何打造MVP以及建设高效支撑团队,介绍什么是精益创业思维；产品管理思维与项目管理思维有什么区别；以及如何判断你的平台已经满足Platfrom as a product的要求。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 12:00 – 13:00 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">午餐</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"></td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 13:00 – 13:45 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">微服务架构设计与Spring Cloud Function / Riff</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>王钧平, Pivotal 云计算资深架构师</b> 
+</div> 
+<div>
+ 我们将以实际用例，介绍如何解决微服务架构常见问题，以及Spring Cloud Function、Function as a Service 的开源项目Riff的技术细节，简化开发部署流程，加速企业数字化转型。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 13:45 – 14:30 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">开源 Harbor Registry在 Kubernetes 上的采用</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>姜坦, VMware 资深工程师</b> 
+</div> 
+<div>
+ 本演讲以 Harbor 为例，介绍如何在 Kubernetes 上实现高效安全地管理容器镜像的方法，内容包括：镜像仓库的权限和镜像版本控制；镜像远程同步（复制）的应用；大规模应用镜像快速发布方式；用分布式存储实现 Registry 高可用性设计等。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 14:30 – 14:45</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">茶歇</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"></td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 14:45 – 15:30 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">百年老店Liberty Mutual的云原生之路</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>杨海涛, Pivotal 云计算资深架构师</b> 
+</div> 
+<div>
+ 我们将会以财富五百强企业Liberty Mutual为例，见证一个来自曾经最保守行业的百年老店，如何引入云原生理念、流程、工具和方法论，在数字化转型之路脱颖而出。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 15:30 – 16:15 </td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">PWS devopos</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>吴疆，Pivotal资深产品经理</b> 
+</div> 
+<div>
+ 在这个介绍中，我们将根据Pivotal的CloudOps团队对PWS（Pivotal Web Service）进行运维管理的经验，和大家分享Pivotal在保证PWS的高可用性， 容量管理， 系统监控， 故障处理等方面的经验。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 16:15 – 17:00</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">Greenplum on PKS: 容器化 MPP 数据库</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> 
+<div style="margin-bottom:5px;"> 
+<b>翁岩青, Pivotal Greenplum研发经理</b> 
+</div> 
+<div>
+ 我们将主要介绍Greenplum分布式数据库与PKS的集成方案，以及如何利用PKS上Kubenetes提供的特性简化Greenplum的运维管理。 
+</div> </td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #19b9a5; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="90"> 17:00 – 17:15</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc" width="160">问答 &amp;抽奖</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: Helvetica,Arial,sans-serif;border-bottom:1px solid #cccccc"> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td height="25px" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td height="30px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 14px; font-family: Helvetica,Arial,sans-serif;padding-top:0px;padding-bottom:0px" align="center"><b style="font-size:13pt;color: #19b9a5;" align="center">*嘉宾介绍*</b><br><br> </td> 
+</tr> 
+<tr> 
+<td style="padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- http://connect.pivotal.io/rs/625-IUJ-009/images/201710121.jpg --> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01a.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td>  --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>俊刚，Pivotal大中华区云计算技术总监 </b> 
+</div> 俊刚曾经就职于EMC、中国惠普、大连华信等公司，拥有近20年的IT行业工作经验。曾经从事过核心银行系统应用开发和设计，以及企业级系统的系统架构设计以及具体技术实现论证等工作。对分布式应用架构、企业级应用系统的相关应用和数据库技术、云计算技术、大数据平台、新一代数据中心等拥有丰富经验。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<!-- <tr> 
+<td style="padding-top:0px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody>
+<tr style=""> 
+<td> 
+<table  style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td width="30%" valign="middle"> <img src="" style="padding-left:0px;padding-top:0px;"> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"><div width="100%"><div align=""  style="font-size:14px;margin-bottom:20px;"><b>行业案例分享-Greenplum-你不可不知的实施与维护最佳实践</b></div><b>主讲人：</b> <br><b>讲师简介：</b>
+</div>
+</td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr>  --> 
+<tr> 
+<td style="padding-left:30px;padding-right:30px;padding-top:0px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01b.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td>  --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>刘凡，Pivotal大中华区云计算资深架构师 </b> 
+</div> 刘凡长期从事软件研发和技术创新工作，曾先后就职于石化盈科、Adobe中国研发中心、IBM，从事软件产品研发，系统架构设计，研发管理等工作。在十多年的软件从业经历中积累丰富的分布式系统架构设计、自动化平台运维和系统稳定性调优等经验。近期专注于微服务云原生应用的开发和设计，支持多个知名客户进行数字化转型，对敏捷开发和传统巨石应用拆分以及云上迁移拥有丰富实战经验。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding-top:0px;padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01c.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td> --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>李锐祥，Pivotal大中华区云计算资深架构师 </b> 
+</div> 李锐祥曾就职于Intel，Teradata，及EMC等公司，10年以上从业经验，现为Pivotal公司资深架构师。擅长云计算及大数据领域的方案咨询、架构设计及实施工作，服务于多个不同行业客户，例如：华为、中兴、平安银行、中移动、唯品会、德邦物流、永辉超市、南方电网等。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<!-- <tr>
+<td height="20px" bgcolor="white">&nbsp;</td>
+</tr> --> 
+<!-- <tr> 
+<td style="padding-top:0px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody>
+<tr style=""> 
+<td> 
+<table  style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td width="30%" valign="middle"> <img src="" style="padding-left:0px;padding-top:0px;"> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"><div width="100%"><div align=""  style="font-size:14px;margin-bottom:20px;"><b>行业案例分享--以技术创新实现行业转型的GemFire应用演示与分享</b>	</div> <b>主讲人：</b>  <br><b>讲师简介：</b>
+</div>
+</td>
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> --> 
+<!-- <tr>
+<td height="20px" bgcolor="white">&nbsp;</td>
+</tr> --> 
+<tr> 
+<td style="padding-top:0px;padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01d.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td>  --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>王钧平，Pivotal大中华区云计算资深架构师 </b> 
+</div> 王钧平过去曾参与电信、金融产业相关系统开发，包括电子采购系统、电子商务系统、交易系统、Google Play Store与网络银行等。喜欢以设计样式解决复杂架构且需要经常性变动的系统问题，使系统模块间解耦合与高度可重用，在微服务与PaaS平台风起云涌的浪潮下，又投身于传统应用改造与微服务架设计，帮助客户朝向原生云的系统架构迈进，打造下一代应用与 IT 环境。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<!-- <tr>
+<td height="20px" bgcolor="white">&nbsp;</td>
+</tr>  --> 
+<tr> 
+<td style="padding-top:0px;padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr> 
+<!-- style="border:1px solid #cccccc" --> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01e.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> 
+ </td> --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>姜坦，VMware 资深工程师 </b> 
+</div> 姜坦2015 年底加入VMware, 任资深工程师，目前为Harbor技术组长。在加入VMware之前， 姜坦在IBM从事私有云产品应用部署引擎的开发工作。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding-top:0px;padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01d.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td>  --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>杨海涛，Pivotal大中华区云计算资深架构师</b> 
+</div> 杨海涛在加入Pivotal之前曾先后就职于摩托罗拉中国技术有限公司、Nagra中国和同方威视。在超过13年的职业经历中，一直专注于软件行业，包括：技术研发、项目管理、技术支持、团队管理和系统架构等。在通信、广电、交通运输以及政府领域参与过多个大型项目，具有丰富的实践经验以及对行业从技术和商业角度的深入理解。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding-top:0px;padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01d.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td>  --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>吴疆，Pivotal资深产品经理</b> 
+</div> 吴疆负责Pivotal Cloud Foundry和Pivotal Greenplum Container等关键产品的研发，是Pivotal中国研发中心创始团队骨干成员。加入Pivotal之前，曾任IBM DB2产品关键工程师，此前在清华大学就读计算机专业，先后获得本科和研究生学位。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding-top:0px;padding-left:30px;padding-right:30px;"> 
+<table width="540" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr> 
+<td> 
+<table style="width:100%" cellpadding="0" cellspacing="0"> 
+<tbody> 
+<tr> 
+<!-- <td width="30%" valign="middle"> 
+<table style="" cellpadding="0" cellspacing="0"> 
+<tbody>
+<tr> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_02_01d.png" style="display:block;"> </td> 
+</tr> 
+</tbody>
+</table> </td>  --> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:20px 0px 10px 0px;"> 
+<div style="margin-bottom:5px;"> 
+<b>翁岩青，Pivotal Greenplum研发经理</b> 
+</div> 翁岩青Apache HAWQ Committer, PPMC成员。在Pivotal主要从事分布式数据库产品Greenplum和SQL on Hadoop产品HAWQ的研发管理，在加入Pivotal之前曾就职于百度，拥有多年大数据处理，云计算等经验。 </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="30px" bgcolor="white">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td height="20px" colspan="3">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="20px"></td> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/201707181.jpg"> </td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td width="20"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;"><b>pivotal.io/cn</b></a></td> 
+<td width="20"></td> 
+</tr> 
+<tr> 
+<td height="20px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="20"></td> 
+<td align="left" valign="top" style="color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> <span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2018 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+<!--<p> --></td> 
+<td width="20"></td> 
+</tr> 
+<tr> 
+<td height="20px;">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

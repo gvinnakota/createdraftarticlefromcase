@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Email_Data Nurture Program_Q414-Q115.EM2: Podcast Invite</name>
+    <style>none</style>
+    <subject>Pivotal Podcast Series - What&apos;s New in Data</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Join us for our ongoing podcast series All Things Pivotal &lt;http://www.pivotal.io/podcasts&gt;. Every week we explore technology at the intersection of cloud, agile development and Big Data. Host Simon Elisha &lt;https://twitter.com/simon_elisha&gt;, will share the latest news, interview industry technologists, and explore how people are harnessing sophisticated data and cloud technologies to build applications that achieve extraordinary things.
+
+Listen to our podcast episodes featuring data:
+
+EPISODE #3: Comparing Big Data vs Fast Data
+Simon compares Big Data and a fast data. By demystifying and decoding these buzz words, he will give some realistic relevance to Big Data as it has evolved over the years. Listen Now
+
+EPISODE #5: 
+Interview with Ailey Crow at the Strata + Hadoop Conference
+Simon chats with Pivotal Senior Data Scientist, Ailey Crow, at this year&apos;s Strata + Hadoop Conference in New York on October 15-17. Listen Now &lt;http://www.pivotal.io/podcasts&gt;
+
+Since podcasts are portable, we hope you’ll take the opportunity to download “All Things Pivotal” and listen whenever convenient. Subscribe here &lt;http://www.pivotal.io/podcasts&gt;.
+
+Have a topic you would like to see covered? Share your feedback with us by email &lt;mailto:podcast@pivotal.io&gt;. 
+Thanks!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

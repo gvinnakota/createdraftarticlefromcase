@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Acknowledgement to submitter for BDS Deal Reg</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BDS Deal Reg Lead Acknowledgement</name>
+    <style>none</style>
+    <subject>Pivotal Deal Registration Request for {!Lead.Company}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

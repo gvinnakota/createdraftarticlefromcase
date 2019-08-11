@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><a href="http://run.pivotal.io/"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services"></a></p>
+</div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><span style="font-size: 15px;">It&rsquo;s the spooky season here in the United States with Halloween closing out the month.
+        Here at Pivotal we&rsquo;d rather give out treats.
+        So at the end of this issue, we&rsquo;ll share a special treat for our customers who have active accounts on PWS.
+        (Hint: if you create a paid account now you can still collect the treat).
+        This issue also reviews some upcoming buildpack changes and an introduction to 'cf ssh'.
+        May your code be free of ghosts and goblins.&nbsp;</span></p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;"><br /> Best Regards,</p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">The Pivotal Web Services Team <br /><br /> <strong>Node 0.10 being removed from the PWS Node Buildpack on October 31, 2016</strong> <br /><br /> Long-term support for Node.js 0.10.x provided by the Node.js LTS Working Group will end on October 31, 2016.
+        Therefore, the Node.js 0.10.x binary dependency provided by the Node.js buildpack will no longer be available in the first release of the buildpack as of November 1, 2016.
+        The release will be available immediately on PWS.
+        Please adjust your Node.js buildpack applications on PWS to use a supported version of Node.js by that time.
+        <br /><br /> See the <a style="color: #059a91; text-decoration: none;" href="https://github.com/nodejs/LTS#lts_schedule">Node.js Long-term Support Schedule</a> for more detailed information.
+        <br /><br /> <strong>Default version of Go in the Go Buildpack will change to 1.7.x after November 18, 2016</strong> <br /><br /> The version of Go in the Go Buildpack will change from version 1.6.3 to the latest 1.7.x version (currently 1.7.2) in the first release of the Go Buildpack as of November 19, 2016.
+        If you would like to continue using Go 1.6.3 with your PWS app after that date, please set the $GOVERSION environment variable in your app, or use your choice of Go dependency management utility to lock your version of Go to 1.6.3.
+        For more information, refer to the documentation that can be found here: <a style="color: #059a91; text-decoration: none;" href="http://docs.cloudfoundry.org/buildpacks/go/">http://docs.cloudfoundry.org/buildpacks/go/</a> <br /><br /> <strong>Production release of the .Net Core Buildpack now available.
+        Beta release will be unavailable after November 18, 2016</strong> <br /><br /> The .Net Core Buildpack version 1.0.2 is now available as &ldquo;dotnet_core_buildpack&rdquo; on PWS.
+        The 1.0.0 beta version of the buildpack will continue to be available until November 18, 2016.
+        If you have apps on PWS that explicitly depend on the &ldquo;dotnet_core_buildpack_beta&rdquo; buildpack, please adjust these apps to depend on the newer &ldquo;dotnet_core_buildpack&rdquo; buildpack by that date.
+        <br /><br /> <strong>Inspecting your application via SSH on PWS</strong></p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">&nbsp;</p>
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">We recently took a look at our forums and surveys and noticed many customers were asking to ssh into their app.
+        We have good news! PWS has had this capability for a while.
+        All you have to do is use the cf CLI and the command `cf ssh &nbsp;&lt;APPNAME&gt;&rsquo; and you are in.
+        Note that any changes you make will only be applied temporarily to that instance and that those changes will lost when the instance restarts.
+        To clean up and restore the instance that was modified to a pristine state, execute the command `cf restart-app-instance <span>&nbsp;&lt;APPNAME&gt; &nbsp;&lt;INDEX&gt;</span> `.
+         <br /><br /> More details are covered in the <a style="color: #059a91; text-decoration: none;" href="http://docs.run.pivotal.io/devguide/deploy-apps/ssh-apps.html">documentation</a>, including the method for using other SSH clients directly.
+        You can use these other SSH clients to log into your container and copy files back and forth to it securely with `scp` and `sftp`, which could be useful as a last-ditch effort to recover your app source code should something happen to your source-code repository.
+         We hope you find the ability to &lsquo;shell&rsquo; into your apps enables you to manage and develop your code more efficiently.
+          <br /><br /> <strong>Halloween Treat</strong> <br /><br /> As a treat to our loyal customers, we are giving those customers who have an account on PWS with an active credit card an extra $10 of app usage credit on their account.
+        You can claim this credit by visiting the billing page, and clicking on the &ldquo;Promo Code&rdquo; button and entering &lsquo;PWSTREAT&rsquo;.
+        Note that this offer expires on November 7, 2016.</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="30" cellspacing="20" border="0" class="full-block" style="border-collapse:collapse;text-align:center;background:white;border-top:1px solid #f7f7f7">
+<tr>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-twitter.png" alt="Follow us on Twitter" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-linkedin.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-fb.png" alt="Like us on Facebook" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-gplus.png" alt="Add us on Google+" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-youtube.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/icon-instagram.png" alt="Follow us on Instagram" border="0"></a></td>
+</tr>
+<!-- End of social links // --></table>
+<table width="600" cellpadding="0" bgcolor="white" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #f7f7f7">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#666666; font-size:13px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+<p style='margin:0'>&nbsp;</p>
+<p style='margin:0; font-family: Helvetica,sans-serif;color:#999999; font-size:12px;'>Pivotal's Cloud Native platform drives software innovation for many of the world’s most admired brands. With millions of developers in communities around the world, Pivotal technology touches billions of users every day. After shaping the software development culture of Silicon Valley's most valuable companies for over a decade, today Pivotal leads a global technology movement transforming how the world builds software. More at <a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none;">pivotal.io.</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2016 Pivotal Software, Inc. 3495 Deer Creek Road, Palo Alto, CA 94304. All rights reserved. Published in the USA. <a href='http://connect.pivotal.io/UnsubscribePage.html' style="color:#059a91; text-decoration:none;">Unsubscribe</a>. <a href='http://connect.pivotal.io/subscription-management.html' style="color:#059a91; text-decoration:none;">Manage your subscription preferences</a>.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

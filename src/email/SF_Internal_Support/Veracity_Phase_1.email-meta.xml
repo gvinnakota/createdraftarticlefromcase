@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email used to update users on Veracity Phase 1 Enhancements</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>Veracity Phase 1</name>
+    <style>freeForm</style>
+    <subject>Transforming our Operations to Optimize Pivotal’s Success</subject>
+    <textOnly>Transforming our Operations to Optimize Pivotal’s Success!
+
+Pivotal’s selling motion has evolved, our business model has changed significantly, and as a result our systems and business processes/policies must adapt and evolve.
+
+We recently launched Project Veracity to adapt and streamline our operational processes and enhance the systems leveraged by the Field to drive Changing the Conversation with our Customers.
+
+How are we operationally adapting to the change?
+
+Through a phased and iterative approach, we are taking steps to simplify the opportunity management and forecast process.  We will also be providing Opportunity Management Policies to guide the field through specific exceptions scenarios.
+
+     Forecasting:  Remove Strong Upside
+
+     Opportunity Management: Remove Paperwork Received Stage &amp; Relabel Most Likely to Management Call
+
+     Opportunity Management Policy: Exceptions Incorporated
+
+
+Removing “Strong Upside”
+In an effort to simplify the Forecasting Statuses, standardize user expectations and align with Pivotal&apos;s selling motions, we are removing Strong Upside. This change is in line with Industry standards as well as native functionality of SFDC. Forecast Statuses going forward:  Pipeline, Upside, Commit, Closed and Omitted.
+
+
+Timeline and how you are impacted:
+  Q2 - May 12th
+    - Strong Upside will no longer be a selection option
+    - Q2 Deals -&gt; Leave as Strong Upside
+    - Q2+ Deals -&gt; Update to Upside
+  Q3 - July 1st
+    -  Any remaining Strong Upside opportunities moved to Upside
+
+
+Removing “Paperwork Received” Stage
+Given Pivotal&apos;s movement to a direct selling motion, &quot;Paperwork Received&quot; is no longer a relevant Stage in our sales cycle and is being removed.
+
+
+Relabeling “Most Likely” to “Management Call”
+The &quot;Most Likely&quot; checkbox at the Opportunity level is beneficial as it ensures predictability of sales forecasting and proper focus / resource allocation.  Updating the label to &quot;Management Call&quot; improves clarity around the purpose/use and and enables better decision making.
+
+
+Opportunity Management Policy - How to approach specific scenarios?
+
+
+Large Potential Deals
+
+Enter Opportunity in “Pipeline” status with the highest possible value, expected Close Date and Products
+Once the opportunity is in quarter and part of Management Call, users should know the most probable value and update the product amounts accordingly
+
+
+Multiple Proposals
+
+Similar to large potential opportunities, when entering product and $$ on the multiple proposal opportunity, the amount should reflect the highest proposal value
+As the opportunity moves through the selling stages and into current quarter, the opportunity should be updated to reflect the most probable proposal amount
+
+
+Scale Up
+
+One line item per product with years and Total Contract Value (SBSC, 3 years, $1.2M)
+Forecast ACV = TCV / years*
+Opportunity does not need multiple line items for each year as required on quotes
+
+
+Renewals
+
+Renewal Opportunities are systematically created for each subscription booking.
+These opportunities should be used solely for the renewal of this subscription and not be repurposed for another opportunity within the same Account
+Opportunity Name and Opportunity Type should not be modified
+
+
+Co-selling
+
+Each region creates opportunity at their % amount with correct related products
+
+Quote Creation:
+  Region with greater % creates; or
+  Theater where order will be processed; or
+  In Region closest to PO / Bill To
+
+Bookings:
+
+  Order with Quote Books at 100%
+  Sales Ops adjusts opportunity related to booked quote to X% and updates duplicate opportunity with same products at % value (including Final ACV).
+
+
+Contact your Business Manager with any questions.  Thanks again for your support in making Pivotal successful.
+
+Chris Braney
+Director Global Business Management
+Sales Operations
+508-454-7515 (C)
+650-846-1698 (O)</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

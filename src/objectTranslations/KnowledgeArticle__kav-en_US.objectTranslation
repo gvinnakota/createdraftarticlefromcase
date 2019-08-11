@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Additional information such as KB articles, references to the original documentation (e.g. Admin Guide or Installation Guide) or any other resource that helped in documenting this article. --></help>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Admin Approval Rejected</masterLabel>
+            <translation><!-- Admin Approval Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved Content Submitted for Admin Approval</masterLabel>
+            <translation><!-- Approved Content Submitted for Admin Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved for Publication</masterLabel>
+            <translation><!-- Approved for Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Approval Rejected</masterLabel>
+            <translation><!-- Content Approval Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Submitted for Approval</masterLabel>
+            <translation><!-- Not Submitted for Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalled by Submitter</masterLabel>
+            <translation><!-- Recalled by Submitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted for Content Approval</masterLabel>
+            <translation><!-- Submitted for Content Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Article Author --></label>
+        <name>Article_Author_Lookup__c</name>
+        <relationshipLabel><!-- Knowledge Articles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Article Author --></label>
+        <name>Article_Author__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Created from Case # --></label>
+        <name>Article_Created_from_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Link Formula --></label>
+        <name>Article_Link_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Number* --></label>
+        <name>Article_Number_Hyperlink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Group Name --></label>
+        <name>Assigned_Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of what caused the problem. --></help>
+        <label><!-- Cause --></label>
+        <name>Cause__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checklist --></label>
+        <name>Checklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Article URL --></label>
+        <name>Community_Article_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component --></label>
+        <name>Component__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Results --></label>
+        <name>Expected_Results__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Submitter --></label>
+        <name>Initial_Submitter__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the answer to the question, or how do you perform the task? --></help>
+        <label><!-- Instructions --></label>
+        <name>Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comments for internal Pivotal use - not customer-facing --></help>
+        <label><!-- Internal Comment --></label>
+        <name>Internal_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction --></label>
+        <name>Introduction__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the problem? What is the context? Where is the problem being seen? When is the problem occurring? Use the customer&apos;s own words, that is, describe the problem from the customer&apos;s perspective. --></help>
+        <label><!-- Issue --></label>
+        <name>Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledge ID18 --></label>
+        <name>Knowledge_ID18__c</name>
+    </fields>
+    <fields>
+        <help><!-- Temporary field for POC sandbox article reformatting project - users working on project should check this if they have question about the article they are reformatting. The Knowledge Mgr will then review/complete the article reformatting --></help>
+        <label><!-- Knowledge Mgr Review --></label>
+        <name>Knowledge_Mgr_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy URL --></label>
+        <name>Legacy_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes for Pivotal Internal only --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS --></label>
+        <name>OS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Created Date --></label>
+        <name>Original_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Publication Date --></label>
+        <name>Original_Publication_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overview --></label>
+        <name>Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Procedure --></label>
+        <name>Procedure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Version --></label>
+        <name>Product_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purpose --></label>
+        <name>Purpose__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the question? What task are they trying to perform? Use the customer&apos;s own words, that is, describe the request from the customer&apos;s perspective --></help>
+        <label><!-- Question --></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>Record_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Temporary field for reformatting project; to be checked when reformatting of article has been completed --></help>
+        <label><!-- Reformatting Complete --></label>
+        <name>Reformatting_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL Link to another related article. --></help>
+        <label><!-- Related KB Article --></label>
+        <name>Related_KB_Article__c</name>
+    </fields>
+    <fields>
+        <help><!-- What actions can the reader take to resolve or work around the described problem? --></help>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Section --></label>
+        <name>Section__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Component --></label>
+        <name>Sub_Component__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summary of the article that will appear along with the Article Title in any search results of the Knowledge Base. --></help>
+        <label><!-- Summary --></label>
+        <name>Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the symptoms or problem statement. --></help>
+        <label><!-- Symptom --></label>
+        <name>Symptom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Synopsis --></label>
+        <name>Synopsis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tool Attachments --></label>
+        <name>Tool_Attachments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version History --></label>
+        <name>Version_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zendesk Legacy ID --></label>
+        <name>Zendesk_Legacy_ID__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge Article</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge Articles</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Break Fix Article Admin Layout July 2019</layout>
+        <sections>
+            <label><!-- Article --></label>
+            <section>Article</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Break Fix Article Layout July 2019</layout>
+        <sections>
+            <label><!-- Article --></label>
+            <section>Article</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Checklist Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Checklist Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Details --></label>
+            <section>Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience for Published Article --></label>
+            <section>Target Audience for Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Concept Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Detail --></label>
+            <section>Article Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Concept Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Detail --></label>
+            <section>Article Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience for Published Article --></label>
+            <section>Target Audience for Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DEPRECATED: Break Fix Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Detail --></label>
+            <section>Article Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DEPRECATED: Break Fix Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Detail --></label>
+            <section>Article Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DEPRECATED: How To Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DEPRECATED: How To Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>How To Article Admin Layout July 2019</layout>
+        <sections>
+            <label><!-- Article Content --></label>
+            <section>Article Content</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>How To Article Layout July 2019</layout>
+        <sections>
+            <label><!-- Article Content --></label>
+            <section>Article Content</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tools Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Tools Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Troubleshooting Knowledge Article Admin Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Troubleshooting Knowledge Article Layout</layout>
+        <sections>
+            <label><!-- Article Details --></label>
+            <section>Article Details</section>
+        </sections>
+        <sections>
+            <label><!-- Article Metadata --></label>
+            <section>Article Metadata</section>
+        </sections>
+        <sections>
+            <label><!-- Article Summary --></label>
+            <section>Article Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Internal Comments --></label>
+            <section>Internal Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Target Audience of Published Article --></label>
+            <section>Target Audience of Published Article</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- xBreak Fix- Deprecated-DO NOT USE --></label>
+        <name>BreakFix</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Break Fix --></label>
+        <name>Break_Fix_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- FAQ and Checklist --></label>
+        <name>Checklist</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Concept --></label>
+        <name>Concept</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- xHow To- Deprecated-DO NOT USE --></label>
+        <name>HowTo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- How To --></label>
+        <name>How_To_New</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal Only --></label>
+        <name>Internal_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tools --></label>
+        <name>Tools</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Troubleshooting Guide --></label>
+        <name>TroubleshootingGuide</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Knowledge Validation Error: Product, Symptom, Resolution and Article Author are REQUIRED fields to Save Article. --></errorMessage>
+        <name>BreakFix_Article_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Knowledge Validation Error: Product, Checklist and Article Author are REQUIRED fields to Save Article. --></errorMessage>
+        <name>Checklist_Article_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Knowledge Validation Error: Product, Description and Article Author are REQUIRED fields to Save Article. --></errorMessage>
+        <name>Concept_Article_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Knowledge Validation Error: Product, Purpose, Procedure and Article Author are REQUIRED fields to Save Article. --></errorMessage>
+        <name>How_To_Article_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Knowledge Validation Error: Product, Purpose, Procedure, Expected Results and Article Author are REQUIRED fields to Save Article. --></errorMessage>
+        <name>Tools_Article_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Knowledge Validation Error: Product, Purpose, Overview, Symptom, Cause and Article Author are REQUIRED fields to Save Article. --></errorMessage>
+        <name>Troubleshooting_Article_Required_Fields</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Building Big Data Applications with Hadoop &amp; Spring.F/U Attended</name>
+    <style>none</style>
+    <subject>Thank you for attending the Building Big Data Applications with Hadoop &amp; Spring Webinar</subject>
+    <textOnly>Webinar: Building Big Data Applications with Hadoop &amp; Spring
+We&apos;re glad you were able to join us.
+Hi {{lead.First Name:default=there}},
+Thank you for joining us for our third installment in the &quot;What You Can Do With Hadoop&quot; webinar series. We explored how Spring XD (Xtreme Data) is addressing Big Data Application needs such as:
+
+
+ - High throughput distributed data ingestion into HDFS from a variety of input sources.
+ - Real-time analytics at ingestion time, e.g. gathering metrics and counting values.
+ - Hadoop workflow management via batch jobs.
+ - High throughput data export, e.g. from HDFS to a RDBMS or NoSQL database. 
+
+
+An on demand broadcast (replay) is available on our website &lt;http://bitcast-a.v1.o1.sjc1.bitgravity.com/greenplum/pivotalvideo/Building-Big-Data-Applications-with-Hadoop-Spring-WEB.m4v&gt;.
+
+If you haven&apos;t already, we&apos;d like you to take the opportunity to download Pivotal HD Single Node (VM) &lt;http://www.gopivotal.com/pivotal-products/data/pivotal-hd#4&gt; and Pivotal HD Community &lt;http://www.gopivotal.com/pivotal-products/data/pivotal-hd#4&gt;. 
+With your Pivotal HD Community deployment, we would like to invite you to download HAWQ - the native, mature and fast SQL query engine for Hadoop, which is now freely available for download &lt;http://www.gopivotal.com/pivotal-products/data/pivotal-hd#4&gt; for a 60-day free trial.
+
+
+
+
+
+Have questions? Contact us &lt;mailto:info@gopivotal.com&gt;. 
+ 
+Thank you,
+The Pivotal Team
+Check out Pivotal P.O.V.
+Visit our blog &gt;&gt; &lt;http://blog.gopivotal.com/&gt;
+Pivotal HD Community Forum
+Join Now &gt;&gt; &lt;http://www.gopivotal.com/community/pivotal-hd&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

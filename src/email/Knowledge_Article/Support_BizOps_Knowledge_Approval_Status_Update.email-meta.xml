@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Knowledge Article Approval Status Update Email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Support BizOps Knowledge Approval Status Update</name>
+    <style>freeForm</style>
+    <subject>Pivotal Knowledge Approval Request Status Update - {!KnowledgeArticle__kav.Title}</subject>
+    <textOnly>Knowledge Article Status Update
+
+{!KnowledgeArticle__kav.CreatedBy} changed Status in the Approval Process for the following article:
+Article Title: {!KnowledgeArticle__kav.Title}
+Article Number:  {!KnowledgeArticle__kav.ArticleNumber}
+Created Date:  {!KnowledgeArticle__kav.ArticleCreatedDate}
+Record Type:  {!KnowledgeArticle__kav.RecordType}
+Approval Status: {!KnowledgeArticle__kav.Approval_Status__c}
+Publication Status: {!KnowledgeArticle__kav.PublishStatus}
+
+Product:  {!KnowledgeArticle__kav.Product2__c}
+Product Version:  {!KnowledgeArticle__kav.Product_Version__c}
+Component:  {!KnowledgeArticle__kav.Component__c}
+Sub-Component:  {!KnowledgeArticle__kav.Sub_Component__c}
+OS: {!KnowledgeArticle__kav.OS__c}
+
+Please click this link to view Knowledge Article: {!KnowledgeArticle__kav.Article_Link_Formula__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

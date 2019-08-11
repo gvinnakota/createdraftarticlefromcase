@@ -1,0 +1,22 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:hasRecordId" access="global" controller="PortalNewCaseController">
+    <ltng:require scripts="{!join(',', $Resource.jquery, $Resource.sendsafely)}"/>
+	<aura:attribute name="widget" type="Object"/>
+    <aura:attribute name="cUser" type="User"/>
+    
+    <aura:attribute name="accountId" type="String"/>
+    <aura:method name="sendSafelySetup" description="Sendsafely setup">
+    	<aura:attribute name="accountId" type="String"/>
+    </aura:method> 
+    <aura:handler name="init"  value="{!this}" action="{!c.doInit}"/>
+    <div>
+        <span class="slds-page-header__title slds-m-right--small slds-truncate slds-align-middle"> Pivotal Secure Drop Zone</span>
+        <br/>
+        <br/>
+        <div class ="senddiv" id="dropzone-replacement-div"></div>
+        <br/>
+    </div>
+    <div>
+        <button class="slds-button slds-button--brand buttonStyle " style="text-transform : uppercase; font-weight:bold; border-radius:0px; padding:2px; width:10%;" onclick="{!c.attachFile}" >Submit File</button> 
+    </div>
+    
+</aura:component>

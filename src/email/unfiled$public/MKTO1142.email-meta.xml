@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_VMworld_2014.Follow Up Booth</name>
+    <style>none</style>
+    <subject>Thanks from the Team at Pivotal</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thanks for visiting us during VMWorld. We were excited to have thousands of attendees like you stop by and hear about how businesses are using Pivotal CF, the leading enterprise PaaS cloud platform powered by Cloud Foundry, with VMware infrastructure products to scale modern applications fast and deploy in any cloud. 
+
+If you are looking for ways to take your VMware infrastructure further and build a modern cloud platform, please check this page out. If you have any questions or would like a Pivotal representative to contact you, please email us at info@pivotal.io &lt;mailto:info@pivotal.io&gt; or visit our contact page &lt;http://www.pivotal.io/contact&gt;.
+
+ Lastly, we are bringing the Cloud 
+Platform Roadshow to you. Check to see if your city &lt;http://www.pivotal.io/cloud-platform-roadshow#cities?utm_source=email&amp;utm_medium=pivotal-email-link&amp;utm_campaign=vmware-target-account&gt; is on the list.
+
+Thank you again for joining 
+us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

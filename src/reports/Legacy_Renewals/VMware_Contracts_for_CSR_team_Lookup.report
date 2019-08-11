@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contract_Number__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Contract_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Special_Handling__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <description>this report is for the CSR team to find VMware support contracts</description>
+    <filter>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Daniel Drury,Erica Arena,Pam Hagmeier</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Special_Handling__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>SP - Special Practices</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contracts for CSR team Lookup</name>
+    <params>
+        <name>open</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2024-05-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2019-02-02</startDate>
+    </timeFrameFilter>
+</Report>

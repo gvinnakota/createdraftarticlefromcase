@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Pivotal第十四期技术公开课</title> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; "> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody style=""> 
+<tr style=""> 
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody style=""> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td> 
+</tr> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr style=""> 
+<td style=""> 
+<!-- <div class="mktEditable" id="banner-main" style=""> --> <a href=""><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_11_29_Greenplum.jpg" width="600" border="0" alt="Pivotal第十四期技术公开课"></a> 
+<!-- </div> --></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td colspan="3" height="25" bgcolor="#EDEDEE">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:25px 30px;" colspan="3">随着大数据分析需求的不断挖掘以及人工智能算法的持续演进，使用前沿的机器学习算法对数据进行深入分析已经成为业界的热点。那么使用 Pivotal 公司的 Greenplum 大数据分析平台中自带的 Madlib 人工智能算法库，可以方便的对库内数据进行机器学习的算法分析，能够让数据科学家们更专注于数据本身。同时，Pivotal 与合作伙伴共同开发的<span style="font-family:'宋体'">“</span>群贤<span style="font-family:'宋体'">”</span>平台，更是一个人工智能快速开发与支撑平台，能够使客户在可视化平台中完成业务分析模型的搭建，轻松实现基于机器学习算法的数据分析的业务需求。<br><br>我们的大数据专家将在<b>第 14 期 PivoTALK 技术公开课</b>中为您带来主题为<span style="font-family:'宋体'">“</span>基于 Greenplum 的人工智能数据分析介绍<span style="font-family:'宋体'">”</span>。<br><br>还等什么？赶快报名吧， 欢迎小伙伴们加入课程讨论，与我们互动分享。每位听课者均有机会参与我们的在线抽奖。</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;"><strong>课程时间</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;">2018 年 11 月 29 日（周四）20：00 - 21：10</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"><strong>适合对象</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;">数据分析人员，数据科学技术，对机器学习算法应用有兴趣的所有相关人员。</td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"><strong>课程简介</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;">随着微服务技术日趋成熟，越来越多的企业使用Spring Cloud构建微服务架构。Ribbon作为Spring Cloud微服务架构中的客户端负载均衡组件，扮演着重要的角色。本课程从Ribbon原理出发，详细介绍Ribbon内部的实现机制。</td> 
+</tr> --> 
+<!-- <tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"><strong>学习要点</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 0px 30px;"> 
+<table width="100%"> 
+<tbody> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#555555">●</span> &nbsp;Ribbon介绍</td>
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#555555">●</span> &nbsp;Ribbon如何实现客户端负载均衡</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#555555">●</span> &nbsp;Ribbon负载均衡策略解析</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#555555">●</span> &nbsp;Eureka集成Ribbon</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#555555">●</span> &nbsp;Spring-retry与Ribbon</td> 
+</tr> 
+<tr> 
+<td style="color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#555555">●</span> &nbsp;Ribbon常用参数解析</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>  --> 
+<!-- <tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"><strong>讲师介绍</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 15px 30px;">李刚, Pivotal高级解决方案架构师</td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;">李刚在加入Pivotal之前曾参与过金融行业系统开发，拥有开发大型金融系统和保险系统的经验。热爱开源贡献，是Spring Cloud以及Netflix Eureka开源项目贡献者。</td> 
+</tr>  --> 
+<tr> 
+<td colspan="3" style="padding-top:27px"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td width="240"></td> 
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="http://www.pivotal-china.com/html/event/reg_181116.html?from=groupmessage">立即报名</a></td> 
+<td width="240"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"><strong>技术白皮书下载：《新一代数据平台Greenplum 5.0》</strong></td> 
+</tr> 
+<tr> 
+<td colspan="3" style="line-height:1.5em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 25px 30px;">Pivotal 最近推出全球第一个开源、支持多云的高级分析数据平台——Pivotal Greenplum 5.0。 Pivotal Greenplum 不受限于基础架构，这意味着它是一种可完全移植的分析数据库软件解决方案，可部署在多云环境（公有云和私有云）中，也适用不同的本地配置。其大规模并行处理(MPP) SQL 的设计核心是一个称为 GPORCA 的新一代查询优化器。GPORCA 专为满足在多结构数据环境中进行高级分析的需求而设计，能够处理多种并发混合工作负载的复杂查询。与旧式MPP数据库中常用的传统 RDBMS 查询优化器相比，GPORCA 大幅度地提高了查询性能。这本白皮书重点介绍了 Greenplum 5.0 带来的多项产品改进和新增功能，以及多年来围绕该平台发展出的生态系统。</td> 
+</tr> 
+<!-- <tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 0px 30px;"> 
+欢迎小伙伴们加入课程讨论，与我们的技术专家互动分享。我们将继续开放线上抽奖，即刻报名，不要错过这次的课程哦！ </td> 
+</tr>  --> 
+<!-- <tr> 
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0px 30px 0px 30px;" align="center"> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/2018_01_11_content.jpg"> </td> 
+</tr> --> 
+<!-- <tr> 
+<td colspan="3" style="padding-bottom:25px;padding-top:30px"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+<tbody> 
+<tr> 
+<td width="240"></td> 
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="http://www.pivotal-china.com/html/event/reg_180910.html">立即报名</a></td> 
+<td width="240"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr>  --> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td><span style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></span></td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top"> 
+<!-- Start of footer --> 
+<!-- start of social links // --> 
+<!-- End of social links // --> 
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> <span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2018 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+<!--<p> --></td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of footer // --></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

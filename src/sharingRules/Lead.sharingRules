@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>AMER_ISR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing all AMER leads with ISRs.</description>
+        <label>AMER - ISR</label>
+        <sharedTo>
+            <role>AMER_ISR_Regional_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>AMER_Vice_President</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>APJ_ISR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing all APJ Leads with APJ ISRs</description>
+        <label>APJ - ISR</label>
+        <sharedTo>
+            <role>APJ_ISR</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>APJ_Vice_President</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEA_ISR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing of all EMEA Leads with EMEA ISRs.</description>
+        <label>EMEA - ISR</label>
+        <sharedTo>
+            <role>EMEA_ISR</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>EMEA_Vice_President</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>EMEA_ISR_DIR</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EMEA ISR DIR</label>
+        <sharedTo>
+            <role>EMEA_ISR_Director</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>EMEA_Vice_President</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Pivotal_Labs_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rule to share visibility of all Labs leads with all Labs users</description>
+        <label>Pivotal Labs Users</label>
+        <sharedTo>
+            <role>Pivotal_Labs_Users</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Pivotal_Labs_Users</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

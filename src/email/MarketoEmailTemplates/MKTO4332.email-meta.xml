@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Tech Workshops_Q3-416.Reminder - Liberty Global 11-2-1</name>
+    <style>none</style>
+    <subject>Liberty Global Data Science Technical Workshop Location &amp; Logistics</subject>
+    <textOnly>&lt;[[https://pivotal.io/event/data-science-workshops]]&gt;
+Hi {{lead.First Name:default=there}},
+
+ You are receiving this email because you have been registered for the Liberty Global 
+Pivotal Data Science Technical Workshop in Amsterdam, on November 3rd (8h30 - 12h30).   
+
+ Here are some important 
+details that you need to know prior to attending the workshop.  
+
+Location:
+Liberty Global
+Boeing Avenue 53 
+1119 PE Schiphol-Rijk
+The Netherlands
+Map &lt;[[https://www.google.sn/maps/place/Liberty+Global/@52.2770235,4.7448707,17z/data=!3m1!4b1!4m5!3m4!1s0x47c5e0b2a19f54e9:0xc59bf25f37bc82f8!8m2!3d52.2770235!4d4.7470594]]&gt;
+ 
+Your Pivotal instructor: Sarah Aerni &lt;[[https://www.linkedin.com/in/sarahaerni?authType=NAME_SEARCH&amp;authToken=BK0c&amp;locale=en_US&amp;trk=tyah&amp;trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A41444052%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1476615075472%2Ctas%3Asarah%20aerni]]&gt;
+ 
+Prepare your system for the workshop: If you are planning to follow the workshop labs, you will need to have a client ssh program installed. There are several open source / free programs available:
+
+ - Windows: Putty &lt;[[http://www.putty.org/]]&gt; or MobaXterm &lt;[[http://mobaxterm.mobatek.net/download.html]]&gt; (MobaXterm is 
+preferred)
+ - MacOS: Native built in 
+ - Linux: Native built in
+ - You are also welcome to use any commercial version you may have
+
+Please contact Marie-Jeanne Dougados at mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt; for additional questions. 
+
+ Kind Regards, 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

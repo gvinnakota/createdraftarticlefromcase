@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>Zuora__SubscriptionProductCharge__c.Zuora__Account__c</field>
+    </columns>
+    <columns>
+        <field>Zuora__SubscriptionProductCharge__c.Zuora__ProductSKU_Product__c</field>
+    </columns>
+    <columns>
+        <field>Zuora__SubscriptionProductCharge__c.Zuora__ProductSKU__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Zuora__SubscriptionProductCharge__c.Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Zuora__SubscriptionProductCharge__c.End_Date__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Zuora__SubscriptionProductCharge__c.Zuora__ProductSKU_Product__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>SSS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_CREATED_DATE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>6/27/2018 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Subscription Product and Charges</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Zuora__SubscriptionProductCharge__c@Zuora__SubscriptionProductCharge__c.Zuora__Subscription__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Zuora__SubscriptionProductCharge__c.Zuora__ChargedThroughDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

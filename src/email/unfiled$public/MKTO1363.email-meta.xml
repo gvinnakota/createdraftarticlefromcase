@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Email_GPDB Quarterly Newsletter_Q314.Email 1</name>
+    <style>none</style>
+    <subject>Data Science, Analytics, and Pivotal Greenplum DB Quarterly – July 2014</subject>
+    <textOnly>IN THIS ISSUE:
+ 
+ Data Science and Analytics News:
+
+
+ - Morgan Stanley Recognizes Pivotal Software with “CTO Award for Innovation” for Greenplum Database &lt;#article-A&gt;
+ - Using GPDB for Graph Analysis on Billions of Records for Customer Segmentation &lt;#article-B&gt;
+ - New Tricks for Old Data Scientists &lt;#article-C&gt;
+
+
+Pivotal Greenplum DB Product News:
+
+
+ - New Pivotal Query Optimizer Shows 5X Speed Improvement &lt;#article-D&gt;
+ - Open SSL Security Fixes &lt;#article-F&gt;
+
+ 
+
+
+
+ 
+ DATA SCIENCE AND ANALYTICS NEWS 
+
+
+ Morgan Stanley Recognizes Pivotal Software with “CTO Award for Innovation” for Greenplum Database 
+ 
+ At Morgan Stanley’s annual CTO Summit event in early June, Pivotal CEO Paul Maritz accepted their prestigious “CTO Award for Innovation”. &lt;http://blog.gopivotal.com/pivotal/news-2/pivotal-receives-morgan-stanleys-exclusive-cto-award-for-innovation-for-2014&gt;
+ 
+ Each year, Morgan Stanley 
+awards its ‘CTO Award for Innovation’ honoring a technology solution that has been deemed innovative and has made a significant impact on Morgan Stanley’s business.
+ 
+ In this case, the award recognizes the role that Pivotal Greenplum plays within the Morgan 
+Stanley’s next generation Big Data platforms for financial reporting and risk management, allowing massive scale while lowering the firm’s total cost of ownership. 
+ 
+
+
+
+
+ 
+ Using GPDB for Graph Analysis of Billions of Records for Customer Segmentation 
+ 
+ Pivotal customers routinely ask our data scientists and data engineers from Pivotal Data Labs to help them build models on large volumes of unexamined or under-examined datasets.
+ 
+ Typical challenges our customers need to overcome include:
+
+
+ - Data stores housed in different silos, making it impossible to integrate them. 
+ - A very high scale that makes it infeasible for customers to examine them with their current technologies.
+ - Data-driven approaches not yet part of the customer’s culture.
+
+
+
+PDL works with customers to solve challenges such as these in a range of applications from healthcare &lt;http://blog.gopivotal.com/pivotal/case-studies-2/data-science-labs-using-predictive-models-to-improve-vaccine-quality-and-production&gt; 
+to smart systems &lt;http://blog.gopivotal.com/pivotal/features/creating-the-digital-brain&gt; to security &lt;http://blog.gopivotal.com/pivotal/products/a-data-science-approach-to-detecting-insider-security-threats&gt;.
+ 
+ One common challenge facing companies in consumer-facing industries is linking data about customers across their different customer interaction systems. This problem typically occurs where consumers contact companies using a variety of modalities, such as through the website and call center. Linking the same individual across these systems proves valuable for providing a consistent, continuous experience for the customer, and tracking their behavior to perform accurate customer segmentation.
+ 
+ For one client, PDL approached this problem by ingesting and processing billions of records &lt;http://blog.gopivotal.com/pivotal/products/graph-analytics-for-identity-resolution-transforming-billions-of-customer-records-in-one-minute&gt; using the Pivotal Greenplum Database. The team joined siloed data sources from disparate lines of business using a graph-based approach. GPDB’s massively parallel processing query optimization engine enabling PDL to perform the distributed computations within the database engine so that sensitive personally identifiable information would remain secure. As a result, the client can now create up-to-date target marketing lists using their customer segmentation data model for target marketing in about one minute…(Read more &lt;http://blog.gopivotal.com/pivotal/products/graph-analytics-for-identity-resolution-transforming-billions-of-customer-records-in-one-minute&gt;).
+ 
+ See more articles about using GPDB in analytics and data science &lt;http://blog.gopivotal.com/tag/greenplum-database&gt;. 
+ 
+
+
+
+
+ 
+ New Tricks for Old Data Scientists 
+ 
+ Introducing new technology is rarely a trivial task, especially when you are working with experienced technologists such as data scientists. Resistance to change often becomes higher when a company employs lots of statisticians. Analysts fall in love with their tools and become accustomed to their tools’ limitations. Sometimes tools and techniques have been in place so long that a data science department doesn’t know what’s possible with latest technologies and state of the art practices.
+ 
+ Helping these kinds of customers achieve new breakthroughs is where Pivotal Data Labs (PDL) excels. Typical initial engagements with clients of PDL include:
+
+
+ - Creating custom analytics roadmaps
+ - Creating “art of possible” show cases with clients’ data and latest technologies
+ - Training and coaching clients on latest techniques while solving clients’ actual problems.
+
+
+Take the example of one recent client of PDL customer, a major healthcare provider with a large research division. This client is renown as a trailblazer in preventive healthcare and employs many accomplished clinicians and biostatisticians. Yet this enormously talented team was limited by their use of dated analytics tools and practices.
+ 
+ 
+ 
+ Figure 1. Example journey of a health care provider to improving their data science competency.
+ 
+ The client invited PDL to show them what was possible with their data in a 24-hour engagement. The team from PDL showed them how better technology would speed up discoveries by building three new models and two custom data applications in 24 hours. Next the client challenged the PDL team to improve the quality of one of the client’s models they had in production. In 3 weeks the Pivotal team generated hundreds of features from structured and semi-structured data sources and built an ensemble model that doubled the accuracy of their baseline model. In subsequent engagements PDL helped the client:
+
+
+ - Create effective visualizations and user experiences to make data and insights accessible to clinicians
+ - Showed how data science could impact other areas of the business
+ - Train in house data scientists in latest best practices and showed how to improve model accuracy for even their well-understood problems.
+
+
+If you would like to see what new breakthroughs your analysts and data scientists could achieve, contact Pivotal Data Labs &lt;https://www.gopivotal.com/agile/pivotal-data-labs&gt; for discovery workshop to discover 
+“art of the possible” with your data!
+ 
+ See more articles featuring the work of Pivotal Data Labs &lt;http://blog.gopivotal.com/tag/data-science&gt;!
+
+ 
+
+
+
+ 
+ PRODUCT NEWS 
+ 
+
+ New Pivotal Query Optimizer for GPDB Blows Away Benchmark 5X Faster 
+ 
+ Earlier this month, Pivotal Software announced benchmark results &lt;http://blog.gopivotal.com/pivotal/products/new-benchmark-results-pivotal-query-optimizer-speeds-up-big-data-queries-up-to-1000x&gt; for Pivotal Query Optimizer on Pivotal Greenplum Database and Pivotal HD. On GPDB, we are seeing individual query speeds up to 1000X faster, and in aggregate, the entire TCP-DS benchmark ran 5X faster.
+ 
+ 
+ 
+ Figure 2. TCP-DS performance testing results of Pivotal Greenplum with Pivotal Query Optimizer vs. Pivotal Greenplum with “planner” query optimizer. © 2014 ACM, used with permission.
+ 
+ If you would like to try out this amazing new technology before it is generally available in the upcoming version 5.0 release, you can sign up for the Early Access Program for Pivotal Greenplum Database. &lt;http://www.gopivotal.com/big-data/pivotal-greenplum-database/earlyaccess&gt;
+ 
+ Potential benefits include:
+
+
+ - Speeding up queries by an average of 5X or more
+ - Optimizing your analytic workloads
+ - A chance to work closely with Pivotal Greenplum Database development team
+
+
+A few requirements:
+
+
+ - You must have a development or test instance of Pivotal Greenplum Database hardware available onto which to install the early access version.
+ - You must be able to dedicate someone to testing and providing feedback with Pivotal development.
+ - Your company must sign an early customer access agreement.
+
+
+
+Sign up for early access today! &lt;http://www.gopivotal.com/big-data/pivotal-greenplum-database/earlyaccess&gt; 
+ 
+
+
+
+ 
+
+ GPDB Security Patches for OpenSSL Security Bugs 
+ 
+ On June 05, the Open SSL Project issued a security 
+advisory detailing several security vulnerabilities and fixes.
+ 
+ This finding affects GPDB software implementations &lt;http://www.gopivotal.com/security/cve-2014-0224&gt;. As a result, the development team has posted new versions of Greenplum Control Center and GPDB 4.3.1.0 on PivNet with fixes, and plans to post a new version of GPDB 4.2.8.0 by end of June.
+ 
+ Security notices and for Pivotal Software are posted at the Pivotal Application Security Team Site &lt;http://www.gopivotal.com/security&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

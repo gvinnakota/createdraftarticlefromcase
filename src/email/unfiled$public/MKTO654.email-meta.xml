@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Online_USRetailAppsReport_Q214.Confirmation</name>
+    <style>none</style>
+    <subject>Your link to the &quot;Retail Apps Report&quot; by Pivotal Labs</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Thank you for your interest in the &quot;U.S. Retail Apps Report 2014&quot; by Pivotal Labs.
+ 
+Click here to access the report. &lt;http://pivotallabs.com/wordpress/wp-content/uploads/2014/05/US-Retail-Apps-Report-2014-Pivotal-Labs.pdf&gt;
+ 
+If you have any questions, reply to this email and we&apos;ll respond right away.
+ 
+Sincerely,
+Imtiaz Jaffer
+Director of Marketing</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Cloud Native Workshop_Missouri_Q415.Follow Up - No show</name>
+    <style>none</style>
+    <subject>Sorry we missed you!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We’re sorry you were unable to attend the Cloud Native Workshop in St. Louis on December 10th.
+
+Workshop attendees got hands-on experience using Pivotal Cloud Foundry and Spring, and we invite you to do the same. Visit run.pivotal.io &lt;[[http://run.pivotal.io/]]&gt; to try Pivotal Web Services - simply upload your files and your app just works! Additionally, we’ve made the workshop presentations available here &lt;[[https://github.com/cbusch-pivotal/SpringCloudWorkshop]]&gt; so you can catch up on what you missed.
+
+Interested in learning more what being Cloud Native can do for your organization? Contact us &lt;[[mailto:block@pivotal.io]]&gt; to schedule a technical evaluation with our team.
+
+For upcoming events visit us at Pivotal.io &lt;[[http://pivotal.io/news-events]]&gt; and select the events tab. We look forward to seeing you soon!
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

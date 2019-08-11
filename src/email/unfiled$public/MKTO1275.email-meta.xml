@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Email Confirm - Singapore</name>
+    <style>none</style>
+    <subject>You are confirmed: Pivotal Cloud Platform Roadshow - Singapore</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for the upcoming Pivotal Cloud Platform Roadshow in Boston. Please find the event details below:
+
+Date: Thursday, November 6, 2014
+Time: 1.00pm for registration, Seminar 1.30pm-3.00pm, Seminar &amp; Workshop 1.30pm - 6pm
+Location: IDA Lab @ National Design Center #03-04 | 111 Middle Road, Singapore
+
+{{my.Save the Date - Boston:default=edit me}}
+
+Prior to the event, please create an account on Pivotal Network &lt;https://network.pivotal.io/&gt;. To fully participate in the workshop, bring your laptop with wireless connectivity enabled. 
+
+Questions? Please contact us via email &lt;mailto:pivotal-operations@pivotal.io&gt; or visit our website &lt;http://www.pivotal.io&gt;.
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

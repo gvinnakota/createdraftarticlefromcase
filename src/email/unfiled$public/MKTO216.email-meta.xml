@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Catalyst Partner Program.Partner Confirmation</name>
+    <style>none</style>
+    <subject>Thank you for your interest in the Pivotal Catalyst Partner Program</subject>
+    <textOnly>Thank you for your Inquiry
+Pivotal Catalyst Partner Program
+Hi {{lead.First Name:default=there}},
+You are receiving this email as a confirmation that we have received your application for the Pivotal Catalyst Partner Program.  We review all applications and will respond as soon as possible with an update. 
+This also acknowledges that you have agreed to the terms and conditions of the Catalyst Partner Program, which you can access here: http://www.gopivotal.com/partner-catalyst-terms &lt;http://www.gopivotal.com/partner-catalyst-terms&gt;. The program Master Agreement is not effective until Pivotal accepts your application and returns a fully executed agreement to you.
+The following information is attached to your application: 
+Partner Contact: {{lead.First Name:default=edit me}} {{lead.Last Name:default=edit me}} 
+Title: {{lead.Job Title:default=edit me}}
+Company: {{company.Company Name:default=edit me}}
+Address: {{lead.Address:default=edit me}}
+City: {{lead.City:default=edit me}}
+State: {{lead.State:default=edit me}}
+Postal Code: {{lead.Postal Code:default=edit me}}
+Country: {{lead.Country:default=edit me}}
+Email: {{lead.Email Address:default=edit me}}
+Phone: {{lead.Phone Number:default=edit me}}
+Thank you again for your interest in Pivotal and the Catalyst Partner Program. 
+ Sincerely, 
+ The Pivotal Business Development Team 
+ David Menninger and Jim Totte
+Check out Pivotal P.O.V.
+Visit our blog &gt;&gt; &lt;http://blog.gopivotal.com/&gt;
+Delivering Pivotal One
+Watch now &gt;&gt; &lt;gopivotal.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

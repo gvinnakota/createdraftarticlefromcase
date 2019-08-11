@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 1</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - February 2015</subject>
+    <textOnly>A belated Happy New Year from Pivotal Web Services. This is the first issue of “Push With Success” or PWS, a monthly newsletter that highlights what you can do with Pivotal Web Services. We hope you like it and find it useful. Please join in on the conversation at our Twitter handle (@pivotalws &lt;https://twitter.com/pivotalws&gt;) or via email &lt;mailto:admin@run.pivotal.io&gt;. Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you.
+
+Free SSL for Your PWS Apps and Custom Domains
+Cybersecurity is increasingly in the news. Our development team working on PWS knows this and they are working hard to improve this constantly. Most users know that a simple step to make your users interactions with your apps more secure is to add HTTPS. What you may not know is that you can add SSL to your PWS apps for free. For all your apps hosted in the ‘cfapps.io’ domain. Simply requesting your apps using ‘https’ will add transport layer encryption to calls made to and from your app. If your apps are using a custom domain, our partner Cloudflare  &lt;https://www.cloudflare.com&gt;offers free basic SSL for any website with their “Cloudflare Free” plan. Instructions on how to add Cloudflare to your domain can be found in this PWS Knowledge Base article &lt;http://docs.run.pivotal.io/marketplace/integrations/cloudflare/&gt;. With this free plan, some restrictions apply and details are available here &lt;https://www.cloudflare.com/plans&gt;.
+
+Hosting Wordpress on Pivotal Web Services (PWS)
+It’s one thing to host your app on PWS, but it’s not enough. You also have to talk about your apps hosted on PWS. More often than not, this has been done using Wordpress. PWS Support Engineer Dan Mikusa created a Cloud Foundry configured version of Wordpress that works on PWS. The reason a special version is needed for PWS is that Wordpress relies on persistent local disk which is not available on a PaaS environment. You can read more about getting Wordpress on PWS here &lt;http://blog.pivotal.io/cloud-foundry-pivotal/products/getting-started-with-wordpress-on-cloud-foundry&gt;.
+
+Check out our new Services
+In 2014 we added two new marketplace services cine.io &lt;https://www.cine.io/&gt; and pubnub.com &lt;http://www.pubnub.com/&gt;. Cine.io does video encoding in the cloud. PubNub is a messaging provider that enables your app instances to communicate with each other fast and reliably. Login &lt;https://login.run.pivotal.io/login&gt; to check them out and if you don’t have a PWS account you can get a free trial 
+account here.
+ 
+
+Best Regards,
+
+Charles Wu and the Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

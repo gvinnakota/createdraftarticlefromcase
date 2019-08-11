@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Webinar_UK_The Cloud Native Journey Q116.Confirmation</name>
+    <style>none</style>
+    <subject>You are Confirmed!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for registering for the upcoming Cloud Native Journey Webinar on Tuesday, February 16, 2016. Please see event details below.
+
+Date: February 16, 2016
+Time: 10AM GMT
+Join the Session &lt;[[http://event.on24.com/wcc/r/1112697/FB0B9EC23F6D2E92ACF293C6966A5131]]&gt;
+{{my.Save the Date - UK CNJ}}
+
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+
+We Look Forward to you Joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,70 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="PortalNewCaseController" >
+    <ltng:require scripts="{!join(',', $Resource.jquery, $Resource.sendsafely)}"  />
+    <aura:attribute name="cObj" type="case" default="{'sobjectType': 'Case',}"/>
+	<aura:attribute name="origin" type="String"/>
+	<aura:attribute name="accounts" type="account[]"/>
+    <aura:attribute name="recordType" type="String"/>
+    <aura:attribute name="contacts" type="contact[]"/>
+    <aura:attribute name="cUser" type="User"/>
+    <aura:attribute name="rUser" type="String" default="Pivotal - Community Registered User"/>
+    <aura:attribute name="cAdmin" type="String" default="Pivotal - Community Manager"/>
+    <aura:attribute name="pUser" type="String" default="Pivotal - Community User"/>
+  
+    <!-- Drop Zone Attributes -->
+	<aura:attribute name="widget" type="Object"/>
+    <aura:attribute name="status" type="boolean"/>
+    <aura:attribute name="accsplIds" type="String"/>
+    <!-- Drop Zone Attributes End-->
+
+    <aura:handler name="init"  value="{!this}" action="{!c.setInitialData}"/>
+   
+    <div>
+           <label id="lab"><abbr class="slds-required" title="required">*</abbr>Account Name </label>
+              <aura:if isTrue="{!v.accounts.length > 1}">
+                <div> 
+                    <ui:inputSelect aura:id="accountIds" class="slds-input"
+                      labelClass="slds-form-element__label" required="true" change="{!c.onChangeOfAccount}">            
+						<ui:inputSelectOption text="None" label="Please Select"/>
+                    	<aura:iteration items="{!v.accounts}" var="acc">
+							<ui:inputSelectOption text="{!acc.Id}" label="{!acc.Name}" />
+						</aura:iteration>
+					</ui:inputSelect>               
+                </div>
+                <aura:set attribute="else">
+                   <div>
+                       <ui:outputText aura:id="accountName" value="{!v.accounts[0].Name}"/>
+                   </div>
+   			   </aura:set>
+            </aura:if>
+         </div>&nbsp;
+    <div> 
+           <label id="lab"><abbr class="slds-required" title="required">*</abbr>Contact Name </label>
+           <aura:if isTrue="{!v.contacts.length > 1}">
+                <div> 
+                    <ui:inputSelect aura:id="contactIds" class="slds-input"
+                      labelClass="slds-form-element__label" required="true" change="{!c.onValueChange}">            
+						<ui:inputSelectOption text="None" label="Please Select"/>	
+                    	<aura:iteration items="{!v.contacts}" var="con">
+							<ui:inputSelectOption text="{!con.Id}" label="{!con.Name}" />
+						</aura:iteration>
+					</ui:inputSelect>               
+                </div>
+               <aura:set attribute="else">
+                   <div>
+                       <ui:outputText aura:id="contactName" value="{!v.contacts[0].Name}"/>
+                   </div>
+   			   </aura:set>
+            </aura:if>
+         </div>&nbsp;
+    <div class="form-group">
+		<label id="lab"><abbr class="slds-required" title="required" >*</abbr>Subject</label>
+		<ui:inputText class="form-control" aura:id="sub" value="{!v.cObj.Subject}"  required="true" change="{v.emptyCheck}"/>
+    </div>&nbsp;   
+     <div>
+		<label id="lab"><abbr class="slds-required" title="required">*</abbr>Description</label>
+            <ui:inputTextArea class="form-control" value="{!v.cObj.Description}" required="true"/>
+    </div>&nbsp;
+
+     <div class ="senddiv" id="dropzone-replacement-div"></div>
+
+</aura:component>

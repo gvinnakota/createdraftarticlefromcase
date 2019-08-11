@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_WebsiteManagement_CASLOptIn.Labs_CASL Opt-In Email</name>
+    <style>none</style>
+    <subject>We request your consent for future email communications</subject>
+    <textOnly>Hello {{lead.First Name:default=}},
+ 
+You are important to us and we value our relationship with you. We share information on the latest industry news, announcements, thought leadership and insights, as well invites to events, learning sessions and networking opportunities. With Canada&apos;s recent anti-spam law (CASL), we require your consent to send you electronic messages. 
+ 
+If you wish to receive electronic communications from Pivotal Labs, please click the link below to opt-in.
+ 
+YES, I CONSENT TO RECEIVE EMAILS FROM PIVOTAL LABS &lt;http://play.gopivotal.com/consent-confirmation.html&gt;
+ 
+You may withdraw your consent at anytime. If you have any questions regarding CASL or Pivotal Labs&apos; email policies, please reply to this email.
+ 
+Sincerely,
+The Pivotal Labs team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

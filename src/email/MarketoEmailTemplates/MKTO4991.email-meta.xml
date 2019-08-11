@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_dotNET CloudNative Bootcamp_Seattle_Q217.dotNet Post Event - No sh</name>
+    <style>none</style>
+    <subject>We Missed You at the Cloud-Native .NET Bootcamp</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+
+Thank you for registering for the first Cloud-Native .NET Bootcamp in Seattle. We missed seeing you there, and you missed lots of engaging conversation in the room. It was impressive to see so many folks successfully push modern applications to Pivotal Cloud Foundry.  
+If you’re considering a cloud-native application style for your new and existing .NET applications, here are a few resources that may help you out:
+
+
+
+ - 
+https://pivotal.io/cloud-native &lt;[[https://pivotal.io/cloud-native]]&gt;. This gives you a detailed look at what makes up a cloud-native application.
+
+
+ - 
+https://pivotal.io/replatforming &lt;[[https://pivotal.io/replatforming]]&gt;. Of course you’re not just dealing with new applications, but existing ones as well. We’ve got some guidance on replatforming those valuable assets.
+
+
+ - 
+https://pivotal.io/platform &lt;[[https://pivotal.io/platform]]&gt;. Pivotal Cloud Foundry gives you a great place to run both new and existing .NET apps, and includes all sorts of capabilities to keep your app online and performing well.
+
+
+ - 
+https://pivotal.io/platform/services &lt;[[https://pivotal.io/platform/services]]&gt;. A platform won’t do EVERYTHING you need, so that’s why a healthy ecosystem matters. Check out the constantly-updated list of partner integrations.
+
+
+ - 
+http://steeltoe.io/ &lt;[[http://steeltoe.io/]]&gt;. Steeltoe really does improve how  your .NET Framework and .NET Core applications operate. Take a look at the docs and download the latest packages. 
+
+
+
+Please don’t hesitate to reach out to me at rseroter@pivotal.io &lt;[[mailto:rseroter@pivotal.io]]&gt; or your Pivotal rep if you’d like further help with Cloud Foundry, or have feedback that can make any of our products better.
+
+ 
+
+Richard Seroter &amp; The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

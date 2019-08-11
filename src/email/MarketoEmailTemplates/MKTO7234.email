@@ -1,0 +1,224 @@
+<html>
+<head>
+<style>body{margin:0;}</style> 
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" bgcolor="white" align="center"> 
+<table width="100%" align="center" bgcolor="#e5f7f6" style="border-collapse:collapse; " cellpadding="0" cellspacing="0" border="0" class="full-block"> 
+<tbody>
+<tr> 
+<td align="center"> 
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="30"> </td> 
+<td> <img width="540" src="https://connect.pivotal.io/rs/625-IUJ-009/images/lines-2x.png"> <br><br><br><br> </td> 
+<td width="30"> </td> 
+</tr> 
+<tr> 
+<td width="30"> </td> 
+<td> 
+<table style="border-spacing: 0"> 
+<tbody> 
+<tr> 
+<td> <img width="151" src="https://connect.pivotal.io/rs/625-IUJ-009/images/intersect-top@2x.png"> </td> 
+<td width="299"> </td> 
+<td> <img width="90" src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal@2x.png"> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+<td width="30"> </td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td> 
+<div class="mktEditable" id="headline" style="max-width:75%;">
+<p style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 40px; font-weight: 600; line-height: 1.1em; margin: 20px 0; color: #00253e;">Facebook and the limits of DIY distributed systems<br></p>
+</div> <br> 
+<div class="mktEditable" id="banner-main">
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;"><em>“Yesterday, as a result of a server configuration change, many people had trouble accessing our apps and services.”</em></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">Facebook’s <a href="https://twitter.com/facebook/status/1106229690069442560" target="_blank" id="" style="color: #000000;">explanation</a> of its <a href="https://www.bloomberg.com/news/articles/2019-03-13/facebook-and-instagram-outage-spreads-to-users-across-the-globe" target="_blank" id="" style="color: #000000;">14-hour outage last week</a> sounds simple enough, but very possibly belies an incredibly complex series of failures across its incredibly complex infrastructure that spans data centers across the world. Fourteen hours is an awfully long time for a company whose systems are more or less designed to maximize uptime, and that employs some of the smartest software engineers on the planet.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">But Facebook is hardly alone in suffering lengthy outages <a href="https://www.theregister.co.uk/2017/03/02/aws_s3_crash_result_of_fatfingered_command/" target="_blank" id="" style="color: #000000;">caused by seemingly inconsequential things</a>. Just about every large website, web company and cloud provider has been through the same thing, including AWS, Google, Microsoft and Apple. At their scale and with the complexity of their architectures—physical and software—all the automation and engineers in the world sometimes aren’t enough. One thing goes wrong, and it cascades.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">This is one of the reasons why some people have a difficult time understanding, or at least accepting, the rush toward microservices architectures and all things Kubernetes. As the saying goes, “Shit happens.” When it does, <a href="http://www.craigkerstiens.com/2019/03/13/give-me-back-my-monolith/" target="_blank" id="" style="color: #000000;">it’s probably easier to debug a relatively simple monolith</a> than to track down the cause across a collection of interconnected microservices running on ever-changing infrastructure.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">That being said, when a company’s software footprint, user count and ambitions reach a certain scale—things that are almost certainly true for any large enterprise—<a href="https://content.pivotal.io/intersect/microservices-are-not-your-destination" target="_blank" id="" style="color: #000000;">microservices (done right) are almost certainly the right option</a> for bringing order and agility to its IT organization. Depending on its application portfolio, Kubernetes might be, too. Companies like Facebook and Google don’t operate globally distributed systems and build the tools they build because they want to; they do it because they have to.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">Of course, there are also business benefits to these types of architectures when they’re done well. Google’s <a href="https://www.geekwire.com/2019/stadia-google-hopes-launch-lucrative-video-game-market-cloud-computing-era" target="_blank" id="" style="color: #000000;">just-announced streaming gaming service</a> is perhaps an extreme example, but the software engineering culture and technologies the company has put in place do help it jump into new digital opportunities when it sees an opportunity.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">However, the trick for most mainstream enterprises is taking advantage of the architectural lessons large web companies have taught the world (and the software they’ve developed) without taking on their do-it-yourself and/or <em>not-built-here</em> attitudes. Finding the budget, the people and, frankly, the institutional DNA to tackle every part of enterprise IT is hard work (thus the <a href="https://www.cnbc.com/2019/03/15/pagerduty-files-to-go-public.html" target="_blank" id="" style="color: #000000;">upcoming PagerDuty IPO</a>). For example, standing up a Kubernetes cluster might be easy enough; operating it and all the complementary components at any reasonable scale, security level, etc., can prove to be a different story.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">That’s why there’s <a href="https://redmonk.com/sogrady/2019/03/15/cloud-open-source-powder-keg/" target="_blank" id="" style="color: #000000;">a raging debate over open source licensing</a> happening right now, but the gist of the argument is who has the right to serve enterprise customers with commercial versions of popular projects.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">The great message of Amazon CTO Werner Vogels in the early days of cloud computing was that companies shouldn’t invest in “undifferentiated heavy lifting,” by which he meant managing data centers and provisioning servers. The message seems to have resonated (if the success of AWS and its peers is any indicator), only now that heavy lifting has shifted to operating complex data center software and application architectures. Technologies like Kubernetes (or Hadoop or OpenStack before that) might not cost anything to install, but that’s where the free lunch ends.</p> 
+<p style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 1.5em; color: #00253e;">Perhaps the <a href="https://www.wsj.com/articles/facebook-and-instagram-suffer-lengthy-outages-11552539752" target="_blank" id="" style="color: #000000;">rash of recent outages at webscale services</a>, including Facebook, will be a useful reminder for enterprises to not fall into that old trap. <br></p>
+</div> <br><br><br> </td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody>
+</table> 
+<table width="600" cellpadding="0" align="center" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;"> 
+<tbody> 
+<tr> 
+<td width="30" style="background: white;"></td> 
+<td height="40" style="background: white;"></td> 
+<td width="30" style="background: white;"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td style="line-height:1.62em; color:#13377D; font-size: 19px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:300;"> <br> 
+<div class="mktEditable" id="content"> 
+<div style="font-family: Helvetica, Arial, sans-serif; background: #f7e16b; padding: 0px 10px; font-weight: 600; font-size: 14px; width: 200px; max-width: 200px; color: #00253e;">
+<span style="color: #000000;">WHAT'S NEW ON INTERSECT</span>
+</div> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><a style="font-weight: 600; color: #000000;" href="https://content.pivotal.io/intersect/welcome-to-intersect"></a><strong><a href="https://content.pivotal.io/intersect/how-ceos-can-drive-digital-innovation-without-learning-to-code" target="_blank" style="color: #000000;">How CEOs can drive digital innovation without learning to code</a></strong></span><br></p> 
+<div style="font-family: Helvetica, Arial, sans-serif; background: #f7e16b; padding: 0px 10px; font-weight: 600; font-size: 14px; width: 275px; max-width: 275px; color: #00253e;">
+<span style="color: #000000;">WHAT YOU NEED TO KNOW THIS WEEK</span>
+</div> 
+<table> 
+<tbody> 
+<tr> 
+<td width="30" style="background: white;"></td> 
+<td></td> 
+<td height="20" style="background: white;"></td> 
+<td></td> 
+<td width="30" style="background: white;"></td> 
+</tr> 
+<tr> 
+<td valign="top"><span style="color: #000000;"><img width="30" style="padding-top: 5px;" src="https://connect.pivotal.io/rs/625-IUJ-009/images/1-2x.png"></span></td> 
+<td width="25"></td> 
+<td width="180" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-weight: 600; color: #00253e; font-size: 19px;"><span style="color: #000000;">You can't take security too seriously</span><br></td> 
+<td width="20"></td> 
+<td width="263"> <p style="line-height: 1.3em; color: #00253e; font-size: 14px; margin-top: 0; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong><a href="https://www.bloomberg.com/news/articles/2019-03-19/norsk-hydro-ransomware-attack-is-severe-but-all-too-common" target="_blank" id="" style="color: #000000;">Norsk Hydro ransomware attack is ‘severe’ but all too common</a> (Bloomberg): </strong>These stories should be terrifying, and hopefully inspiring, as well. As in, they should inspire companies to get proactive on automating security tasks where possible, and probably on training staff to be safe.</span><br><br><span style="color: #000000;"><strong><a href="https://www.zdnet.com/article/marriott-ceo-shares-post-mortem-on-last-years-hack/" target="_blank" id="" style="color: #000000;">Marriott CEO shares post-mortem on last year’s hack</a> (ZDNet): </strong>There’s a lot of blame to go around when talking about a years-long infiltration, but the major takeaway is to be aggressive about identifying breaches and closing avenues of attack.</span></p> <p style="line-height: 1.3em; color: #00253e; font-size: 14px; margin-top: 0; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong style="color: #00253e; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; 
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff;"><a href="https://www.itprotoday.com/data-security-and-encryption/boxcoms-good-intentions-take-bad-turn" target="_blank" id="" style="color: #000000;">Box.com’s good ambitions take a wrong turn</a> (ITPro Today): </strong>No evidence of an actual breach, but this is still a good example of how simple things (like access settings and file names) can expose sensitive data.</span></p> </td> 
+</tr> 
+<tr> 
+<td width="30" style="background: white;"></td> 
+<td></td> 
+<td height="40" style="background: white;"></td> 
+<td></td> 
+<td width="30" style="background: white;"></td> 
+</tr> 
+<tr> 
+<td valign="top"><span style="color: #000000;"><img width="30" style="padding-top: 5px;" src="https://connect.pivotal.io/rs/625-IUJ-009/images/2-2x.png"></span></td> 
+<td width="25"></td> 
+<td valign="top" width="180" style="font-weight: 600; color: #00253e; font-size: 19px; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;">Applications are the future of AI ...</span><br></td> 
+<td width="20"></td> 
+<td valign="top" width="263"> <p style="line-height: 1.3em; color: #00253e; font-size: 14px; margin-top: 0; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong><a href="https://www.wsj.com/articles/hr-departments-turn-to-ai-enabled-recruiting-in-race-for-talent-11552600459" target="_blank" id="" style="color: #000000;">HR departments turn to AI-enabled recruiting in race for talent</a> (Wall Street Journal):</strong> This is still not a great idea for a lot of roles, but the desire for automation is understandable. And where things can be sorted by features, there will be machine learning.</span><br><br><span style="color: #000000;"><strong><a href="https://techcrunch.com/2019/03/19/salesforce-update-brings-ai-and-quip-to-customer-service-chat-experience/" target="_blank" id="" style="color: #000000;">Salesforce update brings AI and Quip to customer chat experience </a>(TechCrunch):</strong>&nbsp; This speaks to the broader point about not doing it yourself if you don’t need to. If CRM is an important function, let Salesforce invest in building AI capabilities in that area.</span><br><br><span style="color: #000000;"><strong><a href="https://www.bloomberg.com/news/articles/2019-03-19/cisco-taps-ai-to-make-conference-calls-more-productive" target="_blank" id="" style="color: #000000;">Cisco taps AI to make conference calls more productive</a> (Bloomberg):</strong> This particular idea might not set the world on fire, but it’s a step in the right direction because there definitely are ways to make conference calls more productive with AI.</span><br></p> </td> 
+</tr> 
+<tr> 
+<td width="30" style="background: white;"></td> 
+<td></td> 
+<td height="40" style="background: white;"></td> 
+<td></td> 
+<td width="30" style="background: white;"></td> 
+</tr> 
+<tr> 
+<td valign="top"><span style="color: #000000;"><img width="30" style="padding-top: 5px;" src="https://connect.pivotal.io/rs/625-IUJ-009/images/3-2x.png"></span></td> 
+<td width="25"></td> 
+<td valign="top" width="180" style="font-weight: 600; color: #00253e; font-size: 19px; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;">... because building internal AI teams is hard</span><br></td> 
+<td width="20"></td> 
+<td valign="top" width="263"> <p style="line-height: 1.3em; color: #00253e; font-size: 14px; margin-top: 0; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong><a href="https://www.zdnet.com/article/too-many-silos-for-artificial-intelligence/" target="_blank" id="" style="color: #000000;">Artificial intelligence progress gets gummed up in silos and cultural issues</a> (ZDNet):</strong> Let’s just call this the story with everything in technology for the past couple of decades. Cloud, AI, microservices, data—they’re all limited in effectiveness by poor culture and walled-off data.</span><br><br><span style="color: #000000;"><strong><a href="https://hbr.org/2019/03/the-ai-roles-some-companies-forget-to-fill" target="_blank" id="" style="color: #000000;">The AI roles some companies forget to fill</a> (Harvard Business Review):</strong>&nbsp;This is a good list, largely focused around managing data and data systems. “Big data” might not have panned out as planned, but its lessons around getting data in order should be heeded.</span></p> <p style="line-height: 1.3em; color: #00253e; font-size: 14px; margin-top: 0; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: 
+none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; float: none; display: inline !important;"><strong><a href="https://www.businessinsider.com/cleveland-clinic-artificial-intelligence-center-2019-3" target="_blank" id="" style="color: #000000;">Cleveland Clinic launches the Center for Clinical Artificial Intelligence</a> (Business Insider):</strong> The big word of caution on projects like this is jumping into “centers of excellence” without having the tech side sorted out. That can lead to good ideas dying on the vine.</span></p> </td> 
+</tr> 
+<tr> 
+<td valign="top"></td> 
+<td width="25"></td> 
+<td valign="top" width="180" style="font-weight: 600; color: #00253e; font-size: 19px; font-family: Helvetica, Arial, sans-serif;"></td> 
+<td width="20"></td> 
+<td valign="top" width="263"> <p style="line-height: 1.3em; color: #00253e; font-size: 14px; margin-top: 0; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong></strong></span><br></p> </td> 
+</tr> 
+</tbody> 
+</table> 
+<div style="font-family: Helvetica, Arial, sans-serif; background: #f7e16b; padding: 0px 10px; font-weight: 600; font-size: 14px; width: 314px; max-width: 314px; color: #00253e;">
+<span style="color: #000000;">OTHER RESOURCES WORTH CHECKING OUT</span>
+</div> 
+<p style="color: #00253e; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong><a href="https://info.dynatrace.com/global_all_whitepaper_cloud_complexity_report_11870_registration.html" target="_blank" id="" style="color: #000000;">Cloud complexity report</a> (Dynatrace)</strong></span></p> 
+<p style="color: #00253e; font-family: Helvetica, Arial, sans-serif;"><span style="color: #000000;"><strong><a href="https://content.pivotal.io/analyst-reports/the-451-take-on-cloud-native-truly-transformative-for-enterprise-it" target="_blank" id="" style="color: #000000;">The 451 take on cloud-native: truly transformative for enterprise IT</a> (451 Group)</strong><em>&nbsp;(no registration required)</em></span></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><strong><a href="https://google.qualtrics.com/jfe/form/SV_0v2VZMeA2Eha365?sp=11" target="_blank" id="" style="color: #000000;">Accelerate State of DevOps survey</a> (DORA / Google)</strong></span></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><strong><a href="https://www.gartner.com/document/3904673" target="_blank" id="" style="color: #000000;">8 reasons more CEOs will be fired over cybersecurity incidents</a> (Gartner)&nbsp;</strong></span></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><strong><a href="https://www.gartner.com/document/3905064" target="_blank" id="" style="color: #000000;">Five questions to answer for your first AI project</a> (Gartner)</strong></span><br></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><strong><a href="https://www.gartner.com/document/3904773" target="_blank" id="" style="color: #000000;">Toolkit: Strategic industry maps of AI use cases</a> (Gartner)</strong></span></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><strong><a href="https://www.forrester.com/report/Scaling+Agile+Can+The+Spotify+Approach+Work+For+You/-/E-RES144558" target="_blank" id="" style="color: #000000;">Scaling agile: Can the Spotify approach work for you?</a> (Forrester)</strong></span></p> 
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00253e;"><span style="color: #000000;"><strong><a href="https://www.forrester.com/report/Assess+The+PainGain+Tradeoff+Of+Multicloud+Strategies/-/E-RES143731" target="_blank" id="" style="color: #000000;">Assess the pain-gain tradeoff of multicloud strategies</a> (Forrester)</strong></span></p> 
+</div> </td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td height="70"></td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody>
+</table> 
+<table width="100%" bgcolor="#ededee" style="border-collapse:collapse; " align="center" cellpadding="0" cellspacing="0" border="0" class="full-block"> 
+<tbody>
+<tr> 
+<td> 
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;"> 
+<tbody> 
+<tr> 
+<td height="50"></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+<tr> 
+<td width="46"></td> 
+<td style="display: inline-block;"> <a href="https://twitter.com/pivotal" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-twitter-gray-30.png" alt="Follow us on Twitter" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="http://www.linkedin.com/company/3048967" target="_blank"> <img src="https://connect.pivotal.io/rs/pivotal/images/icon-linkedin-gray-30.png" alt="Join the conversation on LinkedIn" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="https://www.facebook.com/pivotalsoftware" target="_blank"> <img src="http://connect.pivotal.io/rs/pivotal/images/icon-facebook-18.png" alt="Like us on Facebook" border="0"> </a> </td> 
+<td width="61"></td> 
+<td style="display: inline-block;"> <a href="http://www.youtube.com/gopivotal" target="_blank"> <img src="https://connect.pivotal.io/rs/pivotal/images/icon-youtube-38.png" alt="Visit our YouTube channel" border="0"> </a> </td> 
+<td width="46"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+<td></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of social links // --> 
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee"> 
+<tbody> 
+<tr> 
+<td align="center" valign="top">
+<!-- Start of footer --> 
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="color:#999999; font-size:12px; line-height:18px;"> <p style="margin:0">&nbsp;</p> <p style="color:#00d5c1; text-decoration:none; font-size:16px;font-weight:600;margin:0;font-family:Helvetica, Arial, sans-serif"><a href="https://pivotal.io" style="color:#00d5c1; text-decoration:none;">pivotal.io</a></p> </td> 
+<td width="30"></td> 
+</tr> 
+<tr> 
+<td width="30"></td> 
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:11px; line-height:1.3em;font-family: Helvetica, Arial, sans-serif;">Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.<br> © 2019 Pivotal Software, Inc. All rights reserved. 875 Howard Street, Fifth Floor, San Francisco, CA 94103. Published in the USA. <a href="https://pivotal.io/unsubscribe" style="color:#00d5c1; text-decoration:none;">Unsubscribe</a>. <a href="https://pivotal.io/subscription-management" style="color:#00d5c1; text-decoration:none;">Manage your subscription preferences</a>.</td> 
+<td width="30"></td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- End of footer // --> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>
+</body>
+</html>

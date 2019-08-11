@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Roadshow_Benchmark Breakfast_Australia_Q318.Confirmation - Melbourne</name>
+    <style>none</style>
+    <subject>Pivotal Registration Confirmation - 25 October 2018</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Thank you for registering for the upcoming Pivotal Executive Breakfast - Innovating at Startup Speed in a Software-Driven World.
+
+Date: Thursday, 25th October 2018
+Time: 8:30am - 10am (registration opens from 8am)
+Location: White Lane, 31 Flinders Lane, Melbourne 3000
+
+Should you have any questions or would like more information about this event, please email us at communications-apj@pivotal.io.
+
+We look forward to seeing you there.
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

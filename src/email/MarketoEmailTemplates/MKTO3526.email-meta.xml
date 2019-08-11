@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Spring Boot and Ratpack Web Framework.Reminder</name>
+    <style>none</style>
+    <subject>Webinar Reminder:  Spring Boot and Ratpack Web Framework</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for tomorrow&apos;s webinar Spring Boot and Ratpack Web Framework on Thursday, March 31, 2016.
+
+Please see event details below:
+
+Date: Thursday, March 31, 2016
+
+Time: 3:00PM (London, BST)
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1153850/043C4F1CF3A8DD7A9F15F8FC987E7707]]&gt;
+
+Audio Information:
+
+This webinar will be streaming live via your computer speakers. 
+
+
+
+We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Content Syndication_Gartner_Application Platforms_Q416.Invite to read 1-1</name>
+    <style>none</style>
+    <subject>Complimentary Report: Gartner’s Market Guide for Application Platforms</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+
+We invite you to read Gartner’s Market Guide for Application Platforms &lt;[[https://pivotal.io/gartner-market-guide-for-application-platforms]]&gt; to learn about the state of the Application Platform-as-a-Service 
+(aPaaS) market, and explore key findings and recommendations. 
+
+ To meet their digital business requirements, companies are looking for platforms that support continuous innovation, developer velocity, DevOps, and new architectural paradigms such as microservices and cloud-native architectures. One important finding of this Market Guide is that as Java EE and other three-tier frameworks, such as ASP.NET &lt;[[ASP.NET]]&gt;, fade in relevance, application leaders must build a strategy which includes alternative platforms that support cloud-native applications. 
+
+ In this report, Gartner’s Anne Thomas and Aashish Gupta provide an overview of application platform strategies and capabilities to help you choose the right one for your modernization initiatives.
+ 
+View the Report&lt;[[https://pivotal.io/gartner-market-guide-for-application-platforms]]&gt;
+
+Sincerely,
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

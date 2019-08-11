@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.1-29-2015</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No.2</subject>
+    <textOnly>VOL. 3, NO. 2
+Thursday, January 29, 2015
+Editor Welcome: Pocket Full of Opportunity &lt;#editor-welcome&gt;
+Business Update: Closing 2014 and the Promise of 2015 &lt;#business-update&gt;
+Product Update: App Fabric Springs into 2015 &lt;#product-update&gt;
+Agile Update: Toronto 2015: Supercharging the Mobile Enterprise &lt;#agile-update&gt;
+People Update: Shaping Momentum into Sales &lt;#people-update&gt;
+My Name Is... Greg Chase &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Pocket Full of Opportunity
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+The crank is already turning hard in 2015 in our software factory, and early outcomes are promising. In this issue, CFO Robert O’Donovan recaps a commanding fourth quarter for Pivotal, and what the business has already gained in 2015 from last year’s strategic decisions. The App Fabric returns in 2015 in top form and focused on Spring, while Pivotal Labs gives us more examples of why it continues to appeal to the world’s most visible and social brands.
+ 
+ We have an embarrassment of riches: Our latest press release &lt;http://www.pivotal.io/platform-as-a-service/press-release/pivotal-cloud-foundry-record-breaking-fastest-first-year-sales-growth-for-an-open-source-product&gt; captures the new sizzle in enterprises voting with their feet for a new platform to create 
+value, giving Pivotal Cloud Foundry the fastest-growing first-year sales growth for an open source product. Programmer, erstwhile Dungeon Master (for you fellow D&amp;D &lt;https://en.wikipedia.org/wiki/Dungeons_%26_Dragons&gt; travelers) and industry analyst heavyweight Michael Cote  &lt;http://blog.pivotal.io/cloud-foundry-pivotal/pivotal-people/pivotal-people-michael-cote-on-joining-pivotal-and-building-better-software&gt;joins the Pivotal Technical Marketing team; Pivotal Chicago officially opens its doors; and the Worldwide Sales Kick-Off &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015&gt; is just around the corner.
+ 
+ Finally, tell your customers and friends the Pivotal store &lt;http://store.pivotal.io/&gt; is here! Stop in and snag the goodies.
+ 
+ Enjoy.
+BUSINESS UPDATE
+ Closing 2014 and the Promise of 2015
+ Robert O’Donovan &lt;https://gopivotal-com.socialcast.com/users/950116-robertodonovan&gt;, Chief Financial Officer, Pivotal
+We’ve closed the books on a critical year for Pivotal and have achieved, among many successes, several important milestones:
+
+
+ - Transitioned our business to a subscription model;
+
+ - Brought flagship products, Pivotal Cloud Foundry &lt;http://info.pivotal.io/x0I0000E2270NAU0VCoY5Jl&gt; (PCF) and Pivotal Big Data Suite &lt;http://www.pivotal.io/big-data/pivotal-big-data-suite&gt; (BDS) to market; and
+ - Launched the Cloud Foundry Foundation &lt;http://cloudfoundry.org/about/index.html&gt; – the global standard for an open platform and how it is governed – with over 45 member companies.
+
+
+
+We start 2015 from a position of strength. Both PCF and BDS, our big subscription products that were introduced around the middle of 2014, exceeded expectations. We secured nearly 100 customer wins since these products became generally available, and the Field closed the year with an exceptional fourth quarter that allowed Pivotal to achieve its first ever quarter of more than $100M in bookings – a roughly 80% year-over-year increase.
+ 
+ 
+All of this gives us great financial momentum into 2015, providing the building blocks for our story to becoming IPO-worthy. We’re poised to rapidly grow the subscription business we started. This means walking into 2015 with more than $30M in recurring subscription revenues already in the bag (in contrast to 2014 where we started with very little recurring subscription revenues).
+ 
+ We expect this recurring revenue to grow substantially as we expand our PCF and BDS 
+footprints. And we’re using the excellent sales momentum from Pivotal Labs and our belief in agile development methods to augment Pivotal Labs’ role of pulling in and driving platform and data sales. We’ve further created an attainable three-year financial plan that spells out a great growth story. It rests on successful execution, robust R&amp;D in core product areas that we expect to accelerate sales growth and prudent expense management.
+ 
+ We have a growing catalogue of dramatic transformation stories that tells us our strategy resonates with customers – from CoreLogic &lt;https://www.youtube.com/watch?v=_PWzVwytrX4&gt; to ADP &lt;https://gopivotal-com.socialcast.com/topics/adp&gt; to many others (you can find the whole 
+rich catalogue in Customer Marketing &lt;https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/&gt;). All share a common theme of one part of our business making the case for investment in our other parts – propelling the powerful trifecta around PaaS, data and agile development.
+ 
+ Finally, while EBIT (earnings before interest and taxes) is a key measure of profitability, we 
+recognize that the rotation to a subscription model, combined with increased investments in strategic R&amp;D, will result in continued losses in the short term. However, excellent expense management in 2014 kept us near our financial plan, and we are confident in our plan to achieve profitability.
+ 
+ I’m extremely excited about 2015 and beyond for Pivotal. Growing Pivotal Big Data Suite and Pivotal Cloud Foundry will expand our base of predictable recurring revenues, while Pivotal Labs’ ability to pull through investment across Pivotal products is another accelerator. If we work hard and hit these notes, becoming IPO-worthy is a story that will write itself!
+PRODUCT UPDATE
+ App Fabric Springs into 2015
+ Ryan Morgan &lt;https://gopivotal-com.socialcast.com/users/914989-ryanmorgan&gt;, Director, Pivotal Technical Staff
+Building distributed applications is hard, but it doesn’t have to be! The Spring engineering team has been working on initiatives to simplify the process of building cloud-native applications on Pivotal Cloud Foundry (PCF). One key initiative is Spring Cloud &lt;http://projects.spring.io/spring-cloud/&gt;, which provides tools to help developers quickly build some of the common patterns found in distributed systems. One example is Spring Cloud Netflix &lt;http://cloud.spring.io/spring-cloud-netflix/&gt;, which provides Netflix OSS integrations for Spring Boot applications, making it easy for enterprises to build fault-tolerant, microservice style applications.
+ 
+ The upcoming Spring Cloud 1.0 GA release will have support for the following patterns:
+
+
+ - Service discovery (Eureka &lt;https://github.com/Netflix/eureka&gt;)
+ - Circuit breaker pattern (Hystrix &lt;https://github.com/Netflix/Hystrix&gt;)
+ - Intelligent routing (Zuul &lt;https://github.com/Netflix/zuul&gt;)
+ - Client-side load balancing (Ribbon &lt;https://github.com/Netflix/ribbon&gt;)
+ - Central configuration (Spring Cloud Config &lt;http://cloud.spring.io/spring-cloud-config/&gt;)
+ - Application bus (Spring Cloud Bus &lt;http://cloud.spring.io/spring-cloud-bus/&gt;)
+
+ 
+
+
+
+
+ 
+
+The Spring team is making these features part of a turn-key experience through a PCF Service Suite called Trellis. Developers can build their Spring workloads (REST, Web, Reactive, Integration, Batch, etc.)  and bind to these new PCF services. This end-to-end experience will redefine and simplify how developers build next-generation applications. For organizations that don’t develop from JVM &lt;http://en.wikipedia.org/wiki/Java_virtual_machine&gt;, polyglot support is on the roadmap! We expect to release a public beta of Trellis early in March.
+
+
+
+
+
+ 
+
+
+
+
+The Spring team continues its goal in 2015 to simplify big data application development. Spring XD 1.1 is due out February 6th. The new release simplify custom module installations, easily manage container groups for YARN deployments, and add reactive-streams implementation through Spring Reactor Stream, RxJava Observables and Spark Streaming. In mid-February we’ll be releasing a PCF Service based on the 1.1 release in a public beta, including support for dynamic load balancing and the new alpha version of Pivotal CF for AWS. Check out the screencast &lt;https://drive.google.com/a/pivotal.io/file/d/0BwhuJh-mJCwuaTF0M0tWc19lc2M/view&gt; to see it in action!
+
+ 
+
+
+
+
+
+
+ The Spring team continues to innovate and advance the Spring IO Platform &lt;http://platform.spring.io/platform/&gt;. Spring Boot 1.2.1, Spring Session 1.0, Spring IO Platform 1.1.1 are just a few of the 2015 releases that have gone GA. Keep an eye on the Spring release blog &lt;https://spring.io/blog/category/releases&gt; for the latest updates and details.
+AGILE UPDATE
+ Toronto 2015: Supercharging the Mobile Enterprise
+ Boris Chan &lt;https://gopivotal-com.socialcast.com/users/950953-borischan&gt;, Director, Pivotal Labs Toronto
+2014 was a year of transformation for Toronto. We continued the integration of Xtreme Labs &lt;http://www.pivotal.io/agile/pivotal-acquires-xtreme-labs&gt; into the Pivotal business, settled into a new office and saw amazing personal growth from our Pivots – all while 
+leading deeper engagements with new and trusted customers.
+ 
+ In short, Toronto Pivots made it happen.
+ 
+ 2015 will be a year of acceleration for Toronto. We’re focused on engagements of deeper collaboration with customers, and will use mobile to accelerate how we help customers transform the way they build products. We’re also finding that, in the journey we’re on with customers to build great products, they’re beginning to see the value of Pivotal Cloud Foundry and offers like Pivotal Cloud Foundry Mobile Services &lt;https://sites.google.com/a/pivotal.io/inside-pivotal-cf/services#Mobile&gt;. Hints of the early promise of Pivotal and mobility can be seen in the following:
+
+
+
+ - Under Armour Record &lt;http://www.usatoday.com/story/tech/columnist/baig/2015/01/05/first-look-at-underarmour-uarecord-app/21292935/&gt; made a big splash at CES &lt;https://www.facebook.com/InternationalCES&gt;. We helped this top fitness brand turn a product announcement into multiple major releases on iOS and Android, through an engagement that began just last summer. These successes have allowed us to expand the relationship between Under Armour and Pivotal Labs across multiple offices, and our roadmap with Under Armour includes how Pivotal Cloud Foundry and Data can continue to help differentiate them.
+ - We also worked with titans such as Facebook, Uber, NFL, NBA, Twitter, Carnival Cruise Lines, MCX, Loblaw, CIBC, ABC News, Fanatics, SurveyMonkey, Bloomberg, Fitbit, Bell, MTV and Capital One to collaborate, build and launch some head-turning mobile and web products in the past year.
+
+
+
+
+The new fitness experience, powered by Pivotal: ‘Under Armour Record’ kills it at CES.
+ 
+ These highlights illustrate 
+the first-class work coming out of Toronto, and I’m privileged to lead a team that is leading an industry. As we accelerate our focus on mobile, we’re on pace to go even deeper with customers, and to tie our services tightly with PaaS and Data. I’m extremely excited for our journey in 2015!
+PEOPLE UPDATE
+ Shaping Momentum into Sales
+ Ian Andrews &lt;#author-socialcast-profile&gt;, Director, Product Sales
+As the Field prepares for the Worldwide Sales Kick-Off &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015&gt;, we’re equally busy getting our arms around the frenetic energy that comes with growing success across the business. I’m delighted to be part of a new Field group whose job it is to direct that energy and take our business by the horns.
+ 
+ Specifically, in 2015, our team is helping connect our Data and Cloud Foundry product teams to our Field organization and with customers – to build the data pipeline and drive successful sales, with a strong focus on the Americas. I’m lucky enough to have some of our best people working alongside me.
+ 
+ We’ve wasted little time in getting started, and have been driving efforts such as:
+
+
+ - Helping Tim Kalbas &lt;https://gopivotal-com.socialcast.com/users/969837-timkalbas&gt; build out the new Data Sales team in the Americas region (and welcome Chris Stephens &lt;https://gopivotal-com.socialcast.com/users/953974-christopherstephens&gt;, Francois Martel &lt;https://gopivotal-com.socialcast.com/users/959649-francoismartel&gt; and Sadique Laljie &lt;https://gopivotal-com.socialcast.com/users/953375-sadiquelalji&gt;, and more to come to the new team!) 
+ - Creating a partner ecosystem around Pivotal GemFire &lt;http://www.pivotal.io/big-data/pivotal-gemfire&gt; with Richard Lamb &lt;https://gopivotal-com.socialcast.com/users/945084-richardlamb&gt;
+ - Leading Financial and Insurance industry initiatives to accelerate customer adoption, with our financial field guru Richard Reichgut &lt;https://gopivotal-com.socialcast.com/users/950288-richardreichgut&gt;
+ - Driving key Pivotal Cloud Foundry deals with Data Field CTO for PaaS, Joshua McKenty &lt;https://gopivotal-com.socialcast.com/users/1085292-joshuamckenty&gt;
+ - Working across the business with Andrew Clay Shafer &lt;https://gopivotal-com.socialcast.com/users/1056492-andrewshafer&gt;, Mike Cucchi &lt;https://gopivotal-com.socialcast.com/users/967726-michaelcucchi&gt;, Rahul Awasthy &lt;https://gopivotal-com.socialcast.com/users/1072690-rahulawasthy&gt; and Kamala Dasika &lt;https://gopivotal-com.socialcast.com/users/919747-kamaladasika&gt; on our content for SKO. Stay tuned – it’s going to be exciting! 
+
+
+
+I look forward to seeing you all in February in San Francisco. Please feel to connect with me if we can help you build your business!
+MY NAME IS...
+ Greg Chase
+ Greg Chase &lt;#author-socialcast-profile&gt;, Director of Product Marketing for the Pivotal Big Data Suite
+Am Director of Product Marketing for the Pivotal Big Data Suite, with a specialization for in-memory and future community development.
+In a zone of probability between San Francisco and Palo Alto at any time. Unless I have to go to Las Vegas (again) to yet another big data conference.
+The future launch of Pivotal Big Data Suite v2, Sales Kick-Off, Strata + Hadoop World, Pivotal GemFire positioning and messaging, and content for the new pivotal.io website.
+I try to pick up one of my many neglected hobbies: Winemaking, dogs, general technology geekism – from startups to technology topics, to meetups. For example: https://www.youtube.com/watch?v=HqBPiKKg-f0 &lt;https://www.youtube.com/watch?v=HqBPiKKg-f0&gt;
+I have my own line of wines that I hope to bring to market in the next year.
+Is a chance to bring innovation back to industry that&apos;s become more interested in speed over perfection, cost over experience, mass-consumerism over fit.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from January 13th to 26th:
+ 
+ Adrian Smolski, Sr. Field Engineer, APJ
+ Andrew Park, College Co-op student, Toronto 
+ Andrew Thorburn, Sr. Software Engineer, London
+ Anuj Biyani, Software Engineer, San Francisco
+ Benjamin Black, Sr. Software Engineer, London
+ Desmond Tsang, Software Engineer, Toronto
+ Eduardo Mujica, UX Designer, Toronto
+ Edward Chi  Zhang, Sr. Field Engineer, Beijing
+ Fenggang Wang, Senior Member of Technical Staff, Shanghai
+ James Ma, Product Manager, Toronto
+ Jared Friese, Software Engineer, Santa Monica
+ Jared Gordon, Principal Software Engineer, 
+New York
+ Jennifer Hamon, Software Engineer, Palo Alto
+ Joel Watkins, Software Engineer, Boston
+ Max Humber, College Co-op student, Toronto  
+ Merle Axelrod, Sales Account Manager, 
+Americas North
+ Nick Lawson, Advisory Solutions Architect, London
+ Paul Krajewski, Sr. Product Manager, Toronto
+ Ritchie Bui, Assoc. Software Engineer, Toronto
+ Ryan Dy, Software Engineer, San Francisco
+ Shabbir Intaj, Sr. Account Manager, APJ
+ Utkarsh Nadkarni, Sr. Field Engineer, Americas North</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Entitlements$Entitlement_ID18__c</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$StartDate</field>
+    </columns>
+    <columns>
+        <field>Account.Entitlements$EndDate</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Expired Entitlements with Subscriptions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Entitlements_with_Subscriptions__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account.Entitlements$EndDate</dateColumn>
+        <endDate>2018-07-08</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2018-07-08</startDate>
+    </timeFrameFilter>
+</Report>

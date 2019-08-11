@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Email_Querying External Data with Hadoop_Field Target_Q314.Invite</name>
+    <style>none</style>
+    <subject>Link existing storage with HDFS</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+I’m on the Pivotal team that supports {{company.Company Name:default=enterprise companies}} and was curious if you had any challenges linking existing storage systems with your Hadoop HDFS? 
+
+Because this is a common challenge for our customers, I wanted to invite you to a webinar &lt;http://www.gopivotal.com/big-data/hadoop/querying-external-data-sources-with-hadoop-webinar&gt; that will introduce how Pivotal can help you leverage your existing data infrastructure investments with HDFS.
+
+Querying External Data Sources with Hadoop - Tuesday, 7/15 @ 9AM PDT.
+Register today &lt;http://www.gopivotal.com/big-data/hadoop/querying-external-data-sources-with-hadoop-webinar&gt; for this technical preview on how to add extensibility into Hadoop.
+
+If you’re not able to make the webinar but just have some questions please shoot me a line I’ll do my best to help.
+
+
+-Estevan
+
+
+Estevan McCalley | Account Manager
+Direct: 512-568-3753 | emccalley@gopivotal.com &lt;mailto:emccalley@gopivotal.com&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

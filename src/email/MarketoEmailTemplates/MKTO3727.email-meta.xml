@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Microservice Latency_Zipkin Distributed Tracing_Q216.Confirmatio</name>
+    <style>none</style>
+    <subject>Webinar Confirmation:  Understanding microservice latency: An introduction to Distributed Tracing and Zipkin</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar Understanding microservice latency: An introduction to Distributed Tracing and Zipkin on Thursday, June 30, 2016.
+
+Please see event details below:
+
+Date: Thursday, June 30, 2016
+ Time: 3:00PM Time (London, GMT)
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1190796/1ED0B397897424A4569995C8CA7813B2]]&gt;
+ Audio Information:
+ This webinar will be streaming live via your computer speakers.
+ {{my.My Token:default=Save the Date}}
+ 
+ We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

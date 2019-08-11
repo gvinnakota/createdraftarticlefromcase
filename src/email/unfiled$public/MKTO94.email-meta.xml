@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Product_Email_Pivotal HD Launch.Community Edition Email</name>
+    <style>none</style>
+    <subject>Try Pivotal HD Community</subject>
+    <textOnly>Download Today as a Single Platform
+Hi {{lead.First Name:default=there}},
+
+Now that you have experienced Pivotal HD Single Node (VM) on your laptop do you wish you could do more? You can!  
+Pivotal HD Community &lt;http://www.gopivotal.com/pivotal-products/data/pivotal-hd#4&gt; is a free version of the world&apos;s most powerful Hadoop distribution. 
+Includes:
+
+ - A complete community supported distribution of Apache Hadoop 2.0
+ - Comprehensive Installation, Configuration and Monitoring
+ - Parallel Data Ingest Management
+ - Storage Abstraction
+ - Plugins for Public and Private clouds
+ - The Open Source Java Development Framework 
+
+You can deploy Pivotal HD Community &lt;http://www.gopivotal.com/pivotal-products/data/pivotal-hd#4&gt; directly into your server production environment with a 50 node limit.
+
+ &lt;http://www.gopivotal.com/pivotal-products/data/pivotal-hd#4&gt;
+Have questions? Contact us &lt;mailto:info@gopivotal.com&gt;.
+ 
+Thank you,
+The Pivotal Team
+Check out Pivotal P.O.V.
+Visit our blog &gt;&gt; &lt;blog.gopivotal.com&gt;
+Pivotal HD Community Forum
+Join Now &gt;&gt; &lt;http://www.gopivotal.com/community/pivotal-hd&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

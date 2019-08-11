@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Super_Parent_Account__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Account.High_Priority__c</field>
+    </columns>
+    <columns>
+        <field>Account.Named_Account__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <column>User.Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>APJ Australia New Zealand,APJ Greater China,APJ India,APJ ISR,APJ Japan,APJ Korea,APJ Other,APJ South Asia,APJ Southeast Asia</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ADDRESS1_COUNTRY_CODE</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>AU,BT,BN,KH,CN,HK,IN,ID,JP,KP,KR,MO,MY,MV,MN,MM,NP,NZ,PG,PH,SN,SG,LK,TW,TH,VN</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pivotal Admin</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ADDRESS1_COUNTRY_CODE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SFDC Audit | APJ | Named Accounts Asgn</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

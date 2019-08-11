@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Operationalizing Data Analytics_Q115.Confirmation</name>
+    <style>none</style>
+    <subject>You are Confirmed: Operationalizing Data Analytics with Pivotal &amp; Forrester</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar Operationalizing Data Analytics with Pivotal &amp; Forrester on Wednesday, January 14, 2015. Please see event details below:
+
+Date: Wednesday, January 14, 2015
+Time: 8:30AM PST/4:30PM GMT
+
+Join the Session &lt;http://w.on24.com/r.htm?e=914140&amp;s=1&amp;k=B4CE49A413565CDA134E6E5B3194839F&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date:default=edit me}} 
+We look forward to you joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

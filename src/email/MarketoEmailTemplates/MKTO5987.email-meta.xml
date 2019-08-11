@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter (Pre-2018).October 2014 Newsletter</name>
+    <style>none</style>
+    <subject>Project Reactor introduces Reactive Streams integration</subject>
+    <textOnly>OCTOBER 2014
+&lt;http://spring.io/blog/2014/10/21/reactor-2-0-0-m1-released-with-reactive-streams-integration&gt;
+Reactor introduces Reactive Streams integration
+The Reactor &lt;https://github.com/reactor/reactor&gt; team is frankly a little giddy at finally being able to announce an initial milestone release of Reactor 2.0! This update includes a fully-compliant Reactive Streams &lt;http://www.reactive-streams.org/&gt; implementation in the completely re-written Stream and Promise APIs! This is a huge step for Reactor users. It opens up integration with other Reactive Streams implementations like Akka Streams &lt;http://www.typesafe.com/activator/template/akka-stream-scala&gt;, Ratpack &lt;http://ratpack.io/&gt;, 
+RxJava &lt;https://github.com/ReactiveX/RxJava&gt; and others. 
+
+Reactor provides a solid foundation upon which to build modern #uberfastdata applications with demanding high-throughput and low-latency requirements. We believe that asynchronous, non-blocking workload support is a key component in our support for micro service architecture (along with Cloud Foundry, Spring Boot, Spring Cloud, and RabbitMQ / Redis.) We hope to hear your feedback on Reactor 2.0.0M1!
+Learn More &lt;http://spring.io/blog/2014/10/21/reactor-2-0-0-m1-released-with-reactive-streams-integration&gt;
+Row, Row, Row Your Boat down the Reactive Stream
+Reactor project lead Jon Brisbin just announced Reactor 2.0.0.M1. This new release is the first to support the reactive streams APIs and effort. In this techtip, we&apos;ll borrow from Jon&apos;s blog and example and look at a Reactor 2.0&apos;s reactive streams support.
+
+The reactive streams effort is an initiative to provide a standard for asynchronous stream processing with non-blocking backpressure on the JVM. Backpressure is _an inversion of the publisher and subscriber relationship where the Subscriber says to the Publisher &quot;give me the next N available items&quot; rather than a Publisher saying to a Subscriber &quot;take all these items I have whether you can handle them or not&quot;.
+
+What does this mean for you? It means that Reactor provides an ideal way to build systems of loosely coupled, messaging-centric components that can be run concurrently to absorb increasing amounts of load in a predictable way. Reactor builds on the ring buffer algorithm to provide an event dispatcher and thread pool-style mechanism that is blazing fast, too. I encourage you to read Jon&apos;s blog above for details. Before you do that, let&apos;s look at an abbreviated example: 
+ 
+ 
+ 
+ This sends a message (in this case, one of type String) into a lamda pipeline. The pipeline is executed on a different thread, and the result is returned asynchronously. This script uses Groovy and can be easily run with the Spring Boot CLI: spring run rx.groovy. It uses the Groovy syntax but, of course, save for the lambas (which are just a few characters away from being valid Java 8 lamdas!), this example would work easily in Java. Be sure to drop the @Grab annotations and the @GrabResolver annotation and use the equivalent configuration for Maven, Gradle, etc. Reactor is ideal for highly concurrent systems with ongoing load. In fact, if you use Spring 4&apos;s websocket support, or the Grails 3&apos;s event-system, they&apos;re both based on Reactor.
+Refactoring made easy, part 1: Rename in workspace
+The rename refactoring is definitely the most widely used automated refactoring in any IDE. In Eclipse and the Spring Tool Suite, you can use this refactoring right at your fingertips, directly in the Java editor. Just go to the identifier you wish to rename (like the name of the class), press Ctrl-1, and select “Rename in workspace”. It will allow you to type in a new name in place and will activate the workspace-wide automated refactoring right after you pressed Enter.
+Security for Microservices with Spring and OAuth2
+Speaker: Dave Syer, Pivotal
+
+OAuth2 is a lightweight security protocol that is well-suited for use with HTTP, the protocol at the heart of many modern architectures. Spring Security OAuth2 has a load of new features, not the least of which being the `@Configuration` support in version 2.0. Combine these with Spring Boot and you have a platform which can get you a secure HTTP service application in about 20 lines of code.
+
+This presentation shows how the combination of rapid development and production-ready features in the modern Spring stack are a perfect mixture for developing secure components in a system composed of microservices. We explore the new features in Spring OAuth2, guide you through the choice of which to use and when, and show how easy they are to enable quickly.
+Europe
+Tuesday, November 4
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SecurityforMicroserviceswithSpringandOAuth2_7AM_Register.html&gt;
+North America
+Tuesday, November 4
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SecurityforMicroserviceswithSpringandOAuth2_10AM_Register.html&gt;
+Made for Each Other: Microservices + PaaS
+Speakers: Donnie Berkholz IT Industry Analyst, RedMonk and Matt Stine Cloud Foundry Platform Engineer, Pivotal
+
+Companies need to build better software faster to compete. But existing monolithic applications, legacy platforms, and lengthy operational deployment cycles are holding innovation back. Microservices are becoming the cloud architecture of choice because they offer the ability to loosely couple applications into discrete services that can be surgically changed without requiring disruptive overhauls.
+
+This approach enables the responsiveness and rapid change needed by the business. Enterprise PaaS is a critical foundation to simplify the operations, governance, and health management of these new architectures. Together with a DevOps culture, microservices and PaaS are the engine that drives innovation at speed. In this webinar you will learn:
+
+
+ - How Continuous Delivery drives business innovation
+ - What you need to know about microservices to get started
+ - How to use enterprise PaaS to facilitate operational agility
+North America
+Tuesday, November 18
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://www.pivotal.io/platform-as-a-service/microservices-and-paas-a-match-made-in-the-cloud?utm_source=twitter&amp;utm_medium=tweet&amp;utm_campaign=paas-q42014&gt;
+Spring Boot and JRebel 6.0
+Title: Spring Boot and JRebel 6.0 
+Speakers: Josh Long, Pivotal and Adam Koblentz, ZeroTurnaround
+
+Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring&apos;s flexibility with conventional, common sense defaults to make application development not just fly, but pleasant! Spring Boot gives you a huge leg up over normal starter projects, now let&apos;s give you another boost by adding JRebel. With JRebel, the average Java developer saves over 1 work-month per year by using JRebel to skip rebuild, restart, and redeploys of their application. JRebel 6 was just launched and now includes complete Spring Boot integration.
+
+Join Spring&apos;s Josh Long and ZeroTurnaround&apos;s Adam Koblentz and learn how to combine Boot with JRebel and get more done, in less time with less configuration. 
+ 
+
+
+Cloud Platform Roadshow
+
+Join the Pivotal technologists for a hands-on session where you can test-drive Pivotal’s CF platform. If you’re a developer, architect, operations or technical manager, these sessions are designed to help you learn how to build and deploy great software on a modern cloud platform in just a few hours. Register today for a session near you:
+
+November 5 - Washington, DC Register Now  &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/dc#cities&gt;
+
+November 6 – Singapore Register Now  &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/singapore#cities&gt;
+
+November 6 – Sydney Register Now  &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/sydney#cities&gt;
+
+November 18 – Los Angeles Register Now  &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/la#cities&gt;
+
+November 20 – Denver Register Now  &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/denver#cities&gt;
+
+December 4 – Cork Register Now  &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/cork#cities&gt;
+
+December 4 - Toronto Register Now &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow/toronto#cities&gt;
+Europe
+Thursday, November 20
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SpringBootandJRebel6.07AM_Register.html&gt;
+North America
+
+Thursday, November 20
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SpringBootandJRebel6.010AM_Register.html&gt;
+Webinar Replay: Architecting for Continuous Delivery--Microservices with Pivotal CF and Spring Cloud
+Join Matt Stine to hear how you can architect systems that are optimized for continuous delivery, allowing you to innovate and deliver value faster and safer.
+Watch Video &lt;http://spring.io/blog/2014/10/25/webinar-replay-architecting-for-continuous-delivery-microservices-with-pivotal-cf-and-spring-cloud&gt;
+Spring Videos
+ Webinar Replay: Why I Recommend Spring &lt;http://spring.io/blog/2014/09/26/webinar-replay-why-i-recommend-spring&gt;
+ Webinar Replay: Process Driven Spring Applications with Activiti &lt;http://spring.io/blog/2014/09/26/webinar-replay-process-driven-spring-applications-with-activiti&gt;
+ Webinar Replay: Building “Bootiful” Microservices with Spring Boot &lt;http://spring.io/blog/2014/09/17/webinar-replay-building-bootiful-microservices-with-spring-boot&gt;
+
+Archived 
+videos
+
+Demo: IoT Realized with Spring XD – The 
+Connected Car
+Creating an Asynchronous, Event-Driven Application with Reactor
+This guide walks you through the process of creating an asynchronous, event-driven system using the Reactor project.You’ll build an application that fires off events to fetch a random Spring Boot quote, and then asynchronously gathers them together.
+View Guide &lt;http://spring.io/guides/gs/messaging-reactor/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+ 
+ http://spring.io/guides
+ 
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+&lt;#link&gt;
+ Spring AMQP 1.4 RC1 &lt;http://spring.io/blog/2014/10/23/spring-amqp-1-4-rc1-released&gt;
+ Spring Sync 1.0.0M1 released &lt;http://spring.io/blog/2014/10/22/spring-sync-1-0-0-milestone-1-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.2 &lt;http://spring.io/blog/2014/10/13/spring-tool-suite-and-groovy-grails-tool-suite-3-6-2-released&gt;
+ Spring Boot 1.2.0.M2 &lt;http://spring.io/blog/2014/10/11/spring-boot-1-2-0-m2-available-now&gt;
+ Spring Boot 1.1.8 &lt;http://spring.io/blog/2014/10/11/spring-boot-1-1-8-released&gt;
+ Spring Cloud 1.0.0.M1 &lt;http://spring.io/blog/2014/10/07/spring-cloud-1-0-0-m1-available-now&gt;
+ Spring XD 1.0.1 &lt;http://spring.io/blog/2014/10/02/spring-xd-1-0-1-released&gt;
+ Spring Framework 4.1.1 &lt;http://spring.io/blog/2014/10/01/spring-framework-4-1-1-released&gt;
+ Spring Boot 1.1.7 &lt;http://spring.io/blog/2014/09/26/spring-boot-1-1-7-released&gt;
+ Spring for Android 2.0.0.M1 &lt;http://spring.io/blog/2014/09/16/spring-for-android-2-0-0-m1-released&gt;
+See how to build, 
+test, secure, and add hypermedia with this new tutorial, &quot;Building REST Services with Spring&quot;
+ Introducing Spring Sync &lt;http://spring.io/blog/2014/10/22/introducing-spring-sync&gt;
+ What’s new in Spring Data Evans? &lt;http://spring.io/blog/2014/10/15/whats-new-in-spring-data-evans&gt;
+ Streaming JSON Patch from Spring to a React UI &lt;http://spring.io/blog/2014/10/08/streaming-json-patch-from-spring-to-a-react-ui&gt;
+ Preview Spring Security WebSocket Support &amp; Sessions &lt;http://spring.io/blog/2014/09/16/preview-spring-security-websocket-support-sessions&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;Search=Search&amp;subjectID=17750&amp;filters=subjectID&gt;
+ Enterprise Integration with Spring &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Enterprise+integration+spring&amp;Search=Search&gt;
+Spring Web &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Spring+Web&amp;Search=Search&gt;
+ What&apos;s New in Spring (NEW) &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=What%27s+New+in+Spring&amp;Search=Search&gt;
+ Groovy &amp; Grails &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=JPA&amp;Search=Search&quot;&gt;JPA with Spring (coming late 2014) - Current version &gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

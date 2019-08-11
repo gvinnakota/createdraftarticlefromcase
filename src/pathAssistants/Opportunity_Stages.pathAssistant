@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity Stages</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Alternative_Solution_to_Pivotal__c</fieldNames>
+        <fieldNames>Apps_Greenfield_Legacy__c</fieldNames>
+        <fieldNames>Mutual_Action_Plan_Uploaded__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Through further due diligence and collaboration, develop a shared understanding of the business problems we are solving and the impact to the business. Help the customer realize obstacles they will need to overcome in order to achieve their desired business outcomes.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Discovery</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Customer_Received_Commercial_Paperwork__c</fieldNames>
+        <fieldNames>Customer_Received_PPT_Proposal__c</fieldNames>
+        <fieldNames>AppTx_Scoping_Scheduled__c</fieldNames>
+        <fieldNames>PCFS_Scoping_Scheduled_Date__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Orchestrate a series of customer interactions to refine and iterate on our solution recommendations until Champion(s) and Economic Buyer align with Pivotal on a roadmap for achieving desired business outcomes. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Framing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Who_is_the_most_influential_Contact_who__c</fieldNames>
+        <fieldNames>Pivotal_Point_of_View_PoV__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Engage with relevant stakeholders in the organization to qualify the opportunity, identify the optimal Customer Champion and Sponsor(s) and refine and improve the Pivotal Point-of-View (POV), incorporating feedback from the customer.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Gain Sponsorship</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Pivotal_Point_of_View_PoV__c</fieldNames>
+        <fieldNames>Account_Plan_Uploaded__c</fieldNames>
+        <fieldNames>Business_Outcomes_KPI_s__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Execute a consistent process for proactive opportunity generation by finding business problems that require better software, leading to the creation of one or more opportunities in an Account. This stage is not included in “pipeline” and as such, the team should feel comfortable entering unqualified opportunities into Salesforce (SFDC). &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Identify Business Problems</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Customer_Received_Commercial_Paperwork__c</fieldNames>
+        <fieldNames>Customer_Received_PPT_Proposal__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;Proactively manage the Customer’s and Pivotal’s legal, financial, and procurement departments to ensure the close progresses until orders are booked by Pivotal. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Negotiate &amp; Close</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Open</recordTypeName>
+</PathAssistant>

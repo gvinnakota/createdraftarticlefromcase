@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Customer Exit Email_Q315.Email 1</name>
+    <style>none</style>
+    <subject>Please answer One quick question to help PWS become better</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+I am a product manager working on Pivotal Web Services (PWS) and I am writing because in the past you upgraded to use the full capabilities of PWS but later discontinued using the service. In an effort to make PWS better, I have one quick question.
+
+What made you discontinue using Pivotal Web Services?
+
+Thank you for your time.
+
+Best Regards,
+
+Charles Wu
+Product Manager
+Pivotal Web Services</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

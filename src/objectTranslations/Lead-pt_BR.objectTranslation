@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Notes from web forms --></help>
+        <label><!-- Additional Information --></label>
+        <name>Addition_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agile --></label>
+        <name>Agile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alt Created Date --></label>
+        <name>Alt_Created_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the Bad Data Reason the best fits. --></help>
+        <label><!-- Reason for Rejection --></label>
+        <name>Bad_Data_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Bad Email</masterLabel>
+            <translation><!-- Bad Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad Phone</masterLabel>
+            <translation><!-- Bad Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bogus Data</masterLabel>
+            <translation><!-- Bogus Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disqualified Partner</masterLabel>
+            <translation><!-- Disqualified Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Potential</masterLabel>
+            <translation><!-- No Potential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Must be checked in order to email (sales or marketing) to the lead. --></help>
+        <label><!-- CASL Opt In --></label>
+        <name>CASL_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud/Apps Product Interest --></label>
+        <name>Cloud_Apps_Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Cloud Foundry</masterLabel>
+            <translation><!-- Cloud Foundry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal RabbitMQ</masterLabel>
+            <translation><!-- Pivotal RabbitMQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal TC Server</masterLabel>
+            <translation><!-- Pivotal TC Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Web Server</masterLabel>
+            <translation><!-- Pivotal Web Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Framework</masterLabel>
+            <translation><!-- Spring Framework --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Data Product Interest --></label>
+        <name>Data_Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Cloud Foundry</masterLabel>
+            <translation><!-- Cloud Foundry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Analytics</masterLabel>
+            <translation><!-- Pivotal Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Chorus</masterLabel>
+            <translation><!-- Pivotal Chorus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal DCA</masterLabel>
+            <translation><!-- Pivotal DCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal GemFire</masterLabel>
+            <translation><!-- Pivotal GemFire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal GemFire XD</masterLabel>
+            <translation><!-- Pivotal GemFire XD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Greenplum Database</masterLabel>
+            <translation><!-- Pivotal Greenplum Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal HD</masterLabel>
+            <translation><!-- Pivotal HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Performance and Monitoring</masterLabel>
+            <translation><!-- Pivotal Performance and Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal SQLFire</masterLabel>
+            <translation><!-- Pivotal SQLFire --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deal Size --></label>
+        <name>Deal_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- When is this client expected to make a decision to move forward? --></help>
+        <label><!-- Decision Timeframe --></label>
+        <name>Decision_Timeframe__c</name>
+        <picklistValues>
+            <masterLabel>Don't know</masterLabel>
+            <translation><!-- Don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immediately</masterLabel>
+            <translation><!-- Immediately --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 1 year</masterLabel>
+            <translation><!-- More than 1 year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>This month</masterLabel>
+            <translation><!-- This month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 1 year</masterLabel>
+            <translation><!-- Within 1 year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 3 months</masterLabel>
+            <translation><!-- Within 3 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within 6 months</masterLabel>
+            <translation><!-- Within 6 months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing Customer --></label>
+        <name>Existing_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Close Date --></label>
+        <name>Expected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the primary function of this person --></help>
+        <label><!-- Function --></label>
+        <name>Function__c</name>
+        <picklistValues>
+            <masterLabel>Analyst/Data Scientist</masterLabel>
+            <translation><!-- Analyst/Data Scientist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architect/Team Lead</masterLabel>
+            <translation><!-- Architect/Team Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Level/Executive</masterLabel>
+            <translation><!-- C-Level/Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director/Manager</masterLabel>
+            <translation><!-- Director/Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- updated via process when activity type is specified --></help>
+        <label><!-- ISR Activity Type --></label>
+        <name>ISR_Activity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISR Email Sent Count --></label>
+        <name>ISR_Email_Sent_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- ISR Working Status --></label>
+        <name>ISR_Working_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Matched Account Focused? --></label>
+        <name>Is_Matched_Account_Focused__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Matched Account Targeted? --></label>
+        <name>Is_Matched_Account_Named__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field if we want to re-trigger the Lean Data routing. --></help>
+        <label><!-- Isupdated --></label>
+        <name>Isupdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labs --></label>
+        <name>Labs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details of the last action this Lead took --></help>
+        <label><!-- Lead Action --></label>
+        <name>Lead_Action__c</name>
+        <picklistValues>
+            <masterLabel>Community Registration</masterLabel>
+            <translation><!-- Community Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed CBT</masterLabel>
+            <translation><!-- Completed CBT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Us</masterLabel>
+            <translation><!-- Contact Us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Download - Commercial</masterLabel>
+            <translation><!-- Download - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Download - Open Source</masterLabel>
+            <translation><!-- Download - Open Source --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event - Attended</masterLabel>
+            <translation><!-- Event - Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event - Registered</masterLabel>
+            <translation><!-- Event - Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter - OS</masterLabel>
+            <translation><!-- Newsletter - OS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter Labs</masterLabel>
+            <translation><!-- Newsletter Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter POV</masterLabel>
+            <translation><!-- Newsletter POV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Demo</masterLabel>
+            <translation><!-- Online Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PWS Registration</masterLabel>
+            <translation><!-- PWS Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Academy Registration</masterLabel>
+            <translation><!-- Pivotal Academy Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Network Partner Registration</masterLabel>
+            <translation><!-- Pivotal Network Partner Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Network Registration</masterLabel>
+            <translation><!-- Pivotal Network Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Content</masterLabel>
+            <translation><!-- Premium Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROI Tool</masterLabel>
+            <translation><!-- ROI Tool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Registration</masterLabel>
+            <translation><!-- Training Registration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar - Attended</masterLabel>
+            <translation><!-- Webinar - Attended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar - Registered</masterLabel>
+            <translation><!-- Webinar - Registered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Type --></label>
+        <name>Lead_Type__c</name>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legacy ID XtremeLab --></label>
+        <name>Legacy_ID_XtremeLab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Info ExtremeLab --></label>
+        <name>Legacy_Info_ExtremeLab__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search LinkedIn public for this Lead --></help>
+        <label><!-- LinkedIn --></label>
+        <name>LinkedIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Suspended Reason --></label>
+        <name>Marketing_Suspended_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Account ISR --></label>
+        <name>Matched_Account_ISR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Account Owner --></label>
+        <name>Matched_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Account Region --></label>
+        <name>Matched_Account_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Pivotal Account Category --></label>
+        <name>Matched_Pivotal_Account_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Lead Source Description --></label>
+        <name>Most_Recent_Lead_Source_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Referrer --></label>
+        <name>Most_Recent_Referrer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Search Phrase --></label>
+        <name>Most_Recent_Search_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Employees --></label>
+        <name>NumberofEmployees__c</name>
+        <picklistValues>
+            <masterLabel>1,000 - 4,999</masterLabel>
+            <translation><!-- 1,000 - 4,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100 - 499</masterLabel>
+            <translation><!-- 100 - 499 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5,000 - 9,999</masterLabel>
+            <translation><!-- 5,000 - 9,999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 - 999</masterLabel>
+            <translation><!-- 500 - 999 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 99</masterLabel>
+            <translation><!-- &lt; 99 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;10,000</masterLabel>
+            <translation><!-- &gt;10,000 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Apache Tomcat --></label>
+        <name>OSS_Project_Interest_Apache_Tomcat__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Cloud Foundry --></label>
+        <name>OSS_Project_Interest_Cloud_Foundry__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Grails --></label>
+        <name>OSS_Project_Interest_Grails__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Groovy --></label>
+        <name>OSS_Project_Interest_Groovy__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:MadLib --></label>
+        <name>OSS_Project_Interest_MadLib__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Open Chorus --></label>
+        <name>OSS_Project_Interest_Open_Chorus__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:RabbitMQ --></label>
+        <name>OSS_Project_Interest_RabbitMQ__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Redis --></label>
+        <name>OSS_Project_Interest_Redis__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS Project Interest:Spring --></label>
+        <name>OSS_Project_Interest_Spring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt In: News --></label>
+        <name>Opt_In_News__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt In: Partner --></label>
+        <name>Opt_In_Partner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Lead Source Description --></label>
+        <name>Original_Lead_Source_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Lead Source --></label>
+        <name>Original_Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party</masterLabel>
+            <translation><!-- 3rd Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral - Non-Federation</masterLabel>
+            <translation><!-- Referral - Non-Federation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - EMC Referral</masterLabel>
+            <translation><!-- Sales - EMC Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - Pivotal Generated</masterLabel>
+            <translation><!-- Sales - Pivotal Generated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales - VMware Referral</masterLabel>
+            <translation><!-- Sales - VMware Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teleservices</masterLabel>
+            <translation><!-- Teleservices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PWS --></label>
+        <name>PWS__c</name>
+    </fields>
+    <fields>
+        <label><!-- PaaS --></label>
+        <name>PaaS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Account Rep Email --></label>
+        <name>Partner_Account_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Account Rep Name --></label>
+        <name>Partner_Account_Rep_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Account Rep Phone --></label>
+        <name>Partner_Account_Rep_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Business Functions --></label>
+        <name>Partner_Business_Functions__c</name>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Resources</masterLabel>
+            <translation><!-- Human Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Development</masterLabel>
+            <translation><!-- Product Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Management</masterLabel>
+            <translation><!-- Strategic Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Development</masterLabel>
+            <translation><!-- Technology Development --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Cloud Offering --></label>
+        <name>Partner_Cloud_Offering__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Industry Verticals --></label>
+        <name>Partner_Industry_Verticals__c</name>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Services</masterLabel>
+            <translation><!-- Financial Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit</masterLabel>
+            <translation><!-- Non-Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil &amp; Gas</masterLabel>
+            <translation><!-- Oil &amp; Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecom</masterLabel>
+            <translation><!-- Telecom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Product Category --></label>
+        <name>Partner_Product_Category__c</name>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Intelligence</masterLabel>
+            <translation><!-- Business Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Integration</masterLabel>
+            <translation><!-- Data Integration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Provider</masterLabel>
+            <translation><!-- Data Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry-specific Analytics</masterLabel>
+            <translation><!-- Industry-specific Analytics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Sales Manager Email --></label>
+        <name>Partner_Sales_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Sales Manager Name --></label>
+        <name>Partner_Sales_Manager_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Sales Manager Phone --></label>
+        <name>Partner_Sales_Manager_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner ULA --></label>
+        <name>Partner_ULA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Product Interest --></label>
+        <name>Primary_Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apps</masterLabel>
+            <translation><!-- Apps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud</masterLabel>
+            <translation><!-- Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSS</masterLabel>
+            <translation><!-- OSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal CF</masterLabel>
+            <translation><!-- Pivotal CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal One</masterLabel>
+            <translation><!-- Pivotal One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Apps --></label>
+        <name>Product_Apps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloud --></label>
+        <name>Product_Cloud__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>Product_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSS --></label>
+        <name>Product_OSS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product: Pivotal One --></label>
+        <name>Product_Pivotal_One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Selection --></label>
+        <name>Product_Selection__c</name>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Data</masterLabel>
+            <translation><!-- Big Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Foundry</masterLabel>
+            <translation><!-- Cloud Foundry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Containers</masterLabel>
+            <translation><!-- Containers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMC DCA</masterLabel>
+            <translation><!-- EMC DCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hadoop</masterLabel>
+            <translation><!-- Hadoop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MADlib</masterLabel>
+            <translation><!-- MADlib --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharma</masterLabel>
+            <translation><!-- Pharma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal App Suite</masterLabel>
+            <translation><!-- Pivotal App Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Big Data Suite</masterLabel>
+            <translation><!-- Pivotal Big Data Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal CF</masterLabel>
+            <translation><!-- Pivotal CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Chorus</masterLabel>
+            <translation><!-- Pivotal Chorus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Data Dispatch</masterLabel>
+            <translation><!-- Pivotal Data Dispatch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Data Labs</masterLabel>
+            <translation><!-- Pivotal Data Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Data Tools</masterLabel>
+            <translation><!-- Pivotal Data Tools --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal GPText</masterLabel>
+            <translation><!-- Pivotal GPText --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal GemFire</masterLabel>
+            <translation><!-- Pivotal GemFire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Greenplum DB</masterLabel>
+            <translation><!-- Pivotal Greenplum DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal HD</masterLabel>
+            <translation><!-- Pivotal HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Labs</masterLabel>
+            <translation><!-- Pivotal Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal One</masterLabel>
+            <translation><!-- Pivotal One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal RabbitMQ</masterLabel>
+            <translation><!-- Pivotal RabbitMQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal SQLFire</masterLabel>
+            <translation><!-- Pivotal SQLFire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Web Server</masterLabel>
+            <translation><!-- Pivotal Web Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal tc Server</masterLabel>
+            <translation><!-- Pivotal tc Server --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis</masterLabel>
+            <translation><!-- Redis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring</masterLabel>
+            <translation><!-- Spring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>vFabric Suite</masterLabel>
+            <translation><!-- vFabric Suite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product: Services --></label>
+        <name>Product_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Program__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Publicly Held --></label>
+        <name>Publicly_Held__c</name>
+    </fields>
+    <fields>
+        <help><!-- Why did this person contact us? --></help>
+        <label><!-- Reason for Contact --></label>
+        <name>Reason_for_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Analytics Workbench</masterLabel>
+            <translation><!-- Analytics Workbench --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Activities</masterLabel>
+            <translation><!-- Customer Activities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Inquiry</masterLabel>
+            <translation><!-- General Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Opportunities</masterLabel>
+            <translation><!-- Job Opportunities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OSS Support</masterLabel>
+            <translation><!-- OSS Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Labs</masterLabel>
+            <translation><!-- Pivotal Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker</masterLabel>
+            <translation><!-- Pivotal Tracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press/Analyst</masterLabel>
+            <translation><!-- Press/Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SFDC Campaign ID --></label>
+        <name>SFDC_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Secondary Campaign ID --></label>
+        <name>SFDC_Secondary_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SW Download Name --></label>
+        <name>SW_Download_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose this when you would like to stop all marketing outreach to this lead --></help>
+        <label><!-- Sales Requested Marketing Suspend --></label>
+        <name>Sales_Requested_Marketing_SuspendLead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Product Interest --></label>
+        <name>Services_Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Pivotal Data Science Labs</masterLabel>
+            <translation><!-- Pivotal Data Science Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Labs</masterLabel>
+            <translation><!-- Pivotal Labs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage of Opportunity --></label>
+        <name>Stage_of_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Function --></label>
+        <name>Sub_Function__c</name>
+        <picklistValues>
+            <masterLabel>Business Analyst</masterLabel>
+            <translation><!-- Business Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-Suite</masterLabel>
+            <translation><!-- C-Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Analytics DB</masterLabel>
+            <translation><!-- Data Analytics DB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Wharehouse</masterLabel>
+            <translation><!-- Data Wharehouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Groovy / Grails</masterLabel>
+            <translation><!-- Groovy / Grails --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hadoop</masterLabel>
+            <translation><!-- Hadoop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MPP Data Platform</masterLabel>
+            <translation><!-- MPP Data Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other No SQL Data</masterLabel>
+            <translation><!-- Other No SQL Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Owner / Manager</masterLabel>
+            <translation><!-- Product Owner / Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDBMS</masterLabel>
+            <translation><!-- RDBMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ</masterLabel>
+            <translation><!-- RabbitMQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis</masterLabel>
+            <translation><!-- Redis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring /  Java</masterLabel>
+            <translation><!-- Spring /  Java --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Temp Master Flag --></label>
+        <name>Temp_Master_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp Wave ID --></label>
+        <name>Temp_Wave_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upload Code --></label>
+        <name>Upload_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only for third-party vendors to indicate lead was qualified and passed to the appropriate Pivotal rep. --></help>
+        <label><!-- Vendor Qualified --></label>
+        <name>Vendor_Qualified__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is to help ISRs / Lead Owners prioritize follow up for leads they are working on. --></help>
+        <label><!-- Lead Priority --></label>
+        <name>Working_Lead_Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 18 Digit ID --></label>
+        <name>X18_Digit_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Company Was Founded --></label>
+        <name>Year_Company_Was_Founded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquisition Date --></label>
+        <name>mkto71_Acquisition_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquisition Program Id --></label>
+        <name>mkto71_Acquisition_Program_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquisition Program --></label>
+        <name>mkto71_Acquisition_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred City --></label>
+        <name>mkto71_Inferred_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Company --></label>
+        <name>mkto71_Inferred_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Country --></label>
+        <name>mkto71_Inferred_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Metropolitan Area --></label>
+        <name>mkto71_Inferred_Metropolitan_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Phone Area Code --></label>
+        <name>mkto71_Inferred_Phone_Area_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred Postal Code --></label>
+        <name>mkto71_Inferred_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inferred State Region --></label>
+        <name>mkto71_Inferred_State_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Score --></label>
+        <name>mkto71_Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Referrer --></label>
+        <name>mkto71_Original_Referrer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Search Engine --></label>
+        <name>mkto71_Original_Search_Engine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Search Phrase --></label>
+        <name>mkto71_Original_Search_Phrase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Source Info --></label>
+        <name>mkto71_Original_Source_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Source Type --></label>
+        <name>mkto71_Original_Source_Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Correspondence Preferences --></label>
+            <section>Contact Correspondence Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Discover Org --></label>
+            <section>Discover Org</section>
+        </sections>
+        <sections>
+            <label><!-- LeanData --></label>
+            <section>LeanData</section>
+        </sections>
+        <sections>
+            <label><!-- LeanData - Matched Account Details --></label>
+            <section>LeanData - Matched Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Marketo Sales Insight --></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Deal Registration --></label>
+            <section>Partner Deal Registration</section>
+        </sections>
+        <sections>
+            <label><!-- Product Interest --></label>
+            <section>Product Interest</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Event --></label>
+        <name>Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Task --></label>
+        <name>Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Task --></label>
+        <name>Task_Master</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Leads must be converted using the convert button. The Lead Status will automatically update to Accepted on Lead convert [LD002]. --></errorMessage>
+        <name>LD002_Dont_use_converted_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid 4 digit year, example 2010 [LD003]. --></errorMessage>
+        <name>LD003_Year_Company_was_founded</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.4-15-15 TechOps</name>
+    <style>none</style>
+    <subject>TechOps Applications - Network Maintenance on Saturday, April 18th</subject>
+    <textOnly>Who does this impact?
+
+If you use tools like JIRA, Confluence, Git/Stash, Jenkins, or Pulse for your work at Pivotal, then please read on, as this maintenance window may affect you. If not, you can stop here and comfortably ignore this notice.
+
+Why are we doing this?
+
+We’re always looking for ways to improve access to the critical applications we use at Pivotal every day. In partnership with the EMC Federated Services team, we’re updating our network path to the Durham datacenter (DCoE). Once completed, we’ll have direct access from our Pivotal network to the DCoE without traversing the EMC network. This is Phase 1 of our 3-phase migration plan, and we’ll announce other maintenance windows as we get closer to them.
+
+When is this happening?
+
+The IT TechOps Team will be doing network maintenance, starting at 7:00 am PT. The work should be completed by 11:00 am PT.
+
+
+ - During the maintenance window, you should expect intermittent service interruptions for TechOps-supported applications such as JIRA, Confluence, GIT/Stash, Jenkins, Pulse, Repository, etc.
+ - When the work is completed, service will return to normal, please feel free to file a JIRA ticket or send an email to techops@pivotal.io &lt;mailto:techops@pivotal.io&gt; for any issues or questions related to this maintenance.
+
+
+
+Thanks,
+Brian Murray</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

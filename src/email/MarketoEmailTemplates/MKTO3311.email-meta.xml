@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.1-20-16 V4N1</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 4, No. 1</subject>
+    <textOnly>VOL. 4, NO. 1
+Friday, January 22, 2016
+Editor Welcome: Enterprise’s Software Heart &lt;[[#editor-welcome]]&gt;
+Business Update: A Mighty Year For Spring &lt;[[#business-update]]&gt;
+Product Update: Nothing Bosh About BOSH 2.0 &lt;[[#product-update]]&gt;
+Agile Update: Agile, Lean, and Everybody’s Innovation Revolution &lt;[[#agile-update]]&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: Back to the Future–Pivots Return to the Tenderloin &lt;[[#people-update]]&gt;
+My Name Is... Karen Vuong &lt;[[#my-name-is]]&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Enterprise’s Software Heart
+ Steve Casale &lt;[[https://gopivotal-com.socialcast.com/users/1033819-stephencasale]]&gt;, Sr. Manager, Corporate Communications
+For some time, the chatter on being digital has largely been a one-way freeway. In the driver’s seat have been technology giants with software hearts, traveling at light speeds on services architectures and software that helped make compute, storage, and networking all but free. As Google, Amazon, Uber, Airbnb, Twitter and their ilk stormed into markets or invented new ones, enterprises spent many anxious days staring at the wheel.
+
+No more, says Pivotal—2016 may be the year the enterprise seizes the wheel. That premise was thrown down in a recent blog post by James Watters and Joshua McKenty &lt;[[https://blog.pivotal.io/pivotal-cloud-foundry/p-o-v/pivotal-cloud-predictions-a-perfect-storm-for-2016-the-top-5-themes]]&gt;. A bevy of industry leaders have also recently announced how they’re working with us to architect the digital hearts of their business. We’ll hear from many of them at our Worldwide Kickoff &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/events/sales-kick-off-2016]]&gt;, which will cast the die for this year of the 
+enterprise. 
+
+In this issue, Ryan Morgan and Janice Fraser cover microservices and lean principles, respectively—two areas with deep roots in cloud native. And in case you don’t know how critical BOSH has become, you will after reading our Product update. We’re attracting critical attention as customers do more of the talking for us, and as top talent from agile innovators like Slice of Lime &lt;[[https://blog.pivotal.io/pivotal-labs/news/pivotal-ux-design-practice-expands-with-slice-of-lime-acquisition]]&gt; and CloudCredo &lt;[[https://blog.pivotal.io/pivotal-cloud-foundry/news/pivotal-acquires-cloudcredo]]&gt; join the team; and because we’re giving the enterprise agency—to get back in the driver’s seat, take risks, and get to the heart of their business through 
+software.
+
+Enjoy.
+BUSINESS UPDATE
+ A Mighty Year For Spring 
+ Ryan Morgan &lt;[[https://gopivotal-com.socialcast.com/users/914989-ryanmorgan]]&gt;, Vice President, Application Platform
+The Spring Engineering team started 2015 with the goal of closer alignment with Pivotal’s core businesses. A year later, it’s amazing to see the progress we’ve made! Spring Boot &lt;[[http://projects.spring.io/spring-boot/]]&gt; and Spring Cloud &lt;[[http://projects.spring.io/spring-cloud/spring-cloud.html]]&gt; have helped insert Pivotal into the conversation around microservices, and what it means to enable cloud native development in the enterprise. We&apos;re seeing this with Pivotal Labs, where nearly 60% of the projects in Q4, employed Spring technologies.
+
+In November of 2015, we released the the Spring 
+Cloud Services suite, giving developers on PCF the tools to quickly build and establish the common patterns in distributed computing. At the core of our commercial offerings are open source Spring projects—which are as healthy as they have ever been—with Spring Boot &lt;[[http://projects.spring.io/spring-boot/]]&gt; reaching more than 2M 
+downloads in December. Across our open source portfolio, the team delivered 186 releases in 2015 across 26 projects or  subprojects. That’s more than a release every other day!
+
+Success, however, is much more than just writing great software—it hinges on getting the word out to our community and customers. In the past year we delivered over 125 conference sessions on our technology, participated in over 100 sales calls, and attracted over 1,000 people to our annual SpringOne conference. That number did not go unnoticed by long-time fellow travelers, and the engagement we’ve seen is nothing short of amazing.
+
+The team has just as many things to excite the Spring community and customers in 2016. The much-anticipated Spring Framework 5 will bring reactive support to the platform. Spring Cloud Data Flow and distributed tracing via Zipkin are slated for inclusion into the Spring Cloud Service suite, which continues our focus on making PCF the best place to run cloud native applications.
+
+Lastly, we recently announced that SpringOne 2016 &lt;[[http://springone.com]]&gt; will be co-located with Platform on August 1–4.  This is a great opportunity for Pivotal to show off our integrated story; we hope to see you there!
+PRODUCT UPDATE
+ Nothing Bosh About BOSH 2.0
+ Dmitriy Kalinin &lt;[[https://gopivotal-com.socialcast.com/users/1032940-dmitriykalinin]]&gt;, Software Engineer, Cloud Platform
+BOSH was built to allow individual operators and teams to easily update, package, and deploy software in a reproducible manner, as a simple static site or as complex, multi-component services. BOSH has always aimed to reduce complexity, helping developers do hard things with simple commands, and maintain consistency across multiple environments. 
+
+BOSH takes the variety of tools operators use to solve discrete problems—which often do not talk to each other—and addresses them as a whole. The BOSH &lt;[[https://github.com/cloudfoundry/bosh]]&gt; tool chain integrates well in distributed environments, and in our focus on best practices in software development (such as Continuous Delivery), BOSH has become a 
+cloud services workhorse. 
+
+Developed to deploy Cloud Foundry, BOSH can be used to deploy almost any other software (a Hadoop cluster or VMware VSphere, for example). With the coming commercial release of BOSH 2.0, we extend our mission of ease and velocity, with substantial improvements and automation for customers. Here’s what you can expect:
+
+
+
+ - 
+A dedicated service instance, which gets service brokers in Cloud Foundry to provision new resources automatically in multi-tenant environments. Service brokers will be able to talk to the BOSH APIs, and provision resources as needed. Much of that management was previously performed outside of BOSH through manifest configuration, and involved discrete steps to get it ready for the services broker. BOSH 2.0 takes on a lot of this IP, management of availability zones and network configuration, so service brokers don’t need to.
+
+
+ - 
+A new feature called Links, which allows BOSH to understand cluster topology in more detail. With this, operators need not explicitly record IPs, availability zones, and more. This can be handled automatically by the Director, which fills in required IP information.
+
+
+
+Further on the horizon is working with our Toronto team to bring data services deeper into BOSH, namely HAWQ and Hadoop. And based on feedback from the field, we’re looking at add-ons that customers want, like IPSec and anti-virus software. With these goals and a great BOSH team, we’ll continue in 2016 to make the on-demand services that define cloud native architectures and deployment processes, far less taxing.
+AGILE UPDATE
+ Agile, Lean, and Everybody’s Innovation Revolution
+Janice Fraser, Director, People Team
+Eric Ries isn’t afraid to speak truth to power. 
+
+“Most middle managers I meet are paid to make sure no innovation happens. It’s their job. And when I say that to most CEOs, they get so mad at me. The people in the organization whose job it is to standardize work to make sure everyone is on the same page and working to the same standard—their job is to prevent variation, which means prevent innovation.”
+
+“So what do we do about 
+that?” 
+
+With that provocative question, Eric Ries’ opened the Lean Startup Conference &lt;[[http://bit.ly/LSC2015-1]]&gt; in November, an event dedicated to transforming how 
+companies build products. The conference has become an anchor in Pivotal’s year, pulling in speakers from Pivotal’s Transformation, Labs, and People teams. The conference &lt;[[https://www.youtube.com/playlist?list=PL1M9pu1POlekMxS-EKorIuuO_JynFHQRm]]&gt; turned six this year &lt;[[https://www.youtube.com/playlist?list=PL1M9pu1POlekMxS-EKorIuuO_JynFHQRm]]&gt;, was live streamed in 100 countries, and featured case studies ranging from breakfast cereal and high science to electronics and energy, and even your income tax. 
+
+Minimum Viable Taxes with Lauren Gilchrist
+Pivotal’s Lauren Gilchrist and the Internal Revenue Service’s &lt;[[https://www.irs.gov/]]&gt; Andrea 
+Schneider led a project this year that has opened up a massive IRS software infrastructure to agile and lean. In their “on-the-record” conference talk, Minimum Viable Taxes &lt;[[http://bit.ly/LeanTaxes]]&gt;, the pair discussed what makes it so hard to build software in the IRS (think: Congress, regulators, accessibility, security, etc.), and how Pivotal-style Agile and Lean Startup allowed them to ensure they were building the right thing.
+
+In a typical IRS project the request for funding takes about three years, followed by a year of exhaustive requirements gathering, the outcome of which is “thrown over the wall” for developers to write code, “without talking to the business”—a classic waterfall process. This sheds some light on why the IRS literally processes our taxes using core software that was written during the Kennedy administration.
+
+
+
+Using the Labs Agile process and Lean 
+Startup, the IRS team developed a cross-functional collaboration framework and found creative solutions to operational problems. 
+
+“This was the hardest work I’ve ever done,” said Gilchrist during her talk. “This is the biggest scale that I’ve ever worked at. But so worth it. This was a lot of change for people that are very used to a process where ‘something gets thrown over the wall to me, I check the box, and I throw it over the wall’ to the next person,’” says Gilchrist. “The things we’ve learned by using Lean Startup have saved us thousands of hours of development work—and countless taxpayer dollars.”
+
+The pair hopes that their frank, open talk inspires others in the government, at Pivotal, and with our 
+clients to explore ideas like Lean, Agile, and Balanced Team &lt;[[http://www.balancedteam.org/]]&gt; for their projects. 
+
+A How-To Workshop for Leaders
+True to Eric Ries’s promise, the conference percolated with people sharing their stories, but what we all really wanted to know was: “What would Eric do?” If I’m going to attempt a Lean Startup implementation in my company, what steps has Ries seen work? Thankfully he’s writing that book—The 
+Leader’s Guide, due for publication in early 2016—and Pivotal is the lead sponsor of the work. 
+
+At the conference, I was honored to pilot the first-ever, officially endorsed “Leader’s Guide By Eric Ries” workshop. Along with seven Pivotal team members from across the company, we developed and led a workshop for 200 conference participants based on the steps laid out in Ries’s pre-release manuscript.
+
+His advice calls for rolling out Lean Startup in three phases:
+
+
+
+ - 
+Just try it. Start running Lean Startup experiments and you’ll learn a lot about yourself, your company, and the process. You’ll figure out how it works, gain some success, and (quite frankly) see which parts of your company have an allergic reaction to the things you’re trying to do. (In this way, it can be a lot like getting a client to try agile.)
+
+
+
+
+
+ - 
+Pull on some cultural levers. Working cross-functionally is often one of the major cultural changes, as many companies are used to working in silos. Like agile, Lean Startup is a team sport. Do fewer things, dedicate a cross-functional team to them, set up transparent accountability practices, and double down on successes.
+
+
+
+
+
+ - 
+Shift the deep operating structures of your company. As Ries pointed out in his opening remarks, if your people are incentivized to defend the status quo, than bold leaps forward can’t happen. Changing that is tough, however. Only once you’ve established some cultural support for innovation should you try to adapt the finance, compensation, and other deep structures.
+
+
+
+Our Leader’s Guide Official Workshop was organized into nine 30-minute hands-on activities, giving participants a project roadmap &lt;[[http://www.slideshare.net/clevergirl/2015-lean-startup-conference-leaders-guide-project-planner?related=1]]&gt; for addressing these three phases. In the coming year, we will be leading this workshop in 11 Pivotal offices around the world.  
+
+Timely Lessons for Pivotal
+According to Ries, the riskiest moment in a company’s history comes when it begins to scale. In the forthcoming book, Ries observes the following:
+
+“In an attempt to create stable, predictable outcomes, a company can—with good intentions, and almost without noticing—shut off the faucet of innovation. By setting up and preserving pro-innovation practices alongside the established pro-predictability practices (these are the de facto mandates of any large company), we can avoid the ossification that makes so many high-potential companies—in Silicon Valley and elsewhere—obsolete before their time.”
+
+
+These are timely reminders for Pivotal, as it enters this year of unprecedented growth and maturity.
+Customer Spotlight
+Customers To Take Spotlight at Kick Off
+Pivotal&apos;s annual Worldwide Kick Off is just days away, and while everyone is looking forward to inspiring keynotes, instructive 
+breakouts, and some team fun in San Francisco, our customers are the ones who will truly shine on the Pivotal stage this year.
+
+You can expect to hear from leaders in the automotive, media and financial industries about their transformational journeys with Pivotal, from 
+executives at Ford, Home Depot, Time Inc., Allstate, Comcast, and others who will sit for in-depth discussions. Many of those VIPs will also sit for video interviews that will become the basis for a fresh round of Pivotal customer case studies, and help take the message of transformation beyond the wall of the Marriott Marquee.
+
+Questions? E-mail Sophia Tseng: stseng@pivotal.io &lt;[[mailto:stseng@pivotal.io]]&gt;
+PEOPLE UPDATE
+ Back to the Future–Pivots Return to the 
+Tenderloin
+ Heather Ferguson &lt;[[https://gopivotal-com.socialcast.com/users/1510978-heatherferguson]]&gt;, HR Business Partner
+Erinne Seay &lt;[[https://gopivotal-com.socialcast.com/users/1096083-erinneseay]]&gt;, Talent Acquisition Operations
+At Kickoff last year, Pivotal partnered with the San Francisco City Academy &lt;[[http://www.sfcityacademy.com/]]&gt; in the city’s Tenderloin District to help bring a new enrichment learning center to life. The learning center was a vital piece of the Academy’s ongoing Technology Enrichment Program &lt;[[http://www.sfcityacademy.com/getinvolved/#volunteer]]&gt;, which offers students a glimpse at important 
+technologies not covered in their day-to-day learning. 
+
+The San Francisco City Academy was founded in 1997 as the first elementary school in San Francisco’s Tenderloin District. Many of the children in this neighborhood have lives shaped by poverty and crime. The Academy uses education as a lifeboat to break cycles of lost opportunities for the area’s youth, with curriculums tailored for each student to learn and excel at their own pace.
+
+This past October, Pivotal made good on its word to return. A dozen or so Pivots volunteered at the Academy for six weeks to assist with the after-school Technology Enrichment Program. Working with a group of children from 7–10 years old, Pivots taught them the basics of software development and other technology concepts. The class centered around a “Design Your Own Video Game” project. With more than 20 children in attendance, it ended up garnering the largest turnout the after-school program has ever had!
+
+“Design Your Own Video Game” helped students grasp the basics of computer programming by learning about and building their own games 
+with MIT Scratch &lt;[[https://scratch.mit.edu/]]&gt;. Sessions included Animation, Control, and Win Condition (how to tie animation and control together to achieve a common goal). 
+
+We’ll continue to partner with the Academy to boost their mission to equip and empower these children to break the cycles of poverty through a good education. Thank you to everyone who helped to make this a huge success! They include: 
+
+Developers: Evan Short, Philip Kuryloski, Tushar Dadlani, Zak Auerbach, Christa Hartsock, Elena Sharma, Tony Hansmann, Douglas Blumeyer, Andrew 
+Kitchen, Wiley Kestner
+
+Logistics: JR Boyens, Heather Ferguson, Erinne Seay
+
+
+Developer Volunteers shown in pictures: Philip Kuryloski, Evan Short, Tushar Dadlani
+MY NAME IS...
+ Karen Vuong
+ Karen Vuong &lt;[[https://gopivotal-com.socialcast.com/users/1891730-karenvuong]]&gt;, Principal Community Marketing Manager, Big Data
+Am part of the Big Data Community Marketing team. What do we do? We’re scaling up and maturing our open source contributors&apos; and user communities for Pivotal big data, which includes Greenplum, Apache Geode, Apache HAWQ and Apache MADlib.
+At a Pivotal Open Source Hub meetup or virtual community meeting!
+Driving our cadence of virtual and physical meetup events for these communities, helping to organize the first user summits, and helping these projects grow in adoption and graduate and become &quot;top-level projects.&quot; You’re welcome to attend any of the Pivotal Big Data Communities’ events! Take a look at the Pivotal Big Data Communities Calendar &lt;[[http://bit.ly/PivotalBigDataCommunitiesCal]]&gt;.
+I love to travel with my friends, go backpacking in the many forests of California, cycle along the coast on highway 1, go on strenuous hikes, and plan my next adventure!
+
+
+
+Godly heights (l to r): In Peru, rock-climbing to the hotel; Inca ruins on the trail to Machu Picchu.
+I’m an adrenaline junkie. I have a motorcycle and I love bungee jumping!
+Is innovative, and has amazing and unique ways of working with its customers. Pivotal is committed to OSS and wholly believes in open source community and collaboration.
+Welcome to Pivotal!
+It’s nice to see your name, and we’ve liked publishing all our new hires. However, given the holiday break and a raft of new college co-ops, this section has grown too big for a tidy digest (there were more than 90 of you between mid-December and now). But we have you covered. 
+
+Click here &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/human-resources/pivotal-new-hire-list]]&gt; to see and welcome new colleagues and college co-ops who joined Pivotal from Dec 14th through Jan 11th.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,45 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes"
+                controller="FollowedArticleController" access="global" >
+    <aura:attribute name="followedArticles" type="list"/>
+    <aura:attribute name="viewAll" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{! c.doInit}"/>
+    <div class="ui-widget">
+        <div class="base-items uiAbstractList selfServiceBaseSimpleItems selfServiceTopicTrendingArticles">
+            <div class="slds-text-heading_small slds-text-heading--small "><b>Followed Articles</b></div>
+            <ul class="slds-has-dividers_bottom slds-has-block-links_space">               
+                <aura:if isTrue="{!! empty(v.followedArticles)}">
+                    <aura:iteration items="{! v.followedArticles}"
+                                    var="art" indexVar="ind"> 
+                       <aura:if isTrue="{!and(lessthan(ind,5), equals(v.viewAll, false))}">
+                        <li class="slds-item slds-list_vertical-space-medium">
+                            <a href="{!'/s/article/'+ art.UrlName}">
+                                <div style="color:Black;font-size:0.75rem"><span class="item-title uiOutputText">{! art.Title}</span>
+                                </div></a>
+                        </li>
+                      
+                      <!--  <aura:set attribute="else">
+                        <li class="slds-item slds-list_vertical-space-medium">
+                            <a class="item-title-link" href="{!'/support/s/article/'+ art.UrlName}">
+                                <span class="item-title uiOutputText">{! art.Title}</span>
+                            </a>
+                        </li>
+                        </aura:set>-->
+                        </aura:if>
+                        <aura:if isTrue="{!and(equals(ind,5), equals(v.viewAll, false))}">
+                           <a style="color:#2574a9" href="https://scqa-pivotal--scqa.cs19.force.com/support/s/all-followed-articles" >VIEW ALL FOLLOWED ARTICLES</a>
+                           </aura:if>
+                        
+                       <!-- <aura:if isTrue="{!equals(ind,5)}">
+                           <c:AllFollowedArticles 
+                           </aura:if> -->
+                        
+                    </aura:iteration>
+                    
+                    <aura:set attribute="else">
+                        <p>No Followed Articles</p>
+                    </aura:set>
+                </aura:if>
+            </ul>
+        </div>
+    </div>
+</aura:component>

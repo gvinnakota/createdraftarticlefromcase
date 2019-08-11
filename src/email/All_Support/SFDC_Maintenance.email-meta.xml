@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>customer notification for SFDC quarterly system maintenance</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>SFDC bi-annual maintenance</name>
+    <style>freeForm</style>
+    <subject>Planned System Maintenance: December 15th</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+This is to notify you of a planned system maintenance.
+
+Pivotal Support uses Salesforce Service Cloud. Salesforce is performing their​ site switching process​ on December 15, 2018, from 9pm PST to 11pm PST.​​
+
+What this means for you:
+● If you plan to access Pivotal Support via ​community.pivotal.io​ during the maintenance window, please ​ensure you are logged in by 8:45 pm PST,​ for read-only access
+● If you need to contact Pivotal Support during the maintenance window, please do so via ​phone​ (it will not be possible to submit or update a support case while in read only mode)
+
+You can find more detail at: https://content.pivotal.io/support Please direct any questions or feedback to support-enablement@pivotal.io
+
+
+Kind regards,
+~ Pivotal Support team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

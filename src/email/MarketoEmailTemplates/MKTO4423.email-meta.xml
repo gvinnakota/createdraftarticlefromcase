@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Dec nwslttr</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.12-02-16 V4N14</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter – 6 Dec 2016</subject>
+    <textOnly>December 5, 2016
+Vol. 4, No. 13
+Letter From the Editor &lt;[[#letter-from-the-editor]]&gt; – Zero to One
+All Things Product &lt;[[#product-update]]&gt; – Checking in With Pivotal Dublin
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Being Boulder: Setting a Course for D&amp;I
+My Name Is &lt;[[#my-name-is]]&gt; – Dat Tran
+zero to one 
+
+
+
+
+Steve Casale, Sr. Manager, Communications
+Pivotal understands the idea of zero to one &lt;[[https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296]]&gt;. That is Silicon Valley parlance for going from something that did not exist to an innovation, or hurling the javelin of possibility into new and uncharted territory. Pivotal Cloud Foundry is one way Pivotal helps customers who are seeking—through software—the path from zero to one: The platform concentrates and automates processes, which brings new velocity to app development. That widens the field of opportunity to do zero to one things and create and capture its value.
+
+
+Pivots that build our products necessarily model velocity. And while innovation is crucial to Pivotal, our constellation of builders is global. It can be challenging to distribute velocity across oceans, time zones, and teams. Pivots gain as much from the &quot;1 to n&quot; idea—or replicating something that already exists—as they do in going from zero to one. Engineer James Monserrate&apos;s nice article in All Things Product touches on 1 to n ways that Pivotal Dublin collaborates as a spoke in the global Cloud Foundry hub.
+In our Labs + Culture article, Kevin Menzie writes on the Boulder team&apos;s D&amp;I blueprint for 2017. It includes a nice zero to one play in helping very young women open new doors through the promise of STEAM &lt;[[http://www.ed.gov/stem]]&gt;.
+Checking in with pivotal Dublin
+
+
+
+
+Jamie Monserrate, Cloud Foundry Engineering Director, Dublin
+Pivotal has two key teams running out of our Dublin office: The Services pipeline and the PCF RabbitMQ teams. Both teams are split evenly across London and Dublin, and are brilliant examples of remote teams at their best—conversations over Slack, abundant use of appear.in &lt;[[https://appear.in/]]&gt; (for video), use of parrit for pair signups and postfacto for retros. These are some of of the means used to facilitate smooth collaboration from Dublin, which is one spoke in a global Pivotal hub and team that helps developers and enterprises continuously innovate from the Cloud Foundry platform.
+Developers have had a brilliant experience pushing their apps to Pivotal Cloud Foundry—it “just works” goes the saying, and we want to provide the same level of experiences for data services.
+Services Pipeline
+ The Services Pipeline team was born out of a refactoring that started almost a year ago. We realised that all data services had a very common pattern for their pipelines. We extracted all of this to form a common template, and the pcf-tile-pipeline &lt;[[https://github.com/pivotal-cf/pcf-tile-pipeline]]&gt; and opsman-lifecycle &lt;[[https://github.com/pivotal-cf/opsman-lifecycle]]&gt; were born. This team is focussed on building opinionated pipelines to enable services teams to focus on what they do best: building services. The team’s output is not simply a set of pipelines. It’s a set of best practices on automating, building, and shipping releases which incorporate all the learnings of continuously integrating BOSH releases for the last two years, so that consuming services teams do not have to go through the failures that we did.
+Ben Laplanche has a great presentation &lt;[[https://drive.google.com/a/pivotal.io/file/d/0B1ekZrvzvvvnMTJacTVWUUU3NTg/view?usp=sharing]]&gt; on how we&apos;ve come to have a leading opinion on Cloud Native Data. His insights and slides on this &lt;[[https://docs.google.com/presentation/d/1ZXD5K_pfuIGL1TPXvm94lo7vtlam-mVhIGpa8d-Nd8Q/edit#slide=id.p]]&gt; are well worth the read. Ben talks about our journey, our learnings along the way, and the vision for PCF services.
+So far, the team has been receiving some glowing feedback! They have Pivotal teams consuming their pipelines in consumers in Denver, New York, San Francisco, London, and Dublin.
+PCF RabbitMQ
+ The RabbitMQ team is building an on-demand version of the PCF RabbitMQ tile. This enables developers and customers to provision a dedicated RabbitMQ cluster for themselves on-demand, meaning they don&apos;t have to worry about noisy neighbor bandwidth hogs  &lt;[[http://searchcloudcomputing.techtarget.com/definition/noisy-neighbor-cloud-computing-performance]]&gt; and other multi-tenant problems. The team also focuses on features that give greater control to operators that prevent developers from misusing the product. For example, we build in guardrails like connection limits, message-size limits, etc., that contain the damage developers can inflict when they misuse the product. They are also working on ensuring the product is enterprise ready &lt;[[https://docs.google.com/presentation/d/1u_wDazqvhNJ_HYpWbnp5uLS9FcDeINo3mLyxEU5YwVI/edit#slide=id.g17643d2a27_0_178]]&gt;. This means building more automation to test things like upgrades under load and long-running clusters.
+In 2017, we&apos;ll continue to focus on these two key initiatives. We&apos;re looking to grow these teams, and potentially help out on newer initiatives. So if you know of folks in Dublin, or interested in relocating to Dublin, please do refer them!
+Interestings
+
+
+
+
+
+
+
+
+
+
+ - Culture pick: In case you missed em&apos;, read the BBC &lt;[[http://www.bbc.com/news/business-37998577]]&gt; and Inc &lt;[[http://www.inc.com/sal-rodriguez/pivotal-labs-2016-company-of-the-year-nominee.html]]&gt;. profiles about Pivotal
+ - Prezo pick: Casey West&apos;s 5 Stages of Cloud Native &lt;[[https://t.co/iosrTyk62V]]&gt; (denial and anger make an appearance)
+ - Tweet: Learn the platform in non-techie terms in Amit Gupta&apos;s PCF primer &lt;[[https://twitter.com/craigsteelinla/status/803415478274138112]]&gt;
+ - Pivotal legal sponsored webinar: &quot;Employment-Based Immigration in a Trump Administration&quot; (7 Dec. Sign up here &lt;[[https://attendee.gotowebinar.com/register/7041284937654189828]]&gt;)
+ - The PCF Administrator Course &lt;[[https://pivotal.io/training/courses/pivotal-cloud-foundry-administrator-training]]&gt; is now available! Customers can learn how to install, configure, and run PCF installations. 
+ - Holiday cheer: Catch &quot;the Pivots &lt;[[https://vimeo.com/156796703]]&gt;&quot; trailer! (rather cryptic, but still fun)
+being boulder: setting a course for D&amp;I
+
+
+
+
+Kevin Menzie, Office Director, Pivotal Boulder
+Thanks to Tessa Reuber, who helped write this article. 
+
+The Boulder team recently gathered to kick off our Grassroots Diversity &amp; Inclusion efforts. We started by running through an exercise to help define what diversity means to our office, what we hoped to achieve with the group, and to plan next steps.
+
+We went through a familiar Pivotal exercise of using sticky notes to identify common themes on what Diversity &amp; Inclusion means to our team.
+
+From that we gleaned the following themes and aims for the Boulder office:
+
+ 
+
+
+
+ - 
+Creating an inclusive, supportive environment that accommodates not just race and gender, but all ages and stages of careers.
+
+
+ - 
+Working towards gender balance in the office and within disciplines.
+
+
+ - 
+Creating a place that welcomes religious and philosophical backgrounds.
+
+
+ - 
+Embracing ethnic and cultural diversity.
+
+ - A place where different worldviews, backgrounds, and voices are heard and understood, with a hiring process that accommodates this.
+
+
+
+Other big topics included creating a place where everyone feels respected, and where we value and seek a variety of skill sets.
+We then discussed ways to support these ideas or how to explore these topics further.
+This quarter, we&apos;ve invited Dena Samuels, PhD &lt;[[http://www.denasamuels.com/home.html]]&gt;, a sociologist specializing in diversity and inclusiveness services, to lead a workshop with our office on “Minimizing Implicit Bias and the Stereotype Threat.”
+
+Thinking beyond the office itself, we’ve started a group called “littleBits of Boulder &lt;[[http://littlebits.cc/community/chapters/littlebits-of-boulder]]&gt;”, which aims to get girls between the ages of 6–12 interested in STEM. Using littleBits (easy-to-use, magnetic circuits), we teach design thinking with different themes at monthly events.
+
+Young women codiiiiiiiiiiix
+Other ideas that our group came up with include:
+
+
+
+ - 
+Hosting a meet-up with tech and non-tech leaders about diversity and inclusion in the workplace.
+
+
+ - 
+Partnering with the NCWIT &lt;[[https://www.ncwit.org/]]&gt; on an event that drives diversity and inclusion in computer science. 
+
+
+ - 
+Share our own backstories with the rest of the team.
+
+
+ - 
+Gain perspectives on how the Boulder community advocates for diversity through volunteer work. 
+
+
+
+We also have our new organizers and leaders for the Grassroots D&amp;I Group: Tessa Reuber and Erica Birkman. Thank you Tessa and Erica!
+We’re excited to see how the group evolves and grows over time!
+hong wu
+
+
+
+
+
+Hong Wu, Software Engineer, Beijing
+At Pivotal I...
+Am a member of Pivotal Data in Beijing. I&apos;m working with a fantastic team on Apache HAWQ, and am currently focused on big data platforms such as Hadoop SQL Engine.
+You can find me...
+In the fresh new Pivotal Beijing office with the HAWQ team. I&apos;m a big fan of Github so you can find an octocat &lt;[[https://github.com/octocat]]&gt; at my working table. I welcome you to visit! You can find out more about me here &lt;[[http://xunzhangthu.org/about/]]&gt;.
+Currently, I am working on…
+Apache HAWQ Project which is a native SQL engine upon Hadoop. While HAWQ is a homophone with &apos;hawk&apos;, as a product it&apos;s more like an Impala (a super-fast land animal). Before HAWQ, I was working on distributed machine learning and real-time recommendation systems. I think the HAWQ Beijing team is amazing—it&apos;s made up of folks from a wide range of fields, including machine learning, networking, and linux kernel and database systems experts. 
+In my spare time…
+I&apos;m crazy about sports—basketball, 
+football, ping pong, swimming, running, skiing. I&apos;ve been a die-hard fan of the Golden State Warriors since 2006. I like the novel &quot;run and gun&quot; way they have redefined basketball. You can add to that a love for travel, riding, and trekking. I&apos;ve traveled to Tibet, Taiwan, Tokyo, Irkutsk (Russia), Athens, Santorini, Mykonos, Aachen, Foster City… I have a Brompton Bicycle &lt;[[http://www.brompton.com/]]&gt; that I&apos;d like to take it around the world.
+Something you probably don’t know about me…
+I spent one-week trekking along Lake Baikal &lt;[[http://lakebaikal.org/]]&gt; (the world&apos;s oldest and deepest freshwater lake, in Siberia) by myself in 2014. It was an adventure—the Siberian Plain is so lonely and broad. There was only the Baikal, the mountains, and me. One night as I prepared to sleep, I heard some animal calls outside. I opened my tent and found it was a distant gull soaring above the lake. The plain was so quiet!
+Getting to the root of things in Asia. Middle photo: Sushi from the family restaurant.
+To me Pivotal is…
+ 
+Is a cool software company with lots of talented engineers—like a warm and kind family!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

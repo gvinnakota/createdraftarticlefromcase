@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Querying External Data Sources with Hadoop_Q214.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: Querying External Data Sources with Hadoop Webinar on 7/15</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar &quot;Querying External Data Sources with Hadoop&quot; on Tuesday, July 15, 2014 at 9:00 AM PDT/5:00PM GMT+1. Please see the event details below:
+
+Date: Tuesday, July 15, 2014
+Time: 9:00AM PDT (San Francisco)/5:00PM GMT+1 (London)
+Event Number: 669 579 740
+Join the Webex &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=669579740&gt;
+ Teleconferencing Information:
+This webinar will be streaming live, however dial-in options are available:
+
+
+
+ - Global call-in numbers &lt;https://gopivotal.webex.com/gopivotal/globalcallin.php?serviceType=EC&amp;ED=112132122&amp;tollFree=1&gt; 
+ - Toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt; 
+ - Access code: 669 579 740
+
+
+
+{{my.Save the Date:default=edit me}}
+ 
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

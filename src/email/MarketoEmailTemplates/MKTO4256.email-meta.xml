@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Tech Workshops_Q3-416.Confirmation - New York (AM)</name>
+    <style>none</style>
+    <subject>Registration Confirmed for Data Science Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=there,}}
+
+ You are now registered for the Pivotal Data Science Technical Workshop in New York. 
+
+ Date &amp; Location
+Thursday, October 20th, 2016
+8:30AM to 12:30PM 
+
+Pivotal New York
+625 Avenue of the Americas
+Second Floor, New York, NY 10011 
+
+ New York Agenda 
+8:00AM-8:30AM Registration &amp; Breakfast
+8:30AM-12:30PM Hands on Data Science Technical Workshop 
+
+ Prepare your system for the workshop 
+If you are planning to follow the workshop labs, you will need to have a client ssh program installed. 
+
+ There are several open source / free programs available:
+
+
+ 
+ - Windows: Putty http://www.putty.org/ &lt;[[http://www.putty.org/]]&gt; or MobaXterm http://mobaxterm.mobatek.net/download.html &lt;[[http://mobaxterm.mobatek.net/download.html]]&gt; (MobaXterm is preferred) 
+ - MacOS: Native built in 
+ - Linux: Native built in
+
+
+
+ You are also welcome to use any commercial version of ssh if you have it. 
+
+ Questions? 
+ If you have a question about the workshop, please contact us at events@pivotal.io &lt;[[mailto:events@pivotal.io]]&gt;. 
+
+ We look forward to seeing you at the workshop. 
+
+ Best Regards, 
+Pivotal Data Science Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

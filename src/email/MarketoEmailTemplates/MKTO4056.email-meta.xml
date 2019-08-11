@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.05-07-15 v3n8 USE THIS ONE</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 8</subject>
+    <textOnly>VOL. 3, NO. 8
+Thursday, May 7, 2015
+Editor Welcome: Lucky 8&apos;s &lt;#editor-welcome&gt;
+Business Update: Q1 Update - Checking all the Boxes &lt;#business-update&gt;
+Product Update: Pivotal Cloud Foundry 1.4 - Cloud-Native Development Made Easier &lt;#product-update&gt;
+Agile Update: Office Hours - The Quickest Client Sprint &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: The New Science to the Art of the Sale &lt;#people-update&gt;
+My Name Is... Ali Baker and Morgan McClelland &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+
+LUCKY 8&apos;S
+
+Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+In Chinese, the pronunciation of number eight, or “ba”, is similar to that of “fa”, the word associated with prosperity and fortune. As tradition has it, that makes it the luckiest of the lucky digits in China. For our eighth newsletter in 2015, the winds of “lucky eight” may be at our backs.
+
+
+
+In all key financial measures, Pivotal wrapped the first quarter ahead of plan, and CFO Robert O’Donovan provides insights on the quarter. James Bayer outlines the new Pivotal Cloud Foundry release that continues to define cloud-native app development (a new Hot Seat &lt;https://pivotal.biglms.com/the-hot-seat-series-pcf&gt; video from James Watters is also out!), while Graham Siener writes how agile can serve any audience with the briefest of sprints.
+
+
+
+That’s all sweat equity, not luck, and it was well represented at EMC’s biggest annual gathering &lt;http://www.emcworld.com/overview.htm&gt; in Las Vegas this week, where Pivotal spun its narrative &lt;http://pivotal.io/emc-world&gt; of transformation around open source, hybrid clouds and platform automation, mining value in the IoT, building data lakes, and more. Next up: the Cloud Foundry Summit &lt;http://www.cfsummit.com/&gt;!
+
+
+
+In the end, it’s not luck, but serendipity that counts, or extending our business to be in the right place when chance strikes, and seizing it.
+BUSINESS UPDATE
+
+Q1 UPDATE - CHECKING ALL THE BOXES
+
+Robert O’Donovan &lt;https://gopivotal-com.socialcast.com/users/950116-robertodonovan&gt;, CFO, Pivotal
+The only bad thing about the outstanding Q4 that Pivotal closed last year with, was having to follow it. I’m very pleased to report, however, that we carried that momentum into 2015, with strong financial and business results in the first quarter. The Q1 highlights include:
+
+
+	- Beating our Q1 plan in each of our top financial measures: bookings, revenue and EBIT (earnings before interest and taxes);
+	- Welcoming 20 new Pivotal Cloud Foundry &lt;https://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; and Pivotal Big Data Suite &lt;https://pivotal.io/big-data/pivotal-big-data-suite&gt; customers; and
+	- Less than three months on our march to open source in data, launching the Open Data Platform &lt;http://opendataplatform.org/&gt; (ODP), establishing with Hortonworks and IBM, the ODP Hadoop core; raising our sponsorship level in the Apache Software Foundation &lt;http://www.apache.org/&gt; (ASF); and submitting Geode - the open source core of Gemfire - for incubation in the ASF. More coming!
+
+
+
+Subscription Strength
+
+
+
+We continue to rotate to a subscription business, which saw healthy year-over-year growth, and within that, quarter-over-quarter growth of 20% in recurring subscription revenues (or revenues that re-occur yearly, hence creating an annuity stream into the future). Recurring revenues provide predictability, and are an important measure of the longer-term health of our subscription business.
+
+
+
+As I mentioned last quarter, we expect our recurring revenues to grow substantially as we expand our subscription footprint for PCF and Pivotal Big Data Suite.
+
+
+
+Delivering Again
+
+
+
+The field delivered, beating our Q1 plan, booking $59M worth of business. Fueling this was Pivotal Labs, which grew more than 27% y-o-y, an exciting outcome as Pivotal Labs’ role in pulling both platform and data sales is now a central tenet of our strategy.
+
+
+
+Inovalon &lt;https://docs.google.com/a/pivotal.io/viewer?a=v&amp;pid=sites&amp;srcid=cGl2b3RhbC5pb3xjdXN0b21lci1tYXJrZXRpbmctYW5kLXByb2dyYW1zfGd4OjVlZDlkNzNjMjM4MTVmZQ&gt; is just one textbook example of a transformative win. This leading healthcare technology company seeks an advanced, cloud-native platform to help their customers achieve better clinical outcomes, utilization, and performance. Inovalon saw a solution in the whole Pivotal portfolio, with PCF and Pivotal Labs driving those outcomes, and the Pivotal Big Data Suite at the core of their analytics strategy. Visit customer marketing &lt;https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/assets/external-slides&gt; for more Q1 wins.
+
+
+
+The positive traction continues into this quarter, so stay tuned for the next financial update!
+PRODUCT UPDATE
+
+PIVOTAL CLOUD FOUNDRY 1.4 - CLOUD-NATIVE DEVELOPMENT MADE EASIER
+
+James Bayer &lt;https://gopivotal-com.socialcast.com/users/914815-jamesbayer&gt;, Sr. Director of Product Management, Pivotal Cloud Foundry
+We’re pleased to announce the release of Pivotal Cloud Foundry 1.4 &lt;http://docs.pivotal.io/pivotalcf/pcf-release-notes/&gt; with a host of new features that make it easier than ever to develop and manage cloud-native 
+applications. Highlights include:
+
+
+ - PCF’s MySQL database service now offers high availability by adding support for resilient clustered database configurations over multiple availability zones.
+ - New CLI plugins let developers extend the command line interface with custom functionality that can be shared via the plugin community &lt;http://plugins.cloudfoundry.org&gt;.
+ - Environment variable groups and cloud controller feature flags make it easier to manage developers’ application and platform configurations.
+ - On the logging front, 1.4 adds first packet security logging, the ability to view real-time application logs in the browser, plus a logging fire hose that streams platform logs and metrics to a central log manager.
+
+
+
+This release also adds official Amazon multi-cloud support, which we’ll be promoting along with the upcoming AWS installer. Stay tuned here, and read the Pivotal blog for the many other features delivered in this release &lt;http://blog.pivotal.io/cloud-foundry-pivotal/products/announcing-new-pivotal-cloud-foundry-features&gt;.
+ 
+ On a related 
+note, James Watters just took his turn in the &quot;Hot Seat &lt;https://pivotal.biglms.com/the-hot-seat-series-pcf&gt;&quot; video series, answering a host of questions that the Field often gets on Pivotal Cloud Foundry, including the tough ones. The videos are posted in the Pivotal Academy &lt;https://pivotal.biglms.com/field_enablement&gt; (where you can register first if you have not done so). The videos are internal to Pivotal, and are a must see for anyone selling PCF!
+ 
+ Finally, a big thank you to everyone on the team for Pivotal Cloud Foundry 1.4. Reach out to pcf-concierge@pivotal.io &lt;mailto:pcf-concierge@pivotal.io&gt; if you have any questions.
+AGILE UPDATE
+
+OFFICE HOURS - THE QUICKEST CLIENT SPRINT
+
+Graham Siener &lt;https://gopivotal-com.socialcast.com/users/951892-grahamsiener&gt;, Director, Product Management and Design, Pivotal Labs
+The story is almost always the same: Customers come to Pivotal Labs when they want to launch market-tested, innovative products.
+ 
+ Some companies though, want to learn more about Labs and aren&apos;t necessarily ready to commit to a full project. For them we’ve introduced Product Office Hours &lt;http://productlabs.io&gt;, a complimentary hour of consulting to help product teams get actionable advice on how to move forward.
+ 
+ Product Office Hours started as 
+a way to offer both Pivots with side projects and clients without Product Managers, the opportunity to talk through a problem they were facing and get advice. We made a concerted effort to &quot;productize&quot; these sessions and create a repeatable, scalable process.
+
+Product teams come to our office and spend a full hour with two Pivots, work-shopping a specific product or design challenge &lt;http://www.productlabs.io/what-we-cover&gt;. We&apos;ll talk through whatever it is that keeps them up at night, from a tricky on-boarding flow, to scaling challenges, to bumps along the road, to product market fit.
+ 
+ We launched an office hour MVP (minimal viable product) in New York City last summer to attract 
+interested participants, and subsequently expanded Office Hours that fall to more Pivotal Labs offices.
+ 
+ 
+ Unraveling knots - Working with customers 
+one issue at a time
+ 
+ 50+ sessions later, Product Office hours is a great success. Participants around the world are singing our praises, such as Stitched &lt;http://stitched.io/posts/2015-03-31-love-hurts-pivitol-office-hours/&gt;, Knotable &lt;http://blog.knotable.com/post/94755665443/friday-lunch-pivotal&gt; and weeSpring &lt;https://medium.com/product-labs/when-users-miss-the-front-door-c2a9e7b93dcb&gt;. These sessions help position us as product thought leaders, and our client, Capital One, even replicated these Office Hours within its company. Our PMs and Product Designers love the opportunity to practice facilitating a room, and to offer immediate value. Moreover, we’re attracting lots of inbound interest from potential hires that like seeing our processes for critical thinking.
+ 
+ We&apos;re making strides to push Office Hours everywhere Pivotal lives. If we haven’t rolled it out in your city yet, stay tuned. Here&apos;s to helping more products in 2015!
+Customer Spotlight
+Q1 Customer Case Slides Are In!
+
+
+
+What do Time, Inc., Tyco, and the Internal Revenue Service have in common? They&apos;re three of Pivotal&apos;s newest customers tapping big data to transform the way they operate. Check out Customer Marketing for the latest win slides &lt;https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/assets/external-slides?mkt_tok=3RkMMJWWfF9wsRoiuqrJZKXonjHpfsX97OkoWqa1lMI%2F0ER3fOvrPUfGjI4JS8JnI%2BSLDwEYGJlv6SgFTLLAMal10LgNWxg%3D&gt; highlighting an excellent first quarter - with 18 new business case studies across the spectrum of industries, including new wins and expanded partnerships with Nordstrom, TIM Wireless, Home Depot and TD Ameritrade. Customer business case slides &lt;http://info.pivotal.io/VdUv000Cka0J200INo9DiA0&gt; are all scripted, and can be shared, and include a confidential win analysis. You can also now listen to the sales rep interviews via mp4.
+
+
+
+
+
+Some of the big logos Pivotal scored in Q1’ 2015
+
+(logos not approved for external use)
+
+
+
+Questions? Contact us at: customer-marketing@pivotal.io &lt;mailto:customer-marketing@pivotal.io&gt;.
+PEOPLE UPDATE
+
+THE NEW SCIENCE TO THE ART OF THE SALE
+
+Eric Landon &lt;https://gopivotal-com.socialcast.com/users/942605-ericlandon&gt;, Director, WW Business Operations
+Coming soon to your screen: A new and powerful selling experience: The Subscription Platform Program. Sales and Finance Operations have been working intensely to redesign our systems so Pivotal teams - from Platform, to Data, to Pivotal Labs - can sell directly to customers with ease. This will include changes to tools like Salesforce, OpenAir, and a slick new billing and finance system, Zuora. All of this will help Pivotal on its journey to becoming an independent, stand-alone company. Here’s a look at what the Field can expect from the Subscription Platform Program:
+
+
+	- Sales teams will be able to configure and quote subscriptions and services in a new module (Zquote), with pricing and reporting capabilities.
+	- A transformed OpenAir system for Pivotal Labs and Customer Support, complete with quote and project linking between Salesforce.com and OpenAir.
+	- More value from Salesforce as it becomes the source for all deal artifacts (from SLA’s, PSA’s, MSA’s, PO’s, SOW’s, etc). Actual account history will be maintained for business continuity as sales reps transition to new accounts. Salesforce will further be the system of record for all bookings.
+	- Finance will have a stand-alone accounting sub-ledger for Pivotal transactions, with auto-generated invoices and more flexible billing terms.
+
+
+
+We’re working hard over the next few months to officially launch in mid-July. Thanks for your support on this initiative, we’ll keep you updated, and let us know if you have any questions: sales-ops@pivotal.io &lt;mailto:sales-ops@pivotal.io&gt;
+MY(OUR) NAME IS...
+
+ALI BAKER AND MORGAN MCCLELLAND
+
+Palo Alto Happiness Team
+Are the Palo Alto Happiness Team.
+Enthusiastically interacting with, well, everybody from behind the concierge desk in the light-filled lobby of our Palo Alto office.
+It&apos;s never just one thing at a time, but our big ongoing projects include: improving our food program and planning fun and meaningful events for everyone to enjoy!
+The home of many undercover singing sensations...we will find you, and put you on the Pivotal Café stage! No one is safe.
+...My boyfriend and I go on weekend motorcycle adventures, and plan for future trips abroad.​​​​​​​​
+I&apos;m a cheerful vegan, and dream about starting an animal sanctuary or rescue some day!
+
+
+
+
+
+
+
+Street ninja (or why I like my commute) - Ali with her Kawasaki Ninja 300 
+I swim! I recently joined the Stanford Masters Swim Team in get back in shape!
+...I used to live in French-speaking Switzerland. Vive La Suisse! 
+ 
+ 
+ Above it all - Morgan looking out from the alpine heights of Switzerland
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from April 21st through May 4th (and welcome new college interns)!:
+ 
+ Alicia Bozyk, 
+Senior Software Engineer, New York
+ Andrea Angquist, UX Designer, Palo Alto
+ Ashkan Kiyomarsi, College Intern, Toronto
+ Beat Richartz, Senior Software Engineer, London
+Benjamin Lo, College Intern, Toronto
+ Brittany McGill, Recruiting Consultant
+ Christina Freking, Product Manager, Denver, CO
+ Daniel Kamerling, Product Manager, 
+Santa Monica, CA
+ Daniel Kaplan, Software Engineer, Santa Monica, CA
+ Daniel Mortimer, Senior Field Engineer, Americas East
+ Derek Tracy, Senior Field Engineer, US
+ 
+Douglas Blumeyer, Software Engineer, San Francisco
+ Edward Hand, Sales Account Manager, Americas
+ Javin Ambridge, College Intern, Toronto
+ Joseph Andrews, Recruiting 
+Consultant
+ Judy Chen, College Intern, Toronto
+ Karan Chopra, College Intern, Toronto
+ Leonardo Santamaria, IT Technical Specialist, Toronto
+ Li Wang, Associate 
+Data Engineer, US
+ Michael Palmer, Associate Field Engineer, US
+ Michael Trestman, San Francisco, Technical Writer
+ Navjot Sagoo, Associate Field Engineer, US
+ Nelson 
+Gonzalez, Director of Market Development, San Francisco
+ Nicole Hui, College Intern, Palo Alto
+ Nyron Saavedra, Sales Account Manager, Americas West
+ Pradeep Kumar Rout, Senior Member of 
+Technical Staff, Beaverton, OR
+ Sean Fitzpatrick, Senior Recruiting Consultant
+ Shailesh Doshi, Senior Data Engineer
+ Steve Dunlap, College Intern, San Francisco
+ Vladimir 
+Vassilovski, Software Engineer, Toronto
+ Yadhav Jayaraman, Senior Field Engineer, Americas East
+ Zhiyi Zhang, College Intern, 
+Toronto</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

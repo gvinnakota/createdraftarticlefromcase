@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Associated Opportunity --></label>
+        <name>Associated_Opportunity__c</name>
+        <relationshipLabel><!-- APBG Deal Registrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Customer --></label>
+        <name>End_Customer__c</name>
+        <relationshipLabel><!-- APBG Deal Registrations (End Customer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Contract Nbr --></label>
+        <name>Partner_Contract_Nbr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner --></label>
+        <name>Partner__c</name>
+        <relationshipLabel><!-- APBG Deal Registrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the Amount from the Associated Opportunity. --></help>
+        <label><!-- Pivotal Booking Amount --></label>
+        <name>Pivotal_Booking_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep --></label>
+        <name>Sales_Rep__c</name>
+        <relationshipLabel><!-- APBG Deal Registrations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Deal TCV --></label>
+        <name>Total_Deal_TCV__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>APBG Deal Registration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>APBG Deal Registrations</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <layouts>
+        <layout>APBG Deal Registration Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

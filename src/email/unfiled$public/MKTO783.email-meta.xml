@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Hadoop Summit_Q214.Follow Up Attended</name>
+    <style>none</style>
+    <subject>Hadoop Summit - A Pivotal Thanks</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for visiting Pivotal during the Hadoop Summit.
+
+Recently we announced the availability of Pivotal Big Data Suite &lt;http://www.gopivotal.com/big-data&gt;, which helps you glean insights from all of your data so you can build powerful applications that serve your business and engage your customers. 
+
+Pivotal Big Data Suite allows you to Store Everything, Analyze Anything and Build the Right Thing.
+
+At the core of Pivotal Big Data Suite, is unlimited Pivotal HD (the industry’s most powerful Hadoop distribution). This open subscription allows you to perpetually leverage your data and place it all in a centralized Business Data Lake &lt;http://www.gopivotal.com/big-data/businessdatalake&gt;.
+
+Do you want to test our Hadoop Distribution? Download Pivotal HD 2.0 Single Node VM &lt;https://network.gopivotal.com/products/pivotal-hd&gt; and try it for yourself.
+
+
+Additional Pivotal HD documentation can be found here &lt;http://pivotalhd.docs.gopivotal.com/index.html&gt;.
+
+
+To learn more about Pivotal and how we’re helping customers build great software please visit us at goPivotal.com &lt;http://www.gopivotal.com/&gt;.
+
+Thanks!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

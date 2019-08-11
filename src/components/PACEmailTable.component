@@ -1,0 +1,44 @@
+<apex:component id="PACEmailTable" controller="PACEmailTableController" access="global">
+    <apex:attribute assignTo="{!quoteId}" name="qId" description="Quote Id" type="Id"/>
+
+    <style>
+        .rightCol{
+            text-align: right;
+        }
+
+        .pacTable{
+            border: solid 1px #CCCCCC;
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+    </style>
+
+    <apex:outputText rendered="{!renderPACs}">
+        <b>To get NSX-T:</b>
+        <ol>
+            <li>Go to the VMWare Redemption Portal  </li>
+            <li>Login with your existing MyVMware credentials or Register</li>
+            <li>Enter the below PAC(s) to trigger the license activation process</li>
+            <li>You will receive an email from VMWare containing your license keys to unlock the product after
+                download</li>
+            <li>Download the latest version of NSX-T from the VMWare Downloads site</li>
+        </ol>
+    </apex:outputText>
+    <apex:dataTable value="{!pacs}" var="pac" border="1" rendered="{!renderPACs}" styleClass="pacTable">
+        <apex:column value="{!pac.Key__c}">
+            <apex:facet name="header">Product Activation Key (PAC)</apex:facet>
+        </apex:column>
+        <apex:column value="{!pac.Assigned_Product2__r.Name}">
+            <apex:facet name="header">Related Product</apex:facet>
+        </apex:column>
+        <apex:column value="{!pac.Quantity__c}" styleClass="rightCol">
+            <apex:facet name="header">Quantity</apex:facet>
+        </apex:column>
+        <apex:column value="{!UOMs[pac.Assigned_Product2__c]}" styleClass="rightCol">
+            <apex:facet name="header">UOM</apex:facet>
+        </apex:column>
+        <apex:column value="{!pac.Subscription_Period__c}">
+            <apex:facet name="header">Subscription Period</apex:facet>
+        </apex:column>
+    </apex:dataTable>
+</apex:component>

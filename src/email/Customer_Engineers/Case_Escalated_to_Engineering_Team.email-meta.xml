@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Escalation of Case to R&amp;D Engineering</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer: Case Escalated to Engineering Team</name>
+    <style>freeForm</style>
+    <subject>Case {!Case.CaseNumber} Escalated to Engineering Team</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Following our most recent actions and after reviewing all evidence, I believe it necessary to seek additional help from R&amp;D, and your case has now been escalated.
+
+I expect to receive a response from Engineering with their initial review and feedback within &lt;CE to insert “30 minutes” for Sev 1 or “8 business hours” for other Sevs&gt;. This information and additional guidance will be included in my next case update.
+
+Kind regards,
+
+&lt;CE name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

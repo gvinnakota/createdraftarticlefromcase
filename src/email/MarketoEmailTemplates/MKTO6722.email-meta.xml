@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2018.Invite 1 - SG</name>
+    <style>none</style>
+    <subject>Join us at SpringOne Tour Singapore</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+I would like to invite you to be my guest at SpringOne Tour 2018 in Singapore.
+
+The SpringOne Tour brings the best Cloud-Native Java content from our flagship conference directly to you. In one day, you&apos;ll learn about both traditional monolithic and modern, Cloud-Native Java from the source.
+
+Date: 12th November 2018
+
+Time: 8:45am - 6:30pm
+Registration opens from 8:00am
+
+Venue: Grand Hyatt Singapore
+
+REGISTER TODAY: https://springonetour.io/2018/singapore
+
+Experience valuable facetime with expert Pivotal speakers in both traditional presentation and informal open space discussions about modern Application Development, DevOps, CI/CD, Cloud and more.
+
+Highlighted Sessions:
+- Reactive Spring with Spring Boot 2.0, Mark Heckler, Developer Advocate, Pivotal
+- Cloud-Native Spring, Josh Long, Spring Developer Advocate, Pivotal
+- Using Spinnaker to Create a Development Workflow on Kubernetes, Paul Czarkowski, Principal Technologist, Pivotal
+- and more...
+
+Additionally, from 5pm there will be a Meetup hosted by Michael Cote on the topic of creating a DevOps culture, whatever that means.
+
+We look forward to seeing you there.
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

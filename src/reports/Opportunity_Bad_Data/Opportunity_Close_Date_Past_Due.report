@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_67547702</developerName>
+        <masterLabel>Theater / Area</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>User.Region__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER West</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pacific Southwest</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Central North</sourceValue>
+            </sourceValues>
+            <value>AMER West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER East</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>New England</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Southeast</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Canada</sourceValue>
+            </sourceValues>
+            <value>AMER East</value>
+        </values>
+        <values>
+            <value>AMER GE</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Federal Civilian</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Federal DoD/Intel</sourceValue>
+            </sourceValues>
+            <value>AMER Fed</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>NY/NJ Global Financial Services</sourceValue>
+            </sourceValues>
+            <value>AMER Fin Serv</value>
+        </values>
+        <values>
+            <value>AMER Media / Telco</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER Data Sales</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER PDE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER Sub Renewals</sourceValue>
+            </sourceValues>
+            <value>AMER Other</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>APJ Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Australia New Zealand</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Greater China</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ India</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Japan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Korea</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ South Asia</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Southeast Asia</sourceValue>
+            </sourceValues>
+            <value>APJ</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>EMEA ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Labs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA UKI</sourceValue>
+            </sourceValues>
+            <value>EMEA</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AMOUNT.CONVERT</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_67547702</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>FULL_NAME</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Number__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT.CONVERT</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Opportunities with a past due close date.  Close Date &lt; TODAY.  Status &lt;&gt; Omitted, Closed.</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Booked,Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CLOSE_DATE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>lessThan</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>lewicki</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_67547702</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>*Opportunity - Close Date Past Due</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

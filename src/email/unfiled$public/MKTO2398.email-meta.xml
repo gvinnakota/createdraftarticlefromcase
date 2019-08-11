@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Improving your (legacy) Application with Spring.Confirmation 1</name>
+    <style>none</style>
+    <subject>Webinar Confirmation: Improving your (legacy) Application with Spring</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Your registration is confirmed for the webinar Improving your (legacy) Application with Spring with Marten Deinum. We are looking forward to having you join us. 
+To help maximize your webinar experience we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html &lt;http://www.webex.com/test-meeting.html&gt;.
+Event Details:
+
+Date: Tuesday, May 12, 2015  {{my.My Token:default=Save the Date}}
+Europe: 3:00pm GMT Summer Time (London, GMT+01:00) Join the WebEx &lt;https://pivotal-io.webex.com/pivotal-io/onstage/g.php?MTID=e8263893841a9ee94f6b0da4ce06897fd&gt;
+Dial In:
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show toll-free dialing restrictions
+
+Access code:  663 133 794
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Area__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CreatedBy.Area__c)</formula>
+        <label>Area</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Attachment_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>Attachment Link</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Blended_Cost__c</fullName>
+        <description>$300/hr multiplied by FE Hours</description>
+        <externalId>false</externalId>
+        <formula>FE_Activity_Hours__c *300</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Blended Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Calendar__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:Calendar.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calendar</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Check_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Check Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Check_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Check Notes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Current_Product_Version__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Product Version</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Events__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Events</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Upgrade</fullName>
+                    <default>false</default>
+                    <label>Upgrade</label>
+                </value>
+                <value>
+                    <fullName>Downgrade</fullName>
+                    <default>false</default>
+                    <label>Downgrade</label>
+                </value>
+                <value>
+                    <fullName>Install</fullName>
+                    <default>false</default>
+                    <label>Install</label>
+                </value>
+                <value>
+                    <fullName>Shutdown/Restart</fullName>
+                    <default>false</default>
+                    <label>Shutdown/Restart</label>
+                </value>
+                <value>
+                    <fullName>Expand/Scale - Adding VM/Node/Clusters</fullName>
+                    <default>false</default>
+                    <label>Expand/Scale - Adding VM/Node/Clusters</label>
+                </value>
+                <value>
+                    <fullName>Network Change</fullName>
+                    <default>false</default>
+                    <label>Network Change</label>
+                </value>
+                <value>
+                    <fullName>Infrastructure Change</fullName>
+                    <default>false</default>
+                    <label>Infrastructure Change</label>
+                </value>
+                <value>
+                    <fullName>Maintenance/Housekeeping</fullName>
+                    <default>false</default>
+                    <label>Maintenance/Housekeeping</label>
+                </value>
+                <value>
+                    <fullName>IaaS Migration</fullName>
+                    <default>false</default>
+                    <label>IaaS Migration</label>
+                </value>
+                <value>
+                    <fullName>Major Customer Event</fullName>
+                    <default>false</default>
+                    <label>Major Customer Event</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customers_Planned_Procedure__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Eg Runbook/Timeline Doc if available</inlineHelpText>
+        <label>Customer's Planned Procedure</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>DueDateMonth__c</fullName>
+        <externalId>false</externalId>
+        <formula>Month(ActivityDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DueDateMonth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DueDateYear__c</fullName>
+        <externalId>false</externalId>
+        <formula>YEAR(ActivityDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DueDateYear</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duration_in_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Duration in Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBC_Location__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For Executive Briefing activities, location being held.</inlineHelpText>
+        <label>EBC Location</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>San Francisco</fullName>
+                    <default>false</default>
+                    <label>San Francisco</label>
+                </value>
+                <value>
+                    <fullName>Chicago</fullName>
+                    <default>false</default>
+                    <label>Chicago</label>
+                </value>
+                <value>
+                    <fullName>New York</fullName>
+                    <default>false</default>
+                    <label>New York</label>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>London</fullName>
+                    <default>false</default>
+                    <label>London</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FE_Activity_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>FE Activity Hours</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_EMC__c</fullName>
+        <externalId>false</externalId>
+        <label>Legacy ID EMC</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_SPRING__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Legacy ID SPRING</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_VMWARE__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Legacy ID VMWARE</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_ID_XtremeLab__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Legacy ID XtremeLab</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Legacy_Info_ExtremeLab__c</fullName>
+        <externalId>false</externalId>
+        <label>Legacy Info ExtremeLab</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Local_Time__c</fullName>
+        <description>Time of the event in the customer's time zone</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Add the time of the event in the customer's time zone</inlineHelpText>
+        <label>Local Time</label>
+        <required>false</required>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Log_Date__c</fullName>
+        <description>Date to log FE Activity Hours against</description>
+        <externalId>false</externalId>
+        <label>Log Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>New_Product_Version__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the product version the customer will be upgrading to if applicable</inlineHelpText>
+        <label>New Product Version</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OldOwner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>OldOwner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Outreach_Task_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Outreach Task Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Salesforce Linkedin View Profile</fullName>
+                    <default>false</default>
+                    <label>Salesforce Linkedin View Profile</label>
+                </value>
+                <value>
+                    <fullName>Linkedin Connection Request</fullName>
+                    <default>false</default>
+                    <label>Linkedin Connection Request</label>
+                </value>
+                <value>
+                    <fullName>Linkedin Send Message</fullName>
+                    <default>false</default>
+                    <label>Linkedin Send Message</label>
+                </value>
+                <value>
+                    <fullName>Linkedin Interact with Post</fullName>
+                    <default>false</default>
+                    <label>Linkedin Interact with Post</label>
+                </value>
+                <value>
+                    <fullName>Linkedin Other</fullName>
+                    <default>false</default>
+                    <label>Linkedin Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product(s)</label>
+        <required>false</required>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Product</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Slack_Channel_Name_if_applicable__c</fullName>
+        <externalId>false</externalId>
+        <label>Slack Channel Name (if applicable)</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Specified_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Specified Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Task_Remains_with_Case__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Task Remains with Case</label>
+        <type>Checkbox</type>
+    </fields>
+    <enableFeeds>false</enableFeeds>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team's Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today's Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+</CustomObject>

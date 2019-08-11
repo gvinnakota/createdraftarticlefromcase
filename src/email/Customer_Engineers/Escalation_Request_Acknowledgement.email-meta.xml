@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Escalation Acknowledged</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer: Escalation Request Acknowledgement</name>
+    <style>freeForm</style>
+    <subject>Escalation Request Acknowledgement {!Case.CaseNumber}</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+In response to your most recent feedback I have engaged our Escalation Managers, to ensure we have the right level of attention on this issue. This team will ensure your interests are well represented across the right groups in Pivotal. Together, we are currently reviewing this issue to determine the best next steps. We will be in touch with you soon.
+
+Kind regards,
+&lt;CE name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

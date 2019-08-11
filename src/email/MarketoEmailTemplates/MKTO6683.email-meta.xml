@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>03 - Technology Requirements 2H 2018.03b - Technology Requirements</name>
+    <style>none</style>
+    <subject>Read the eBook - Beyond the 12 Factor App</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Organisations looking to take advantage of cloud-native approaches to drive agile software development require a platform that automates and integrates the concepts of DevOps, continuous delivery, microservices and containers.
+
+Learn the features essential for agile software development:
+
+Infographic: 5 Tips for Building Engaging, Data-Driven Mobile Apps: https://content.pivotal.io/infographics/5-tips-for-building-engaging-data-driven-mobile-apps-infographic
+Users demand engaging, high-performance mobile app experiences. Read the 5 tips from Gartner for building data-driven mobile applications.
+
+eBook: Beyond the 12 Factor App - Exploring the DNA of Highly Scalable, Resilient Cloud Applications: https://connect.pivotal.io/rs/625-IUJ-009/images/ebook-beyond-the-12-factor-app.pdf
+This eBook analyses cloud pioneer Heroku&apos;s twelve-factor app model, a set of rules and guidelines for helping organisations build cloud-native applications, applying today&apos;s new approaches and their impact on the framework.
+
+I trust these insights will help you make transformation real for your organisation.
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

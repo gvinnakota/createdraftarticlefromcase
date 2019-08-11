@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Telco Luncheon Series_Q314.08 Thank You Email</name>
+    <style>none</style>
+    <subject>Thank you for attending the Executive Luncheon on Telecommunications</subject>
+    <textOnly>&lt;http://connect.pivotal.io/APJ-Telco-luncheonseries.html&gt;
+Dear {{lead.First Name:default=Sir/Madam}},
+
+
+
+Sorry you couldn&apos;t attend our Executive Luncheon on Telecommunications. We hope to see you next time.
+
+
+
+Here is a link to some recent blog articles that Paul Davey has written that you might find of interest: http://blog.pivotal.io/author/pdavey
+
+
+
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

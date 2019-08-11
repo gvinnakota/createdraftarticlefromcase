@@ -1,0 +1,14 @@
+<apex:page id="RoleInstancesOnQuoteRatePlan"
+           standardController="zqu__QuoteRatePlan__c" extensions="RoleInstancesOnQuoteRatePlanController"
+           sideBar="false" showHeader="false" showChat="false">
+           <!--controller="RoleInstancesOnQuoteRatePlanController"-->
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!instances}" var="instance">
+            <apex:column value="{!instance.Name}"/>
+            <apex:column value="{!instance.Role_Quantity__c}"/>
+            <apex:column value="{!instance.Hourly_rate__c}"/>
+            <apex:column value="{!instance.Hours_Per_Role__c}"/>
+            <apex:column value="{!instance.Total_Hours__c}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

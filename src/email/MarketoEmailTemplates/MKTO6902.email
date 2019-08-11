@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>2019年数据技术沙龙</title> 
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style> 
+</head> 
+<body style="margin:0; "> 
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; "> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; "> 
+<tbody> 
+<tr> 
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td> 
+</tr> 
+<!-- {{system.viewAsWebpageLink}} http://icampaign.com.cn/pivotal/Big_Data_Roadshow/sshh/sun.html--> 
+<tr> 
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td> 
+</tr> 
+<tr> 
+<td height="20"></td> 
+</tr> 
+<tr> 
+<td valign="top"> 
+<div class="mktEditable" id="banner-main">
+<a href="http://www.pivotal-china.com/html/event/event_20181213.html" target="_blank"><img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_12_15_banner.png" border="0" alt="打造企业数字化转型"></a>
+</div> </td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- <table> 
+<tbody>
+<tr>
+<td height="20px" bgcolor="#EDEDEE">&nbsp;</td>
+</tr> 
+</tbody>
+</table>  --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<!-- <tr>
+   <td>
+   	<table>
+   		<tr>
+   		<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:20px 20px;">真金不怕火炼！天生自信的 Spring 开放式编程模型是全球数百万开发人员所广泛使用的模型。Spring 技术解锁了微服务方法<br><br>们将在“Pivotalk”第一期在线公开课中为您带来主题为“如何使用 Spring Boot／Spring Cloud 实现微服务应用”的讲座。这个新栏目是 Pivotal 携手 CSDN 开设的系列公开课，技术内容将聚焦硅谷和行业的前沿技术，且与实践紧密相连。欢迎小伙伴们加入我们的技术社区，与Pivotal 海内外的技术大咖互动分享。</td>
+   			<td width="50%">
+   					<img src="http://connect.pivotal.io/rs/625-IUJ-009/images/201707182.jpg" style="padding-left:230px;">
+   			</td>
+   		</tr>
+   	</table>
+   </td>
+	
+</tr> --> 
+<tbody> 
+<tr> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:17pt; padding:25px 20px 25px 20px;">
+<div style="font-family: Helvetica,Arial,sans-serif;color:#01ad9d; font-size:15px;margin-bottom:25px;" align="center">
+<b>打造企业数字化转型 ：基于Greenplum的海量数据处理与并行计算优化</b>
+</div>随着越来越丰富的数据类型、海量数据以及规模更庞大的处理任务逐渐成为常态，传统的SMP（对称多处理）计算架构价格昂贵，并且扩展性极差，难以满足这种海量数据的计算需求。<br><br>Greenplum是Pivotal公司投入研发十多年，基于开源PostgreSQL数据库开发的一款Share-Nothing架构的分布式MPP数据库，具备高并发、高可用和高灵活等多种特性，可以对大任务、复杂任务进行快速高效计算，恰到好处地满足并行数据计算性能和海量数据管理的需求，目前在金融、电信、零售等领域有着广泛应用。<br><br>本次活动，来自Pivotal的多位技术大咖，将基于现下热门的新零售、新金融、人工智能、智慧城市等场景进行剖析，详细为大家介绍Greenplum平台在高级分析场景中的高灵活度和适用性，如何运用Greenplum内置算法帮助企业或用户快速处理和分析海量数据，获得行业洞察。 </td> 
+</tr> 
+<tr> 
+<td style="padding-bottom:25px;"> 
+<table> 
+<tbody> 
+<tr> 
+<td width="250">&nbsp;</td> 
+<td style="font-family: 'Helvetica','sans-serif';  background-color: #01ad9d; font-size: 16px;color: white;padding:4px 0" width="200" align="center" valign="middle"><a href="http://www.pivotal-china.com/html/event/event_20181213.html" style="text-decoration:none;color: white;">会议日程</a></td> 
+<td width="250">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<tr> 
+<td style="color: #01ad9d; line-height: 17pt; font-size: 15px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 0px 20px;"><b>活动时间</b></td> 
+</tr> 
+<tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 25px 20px;">2019 年 1 月 12（周六下午）13:30 ~ 17:00</td> 
+</tr> 
+<tr> 
+<td style="color: #01ad9d; line-height: 17pt; font-size: 15px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 0px 20px;"><b>活动地点</b></td> 
+</tr> 
+<tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 25px 20px;">北京海淀区中科院南路融科资讯中心B座12层</td> 
+</tr> 
+<!-- 
+<tr> 
+<td style="color: #01ad9d; line-height: 17pt; font-size: 15px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 0px 20px;"><b>活动亮点</b></td>
+</tr> --> 
+<!-- <tr><td style="padding:0px 20px 0px 20px;">
+
+      <table cellpadding="0" cellspacing="0" width="100%" style="color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif'; " border="0">
+<tr>
+<td style="width:20px;" width="20">●</td>
+<td  width="540">
+   <b>全新版本特性解读</b>
+</td>
+</tr>
+<tr>
+<td width="" ></td>
+<td style="padding-bottom:10px;">
+全新的Greenplum 6在升级PostgreSQL内核至9.4版本的同时，增加了大量新特性，包括基于WAL日志的mirror同步、分布式死锁检测、复制表、在线扩容等都将进行详细解读；
+</td>
+</tr>
+
+<tr>
+<td width="15">●</td>
+<td >
+   <b>聆听来自一线数据科学家的声音</b>
+</td>
+</tr>
+<tr>
+<td width=""></td>
+<td style="padding-bottom:10px;">
+届时，来自Pivotal的数据科学专家将与您进行一对一的交流， 回答您在应用Greenplum时面临的难题，指明您的挑战，最终助力您的企业实现数字化转型。
+</td>
+</tr>
+
+<tr>
+<td width="15">●</td>
+<td >
+   <b>应用场景直击当前热点</b>
+</td>
+</tr>
+<tr>
+<td width=""></td>
+<td style="padding-bottom:25px;">
+不论是智慧城市建设、新金融、人工智能，还是传统行业的数字化转型，都是企业面对的现实热门话题，如何利用数据的力量在白热化的市场竞争中恒然制胜？且看Pivotal专家一一为您详细阐述。
+</td>
+</tr>
+</table></td></tr>  --> 
+<!-- <tr> 
+<td style="padding-bottom:25px;"> 
+<table> 
+<tbody>
+<tr> 
+<td width="250">&nbsp;</td> 
+<td style="font-family: 'Helvetica','sans-serif';  background-color: #01ad9d; font-size: 16px;color: white;padding:4px 0" width="200" align="center" valign="middle"><a href="http://www.pivotal-china.com/html/event/event_20181213.html" style="text-decoration:none;color: white;">讲师介绍</a></td> 
+<td width="250">&nbsp;</td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr>  --> 
+<!-- <tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 25px 20px;">满载干货的大数据技术沙龙来了，1月12日咱们相约北京！</td> 
+</tr>
+
+<tr> 
+<td style="padding-bottom:25px;"> 
+<table> 
+<tbody>
+<tr> 
+<td width="250">&nbsp;</td> 
+<td style="font-family: 'Helvetica','sans-serif';  background-color: #01ad9d; font-size: 16px;color: white;padding:4px 0" width="200" align="center" valign="middle"><a href="http://www.pivotal-china.com/html/event/event_20181213.html" style="text-decoration:none;color: white;">赶快注册</a></td> 
+<td width="250">&nbsp;</td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr>  --> 
+</tbody> 
+</table> 
+<!-- fasdfgfgfsdhfgfgasdfgas gsfdsdgfsdfsdfsdfsdfsdfsdfsdfsdsssssssssssssssssssssssssssssssssssssssssssssssssssss--> 
+<!-- <table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+ <tr> 
+<td style="color: #01ad9d; line-height: 17pt; font-size: 15px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 0px 20px;"><b>日程安排</b></td>
+</tr> 
+
+<tr> 
+<td style="padding: 0px 20px;"> 
+<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+<tbody> 
+<tr> 
+<td style="background-color: #01ad9d;padding:7px 5px;color: #ffffff; line-height: 22px; font-size: 14px;font-family: 'Helvetica','sans-serif';" width="100"><b>时间</b></td> 
+<td style="background-color: #01ad9d;padding:7px 5px 7px 0px;color: #ffffff; line-height: 22px; font-size: 14px;font-family: 'Helvetica','sans-serif';"> <b> 议程</b></td> 
+<td style="background-color: #01ad9d;padding:7px 10px 7px 0px;color: #ffffff; line-height: 22px; font-size: 14px;font-family: 'Helvetica','sans-serif';" width="255"> <b>演讲人</b></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td style="padding: 8px 20px 25px 20px;"> 
+<table border="0" cellspacing="0" cellpadding="0" width="100%"> 
+<tbody> 
+<tr style=""> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="100" valign="top">13:00 ～ 13:30</td> 
+<td style="color: #595757; padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">签到</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260"></td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">13:30 ～ 13:40</td> 
+<td style="color: #595757; padding:  5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">开场致辞</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260">程良，Pivotal数据业务总监</td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">13:40 ～ 14:10</td> 
+<td style="color: #595757; padding:  5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">信用卡中心基于Greenplum的新一代数据平台交流</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260">赵新，民生银行信用卡中心科技部资深项目经理</td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">14:10 ～ 14:40</td> 
+<td style="color: #595757; padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">Pivotal Greenplum6全新特性展示</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260">高小明，Pivotal中国研发中心Greenplum产品总监</td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">14:40 ～ 15:25</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">点亮智慧城市之心，看Pivotal如何通过高级数据分析解决公共服务问题</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260">任振中，Pivotal Platform Architect</td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">15:25 ～ 15:45</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">茶歇</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260"></td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">15:45 ～ 16:30</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">海量金融数据，一个平台对策——Greenplum针对海量金融数据实时分析</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260">韩鹏，Pivotal资深架构师</td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">16:30 ～ 17:00</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">支持深度学习，基于Greenplum的AI快速应用开发与支撑平台</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260">高星，上海掌数科技有限公司AI创新事业部总经理</td> 
+</tr> 
+<tr> 
+<td style="padding:5px;color: #01ad9d; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="90">17:00 ～ 17:15</td> 
+<td style="color: #595757;  padding: 5px  10px 5px 0px; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc">问答 & 抽奖</td> 
+<td style="padding:5px;color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';border-bottom:1px solid #cccccc" width="260"></td> 
+</tr>  
+
+</tbody> 
+</table> </td> 
+</tr> 
+
+<tr> 
+<td style=" line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';color:#555555; padding:0px 20px 25px 20px;">满载干货的大数据技术沙龙来了，1月8日咱们相约北京。如果您有任何会议和技术问题，请通过下面的方式联系我们，或登陆官网了解更多<a href="https://pivotal.io/cn/pivotal-greenplum" style="color:#01ad9d">Greenplum产品信息</a>。</td>
+</tr>
+
+<tr> 
+<td style="padding-bottom:25px;"> 
+<table> 
+<tbody>
+<tr> 
+<td width="250">&nbsp;</td> 
+<td style="font-family: 'Helvetica','sans-serif';  background-color: #01ad9d; font-size: 16px;color: white;padding:4px 0" width="200" align="center" valign="middle"><a href="http://www.pivotal-china.com/html/event/event_20181213.html" style="text-decoration:none;color: white;">赶快注册</a></td> 
+<td width="250">&nbsp;</td> 
+</tr> 
+</tbody>
+</table> </td> 
+</tr> 
+
+</tbody> 
+</table>   --> 
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody> 
+<!-- <tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 0px 20px;"><b>查看详细安排及演讲内容摘要</b></td>
+</tr> --> 
+<tr> 
+<td style="color: #01ad9d; line-height: 17pt; font-size: 15px; font-family: 'Helvetica','sans-serif'; padding:0px 20px 20px 20px;"><b>专家演讲主题</b></td> 
+</tr> 
+<tr> 
+<td> 
+<table width="560" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style=""> 
+<tbody> 
+<tr> 
+<td width="25%" valign="top"> <img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_12_12_1.png" style=""> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding-left:10px;padding-bottom:0px;">
+<div style="font-size:13px;color: #595757;">
+<b>主题：新金融场景下，用Greenplum打造新一代数据平台</b>
+</div>
+<div style="font-size:13px;color: #595757;margin-top:10px;">
+赵新， 民生银行信用卡中心科技部资深项目经理
+</div>
+<div style="margin-top:10px;">
+中国民生银行信用卡中心通过新一代数据平台项目的建设，充分挖掘和发挥数据资产价值，利用数据应用支持，提升了民生银行信用卡中心的客户服务水平、风险管理水平和精细化经营水平。Greenplum在民生银行信用卡中心新一代数据平台中，发挥着重要的作用。本次演讲将为您介绍民生银行新一代数据平台的建设情况、数据平台现状、未来的规划以及民生银行信用卡中心在运维中的实际经验分享。
+</div></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td> 
+<table width="560" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style=""> 
+<tbody> 
+<tr> 
+<td width="25%" valign="top"> <img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_12_12_2.png" style=""> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px;padding-left:10px;padding-bottom:0px;">
+<div style="font-size:13px;color: #595757;">
+<b>主题：Pivotal Greenplum6惊艳亮相：升级PostgreSQL，增加新特性</b>
+</div>
+<div style="font-size:13px;color: #595757;margin-top:10px;">
+任振中, Pivotal Platform Architect
+</div>
+<div style="margin-top:10px;">
+Greenplum 6在升级PostgreSQL内核至9.4版本的同时，增加了大量新特性，包括基于WAL日志的mirror同步、分布式死锁检测、复制表、在线扩容、磁盘限额、自动master切换、zStandard压缩、GP-GP集群间高效查询等，在这次演讲中将分析介绍这些新特性。
+</div></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td> 
+<table width="560" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style=""> 
+<tbody> 
+<tr> 
+<td width="25%" valign="top"> <img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_12_12_3.png" style=""> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding-left:10px;padding-bottom:0px;" valign="top">
+<div style="font-size:13px;color: #595757;">
+<b>主题：为智慧城市解决痛点，看Pivotal如何通过高级数据分析解决公共服务问题</b>
+</div>
+<div style="font-size:13px;color: #595757;margin-top:10px;">
+高小明，Pivotal中国研发中心Greenplum产品总监
+</div>
+<div style="margin-top:10px;">
+数据是构建智慧城市的基石。如何实时、高效、精确和智能化的运营管理和洞察数据？如何借助数据分析，提高公共服务水平、优化社会治理能力？如何达成城市设计科学化、经济增长持续化和产业布局合理化等一系列的智慧城市建设目标？Pivotal Greenplum数据平台可以带你走进智慧城市的核心，一览数据推动下智慧城市的发展进程。
+</div></td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td> 
+<table width="560" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style=""> 
+<tbody> 
+<tr> 
+<td width="25%" valign="top"> <img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_12_12_4.png" style=""> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding-left:10px;padding-bottom:0px;">
+<div style="font-size:13px;color: #595757;">
+<b>主题：如何规整海量金融数据？Greenplum基于PostgreSQL数据平台强化HTAP</b>
+</div>
+<div style="font-size:13px;color: #595757;margin-top:10px;">
+韩鹏, Pivotal资深架构师
+</div>
+<div style="margin-top:10px;">
+HTAP (Hybrid OLTP and OLAP)作为近年的一个热点关键词，在各种数据库专业会议和产业界备受瞩目。Greenplum作为最流行的分布式PostgreSQL数据平台，拥有大量OLAP用户，其HTAP潜力，不容小觑。本次演讲将为您分享Greenplum在某客户海量金融数据实时分析场景中显示出强大HTAP能力的经验。
+</div> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td> 
+<table width="560" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;" align="center"> 
+<tbody> 
+<tr style=""> 
+<td> 
+<table style=""> 
+<tbody> 
+<tr> 
+<td width="25%" valign="top"> <img src="https://connect.pivotal.io/rs/625-IUJ-009/images/2018_12_12_5.png" style=""> </td> 
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px;padding-left:10px;padding-bottom:0px;">
+<div style="font-size:13px;color: #595757;">
+<b>主题：看Greenplum+AI新组合玩转大数据</b>
+</div>
+<div style="font-size:13px;color: #595757;margin-top:10px;">
+高星, 上海掌数科技有限公司AI创新事业部总经理
+</div>
+<div style="margin-top:10px;">
+Pivotal Greenplum凭借其出色的高性能、可维护性和高可用性，被越来越多的企业用来构建数据中心和集市。Pivotal与上海掌数科技有限公司合作推出的一款基于Greenplum生态和核心技术的人工智能快速开发应用平台——“群贤平台VAG”。该平台提供了打通数据平台、建模平台和可视化分析的全流程解决方案，可以帮助行业机构客户更轻松、简单的使用Greenplum能力开展大数据挖掘与分析工作，加速业务的创新。
+</div> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style=" line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';color:#555555; padding:0px 20px 0px 20px;"><b>满载干货的大数据技术沙龙来了，1月12日咱们相约北京！</b></td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style=""> 
+<table> 
+<tbody> 
+<tr> 
+<td width="250">&nbsp;</td> 
+<td style="font-family: 'Helvetica','sans-serif';  background-color: #01ad9d; font-size: 16px;color: white;padding:4px 0" width="200" align="center" valign="middle"><a href="http://www.pivotal-china.com/html/event/event_20181213.html" style="text-decoration:none;color: white;">赶快注册</a></td> 
+<td width="250">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+<tr> 
+<td height="25px" bgcolor="white">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> 
+<!-- <table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;"> 
+<tbody>
+<tr>
+<td height="25px" bgcolor="#EDEDEE">&nbsp;</td>
+</tr> 
+<tr>
+<td height="20px" bgcolor="white">&nbsp;</td>
+</tr> 
+ 
+<tr> 
+<td style="color: #595757; line-height: 17pt; font-size: 13px; font-family: 'Helvetica','sans-serif';padding-top:0px;padding-bottom:20px; padding:0px 20px 20px 20px;">如果你希望深入了解Spring技术，并把它熟练使用及掌握，那么这场干货满满的技术沙龙绝对不要错过。<br><br><b>Pivotal高级技术总监Andrew Clay Shafer （<span style="background-color:#F3F2F2;">Puppet Labs联合创始人</span> ）将携多位海内外Spring技术大咖一起，献上精彩话题。</b></td> 
+</tr> 
+
+ 
+</tbody>
+</table>  --> 
+<table width="600" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;"> 
+<tbody> 
+<tr> 
+<td height="20px" colspan="3">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="20px"></td> 
+<td> <img src="http://connect.pivotal.io/rs/625-IUJ-009/images/201707181.jpg"> </td> 
+<td width="20px"></td> 
+</tr> 
+<tr> 
+<td width="20"></td> 
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;"><b>pivotal.io/cn</b></a></td> 
+<td width="20"></td> 
+</tr> 
+<tr> 
+<td height="20px;">&nbsp;</td> 
+</tr> 
+<tr> 
+<td width="20"></td> 
+<td align="left" valign="top" style="color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a> <p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p> <span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2018 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br> <a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 
+<!--<p> --></td> 
+<td width="20"></td> 
+</tr> 
+<tr> 
+<td height="20px;">&nbsp;</td> 
+</tr> 
+</tbody> 
+</table> </td> 
+</tr> 
+</tbody> 
+</table>  
+</body>
+</html>

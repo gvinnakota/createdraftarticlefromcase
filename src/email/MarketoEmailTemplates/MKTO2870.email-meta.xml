@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.9-3-2015 V3N14</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 14</subject>
+    <textOnly>VOL. 3, NO. 14
+Thursday, September 3, 2015
+Editor Welcome: August Thunder &lt;#14ebc20d8b820466_editor-welcome&gt;
+Business: The Road to ODP Leads to September  &lt;#business-update&gt;
+Product: Going Cloud Native: OpenStack Support Comes to PCF  &lt;#product-update&gt;
+Agile: Pivotal Labs East Builds on What it Started &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People: Next Gen Thought Leaders Shine at Pivotal &lt;#people-update&gt;
+Hello, My Name Is... Kevin Crocker &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ August Thunder
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+With a milestone Town Hall &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/pivotal-town-hall&gt;, big cloud native thinking at VMworld, DevOps Days, Jenkins, and a meet-up on what Apache Ambari means for the &lt;https://www.youtube.com/watch?v=sVrowynZsd0&amp;feature=youtu.be&gt; ODP, Pivotal thundered through this hemisphere’s final summer month. I did make a late summer read of Matt Stine’s how-to cookbook &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook&gt;, Migrating to Cloud Native Application Architectures (OK, not the recipes 
+part). For context on why cloud native matters to any business, and the technical and business pieces that only together help organizations succeed in a more autonomous, decentralized cloud native architecture, this is your booklet. And it’s a free download &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook&gt; online, so read up!
+
+In this issue: Mike Maxey outlines the summer build-up for the fall 
+ODP data community launch, Mike Goelzer gives us more reasons why PCF is the choice platform through new OpenStack support; our US interns impressed us once again; and Rahul Singh provides nuggets on how Pivotal Labs East continues to help customers unlock their inner entrepreneurs. 
+
+
+Pivotal at VMworld (clockwise from l): Celebrity writer Matt Stine signing session; Cornelia Davis jams on DevOps; Pivotal’s Bridget Kromhout draws a crowd.
+
+Finally, 
+tell your prospects that Pivotal has lots planned for Denver startup week &lt;http://pivotal.io/open-house/denver&gt;, the Big Data Roadshow &lt;http://pivotal.io/big-data/data-roadshow&gt; 
+has added more stops in more cities, and we released a sharp new video &lt;https://www.youtube.com/watch?v=5q-ntJOKYA4&gt; where customers have good things to say about going cloud native with Pivotal.
+
+Enjoy!
+BUSINESS
+ The Road to ODP Leads to September
+ Mike Maxey &lt;https://gopivotal-com.socialcast.com/users/917174-mikemaxey&gt;, Strategy and Corporate Development
+It&apos;s been a busy summer for ODP and the bold new data play and community it represents. We’re setting this community up for meaningful launch in late September, and we could use your help. In advance of the Apache: Big Data Europe &lt;http://events.linuxfoundation.org/events/apache-big-data-europe&gt; and Strata + Hadoop &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/events/strata-hadoop-conference-ny-2015&gt; in New York, we are looking to add more members and interest in the community. You can contribute by:
+
+
+ - Suggesting your customers or Pivotal partners join ODP—ping me (Mike Maxey)
+ -  Connect the technical to our TWC group and GitHub activities—ping Roman Shaposhnik 
+ -  Drive awareness via blogging, tweets, or meetups—ping Michael Weir
+ -  Asking your peers about ODP and starting the local conversations 
+
+
+
+ 
+Today we have close to 30 ODP member commitments to date, with the goal of reaching forty members by launch. Here’s a snapshot of where we are:
+
+Technical Working Group: The open source data team, led by Roman Shaposhnik, continues to drive its aggressive goal to deliver an &apos;alpha&apos; set of bits, test suite(s), reference configuration, and public trackers for 
+September.
+
+Bylaws and Governance:Platinum members (Pivotal, Hortonworks, IBM, Telstra, GE, SAS, and Infosys) have been working diligently to create the ODP bylaws and related documents for its governance. We expect to share these bylaws with the world in late September. The team is proud of the balance we’ve created that will drive an open community of big data vendors and technologists, working together to drive big data standards.
+
+ODP Public Launch:The marketing team is rallying to deliver a strong launch. As mentioned above they’ll help us leverage Strata NY and the ApacheCon events. We’re updating our marketing and digital assets for the September launch, including a new webpage, a series of blogs, and presentations that message the value we create, how we operate, and how to participate. If you’d like to participate in this marketing effort, contact Michael Weir (mweir@pivotal.io &lt;mailto:mweir@pivotal.io&gt;).
+
+We’re looking forward to a terrific debut for ODP. Stay tuned!
+PRODUCT
+ Going Cloud Native: OpenStack Support Comes to PCF
+ Mike Goelzer &lt;https://gopivotal-com.socialcast.com/users/1147333-mikegoelzer&gt;, Principal Product Manager, Cloud Platform Group
+In Pivotal Cloud Foundry 1.5 &lt;http://docs.pivotal.io/p-riakcs/release-notes.html&gt; we released Beta support for OpenStack and we’re very excited about it. Customers can now run PCF on four IaaS frameworks: VMware vSphere &lt;http://docs.pivotal.io/pivotalcf/customizing/disk-format.html&gt;, VMware vCloud Air &lt;http://docs.pivotal.io/pivotalcf/customizing/pcf-vchs-vcloud.html&gt; and Director, Amazon Web Services &lt;http://docs.pivotal.io/pivotalcf/customizing/cloudform.html&gt;, and now on OpenStack &lt;http://docs.pivotal.io/pivotalcf/customizing/openstack.html&gt; (Listen to Simon Elisha’s podcast &lt;http://blog.pivotal.io/pivotal-perspectives/features/all-about-the-pivotal-cloud-foundry-1-5-release&gt; for the 
+quick version of PCF 1.5). 
+
+Pivotal continues expand the pathways to accommodate customers in their cloud native journey, and our PCF OpenStack support opens up new vistas for customers of PCF.
+
+Many customers have told us how they are attracted to the openness and the wide 
+vendor choice that exists in the OpenStack ecosystem. But because every vendor’s OpenStack is slightly different, we have designed a certification process so customers can feel confident running PCF on specific OpenStack offerings. We currently support PCF on Mirantis 5.0 Icehouse, and Mirantis 6.0 Juno.
+
+We plan to add other supported OpenStack distributions in the future, including SUSE &lt;https://www.suse.com/products/server/download/amd64.html?gclid=COvGpYWUyscCFcdcfgodhxULmw&gt;, Red Hat &lt;http://www.redhat.com/en&gt;, Ubuntu &lt;http://www.ubuntu.com/&gt; and others. 
+
+Why might a customer consider PCF 1.5 on OpenStack? The main benefits include: 
+
+
+ - Vendor choice: OpenStack is an open source system that is not owned by any single vendor.
+ - Infinite configurability: OpenStack allows customers to configure its components many different ways. 
+ - On-premise and hosted options: Mirantis’ Openstack can run on hardware inside a customer’s firewall.
+
+
+
+We expect our OpenStack support to move from Beta to General Availability (GA) this fall; Field Engineers should encourage interested customers to check it out. If you have any questions, please contact product marketing (pcf-concierge@pivotal.io &lt;mailto:pcf-concierge@pivotal.io&gt; or if you’re signed up for Slack you can find us at #cloudnative.
+AGILE
+ Pivotal Labs East Builds on What it Started
+ Rahul Singh &lt;https://gopivotal-com.socialcast.com/users/984488-rahulsingh&gt;, VP Engineering, Pivotal Labs
+I’ve recently been asked, in addition to managing our Toronto office, to work with our super-talented teams in the Pivotal Labs New York, Washington DC and Boston. If anything defines this collective, it’s how we’ve adapted to grow and articulate what have been true customer transformations. At the same time, we’ve maintained our strong sense of what has made and continues to make us different. It’s a privilege to lead all this talent. I’m excited to learn and help us build on a great line of customer and Pivotal successes. 
+
+Helping clients transform and achieve modern software and product development is a real differentiator. I was a member of the Xtreme Labs &lt;http://pivotal.io/agile/press-release/pivotal-acquires-xtreme-labs&gt; executive team based in Toronto that started several enduring partnerships with enterprises. This includes five years of partnership with the CIBC &lt;https://www.cibc.com/&gt;, one of Canada’s top and oldest banks, known for a history of innovation. It was Pivotal who helped them stay on that curve through software and mobile, building CIBC’s consumer mobile application, released in 2010. It won both the Forrester award &lt;https://www.forrester.com/CIBC+Tops+Forresters+Annual+Mobile+Banking+Benchmark+BMO+Scotiabank+RBC+Royal+Bank+TD+Canada+Trust+Follow/-/E-PRE7045&gt; and the Global Finance &lt;http://www.newswire.ca/news-releases/cibc-recognized-as-best-in-mobile-banking-in-north-america-by-global-finance-magazine-508702971.html&gt; magazine awards for best Mobile Banking App. That success changed how they looked at software for their business, and led to further collaboration with their Wealth Management, Business Banking, and Strategy teams. Throughout our collaboration with them we’ve maintained our high-quality Pivotal Labs delivery, as we moved deeper and wider into their technology stack. 
+
+They recently purchased some of our big data software (with more to come), and their once traditional bank culture has transformed to embrace software and developers as being essential to their culture and to their future (see http://bit.ly/1KK0CxQ &lt;http://bit.ly/1KK0CxQ&gt;). Our key learnings in managing a jumbo account like this helped us to build a similar strategic relationship with Ford. The Ford delivery team is knocking out a thoughtful project from a sales perspective, as we hit our first major milestone. By applying Test Driven Development &lt;https://en.wikipedia.org/wiki/Test-driven_development&gt;, complemented with a coordinated testing strategy with the client, we impressed Ford with our low defect rate. That set the ground for a major league win, that subsequently led to deeper conversations on how we can help other business units and regions.
+
+Balancing this kind of enterprise work with the likes of Uber, Fitbit, Facebook and other disruptors, is part of our story. Both give us the credibility to understand how to engender innovation in the enterprise space. We have more diverse ways than ever to engage and help clients win, ways unique to our industry. The diversity of talent we have with mobile, PCF and Spring, and big data, give us a truly unique way to help a wide variety of customers on big and new challenges. We look forward to what’s next, and we’ll keep you posted!
+Customer Spotlight
+China Takes to PCF, Something for Sales
+ 
+Pivotal Cloud Foundry customer CITIC Securities &lt;http://www.citics.com.hk/&gt; has partnered with Pivotal for our first Chinese language 
+customer video &lt;https://www.youtube.com/watch?v=NjMLziN52gs&gt;. Check it out, and follow along with their IT infrastructure transformation story with the English subtitles.  
+ 
+Deep into the second half is a great time for Sales reps to check out the 2015 Reference Customer 
+Program and the fantastic prizes &lt;https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/references/2015-prize-catalog&gt; that will be awarded to top participants in January 2016. Start earning points for activities such as external case studies, videos, analyst call and press quotes. If you have any questions about the Customer Reference Program, please contact Sophia Tseng (stseng@pivotal.io &lt;mailto:stseng@pivotal.io&gt;), Roman Gokhman (rgokhman@pivotal.io &lt;mailto:rgokhman@pivotal.io&gt;) or Estelle Hayes (ehayes@pivotal.io &lt;mailto:ehayes@pivotal.io&gt;).
+PEOPLE
+ Next Gen Thought Leaders Shine at Pivotal
+ Elresa Snell &lt;https://gopivotal-com.socialcast.com/users/942033-elresasnell&gt;, People Operations, Welcome &amp; Intern Concierge
+Pivotal welcomed 38 student interns this past summer, who came to our offices in the U.S. (this does not include our many college co-ops across the globe on typically longer assignments). Here’s the breakdown:
+
+
+
+
+
+
+Location
+Majors
+Roles
+
+
+San Francisco (13)
+Computer Science
+G&amp;A (9)
+
+
+Palo Alto (14)
+Physics
+Sales (4)
+
+
+New York (5)
+Communications
+CF Engineering (5)
+
+
+Denver, Beaverton &amp; Seattle (4)
+Environmental Sustainability
+Labs (14)
+
+
+Home (2)
+Media Technology
+Data (6)
+
+
+Santa Monica (1)
+Business Admin
+
+
+
+
+Economics
+
+
+
+
+Electrical Engineering
+
+
+
+
+Pre-medicine
+
+
+
+
+
+ 
+Their valuable contributions included, but were certainly not limited to:
+
+
+
+ - 
+Writing code and testing products for Pivotal Cloud Foundry and Pivotal Big Data Suite
+
+
+ - 
+Pairing up with customers to develop software the agile way
+
+
+ - 
+Creating a media site and experience that depicts how software is changing the world. Check it out at Swivvle.  &lt;http://www.swivvle.com/&gt;
+
+
+ - 
+Analyzing and reporting on Pivotal’s competitive landscape and business model
+
+
+ - 
+Improving our social media presence and coordination in recruiting 
+
+
+
+
+ 
+Our interns had the opportunity to speak with members of our leadership team, including Paul Maritz and Rob Mee, who talked about their inspirations or unique career paths. We also incorporated for the first time our agile feedback methodology &lt;https://docs.google.com/presentation/d/17uS_g_3gMDAKmIahnSRHfZu6Cw0PvaHG7QS08KlXjjE/edit#slide=id.p4&gt; into their everyday routines. Interns were encouraged to give and gather feedback from peers and managers, using the several feedback templates &lt;https://drive.google.com/a/pivotal.io/folderview?id=0B-2Q2y__X9M8T2FWN1B5RUMxbkk&amp;usp=sharing&amp;mkt_tok=3RkMMJWWfF9wsRoiuKnAZKXonjHpfsX94%2BwtUKGwlMI%2F0ER3fOvrPUfGjI4ITcNnI%2BSLDwEYGJlv6SgFTLLAMal10LgNWxg%3D&gt;. Pivotal Labs brought in their experience, building a &quot;Feedback&quot; app that three teams are now piloting. This feedback was incorporated into the interns developmental conversations with their managers. 
+
+
+
+
+
+ 
+
+ 
+(l to r): Heads down on project Swivvle; Rob Mee talking shop with interns
+
+
+
+ 
+What They Said
+Member of Technical Staff, Goutam Tadi: “It&apos;s was very exciting to join [Pivotal], and felt like a dream come true”
+
+ 
+Pivotal Sales, Nick DiRubio: “My experience at Pivotal this summer has been great. With the support of my manager and team in New York, I was given the ability to succeed and excel at the tasks at hand. The people are what make Pivotal such a great place to work, and such an innovation machine.”
+
+ 
+Interns also documented their Day in the Life of a Pivotal Intern using GoPros, which they shared at their final celebration. Check it out here &lt;https://drive.google.com/file/d/0ByUUFOtP-qjudVJ5dU51SElNUGc/view?usp=sharing&gt;. We’re delighted to say that we will be hiring over half of our interns come 2016!
+HELLO MY NAME IS...
+ KEVIN CROCKER
+ Kevin Crocker &lt;https://gopivotal-com.socialcast.com/users/913970-kevincrocker&gt;, Consultant and Instructor, Pivotal Education
+Help customers, partners and employees understand the transformative nature of Pivotal products by creating and leading technical training classes. I work in Pivotal Education, primarily with our data products and specifically on PHD/HAWQ and Data Science. I&apos;ve had a blast helping our customers and partners like BMW, Purdue, Ford, Walmart, Capgemini and others on their transformation journey.
+Working from my home office in Ohio, unless I&apos;m out on the road at client or various Federation offices.
+Redesigning the “Data Science in Practice” course—we just ran a successful session with Ford. I&apos;d like to give a shout-out to the Data Science/Engineering team, the MADlib team, and anyone else who has talked to me. :-)
+I spend time with my wife and my granddaughter. I golf if I can find the time, and I home brew craft beers like “Crazy Cactus” (made with agave), or a clone of another beer called “La Fin du Monde” (end of the world).
+
+(l to r): Kevin with granddaughter Lily, no doubt instructing her on the ins-and-outs of data; Label for a Crocker hops concoction.
+I&apos;ve won two consecutive long-drive contests in golf—the first was right handed and the second was left handed (and both were a long time ago when they made golfs balls that bounce more than the golf balls do today. And thank you sprinkler heads…​)
+is the coolest place I’ve ever called work! I&apos;ve worked with a lot of leaders and managers over the years, but have never experienced this kind of camaraderie. Our people are so bright and helpful, and our products are AMAZING! Pivotal is a movement, and I’m glad to be part of it.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from August 10th through August 31st:
+
+
+
+ 
+Aditya Padhye, Associate Data Engineer, US
+Adrian 
+Cole, Technical Staff 2, San Francisco
+Alicia Baker, Senior Workplace Advocate, San Francisco
+Ambarish Joshi, Data Scientist 2, Santa 
+Monica
+Ambi Sidhu, Software Engineer, New York
+Amy 
+Bertken, Tech Education Specialist, US
+Bertus Goestiandi, Business Operations Principal, Singapore
+Bridget Kromhout, Principal Technologist, US
+Brittany Moscoso, Project Manager non-tech, US
+Dan 
+Mondor, Associate Inside Sales Rep, Cork Ireland 
+Daniel Opine, EBC Advisor, Palo Alto 
+Dylan Ham, Tech Education Specialist, 
+US 
+Deepika Pandhi, Member of Technical Staff 3, Palo Alto
+Diana Villanueva, Product Manager, Santa Monica
+Eleanor Casey, Graduate Intern, London
+Esther Allas, Data Scientist II, Palo 
+Alto
+Eve Asher, Software Engineer, New York
+Fadi 
+Yousuf, Sales Account Executive, Dubai
+Fernando Zavala, Senior Data Engineer, US 
+Gareth Smith, Principal Software 
+Engineer, London
+Harold Thornton, Business Development Manager, US
+Ines 
+Schuller, Associate Inside Sales Rep, Cork Ireland
+Jamie De Martini, Senior Events Planner, San Francisco 
+Jason Jackson, Director, Field 
+Engineering, Singapore
+Jeff Cherng, Advisory Data Engineer, US
+Jennifer 
+Dearth, Product Manager, Boulder
+Jennifer Foley, Product Manager, Boston 
+Jess Heron, Technical Content Developer, 
+San Francisco
+Jing Lee, UX Designer, Santa Monica
+Joshua 
+Rossmeisl, Software Engineer, Denver CO
+Manish Tripathi, Data Scientist II, San Francisco 
+Manuel David, Advisory Data Engineer, 
+US
+Marc Magruder, Software Engineer, New York
+Mark 
+Douglass, Software Engineer, Denver CO
+Mason Cabot, Principal Product Marketing Manager, San Francisco
+Matthew Nelson, Director, Pivotal Sales, 
+US
+Mithun Mathew, Member of Technical Staff 2, Palo Alto
+Nathan Telford, Product Manager, London
+Pinion Yu Kang, Customer Support Tech 3, 
+Shanghai
+Shikhar Rastogi, Software Engineer, Chicago, IL
+Sidney 
+Ho, Software Engineer, San Francisco
+Stephen Guerzon, Senior Manager, Recruitment
+SungDae Kim, Account Executive, 
+Seoul
+Taehee Kim, Recruiting Consultant, Palo Alto
+Yi 
+Sun, Member of Technical Staff 3, Shanghai</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

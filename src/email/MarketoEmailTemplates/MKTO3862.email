@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:520px !important;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100% !important;}
+ol {margin-left: -20px !important;}
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+.section-icon {padding-left:20px !important;}
+.blog-link {padding-left:20px !important;}
+.blog-thumb {padding-bottom:20px;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.date-block {text-align:left !important; padding-left:20px !important; padding-top:5px !important; padding-bottom:5px !important;}
+.brand-block {text-align:left !important; padding-left:0px !important; padding-top:5px !important; padding-bottom:5px !important;}
+.footer-block {text-align:left !important; padding-left:20px !important; padding-top:10px !important; padding-bottom:10px !important;}
+}
+
+
+</style>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse; " ><tr ><td width="300" align="left" valign="middle" class="stack brand-block" style="padding-top:20px; padding-bottom:20px;"><a href="ttp://insidepivotal.com" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/nl-insidepivotal-logo.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack brand-block" style="padding-top:10px; padding-right:0; padding-bottom:0; padding-left:0; color:#3c3d42; font-size:16px; line-height:16px; " >NEWSLETTER<br>
+<span class="mktEditable" id="vol-no" style="font-size:12px; " >VOL. 4, NO. 7</span>
+</td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="background:#FFF; border-top:solid 6px #01786E; border-bottom:solid 1px #F1F1F1; border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="stack date-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px; " ><span class="mktEditable" id="issue-date" style="font-size:12px; text-transform:uppercase; " >Thursday, June 9</span>
+</td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" class="text-block" style="padding-top:30px; padding-right:40px; padding-bottom:20px; padding-left:40px; color:#666666; font-size:14px; line-height:22px; " ><p style="margin:0; font-size:20px; font-weight:bold; line-height:20px;">IN THIS ISSUE</p>
+<ol style="margin-left:-20px; color:#666666; font-size:14px; line-height:26px; " ><li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-editor" >Editor Welcome: <a style="color: #059a91; text-decoration: none;" href="#editor-welcome">From What Might Be</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-business" >Business: <a style="color: #059a91; text-decoration: none;" href="#business-update">Cloud Foundry Summit 2016: Maturity, Ease, and Velocity</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-product" >Product: <a style="color: #059a91; text-decoration: none;" href="#product-update">Pivotal Cloud Foundry 1.7</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-agile" >Agile: <a style="color: #059a91; text-decoration: none;" href="#agile-update">Start Small: A Big Retailer Finds its Digital Heart</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-my-name-is" >My Name Is... <a style="color: #059a91; text-decoration: none;" href="#my-name-is">Anna Yu</a></span>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of editor welcome // -->
+<a href="#editor-welcome" name="editor-welcome"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="editor-welcome-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/SC2nl-portrait.png" alt="Stephen Casale" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">EDITOR WELCOME</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;"><span id="docs-internal-guid-0451b2dd-61c9-4db3-68cc-0e388a88e576"><span><span id="docs-internal-guid-de0effd0-58cd-7224-2ed7-ff17905eed17"><span>From What Might Be</span></span></span></span></span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;"><a style="color: #059a91; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/1033819-stephencasale">Steve Casale</a>, Sr. Manager, Corporate Communications</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="editor-welcome-entry" >This issue marks two years, 40 issues, and 238 articles with me as newsletter editor.
+     Many of the earlier articles—much like the first Cloud Foundry Summit I attended in 2014—posited more of the "what might be" for Pivotal and customers.
+     PCF, Spring, and our big data solutions were mutually interested but individual tribes.
+     <br><br> The recent <a style="color: #059a91; text-decoration: none;" href="https://www.cloudfoundry.org/community/summits/">Cloud Foundry Summit</a> in May revealed a sea change, and in our Business Update, Rich Seroter writes how Pivotal—and the platform movement it galvanized—has adapted and grown.
+     Ford, Comcast, Allstate, and Microsoft all have Pivotal as a fulcrum of technical and cultural change.
+     Cloud Foundry Product head James Bayer complements this with a report on on the PCF 1.7 release, which expands how developers and operators can create value.
+     Nick Street from London writes our Agile update—a reminder that big things germinate from small shifts, as in the case with one retail client.
+      <br><br> If you haven't done so, watch the latest episode and other <a style="color: #059a91; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/vignettes/episode-s1e1?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=vignettes">Vignettes</a>.
+     This Netflix-style series captures the stories behind our interactions with all kinds of customers.
+     Focusing on the human moments—the ups and downs—behind our work, they collectively help us tell the story of where we came from and who we are.
+     For season 1, a new Vignette is posted every Tuesday through June, on Inside Pivotal.
+     <br><br> The idea that our actions should bring more benefits to more people has deep roots in XP.
+     Sam Ramji described it as a "positive sum game." In the swirl of change, Pivotal holds to that value.
+     To me, it means pulling together each newsletter for the person who might be reading it for the first time.
+      <br><br> Here's to what we have become, and to discovery and adapting along the way.
+     <br><br> P.S.
+     We have a stellar list of speakers and more than 70 sessions for our biggest event of the year, so bring it for Pivotal <strong>by getting your prospects and customers to</strong> <a style="color: #059a91; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/events/springone-platform-2016?utm_source=iphome&amp;utm_medium=slider&amp;utm_campaign=springone">SpringOne Platform</a>.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of Editor Welcome // -->
+<!-- Start of business update -->
+<a href="#business-update" name="business-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="business-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/richseroter-nl-portrait.png" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">BUSINESS UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Cloud Foundry Summit 2016: Maturity, Ease, and Velocity</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;"><a style="color: #059a91; text-decoration: none;">Richard Seroter, Senior Director, Product Marketing</a></span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="business-update-entry" >Last week 1,600 people descended upon Santa Clara to attend the fourth <a style="color: #059a91; text-decoration: none;" href="https://www.cloudfoundry.org/community/summits/program/about/?summitId=10016">Cloud Foundry Summit</a>.
+  This was the biggest Summit yet, and billed by organizers as the "largest multi-cloud event in North America." I, along with over a hundred other Pivots, attended the Summit in order to present, listen, and learn.
+  There were tons of sessions and the partner pavilion was packed with unique stories, but I was able to detect three big themes.
+  <br><br> <strong>1.
+  Cloud Foundry has matured.</strong><br> Everywhere you looked, there were signals of maturity.
+  Gone were optimistic customer keynotes about distant plans.
+  They were replaced by real stories of meaningful deployments with measurable success metrics.
+  No longer was the partner pavilion home to Cloud Foundry providers alone.
+  Instead, attendees could also engage with industry leaders like Microsoft, Apigee, Tibco, and more.
+  The Cloud Foundry Foundation—sporting <a style="color: #059a91; text-decoration: none;" href="https://www.cloudfoundry.org/membership/members/">over 60 members</a>—announced brand new participants like Allstate, Volkswagen, and Dynatrace.
+  With over 130 full-time committers—or those that have gone through a Dojo and spend 80% of their time on the project—Cloud Foundry is on par with other large open source projects such as OpenStack and Linux.
+   <br><br> This isn't an incubation effort any longer.
+  Cloud Foundry represents the industry standard platform for cloud-native apps.
+  <br><br> <strong>2.
+  Customers use platforms to "make the hard things easy."</strong><br> Industry analysts picked up on this at the Summit, and folks seem to be coming out of their container-induced haze to realize that value comes from focusing on applications, not infrastructure.
+  Companies want to manage complexity with platforms, not get side-tracked trying to assemble their own platforms out of powerful, but disjointed, components.
+  One Pivotal customer, <a style="color: #059a91; text-decoration: none;" href="http://www.xfinity.com/">Comcast</a>, said they were now running over 900 applications on Pivotal Cloud Foundry.
+  And they're moving at unicorn-speed: as Comcast's Greg Otto put it, "we get features in days, not weeks, and scale takes minutes, not months."  <br><br> Customer after customer got up on stage and talked about choosing Cloud Foundry because it abstracts away complex infrastructure automation tasks, and helps them focus on what matters: continuously delivering software that powers their  
+businesses.
+  "Transformation" was a key part of the conversation at the Summit, and it was inspiring to see so many enterprises realize that it's not just about better tools, but a better way of working.
+   <br><br> <strong>3.
+  Velocity is increasing, and the path forward is exciting!</strong><br> Foundation president Sam Ramji said that the "biggest risk to an open source project is losing momentum." That's not happening here.
+  Cloud Foundry ships <a style="color: #059a91; text-decoration: none;" href="https://github.com/cloudfoundry/cf-release/releases">full releases</a> nearly every two weeks.
+  Customers are seeing nonstop progress, and there were some epic Summit presentations that highlighted upcoming capabilities.
+  Cloud Foundry Diego is on its way to becoming the most scalable container orchestration engine available, persistent storage is coming to make it possible to run durable workloads, and container-to-container networking stands to unlock an entirely new class of service.
+   <br><br> And this is just in the open source platform! Pivotal continues to lead the charge on building a full complement of services for running .NET applications, logging and tracing distributed systems, managing Cloud Foundry deployments at scale, and helping customers fully transform how they design, deploy, and operate software.
+   <br><br> It's not all rainbows and unicorns.
+  We still have work to do to evolve Cloud Foundry and help customers adopt it more easily.
+  However, this year's Summit clearly demonstrated that a strong Foundation is in place and industry leaders are betting on Cloud Foundry’s success.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of business update // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="product-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/jamesbayer-nl-portrait.png" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">PRODUCT UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Pivotal Cloud foundry 1.7</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;"><span style="color: #059a91;">James Bayer, VP of Product Development, Cloud Foundry</span></span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="product-update-entry" >PCF 1.7 was officially released last month, giving developers and operators—across more environments—the modern software tools to create, test, and deploy applications at startup speeds.
+   Here are just some of the highlights of PCF 1.7:  <br><br> <strong>Microservices and API-Centric</strong><br> Our marketplace now supports extensible <a style="color: #059a91; text-decoration: none;" href="http://docs.cloudfoundry.org/services/route-services.html">route services</a> for operators and developers that provides a structured approach to enhancing APIs endpoints with   
+additional edge services.
+   These new edge services can include custom authentication, security, and analytics, or enhancements from third-party API gateways such as Apigee.
+    <br><br> This release also adds context-based routing and private service brokers that make it easier for developers to update and ship new custom services.
+   Finally, we've launched integrated platform metrics and monitoring with the new <a style="color: #059a91; text-decoration: none;" href="https://blog.pivotal.io/pivotal-cloud-foundry/products/new-pcf-metrics-for-pivotal-web-services-and-pivotal-cloud-foundry">PCF Metrics</a>.
+   The combination of native application metrics, custom services, and built-in API gateway support are key pieces in making PCF the modern platform for microservices.
+    <br><br> <strong>Developers Anywhere</strong><br> <a style="color: #059a91; text-decoration: none;" href="http://pivotal.io/pcf-dev">PCF Dev</a> provides a local, small footprint distribution of Pivotal Cloud Foundry that lets developers new to Cloud Foundry quickly gain hands-on expertise with the platform, or existing Cloud Foundry developers to rapidly prototype new applications and 
+  test features on their local machines with the confidence that their code can run unchanged on most default PCF configurations.
+   This "laptop-sized" distribution and environment hosts a core set of services and lightweight runtime in a single virtual machine, and still offers integrated logging, metrics, health monitoring, key developer services and application compatibility with the full Pivotal Cloud Foundry platform.
+    <br><br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/productupdateV4N7.jpg" alt="PCF Dev" width="500" height="500"><br><span style="font-size: 10px;"><em>PCF Dev—Concentrated PCF power.</em></span><br><br> <strong>Smooth Operators</strong><br> For operators, PCF 1.7 ships a streamlined Apps Manager web interface that supports client white-labelling.
+   The release also extends our multi-cloud commitment, by adding Ops Manager support to OpenStack and AWS, for balancing applications across multiple availability zones.
+    <br><br> <strong>A Big Security Milestone</strong><br> Security is top of mind for our customers (and us), and PCF 1.7 marks a notable milestone here.
+   Version 1.7 Ops Manager integrates with enterprise identity providers and custom certificate authorities, while our new <a style="color: #059a91; text-decoration: none;" href="https://bosh.io/docs/runtime-config.html#addons">BOSH add-on</a> framework to enhance VM functionality lets customers meet specific security and compliance requirements.
+   For example, some of the first add-ons include the IPSec encryption of inter-VM communication and custom security/antivirus software.
+   <br><br> <strong>All Diego</strong><br> Our investment in <a style="color: #059a91; text-decoration: none;" href="http://docs.pivotal.io/pivotalcf/1-6/concepts/diego/diego-architecture.html">Diego</a> as the new runtime architecture continues to deepen with new capabilities such as tasks, and Docker support.
+   PCF 1.7 marks the official retirement of the previous DEA runtime architecture.
+   The success of Diego means that from PCF 1.7 onwards, we can deprecate the old DEA runtime entirely to make Diego the official platform runtime for Pivotal Cloud Foundry.
+   <br><br> You can find more of what PCF 1.7 gives developers and operators on the <a style="color: #059a91; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal-cf/home/roadmap/pcf-release-archive/pcf-1-7-release">PCF 1.7 Release page</a>.
+   A big thanks to the Cloud Foundry teams—everywhere they are—for continuing to help developers and operators achieve velocity and quality to create more value from their software.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of agile update // -->
+<a href="#agile-update" name="agile-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="agile-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/nickstreet-nl-portrait.png" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">AGILE UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Start Small: A Big Retailer Finds its Digital Heart</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;">Nick Street, Associate Director, Pivotal Labs (London)</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="agile-update-entry" >Becoming a digital company today can entail a seismic shift for many enterprises.
+ As observers have noted for some time, the digital forces in industries everywhere create both fear (of disruption) and hope (that transformation will spur enterprises to innovate at start-up speeds).
+   <br><br> For enterprises old and new, being ready to adapt is crucial.
+ The process can be daunting, filled as it is with variables and unknowns.
+ While many industry titans understand the nuances for adaptation today and see the charge and innovation it can yield, many ask a similar question: Where to start?  <br><br> One of the most well known UK supermarket chains provides a good example of where and how to start a transformation: with an app.
+ The company has partnered with Pivotal to develop and build an on-demand grocery delivery application.
+ Their app is focused: It will allow customers to browse, build, and purchase a basket of shopping items.
+ In tandem, the Pivotal and client team built a 'picker' app that will support the supermarket staff to pick, purchase, and improve on their next-day delivery service.
+  <br><br> Speed of development and deployment was a critical element and top priority in order for this client to get ahead of the competition.
+ The Pivotal team has helped this client build the app in a short period of time.
+ We used the <a style="color: #059a91; text-decoration: none;" href="https://run.pivotal.io/">Pivotal Web Services</a> (PWS) platform to accelerate development, testing and delivery.
+ Through a collaborative process that included user research, co-location and pair programming practices, we have empowered a core of their company's engineers and product developers with the skills to employ lean agile development on future projects.
+ <br><br> This is a nice example of where we worked with a client by starting small to help an enterprise get a taste of a new development cycle through a service in which technology is fundamental to its success.
+ Digital is being built into the heart and core of their organisation—not just bolting it on as a 'nice-to-have' afterthought.
+ We think this will lead to larger opportunities for them and for us—and we'll be sure to report back.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of agile update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/annayu-nl-portrait.png" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">MY NAME IS...</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Anna Yu</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;">Anna Yu, Software Engineer</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><span style="font-size:20px;">At Pivotal I&hellip;</span><div class="mktEditable" id="at-pivotal-i" style="padding-top:10px; " >Work in Pivotal Labs, Chicago, as a software engineer.</div>
+<br>
+<span style="font-size:20px;">You can find me&hellip;</span><div class="mktEditable" id="you-can-find-me" style="padding-top:10px; " >At the project desk that's closest to the kitchen, until we move upstairs to the coolest Pivotal office. I like going out of the building to get lunch, so you can always find me wandering around at lunch hour.</div>
+<br>
+<span style="font-size:20px;">Currently, I am working on&hellip;</span><div class="mktEditable" id="currently-i-am" style="padding-top:10px; " >Working on a web application for customers of an auto loan company to check their payment and request for legal document. It is an interesting project because the app is an Official Account in WeChat for the Chinese market, where we need to integrate with WeChat platform APIs.</div>
+<br>
+<span style="font-size:20px;">In my spare time&hellip;</span><div class="mktEditable" id="in-my-spare-time" style="padding-top:10px; " >I enjoy cooking, traveling, or just being outdoors. (For those of you who haven’t experienced Chicago summer, it is AMAZING to be out in it!)<br><br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Hello2V4N7.png" alt="looking at art" width="500" height="333"><br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/Hello1V4N7.jpg" alt="passtime" width="500" height="667"><br><em><span style="font-size: 10px;">Travels with Anna (top to bottom): In repose in Cusco, Peru; Snow angel pose in the Arctic Circle, Alaska</span></em></div>
+<br>
+<span style="font-size:20px;">Something you probably don’t know about me&hellip;</span><div class="mktEditable" id="something-you-dont-know" style="padding-top:10px; " >I grew up in Tianjin, China. I spent my college years in Hong Kong, where I worked in Singapore for one summer, before coming to Chicago. I've traveled to around 25 countries and lived in six cities so far. I'm always ready for the next journey.</div>
+<br>
+<span style="font-size:20px;">To me Pivotal&hellip;</span><div class="mktEditable" id="to-me-pivotal" style="padding-top:10px; " >The place that I feel excited to come to everyday when I open my eyes. Here I meet awesome people, learn cool technologies, and make great friends.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of tos -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #01786E; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://play.gopivotal.com/rs/pivotal/images/nl-pivotal-footer.png" alt="Pivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:10px; padding-right:40px; padding-bottom:10px; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;">Want More? Try <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a> or <a href="https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter?" style="color:#FFFFFF; text-decoration:none;">SocialCast: @PivotalNewsletter</a></span></td>
+</tr>
+</table>
+<!-- End of tos -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2016 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

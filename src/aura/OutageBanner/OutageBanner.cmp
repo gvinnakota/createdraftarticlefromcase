@@ -1,0 +1,24 @@
+<!--
+The intention of this component is to be used as a banner on the community portal for outages
+
+Revision History:
+Dec 2018 - Shane Smalldon - Initial release
+April 2019 - Shane Smalldon - Added in controller to have times set to show/hide the component to relieve manual action after being set
+May 2019 - Shane Smalldon - Put css in proper place instead of inline
+June 2019 - Shane Smalldon - Added date range to the visibility check
+To Do:
+Have this all controlled by a custom object which can be given to the business to set the times, message and styling from the UI
+-->
+
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="showBanner" type="boolean" />
+    <aura:handler name="init" value="{!this}" action="{!c.boolCheckDate}"/>
+	<aura:if isTrue="{!v.showBanner}">
+    	<aura:html tag="div" />
+    	<div class="divbanner">
+            <b>Running NSX-T 2.4.x on PKS or PAS?</b> Your NSX Manager admin password may require attention. <a href="https://community.pivotal.io/s/question/0D50e00005IeMRwCAN/announcement-planned-maintenance-for-pivotal-support-on-282019" style="color: #00A390;">More Information  <b style="font-size:26px;">&raquo;</b></a>
+            <br></br>
+            This is another alert.
+        </div>
+      </aura:if> 
+</aura:component>

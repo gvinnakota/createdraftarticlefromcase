@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Pivotal_Survey_Feedback</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Pivotal Survey Feedback</label>
+        <sharedTo>
+            <group>Survey_CES_Survey</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>CES Survey</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

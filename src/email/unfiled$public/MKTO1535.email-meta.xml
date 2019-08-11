@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Scale Out Big Data_Q414.Reminder</name>
+    <style>none</style>
+    <subject>See You Tomorrow! Scale Out Your Big Data Apps Webinar</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We are sending you a friendly reminder of your registration for tomorrow&apos;s webinar &quot;Scale out your Big Data Apps: The Latest on Pivotal GemFire and GemFire XD&quot; on Wednesday, November 12, 2014. Please see event details below:
+
+Date: Wednesday, November 12, 2014
+Time: 10AM PST/6PM GMT
+
+Event Number: 661 301 071
+Join the Webex &lt;https://pivotal-io.webex.com/pivotal-io/onstage/g.php?t=a&amp;d=661301071&gt;
+Teleconferencing Information:
+This webinar will be streaming live, however dial-in options are available:
+
+
+
+ - US TOLL FREE: 1-855-749-4750
+ - Global call-in numbers &lt;https://pivotal-io.webex.com/pivotal-io/globalcallin.php?serviceType=EC&amp;ED=33226853&amp;tollFree=1&gt;
+ - Toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt;
+ - Access code: 661 301 071
+
+
+
+{{my.Save the Date:default=edit me}}
+ 
+We look forward to you joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

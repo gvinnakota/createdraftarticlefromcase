@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Reactivation Campaign Q417.Reactivation_Email_3</name>
+    <style>none</style>
+    <subject>To subscribe or unsubscribe...that is the question</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+We understand that you’re busy, so we don’t want to clutter your inbox with unwanted email.
+
+We’re reaching out one last time to see if you want to continue receiving information about our eBooks, white papers, webinars, and events. Just click one of the links below and you’re done!
+
+
+
+
+
+KEEP THE EMAILS COMING &lt;[[https://content.pivotal.io/welcome-back?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=reactivation-three-2018]]&gt;
+
+
+
+
+
+
+
+
+
+
+
+I WOULD LIKE TO UNSUBSCRIBE &lt;[[http://connect.pivotal.io/UnsubscribePage.html?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=reactivation-three-2018]]&gt;
+
+
+
+
+
+
+Thanks,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

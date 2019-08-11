@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Account_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>The Account that the Partnership is for.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Partnerships</relationshipLabel>
+        <relationshipName>Partnerships</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to easily report on the Active Partnerships. Initially will look at the Status and Agreement Expiry.</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Agreement_Expiry__c</fullName>
+        <description>Identifies when the current contract will end. In the event that the Partnership is perpetual, an arbitrary date will be selected. i.e. 01/01/2999</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In the event that the Partnership is perpetual, an arbitrary date will be selected. i.e. 01/01/2999</inlineHelpText>
+        <label>Agreement Expiry</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Agreement_Start__c</fullName>
+        <description>Identifies when the current contract started.</description>
+        <externalId>false</externalId>
+        <label>Agreement Start</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analytics/Dashboard/BI</fullName>
+                    <default>false</default>
+                    <label>Analytics/Dashboard/BI</label>
+                </value>
+                <value>
+                    <fullName>Application Monitoring</fullName>
+                    <default>false</default>
+                    <label>Application Monitoring</label>
+                </value>
+                <value>
+                    <fullName>Big Data</fullName>
+                    <default>false</default>
+                    <label>Big Data</label>
+                </value>
+                <value>
+                    <fullName>Block Storage</fullName>
+                    <default>false</default>
+                    <label>Block Storage</label>
+                </value>
+                <value>
+                    <fullName>Cloud Monitoring</fullName>
+                    <default>false</default>
+                    <label>Cloud Monitoring</label>
+                </value>
+                <value>
+                    <fullName>Cloud Test/Load</fullName>
+                    <default>false</default>
+                    <label>Cloud Test/Load</label>
+                </value>
+                <value>
+                    <fullName>Code Mgmt/Release</fullName>
+                    <default>false</default>
+                    <label>Code Mgmt/Release</label>
+                </value>
+                <value>
+                    <fullName>Commerce</fullName>
+                    <default>false</default>
+                    <label>Commerce</label>
+                </value>
+                <value>
+                    <fullName>Database - NoSQL</fullName>
+                    <default>false</default>
+                    <label>Database - NoSQL</label>
+                </value>
+                <value>
+                    <fullName>Database - SQL</fullName>
+                    <default>false</default>
+                    <label>Database - SQL</label>
+                </value>
+                <value>
+                    <fullName>Data Warehouse</fullName>
+                    <default>false</default>
+                    <label>Data Warehouse</label>
+                </value>
+                <value>
+                    <fullName>DNS, CDN</fullName>
+                    <default>false</default>
+                    <label>DNS, CDN</label>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Identity Management</fullName>
+                    <default>false</default>
+                    <label>Identity Management</label>
+                </value>
+                <value>
+                    <fullName>Infrastructure, IaaS</fullName>
+                    <default>false</default>
+                    <label>Infrastructure, IaaS</label>
+                </value>
+                <value>
+                    <fullName>Language Platform</fullName>
+                    <default>false</default>
+                    <label>Language Platform</label>
+                </value>
+                <value>
+                    <fullName>Load Balancing/Caching</fullName>
+                    <default>false</default>
+                    <label>Load Balancing/Caching</label>
+                </value>
+                <value>
+                    <fullName>Logging</fullName>
+                    <default>false</default>
+                    <label>Logging</label>
+                </value>
+                <value>
+                    <fullName>Messaging/AMQP</fullName>
+                    <default>false</default>
+                    <label>Messaging/AMQP</label>
+                </value>
+                <value>
+                    <fullName>Middleware</fullName>
+                    <default>false</default>
+                    <label>Middleware</label>
+                </value>
+                <value>
+                    <fullName>Mobile Platform</fullName>
+                    <default>false</default>
+                    <label>Mobile Platform</label>
+                </value>
+                <value>
+                    <fullName>Object Storage</fullName>
+                    <default>false</default>
+                    <label>Object Storage</label>
+                </value>
+                <value>
+                    <fullName>Orchestration</fullName>
+                    <default>false</default>
+                    <label>Orchestration</label>
+                </value>
+                <value>
+                    <fullName>Search</fullName>
+                    <default>false</default>
+                    <label>Search</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+                <value>
+                    <fullName>Test/QA/Load Testing</fullName>
+                    <default>false</default>
+                    <label>Test/QA/Load Testing</label>
+                </value>
+                <value>
+                    <fullName>Voice/SMS</fullName>
+                    <default>false</default>
+                    <label>Voice/SMS</label>
+                </value>
+                <value>
+                    <fullName>OTHER</fullName>
+                    <default>false</default>
+                    <label>OTHER</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Additional information about the Partnership</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional information about the Partnership</inlineHelpText>
+        <label>Notes</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Partner_Market_Traction__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Market Traction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Small</fullName>
+                    <default>false</default>
+                    <label>Small</label>
+                </value>
+                <value>
+                    <fullName>Mid</fullName>
+                    <default>false</default>
+                    <label>Mid</label>
+                </value>
+                <value>
+                    <fullName>Large</fullName>
+                    <default>false</default>
+                    <label>Large</label>
+                </value>
+                <value>
+                    <fullName>Enterprise</fullName>
+                    <default>false</default>
+                    <label>Enterprise</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partnership_Account_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>User (BD Rep) who owns the relationship with the partner.</description>
+        <externalId>false</externalId>
+        <label>Partnership Account Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Partnerships</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partnership_Competency__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select more than one if applicable.</inlineHelpText>
+        <label>Partnership Competency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>App</fullName>
+                    <default>false</default>
+                    <label>App</label>
+                </value>
+                <value>
+                    <fullName>PaaS</fullName>
+                    <default>false</default>
+                    <label>PaaS</label>
+                </value>
+                <value>
+                    <fullName>Data &amp; Analytics</fullName>
+                    <default>false</default>
+                    <label>Data &amp; Analytics</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Partnership_Name__c</fullName>
+        <description>Read only field which combines the Account.Name + Program.Name. Used on Partnership Layout.</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Name + " - " + Program__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partnership Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Pivotal Priority</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>5 - High</fullName>
+                    <default>false</default>
+                    <label>5 - High</label>
+                </value>
+                <value>
+                    <fullName>4 - Med High</fullName>
+                    <default>false</default>
+                    <label>4 - Med High</label>
+                </value>
+                <value>
+                    <fullName>3 - Medium</fullName>
+                    <default>false</default>
+                    <label>3 - Medium</label>
+                </value>
+                <value>
+                    <fullName>2 - Med Low</fullName>
+                    <default>false</default>
+                    <label>2 - Med Low</label>
+                </value>
+                <value>
+                    <fullName>1 - Low</fullName>
+                    <default>false</default>
+                    <label>1 - Low</label>
+                </value>
+                <value>
+                    <fullName>0 - Not Priority</fullName>
+                    <default>false</default>
+                    <label>0 - Not Priority</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Identifies the individual that will act as the point of contact for communication around the Partnership. Lookup (Contact).</description>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>equals</operation>
+                <valueField>$Source.Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Partnerships</relationshipLabel>
+        <relationshipName>Partnerships</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Program__c</fullName>
+        <description>The specific Program that the Account is applying for.</description>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <referenceTo>Program__c</referenceTo>
+        <relationshipLabel>Partnerships</relationshipLabel>
+        <relationshipName>Partnerships</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Identifies the states of the partnership.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>No Potential</fullName>
+                    <default>false</default>
+                    <label>No Potential</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Support_Entitlement_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Support Entitlement End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Support_Entitlement__c</fullName>
+        <externalId>false</externalId>
+        <label>Support Entitlement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Developer Support</fullName>
+                    <default>false</default>
+                    <label>Developer Support</label>
+                </value>
+                <value>
+                    <fullName>Premier Support</fullName>
+                    <default>false</default>
+                    <label>Premier Support</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Tech_Interoperability_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Tech Interoperability Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Work Begun</fullName>
+                    <default>false</default>
+                    <label>Work Begun</label>
+                </value>
+                <value>
+                    <fullName>On Going</fullName>
+                    <default>false</default>
+                    <label>On Going</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tier__c</fullName>
+        <description>Identifies the Partner level.</description>
+        <externalId>false</externalId>
+        <label>Tier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Registered</fullName>
+                    <default>false</default>
+                    <label>Registered</label>
+                </value>
+                <value>
+                    <fullName>Advanced</fullName>
+                    <default>false</default>
+                    <label>Advanced</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Used to to track the different partnership tracks that an Account may enter into.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Partnership</label>
+    <nameField>
+        <label>Partnership Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Partnerships</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Partnership_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Primary_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Program__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Agreement_Start__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Agreement_Expiry__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Partnership_Name__c</columns>
+        <columns>Primary_Contact__c</columns>
+        <columns>Status__c</columns>
+        <columns>Active__c</columns>
+        <columns>Program__c</columns>
+        <columns>Tier__c</columns>
+        <columns>Agreement_Start__c</columns>
+        <columns>Agreement_Expiry__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Pivotal_One_Program_Partnerships_New</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Partnership_Account_Owner__c</columns>
+        <columns>Partnership_Competency__c</columns>
+        <columns>Tier__c</columns>
+        <columns>Pivotal_Priority__c</columns>
+        <columns>Status__c</columns>
+        <columns>Active__c</columns>
+        <columns>Tech_Interoperability_Status__c</columns>
+        <columns>Category__c</columns>
+        <columns>Agreement_Start__c</columns>
+        <columns>Agreement_Expiry__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Program__c</field>
+            <operation>equals</operation>
+            <value>Pivotal Tech Alliances Program</value>
+        </filters>
+        <label>Pivotal One Program Partnerships - ALL</label>
+    </listViews>
+    <listViews>
+        <fullName>VARs_and_Distributors</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Active__c</columns>
+        <columns>Account__c</columns>
+        <columns>Program__c</columns>
+        <columns>Agreement_Start__c</columns>
+        <columns>Tier__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Program__c</field>
+            <operation>equals</operation>
+            <value>Pivotal Distributors</value>
+        </filters>
+        <filters>
+            <field>Program__c</field>
+            <operation>equals</operation>
+            <value>Pivotal Value Added Reseller (VAR) Program</value>
+        </filters>
+        <label>VARs and Distributors</label>
+    </listViews>
+</CustomObject>

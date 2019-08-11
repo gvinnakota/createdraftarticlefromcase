@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_PCF Google BigQuery-CloudVisionAPI_Q416.Confirmation 10am</name>
+    <style>none</style>
+    <subject>You&apos;re confirmed</subject>
+    <textOnly>&lt;[[https://pivotal.io/platform/webinar/pivotal-cloud-foundry-and-google-bigquery-cloud-vision-api]]&gt;
+Hi {{lead.First Name:default=there}},
+ 
+ Thank you for registering for the upcoming webinar Using Pivotal Cloud Foundry with Google’s BigQuery and Cloud Vision API.
+ 
+ Please see event details below:
+ Date: Thursday, November 17, 2016 {{my.Save the Date:default=edit me}}
+ Time: 10:00am PST / 1:00pm EST
+ &lt;[[http://event.on24.com/wcc/r/1190422/2B5BECF5845424730286C5CACAAAA5BF]]&gt;
+ 
+Join the Session &lt;[[http://event.on24.com/wcc/r/1300649/3AFE9235F2727256F0167FBC12A3C0CC]]&gt;
+ 
+ Audio Information: This webinar will be streaming via your computer speakers. 
+ 
+We look forward to you joining us.
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

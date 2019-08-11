@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314 - Q115.Hong Kong Reminder - 1 week</name>
+    <style>none</style>
+    <subject>See you next Tuesday 3/10 at the Pivotal Cloud Platform Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up next Tuesday in Hong Kong. We look forward to seeing you! 
+
+Please also bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Pivotal Cloud Platform Workshop
+Tuesday, March 10, 2015
+9.15am - 5.00pm (breakfast &amp; lunch provided)
+Workshop Agenda &lt;http://pivotal.io/platform-as-a-service/cloud-platform-roadshow/hongkong&gt;
+
+Please note that the venue has 
+changed:
+Admiralty Conference Centre
+C3 Conference Room (18th Floor), 1804A
+Tower 1, Admiralty Centre
+18 Harcourt Road
+Admiralty, Hong Kong
+Map and Driving Directions &lt;http://www.acc-hk.com/contact%20us.html&gt;
+
+Parking Information
+There 
+are several parking lots surrounding the Admiralty Conference center including the Admiralty Car Park, United Centre Car Park (7th floor), and the Murray Road Multi Storey Car Park. Parking rates can be found here &lt;http://www.acc-hk.com/contact%20us.html&gt;.
+
+WORKSHOP PREREQUISITES
+All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest! 
+
+ - A FREE account on Pivotal Web Services - create a 60-day trial with no credit card at 
+https://run.pivotal.io
+
+
+
+QUESTIONS? 
+Contact Pivotal at 
+info@pivotal.io &lt;mailto:info@pivotal.io&gt;.
+
+We look forward to seeing you!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

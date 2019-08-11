@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Pivotal Breakfast_Melbourne_Q119.1 Hour Reminder</name>
+    <style>none</style>
+    <subject>Your Arrival Details - Pivotal Breakfast</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Please find below your arrival details for the Pivotal Breakfast - Driving Innovation with Application Transformation.
+
+Date: Tuesday, 2nd April 2019
+Time: 8:30am - 10:15am (registration opens from 8am)
+Location: TEA ROOM, Adjacent Melbourne Supper Club, Level 1/161 Spring St, Melbourne VIC 3000
+
+Featured Speakers:
+
+- Lawrence Crowther, CTO APJ, Pivotal
+- Charles Dagher, Manager Digital Systems, Toyota Australia
+- Anthony Clarke, AVP &amp; Country Manager ANZ, Pivotal
+- Ramy El Essawy, Senior Platform Architect, Pivotal
+
+Should you have any questions or would like more information about this event, please email us at communications-apj@pivotal.io.
+
+We look forward to seeing you there.
+
+Regards,
+
+Lionel Lim
+Vice President and Managing Director, Asia Pacific &amp; Japan
+Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

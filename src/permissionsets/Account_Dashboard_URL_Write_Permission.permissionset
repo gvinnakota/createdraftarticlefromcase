@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This gives the Account Dashboards account write permission to Account_Dashboard_URL__c for story https://www.pivotaltracker.com/story/show/161891216</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account Dashboard URL Write Permission</label>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Account_Dashboard_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+</PermissionSet>

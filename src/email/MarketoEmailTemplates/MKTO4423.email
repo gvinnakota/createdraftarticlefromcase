@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse;background-color:#ffffff" bgcolor='#FFFFFF'>
+<tr>
+<td height='60' style='background-color:#ffffff" bgcolor='></td>
+</tr>
+<tr>
+<td width='40' bgcolor='#FFFFFF'></td>
+<td bgcolor='#FFFFFF' align="center" valign="middle" class="stack brand-block"><a href="http://insidepivotal.com" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/logo-inside-pivotal-newsletter.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td width='40' bgcolor='#FFFFFF'></td>
+</tr>
+<tr>
+<td height='40'></td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" bgcolor="#FFFFFF" style="border-collapse:collapse; " ><tr>
+<td height='15'></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr ><td width='40'></td>
+<td align="left" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue-date" style="font-size:12px; color:#4f504f; " >December 6, 2016</span>
+</strong>
+</td>
+<td align="right" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue" style="font-size:12px; color:#4f504f; " >Vol. 4, No. 14</span>
+</strong>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='10'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='40'></td>
+</tr>
+<tr ><td width='40'></td>
+<td style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; " ><p style="font-family:Helvetica, Arial, sans-serif;margin:0; font-size:34px; line-height:1.2em;color:#000000;font-weight: 300;padding-bottom: 7px;">In This Issue</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-letter-from-the-editor" ><a style="color: #00ae9e; text-decoration: none;" href="#letter-from-the-editor">Letter From the Editor</a>&nbsp;– Zero to One</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-product" ><a style="color: #00ae9e; text-decoration: none;" href="#product-update">All Things Product</a>&nbsp;– Checking in With Pivotal Dublin</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-seen" ><a style="color: #00ae9e; text-decoration: none;" href="#seen-update">Interestings</a>&nbsp;– Noteworthy Odds &amp; Ends</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-culture" ><a style="color: #00ae9e; text-decoration: none;" href="#culture-update">Labs + Culture</a>&nbsp;– Being Boulder: Setting a Course for D&amp;I</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-my-name-is" ><a style="color: #00ae9e; text-decoration: none;" href="#my-name-is">My Name Is</a>&nbsp;– Hong Wu</span>
+</p>
+</td>
+<td width='40px'></td>
+</tr>
+<tr>
+<td height='45'></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of Letter from the Editor // -->
+<a href="#letter-from-the-editor" name="letter-from-the-editor"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td style="color:#666666; font-size:14px; line-height:22px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#008774" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Letter&nbsp;from&nbsp;the Editor</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="letter-from-the-editor-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/portrait-template-inside-pivotal-newsletter-2016-scasale.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">zero to one&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;">Steve Casale, Sr. Manager, Communications</p></div>
+<div class="mktEditable" id="letter-from-the-editor-entry" style="padding-right:40px; " ><p>Pivotal understands the idea of <a style="color: #008774; text-decoration: none;" href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296">zero to one</a>. That is Silicon Valley parlance for going from something that did not exist to an innovation, or hurling the javelin of possibility into new and uncharted territory. Pivotal Cloud Foundry is one way Pivotal helps customers who are seeking&mdash;through software&mdash;the path from zero to one: The platform concentrates and automates processes, which brings new velocity to app development. That widens the field of opportunity to do zero to one things and create and capture its value.</p>
+<p><span id="docs-internal-guid-e19c0608-d159-0382-7a19-25b4011b1138">
+<p dir="ltr"><span>Pivots that build our products necessarily model velocity. And while innovation is crucial to Pivotal, our constellation of builders is global. It can be challenging to distribute velocity across oceans, time zones, and teams. Pivots gain as much from the "1 to n" idea&mdash;or replicating something that already exists&mdash;as they do in going from zero to one. Engineer James Monserrate's nice article in All Things Product touches on 1 to n ways that Pivotal Dublin collaborates as a spoke in the global Cloud Foundry hub.</span></p>
+<p dir="ltr"><span>In our Labs + Culture article, Kevin Menzie writes on the Boulder team's D&amp;I blueprint for 2017. It includes a nice zero to one play in helping very young women open new doors through the promise of </span><a style="color: #008774; text-decoration: none;" href="http://www.ed.gov/stem"><span>STEAM</span></a><span>.</span></p>
+</span></p></div>
+</td>
+</tr>
+<tr>
+<td height='30'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of Letter from the Editor // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:40px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00AE9E" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>All&nbsp;Things&nbsp;Product</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="product-title" style="padding-bottom:20px; " ><p style="color: #666666; font-weight: 300;"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/jmonserrate-nl-portrait.png" alt="" width="130" height="172" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">Checking in with pivotal Dublin</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0;"><span style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px;"><span id="docs-internal-guid-5bcf31ce-5408-a4f1-4319-c44b5daaaae1"><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 12px;">Jamie Monserrate, Cloud Foundry Engineering Director,</span></span><span style="color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 300;">&nbsp;Dublin</span></span></span></p></div>
+<div class="mktEditable" id="product-entry" style="padding-right:40px; " >
+<p><span id="docs-internal-guid-1655f0d5-dd7e-1b6c-e48d-9a2a051a0dd4"> </span></p>
+<p dir="ltr">Pivotal has two key teams running out of our Dublin office: The Services pipeline and the PCF RabbitMQ teams.
+  Both teams are split evenly across London and Dublin, and are brilliant examples of remote teams at their best&mdash;conversations over Slack, abundant use of <a style="color: #00ae9e; text-decoration: none;" href="https://appear.in/">appear.in</a> (for video), use of parrit for pair signups and postfacto for retros.
+  These are some of of the means used to facilitate smooth collaboration from Dublin, which is one spoke in a global Pivotal hub and team that helps developers and enterprises continuously innovate from the Cloud Foundry platform.</p>
+<p dir="ltr">Developers have had a brilliant experience pushing their apps to Pivotal Cloud Foundry&mdash;it &ldquo;just works&rdquo; goes the saying, and we want to provide the same level of experiences for data services.</p>
+<p dir="ltr"><strong>Services Pipeline</strong></p>
+<p dir="ltr"><strong>&nbsp;</strong>The Services Pipeline team was born out of a refactoring that started almost a year ago.
+  We realised that all data services had a very common pattern for their pipelines.
+  We extracted all of this to form a common template, and the <a style="color: #00ae9e; text-decoration: none;" href="https://github.com/pivotal-cf/pcf-tile-pipeline">pcf-tile-pipeline</a> and <a style="color: #00ae9e; text-decoration: none;" href="https://github.com/pivotal-cf/opsman-lifecycle">opsman-lifecycle</a> were born.
+  This team is focussed on building opinionated pipelines to enable services teams to focus on what they do best: building services.
+  The team&rsquo;s output is not simply a set of pipelines.
+  It&rsquo;s a set of best practices on automating, building, and shipping releases which incorporate all the learnings of continuously integrating BOSH releases for the last two years, so that consuming services teams do not have to go through the failures that we did.</p>
+<p dir="ltr">Ben Laplanche has <a style="color: #00ae9e; text-decoration: none;" href="https://drive.google.com/a/pivotal.io/file/d/0B1ekZrvzvvvnMTJacTVWUUU3NTg/view?usp=sharing">a great presentation</a> on how we've come to have a leading opinion on Cloud Native Data.
+  His insights and <a style="color: #00ae9e; text-decoration: none;" href="https://docs.google.com/presentation/d/1ZXD5K_pfuIGL1TPXvm94lo7vtlam-mVhIGpa8d-Nd8Q/edit#slide=id.p">slides on this</a> are well worth the read.
+  Ben talks about our journey, our learnings along the way, and the vision for PCF services.</p>
+<p dir="ltr">So far, the team has been receiving some glowing feedback! They have Pivotal teams consuming their pipelines in consumers in Denver, New York, San Francisco, London, and Dublin.</p>
+<p dir="ltr"><strong>PCF RabbitMQ</strong></p>
+<p dir="ltr"><strong>&nbsp;</strong>The RabbitMQ team is building an on-demand version of the PCF RabbitMQ tile.
+  This enables developers and customers to provision a dedicated RabbitMQ cluster for themselves on-demand, meaning they don't have to worry about <a style="color: #00ae9e; text-decoration: none;" href="http://searchcloudcomputing.techtarget.com/definition/noisy-neighbor-cloud-computing-performance">noisy neighbor bandwidth hogs </a>&nbsp;and other multi-tenant problems.
+  The team also focuses on features that give greater control to operators that prevent developers from misusing the product.
+  For example, we build in guardrails like connection limits, message-size limits, etc., that contain the damage developers can inflict when they misuse the product.
+  They are also working on ensuring the product is <a style="color: #00ae9e; text-decoration: none;" href="https://docs.google.com/presentation/d/1u_wDazqvhNJ_HYpWbnp5uLS9FcDeINo3mLyxEU5YwVI/edit#slide=id.g17643d2a27_0_178">enterprise ready</a>.
+  This means building more automation to test things like upgrades under load and long-running clusters.</p>
+<p dir="ltr">In 2017, we'll continue to focus on these two key initiatives.
+  We're looking to grow these teams, and potentially help out on newer initiatives.
+  So if you know of folks in Dublin, or interested in relocating to Dublin, please do refer them!</p>
+</div>
+<a href="#top" style="color:#00ae9e; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+<tr>
+<td height='27'></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of seen and heard -->
+<a href="#seen-update" name="seen-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#026D63" ><tr ><td width='40'></td>
+<td ><div class="mktEditable" id="seen-and-heard" ><table style="border-collapse: collapse;">
+<tbody>
+<tr>
+<td width="180px" height="32px" align="center" bgcolor="white">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #026d63; font-weight: 200; font-size: 17px; margin: 0;">Interestings</p>
+</td>
+</tr>
+<tr>
+<td height="30"><br /></td>
+</tr>
+</tbody>
+</table>
+<ul style="margin: 0px;">
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-f5d07c2e-c1f1-42c4-85c7-ebb8453b37d1"><span>Culture pick: In case you missed em', read the </span><a style="color: white;" href="http://www.bbc.com/news/business-37998577"><span>BBC</span></a><span> and </span><a style="color: white;" href="http://www.inc.com/sal-rodriguez/pivotal-labs-2016-company-of-the-year-nominee.html"><span>Inc</span></a><span>. profiles about Pivotal</span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-f5d07c2e-c1f2-3565-2b44-a1a337731b9b"><span>Prezo pick: Casey West's&nbsp;</span><a style="color: white;" href="https://t.co/iosrTyk62V"><span>5 Stages of Cloud Native</span></a><span> (denial and anger make an appearance)</span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-f5d07c2e-c1f3-0282-9cb3-9de1c3dce0c2"><span>Tweet: Learn the platform in non-techie terms in Amit Gupta's </span><span style="color: white;"><a style="color: white;" href="https://twitter.com/craigsteelinla/status/803415478274138112">PCF primer</a></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-f5d07c2e-c1f3-e4e8-f557-d6c425651c6d" style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;"><span style="color: #ffffff; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;">Pivotal legal&nbsp;sponsored webinar: "Employment-Based Immigration in a Trump Administration" (7 Dec. </span></span><a style="color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 15px;" href="https://attendee.gotowebinar.com/register/7041284937654189828">Sign up here</a><span style="color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 15px;">)</span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;">The <a style="color: white;" href="https://pivotal.io/training/courses/pivotal-cloud-foundry-administrator-training">PCF Administrator Course</a> is now available! Customers can learn how to install, configure, and run PCF installations.&nbsp;</li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;"><span style="color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 15px;"><span id="docs-internal-guid-f5d07c2e-c1f5-14df-9076-0836e28b6136"><span>Holiday cheer: Catch "</span><a style="color: white;" href="https://vimeo.com/156796703"><span>the Pivots</span></a><span>" trailer! (rather cryptic, but still fun)</span></span></span></span></li>
+</ul></div>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='40'></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<!-- End of seen and heard // -->
+<!-- Start of culture update // -->
+<a href="#culture-update" name="culture-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='60'></td>
+</tr>
+<tr ><td width='40'></td>
+<td ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#87C876" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Labs&nbsp;+&nbsp;Culture</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="culture-title" style="padding-bottom:20px; " ><p><img src="http://connect.pivotal.io/rs/pivotal/images/KMenzie-nl-portrait.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">being boulder: setting a course for D&amp;I</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin: 0;"><span style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px;">Kevin Menzie, Office Director<span id="docs-internal-guid-730cb252-5400-9c61-69cc-746ed44ceecb"><span>, Pivotal Boulder</span></span></span></p></div>
+<div class="mktEditable" id="culture-entry" style="padding-right:40px; " ><p><em>Thanks to Tessa Reuber, who helped write this article.</em>&nbsp;</p>
+<p>The Boulder team recently gathered to kick off our Grassroots Diversity &amp; Inclusion efforts. We started by running through an exercise to help define what diversity means to our office, what we hoped to achieve with the group, and to plan next steps.</p>
+<p>We went through a familiar Pivotal exercise of using sticky notes to identify common themes on what Diversity &amp; Inclusion means to our team.</p>
+<p>From that we gleaned the following themes and aims for the Boulder office:</p>
+<p><span id="docs-internal-guid-42f503eb-bc5c-1fa8-4802-f5c35faea3b6"> </span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Creating an inclusive, supportive environment that accommodates not just race and gender, but all ages and stages of careers.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Working towards gender balance in the office and within disciplines.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Creating a place that welcomes religious and philosophical backgrounds.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Embracing ethnic and cultural diversity.</span></p>
+</li>
+<li dir="ltr"><span>A place where different worldviews, backgrounds, and voices are heard and understood, with a hiring process that accommodates this.</span></li>
+</ul>
+<p>Other big topics included creating a place where everyone feels respected, and where we value and seek a variety of skill sets.</p>
+<p dir="ltr"><span>We then discussed ways to support these ideas or how to explore these topics further.</span></p>
+<p dir="ltr"><span>This quarter, we've invited </span><a style="color: #87c876; text-decoration: none;" href="http://www.denasamuels.com/home.html"><span>Dena Samuels, PhD</span></a><span>, a sociologist specializing in diversity and inclusiveness services, to lead a workshop with our office on &ldquo;Minimizing Implicit Bias and the Stereotype Threat.&rdquo;</span></p>
+<p><span>Thinking beyond the office itself, we&rsquo;ve started a group called </span><a style="color: #87c876; text-decoration: none;" href="http://littlebits.cc/community/chapters/littlebits-of-boulder"><span>&ldquo;littleBits of Boulder</span></a><span>&rdquo;, which aims to get girls between the ages of 6&ndash;12 interested in STEM. Using littleBits (easy-to-use, magnetic circuits), we teach design thinking with different themes at monthly events.</span></p>
+<p><img title="young women coding" src="http://connect.pivotal.io/rs/pivotal/images/LittleBits-1.jpg" alt="" width="530" height="298" /><span style="font-size: 11px;">Big ideas <span id="docs-internal-guid-f777ebc4-c1f8-6938-da03-f1e8d7a79327">in little bits: Pivots work with young women to get creative in tech and art.</span></span></p>
+<p dir="ltr"><span>Other ideas that our group came up with include:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Hosting a meet-up with tech and non-tech leaders about diversity and inclusion in the workplace.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Partnering with the </span><a style="color: #87c876; text-decoration: none;" href="https://www.ncwit.org/"><span>NCWIT</span></a><span> on an event that drives diversity and inclusion in computer science. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Share our own backstories with the rest of the team.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Gain perspectives on how the Boulder community advocates for diversity through volunteer work. </span></p>
+</li>
+</ul>
+<p dir="ltr"><span>We also have our new organizers and leaders for the Grassroots D&amp;I Group: Tessa Reuber and Erica Birkman. Thank you Tessa and Erica!</span></p>
+<p dir="ltr"><span>We&rsquo;re excited to see how the group evolves and grows over time!</span></p></div>
+<a href="#top" style="color:#87c876; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of culture update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; border-top:1px solid #f1f1f1; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00A1E4" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin:0'>My&nbsp;Name&nbsp;Is</p>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/WuHong-nl-portrait.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">hong wu</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px;">Hong Wu, Software Engineer, Beijing</span></p></div>
+<div class="mktEditable" id="my-name-is-entry" >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;">At Pivotal I...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;"><span style="color: #666666; font-weight: 300;"><span id="docs-internal-guid-bd006a03-bbb7-eee3-6cf8-f61c48362f65"><span>Am a member of Pivotal Data in Beijing.
+  I'm working with a fantastic team on Apache HAWQ, and am currently focused on big data platforms such as Hadoop SQL Engine.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">You can find me...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;"><span style="color: #666666; font-weight: 300;"><span id="docs-internal-guid-37b71d09-5544-4408-94e2-b11d2873b357"><span><span id="docs-internal-guid-bd006a03-bbb8-7b7a-d830-9f7fd82190d3"><span>In the fresh new Pivotal Beijing office with the HAWQ team.
+  I'm a big fan of Github so you can find an </span><a style="color: #00a1e4; text-decoration: none;" href="https://github.com/octocat"><span>octocat</span></a><span> at my working table.
+  I welcome you to visit! You can find out more about </span><a style="color: #00a1e4; text-decoration: none;" href="http://xunzhangthu.org/about/"><span>me here</span></a><span>.</span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Currently, I am working on&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;"><span style="color: #666666; font-weight: 300;"><span id="docs-internal-guid-37b71d09-5545-2492-bcb4-8a8d7ea54b25"><span><span id="docs-internal-guid-bd006a03-bbb9-a7ce-1749-03b76a798ba7"><span>Apache HAWQ Project which is a native SQL engine upon Hadoop.
+  While HAWQ is a homophone with 'hawk', as a product it's more like an Impala (a super-fast land animal).
+  Before HAWQ, I was working on distributed machine learning and real-time recommendation systems.
+  I think the HAWQ Beijing team is amazing&mdash;it's made up of folks from a wide range of fields, including machine learning, networking, and linux kernel and database systems experts</span></span>.</span></span></span>&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">In my spare time&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;"><span style="color: #666666; font-weight: 300;"><span id="docs-internal-guid-37b71d09-5545-2492-bcb4-8a8d7ea54b25"><span><span id="docs-internal-guid-37b71d09-554c-b5c8-5b4a-184b8f21a09e"><span><span id="docs-internal-guid-bd006a03-bbba-83cc-6db1-9d50776a5779"><span>I'm crazy about sports&mdash;basketball,  
+football, ping pong, swimming, running, skiing.
+  I've been a die-hard fan of the Golden State Warriors since 2006.
+  I like the novel "run and gun" way they have redefined basketball.
+  You can add to that a love for travel, riding, and trekking.
+  I've traveled to Tibet, Taiwan, Tokyo, Irkutsk (Russia), Athens, Santorini, Mykonos, Aachen, Foster City&hellip; I have a </span><a style="color: #00a1e4; text-decoration: none;" href="http://www.brompton.com/"><span>Brompton Bicycle</span></a><span> that I'd like to take it around the world.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0px;"><span style="color: #00a1e4; font-weight: bold;">Something you probably don&rsquo;t know about me&hellip;</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-123cddd3-53e2-a0e2-7e7b-4b93c5265fbf"><span><span id="docs-internal-guid-a1d06824-de0f-b4cd-2da5-7af9759e1747"><span><span id="docs-internal-guid-e2242dbe-fd3d-cf2e-3e43-9554e856fb02"><span><span id="docs-internal-guid-37b71d09-554d-2ac5-7f0a-b297dd2631e4"><span><span 
+id="docs-internal-guid-bd006a03-bbbb-cbf0-3580-02eed292ddee"><span>I spent one-week trekking along </span><a style="color: #00a1e4; text-decoration: none;" href="http://lakebaikal.org/"><span>Lake Baikal</span></a><span> (the world's oldest and deepest freshwater lake, in Siberia) by myself in 2014.
+  It was an adventure&mdash;the Siberian Plain is so lonely and broad.
+  There was only the Baikal, the mountains, and me.
+  One night as I prepared to sleep, I heard some animal calls outside.
+  I opened my tent and found it was a distant gull soaring above the lake.
+  The plain was so quiet!</span></span></span></span></span></span></span></span></span></span></p>
+</div>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="my-name-is-photo" ><div><img src="http://connect.pivotal.io/rs/pivotal/images/BromptonBike-1.jpg" alt="DTranfood " width="600" height="450" /><img src="http://connect.pivotal.io/rs/pivotal/images/Water-1.jpg" alt="Lake shot" width="600" height="392" /><img src="http://connect.pivotal.io/rs/pivotal/images/BJ-Crew-1.jpg" alt="DTranfood " width="600" height="450" /></div></div>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-top:30px; padding-bottom:60px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><div class="mktEditable" id="my-name-is-outro" ><p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;">To me Pivotal is&hellip;</p>
+<p style="color: #666666; font-weight: 300;"><span id="docs-internal-guid-123cddd3-53e2-d526-e782-9822ba19d595"> </span></p>
+<p style="color: #666666; font-weight: 300;" dir="ltr"><span><span id="docs-internal-guid-a1d06824-de1a-26e4-a2f8-d5a1de3ccd82"><span><span id="docs-internal-guid-e2242dbe-fd3e-7e6c-3150-a595f494b8c0"><span><span id="docs-internal-guid-37b71d09-554e-721e-b755-581229e8129c"><span><span id="docs-internal-guid-bd006a03-bbbd-8363-dbc1-7500d427b12f"><span>Is a cool software company with lots of talented engineers&mdash;like a warm and kind family</span></span>!</span></span></span></span></span></span></span></p>
+<p style="color: #666666; font-weight: 300;" dir="ltr"><span><span><span><span><span><span><span><br /></span></span></span></span></span></span></span></p></div>
+<p style='font-family:Helvetica, Arial, sans-serif;color:#00a1e4;font-weight: bold'><a href="#top" style="color:#00a1e4; font-size:14px; text-decoration:none; display:block;font-weight:bold">Back to the Top</a></p>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of end -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #008774; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://connect.pivotal.io/rs/pivotal/images/white-i.png" alt="InsidePivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:20px; padding-right:40px; padding-bottom:20px; font-weight:300; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;">Want More? Try <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a> or <a href="https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter?" style="color:#FFFFFF; text-decoration:none;">SocialCast: @PivotalNewsletter</a></span></td>
+</tr>
+</table>
+<!-- End of end -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2016 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

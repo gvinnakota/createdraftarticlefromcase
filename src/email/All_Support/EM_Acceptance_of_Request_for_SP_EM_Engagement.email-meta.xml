@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When the EM team accepts an EH/SP escalation by checking a box on the case, a notification should be sent to a subset of EM and CSR teams stating the EM team has accepted the case</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>EM Acceptance of Request for SP EM Engagement</name>
+    <style>formalLetter</style>
+    <subject>EM Acceptance of Request for SP EM Engagement {!Case.CaseNumber}</subject>
+    <textOnly>EM {!User.Email}  has accepted the request for SP EM engagement.
+Case Number: {!Case.CaseNumber}.
+Product: {!Case.Products__c}.
+Product Version: {!Case.Versions__c}.
+Case Creation Date: {!Case.CreatedDate}.
+
+{!Case.ThreadId__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

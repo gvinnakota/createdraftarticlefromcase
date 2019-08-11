@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Final Follow up</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Support:Helpdesk:No Response Final Follow Up with Customer</name>
+    <style>freeForm</style>
+    <subject>Final Reminder for Update Needed - Case {!Contact.FirstName}</subject>
+    <textOnly>Hello {!Contact.FirstName}​,
+
+This is a courtesy message to let you know your support request will be closed in 4 business days unless we receive a reply with additional information, as requested previously.
+
+Kind regards,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

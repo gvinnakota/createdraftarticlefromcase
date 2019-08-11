@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_DDD &amp; Reactive Programming-Vernon Vaughn_Q316.TYFA</name>
+    <style>none</style>
+    <subject>Thank you for joining our webinar</subject>
+    <textOnly>&lt;[[https://pivotal.io/agile/webinar/domain-driven-design]]&gt;
+Hi {{lead.First Name:default=there}}, 
+
+Thank you for attending our webinar on Domain Driven Design (DDD) and Reactive Programming. 
+
+ Vaughn Vernon gave us some valuable insights on how a good domain model can reduce complexity and avoid having your application become a ‘big ball of mud’. He also discussed how bounded contexts are a good approach to designing microservices. Wes Williams showed us how an in-memory data grid like Pivotal’s GemFire can be used for implementing microservices and communicating across bounded contexts using the principles of Reactive Programming. 
+
+ The webinar recording is now available &lt;[[https://pivotal.io/agile/webinar/domain-driven-design-and-reactive-programming]]&gt; for on-demand access. Please feel free to pass this information onto any of your interested colleagues.. 
+
+ Access the recording here &lt;[[https://pivotal.io/agile/webinar/domain-driven-design-and-reactive-programming]]&gt;. 
+
+ Below please find some other resources that you might find interesting. Scale your data services on demand to support high-performance, real-time apps with Pivotal GemFire:
+
+
+ - Features, benefits and use cases can be found here  &lt;[[https://pivotal.io/big-data/pivotal-gemfire]]&gt;
+ - Free Introduction to GemFire online course  &lt;[[https://pivotal.io/academy/course/introduction-to-gemfire]]&gt;
+ - Github locations for the webinar demo (DDD &lt;[[https://github.com/VaughnVernon/IDDD_NYSE]]&gt;, Kafka &lt;[[https://github.com/reactor/reactor-kafka]]&gt;) 
+
+
+
+Check out the Open Source Apache Geode data management platform that provides real-time, consistent access to data-intensive apps:
+
+
+ - Apache site &lt;[[http://geode.apache.org/]]&gt; with software, documentation 
+ - Customer and technical presentations from Pivotal’s Geode Summit &lt;[[https://2016.event.geodesummit.com/schedule]]&gt;
+
+
+
+Help independent teams ship software more often with microservices:
+
+
+ - Taking on the Monolith with People and Tech - excerpts from SpringOne Platform 2016  &lt;[[https://blog.pivotal.io/pivotal-cloud-foundry/features/taking-on-the-monolith-with-people-and-tech-springone-platform-day-2]]&gt;
+ - Pivotal Insights Podcast: Episode 2 - Intro To Data Microservices &lt;[[https://blog.pivotal.io/pivotal-insights/features/introduction-to-data-microservices]]&gt;
+
+
+
+We’ll let you know when we have other events on the same or similar topics. 
+
+ Regards, 
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

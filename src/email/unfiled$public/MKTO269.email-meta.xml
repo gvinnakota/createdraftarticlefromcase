@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Contact Us - Confirmation</name>
+    <style>none</style>
+    <subject>Thank you for your inquiry</subject>
+    <textOnly>We received your inquiry!
+
+Hi {{lead.First Name:default=edit me}},
+
+Thank you for your interest in Pivotal. 
+Your request for more information has been passed onto the team. We will get back to you soon. In the meantime, we invite you to explore our resources &lt;http://www.gopivotal.com/resources&gt;, and to learn about our Pivotal People &lt;http://www.gopivotal.com/pivotal/people&gt; and what inspires them to do extraordinary things.
+
+
+-The Pivotal Team
+
+
+Follow Us: Twitter &lt;http://twitter.com/gopivotal&gt; | LinkedIn &lt;http://linkedin.com/company/gopivotal&gt; | Facebook &lt;http://www.facebook.com/gopivotal&gt;
+
+
+GoPivotal, Pivotal, and the Pivotal logo are registered trademarks or trademarks of GoPivotal, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. 
+© Copyright 2013 Go Pivotal, Inc. All rights reserved. Published in the USA.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_69324753</developerName>
+        <masterLabel>Product Category</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>OpportunityLineItem.Product_Portfolio__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS</sourceValue>
+            </sourceValues>
+            <value>PAS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - PKS</sourceValue>
+            </sourceValues>
+            <value>PKS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - CC</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - GemFire</sourceValue>
+            </sourceValues>
+            <value>PCC</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>App</sourceValue>
+            </sourceValues>
+            <value>APP</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Agile - App Trans</sourceValue>
+            </sourceValues>
+            <value>AppTX</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Agile - Labs</sourceValue>
+            </sourceValues>
+            <value>Labs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - Services</sourceValue>
+            </sourceValues>
+            <value>PCFS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>PaaS - PAL</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PaaS - Eng Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PaaS - Edu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - Resell</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - BCS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>App - Edu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agile-APLE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agile - Tx</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - DS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - Edu</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PaaS - BCS</sourceValue>
+            </sourceValues>
+            <value>Other Services</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Data - Big Data Suite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - HAWQ</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - GPDB</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data - HD</sourceValue>
+            </sourceValues>
+            <value>Data Products</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>OpportunityLineItem.Forecast_ACV__c</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>false</expandOthers>
+        <groupingColumn>BucketField_69324753</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>OpportunityLineItem.Forecasted_Renewal_ACV__c</columnName>
+        <highBreakpoint>1.0E14</highBreakpoint>
+        <highColor>#FFFFFF</highColor>
+        <lowBreakpoint>0.0</lowBreakpoint>
+        <lowColor>#7D98B3</lowColor>
+        <midColor>#00B3B4</midColor>
+    </colorRanges>
+    <colorRanges>
+        <aggregate>Sum</aggregate>
+        <columnName>OpportunityLineItem.Forecast_ACV__c</columnName>
+        <highBreakpoint>1.0E14</highBreakpoint>
+        <highColor>#FFFFFF</highColor>
+        <lowBreakpoint>0.0</lowBreakpoint>
+        <lowColor>#7D98B3</lowColor>
+        <midColor>#00B3B4</midColor>
+    </colorRanges>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Forecasted_Renewal_ACV__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Forecast_ACV__c</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Number__c</field>
+    </columns>
+    <columns>
+        <field>OpportunityLineItem.Product_Name__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Pivotal_Account_Category__c</field>
+    </columns>
+    <columns>
+        <field>OWNER_MANAGER</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>FORECAST_CATEGORY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Pivotal_Account_Category__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>C - Territory</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_CUSTOMER_ID</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>SSS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Region_autofill__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AMER</value>
+        </criteriaItems>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_69324753</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Region_autofill__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>C accounts FY20 Pipeline</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

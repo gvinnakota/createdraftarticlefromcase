@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>轻松应战 Postgres & Greenplum 非法/歧义字符加载入库</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body style="margin:0; " ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tbody ><tr ><td width="100%" bgcolor="#EDEDEE" align="center" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tbody ><tr>
+<td width="100%" valign="middle" align="center" style="margin: 0;font-family: Helvetica,Arial,sans-serif; font-size: 13px; font-weight: normal;padding:9px 0">如无法阅读此页，请<a href="{{system.viewAsWebpageLink}}" target="_blank" style="color:#3EA7BC; text-decoration:none;">点击这里。</a></td>
+</tr>
+<tr>
+<td align="left"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/logo-pivotal-transparent-teal.png" width="106" height="25" alt="Pivotal_LOGO"></td>
+</tr>
+<tr>
+<td height="20"></td>
+</tr>
+<tr ><td ><div class="mktEditable" id="banner-main" ><a href="https://jinshuju.net/f/XpTso6" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/banner_Postgres%26Greenplum_720x258.jpg" width="600" height="215" border="0" alt="轻松应战Postgres & Greenplum非法/歧义字符加载入库"></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white;">
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td style="font-family: Helvetica,Arial,sans-serif;color:#555555; font-size:13px; line-height:20px; padding:25px 30px;" colspan="3">Greenplum 从一款成熟的企业级商业软件到开源，提供的解决方案已经帮助上千家的用户取得了极大的性能提升和安全保障。 新版的 Greenplum 发布后，提供了更多 postgresql 中的新功能。<br>
+<br>
+我们将在第四期 Pivotalk 公开课中为您带来主题为<span style="font-family:'宋体'">“</span>轻松应战 Postgres & Greenplum 非法/歧义字符加载入库<span style="font-family:'宋体'">”</span>的在线讲解。我们欢迎关注 GP 的小伙伴们加入我们的课程讨论，与我们的技术专家互动分享。<br>
+<br>
+每位听课者均有机会赢取我们送出的最新技术书籍。赶快行动吧！</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>课程简介</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;">Postgres 和 Greenplum 分别作为优秀的 OLTP 联机事务数据库和 OLAP 联机分析数据库，在业界应用日趋广泛。但在亚洲地区，由于中文（包括日韩文）多字节编码的特性，经常会遇到令人头痛的非法字符（俗称乱码）或字符歧义等各类问题导致的数据不能正常加载，本课程针对常见问题进行分析，并给出相应解决方案，让数据加载不再成为前进道路上的挡路石。</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>课程要点</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:2.0em;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;"><span style="color:#01ad9d">●&nbsp;</span>Postgres 内核字符集转换实现浅析<br>
+<span style="color:#01ad9d">●&nbsp;</span>COPY 加载时常见问题<br>
+<span style="color:#01ad9d">●&nbsp;</span>非法字符库外工具、库内 C 语言容错的两种解决方案<br>
+<span style="color:#01ad9d">●&nbsp;</span>Greenplum 多分割符外部表自定义 C 语言扩展解决数据歧义<br>
+<span style="color:#01ad9d">●&nbsp;</span>如何从其它数据库导出数据，将问题消灭在源头</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>活动信息</strong></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px"><span style="color:#01ad9d">课程主题：</span>轻松应战 Postgres & Greenplum 非法/歧义字符加载入库<br>
+<span style="color:#01ad9d">主讲嘉宾：</span>李巍 &nbsp; Pivotal 大中华区大数据首席架构师<br>
+<span style="color:#01ad9d">课程时间：</span>2017年4月25日（周二）20:00 - 21:10<br>
+<span style="color:#01ad9d">适合对象：</span>架构师，CF 开发人员<br>
+<span style="color:#01ad9d">参与方式：</span>电脑或手机，只要你能上网即可参加。（直播平台的链接将在会前参会确认函中</td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-left:95px;">下发，报名时请务必填写准确的联系方式）</td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:24px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding:0 30px 25px 30px;"><span style="color:#01ad9d">在线小福利：</span>我们为您准备了最新技术书籍</td>
+</tr>
+<tr>
+<td colspan="3" height="25" bgcolor="#EDEDEE"></td>
+</tr>
+<tr>
+<td colspan="3" style="line-height:1.5em;color: #01ad9d; font-size: 15px; font-family: Helvetica,Arial,sans-serif;padding:25px 30px 15px 30px;" align="center"><strong>讲师介绍</strong></td>
+</tr>
+<tr>
+<td style="padding-left:30px;padding-right:20px" width="130" align="left" valign="middle"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/LiWei_picture.png" border="0" width="130" height="130" alt="李巍"></td>
+<td colspan="2" style="line-height:20px;color: #555555; font-size: 13px; font-family: Helvetica,Arial,sans-serif;padding-right:30px;">李巍先生先后就职于某银行软件开发部门、Teradata 中国、EMC 和 Pivotal，资深 Greenplum 数据库专家，拥有超过10年从事分布式计算和大数据计算的经历，对大规模数据计算有着丰富的实战经验，曾在包括大型电商、国有大银行、电信行业在内的数十个项目中担任架构师或技术专家，在很多关键性问题的解决上做出过多项贡献。</td>
+</tr>
+<tr>
+<td colspan="3" style="padding-bottom:27px;padding-top:27px">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="240"></td>
+<td height="28" align="center" valign="middle" bgcolor="#00AE9E"><a style="font-family: Helvetica,Arial,sans-serif;font-size: 13px;color: white; text-decoration: none;" href="https://jinshuju.net/f/XpTso6">立即报名</a></td>
+<td width="240"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td height="20"></td>
+</tr>
+<tr>
+<td><span style="color:#00a79c;border:0px;"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/WeiXinWeiBoHotLine_V1.jpg" width="600" height="148" alt="官方微信号：pivotal_china 官方微博号：pivotal中国 技术咨询：400-135-8900"></span></td>
+</tr>
+</tbody>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #ededee">
+<tbody>
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<!-- start of social links // -->
+<!-- End of social links // -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#059a91; font-size:16px;font-weight:600; line-height:18px;font-family:Arial,sans-serif;padding-top:18px"><a href="http://pivotal.io/cn" style="color:#059a91; text-decoration:none;">pivotal.io/cn</a></td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="left" valign="top" style="padding-top:10px; padding-bottom:20px; color:#999999; font-size:11px; line-height:18px;font-family:Helvetica,Arial,sans-serif;"><a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">Pivotal</a> 总部位于美国硅谷，专注于帮助企业用户实现实现数字化转型和业务创新。Pivotal 的 Pivotal Cloud Foundry 云原生平台和大数据解决方案推动了众多世界知名品牌的软件创新。全球各地的多个社区拥有数以百万计的开发人员，每天都有数十亿用户接触 Pivotal 的技术。经过十年的努力，Pivotal 公司已为硅谷多家重要企业塑造了软件开发文化。全球财富500强中，超过三分之二的企业都是Pivotal 的用户。希望了解更多，请点击 <a href="https://pivotal.io/cn" target="_blank" style="color:#008774;text-decoration: none;">https://pivotal.io/cn.</a>
+<p style="color: #666666; font-size: 11px; line-height: 0.5em; font-family: Arial; text-align: left;">&nbsp;</p>
+<span style="font-family: Arial; font-size: 11px;">© Pivotal</span>，以及 <span style="font-family: Arial;">Pivotal</span> 徽标均为 <span style="font-family: Arial;">Pivotal Software, Inc.</span>在美国和其他国家注册商标或商标。这里所出现的所有其他商标均为其各自持有的人财产。<span style="font-family: Arial;">© 2017 Pivotal Software, Inc.</span>保留所有权。在美国出版。<br>
+<a href="http://connect.pivotal.io/subscription-management.html" target="_blank" style="color:#008774; text-decoration: none;">管理</a>您的订阅信息或<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#008774; text-decoration: none;">退订</a>。 <!--<p> --></td>
+<td width="30"></td>
+</tr>
+</tbody>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

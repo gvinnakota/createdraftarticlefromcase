@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Webinar_Google_Wallet_Fanatics_Q214.Follow Up Attended</name>
+    <style>none</style>
+    <subject>Thank you for joining us for Google Wallet - The Fanatics Experience webinar</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for joining us for our webinar &quot;Google Wallet - The Fanatics Experience&quot; on Friday, May 9, 2014.
+
+Together with our friends at Google and Fanatics, we walked you through the role of the digital wallet in mCommerce today and discussed how your company can capitalize on current and future opportunities in this space. 
+
+We invite you to watch the session replay here &lt;https://gopivotal.webex.com/gopivotal/lsr.php?RCID=06524ddf01b21822526565de8f2b6ee7&gt;.
+
+
+Thank you,
+The Pivotal Labs Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

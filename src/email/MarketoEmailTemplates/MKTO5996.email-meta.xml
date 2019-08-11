@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Newsletter_2018.Spring_Newsletter_Email_May_2018</name>
+    <style>none</style>
+    <subject>This May in Spring</subject>
+    <textOnly>May 2018
+Hi, Spring fans! Welcome back to another installment of This Month in Spring! 
+ 
+This last month has been nuts—crazier than a sac o’ cats! First of all, we IPO&apos;d &lt;[[https://content.pivotal.io/announcements/pivotal-software-lists-on-nyse-as-pvtl?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;. That&apos;s kind of awesome. Shortly after that, we at Pivotal celebrated our fifth birthday &lt;[[https://content.pivotal.io/blog/5-lessons-on-pivotal-s-fifth-birthday?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; as a startup—happy birthday to us!
+
+Your humble correspondent has hit the road! I started in Paris, France, and then hit New York City for the big NYSE bell ringing ceremony! Then it was on to Mainz, Germany; Linz and Vienna, Austria; Melbourne, Australia (where I am now, but only after a 12-hour layover in Bangkok, Thailand); Manchester and London, UK; Denver, CO; Kyiv, Ukraine; Dublin and Belfast, Ireland; Barcelona, Spain; 
+and then finally Singapore. That&apos;s it, for now, before I fly back home to San Francisco early in June, 2018. For the details on where and what, check out this blog post &lt;[[http://joshlong.com/jl/blogPost/april-and-may-2018.html]]&gt;. In all of that, I&apos;ll have presented with the first two founders of Spring—Rod Johnson and Juergen Hoeller—albeit in different places.
+
+During this time I also put out the first four installments of the first season of Spring Tips videos in 2018, starting with videos on the new Kafka Streams binder &lt;[[https://spring.io/blog/2018/04/04/spring-tips-spring-cloud-stream-kafka-streams?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; for Spring Cloud Stream, Redis &lt;[[https://spring.io/blog/2018/04/18/spring-tips-redis?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;, the reactive Cloud Foundry Java client &lt;[[https://spring.io/blog/2018/04/11/spring-tips-the-cloud-foundry-java-client?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;, and Spring Statemachine &lt;[[https://spring.io/blog/2018/04/25/spring-tips-spring-statemachine?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;.
+
+And, of course, the Pivotal and Spring ecosystems have been moving a mile a minute so without further ado, read on to see what you missed in the last month if you blinked. 
+
+
+
+
+
+
+
+
+
+The Long and short of it &lt;[[https://content.pivotal.io/blog/this-month-in-spring-may-2-2018?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;
+
+SpringOne Tour Keeps on Trucking
+
+
+The metaphorical bus stops in Denver &lt;[[https://springonetour.io/2018/denver?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; May 14–15, before heading on to St. Louis &lt;[[https://springonetour.io/2018/st-louis?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; May 30–31. If you can’t make these dates but still want a taste of what to expect at the main event &lt;[[https://springoneplatform.io/?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; this September in D.C., check out our tour page &lt;[[https://springonetour.io/?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; to find out when we’ll be rolling into your city or town. 
+
+ SpringOne Tour 
+ May 14–15, 2018
+ Denver, CO
+
+May 30–31, 2018
+St. Louis, MO
+
+
+
+
+
+
+
+Put me in the front row &lt;[[https://2018.event.springonetour.io/register?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Register for S1P
+
+
+Saving money is so in these days—and so is SpringOne Platform &lt;[[https://springoneplatform.io/?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;. Discounted registration and reduced training prices for the latter end on August 1, 2018 at 11:59 p.m. (PDT). Register now &lt;[[https://2018.event.springoneplatform.io/register?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;—before it&apos;s too late!—and save $200.
+
+
+
+
+
+
+
+RSVP (find out what it means to me) &lt;[[https://2018.event.springoneplatform.io/register?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Links Spring Eternal
+
+
+Webinar, May 9 Micrometer: It&apos;s SLF4J—but for Metrics! &lt;[[https://content.pivotal.io/webinars/may-9-micrometer-its-slf4j-but-for-metrics-webinar?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;
+
+
+Webinar, May 10 
+Reactive Microservices (and Much More!) with Spring Cloud Finchley Webinar &lt;[[https://content.pivotal.io/webinars/may-10-reactive-microservices-and-much-more-with-spring-cloud-finchley-webinar?utm_source=email&amp;utm_medium=spring-news&amp;utm_campaign=spring-cloud-finchley&amp;utm_term=q218]]&gt;
+
+ Product release  
+Spring Security OAuth 2.3.2 Released &lt;[[https://spring.io/blog/2018/04/12/spring-security-oauth-2-3-2-released]]&gt;
+
+Get started
+Try Spring for free today &lt;[[https://run.pivotal.io/spring/?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;
+
+Check out our site &lt;[[https://content.pivotal.io/spring?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt; for even more Spring and Spring-adjacent content—which may or may not include recent blog posts, white papers, webinars, and videos &lt;[[https://www.youtube.com/watch?v=xuIAcZ_BS64]]&gt;. 
+
+
+
+
+
+
+
+
+I want to go to there &lt;[[https://content.pivotal.io/spring?utm_source=spring-newsletter&amp;utm_medium=email-link&amp;utm_campaign=spring-newsletter-may-2018]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

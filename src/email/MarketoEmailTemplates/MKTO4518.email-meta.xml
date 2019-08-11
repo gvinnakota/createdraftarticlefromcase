@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Feb Nwslttr A</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.02-09-17 V5N2</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, 9 Feb</subject>
+    <textOnly>February 9, 2017
+Vol 5, No 2
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – Might as Well Jump
+All Things Product &lt;[[#product-update]]&gt; – Transformation in Customers&apos; Eyes
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Pairing Lah – The Pivotal Way in Singapore
+My Name Is &lt;[[#my-name-is]]&gt; – Adam Hecht
+might as well jump
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+There are junctures in life that require leaps of faith in order to evolve. Weighted as we may be with charms and rational reassurances for jumping, they never dispel every stubborn unknown—at some point we simply need to summon the will to jump. It&apos;s nice to discover in the aftermath, as Joseph Campbell has said, that the chasm often was not as wide as we had anticipated.
+ 
+Pivotal has been scattering the seeds of change for some time, and this issue follows some of the early bloom through our colleagues&apos; dispatches. Solutions Architects spend no small amount of time helping customers jump the chasm. And one of ours, John Feminella, offers offers a nice thought piece on the art of change, and why Pivotal is uniquely placed to help customers make lasting shifts to software competency.
+ 
+We also follow a long arc to Pivotal&apos;s new APJ headquarters in Singapore, and a business community that feels the familiar pressures of global competition. Singapore office director David Varvel updates us on the neon—and deliciously lush—accents to practicing the Pivotal Way in this cosmopolitan city-state.
+ 
+Enjoy.
+transformation in customers&apos; eyes
+
+
+
+
+John Feminella &lt;[[#author-socialcast-profile]]&gt;, Advisory Solutions Architect
+Pivotal holds no monopoly on the term &quot;transformation.&quot; But when Pivots use this term, we often mean something very specific about changing the way companies work with software. Our starting point for transformation is the company&apos;s software delivery organization.
+ 
+Enterprise software development is by nature a messy affair. This isn&apos;t because developers, stakeholders, or project managers are bad or incompetent. It&apos;s because running complex organizations is difficult and complicated. By extension, building good software from inside can also be difficult and complicated. This complexity arises from a confluence of factors in the enterprise, of which two are especially important to bear in mind.
+ 
+First, most enterprises have been around for awhile. That means they&apos;ve almost certainly changed how they build things and what products they offer over their lifespan. Nintendo, for example, started by selling playing cards; today it&apos;s a US$30 billion multinational entertainment conglomerate. (And it still sells playing cards!)
+ 
+That said, these companies have fairly established patterns for doing things, and changing how any company delivers outcomes to customers is tough. It&apos;s fraught with politics and debates over the direction of the firm; it takes time to steer a large entity, and there are rarely clear solutions. That&apos;s why you almost always want to do change slowly and incrementally, not overnight.
+ 
+Second, technology development cycles have accelerated exponentially. Take containerization. Once seen as an obscure and difficult-to-use feature of operating systems, advances in tooling like LXC &lt;[[https://linuxcontainers.org/]]&gt; and Docker have helped containerization become a mandatory part of managing and running secure and isolated production workloads.
+ 
+It&apos;s not hard to see why, if you&apos;re an established Fortune 500 bank, you might be conservative about changing things: one misstep or outage, and you&apos;re on the front page of every newspaper&apos;s business section. But even if a company is smaller and nimbler relative to its peers, change still requires both willingness and skill, and that&apos;s an entirely separate challenge.
+ 
+When we approach enterprises, Pivotal has a tremendous advantage because we come without the political baggage of an insider. That fresh perspective means that we can help steer organizations to focus on the delivery of value in the form of software. More specifically, the focus shifts to shipping the right software to the right people in the right way. When a delivery organization fails to focus in this way, experience tells us that companies will have trouble achieving a real transformation.
+ 
+In working with customers, I see three key ways that we add unique value, and make it easier for companies to change:
+
+
+ - Pivotal Labs engagements demonstrate to customers that there are better ways to write software, and that they can learn how to do it.
+ - Pivotal Cloud Foundry shows them that there are better ways to deliver software to their stakeholders, better ways to run it, and that releases should be boring, routine events—not stressful, scary ones.
+ - Our data products help tie the feedback loop back into the development and product teams, by providing metrics and analytics that would otherwise be laborious to set up.
+
+
+Finally, our broader ecosystem of Spring and friends buttress this overall picture in various places, and ease transition paths for enterprise developers.
+
+From the outside, this looks like we just sold them a product. But on the inside and over time, the way everyone works has changed drastically. And pretty soon those results show up in quarterly statements, in new ideas made into reality, and in the company&apos;s bottom line.
+
+That&apos;s what transformation looks like.
+Interestings
+
+
+
+
+
+
+
+
+
+ - Pairing is caring, cold brew coffee, and more—Chicago Pivots take over Pivotal&apos;s instagram handle &lt;[[https://www.instagram.com/p/BQLOI6VAjOu/?taken-by=pivotalsoftware&amp;hl=en]]&gt; for the week, and it&apos;s pretty cool. 
+ - TechTarget takes aim at the top platforms &lt;[[http://searchmicroservices.techtarget.com/feature/To-choose-the-right-PaaS-vendor-know-thyself]]&gt; (and finds Pivotal at the summit)
+ - Video: Health services giant Express Scripts on springboarding to cloud native innovation &lt;[[https://www.emc.com/video-collateral/demos/microsites/mediaplayer-video/dellemcw16-express-scripts-hc.htm]]&gt;
+ - Socialcast is retiring (with Slack and Pivotalk ascendant). Read on it here &lt;[[https://docs.google.com/presentation/d/1pqZJCNrNCKKqpmy6-_JG5ey_wU3fylId_WNy1wMV4Ss/edit#slide=id.gc6f919934_0_0]]&gt;, or if you&apos;re on Pivotalk, here &lt;[[https://www.pivotalk.io/t/socialcast-migration/2593]]&gt;.
+ - Blog pick: The amazing nuts and bolts of modern cloud operations &lt;[[https://content.pivotal.io/blog/cloud-native-operations-in-6-parts-super-suit-not-required]]&gt;, explained.
+ - Happy birthday RabbitMQ! The open source message broker turns 10 &lt;[[https://www.rabbitmq.com/resources/RabbitMQ_PressRelease_080207.pdf]]&gt;!
+pairing lah—The Pivotal way in singapore
+
+
+
+
+David Varvel &lt;[[#author-socialcast-profile]]&gt;, Office Director, Singapore
+Singapore is a beautiful city-state of temples, restaurants, museums, shopping, and a sweeping waterfront all mixed up together in a spicy, multicultural stew. Its warm tropical climate is often cooled by light afternoon rains. As the financial capital of South Asia, Singapore&apos;s prosperity has produced glowing neon buildings that tower over lush greenery. It&apos;s also the location of one of both the oldest and newest Pivotal offices.
+ 
+Pivotal Labs started an office in Singapore way back in 2010, and sold it to Neo Innovation, in 2012. Pivotal acquired Neo in 2016, and the Singapore Labs office is once again part of the Pivotal family. During that time, the office has absorbed local flavor—like afternoon “Kopi runs &lt;[[http://www.mrbrown.com/.a/6a00d83451b52369e2015392b8321f970b-popup]]&gt;.” However, the original Pivotal Labs DNA is strong, manifest in seven years of uninterrupted breakfasts, empathy, and highly collaborative software development.
+ 
+Singapore is a hugely diverse place, with dozens of ethnic groups and nationalities. The Singapore Labs crew is no exception—our 22 Pivots represent 12 different countries and speak 7 different languages. Singapore Labs is a true example of the Pivotal values of diversity and acceptance.
+ 
+I arrived this January, and I can already say that 2017 is looking bright for Pivotal in Singapore.  In a couple of weeks, we&apos;ll be moving into a brand new office in the heart of downtown. This gorgeous space is large enough for us to put all of our Labs Pivots alongside Sales, HR, Finance, and the rest of the folks who keep Pivotal humming along. Singapore is the APJ headquarters, and until now we&apos;ve been split into two different locations. It&apos;ll be nice to finally have everybody at the same breakfast table.
+ 
+
+
+ 
+We&apos;ve got a lot of exciting projects on the horizon, too. We&apos;re connecting with Singapore Airlines, the Singapore Stock Exchange &lt;[[https://www.sgx.com/]]&gt;, Fairprice &lt;[[http://www.fairprice.com.sg/]]&gt; (the largest supermarket in Singapore), Temasek Poly (a local university), and some of the biggest financial companies in Asia. Singaporean companies feel increasing pressure from global competitors, and need to rapidly respond to market changes. Pivotal is well positioned to help these companies deliver more customer value and keep ahead of the curve.
+ 
+If you get the chance, I encourage you to come visit us in our shiny new office. We&apos;ll treat you to some kopi with kaya toast, take a dip in the pool, play some board games, and share in a view of the most beautiful city in Asia.
+ 
+The software is pretty darn good too. Huat ah!
+Adam Hecht
+
+
+
+
+Program/Project Manager, Global Partner Ecosystem
+At Pivotal I...
+Work on the Global Ecosystem Team building enablement tools for field sales. We manage our go-to-market with Strategic Partners like Microsoft, Google, Dell Tech; system integrators like Accenture, Capgemini, and Cognizant; and independent software vendors like AppDynamics (now part of Cisco), MongoDB and Redis Labs. If they deliver Pivotal products, we are involved.
+You can find me...
+Sitting by the window in our office in Boulder enjoying the view, wearing a button down with running shoes because I forgot normal shoes for the day.
+Currently, I am working on…
+Building internal tools to enable content delivery. Check out our new Content Search tool here &lt;[[https://sites.google.com/a/pivotal.io/global-ecosystem/search-content]]&gt;. Up next is our team site integration with the wider Inside Pivotal site, surfacing our resources to a larger audience.
+In my spare time…
+I like to ride my bike and spend time at our cabin with my wife, two boys, and our dog.
+Something you probably don’t know about me…
+I love Halloween. We do homemade family costumes every year and I keep a spreadsheet of good ideas I find throughout the year. When October rolls around it’s go time.
+(Top-to-bottom): Work room with a view; Adam and brood in costume and (idea and line item number 12).
+To me Pivotal…
+Is my new other family.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

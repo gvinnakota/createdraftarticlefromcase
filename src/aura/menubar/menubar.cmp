@@ -1,0 +1,47 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="PS_communityUIController">
+    <ltng:require styles="{!$Resource.slds + '/assets/styles/salesforce-lightning-design-system.css'}" />
+    
+    <aura:attribute name="RecordsList" type="object[]"/>  
+    <aura:attribute name="url" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <div class="slds-grid mainDiv slds-container--fluid">
+        <div class="super-nav">
+           <div class='super-nav-links'>
+            <a href='https://docs.pivotal.io'>Documentation</a>
+            <a href='https://network.pivotal.io'>Downloads</a>
+            <a href='https://support.pivotal.io' id='supportlink'>Support</a>
+               <a href='https://pivotal.io/support/contact'>Contact Us</a>
+           </div>
+        </div>
+    </div>
+    <div class="slds-grid mainDiv slds-container--fluid">
+       
+        <!--div  class="slds-col">-->
+        
+           <a href ="https://support.pivotal.io/" target="_Blank">
+            <img src="https://d1fto35gcfffzn.cloudfront.net/support/logo-pivotal-support-white.svg" class="logo" />
+              </a>
+
+        <!--</div>-->
+        
+        <div class="slds-col"></div>
+        <div class="slds-col right"> 
+            <aura:iteration items="{!v.RecordsList}" var="obj" >
+                <aura:if isTrue="{!obj.Sequence_Number__c > 4}">  
+                    <!-- <aura:if isTrue="{!obj.Sequence_Number__c != 8}">   -->            
+                    	<a href="{!obj.URL__c}" class="menuitem active" onclick="{!c.tabclick}" target="_Blank" name="{!obj.Menu_Label__c}" id="{!obj.Id}">
+                            {!obj.Menu_Label__c}</a> 
+                       <!--  <aura:set attribute="else">
+                          <a href="{!obj.URL__c}" class="menuitem active" onclick="{!c.tabclick}" name="{!obj.Menu_Label__c}" id="{!obj.Id}">
+                            {!obj.Menu_Label__c}</a> 
+                         </aura:set>
+                    </aura:if>-->
+                    <aura:set attribute="else">		 
+                        <a href="{!obj.URL__c}" class="menuitem" onclick="{!c.tabclick}" name="{!obj.Menu_Label__c}" id="{!obj.Id}">{!obj.Menu_Label__c}</a>  
+                    </aura:set>
+                </aura:if>
+            </aura:iteration>
+        </div>
+      
+    </div>
+</aura:component>

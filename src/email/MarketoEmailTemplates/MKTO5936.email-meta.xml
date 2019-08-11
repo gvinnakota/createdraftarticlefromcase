@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter (Pre-2018).Newsletter December 2013</name>
+    <style>none</style>
+    <subject>December News: Announcing Spring Framework 4.0</subject>
+    <textOnly>DECEMBER 2013
+&lt;https://spring.io/blog/2013/12/06/webinar-introduction-to-spring-framework-4-0&gt;
+Announcing Spring Framework 4.0
+Pivotal is excited to celebrate the first major release of Spring since Spring Framework 3.0 released in 2009! We don’t change the major version number lightly, but we think that once you try Spring Framework 4.0 for yourself, you’ll see why we did. If you are hungry for the details, make sure to join none other than Juergen Hoeller for the Spring Framework 4.0 launch webinar on Jan 9th, 2014 &lt;https://spring.io/blog/2013/12/06/webinar-introduction-to-spring-framework-4-0&gt;. In the meantime, you can get the first level of detail by reading the press release &lt;http://www.gopivotal.com/press-center/12122013-spring-4&gt;, and Adrian Colyer’s Blog Article: Announcing the Spring Framework 4.0 GA release &lt;http://spring.io/blog/2013/12/12/announcing-spring-framework-4-0-ga-release&gt;. We’ve got lots of new videos, guides, demos, webinars, and assets in celebration of the release, make sure to check the new “featured guides” section of the newsletter. Also, keep an eye out for more launch content between now and Jan 9, 2014. Click here &lt;https://www.youtube.com/watch?v=qoA_MAvM7p8&gt; to listen to what developers are saying - and we look forward to your feedback on the release!
+
+Happy Holidays, The Spring Team
+Register &lt;https://spring.io/blog/2013/12/06/webinar-introduction-to-spring-framework-4-0&gt;
+Import the new Getting Started Guides into STS
+People love the new getting started guides on http://spring.io/ &lt;http://spring.io&gt;. Since version 3.4.0 of the Spring Tool Suite there is an extremely easy way to use those guides directly from within the IDE. A new wizard (New -&gt; Spring -&gt; Import Spring Getting Started Content) lets you search and choose the guide you would like to import into your workspace. As a result the wizard imports the project(s) directly into your workspace and opens up the webpage of the guide for a detailed description right within your IDE. In addition to that you can choose whether to import the project in its final state (fully implemented) and/or in a starter state, from where you can go and implement the feature yourself while following the guide description. Click here &lt;https://spring.io/blog/2013/12/10/build-a-robust-rest-ful-web-service-in-less-than-6-minutes&gt; to see a demo of it in action!
+Being @Lazy with Spring Framework 4
+Spring 4 has expanded the applications for the @Lazy &lt;http://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Lazy.html&gt; annotation. In addition to its role for component initialization, this annotation may also be placed on injection points marked with @Autowired &lt;http://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html&gt; or @Inject &lt;http://docs.oracle.com/javaee/6/api/javax/inject/Inject.html&gt;: In that context, it leads to the creation of a lazy-resolution proxy for all affected dependencies, as an alternative to using ObjectFactory &lt;http://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/ObjectFactory.html&gt; factories or Provider &lt;http://docs.oracle.com/javaee/6/api/javax/inject/Provider.html&gt; providers.
+So, given a bean dataSource defined with prototype scope, the following injections are all identical and all lazily create a new DataSource only when the variables are 
+used (e.g, when the injected variable itself is accessed by code) or when the factory method is called:
+``` // possible today with JSR 330 @Inject Provider dataSourceProvider;
+// possible today with core Spring 
+@Autowired ObjectFactory&lt;DataSource&gt; dataSourceObjectFactory;
+// Spring 4&apos;s @Lazy and @Autowired
+@Lazy @Autowired DataSource autowiredDataSource;
+// Spring 4&apos;s @Lazy and JSR 330 @Inject     
+@Lazy @Inject DataSource injectedDataSource;
+```
+ I think the @Lazy syntax is far more expressive, and less intrusive.
+It&apos;s Pivotal day at Manning! All Spring and Groovy books half 
+price
+As part of the Spring Framework 4.0 launch, Pivotal is sponsoring Spring and Groovy day in Manning’s Countdown to 2014! Now through midnight December 12, you can get any of Manning’s Spring and Groovy books for half off—eBook, pBook, or MEAP.
+Just go to manning.com &lt;http://www.manning.com&gt; and choose any (or all) of these selected books. Enter gpivdotd13 in the Promotional Code box when you check out to get the discount.
+BONUS: If you register for Manning’s Countdown to 2014 &lt;http://deals.manningpublications.com/countdown2014.html&gt;, you’ll have a chance to win one 
+of two eBooks given away daily and a shot at the grand prize, an iPad Air. Click for details &lt;http://deals.manningpublications.com/countdown2014.html&gt;. This offer applies to:
+
+
+ - Spring in Action, Fourth Edition
+ - Spring in Practice
+ - Spring Batch in Action
+ - Spring Integration in Action
+ - Groovy in Action, Second edition
+ - Grails in Action, Second Edition
+ - Griffon in Action
+ - Gradle in Action
+ - RabbitMQ in Action
+ - RabbitMQ in Depth
+
+
+You&apos;ll find complete descriptions of all these books, along with sale chapters and other resource, at manning.com &lt;http://www.manning.com&gt;.
+Introduction to Spring Framework 4.0
+Speaker: Juergen Hoeller
+
+The Spring Framework re-invented enterprise Java in the last decade. Together with the rest of the upcoming Spring IO micro platform, a new Spring Framework generation will power the next decade of JVM-based innovation.
+
+Join Juergen Hoeller to learn about Spring Framework 4.0, its refined annotation-based component and configuration model, and how it relates to Java 8, Java EE 7, Groovy, WebSockets, as well as Spring Boot and Spring Integration.
+Europe
+
+Thursday, January 9, 2014
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_IntrotoSpringFramework4.07AM_Register.html&gt;
+North America
+
+Thursday, January 9, 2014
+10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_IntrotoSpringFramework4010AM_Register.html&gt;
+Webinar 2 Title
+Spring Security is a powerful and highly customizable authentication and access-control framework and is the de-facto standard for securing Spring-based applications. Whether you are itching to learn how to use Spring Security for the first time or you want to learn about all the new features in Spring Security 3.2 this presentation is a must. In this talk Rob, the Spring Security project lead, will take you on a guided tour of how to get up and running with Spring Security 3.2&apos;s new features including:
+
+
+ - Java Configuration support
+ - CSRF protection
+ - Security related HTTP response headers
+ - Spring MVC integration
+Europe
+
+Thursday, January 16, 2014
+ 3:00PM GMT Time
+(London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringSecurity7AM_Register.html&gt;
+North America
+
+Thursday, January 16, 2014
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringSecurity10AM_Register.html&gt;
+Have you seen Spring Lately?
+Today&apos;s Spring embraces Java 8, Scala, Groovy, provides a best-in-class REST stack, supports the open web, mobile applications, big-data applications and batch workloads. Join Spring developer advocate Josh Long as he re-introduces you to today&apos;s Spring.
+Watch Video &lt;https://spring.io/blog/2013/12/02/webinar-replay-have-you-seen-spring-lately&gt;
+Archived Videos
+ SpringOne2GX Replay: Zero Effort Spring (Spring Boot) &lt;https://spring.io/blog/2013/12/03/springone2gx-2013-replay-zero-effort-spring&gt;
+ SpringOne2GX Replay: REST-ful API Design &lt;https://spring.io/blog/2013/12/02/springone2gx-2013-replay-rest-ful-api-design&gt;
+ Webinar Replay: Have you seen Spring Lately? &lt;https://spring.io/blog/2013/12/02/webinar-replay-have-you-seen-spring-lately&gt;
+ Webinar Replay: Dynamic routing at 1 million per second with Spring Integration &lt;http://spring.io/blog/2013/11/20/webinar-replay-dynamic-routing-at-1-million-per-second-with-spring-integration&gt;
+ QCon SF 2013 session replay: Introducing Spring XD &lt;http://spring.io/blog/2013/11/20/qcon-sf-2013-session-replay-introducing-spring-xd&gt;
+ Nighthacking at Devoxx 2013: Interview with Josh Long on Spring Boot &lt;http://spring.io/blog/2013/11/20/nighthacking-at-devoxx-2013-interview-with-josh-long-on-spring-boot&gt;
+ SpringOne 2GX 2013 Replay: Troubleshooting Live Java Web Applications  &lt;http://spring.io/blog/2013/11/13/springone2gx-2013-replay-troubleshooting-live-java-web-applications&gt;
+ Demo of Pivotal CF: the turnkey Cloud Foundry in a box for on-premises deployment &lt;https://www.youtube.com/watch?v=TLhST6Hmiso&amp;utm_content=buffer943d3&amp;utm_source=buffer&amp;utm_medium=twitter&amp;utm_campaign=Buffer&gt;
+ Spring Batch Resources &lt;http://projects.spring.io/spring-batch/resources&gt;
+ Joint JetBrains Webinar: Spring Framework 4.0 for IntelliJ IDEA13 &lt;https://spring.io/blog/2013/12/10/joint-jetbrains-webinar-spring-for-intellij-idea13&gt;
+ 
+Build a Hello World REST service in less than 6 minutes &lt;https://spring.io/blog/2013/12/10/build-a-hello-world-rest-service-in-less-than-6-minutes&gt;
+ 
+Build a robust REST-ful Web Service in less than 6 
+minutes 
+
+ Featured Guides:
+ We&apos;ve published nine new Spring guides, in celebration of the Spring Framework 4.0 release! These guides are focused on using Spring MVC - WebSocket and its REST layer - and how to consumer Spring REST services from a variety of client environments, and material for understanding CORS (Cross Origin Resource Sharing).
+
+Messaging with STOMP over WebSocket
+Consuming a RESTful Web Service with AngularJS &lt;https://spring.io/guides/gs/consuming-rest-angularjs/&gt;
+ Consuming a RESTful Web Service with Backbone.js &lt;https://spring.io/guides/gs/consuming-rest-backbone/&gt;
+ Consuming a RESTful Web Service with jQuery &lt;https://spring.io/guides/gs/consuming-rest-jquery/&gt;
+ Consuming a RESTful Web Service with rest.js &lt;https://spring.io/guides/gs/consuming-rest-restjs/&gt;
+ Consuming a RESTful Web Service with Sencha Touch &lt;https://spring.io/guides/gs/consuming-rest-sencha/&gt;
+ Consuming a RESTful Web Service from iOS &lt;https://spring.io/guides/gs/consuming-rest-ios/&gt;
+ Building a RESTful Web Service with CORS &lt;https://spring.io/guides/gs/rest-service-cors/&gt;
+ Understanding CORS &lt;https://spring.io/understanding/cors&gt;
+Spring XD 1.0.0.M4 &lt;http://spring.io/blog/2013/11/14/spring-xd-1-0-0-m4-released&gt;
+ Spring for Apache Hadoop 1.0.2 GA and 2.0 M2  &lt;http://spring.io/blog/2013/11/14/spring-for-apache-hadoop-1-0-2-ga-and-2-0-m2-released&gt;
+ Spring Integration 3.0 RC1 &lt;http://spring.io/blog/2013/11/27/spring-integration-3-0-release-candidate-1-is-now-available&gt;
+ Spring Batch 2.2.3.RELEASE &lt;http://spring.io/blog/2013/11/22/spring-batch-2-2-3-release-is-now-available&gt;
+ Spring milestone of Spring data release train Codd &lt;http://spring.io/blog/2013/11/21/first-milestone-of-spring-data-release-train-codd-released&gt;
+ Spring Data Couchbase 1.0 M2  &lt;http://spring.io/blog/2013/11/18/spring-data-couchbase-1-0-m2-released&gt;
+ Spring Data GemFire 1.3.3 (release notes) &lt;https://jira.springsource.org/secure/ReleaseNote.jspa?projectId=10462&amp;version=14257&gt;
+Websocket Architecture in Spring Framework 4.0 &lt;http://blog.gopivotal.com/products/websocket-architecture-in-spring-4-0&gt;
+ Spring Framework 4.0 and Java Generics &lt;https://spring.io/blog/2013/12/03/spring-framework-4-0-and-java-generics&gt;
+ Have you seen Spring lately? &lt;http://blog.gopivotal.com/products/have-you-seen-spring-lately&gt;
+ University: Processing Big Data with Hadoop and Pivotal HD &lt;http://spring.io/blog/2013/11/19/processing-big-data-with-hadoop-and-pivotal-hd&gt;
+ It can’t just be Big Data, it has to be Fast Data: Reactor 1.0 goes GA &lt;http://spring.io/blog/2013/11/12/it-can-t-just-be-big-data-it-has-to-be-fast-data-reactor-1-0-goes-ga&gt;
+ Spring Integration Resources &lt;http://projects.spring.io/spring-integration/resources&gt;
+&lt;http://www.springone2gx.com&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18353&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the email asset for the Friday, October 19, 2018 Dell 5 Point Friday  This is a clone of the October 5th newsletter</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Email_Dell Sales Newsletter_5 Point Friday_2018.October 19 2018 Newslette</name>
+    <style>none</style>
+    <subject>Pivotal 5-Point Friday</subject>
+    <textOnly>October 19, 2018
+
+Hello - I’m Chad! I’ve lived at the intersection of Dell Tech and our customers for a long time - and love it! This 5PF is coming to you from the road... Over the past 3 weeks, I’ve been across the Americas, in EMEA and this is coming to you from Tokyo. In my travels, there’s not a single formula for success - but there IS a pattern that wins repeatedly across countries, cultures, and market segments. That pattern is the humility to recognize that while we each take pride in the incredible things we do individually - we cannot win alone. We are strongest when we sublimate egos, subdue tactical company specific/specialty specific goals - and collaborate with customer success as the focal point.
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+1. Have you ever been on a rocket? I’m calling it right now: PKS is a rocket.
+
+I’ve had the good fortune of experiencing multiple “rocketship” products - products that have innovation/luck/timing and become hits. I remember when I tried VMware vmotion on vCenter 1.0/ESX 2.0 for the first time - at that instant, I knew it was going to be a rocket. When I first played with XtremIO and saw face-melting performance, dedupe and simplicity and I knew it was going to be a rocket. I remember when we chose to become the HCI leader with VxRail, and I knew it was going to be a rocket - and IDC now has us as the leader in the fastest growing infrastructure category. What’s my point? PKS is a rocket, and I know because I’ve seen this before. After only 8 months in the market - 20 of the Fortune 500 customers already selected PKS - and customers of every size, shape, and industry vertical. Just like how we became the HCI #1 leader when Dell EMC and VMware put our minds to it - it’s the same here. Pivotal and VMware have put our minds to it - and PKS is rapidly becoming the Enterprise Kubernetes leader.
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+2. DO: Continuous Delivery as a religion - and PKS 1.2 as proof.
+
+The release of PKS 1.2 is the 3rd major PKS release, and 11th release overall in just 9 months. We are living proof that the mantra of continuous delivery works. We started with our MVP, and through constant customer iteration - have rapidly become one of the most complete and enterprise-ready Kubernetes platforms... The joint VMware/Pivotal team is getting faster. Read up on PKS 1.2 here &lt;[[http://virtualgeek.io/pks-1-2-whats-new-behind-the-scenes-and-whats-next/]]&gt;.
+ &lt;[[http://virtualgeek.io/pks-1-2-whats-new-behind-the-scenes-and-whats-next/]]&gt;
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+3. DO: Customers want multi-cloud. 
+
+It’s an inside secret that when we started on the PKS effort we were NOT sure if customers would want a common “Kubernetes dial tone” across clouds. At the time, it looked like public cloud Kubernetes services (GKE, EKS, AKS) would make the K8s API a common commodity. That was wrong. Customers are discovering that while everyone is conformant with Kubernetes, and everyone can run docker images - not all are created equally. &lt;[[https://movingfulcrum.com/horrors-of-using-azure-kubernetes-service-in-production/]]&gt; We can call it at this point: customers love the fact that PKS 
+is multi-cloud. The reason is the same reason they love the common control planes of vRealize, NSX, and the Pivotal Application Service: common control + any cloud = choice. PKS 1.2 added AWS support to vSphere and Google Cloud Platform. I look at the product team backlog in real-time and expect Azure soon, at which point we have on premises + the public cloud trifecta!
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+4. DON’T: get hung up on “top down” or “bottom up”.
+
+As we win more and more container battles - we’re learning. Yes, containers do NOT by themselves change the way developers work like we do with the Pivotal Application Service. Yes, containers and Kubernetes are infrastructure (not developer) constructs. Yes, Kubernetes is a platform on which people build platforms. Their value comes through operations/infra benefits, not the full 5 S’ metrics. That said - my advice is to not get hung up on this and accidentally make this into an OR when it’s an AND. Every enterprise I’ve ever met needs multiple abstractions - kernel mode VMs, containers, app services, functions, and SaaS. Some customers approach this from the “bottom up” led by the infrastructure teams - and they love PKS on Pivotal Ready Architecture, and often expand into the broader multi-abstraction world. VMware and Dell EMC teams are awesome at selling this way with light (or no) Pivotal assistance. Other customers approach this from the “top down” business/app led approach - and they love Pivotal Labs/PCF 2.0, and measuring their 5 S’ outcomes &lt;[[https://content.pivotal.io/blog/the-built-to-adapt-benchmark-will-help-companies-to-set-a-new-course]]&gt;. In these cases, Pivotal often leads the campaign, supported by VMware and Dell EMC - and the easiest stack is Pivotal Ready Architecture &lt;[[https://content.pivotal.io/blog/say-hello-to-pivotal-ready-architecture-from-dell-emc-the-easy-button-for-pivotal-cloud-foundry-in-your-data-center]]&gt;. Passion = awesome. Fanaticism = not so much. Top down, bottom up = you can end up in the same place.
+ &lt;[[https://content.pivotal.io/blog/the-built-to-adapt-benchmark-will-help-companies-to-set-a-new-course?mkt_tok=eyJpIjoiWkRFMVl6RXlNakF3TnpZNSIsInQiOiJnY3EzRzRkaWFHV3VMK1N3NXZFVXhVUmZDTGdkSlpiXC92Qll1N2RqQWNZQ2g0Z1FHZkx3MGJxM3JcL08zMjVhUDdmSFNjdXd2SnVkSVhJV212Rm1UbXVBPT0ifQ%3D%3D]]&gt;
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+5. DON’T: let others subvert the promise of containers and Kubernetes.
+
+
+I’ve seen some funky things start to happen. Some (who shall remain nameless) are starting to twist the open, portability promises of containers and Kubernetes - saying things like they will only support their apps, only their containers, only workloads they stamp in some way.
+
+That’s not us.
+
+Question: Which applications and container images are supported by PKS?
+ 
+Official Answer: PKS supports Docker images that work with one or more of the Kubernetes versions supported by PKS. Every PKS release has verified Kubernetes conformance with official Kubernetes conformance tests and published results.
+
+Yes, of course we go above and beyond this with core partners - including deeper testing/certification/validation, packaging (helm charts, Kubernetes operators). However, start from the the start. That official position = open. Expect to see this published shortly.
+
+In the meantime, if a competitor starts to experience Fear-Uncertainty-Doubt about whether a workload is supported on PKS, turn it right around: “So Mr./Mrs. Customer - just so I have this right - are they saying their Kubernetes platform DOESN’T support any docker image that works with native Kubernetes? Because we do. And if someone doesn’t do the same - jeepers, that sounds awfully closed… Don’t you want your containers to run anywhere, and for Kubernetes to stay native and clean?”
+
+Thank you all for being awesome, pushing the world forward in your way. See you on the road!
+
+Chad
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
+
+Upcoming Events
+
+VMworld EMEA: Request a Customer Meeting with Pivotal here &lt;[[https://goo.gl/forms/6E8iX7yxTyMM3CEI2]]&gt;
+ Webex: Pivotal Learning Series &lt;[[https://docs.google.com/forms/d/e/1FAIpQLSc6Km9Ifg5-74OBRjRYjEVSN0fs9Mps-mE-g2h9bExFC32fYQ/viewform?mkt_tok=eyJpIjoiT0RjM09XTTRNVFEyTnpGbCIsInQiOiJMXC9zcXBPSG1Zd1loRzcwZXF0YW5kN0JSTXpmaGZPV0hqVmdDdHVkMUVSMmpHV3VKWWNqV2t6Rm10NW84Zk44RURmUHVOU3UrSjl2K1Y2Y3ZLQ2lsVVE9PSJ9]]&gt;
+
+
+Digital Knowledge
+
+Win of the Week: Mexican Agency INEGI Buys PKS over Red Hat &lt;[[https://partners.pivotal.io/English/Global/sales/dell-tech.aspx#wins]]&gt; Website: Pivotal Pulse &lt;[[https://partners.pivotal.io/English/General_DT_Info.aspx]]&gt;, designed exclusively for Dell Tech
+Chad Sakac Blog: PKS 1.2, What’s New, Next, Behind the Scenes &lt;[[http://virtualgeek.io/pks-1-2-whats-new-behind-the-scenes-and-whats-next/]]&gt;
+Chad Sakac Blog: Iterating Fast - PKS 1.2 Now Supports NSX-T 2.3 &lt;[[http://virtualgeek.io/iterating-fast-pks-1-2-now-supports-nsx-t-2-3/]]&gt;
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+Chad SakacSVP, Global Alliances &amp; PKS
+AskDellTech@Pivotal.Io &lt;[[mailto:AskDellTech@Pivotal.Io]]&gt;
+Forwarded this email? Sign up here &lt;[[https://partners.pivotal.io/English/General_DT_Info.aspx#newsletter]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

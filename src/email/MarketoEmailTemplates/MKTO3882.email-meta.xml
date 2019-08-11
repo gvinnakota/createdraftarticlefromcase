@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Confirmation - Tokyo</name>
+    <style>none</style>
+    <subject>Thank you</subject>
+    <textOnly>{{my.TokyoJPENIntro}}
+ 
+{{my.TokyoJPENDateTime}}
+{{my.TokyoJPENActualDateTime}}
+
+
+{{my.TokyoJPENLocation}}
+
+{{my.Save the Date Tokyo}}
+
+ 
+{{my.TokyoJPENQuestions}}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

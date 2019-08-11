@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal Partner Days_2017.Austin_SystemIntReminder</name>
+    <style>none</style>
+    <subject>See you Thursday, February 23 at Pivotal Partner Days, Austin!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+ 
+Thank you for signing up to attend Pivotal Partner Days taking place in Austin.
+ 
+Below you will find some helpful information about the event:
+ 
+Location:
+VMware
+3900 N Capital of Texas Hwy, Suite 500, Austin, TX 78746
+Map &amp; Directions &lt;[[https://goo.gl/maps/8eSFEDZNjow]]&gt;
+ 
+Parking and Building Access: 
+Parking is located in garage 3700. All VMware guests must park directly to the right of the garage entrance.
+
+
+Upon arrival, please sign in at the 5th floor reception desk. The event will begin promptly at 11:00am. Please arrive 15 minutes early to check in. 
+ 
+Space is limited for this event, so if you are no longer able to attend, we ask that you kindly let us know so that we may fill your spot. 
+ 
+Questions?
+ If you have any questions please contact Cameron Stewart at cstewart@pivotal.io &lt;[[mailto:cstewart@pivotal.io]]&gt;.
+ 
+We look forward to seeing you next week!
+ 
+- Pivotal Partner Alliances Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

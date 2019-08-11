@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>July 2017 nwslttr 1</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.07-18-2017 V5N10</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, July 19</subject>
+    <textOnly>July 19, 2017
+Vol 5, No 10
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – Warmer to the Throne
+All Things Product &lt;[[#product-update]]&gt; – Design Thinking on Deeply Technical Products
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Adapt, Climb—Colorado Labs Looks Ahead
+My Name Is &lt;[[#my-name-is]]&gt; – Zhenghua Lyu
+Warmer to the throne
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+
+An army of the faithful sat down Sunday night to watch the opening moves &lt;[[https://www.amazon.com/gp/video/detail/B06XNZHGH1/?ref=DVM_PDS_GOO_US_AC_C_A_TLe_1_GOTS7_P|c_207071684608_m_onmXDXwv-dc_s__]]&gt; of ascendant queens and true survivors from within and around the realm of Westeros. A game and series where rulers have served more as seat warmers than dynastic inheritors to thrones of power is a fitting analogue for the Fortune 100.
+ 
+A recent factoid comet in the social galaxy that has again come into view illustrates the fickle sands of power: the top five most valuable companies a decade ago—Walmart, and ExxonMobil, among others—have now all been usurped by Silicon Valley royalty—Amazon, Google, Facebook, Apple. Save one.
+ 
+The last of the five has been around for more than 30 years, and is arguably doing better than at any time in its colorful past, save for its meteor shot to greatness. That would be Microsoft. After a dangerous bloat phase, the software giant is marching with renewed strength, positioning its business around Azure and AI, and bringing some 800,000 (yes, it has that many) partners along with it. Last week Pivotal was plucked from these hordes as the Azure Partner of the Year &lt;[[https://content.pivotal.io/blog/pivotal-microsoft-azure-consumption-partner-of-the-year]]&gt;. 
+ 
+That’s no small thing, and it signals not just new rules about platforms and software in the enterprise, but more broadly the importance of adaptative organizations. 
+ 
+Our contributors this issue show us adaptation in miniature. Tim McCoy writes a thoughtful, accessible analysis on bringing design principles to deeply technical products. Brian Rose of Labs Colorado writes in on the adaptive Labs practice in the mountain state—where its teams have found strength in refocusing and expanding their skills.
+ 
+Enjoy.
+design thinking on deeply technical products 
+
+
+
+
+Tim McCoy &lt;[[#author-socialcast-profile]]&gt;, Senior Director, Product Design
+
+There we were, walking an administrator through a new 
+workload management feature for Greenplum. It was a good back and forth, highlighting features and use cases and examples. We demonstrated a rule that cancels a query that exceeds certain criteria. When the admin asked, “How do you know it was canceled?” we explained where to look in the logs to see that the cancel event was captured.
+ 
+“No, how does the USER know why their query was 
+canceled?”
+ 
+We didn’t have a good 
+answer.
+ 
+...
+ 
+This is the essence of user experience and design thinking: understanding what it will take for people to love our products, then bringing those insights into the work of our teams.
+ 
+Product designers have an entire arsenal of tools at their disposal to discover what users value, such as qualitative user interviews, personas and scenarios, divergent and convergent thinking &lt;[[https://www.cleverism.com/idea-generation-divergent-vs-convergent-thinking/]]&gt;, low fidelity prototyping, and collaborative design. We use these tools to uncover users’ underlying goals: the things people want to understand and accomplish regardless of the system they use to do the work. PCF R&amp;D head Onsi Fakhouri&apos;s haiku is a perfect example of a goal: “here is my source code / run it on the cloud for me / I do not care how.&quot;
+ 
+...
+ 
+That conversation with the customer was a lightbulb moment for our team: the data scientist who uses applications that hit Greenplum all day needs visibility to understand why their query got canceled. Our primary customer might be a database administrator, but to make her successful, we have to make her users successful. As a result, we are now extending our discovery and framing to include the end users of the database, and paying more attention to data scientist and business analyst personas.
+ 
+Pivotal is really good at acknowledging that software is about people. A persona is not an abstract role, but a representative person—someone with responsibilities, frustrations, and goals. By understanding the people who use our software, product designers make a human connection to the value that we deliver day in and day out. It’s not about pretty, it’s about what makes software useful, valuable, and loveable.
+ 
+We are just at the beginning of this journey in Data R&amp;D, but we are already seeing that our focus on deeply understanding what our customers and their users need and want is changing how we think about designing everything from APIs to command line utilities and yes, even GUIs.
+
+Interestings
+
+
+
+
+
+
+
+
+
+ - The new Pivotal podcast is here! Listen in on the twists and turns of discovery on That Moment &lt;[[https://builttoadapt.io/that-moment-episode-1-it-was-essentially-disrupting-ourselves-cb3a3105d688]]&gt;. 
+ - Technical questions on KUBO? There&apos;s a very good video for that &lt;[[https://drive.google.com/a/pivotal.io/file/d/0B5kf5EYGjfycOWdtUmQ2MHdYVW8/view]]&gt;.
+ - Stand-Up pick: Study of 2000+ developers &lt;[[https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBXrLxoedVfSuWXK65nbObIgcaY2tkXcR1JvDSIdXwnjZ_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMTb00dWRyzF-2BgI4XslBgx70V-2BPLA7dM2zj1zWmdUVaTaAw4gpZEKLGsLLyYGIG-2FmB-2B0DJHmZvFX7y2j1XhVi5ePfWN2D0ge0QeZEvT0T6bSoRCkGdIBPnO-2BmbNt4bOEIJ3EpQBEAzpSMD7qyoS4noAKlNuNEAPJc6afJTkJE2qp35EEDlBhkVJWVUi-2B0t-2B-2BtlU-3D]]&gt; on what make them (un)happy and how it impacts productivity.
+ - Pivotal hackathon champs—1st place... a poem: Breathless &lt;[[https://docs.google.com/a/pivotal.io/document/d/17YLTYSHknYgZXU9itDkZbRZ1AMQICIru7OSTR2KVCP4/edit?usp=sharing]]&gt; by Paul Spinrad; a semi-slam epic that envelopes just about every Pivotal product. Runner-up: Answer questions like “bike or tube to office&quot; with Fairweather Cyclist &lt;[[https://drive.google.com/open?id=0B3vO11nkXSMPUjRpWjhvX3JtYW8]]&gt; and SpringCloud Dataflow (Simon Jones, Ed King, Sam Gunaratne, and Alex Blease).
+ - It&apos;s a UX Disco in Paris: How to DJ design and development &lt;[[https://www.youtube.com/watch?v=osFTiIJjI9I]]&gt;.
+ - Microsoft&apos;s quiet AI build reveals itself &lt;[[https://www.forbes.com/sites/moorinsights/2017/07/17/microsoft-finds-its-ai-voice/#53b901e17624]]&gt;.
+adapt, climb—colorado labs looks ahead
+
+
+
+
+Brian Rose &lt;[[#author-socialcast-profile]]&gt;, Office Director, Denver
+When I originally opened our Denver office just over four years ago, Denver Labs was a humble team of four engineers in a public area of the brand-new, first-ever Galvanize space. Working closely with the existing team in Boulder, we slowly grew our practices from a ragtag band of Ruby developers to largely be a Spring Boot-focused office today. Now, with our friends in Boulder, Pivotal Labs Colorado is comprised of 40 Labs Pivots across two offices. We are fortunate enough to share our Denver and Boulder spaces with several groups, including Tracker, PCF, Alliances, Data Engineering, and PAL.
+ 
+Over the past four years, we&apos;ve strived to bring balance to the team by introducing product managers and designers on nearly every product we build. At the end of 2016, we repurposed part of our office into a studio space to allow fluid collaboration, user interviews, and brainstorming. My personal goal in the coming months is to continue driving better design practices throughout our client engagements.
+ 
+We&apos;ve recently put a strong focus on skilling up our team for future endeavors. We&apos;ve been broadening and honing our skills in .NET, PCF re-platforming, and higher-level architectural challenges that we&apos;ve traditionally avoided. Many thanks to Joe Fitzgerald, Matt Russell, and each of their teams for their help on these fronts.
+ 
+To kick off Pride Month in June, I gave a talk titled “Why I’m Proud”, offering a brief history of Pride celebrations as well as my personal experiences as an out gay man and what pride represents in my life. A few weeks later, Denver held a Vision for Inclusion Workshop that had marked improvement in attendance compared to other D&amp;I efforts held previously. When it comes to diversity topics, I hope to build on our successes and learn from our failures in order to improve engagement on these topics.
+ 
+Today, we continued to foster our relationships with DISH &lt;[[https://pivotal.io/customers/dish]]&gt; Network and Vizient. We’re also working on products for Dell EMC, MasterCard, Great American Insurance, Jack Henry, Audatex, Sphero, and more. Colorado Pivots have also contributed to our work with Ford, booted up Labs&apos; first project with Dell, helped open the Dallas office, staffed projects across the US and in Singapore, and assisted the Tracker and PCF teams in Denver. Looking to Q3 and beyond, we’re excited about the diverse bench of work we’re bringing in and hope to continue to open up our services to a broader audience throughout the mountain states.
+ 
+I want to give a special thanks to all of the Pivots—both past and present—who have been or were a part of both Colorado Labs locations going all the way back to 2010. We&apos;ve gone through significant change over the years and the past few months have been challenging, You&apos;ve been supportive and upbeat throughout, continuing to learn and hone your respective crafts—and that tells me a lot about our culture. You impress me every single day with your passion, openness, and enthusiasm.
+ 
+I couldn&apos;t ask for a better team.
+zhenghua lyu
+
+
+
+
+Software Engineer, Data, Beijing
+At Pivotal I...
+I am a software engineer at Greenplum database team in Beijing—I just joined, and am excited to be part of the team&gt;.
+How I got started in software…
+
+In high school I took part in the NOIP (National Olympiad in Informatics for the Provinces). I learned Pascal, and some algorithms, and then got third-prize by solving a problem using Dynamic Programming. I found it cool writing code to build things, or solve puzzles.
+
+ 
+
+In my spare time…
+I have been training in Chinese-style 
+wrestling—similar to judo, for nearly four years, and I love it. I also love to play the strategy game of Go; I won a Gold medal in Go at a local Huangshan City Sports Meeting, and when I was at university, I led our Go Team. I also play basketball when I can!
+Something you probably don’t know about me…
+I am a very good cook because three of my best wrestling friends are all top cooks in China! And I have been lucky enough to learn from them for a long 
+time.
+Zhenghua in motion: Throwing down the moves on the mat; demonstrating his best Iron Chef pose.
+To me Pivotal…
+...is a dream company. An important reason I joined is that one of my ex-colleagues and close friends (Hong Wu) had been working in Pivotal. He&apos;s an excellent engineer, and through him I got to know some of Pivotal’s culture, and its interesting projects.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

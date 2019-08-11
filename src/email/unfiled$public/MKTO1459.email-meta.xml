@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_PCF &amp; vCloudAir_Q414.Sorry we Missed you - Follow Up</name>
+    <style>none</style>
+    <subject>Sorry We Missed You: Supercharge Your Application Delivery Webinar</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Sorry we missed you at last week&apos;s webinar Supercharge Your Application Delivery with Pivotal and VMware. We invite you to check out the replay here &lt;http://www.pivotal.io/platform-as-a-service/10x-improvement-in-server-to-admin-ratios&gt;.
+
+Consider registering for our next cloud platform webinar, which takes place on November 18th at 10 AM PDT, Made for Each Other: Microservices + PaaS &lt;http://www.pivotal.io/platform-as-a-service/microservices-and-paas-a-match-made-in-the-cloud&gt;.
+
+We’d like to take this opportunity to share a few of the questions and answers that were addressed during the webinar:
+
+
+
+ - Q: What tools or services are available to help customers migrate development platforms to Pivotal CF? 
+
+
+ - A: A key benefit of Pivotal CF&apos;s buildpack approach is that it allows the product to support a wide range of application languages, frameworks, runtimes and components. To learn about buildpacks, start here: http://docs.pivotal.io/pivotalcf/buildpacks/ &lt;http://docs.pivotal.io/pivotalcf/buildpacks/&gt;
+
+
+
+
+ - Q: Where can I get a hold of virtual machine .ova file to start working with Pivotal CF?  
+
+
+ - A. You can download Pivotal CF from Pivotal Network: https://network.pivotal.io/products/pivotal-cf &lt;https://network.pivotal.io/products/pivotal-cf&gt;. Look for the file called, &quot;Pivotal CF for vSphere All-In-One Download&quot;
+
+
+
+
+
+
+Learn more:
+
+
+ - Come see Pivotal at the Cloud Platform Roadshow &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow&gt; at a location near you 
+ - Read more about VMware vCloud Air &lt;http://vcloud.vmware.com/&gt;
+ - Subscribe to All Things Pivotal &lt;http://pivotal.io/podcasts&gt; podcast 
+
+
+
+Thank you for joining us,
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Cloud-Native Customer Workshop JLR_Manchester_Q418.Confirmation Cloud</name>
+    <style>none</style>
+    <subject>Cloud-Native Workshop Registration Confirmation</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+
+Thank you for registering for the Cloud-Native Workshop on Wednesday, October 17th
+
+Should you have any questions or would like more information about this event, please email Matt Hausmann at mhausmann@pivotal.io &lt;[[mailto:mhausmann@pivotal.io]]&gt;. We look forward to seeing you there.
+
+Sincerely,
+
+The Pivotal Team
+See Agenda &lt;[[https://connect.pivotal.io/EMEA_Event_Cloud-NativeCustomerWorkshopJLR_Manchester_Q418.html]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

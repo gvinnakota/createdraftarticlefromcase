@@ -1,0 +1,11 @@
+Quote Number: {!zqu__Quote__c.zqu__Number__c} 
+Quote Name: {!zqu__Quote__c.Name}
+Link to the Quote: {!zqu__Quote__c.Link}
+
+The following quote has just been approved by:
+{!User.FirstName} {!User.LastName}
+{!User.Email}
+
+{!ApprovalRequest.Comments}
+
+The quote will be fully approved when you receive an email from the Deal Desk team.

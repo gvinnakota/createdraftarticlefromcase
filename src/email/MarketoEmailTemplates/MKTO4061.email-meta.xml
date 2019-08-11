@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne_Platform_2016.InfoQ Email</name>
+    <style>none</style>
+    <subject>Early Access to SpringOne Platform 2016 Videos</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+
+We are recording all SpringOne Platform sessions and registered attendees will receive early access to all of the great content. We’ll begin publishing the videos today and will continue to post more content over the next two weeks.
+
+To access the SpringOne Platform 2016 videos:
+
+
+ - Log in to your www.InfoQ.com &lt;[[http://www.infoq.com]]&gt; account. If you don’t have an InfoQ.com account, please register for one and log in.
+ - Go to the SpringOne Platform 2016 conference page on InfoQ: https://www.infoq.com/conferences/springone-platform-2016 &lt;[[https://www.infoq.com/conferences/springone-platform-2016]]&gt;
+ - Hover over the video of interest to see if it&apos;s Published or Not published and, if the video is available, click on it and enter your unique access code: {{lead.InfoQVideoCode:default=edit me}}
+
+
+You need to enter the code once (they are single use codes) and then you can view all available presentations. You just have to be logged in to your InfoQ account. Also, you are entitled to share these videos up to 30 times and may do so via the InfoQ website.
+
+If you have any problems accessing the videos, please contact conference-attendees@infoq.com &lt;[[mailto:conference-attendees@infoq.com]]&gt;.
+
+Thank you for joining us at SpringOne Platform 2016. We hope to see you again next year!
+
+Sincerely,
+The Spring Team, InfoQ &amp; Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

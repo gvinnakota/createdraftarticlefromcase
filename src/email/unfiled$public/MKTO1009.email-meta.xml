@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_PCF Workshop_Seattle_Q314.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: See you this Thursday for the Pivotal Cloud Foundry Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up this Thursday! Please review the details below and contact me with any questions. 
+
+Pivotal Cloud Platform Workshop
+Thursday, August 21, 2014
+ 8:00am - 5:30pm
+Detailed Agenda &lt;http://www.pivotal.io/cloud-platform-roadshow/seattle&gt;
+
+LOCATION
+ EMC Isilon Training Center
+ 505 1st Avenue South
+ Vancouver Room, Sixth Floor
+ Seattle, 
+WA 98104 
+ Map and Directions &lt;https://www.google.com/maps/place/505+1st+Ave+S/@47.5977856,-122.3345112,17z&gt;
+
+ PARKING
+ Paid parking is available at the workshop 
+location. The garage entrance is located behind the building on South Dearborn Street.
+
+WORKSHOP PREREQUISITES
+
+ All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com/&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest!
+
+
+
+Needless to say you’ll need a laptop and power cable! For best experience, a Mac or Linux environment is ideal.
+
+Morning Session
+The morning session of the workshop will require a FREE account on Pivotal Web Services. You can create a 60-day trial with no credit card at https://run.pivotal.io &lt;https://run.pivotal.io&gt;.
+
+Afternoon Session
+
+The afternoon session of the workshop will require the use of a FREE Cloudbees account. Create one at https://grandcentral.cloudbees.com &lt;https://grandcentral.cloudbees.com&gt;. Once you’re set up, click on &quot;Get Started with Builds&quot; to provision your Jenkins instance. We’ll complete the remainder of the setup during the lab, but it’s important to get the Jenkins instance provisioned in advance so that you don’t lose 10 minutes of workshop time!
+
+It will 
+also require the use of a FREE TRIAL account of Artifactory Online from JFrog. You can obtain an account at https://www.jfrog.com/registration/registration.html &lt;https://www.jfrog.com/registration/registration.html&gt;. This one is a bit quicker, but you still should try to create it before the workshop.
+
+Finally, if you have a colleague that would like to attend the workshop, a few spots still remain. Details and registration &lt;http://www.pivotal.io/cloud-platform-roadshow/seattle&gt; are available on the website. We look forward to a great day of learning and networking with you!
+
+We look forward to you joining us,
+
+Paul Santos
+
+ 
+Field Marketing Manager
+Tel 408-425-9302</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

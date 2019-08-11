@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>ACVRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(ACV_Override__c),
+ 
+ ACV__c, ACV_Override__c  )</formula>
+        <inlineHelpText>Pulls value from ACV, unless ACV Override is present (any value, including 0.00).</inlineHelpText>
+        <label>ACVRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ACV_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null.  If populated with any value, including 0.00, the ACVRollup field will use this value for reporting.  If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>ACV Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ACV__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (
+CONTAINS( Accounting_Code__c, "SUBSCRIPTION"),
+(IF( BookingDays__c &lt; 365,
+ (PPD__c *  BookingDays__c),
+ (PPD__c * 365)
+)),
+0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accounting_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Accounting Code</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Adjusted_Amount__c</fullName>
+        <description>Adjusts the value of Opportunity Line Items for Appliance products.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Years__c,"0"), UnitPrice, 
+     CASE(PricebookEntry.Product2.Name, 
+        "Appliance - DIA", TotalPrice*0.00, 
+        "Appliance - Other", TotalPrice*0.00, 
+        "Appliance - GPDB", TotalPrice*0.35, 
+        "Appliance - HD", TotalPrice*0.35, 
+        "Appliance - CS", (TotalPrice/0.18)*0.35*0.23, TotalPrice 
+   ) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjusted Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BacklogRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( ISBLANK(Backlog_Override__c),
+ Backlog__c,  Backlog_Override__c )</formula>
+        <inlineHelpText>Pulls value from Backlog, unless Backlog Override is present (any value, including 0.00).</inlineHelpText>
+        <label>BacklogRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Backlog_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null.  If populated with any value, including 0.00, the BacklogRollup field will use this value for reporting.  If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>Backlog Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Backlog__c</fullName>
+        <externalId>false</externalId>
+        <formula>(PPD__c * (BookingDays__c) - (Residual__c) - (ACV__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Backlog Years and Other</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Period</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Booked__c</fullName>
+        <description>Used for rollup formulas for ACV (4/2/2018 DW)</description>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Opportunity.StageName) = "Booked", TRUE, FALSE)</formula>
+        <label>Booked</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BookingDays__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(Accounting_Code__c, "SERVICES") || CONTAINS(Accounting_Code__c, "EDUCATION"),1,(EndDate__c) - (StartDate__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Booking Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Booking_Discount__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Booking_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Booking Quantity</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Calculated_ACV__c</fullName>
+        <description>This field adds Forecast_ACV__c  +  ACVRollup__c</description>
+        <externalId>false</externalId>
+        <formula>Forecast_ACV__c  +  ACVRollup__c</formula>
+        <inlineHelpText>Forecast_ACV__c  +  ACVRollup__c</inlineHelpText>
+        <label>Calculated ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Data_Science_Only_Price__c</fullName>
+        <description>Calculates the Data Scientist portion only of the Data Science Total Price.</description>
+        <externalId>false</externalId>
+        <formula>if(ISPICKVAL(Opportunity.Owner.Theater__c, "APJ"),TotalPrice * 1, 
+if(Product_Name__c = "Data Science Lab Primer",TotalPrice * 0.71, 
+if(Product_Name__c = "Data Science Lab 100",TotalPrice * 0.85, 
+if(Product_Name__c = "Data Science",TotalPrice * 0.50, 
+if(Product_Name__c = "Data Science Labs - PSO",TotalPrice * 0.50, 
+if(Product_Name__c = "Service Package for Pivotal Data Science Lab Primer", TotalPrice * 0.71, 
+if(Product_Name__c = "Service Package for Pivotal Data Science Lab 100", TotalPrice * 0.85, 
+if(Product_Name__c = "Custom Service for Pivotal Data Science", TotalPrice * 1,
+if(Product_Name__c = "Service Package for Pivotal Data Science Roadmapping", TotalPrice * 1,0
+)))))))))</formula>
+        <inlineHelpText>Calculates the Data Scientist portion only of the Data Science Total Price.</inlineHelpText>
+        <label>Data Science Only Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>EndDate</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_User_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>End User Price Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecast_ACV__c</fullName>
+        <externalId>false</externalId>
+        <formula>if (TEXT(Software_Type__c) = "Subscription", IF(Months__c = 0, 
+0.00, 
+
+IF(Months__c &lt;= 12, 
+Forecasted_New_Amount__c, 
+12*(Forecasted_New_Amount__c/Months__c)
+))
+
+,
+
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Forecast ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecasted_New_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecasted New Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecasted_Renewal_ACV__c</fullName>
+        <externalId>false</externalId>
+        <formula>if (TEXT(Software_Type__c) = "Subscription", IF(Months__c = 0, 
+0.00, 
+
+IF(Months__c &lt;= 12, 
+Forecasted_Renewal_Amount__c, 
+12*(Forecasted_Renewal_Amount__c/Months__c)
+))
+
+,
+
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Forecasted Renewal ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecasted_Renewal_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Forecasted Renewal Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GTM__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Software_Type__c, "Subscription"),
+
+CASE(Product_Portfolio__c,
+
+"PaaS", "PCF SBSC",
+
+"Data - Big Data Suite", "DATA SBSC",
+"Data - Gemfire",  "DATA SBSC",
+"Data - GPDB",  "DATA SBSC",
+"Data - HAWQ",  "DATA SBSC",
+"Data - HD",  "DATA SBSC",
+
+'OTHER'),
+
+
+IF(ISPICKVAL(Software_Type__c, ""),
+
+CASE(Product_Portfolio__c,
+
+"Agile - Labs",  "LABS",
+
+"Agile - Tx", "Transformation",
+
+"Agile - CSD", "CSD",
+
+"PaaS - Services",  "CSO PCF",
+
+"Data - Services", "CSO DATA",
+
+"Agile - DS", "DATA SCIENCE",
+
+"Data - Edu",  "EDU",
+"App - Edu",  "EDU",
+"PaaS - Edu",  "EDU",
+
+"",  "N/A",
+
+
+
+'OTHER'),
+
+
+
+'OTHER'))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GTM</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Indirect_Price_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Indirect Price Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Initial_Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial Term</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>ListedPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Listed Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Months__c</fullName>
+        <description>Number of months in the length of the subscription or maintenance period</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of months for this subscription or maintenance period, from 1 to 60.</inlineHelpText>
+        <label>Month(s)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OLI_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>OLI_Id</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Number</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PPD__c</fullName>
+        <externalId>false</externalId>
+        <formula>ZuoraTCV__c  / BookingDays__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PPD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Product_Type__c</fullName>
+        <description>Derived from Accounting Code; used for Bookings report and Bookings DB extract</description>
+        <externalId>false</externalId>
+        <formula>IF(BEGINS(PricebookEntry.Product2.ProductCode, 'RSL'),"Subscription",
+IF(Accounting_Code__c == "DEFERRED REVENUE - SUBSCRIPTION", "Subscription",
+IF(Accounting_Code__c == "DEFERRED REVENUE - SOFTWARE", "Software",
+IF(Accounting_Code__c == "DEFERRED REVENUE - MAINTENANCE", "Maintenance",
+IF(Accounting_Code__c == "DEFERRED REVENUE - PROFESSIONAL SERVICES", "Professional Services",
+IF(Accounting_Code__c == "DEFERRED REVENUE - CUSTOMER EDUCATION", "Customer Education",
+IF(Accounting_Code__c == "REVENUE - SUBSCRIPTION", "Subscription",'')))))))</formula>
+        <label>Pivotal Product Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prepay__c</fullName>
+        <externalId>false</externalId>
+        <label>Prepay</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.Family)</formula>
+        <label>Product Family</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family_txt__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Family txt</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.Name</formula>
+        <label>Product Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Portfolio__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.Report_Category__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Portfolio</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Portfolio_txt__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Portfolio txt</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>RenewalRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Renewal_Override__c), 
+
+Renewal__c, Renewal_Override__c )</formula>
+        <inlineHelpText>Pulls value from Renewal, unless Renewal Override is present (any value, including 0.00).</inlineHelpText>
+        <label>Renewal - ACVRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_BacklogRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Renewal_Backlog_Override__c), 
+
+Renewal_Backlog__c, Renewal_Backlog_Override__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renewal - BacklogRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Backlog_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null. If populated with any value, including 0.00, the RenewalBacklogRollup field will use this value for reporting. If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>Renewal - Backlog Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Backlog__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal - Backlog</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_EarlyBacklogRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Renewal_Early_Backlog_Override__c),
+Renewal_Early_Backlog__c, Renewal_Early_Backlog_Override__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Renewal - EarlyBacklogRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_EarlyRollup__c</fullName>
+        <description>If Renewal Early Override is 0, sets the value of Renewal Early else Renewal Early Override</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Renewal_Early_Override__c), 
+Renewal_Early__c, Renewal_Early_Override__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>If Renewal Early Override is 0, sets the value of Renewal Early else Renewal Early Override</inlineHelpText>
+        <label>Renewal - EarlyACVRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Early_Backlog_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null. If populated with any value, including 0.00, the Renewal-Early BacklogRollup field will use this value for reporting. If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>Renewal - Early Backlog Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Early_Backlog__c</fullName>
+        <description>This is</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to populate the values for early renewals.</inlineHelpText>
+        <label>Renewal - Early Backlog</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Early_Override__c</fullName>
+        <description>This is field to make sure bookings data accurately reflected for Renewal Early functionality.
+
+This override field is initially null. If populated with any value, including 0.00, the Renewal - Early Rollup field will use this value for reporting. If you need to reset this to the original value, add the original value here.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null. If populated with any value, including 0.00, the Renewal - Early ACV Rollup field will use this value for reporting. If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>Renewal - Early ACV Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Early__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal - Early ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null. If populated with any value, including 0.00, the RenewalACVRollup field will use this value for reporting. If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>Renewal - ACV Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewal__c</fullName>
+        <externalId>false</externalId>
+        <label>Renewal - ACV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ResidualRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Residual_Override__c),
+ Residual__c,
+ Residual_Override__c )</formula>
+        <inlineHelpText>Pulls value from Residual, unless Residual Override is present (any value, including 0.00).</inlineHelpText>
+        <label>ResidualRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Residual_Override__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This override field is initially null.  If populated with any value, including 0.00, the ResidualRollup field will use this value for reporting.  If you need to reset this to the original value, add the original value here.</inlineHelpText>
+        <label>Residual Override</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Residual__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( BookingDays__c &gt;1095,
+ PPD__c * ( BookingDays__c -1095),
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Residual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Selling_Motion__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.Selling_Motion__c)</formula>
+        <label>Selling Motion</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selling_Motion_txt__c</fullName>
+        <externalId>false</externalId>
+        <label>Selling Motion txt</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Service_Type_Comp__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  PricebookEntry.Product2.ProductCode , 
+
+"SVC-1038", "PCFs",  
+"SVC-1072", "PCFs",  
+"SVC-1073", "PCFs",  
+"SVC-1074", "PCFs",  
+"SVC-1075", "PCFs",  
+"SVC-1076", "PCFs",  
+"SVC-1077", "PCFs",  
+"SVC-1078", "PCFs",  
+
+"EDU-1085", "Data CSO",
+"EDU-1086", "Data CSO",
+"EDU-1087", "Data CSO",
+"EDU-1088", "Data CSO",
+"EDU-1089", "Data CSO",
+"EDU-1090", "Data CSO",
+"EDU-1091", "Data CSO",
+"EDU-1104", "Data CSO",
+"SVC-1041", "Data CSO",
+"SVC-1042", "Data CSO",
+"SVC-1043", "Data CSO",
+"SVC-1052", "Data CSO",
+"SVC-1053", "Data CSO",
+"SVC-1056", "Data CSO",
+"SVC-1057", "Data CSO",
+"SVC-1070", "Data CSO",
+"SVC-1079", "Data CSO",
+"SVC-1080", "Data CSO",
+"SVC-1081", "Data CSO",
+"SVC-1082", "Data CSO",
+"SVC-1083", "Data CSO",
+"SVC-1084", "Data CSO",
+
+"EDU-1092", "PaaS CSO",
+"EDU-1093", "PaaS CSO",
+"EDU-1103", "PaaS CSO",
+"SVC-1039", "PaaS CSO",
+"SVC-1040", "PaaS CSO",
+"SVC-1054", "PaaS CSO",
+"SVC-1055", "PaaS CSO",
+"SVC-1058", "PaaS CSO",
+"SVC-1059", "PaaS CSO",
+
+"EDU-1094", "App CSO",
+"EDU-1095", "App CSO",
+"EDU-1096", "App CSO",
+"EDU-1097", "App CSO",
+"EDU-1098", "App CSO",
+"EDU-1099", "App CSO",
+"EDU-1100", "App CSO",
+"EDU-1102", "App CSO",
+
+"SVC-1045", "Data Science",
+"SVC-1049", "Data Science",
+"SVC-1050", "Data Science",
+
+"SVC-1044", "Labs",
+"SVC-1105", "Labs",
+"SVC-1106", "Labs",
+
+"SVC-1113", "Transformation",
+"SVC-1114", "Transformation",
+
+"SVC-1115", "CSD",
+"SVC-1116", "CSD",
+"SVC-1117", "CSD",
+
+
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Type (Comp)</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Software_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Software Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Subscription</fullName>
+                    <default>false</default>
+                    <label>Subscription</label>
+                </value>
+                <value>
+                    <fullName>Perpetual</fullName>
+                    <default>false</default>
+                    <label>Perpetual</label>
+                </value>
+                <value>
+                    <fullName>Maintenance</fullName>
+                    <default>false</default>
+                    <label>Maintenance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <externalId>false</externalId>
+        <label>StartDate</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Est_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>When do you plan for the subscription to begin?</inlineHelpText>
+        <label>Subscription Est Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Estimated_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( isblank(Subscription_Est_Start_Date__c ), Opportunity.CloseDate , Subscription_Est_Start_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>displays Opportunity Close Date if Subscription Estimated Start Date is blank</inlineHelpText>
+        <label>Subscription Estimated Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>TCVRollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>ZuoraTCV__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TCVRollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Total_GM_estimate__c</fullName>
+        <description>Estimates the GM dollar amount by product.</description>
+        <externalId>false</externalId>
+        <formula>if(CONTAINS(Product_Name__c,"DSE / BCS"),TotalPrice * 0.35, 
+if(CONTAINS(Product_Portfolio_txt__c ,"- Edu"),TotalPrice * 0.1,
+if(CONTAINS(Product_Portfolio_txt__c ,"- Services"),TotalPrice * 0.1,
+if(CONTAINS(Product_Portfolio_txt__c ,"Agile"),TotalPrice * 0.35,
+if(CONTAINS(Product_Portfolio_txt__c ,"- Resell"),TotalPrice * 0,
+if(CONTAINS(Product_Portfolio_txt__c ,"PaaS"),TotalPrice * 0.86,
+if(CONTAINS(Product_Portfolio_txt__c ,"Big Data Suite"),TotalPrice * 0.86,
+if(CONTAINS(Product_Portfolio_txt__c ,"Data -"),TotalPrice * 0.85,
+if(CONTAINS(Product_Portfolio_txt__c ,"App"),TotalPrice * 0.85,
+
+0)))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total GM estimate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Measure</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X18_Digit_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>18 Digit ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>VALUE(TEXT( Years__c))</formula>
+        <label>Year-Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Years__c</fullName>
+        <description>Number of years of software subscription or maintenance</description>
+        <externalId>false</externalId>
+        <label>Year(s)</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>0</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZuoraMRR__c</fullName>
+        <externalId>false</externalId>
+        <label>ZuoraMRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ZuoraTCV__c</fullName>
+        <externalId>false</externalId>
+        <label>ZuoraTCV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Zuora_Price_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>ZuoraTCV__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Zuora Price Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Zuora_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Zuora Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <validationRules>
+        <fullName>OL001_Cannot_Edit_Booked_Opportunity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND((ISPICKVAL(Opportunity.StageName, "Booked")),
+($Profile.Name != "System Administrator"), 
+($Profile.Name != "Pivotal - Order Management"))</errorConditionFormula>
+        <errorMessage>Opportunity Products cannot be modified once the Opportunity is Booked [OL001].</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OL002_Type_Forbidden_for_SVC_Products</fullName>
+        <active>true</active>
+        <description>Make the Software Type picklist forbidden if the Product Code contains SVC</description>
+        <errorConditionFormula>!ISBLANK(TEXT( Software_Type__c )) &amp;&amp; 
+!CONTAINS(Product2.ProductCode,"SAS") &amp;&amp;
+!CONTAINS(Product2.ProductCode,"SSS") &amp;&amp; 
+!CONTAINS(Product2.ProductCode,"RSL") &amp;&amp;
+!CONTAINS(Product2.ProductCode,"EDU-1193") &amp;&amp;
+!ISPICKVAL(Opportunity.StageName, "Booked")</errorConditionFormula>
+        <errorDisplayField>Software_Type__c</errorDisplayField>
+        <errorMessage>Software type not available for non-Product SKUs [OL002].</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OL003_Type_Required_for_SSS_Products</fullName>
+        <active>true</active>
+        <description>Make the Software Type picklist required if the Product Code contains SSS</description>
+        <errorConditionFormula>ISBLANK(TEXT( Software_Type__c )) &amp;&amp; CONTAINS(Product2.ProductCode,"SSS")
+&amp;&amp; !ISPICKVAL(Opportunity.StageName, "Booked")</errorConditionFormula>
+        <errorDisplayField>Software_Type__c</errorDisplayField>
+        <errorMessage>Please enter the software type [OL003].</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OL004_Months_Forbidden_for_Perpetual</fullName>
+        <active>true</active>
+        <description>Months not valid for Perpetual Software Type</description>
+        <errorConditionFormula>(
+
+ISPICKVAL(Software_Type__c , "Perpetual")||
+(
+!CONTAINS(Product2.ProductCode, "SSS") &amp;&amp;
+!CONTAINS(Product2.ProductCode, "SAS") &amp;&amp;
+!CONTAINS(Product2.ProductCode, "RSL") &amp;&amp;
+!CONTAINS(Product2.ProductCode,"EDU-1193")
+)
+
+)
+
+&amp;&amp;
+
+(
+
+(!ISBLANK(Months__c) &amp;&amp;
+!ISPICKVAL(Opportunity.StageName, "Booked")
+ 
+
+)
+)</errorConditionFormula>
+        <errorDisplayField>Months__c</errorDisplayField>
+        <errorMessage>Months not valid for Perpetual Software Type [OL004].</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OL005_Months_Required_when_Sub_or_Maint</fullName>
+        <active>true</active>
+        <description>When Software Type is Subscription or Maintenance, Months are required</description>
+        <errorConditionFormula>( 
+
+ISPICKVAL ( Software_Type__c , "Subscription")
+|| ISPICKVAL ( Software_Type__c , "Maintenance")
+
+)
+
+&amp;&amp; 
+
+(
+
+ISBLANK(Months__c )
+&amp;&amp; !ISPICKVAL(Opportunity.StageName, "Booked") 
+
+
+)</errorConditionFormula>
+        <errorDisplayField>Months__c</errorDisplayField>
+        <errorMessage>When Software Type is Subscription or Maintenance, Months are required [OL005].</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Mass_Delete</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Delete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT("/soap/ajax/9.0/connection.js")}
+
+var records = {!GETRECORDIDS(  $ObjectType.OpportunityLineItem )};
+
+if (records[0] == null) {
+alert("Please select at least one record.") }
+else {
+
+var errors = [];
+var result = sforce.connection.deleteIds(records);
+if (result &amp;&amp; result.length){
+var numFailed = 0;
+var numSucceeded = 0;
+for (var i = 0; i &lt; result.length; i++){
+var res = result[i];
+if (res &amp;&amp; res.success == 'true'){
+numSucceeded++;
+} else {
+var es = res.getArray("errors");
+if (es.length &gt; 0) {
+errors.push(es[0].message);
+}
+numFailed++;
+}
+}
+if (numFailed &gt; 0){
+alert("Failed: " + numFailed + "\nSucceeded: " + numSucceeded + " \n Due to: " + errors.join("\n"));
+} else {
+alert("Number of records deleted: " + numSucceeded);
+}
+}
+window.location.reload();
+}</url>
+    </webLinks>
+</CustomObject>

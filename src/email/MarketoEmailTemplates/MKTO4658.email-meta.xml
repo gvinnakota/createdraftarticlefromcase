@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal Partner Days_2017.Denver ISV Training Confirmation</name>
+    <style>none</style>
+    <subject>Pivotal Partner Days - Denver | Registration Confirmation</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+ 
+Thank you for registering for the upcoming Pivotal Partner Days in Denver, CO.
+ 
+We are very excited to be hosting this event. In the past, partners who have attended the event have been able to significantly fast track their integration with the Pivotal Cloud Foundry platform. We hope you&apos;ll find it as valuable as well.
+ 
+What: Pivotal Partner Days: Software Integration Workshop
+When: April 11-13, 2017
+Where: Galvanize - Platte, 1644 Platte Street, Denver, CO 80202
+
+Please review what you need to prepare and bring &lt;[[https://pivotal.io/event/partner-days/denver/software-integration-workshop#beforeyouarrive]]&gt; prior to the event.
+
+
+Hotel Recommendations:
+
+
+ - Hyatt Regency Denver &lt;[[https://denver.regency.hyatt.com/en/hotel/home.html]]&gt;
+ - The Westin Denver Downtown &lt;[[http://www.westindenverdowntown.com/]]&gt;
+ - The Crawford Hotel &lt;[[http://www.thecrawfordhotel.com/]]&gt;
+
+
+Questions? Please contact Marina Joseph, Technical Program Manager, ISV Engineering, Pivotal Cloud Foundry at mjoseph@pivotal.io &lt;[[mailto:mjoseph@pivotal.io]]&gt;.
+
+- Pivotal Cloud Foundry ISV Engineering Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

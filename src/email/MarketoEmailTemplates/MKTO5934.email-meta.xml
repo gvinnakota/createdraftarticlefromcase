@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter (Pre-2018).November Spring News 2014</name>
+    <style>none</style>
+    <subject>Spring Integration leads ESB Market at 42%</subject>
+    <textOnly>NOVEMBER 2014
+&lt;http://spring.io/blog/2014/11/11/spring-integration-and-amqp-releases-available&gt;
+Spring Integration Leads ESB Market
+We are very excited to be recognized as the marketshare leader for the ESB and lightweight integration framework markets &lt;http://spring.io/blog/2014/11/12/pivotal-recognized-in-dzone-s-2014-guide-to-enterprise-integration&gt; in 
+DZone’s 2014 Guide to Enterprise Integration, a premium resource focused on enterprise integration and API management trends, strategies, and tools. The guide includes topic introductions, expert opinions, best practices, and solution comparisons. Readers of the guide will get an overview of enterprise integration and learn about obstacles that developers are facing to create seamless integration. Releasing on the same day as the DZone research, Spring Integration 4.1 GA offers 1st class Spring Framework 4.1, Java 8, and WebSocket support. Longtime users will enjoy the new built-in EIP patterns, Redis Queue Gateway support. Most importantly, check out the soon-to-be-released Java DSL &lt;https://spring.io/blog/2014/09/07/spring-integration-java-dsl-1-0-milestone-3-available&gt; - very exciting. Rabbit users will also discover that Spring AMQP 1.4 GA makes full use of Spring Framework 4.1, and offers Rabbit messaging enhancements.
+Read More &lt;http://spring.io/blog/2014/11/11/spring-integration-and-amqp-releases-available&gt;
+Building a Spring Integration 4.1 WebSocket Endpoint
+Spring Integration 4.1 &lt;https://spring.io/blog/2014/11/11/spring-integration-and-amqp-releases-available&gt; was just released and it includes a lot of great new features! One of my favorites? Smart integration with the Spring 4 WebSocket 
+support. Now you can compose a integration flow whose final destination is a WebSocket client. There is also support for acting as the client to a WebSocket service. 
+ In order to compile it, you will need Java 8 (we make heavy use of lambas here) and the following Maven dependencies:
+
+
+ - groupId:`org.springframework.integration`, artifactId:`spring-integration-java-dsl`, version: 1.0.0.RC1. 
+ - groupId:`org.springframework.integration`, artifactId:`spring-integration-websocket`, version: 4.1.0.RELEASE. 
+ - groupId:`org.springframework.boot`, artifactId:`spring-boot-starter-websocket`, version: 1.2.0.RC1. 
+
+
+
+In order to resolve those dependencies you will need the snapshot &lt;http://repo.spring.io/snapshot&gt; and milestone &lt;http://repo.spring.io/milestone&gt; Maven repositories. 
+
+ All clients listening on /names will receive whatever message is sent into the requestChannel channel. A Spring 4 MessageChannel is a named conduit - more or less analogous to a java.util.Queue&lt;T&gt;. This example uses the Spring Integration Java configuration DSL &lt;https://spring.io/blog/2014/10/31/spring-integration-java-dsl-1-0-rc1-released&gt; on top of the new Spring Integration 4.1 web socket support &lt;https://spring.io/blog/2014/11/11/spring-integration-and-amqp-releases-available&gt;.
+
+Click here &lt;http://spring.io/blog/2014/11/15/building-a-spring-integration-4-1-websocket-endpoint&gt; to see the code sample:
+
+The IntegrationFlow is simple. For each message that comes in, copy it and address it to each listening WebSocket session by adding a header having the SimpMessageHeaderAccessor.SESSION_ID_HEADER, then send it the outbound webSocketOutboundAdapter which will deliver it to each listening client. To see it work, open http://localhost:8080/ &lt;http://localhost:8080/&gt; in one browser window, and then http://localhost:8080/hi/Spring &lt;http://localhost:8080/hi/Spring&gt; in another. There is a simple client demonstrated in this techtip’s code repository &lt;https://github.com/joshlong/techtips/tree/master/examples/spring-integration-4.1-websockets-example&gt;.
+
+There is great documentation on how to use the web socket components in Spring Integration 4.1 documentation &lt;http://docs.spring.io/spring-integration/docs/latest-ga/reference/html/web-sockets.html&gt;. There’s a more inspiring example in the Spring Integration samples directory &lt;https://github.com/spring-projects/spring-integration-samples/tree/master/basic/web-sockets&gt;, too.
+Refactoring made easy, part 2: Change Method Signature
+The Change-Method-Signature refactoring in Eclipse and the Spring Tool Suite is a very powerful tool to change and improve the signatures of your methods. The hidden power of this refactoring is that it changes the invocations of the changed method automatically for you. Imagine you would like to remove the second of three String parameters from your method signature. Usually this is an error-prone task since you have to change all invocations manually and the compiler will not check for you whether you always deleted the right parameter inside the invocation. Using the refactoring, you can remove the second parameter from the method and the refactoring will automatically adapt all invocations for you. The same works for reordering the parameters or even for adding a new one, where you can define the default value that should be inserted when this method is used in your workspace—definitely one of the most powerful refactorings that you should not miss.
+Made for Each Other: Microservices + PaaS
+Speakers: Donnie Berkholz IT Industry Analyst, RedMonk and Matt Stine Cloud Foundry Platform Engineer, Pivotal 
+
+ Companies need to build better software faster to compete. But existing monolithic applications, legacy platforms, and lengthy operational deployment cycles are holding innovation back. Microservices are becoming the cloud architecture of choice because they offer the ability to loosely couple applications into discrete services that can be surgically changed without requiring disruptive overhauls. This approach enables the responsiveness needed by the business. Enterprise PaaS is a critical foundation to simplify the operations, governance, and health management of these new architectures. Together with a DevOps culture, microservices and PaaS are the engine that drives innovation at speed.
+
+
+ - How Continuous Delivery drives business innovation 
+ - What you need to know about microservices to get started 
+ - How to use enterprise PaaS to facilitate operational agility
+North America
+Tuesday, November 18
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://www.pivotal.io/platform-as-a-service/microservices-and-paas-a-match-made-in-the-cloud?utm_source=twitter&amp;utm_medium=tweet&amp;utm_campaign=paas-q42014&gt;
+Spring Boot and JRebel 6.0
+Speakers: Josh Long, Pivotal and Adam Koblentz, ZeroTurnaround 
+ 
+Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring&apos;s flexibility with conventional, common sense defaults to make application development not just fly, but pleasant! Spring Boot gives you a huge leg up over normal starter projects, now let&apos;s give you another boost by adding JRebel. With JRebel, the average Java developer saves over 1 work-month per year by using JRebel to skip rebuild, restart, and redeploys of their application. 
+
+JRebel 6 was just launched and now includes complete Spring Boot integration. Join Spring&apos;s Josh Long and ZeroTurnaround&apos;s Adam Koblentz and learn how to combine Boot with JRebel and get more done, in less time with less configuration.
+Europe
+Thursday, November 20
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SpringBootandJRebel6.07AM_Register.html&gt;
+North America
+Thursday, November 20
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_SpringBootandJRebel6.010AM_Register.html&gt;
+Using Reactor for asych/non-blocking microservices
+Speaker: Stephane Maldini 
+
+ What is the role of asynchronous, non-blocking style-communication in microservices? Join Stephane Maldini for a revealing look at why reactive components are so important in an eventually-consistent approach like microservice architecture. When services own their data and are completely independent, having a (reactive) abstraction layer can perform a variety of roles. Being able to parallelize resources a microservice owns is an important technique. Another might be as an event bus, pulling state data from various micro services dynamically, checking against the cached, fairly up-to-date local copy. 
+ 
+ While a microservice has “all” the data it needs from other services to respond to a request, this data is not necessarily up-to-date—an important constraint to be prepared to accept. Stephane will also discuss other async use cases outside of microservices and how www.reactive-streams.org &lt;http://www.reactive-streams.org&gt; protocol support allows levels of portability across vendor implementations.
+Europe
+Tuesday, December 2
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMReactorforasynchnon-blockingmicroservices_Register.html&gt;
+North America
+Tuesday, December 2
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMReactorforasynchnon-blockingmicroservices_Register.html&gt;
+Spring Integration 4.0: The new frontier
+In this session we will cover these major changes to the framework, explaining how and when to use them. It will be mainly demonstration and code walk through, and we will build a useful Spring Boot / Integration application from scratch.
+Watch Video &lt;http://spring.io/blog/2014/05/15/webinar-replay-spring-integration-4-0-the-new-frontier&gt;
+Spring Videos
+ Webinar Replay: Security for Microservices with Spring and OAuth2 &lt;http://spring.io/blog/2014/11/07/webinar-replay-security-for-microservices-with-spring-and-oauth2&gt;
+ Webinar Replay: Building “Bootiful” UIs with Spring Boot and Vaadin &lt;http://spring.io/blog/2014/11/04/webinar-replay-building-bootful-uis-with-spring-boot-and-vaadin&gt;
+ Webinar Replay: Content-enabled Web and Mobile Applications with Spring, Groovy and Crafter &lt;http://spring.io/blog/2014/10/30/webinar-replay-content-enabled-web-and-mobile-applications-with-spring-groovy-and-crafter&gt;
+
+Archived videos
+ SpringOne2GX 2014 Keynote Day 1 - Platform Reinvented &lt;http://spring.io/blog/2014/11/10/springone2gx-2014-keynote-day-1-platform-reinvented&gt;
+ SpringOne2GX 2014 Keynote Day 2 - Platform Reinvented &lt;http://spring.io/blog/2014/11/10/springone2gx-2014-keynote-day-2-platform-reinvented&gt;
+ SpringOne2GX 2014 Replay: Gaining Application Lifecycle Intelligence &lt;http://spring.io/blog/2014/11/10/springone2gx-2014-replay-gaining-application-lifecycle-intelligence&gt;
+ SpringOne2GX 2014 Replay: Living in the Matrix with Bytecode Manipulation &lt;http://spring.io/blog/2014/11/09/springone2gx-2014-replay-living-in-the-matrix-with-bytecode-manipulation&gt;
+ SpringOne2GX 2014 Replay: Tuning Large Scale Java Platforms &lt;http://spring.io/blog/2014/11/09/springone2gx-2014-replay-tuning-large-scale-java-platforms&gt;
+Integrating Data
+This guide walks you through the process of using Spring Integration to create a simple application that retrieves data from Twitter, manipulates the data, and then writes it to a file. You&apos;ll create a flow using Spring Integration.
+View Guide &lt;http://spring.io/guides/gs/integration/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+
+
+http://spring.io/guides
+
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Integration 4.1.0 GA and Spring AMQP 1.4.0 GA released &lt;http://spring.io/blog/2014/11/11/spring-integration-and-amqp-releases-available&gt;
+ 
+Spring Framework 4.1.2 &amp; 4.0.8 &amp; 3.2.12 released &lt;http://spring.io/blog/2014/11/11/spring-framework-4-1-2-4-0-8-3-2-12-released&gt;
+ Spring Boot 1.2.0 RC1 available now &lt;http://spring.io/blog/2014/11/12/spring-boot-1-2-0-rc1-available-now&gt;
+ Spring Boot 1.1.9 released &lt;http://spring.io/blog/2014/11/12/spring-boot-1-1-9-released&gt;
+ Spring Security OAuth 2.0.4.RELEASE Available &lt;http://spring.io/blog/2014/11/11/spring-security-oauth-2-0-4-release-available-now&gt;
+ Reactor 2.0.0.M1 released with Reactive Streams integration! &lt;http://spring.io/blog/2014/10/21/reactor-2-0-0-m1-released-with-reactive-streams-integration&gt;
+ Spring Batch 3.0.2.RELEASE &lt;http://spring.io/blog/2014/10/28/spring-batch-3-0-2-release-is-now-available&gt;
+ Spring Integration 4.1 RC1 &lt;http://spring.io/blog/2014/10/27/spring-integration-4-1-rc1-released&gt;
+ Spring Cloud 1.0.0.M2 &lt;http://spring.io/blog/2014/11/05/spring-cloud-1-0-0-m2-available-now&gt;
+ Spring Data Evans SR1 &lt;http://spring.io/blog/2014/11/03/spring-data-evans-sr1-released&gt;
+ Spring for Apache Hadoop 2.0.3 &lt;http://spring.io/blog/2014/11/03/spring-for-apache-hadoop-2-0-3-released&gt;
+ Spring Integration Java DSL 1.0 R1 &lt;http://spring.io/blog/2014/10/31/spring-integration-java-dsl-1-0-rc1-released&gt;
+Pivotal Recognized in DZone’s 2014 Guide to Enterprise Integration &lt;http://spring.io/blog/2014/11/12/pivotal-recognized-in-dzone-s-2014-guide-to-enterprise-integration&gt;
+ A quality @Qualifier &lt;http://spring.io/blog/2014/11/04/a-quality-qualifier&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;Search=Search&amp;subjectID=17750&amp;filters=subjectID&gt;
+
+Enterprise Integration with Spring &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Enterprise+integration+spring&amp;Search=Search&gt;
+
+Spring Web &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Spring+Web&amp;Search=Search&gt;
+
+What’s New in Spring (NEW) &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=What%27s+New+in+Spring&amp;Search=Search&gt;
+
+JPA with Spring (coming late 2014) - Current version ‘Hibernate with Spring’ &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=JPA&amp;Search=Search&gt;
+
+Groovy &amp; Grails &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Groovy&amp;Search=Search&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

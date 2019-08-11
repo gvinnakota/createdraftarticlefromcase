@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_TorontoOfficeOpening_Q314.Registration Confirmation</name>
+    <style>none</style>
+    <subject>You are confirmed to attend Pivotal Toronto Grand Office Opening (October 2)</subject>
+    <textOnly>REGISTRATION CONFIRMATION
+Hello {{lead.First Name:default=}},
+ 
+Thank you for registering for Pivotal Toronto Grand Office Opening.
+See event details below.
+ 
+Date: Thursday, October 2, 2014
+Time: 6pm - 9pm
+Location: Pivotal Office, 1 Toronto St, 11th Floor, Toronto, ON. M5C 2V6
+ 
+Should you have any questions or would like more information, please email elogue@pivotal.io &lt;mailto:elogue@pivotal.io&gt;. See you on Thursday, October 2nd!
+ 
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

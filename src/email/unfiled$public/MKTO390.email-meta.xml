@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_PivotalNetwork.Pivotal Network Confirmation</name>
+    <style>none</style>
+    <subject>Welcome to Pivotal Network</subject>
+    <textOnly>Welcome to Pivotal Network
+Your destination for Pivotal products and services.
+
+
+ - Download the latest version of products
+ - Learn more about the suite of tools
+ - Access support and documentation
+
+
+Visit Pivotal Network &lt;https://network.gopivotal.com&gt;
+
+
+Your login information
+
+Username: {{lead.Email Address:default=If email address is blank, contact Pivotal Support}}
+ Password can be reset here &lt;https://console.run.pivotal.io/password_resets/new&gt;
+ We hope you are getting the best enterprise PaaS and encourage you to reach out to our customer success team &lt;www.gopivotal.com/support&gt; with questions.
+More Info
+Check out Pivotal P.O.V &lt;http://blog.gopivotal.com&gt;
+ Explore Pivotal CF &lt;http://gopivotal.com/pivotal-products/pivotal-cf&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

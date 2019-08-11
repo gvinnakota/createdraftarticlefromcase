@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Please insert the AI consumption value for this customer from the App Manager or customer --></help>
+        <label><!-- AI Consumption --></label>
+        <name>AI_Consumption__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account (FR) --></label>
+        <name>Account_FR__c</name>
+        <relationshipLabel><!-- Foundations --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Choose value to be true if this record should be classified as no longer active --></help>
+        <label><!-- Archive --></label>
+        <name>Archive_Foundation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please choose an environment name from the available list --></help>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disaster Recovery</masterLabel>
+            <translation><!-- Disaster Recovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Production</masterLabel>
+            <translation><!-- Non-Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Production</masterLabel>
+            <translation><!-- Pre-Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA</masterLabel>
+            <translation><!-- QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandbox</masterLabel>
+            <translation><!-- Sandbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UAT</masterLabel>
+            <translation><!-- UAT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FQ Consumption Collected --></label>
+        <name>FQ_Consumption_Collected__c</name>
+    </fields>
+    <fields>
+        <label><!-- FR ID18 --></label>
+        <name>FR_ID18__c</name>
+    </fields>
+    <fields>
+        <label><!-- FY Consumption Collected --></label>
+        <name>FY_Consumption_Collected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide the infrastructure based on the available options --></help>
+        <label><!-- Infrastructure --></label>
+        <name>Infrastructure__c</name>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azure</masterLabel>
+            <translation><!-- Azure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azure Stack</masterLabel>
+            <translation><!-- Azure Stack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCP</masterLabel>
+            <translation><!-- GCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenStack</masterLabel>
+            <translation><!-- OpenStack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>vSphere</masterLabel>
+            <translation><!-- vSphere --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legacy AD Foundation ID --></label>
+        <name>Legacy_AD_Foundation_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the Month the collected consumption data refers to. This field will purposefully go blank upon successful save. --></help>
+        <label><!-- Month Consumption Collected --></label>
+        <name>Month_Consumption_Collected__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes (PR) --></label>
+        <name>Notes_PR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide the PCF version --></help>
+        <label><!-- PCF Version --></label>
+        <name>PCF_Version__c</name>
+        <picklistValues>
+            <masterLabel>1.10</masterLabel>
+            <translation><!-- 1.10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.11</masterLabel>
+            <translation><!-- 1.11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.12</masterLabel>
+            <translation><!-- 1.12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.6</masterLabel>
+            <translation><!-- 1.6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.7</masterLabel>
+            <translation><!-- 1.7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.8</masterLabel>
+            <translation><!-- 1.8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.9</masterLabel>
+            <translation><!-- 1.9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.0</masterLabel>
+            <translation><!-- 2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.1</masterLabel>
+            <translation><!-- 2.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.2</masterLabel>
+            <translation><!-- 2.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.3</masterLabel>
+            <translation><!-- 2.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.4</masterLabel>
+            <translation><!-- 2.4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5</masterLabel>
+            <translation><!-- 2.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.6</masterLabel>
+            <translation><!-- 2.6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CF</masterLabel>
+            <translation><!-- CF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PWS-E</masterLabel>
+            <translation><!-- PWS-E --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Month Consumption Collected --></label>
+        <name>Previous_Month_Consumption_Collected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please fill in SI Consumption for customer from Apps Manager or directly from customer --></help>
+        <label><!-- SI Consumption --></label>
+        <name>SI_Consumption__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uploaded --></label>
+        <name>Uploaded__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter how many foundations there are for this customer --></help>
+        <label><!-- # of Foundations --></label>
+        <name>number_of_Foundations__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Foundations</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Foundations</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Foundations Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Foundations Layout 2.0</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Archive --></label>
+        <name>Archive</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Please enter a new value for the Month Consumption Collected, since the AI Consumption has changed. --></errorMessage>
+        <name>AI_changed_but_Month_did_not</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value in Month Consumption Collected --></errorMessage>
+        <name>Month_Consumption_Blank_VR</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Archive --></label>
+        <name>Archive</name>
+    </webLinks>
+</CustomObjectTranslation>

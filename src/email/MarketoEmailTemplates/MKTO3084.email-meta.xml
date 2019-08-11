@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_PCF 1.6 Launch_Q415.Confirmation</name>
+    <style>none</style>
+    <subject>You are Confirmed!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for the upcoming webinar Expand Your Cloud Native Platform&apos;s Capabilities With The Newest Release of 
+Pivotal Cloud Foundry on Thursday, November 19, 2015. Please see event details below:
+
+Date: Thursday, November 19, 2015
+Time: 10AM PST- 1:00PM EST
+Join the Session &lt;http://event.on24.com/wcc/r/1084533/BADF02F8BC6EB0B824A341447DFA9647&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date Release:default=edit me}} 
+
+Read more &lt;http://pivotal.io/platform/press-release/go-from-idea-to-production-in-less-than-a-day&gt; about the new features and capabilities of 
+Pivotal Cloud Foundry. While you wait, check out our replay &lt;http://pivotal.io/platform/webinar/the-cloud-native-journey?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar&gt; of The Cloud Native Journey with 
+Matt Stine, Senior Product Manager, Spring Cloud Services for Pivotal Cloud Foundry. He reviewed how companies embracing the cloud native patterns of software delivery will survive and companies that don’t - will not. Watch it now &lt;http://pivotal.io/platform/webinar/the-cloud-native-journey?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar&gt;!
+
+We Look Forward to you 
+Joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

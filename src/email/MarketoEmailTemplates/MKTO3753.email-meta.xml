@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_DataScienceAfternoon_NYC_Q216.Confirmation</name>
+    <style>none</style>
+    <subject>You are confirmed!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}}, 
+
+ Thank you for registering for Driving Digital Transformation with Exploratory Analytics and Machine Learning! Please contact Mark D&apos;Annibale &lt;[[mailto:mdannibale@pivotal.io]]&gt; with any questions. See event details below:
+ 
+Date: Tuesday, June 14th  {{my.Save the date:default=Save the date!}}
+Time: 4:00 PM to 5:30 PM
+Location: Pivotal Labs, 625 6th Avenue, between 18th and 19th Map &lt;[[https://www.google.com/maps/dir/]]&gt;
+ 
+We look forward to you joining us!
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The US Embargo of this Country is currently ACTIVE</description>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Embargo_Country_ISO_Code__c</fullName>
+        <description>2 digit ISO Country Code</description>
+        <externalId>false</externalId>
+        <label>Embargo Country ISO Code</label>
+        <length>2</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Embargo_Country_ISO_Name__c</fullName>
+        <description>ISO Name of Country currently under Embargo restrictions with the US Government</description>
+        <externalId>false</externalId>
+        <label>Embargo Country ISO Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <description>Embargo Expiration Date</description>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>List of all Countries currently under Embargo restrictions with the US Government.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>US Embargo Countries</label>
+    <visibility>Public</visibility>
+</CustomObject>

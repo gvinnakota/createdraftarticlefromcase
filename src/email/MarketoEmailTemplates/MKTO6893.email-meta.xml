@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.InterestEmail</name>
+    <style>none</style>
+    <subject>Registration for SpringOne Tour is open!</subject>
+    <textOnly>Thank you for your interest!
+
+We noticed that you have expressed interest in attending SpringOne Tour{{lead.PCF Workshop City}}.
+ 
+We have now opened registration and are looking forward to seeing you in {{lead.PCF Workshop City}} !
+
+Register here &lt;[[{{my.CityPage}}]]&gt;
+
+ If you have any other questions, please feel free to email SpringOneTour@pivotal.io &lt;[[mailto:SpringOneTour@pivotal.io]]&gt;.
+
+ Thanks, 
+Tasha Isenberg and the 
+SpringOne Tour Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

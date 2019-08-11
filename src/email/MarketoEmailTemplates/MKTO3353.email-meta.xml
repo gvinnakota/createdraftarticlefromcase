@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.10-16-14 V2N21</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.21</subject>
+    <textOnly>VOL. 2, NO. 21
+Thursday, October 16, 2014
+Keeping the Stars Aligned &lt;#editor-welcome&gt;
+Test-Driving Pivotal CF Around the Globe &lt;#business-update&gt;
+Data Fabric TechOps: The Machinery of Product Development &lt;#product-update&gt;
+Mobile Quality – The Sum of All Testing  &lt;#agile-update&gt;
+Pivotal IT - Make IT, happen &lt;#people-update&gt;
+Simon Elisha &lt;#my-name-is&gt;
+Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Keeping the Stars Aligned
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+Among the bright stars of software development and its star systems of agile and lean development, there are those whose jobs are to stitch together a constellation of people processes and things that keep our stars and systems in alignment - letting us aim high in our ambitions.
+ 
+ 
+In this issue, we get a glimpse at some of those who help connect the dots for our teams and customers. New CIO Drew Kramer outlines his roadmap for world-class IT, Bhavin Modri provides an update on TechOps’ approach to keep product development humming, and Rodney Wong shows how the rigor behind QA for mobile apps help forge great products.
+ 
+ All of this helps us light the skies 
+and lead the way – in deed and thought – to modern software development. In that spirit, we get a halftime update on the Cloud Platform Roadshow &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow&gt;, Pivotal leaves its data imprint at Strata + Hadoop &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/2014-strata-confrence-hadoop-world&gt; this week in NY, and former AWS leader and now Pivotal evangelist, Simon Elisha, kicks off our new Pivotal podcast series, All Things Pivotal &lt;http://www.pivotal.io/podcasts&gt;.
+ 
+ Enjoy!
+BUSINESS UPDATE
+ Test-Driving Pivotal CF Around the Globe
+ Kim-Marie Ruquet &lt;https://gopivotal-com.socialcast.com/users/1072700-kimmarieruquet&gt;, Director, NA Field Marketing
+The race is well underway! The global Cloud Platform Roadshow &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow#cities&gt; began in July and is picking up speed. From New York to London, Seattle to Paris – we have completed 10 cities, with 10 more to go to finish out the year. Registration rates continue to climb, with over 1,075 people registered to date.
+ 
+ Developers, architects, technical managers and others are converging in cities across the globe to see first-hand the speed and ease of pushing an app on Pivotal CF &lt;https://network.pivotal.io/products/pivotal-cf&gt;, the world’s leading enterprise PaaS, powered by Cloud Foundry &lt;http://cloudfoundry.org/learn/index.html&gt;.
+ 
+ At 
+these hands-on workshops, attendees build and deploy apps from a modern platform (Pivotal CF). Behind the wheel have been representatives from name-brand companies across multiple industries: ADP, Alcatel-Lucent, AT&amp;T, Bank of America, Best Buy, Boeing, Caterpillar, Discover, Fidelity, Honeywell, McGraw-Hill, Orange, Staples, Starbucks, Thomson Reuters, Verizon, Wells Fargo and many 
+others.
+ 
+ 
+ The New Platform Canon: (l to r) Pivotal’s Iain Gray in Chicago, and Andrew Clay 
+Shafer in London
+ 
+ This has been a true team effort across all disciplines – from the ISR Team, Field Sales, Field Engineering, Product Marketing, Product Management and Corporate Marketing (among others) – to make these events a success. And the feedback from attendees has been stellar.
+ 
+ “I’m glad I got a chance to meet the energetic team, and I found these sessions highly valuable.”
+ - Prasad Challagandla, Swisscom Labs
+ 
+ “Thank you, and the rest of the 
+team, for putting on an outstanding roadshow!” - NY attendee
+ 
+ You can find the presentation slides here &lt;http://www.slideshare.net/Pivotal/tagged/pivotal%20cloud%20platform%20roadshow&gt;, and head to Inside Pivotal  &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/pivotal-cloud-platform-roadshow&gt; for more information. Also invite your prospects to try Pivotal Web Services: Visit run.pivotal.io &lt;http://info.pivotal.io/VvUH000Cz40J200IN0085A0&gt; (upload files, and the app just works!). Stay tuned…the Pivotal Cloud Platform Roadshow will continue into 2015!
+PRODUCT UPDATE
+ Data Fabric TechOps: The Machinery of Product Development
+ Bhavin Modi &lt;https://gopivotal-com.socialcast.com/users/930140-bhavinmodi&gt;, TechOps Manager
+Data Fabric TechOps manages the machinery behind data product development. We recently joined Drew Kramer’s IT team under Sean Murray, and we’re very excited to be part of a group that has been a natural partner for TechOps. With millions of dollars invested in infrastructure, we strive for self-service and automation to make the cycle from product development to delivery as efficient as possible. While our primary “customers” are Data Fabric engineers, we replicate useful resources and services across the company – partnering with GSS, App Fabric, and other teams in the process.
+ 
+ We cover the following:
+
+
+ - Tools and Applications (JIRA, Confluence, GIT/Stash, Jenkins, SCOTzilla, others)
+ - Cloud Infrastructure (private cloud and self-service development environment for data teams)
+ - Physical Infrastructure (compute clusters to test scalability and performance)
+
+
+
+A key part of managing a global infrastructure is building tools and platforms that can be leveraged throughout Pivotal. SCOTzilla is one such recent application, used by engineering and legal teams across the Data Fabric, App Fabric and Cloud Foundry to ensure that products are bundled with proper licenses.
+ 
+ We also partner with EMC IT to ensure efficient workflows across companies. We’re currently working with them to prepare and migrate our greenplum tools to pivotal.io &lt;http://pivotal.io/&gt; in 2015. This will provide more Pivotal employees across the globe with access to key collaboration tools. We’re also building a centralized repository service that will allow data product teams to publish software for internal consumption, prior to release for customers.
+ 
+ 
+Finally, I would like to welcome our new TechOps leader Sean Murray! Data Fabric Tech Ops is well placed in 2015 to ensure a reliable, efficient and high-performing infrastructure.
+AGILE UPDATE
+ Mobile Quality – The Sum of All Testing 
+ Rodney Wong &lt;https://gopivotal-com.socialcast.com/users/1032794-rodneywong&gt;, Agile Test Engineering Manager, Pivotal Labs
+Many of you are probably unaware that Pivotal Labs has a Quality Assurance (QA) practice. Although Test-Driven Development  &lt;http://en.wikipedia.org/wiki/Test-driven_development&gt;(TDD) is a key component of agile development, mobile apps also require specialized QA not covered by TDD.
+ 
+ In setting a strict bar on quality, we help the business by providing the best possible products to customers. We always test on real devices – with over 1,300 phones and tablets in our inventory! This helps to verify carrier or location-based testing (e.g., NFL on Verizon, NBA on Sprint, Virgin on Boost) and ensure performance across a range of devices.
+ 
+ We work on weekly iterations, delivering builds through Pivotal App Studio &lt;http://www.xlstudio.com&gt;. Our process follows these stages:
+
+
+ - Weekly Story and Exploratory Testing: Explore product functionality, discover potential flaws and provide UI/UX feedback to improve the product design and user flow.
+ - Release Candidate (RC) Testing: We focus on a broad range of supported devices, to execute a tailor-made RC test plan, regress the entire application, perform edge case testing and provide a detailed summary of the results.
+ - Automated Testing: This supplements our weekly story verification, as a UI-based testing strategy where we write scripts to automate testing on Android, iOS, and Web applications. You can read more about Automation Testing on mobile in this paper we wrote &lt;http://pivotallabs.com/resource/automation-testing-mobile/&gt;.
+
+
+
+Working with our teams for our biggest customers, Pivotal Labs’ QA teams are the gatekeepers of product quality.
+ 
+ 
+ QA Automation Demo table at the recent Toronto office opening celebration.
+PEOPLE UPDATE
+ Pivotal IT - Make IT happen
+ Drew Kramer &lt;https://gopivotal-com.socialcast.com/users/1072686-drewkramer&gt;, Chief Information Officer
+I’m delighted to join the Pivotal mission. After over two decades in technology, with the last 11 at VMware (helping set a course and building out its IT operation), I believe Pivotal IT &lt;https://sites.google.com/a/pivotal.io/pivotal-it/?pli=1&gt; moves with the best of them. My aim is to use our best technology assets to make things simpler and easier for you – easier to sell, win and share things across our company and with customers.
+ 
+ While Pivotal is lean, and we know how to leverage cloud-based services, we have unique complexities – including a number of network policies to manage and businesses to serve. But we also have untapped strengths and tremendous opportunities in IT. My priorities to leverage these in 2015 can be summed up as follows:
+
+
+
+ - Deliver an Excellent Employee Experience
+ IT will have an active role in our efforts around making this a special place to work by improving many employee experiences – including more reliable feedback mechanisms.
+
+ - Create a World-Class IT Team Delivering ITaaS
+ We have the tools to become a model for next generation IT. “Bi-modal IT” &lt;http://blogs.gartner.com/lydia_leong/2014/08/25/bimodal-it-vmworld-and-the-future-of-vmware/&gt; is an approach that enables IT to be agile and fast where the business requires it, and ‘traditional’ and doing-it-right if that better serves the business. With that principle in mind, we’re considering a “many modes” approach. IT will interlock with our top business goals and avoid common IT pitfalls of silos and “not-invented-here &lt;http://en.wikipedia.org/wiki/Not_invented_here&gt;” thinking.
+
+ - Dogfood for Success
+ We build outstanding platforms and apps, and we help customers master data. We’ll funnel that experience to our teams, building apps that help a highly-mobile Field, provide competitive business intelligence for executives and engage our people. Look for a team to coalesce around this priority!
+
+ - Consolidate and Coordinate IT Activities
+ 2015 will be the year that we align IT teams across the company around these common goals. This will help eliminate process gaps and overlaps. 
+
+
+
+And last, but certainly not least, you have the support of a responsive, world-class IT team behind these efforts – which I’m privileged to lead. Making IT easy is hard work, but I have confidence in our strengths and teams. We’re just getting started, so I look forward to updating you again in 2015!
+MY NAME IS...
+ Simon Elisha
+ Simon Elisha &lt;https://gopivotal-com.socialcast.com/users/1060680-simonelisha&gt;, CTO &amp; Sr. Manager, Field Engineering for ANZ
+Am CTO &amp; Senior Manager Field Engineering for Australia and New Zealand. My title is a mouthful, but basically I look after the (growing!) technical pre-sales team in Australia and work with our customers to understand what they are doing and how we can help.
+Visiting customers or with a phone seemingly permanently attached to my ear. ;-)
+Hiring some great people into our team and launching the new All Things Pivotal &lt;http://blog.pivotal.io/big-data-pivotal/news-2/all-things-pivotal-podcast-now-available&gt; podcast series.
+I spend time with my gorgeous wife and two daughters, aged 5 and 8. I also love to read –particularly about History.
+I had laser eye surgery “way back” in the day when many people said “we don&apos;t know what will happen to your eyes in 10 years” – I can confirm they did not fall out (but I do need glasses for reading).
+ 
+ 
+ The “Because I’m Happy” wefie: Simon Elisha and clan
+Represents an amazing “Day Zero” opportunity to help customers get the next layer of value from IT. We need to make IT so much easier to consume. Having lived that journey from a Public Cloud perspective with AWS, I am super-excited to be on that rollercoaster once again!
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from October 1st – October 13th:
+
+ Aloka Penmetcha, Product Manager, San Francisco 
+ Andrew Stahl, Account Manager, Americas West 
+ 
+Benjamin Levy, Software Engineer, Toronto 
+ Christopher Ing, Sr. Director, Sr. Counsel, Palo Alto 
+ David Soul, Principal Product Marketing Mgr, San Francisco 
+ Dianne Helander, Financial Analyst, Hopkinton, MA 
+ Gerald Michelant, Account Manager, Americas North 
+ Joshua 
+McKenty, Field CTO Cloud Foundry, Americas North 
+ Kui Wei, College Co-op Student, Beijing 
+ Mark Delillo, Software Engineer, New York 
+ Mircea Dumitrescu, Software Engineer, Toronto 
+ Pulkit Chandra, 
+GSS Designated Support Engineer, Americas North 
+ Richard Alloum, Sr. Product Manager, Palo Alto 
+ Robert Hoffman, Sr. Customer Success Manager, Americas West 
+ Sharon Sustrick Ober, Sr. Account Manager, Americas West 
+ Thomas McNeely, Software Engineer, Toronto 
+ Thomas Meyer, Sr. Software Engineer, Palo Alto 
+ Vincent Koo, Software Engineer, Toronto</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

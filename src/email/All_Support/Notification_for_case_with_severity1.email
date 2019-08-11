@@ -1,0 +1,24 @@
+##- Please type your reply above this line -##
+GLOBAL MANAGERS ARE RESPONSIBLE FOR ENSURING S1 CASES ARE HANDLED ACCORDING TO OUR SEV 1 SLO.
+
+FIRST RESPONDER: REPLY-ALL TO THIS EMAIL INTERNALLY TO INDICATE OWNERSHIP.
+
+INSTRUCTIONS FOR HANDLING THE CUSTOMER'S ESCALATION:
+
+1) Acknowledge receipt of escalation ticket by replying back to the escalator.
+2) Ask for the customer's phone number if not provided.
+3) Follow up immediately with customer by phone.
+4) Set proper expectations on how the case will be handled.
+5) Inform manager on duty about escalation and next steps.
+
+TICKET DETAILS
+-----------------------
+Case Subject: {!Case.Subject}
+Case Number: {!Case.CaseNumber}
+Case Contact: {!Case.Contact}
+Account: {!Case.Account}
+Severity: {!Case.Priority}
+Product: {!Case.Product}
+Case Owner: {!Case.OwnerFullName}
+
+{!Case.ThreadId__c}

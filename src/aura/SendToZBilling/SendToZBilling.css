@@ -1,0 +1,100 @@
+.THIS .actions-container {
+    background-color: lightslategrey;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.THIS .errors{
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.THIS .state {
+    background-color:yellow;
+    /*width:500px;*/
+    border:1px solid silver;
+    min-height:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:5px;
+    padding-top:5px;
+    border-radius:3px;
+}
+
+.THIS .quote-table {
+}
+
+.THIS .quote-table-header {
+    display:flex;
+	flex-wrap: wrap;
+    font-weight:bold;
+}
+
+.THIS .quote-table-row {
+    display:flex;
+	flex-wrap: wrap;
+}
+
+/*.THIS .quote-table-column:first-child {
+    flex:2;
+}*/
+
+.THIS .quote-table-column {
+    flex:1;
+}
+
+.THIS .charge-table-header {
+    display:flex;
+	flex-wrap: wrap;
+    font-weight:bold;
+    border-bottom: 1px solid lightblue;
+}
+
+.THIS .charge-table-row {
+    display:flex;
+	flex-wrap: wrap;
+    border-top:1px solid lightgray;
+    padding:3px;
+}
+
+.THIS .charge-table-column:first-child {
+    flex:1.5;
+}
+
+.THIS .charge-table-column {
+    flex:1;
+}
+
+.THIS .slds-accordion__summary-heading {
+    background-color:MediumAquamarine ;
+    color:white;
+    padding:5px;
+    border-radius:4px;
+}
+.THIS .charges-container {
+    background-color:whitesmoke;
+    margin-top:5px;
+    border-radius:3px;
+}
+.THIS .charges-container * .slds-accordion__summary-heading {
+    background-color:LightSkyBlue !important;
+    color:white;
+    padding:5px;
+    border-radius:4px;
+}
+
+.THIS .subscriptions-container * .slds-accordion__summary-heading {
+    background-color:cadetblue;
+    color:white;
+    padding:5px;
+    border-radius:4px;
+}
+
+.THIS .slds-icon-text-default {
+    fill: #fff;
+}

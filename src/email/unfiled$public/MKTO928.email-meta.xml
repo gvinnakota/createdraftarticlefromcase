@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.7-24-14 V2N15</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.15</subject>
+    <textOnly>VOL. 2, NO. 15
+FRIDAY, JULY 25
+Open Doors, Open Source, Open for Business...
+Higher Ground
+Cloud Foundry: Enter Diego
+Pivotal Tracker Builds on Great
+Product Marketing Comes Together
+Caleb Miles
+Welcome to Pivotal!
+EDITOR WELCOME
+ Open Doors, Open Source, Open for Business...
+ Steve Casale, Sr. Manager, Corporate Communications
+ &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;
+What were 28 high-school-age girls doing in the Pivotal San Francisco office last Friday? Learning agile development and data science of course! By hosting a half-day “Girls Who Code” event &lt;http://blog.gopivotal.com/pivotal/features/pivotal-connects-girls-who-code-with-data-science-and-agile-software-development&gt;, Pivotal played a small part in opening the door for women in tech. The event was part of a 7-week computer science immersion program for young women, sponsored by our partner GE. It was, by all accounts, smashing.
+ 
+ OSCON &lt;http://www.oscon.com/oscon2014&gt; (the Open Source Conference) also took place this week, and Pivotal had its fingerprints on this annual code-for-all gathering, including those of newly hired Pivotal technology leader Andrew Clay Shafer &lt;http://blog.gopivotal.com/cloud-foundry-pivotal/pivotal-people/pivotal-people-andrew-clay-shafer-devops-polymath-joins-pivotal&gt;. This newsletter pays homage to our open spirit – see Onsi Fakhouri’s Diego update and our profile on open source coder, Caleb Miles. Scott Aronson also gives us a report on the first half and what it takes to keep winning – there is a lot here, and it’s important! We also get a long-awaited update on Pivotal Tracker (40 million stories and counting!), and finally, the move to Pivotal.io happens this weekend, 
+with all you need to know here &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal/pivotal-io&gt;.
+BUSINESS UPDATE
+ Higher Ground
+ Scott Aronson, SVP, Field Operations
+&lt;https://gopivotal-com.socialcast.com/users/927787-scottaronson&gt;
+We closed the books on Q2 and the first half (1H) of 2014. A big thanks goes to all of you across Pivotal for continuing to make it happen. Now that EMC financials are public, I can share news on our performance and plans for the second half (2H).
+ 
+ We checked the box on a number of strategic imperatives relative to our Plan of Record:
+
+
+ - Total bookings for the 1H grew 53% year over year (y/y)
+ - Software, subscription and support bookings grew 67% y/y
+ - We beat our bottom line goal (our EBIT target)
+
+
+
+Big brand names across the globe such as Philips Medical, IAG, Credit Suisse, BMO, Toshiba, Vodafone, Comcast, JP Morgan Chase, the NFL and others all contributed to our success. Pivotal CF &lt;http://www.gopivotal.com/platform-as-a-service/pivotal-cf&gt; (PCF), Pivotal Big Data Suite &lt;http://www.gopivotal.com/big-data&gt; (BDS) and Pivotal Labs &lt;http://pivotallabs.com/&gt; are performing beyond expectations, and the outlook is very exiting.
+
+
+ - PCF pipeline expanded 500%, with 76% of the Field working on opportunities
+ - BDS pipeline grew by 77%, with 82% of the Field working on opportunities
+
+
+
+This performance creates terrific momentum, but we have much to do in the 2H. As with most businesses, our 2H number accounts for seasonality and typical customer spending increase in Q4. That calls for 60% of our annual bookings to come in the 2H. Our job and goal for the rest of the year is clear and reachable, and our focus to get there includes:
+
+
+ - Getting better everyday. We’re pushing training, tools and accreditation initiatives that will build the Field’s skills and confidence to create, execute and close opportunities – particularly for BDS and PCF. 
+ - Capitalizing on mindshare. Our attention to pipeline creation and account planning is front and center. This means focused pursuit of PCF and BDS opportunities to land brand-name customer references.  
+ - Leveraging the EMC Federation &lt;http://emcfederation.com/&gt;. Building this relationship will continue to help us expand our footprint and scale. Additionally, it will give us a boost in the back half of 2014 and beyond. Solutions with EMC Isilon and RSA are coming to fruition and creating upsell opportunities. VMware has also committed to a campaign with us to secure another 30 brand-name enterprise PCF wins in the Americas alone. 
+ - Spending smart. Our headlong shift into both PCF and BDS are key factors of our strong performance. As subscription services, they are driving greater software sales. From a financial viewpoint, bookings for subscription services are recorded upfront, while revenues are realized in pieces – on a ratable basis over the term of the subscription. The good news is that we are building a revenue backlog that will help us run our business more predictably over time. However, in the short-term, this also means that revenues are not yet fully aligned with costs. It is imperative that we watch our spending, and be smart and efficient in managing costs.
+
+
+
+I want to thank all of you for the hard work, passion and commitment to our mission. In my mind, there is no better place to be. I truly look forward to the work ahead in 2H, and to achieving the results expected of us.
+ 
+ Make it happen!
+ -sa
+PRODUCT UPDATE
+ Cloud Foundry: Enter Diego
+ Onsi Fakhouri, Software Engineer, Cloud Foundry
+&lt;https://gopivotal-com.socialcast.com/users/1032710-onsifakhouri&gt;
+Diego &lt;http://blog.gopivotal.com/cloud-foundry-pivotal/features/cf-summit-video-diego-reimagines-the-cloud-foundry-elastic-runtime&gt; is a ground-up rewrite of the Droplet Execution Agent (DEA) – a major component of the Cloud Foundry backend responsible for staging 
+and running applications. Rewrites are risky and expensive things, but this one is necessary. The existing DEA codebase has become ossified, and shows the strain of the great complexity it must now deal with. New features are difficult to implement, and existing ones are challenging to maintain.
+ 
+ To be fair, a distributed system of Cloud Foundry’s scope is by nature a complex project. Diego makes it easier for Cloud Foundry developers to reason about the system as a whole, by embracing and codifying this complexity: in Diego, complexity is a first-class citizen.
+ 
+ We trust that our approach will pay dividends down the road, for both Cloud Foundry customers and 
+developers. New features should be easier to implement and Diego itself should be malleable to the point of being readily adaptable to all sorts of new and exciting contexts. Diego is already running on our staging environments and a silent, opt-in-only beta will be out on production in the next few months. At the 2014 Cloud Foundry Summit, I had the opportunity to give a keynote on Diego. I outlined the motivation behind the rewrite, presented some of the issues with the existing codebase, and discussed some of the approaches we&apos;re taking to wrangle complexity and alleviate these issues. You can catch that talk on YouTube &lt;https://www.youtube.com/watch?v=1OkmVTFhfLY&gt;.
+AGILE UPDATE
+ Pivotal Tracker Builds on Great
+ Matt Heidemann, Project Manager, Pivotal Tracker
+&lt;https://plus.google.com/115656820070845341924/posts&gt;
+With more than 40 million project stories and counting, Pivotal Tracker – the leading agile development tool – is partnering more than ever across the company to get even better. Not many competitors have ready access to the world-class software engineers and data scientists that we do, and we’ve taken advantage of both!
+ 
+ In collaboration with Pivotal Labs in San Francisco, we’ve just released a localized version of our Pivotal Tracker iOS app &lt;https://itunes.apple.com/us/app/pivotal-tracker/id444623375?mt=8&gt; in French, German and Japanese. Additionally, we’ve launched features geared towards mobile Product Managers – like Annotations, which allows PMs to markup and annotate &lt;http://www.pivotaltracker.com/community/tracker-blog/ios-2-1-release&gt; 
+screenshots from an iPhone or iPad.
+ 
+ In June, we kicked off the Pivotal Tracker Android project with Toronto Labs and we’re already close to releasing an internal alpha build. If you’re an Android user, we’d love for you to become an alpha/beta tester. Please drop us a line at tracker@pivotallabs.com &lt;mailto:tracker@pivotallabs.com&gt;.
+ 
+ We’re also excited with the exploratory analysis completed by Pivotal Data Labs. The team was quickly able to perform analysis that has never been done before, such as cycle time analysis, creating baselines and organizational cross-project comparisons. This will help guide us in developing powerful new product features and expand on Pivotal’s position as a thought leader when it comes to modern software development. Looking forward to the fruits of collaboration!
+PEOPLE UPDATE
+ Product Marketing Comes Together
+ Todd Paoletti, VP, Product Marketing
+&lt;https://gopivotal-com.socialcast.com/users/942530-toddpaoletti&gt;
+We’ve made big strides since January in our goal to get the Product Marketing team and structure in place.
+ 
+ Rosie Pongracz recently joined us from Salesforce to lead commercial PaaS product marketing, bringing a deep background in 
+application software and PaaS product marketing. With Kamala Dasika as part of her team, they form the Product Marketing core for Pivotal CF &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal-cf/&gt;. App-fabric lead Al Sargent also joins Rosie’s team to boost Pivotal CF services product marketing by bringing application software, mobile and data services into the Pivotal CF tent.
+ 
+ Greg Chase joined us from SAP HANA in early May to lead Greenplum 
+competitive marketing. With Nikesh Shah driving Hadoop, Susheel Kaushik on technical data marketing and Cate Zovod arming the field through business value and vertical positioning, they round out Michael Cucchi’s Data &lt;https://sites.google.com/a/gopivotal.com/inside-pivotal-data-services/&gt; team.
+ 
+ Neela Chaudari, who drove customer marketing for a division of Oracle recently joined Sophia Tseng’s team to accelerate our Customer Marketing 
+initiatives.
+ 
+ 
+ Power trio (from l to r): Rosie, Greg, 
+Neela 
+ 
+Our focus on Pivotal CF and Pivotal Big Data Suite product go-to-market generated phenomenal momentum in the first half of 2014. The immediate focus now is to keep that rolling through:
+
+
+ - Product and situational selling training to boost the Field’s fluency and create both opportunity and movement for Pivotal CF and Pivotal Big Data Suite.
+ - Marketing and thought leadership campaigns and content to arm sales and fortify our unique opportunity and position in Big Data and PaaS.
+ - The launch of new Pivotal CF add-on services and joint bundles/offers with EMC around Business Data Lakes, which will nurture the value we’re creating for customers.
+
+
+
+We have a lot of hard work ahead of us, but we’re right on track!
+MY NAME IS...
+ Caleb Miles
+ Caleb Miles, Software Engineer, Cloud Foundry
+&lt;https://gopivotal-com.socialcast.com/users/1032610-calebmiles&gt;
+Am a Software Engineer working on Cloud Foundry (although I still have no idea how one might “found” a cloud in the first place).
+When not heads-down coding, playing ping-pong in the San Francisco office.
+BOSH, an open source tool that deploys Cloud Foundry, and other distributed software, to your choice of supported cloud infrastructure.
+I like to slowly ride my bike up the rolling concrete hills of San Francisco. When not enjoying that, I’m probably rushing out of the house to try and get to a restaurant for dinner – since everything in this city seems to shutdown at 9:30 pm.
+Is that I spent all of my Vermont state-mandated outdoor time on Lake Champlain drinking beer (as evidenced by the photo below).
+Is a magical place where I somehow get paid for writing open source software.
+
+ 
+Caleb Miles and Lake Champlain cool.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from July 8 through 21:
+ 
+ Donald Addington, Sales Account Manager, Americas West
+ Amey Banarse, Sr. Field Engineer, Americas North
+ Nicole Bronson, Sr. Executive Assistant, San Francisco
+ Benjamin Christel, Software Engineer, Palo Alto
+ Michael Cicciarelli, VP of Training &amp; Productivity, San Francisco
+ Phyllis Davidson, Sr. Director Marketing Programs, San Francisco
+ Simon Elisha, Sr. Manager Field Engineering, Melbourne, Australia
+ Morgan Fine, Software Engineer, San Francisco
+ David Handelman, Sales Account Manager, Americas West
+ Daniel Kennedy, Sr. Field Engineer, Americas West
+ Eric Kramer, Sales Account Manager, Americas West
+ Jeff Littlejohn, Account Manager Alliances, Americas West
+ Adam Lucey, Customer Support Tech 2, Cork, Ireland
+ David 
+Morhovich, Software Engineer, New York
+ Brian Murray, Sr. Director IT Business Consulting, Palo Alto
+ Rushenka Perera, Director of Marketing, Australia
+ Isobel Redelmeier, Software Engineer, San Francisco
+ Ian Redzic, Senior MTS, Palo Alto
+ Jenny Shanshan Hu, 
+Customer Support Tech 2, Shanghai
+ Paul Shea, Associate Financial Analyst, Palo Alto
+ Jason Smith, Technical Writer CF Engineering, San Francisco  
+ Pengzhou Tang, Software Engineer, Beijing
+ Gobhi 
+Theivendran, Software Engineer, Toronto</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

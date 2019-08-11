@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="QuoteRatePlanDiscountHandlerV2">
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="recordError" type="String"/>
+    <aura:attribute name="recordInfo" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="curView" type="String" /> 
+    <aura:attribute name="wraningMsg" type="String" />
+    <aura:attribute name="isError" type="boolean" default="false"/>
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:if isTrue="{!v.isError}" > 
+          <p class="slds-m-around_x-small">{!v.wraningMsg}</p>     
+        <aura:set attribute="else" >
+        	<div class="demo-only" style="height: 6rem;">
+                <div  class="slds-button-group slds-m-top_medium" role="group" style="margin-left:21rem; margin-top:3rem;">
+                Remapping...   
+                <div role="status" class="slds-spinner slds-spinner_medium">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>   
+                    <div class="slds-spinner__dot-b"></div>
+                    <!--<p class="slds-text-body-small" >Remapping... </p> -->
+                </div>
+                
+            </div> 
+            </div>
+        </aura:set>
+        
+    	
+    </aura:if>
+    
+    <force:recordData aura:id="recordLoaderId"
+                        layoutType="FULL"
+                        recordId="{!v.recordId}"
+                        targetRecord="{!v.recordInfo}"                           
+                        targetError="{!v.recordError}"
+                        targetFields="{!v.simpleRecord}"
+                        fields="[Name,Approval__c]"  
+                        recordUpdated="{!c.doInit}"
+                        mode="VIEW"
+                        />
+</aura:component>

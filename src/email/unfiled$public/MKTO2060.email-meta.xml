@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314 - Q115.Austin Reminder - day before</name>
+    <style>none</style>
+    <subject>See you Tomorrow 3/3 at the Pivotal Cloud Platform Workshop</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ Thank you for signing up to attend the Pivotal Cloud Platform Workshop coming up tomorrow in Austin. We look forward to seeing you! 
+
+Please also bring your laptop and power cord to fully participate in this hands-on workshop. A Mac or Linux environment is ideal. For the best workshop experience, please prep your laptop prior to attending following the “Workshop Prerequisites” listed below.
+
+Pivotal Cloud Platform 
+Workshop
+Tuesday, March 3, 2015
+8:00am - 4:00pm (breakfast &amp; lunch provided)
+Workshop Agenda &lt;http://pivotal.io/platform-as-a-service/cloud-platform-roadshow/austin&gt;
+
+Hilton Austin
+500 East 4th Street
+Austin, Texas 78701
+(Meeting 
+Room 408)
+Map and Driving Directions &lt;http://www3.hilton.com/en/hotels/texas/hilton-austin-AUSCVHH/maps-directions/index.html&gt;
+
+Parking Information
+There are several parking lots surrounding the Hilton Austin including the 5th Street Garage located at 601 East 5th Street. Entrance on 5th Street, between Red River and Sabine streets. Parking rates can be found here &lt;http://www.austinconventioncenter.com/directions/directions.htm&gt;.
+
+Self-parking at the hotel is $26 daily. Valet parking at the hotel is $35 daily.
+
+WORKSHOP PREREQUISITES
+All Hands-on Sections
+
+
+ - Git &lt;http://git-scm.com/downloads&gt; (&quot;brew install git&quot;)
+ - A GitHub &lt;https://github.com&gt; account
+ - Your favorite Java editor (Eclipse, IntelliJ IDEA, Netbeans)
+ - The Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli/releases&gt; - download the latest! 
+
+ - A FREE account on Pivotal Web Services - create a 60-day trial with no credit card at 
+https://run.pivotal.io
+
+
+
+QUESTIONS? 
+Contact Paul Santos at 
+psantos@pivotal.io &lt;mailto:psantos@pivotal.io&gt; or via cell at 408-425-9302 &lt;tel:408-425-9302&gt;. 
+
+We look forward to seeing you!
+The Pivotal Team
+
+P.S.- Only a few spots remain! If you have a colleague interested in attending please forward on this link to the workshop details &amp; registration &lt;http://pivotal.io/platform-as-a-service/cloud-platform-roadshow/austin&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

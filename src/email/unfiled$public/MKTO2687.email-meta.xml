@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data_Workshop_Roadshow_2015.Sydney - No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you at the Pivotal Big Data Workshop - Sydney</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We’re sorry you were unable to attend the Pivotal Big Data Roadshow this week in Sydney. The hands-on workshop gave our attendees an opportunity to learn how to transform their data infrastructure with Spring HD, Gemfire, Pivotal HD and Pivotal HAWQ in their environment. 
+
+Although you missed the event, we wanted to make the presentation slides &lt;http://www.slideshare.net/Pivotal/big-data-roadshow&gt; available to you and invite you to read more about the events of the day on our blog &lt;http://blog.pivotal.io/big-data-pivotal/products/pivotal-data-roadshow-a-view-from-the-road&gt;. 
+
+Thank you again for joining us! For upcoming events visit us at  &lt;http://pivotal.io/&gt;http://pivotal.io/news-events &lt;http://pivotal.io/news-events&gt;. We are looking forward to seeing soon! 
+
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

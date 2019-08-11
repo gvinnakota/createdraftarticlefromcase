@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.DC Update Email</name>
+    <style>none</style>
+    <subject>See you next Tuesday at SpringOne Tour DC!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+Thank you for coming out to SpringOne Tour DC today. We wanted to inform you that despite the weather forecast for tomorrow, the event will continue as planned. Doors will open at 8:00am tomorrow morning. 
+
+
+We look forward to seeing you then!
+
+
+Thanks,
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

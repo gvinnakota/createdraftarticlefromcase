@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.London Post Event</name>
+    <style>none</style>
+    <subject>Thanks for attending SpringOne Tour 2019 in London!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+It was great to see you in London at SpringOne Tour. If you want the presentation content you will find it here &lt;[[https://content.pivotal.io/springone-tour-london-2019]]&gt;. If you enjoyed the event you can also schedule an onsite workshop &lt;[[https://pivotal.io/cloud-native-workshop]]&gt; for your organization.
+And be sure to join us this October in Austin, Texas for SpringOne 
+Platform &lt;[[https://springoneplatform.io/]]&gt;, the biggest cloud-native Java conference in the world. Sign up now for a full day of pre-conference training, Spring Professional Certification &lt;[[https://springoneplatform.io/2019/schedule]]&gt; and the opportunity to connect with Spring community leaders. Get $200 off your SpringOne Platform ticket by using the code Attendee_SpringOneTour_200 when you register. 
+We have two education offerings in London this April: PCF Operator &lt;[[https://academy.pivotal.io/confirm-course?courseid=EDU-1128]]&gt; and Pivotal Platform Acceleration Lab for Application Architects &lt;[[https://pivotal.io/platform-acceleration-lab/pal-for-architects-java]]&gt;. For more information, please contact Andrew Jenner (ajenner@pivotal.io &lt;[[mailto:ajenner@pivotal.io]]&gt;) and attendees will be asked to complete a pre-screening form.
+In the meantime, host your Java/Spring app on Pivotal Web Services &lt;[[https://run.pivotal.io/spring/]]&gt; with a $87 trial credit. 
+I hope to see you again soon at a future event &lt;[[https://pivotal.io/events]]&gt;!
+
+Thanks,
+
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,255 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" controller="CreateCaseCtrl" access="global" >   
+  <ltng:require scripts="{!join(',', $Resource.jquery, $Resource.sendsafely)}"  />
+    <aura:attribute name="cUser" type="User" />
+      <aura:attribute name='Account' type='string' />
+      <aura:attribute name='Contact' type='string' />
+      <aura:attribute name='Subject' type='string' />
+      <aura:attribute name='Descr' type='string' />
+      <aura:attribute name='Product' type='string' />
+     <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="showSuccess" type="boolean" default="false"/>
+    <aura:attribute name="cObj" type="case" default="{'sobjectType': 'Case'}"/>
+    <aura:attribute name="origin" type="String" default="caseTab"/> 
+    <!-- Drop Zone Attributes -->
+  <aura:attribute name="widget" type="Object"/>
+    <aura:attribute name="status" type="boolean"/>
+    <aura:attribute name="accsplIds" type="String"/>
+    <!-- Drop Zone Attributes End-->
+    <!--********** Profile Details **********-->
+    <aura:attribute name="cAdmin" type="String" default="{!$Label.c.Pivotal_Community_Manager}"/>
+    <aura:attribute name="pUser" type="String" default="{!$Label.c.	Pivotal_Community_User}"/>
+    <!--********** Profile Details End**********-->     
+  <aura:attribute name="accounts" type="account[]"/>
+  <aura:attribute name="contacts" type="contact[]"/>
+    <aura:attribute name="entitles" type="Entitlement[]"/> 
+    <aura:attribute name="priority" type="String" />
+    <aura:attribute name="depMap" type="map"/>
+    <aura:attribute name="productVersions" type="String[]"/>
+    <aura:attribute name="rComponents" type="String[]"/>
+    <aura:attribute name="rSubComponents" type="String[]"/>
+    <aura:attribute name="WarningMsg" type="string" />
+    <aura:attribute name="showError" type="Boolean" required="false" description="" default="false" access="private"/>
+    <aura:attribute name="errorMessage" type="String" required="false" description="" access="private" default=''/>
+    <aura:attribute name="disableCaseBttn" type="boolean" default="false"/>
+    <aura:attribute name="selectedAccount" type="String" />
+    <aura:attribute name="selectedAccountName" type="String" />
+    <aura:attribute name="selectedEntitlement" type="String" />
+    <aura:attribute name="selectedAccountEntOrgin" type="String" />
+    <aura:attribute name="selectedEntitlementEntOrgin" type="String" />
+    <aura:attribute name="isCaseTab" type="Boolean" default="true" />
+
+    <aura:attribute name="rtype" type="String" default="{!$Label.c.Product_Support}"/>
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+
+    <!-- handlers required for COVEO case deflection form to function -->
+    <aura:handler name="change" value="{!v.cObj.Subject}" action="{!c.caseCreateFieldChange}"/>
+    <aura:handler name="change" value="{!v.cObj.Description}" action="{!c.caseCreateFieldChange}"/>
+    
+    <!-- event to inform COVEO case deflection that subject and/or description has changed -->
+    <aura:registerEvent name="appEvent" type="selfService:caseCreateFieldChange"/>
+    
+   <div style="overflow: hidden;">
+      
+
+<div aria-labelledby="Supportcaseform">
+    
+    <div class="slds-align_absolute-center slds-m-bottom_large" style="height: rem;">
+        <h2 id="header99" class="slds-text-heading--medium">New Case</h2>
+    </div>    
+    
+<form class="slds-form--stacked">       
+
+    <div style="padding-bottom:10px;"> 
+      
+      <aura:if isTrue="{! v.accounts.length > 1}">
+
+        <aura:if isTrue="{! v.isCaseTab }">
+            <label id="lab"><abbr class="slds-required" title="required">*</abbr>Account Name </label>&nbsp;
+            <div> 
+                <!-- <ui:inputSelect aura:id="accountIds" class="slds-input" labelClass="slds-form-element__label" required="true" change="{!c.onChangeOfAccount}">            -->
+                <ui:inputSelect aura:id="accountIds" value="{!v.selectedAccount}" class="slds-input" labelClass="slds-form-element__label" required="true" change="{!c.onChangeOfAccount}">            
+    
+                  <ui:inputSelectOption text="None" label="Please Select"/> 
+                  <aura:iteration items="{!v.accounts}" var="acc">
+                    <ui:inputSelectOption text="{!acc.Id}" label="{!acc.Name}" /> 
+                  </aura:iteration>
+                </ui:inputSelect>                
+            </div>
+   
+           <aura:set attribute="else">
+
+            <label id="lab"><abbr class="slds-required" title="required"></abbr>Account Name </label>&nbsp;
+            <div>
+              <ui:outputText aura:id="accountName" value="{!v.selectedAccountName}"/>
+            </div>
+
+           </aura:set>
+          </aura:if>
+
+        <aura:set attribute="else">
+
+          <label id="lab"><abbr class="slds-required" title="required"></abbr>Account Name </label>&nbsp;
+          <div>
+             <ui:outputText aura:id="accountName" value="{!v.selectedAccountName}"/>
+          </div>
+
+        </aura:set>
+      </aura:if>
+
+
+    </div>
+
+    <div> 
+      <label id="lab"><abbr class="slds-required" title="required"></abbr>Contact Name </label>
+      <aura:if isTrue="{!v.contacts.length > 1}">
+        <div> 
+          <ui:inputSelect aura:id="contactIds" class="slds-input" labelClass="slds-form-element__label" required="true" change="{!c.onValueChange}">            
+              <ui:inputSelectOption text="None" label="Please Select"/> 
+              <aura:iteration items="{!v.contacts}" var="con">
+                <ui:inputSelectOption text="{!con.Id}" label="{!con.Name}" />
+              </aura:iteration>
+          </ui:inputSelect>               
+        </div>
+        <aura:set attribute="else">
+          <div>
+            <ui:outputText aura:id="contactName" value="{!v.contacts[0].Name}" />
+          </div>
+        </aura:set>
+      </aura:if>
+    </div>
+
+   <!-- <div >  
+     <div><label id="lab">Account Name </label> :&nbsp;<ui:outputText value="{!v.cUser.Account.Name}" />    </div>
+      
+    </div> 
+    <div >
+     <div><label id="lab">Contact Name </label> :&nbsp; <ui:outputText value="{!v.cUser.Contact.Name}" />  </div> 
+      
+    </div>-->
+
+    
+
+     <div style="padding-bottom:10px;padding-top:10px;">
+    <div class="slds-border_top" style="border-color:#000000;"></div>
+    <div >
+      <label id="lab"><abbr class="slds-required" title="required">*</abbr><b style="font-size: 0.675rem;">Indicates required field</b></label> 
+     </div>
+
+       <div>
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error slds-hide" role="alert" aura:id="warningId"> 
+           <h2>{!v.WarningMsg}
+           </h2>
+        </div>
+      </div>
+    </div>
+
+      
+            <div class="sfdcpicklists1"  id="pickmain" style="padding-bottom:10px;">
+              <label id="priority"><abbr class="slds-required" title="required">*</abbr>Severity </label>
+              <div >
+                   <ui:inputSelect aura:id="priority" class="slds-select"  change="{!c.onValueChange}"/>
+              </div>
+            </div>
+
+
+          <aura:if isTrue="{!v.entitles.length > 1}">
+
+            <div style="padding-bottom:10px;">
+                <label id="lab"><abbr class="slds-required" title="required">*</abbr>Product Subscription </label>
+                <ui:inputSelect aura:id="entitleIds" value="{!v.selectedEntitlement}"  class="slds-input"
+                            labelClass="slds-form-element__label" disabled="{! empty(v.entitles)}" required="true" change="{!c.onChangeOfEntitlement}" >            
+                    <ui:inputSelectOption text="None" label="Please Select"/>
+                    <aura:iteration items="{!v.entitles}" var="ent">
+                        <ui:inputSelectOption text="{!ent.Id}" label="{!ent.Name}" />
+                    </aura:iteration>
+                </ui:inputSelect>
+           </div>
+           <aura:set attribute="else">
+            <div style="padding-bottom:10px;">
+                <div><label id="lab"><abbr class="slds-required" title="required">*</abbr>Product Subscription</label> </div>
+                <b><ui:inputText aura:id="entitleName" value="No Product Subscriptions to display. Please email support@pivotal.io for help." disabled="true"/></b>
+              </div>
+          </aura:set>
+        </aura:if> 
+      <!--<div class="slds-hide" aura:id="showComponents">-->
+        <aura:if isTrue="{! !empty(v.entitles)}">
+        <div class="slds-hide" aura:id="showVersion" style="padding-bottom:10px;">
+          <label id="lab"><abbr class="slds-required" title="required">*</abbr>Product Version</label>
+            <ui:inputSelect aura:id="ProductVersion" class="slds-input" labelClass="slds-form-element__label" change="c.onValueChange" disabled="{!empty(v.productVersions)}">            
+                  <ui:inputSelectOption text="None" label="Please Select"/>
+                  <aura:iteration items="{!v.productVersions}" var="version">
+                    <ui:inputSelectOption text="{!version}" label="{!version}"  />
+                  </aura:iteration>
+             </ui:inputSelect>
+        </div>  
+         <div class="slds-hide" aura:id="showComponents" style="padding-bottom:10px;">
+           <label id="lab"><abbr class="slds-required" title="required"></abbr>Component</label>
+            <ui:inputSelect aura:id="Components" class="slds-input" labelClass="slds-form-element__label" change="c.onValueChange" disabled="{!empty(v.rComponents)}">            
+              <ui:inputSelectOption text="None" label="Please Select"/>
+              <aura:iteration items="{!v.rComponents}" var="comp">
+                <ui:inputSelectOption text="{!comp}" label="{!comp}"  />
+              </aura:iteration>
+           </ui:inputSelect>
+         </div>
+         <div class="slds-hide" aura:id="showSubComponent" style="padding-bottom:10px;">
+          <label id="lab">Sub-Component</label>
+          <ui:inputSelect aura:id="subComponents" class="slds-input" labelClass="slds-form-element__label" change="c.onValueChange" disabled="{!empty(v.rSubComponents)}">            
+            <ui:inputSelectOption text="None" label="Please Select"/>
+            <aura:iteration items="{!v.rSubComponents}" var="subComp">
+              <ui:inputSelectOption text="{!subComp}" label="{!subComp}"  />
+            </aura:iteration>
+          </ui:inputSelect>
+         </div>
+      </aura:if> 
+    <!--</div>-->
+      
+      
+      <div class="sfdcpicklists1"  id="pickmain" style="padding-bottom:10px;" >
+            <label id="lab"><abbr class="slds-required" title="required">*</abbr>Environment</label>
+            <div >
+                 <ui:inputSelect aura:id="environ" class="slds-select"  change="{!c.onValueChange}"/>
+            </div>
+        </div>
+    
+        <div class="sfdcpicklists2"  id="pickmain2" style="padding-bottom:10px;" >
+          <label id="lab"><abbr class="slds-required" title="required">*</abbr>What action were you performing relative to this request?</label>
+          <div >
+         <ui:inputSelect aura:id="perform" class="slds-select"  change="{!c.onValueChange}"/>
+      </div>
+    </div>
+
+    <div style="padding-bottom:10px;" >
+      <label id="lab"><abbr class="slds-required" title="required">*</abbr>Subject</label>
+      <ui:inputText class="form-control" value="{!v.cObj.Subject}" updateOn="keyup" required="true"/>
+        </div>
+    <div>
+      <label id="lab"><abbr class="slds-required" title="required">*</abbr>Description</label>
+      <br/>
+      <label id="lab"><abbr></abbr><b style="font-size: 0.675rem;">Tip: if you are reporting an issue, the following information may expedite troubleshooting by Pivotal's support engineers: any potentially relevant error codes, statuses, messages, and how you became aware of this issue.</b></label> 
+      <ui:inputTextArea class="form-control" updateOn="keyup" value="{!v.cObj.Description}" />
+    </div>
+    
+    <div  class ="senddiv" id="dropzone-replacement-div"></div>
+
+        <aura:if isTrue="{!v.showError}">
+      <div id="error">
+          <ui:outputRichText value="{!v.errorMessage}"/>
+      </div>
+    </aura:if>
+
+    <!--><lightning:button class="buttonStyle" disabled="{!v.disableCaseBttn}" aura:id="Save"  label="Submit" onclick="{!c.createCase}" /> -->
+
+  
+    <div> <lightning:button class="buttonStyle" aura:id="Save"  disabled="{!v.disableCaseBttn}" label="Submit" onclick="{!c.createCase}" /> 
+     <lightning:button aura:id="cancel"  label="Cancel" onclick="{!c.cancelCase}" /> 
+     </div>
+
+    
+ </form>
+       
+         </div>
+  </div>
+        
+       
+</aura:component>

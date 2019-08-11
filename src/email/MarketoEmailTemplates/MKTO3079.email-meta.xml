@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 9 - October 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - October 2015</subject>
+    <textOnly>October is a month of tricks or treats here in the U.S. with Halloween a big event for kids of all ages. So in recognition, this issue will bring more treats than tricks with spooky actions at a distance. The most important new treat is that PWS is moving to the new Diego application runtime environment and depending on your application there may be steps you need to take. Next we’ll cover news of our new Beta Autoscaler which we are introducing in our marketplace. The autoscaler will increase and decrease your instance count based on some set parameters. Similarly, we’ll talk about use cases for the Marketplace partner Iron.io’s “Iron Scheduler” for your applications.
+
+As always, let us know your thoughts about how to make 
+Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws. 
+ 
+ PWS moving to the Diego Application Runtime Environment
+ PWS now supports Cloud Foundry’s new application runtime known 
+as Diego. Developers are encouraged to migrate their applications before PWS removes support for the legacy components Diego is replacing. If you do not migrate in advance of November 2, 2015, your application will be migrated automatically and your app may experience downtime. More information about Diego and the migration progress can be found in this knowledge base article &lt;http://support.run.pivotal.io/entries/105844873-Migrating-Applications-from-DEAs-to-Diego&gt;. If you have any questions, please contact support@run.pivotal.io
+ 
+ Introducing 
+Pivotal AppScaler Beta
+ One of the benefits of PWS and Pivotal Cloud Foundry is the ability to easily scale up and down the number of instances of your applications with a simple command, ‘cf scale’. This allows one to adjust to increases in traffic or special events easily. In the past this was done manually using the command line, or writing a custom script to scale as needed. What if this could be done automatically and when needed. To this end,  PWS is introducing the free Pivotal AppScaler to the marketplace. Pivotal AppScaler allows you to select CPU thresholds to scale up and down your application to set levels. In addition, you can schedule the periods during the week which your scaling will occur. Note this is a beta feature and support is only available on a best effort basis. If you find your application experiences variable traffic patterns, be sure to try the Pivotal AppScaler &lt;https://console.run.pivotal.io/marketplace/app-autoscaler&gt;. 
+
+ 
+Iron.io IronWorker
+ Applications are easy to deploy and scale on PWS. However, there are times when building cloud native applications when you want to offload specific jobs to the background or set jobs to run on a regular occurring schedule. The management of these asynchronous workloads effectively can present challenges as they follow a different lifecycle than those of the core application. Traditionally,  Cron has been the utilized for for scheduling specific processes, but this does not make sense in a Cloud Native environment since cron runs in a machine context instead of an application context. It is also limited in that it still requires a fair amount of tooling, and does not provide transparency.
+ 
+ Pivotal Marketplace partner Iron.io &lt;http://www.iron.io&gt; provides its IronWorker service to perform and manage these asynchronous workloads. IronWorker advertises an easy to use job scheduling API along with a processing environment that covers the entire lifecycle of the offloaded job. Developers build jobs as Docker images, upload to Iron.io, schedule via API or dashboard, and IronWorker will handle the execute the jobs when they’re supposed to.
+ 
+ When the work is 
+completed. IronWorker notifies your application of the state of completion.This happens in parallel, letting your main application handle its primary tasks. This functional separation and scaling is a property that microservices architected applications can utilize. Pivotal’s Matt Stine has written an ebook &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook&gt; on how to migrate your existing application to the functionally scaled 
+microservices approach. 
+ 
+ IronWorker can handle scheduled tasks, burst tasks such as image processing, notifications and batch processing on demand are among the use cases that are enabled. To find out more visit IronWorker in the Marketplace &lt;https://console.run.pivotal.io/marketplace/ironworker&gt; or check out the tutorial in the documentation. &lt;http://docs.run.pivotal.io/marketplace/services/ironworker.html&gt;
+ 
+Best Regards,
+ 
+ The Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

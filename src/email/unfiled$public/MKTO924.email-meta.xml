@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.July Newsletter 3-Webinar</name>
+    <style>none</style>
+    <subject>Tickets will run out for SpringOne2GX 2014 – Register now</subject>
+    <textOnly>JULY 2014
+&lt;http://www.springone2gx.com&gt;
+Tickets will run out for SpringOne2GX 2014 – Register now!
+SpringOne2GX is where the cutting edge Java developers are. Join us at the conference to learn about Pivotal&apos;s vision for micro service architecture, Big Data, Cloud, and all things Spring, Groovy, Grails. Whether you&apos;re building and running mission-critical business applications, designing the next killer cloud or big data application, SpringOne 2GX will help you learn alongside the leaders of the enterprise Java community. Immersion training &lt;http://springone2gx.com/training&gt; for Hadoop and Cloud Foundry is being offered this year before the show at never before seen prices, and space is limited.
+Register Now &lt;https://2014.event.springone2gx.com/register&gt;
+Spring Boot Properties = Awesome
+By now, most people know that the Environment object (which you can inject with autowiring or have provided through the EnvironmentAware callback) provides convenient access to properties (like crm.node.name=crm1) in the configuredPropertySource chain. You can contribute to that chain explicitly or by using the @PropertySource annotation.
+
+Spring Boot takes property management to a whole new level. It looks for properties in src/main/resources/application.properties by default (or in application.yml, but that&apos;s a whole other story...). The SpringApplicationBuilder#properties(Map p) builder method makes it easy to contribute property definitions. Spring Boot will automatically make environment variables, java -D arguments and application arguments available as well. It can even fuzzily read well-known variations (--crm_node_name=crm1, --crmNodeName=crm1, --CRM_NODE_NAME=crm1, etc.) with the RelaxedPropertyResolver:
+
+@Autowired public void setEnvironment(Environment environment) { PropertyResolver e = new RelaxedPropertyResolver(environment); logger.info(&quot;relaxed crm.node.name=&quot; + e.getProperty(&quot;crm.node.name&quot;)); }
+
+Many of Spring Boot&apos;s great features can be configured using property values. If you have the spring-boot-starter-actuator module on the CLASSPATH in a web application, then simply check out http://127.0.0.1:8080/configprops to see those that apply.
+
+Spring Boot can also easily bind the properties to a POJO, and do type conversion where appropriate, with 
+the @EnableConfigurationProperties annotation and the @ConfigurationProperties annotation. Here, all properties (be they from a property file, a command line argument, a system property, etc) that start with crm.node. will be mapped to the CrmProperties type below.
+
+... @Configuration @ComponentScan @EnableAutoConfiguration @EnableConfigurationProperties(value = CrmProperties.class) public class Application {
+
+@Autowired
+public void setCrmProperties(CrmProperties properties) { System.out.println(&quot;crmProperties=&quot; + properties.toString()); 
+
+}
+
+public static void main(String[] args) { SpringApplication.run(Application.class, args); 
+}
+
+}
+
+@ConfigurationProperties(&quot;crm.node&quot;) class CrmProperties { private String name; private boolean enabled;
+
+public void setName(String name) 
+{ // ... 
+public void setEnabled(boolean x) { // ...
+public String toString(){ // ...
+
+}
+
+Java8 in STS: Convert to Lambda
+Spring Tool Suite / Groovy Grails Tools Suite 3.5.1 and beyond comes with support for Java8 out-of-the-box. That includes, of course, tooling for lambda expressions, the most famous new feature of Java8. Beyond just writing and compiling code that contains lambda expressions, a nice new feature of the Java8 tooling of Eclipse (which is included in STS) allows you to refactor anonymous inner classes into lambda expressions automatically:
+
+And if you don&apos;t want to manually refactor all your code to use lambda expressions where possible, you can configure the source code cleanup operation and do a bulk-update to your projects:
+Conquering Content-enabled Web and Mobile Applications with Spring and Groovy
+Speaker: Russ Danner, Crafter Software
+
+Rich media and digital content are an integral part of nearly all Web and mobile applications today, but the growing number of platforms, changing business demands and time to market are a major concern. Join this session to learn modern practices for building content-enabled Web and mobile apps.
+
+We will uncover common challenges faced by content and application teams, explain how these problems are solved by simple, powerful tools and the right architecture. We&apos;ll also demonstrate how leading organizations such as AT&amp;T, Marriott, and Harvard Business Publishing have succeeded by leveraging Spring Framework, Groovy and other leading Java development technologies along with content management frameworks to build and manage content rich applications.
+Europe
+Tuesday, July 29, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_ConqueringContentwithSpringandGroovy7AM_Register.html&gt;
+North America
+Tuesday, July 29, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_ConqueringContentwithSpringandGroovy10AM_Register.html&gt;
+Microservices with Spring Boot
+Speaker: Josh Long
+
+Microservices? A thing? Or hype? What does it mean in practice? The answer, like so many Facebook statuses, is complicated. In broad strokes, Microservices offer a refreshed approach to application architecture. Microservices are a new way to describe many of the patterns that have fallen out of large-scale applications in practice over the recent years. There is no doubt that the approach works.
+
+The question is: how does one build a microservice architecture? Join Josh Long for this webinar introducing Spring&apos;s support for building microservice architectures.
+Europe
+Tuesday, September 16
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_MicroserviceswithSpringBoot-JoshLong7AM_Register.html&gt;
+North America
+Tuesday, September 16
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_MicroserviceswithSpringBoot10AM_Register.html&gt;
+Process Driven Spring Applications with Activiti
+Speakers: Josh Long and Joram Barrez, Activiti
+
+Today&apos;s applications are complex, distributed systems that - taken together - produce results. Tracking the flow of work through that system, however, becomes increasingly more painful as automated- and human-driven tasks are integrated into business processes. Business can&apos;t react to what it can&apos;t see. Business can&apos;t measure what it can&apos;t see. &quot;Workflow&quot; describes the sequence of processes through which a piece of work passes from initiation to completion. Workflow systems, like Activiti, describe and then execute these processes. Activiti is an open-source, Apache 2-licensed workflow engine that works with Spring and Spring Boot.
+
+In this webinar, join Spring Developer Advocate Josh Long and Activiti-ninja Joram Barrez for a look at how to distill, describe and reuse complex business processes using Spring (and Spring Boot) and Activiti.
+Europe
+Tuesday, September 23
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_ProcessDrivenSpringAppsActiviti7AM_Register.html&gt;
+North America
+Tuesday, September 23
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_ProcessDrivenSpringAppsActiviti10AM_Register.html&gt;
+Spring Integration done Booti-fully
+Utilizing Spring Boot and Spring Integration you will see how to create an application with a scheduler that will retrieve data from a web service, cleanse and emit the data via MQTT. Then you&apos;ll see how to create an application, also written using Spring Boot and Spring Integration, that will capture the MQTT events and record the results.
+Watch Video &lt;http://spring.io/blog/2014/06/23/webinar-replay-spring-integration-done-booti-fully&gt;
+Archived videos
+ Webinar Replay: Building a Shopping 
+Cart in 24 Hours using Spring
+ Webinar Replay: Building your app 
+management tools with Spring Boot
+ Webinar Replay: Spring Batch 3.0.0 &lt;http://spring.io/blog/2014/06/19/webinar-replay-spring-batch-3-0-0&gt;
+ SpringOne2GX 2013 Replay: Open/Closed Software – 
+Developing freemium application using Spring Framework
+ SpringOne2GX 2013 Replay: Integrating Splunk into your Spring Applications &lt;http://spring.io/blog/2014/06/17/springone2gx-2013-replay-integrating-splunk-into-your-spring-applications&gt;
+ SpringOne2GX 2013 Replay: Real Time Event Processing and Decision Making &lt;http://spring.io/blog/2014/06/24/springone2gx-2013-replay-real-time-event-processing-and-decision-making&gt;
+ SpringOne2GX 2013 Replay: Performance – tuning the Spring Petclinic sample application &lt;http://spring.io/blog/2014/07/03/springone2gx-2013-replay-performance-tuning-the-spring-petclinic-sample-application&gt;
+ SpringOne2GX 2013 Replay: Tooling for Spring’s next generation &lt;http://spring.io/blog/2014/07/03/springone2gx-2013-replay-tooling-for-spring-s-next-generation&gt;
+Building a Hypermedia-Driven RESTful Web Service
+This guide walks you through the process of creating a &quot;hello world&quot; Hypermedia Driven REST web service with Spring. You&apos;ll build a hypermedia-driven REST service with Spring HATEOAS, a library of APIs that you can use to easily create links pointing to Spring MVC controllers, build up resource representations, and control how they&apos;re rendered into supported hypermedia formats such as HAL.
+View Guide &lt;http://spring.io/guides/gs/rest-hateoas/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+
+
+http://spring.io/guides
+
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring for Apache Hadoop 2.0 &lt;http://spring.io/blog/2014/06/11/spring-for-apache-hadoop-2-0-is-now-ga&gt;
+ Final Service Release for Spring Data Release Train Codd Available &lt;http://spring.io/blog/2014/06/18/final-service-release-for-spring-data-release-train-codd-available&gt;
+ Retiring the forum.spring.io website &lt;http://spring.io/blog/2014/06/18/retiring-the-forum-spring-io-website&gt;
+ Spring Integration Java DSL Milestone 2 &lt;http://spring.io/blog/2014/06/18/spring-integration-java-dsl-milestone-2-released&gt;
+ Spring Boot 1.1.2.RELEASE &lt;http://spring.io/blog/2014/06/24/spring-boot-1-1-2-release-available-now&gt;
+ Spring IO Platform 1.0.0 &lt;http://spring.io/blog/2014/06/26/spring-io-platform-1-0-0-released&gt;
+ Spring Boot 1.1.3 &lt;http://spring.io/blog/2014/06/27/spring-boot-1-1-3-available-now&gt;
+ Spring 
+Data Dijkstra SR1
+ Spring Social Facebook 2.0.0.M1 &lt;http://spring.io/blog/2014/07/03/spring-social-facebook-2-0-0-m1-released&gt;
+ Spring Framework 4.0.6 &lt;http://spring.io/blog/2014/07/08/spring-framework-4-0-6-released&gt;
+ Spring for Apache Hadoop 2.0.1 &lt;http://spring.io/blog/2014/07/08/spring-for-apache-hadoop-2-0-1-released&gt;
+ Spring Boot 1.1.4 &lt;http://spring.io/blog/2014/07/08/spring-boot-1-1-4-released&gt;
+ Spring IO 
+Platform 1.0.1
+ Spring Session 1.0.0.M1 &lt;http://spring.io/blog/2014/07/08/spring-session-1-0-0-m1-released&gt;
+ Spring Batch Releases and a new Repository &lt;http://spring.io/blog/2014/07/10/spring-batch-releases-and-a-new-repository&gt;
+ First Milestone of Spring Data Release Train Evans  &lt;http://spring.io/blog/2014/07/10/first-milestone-of-spring-data-release-train-evans-available&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.0 &lt;http://spring.io/blog/2014/07/11/spring-tool-suite-and-groovy-grails-tool-suite-3-6-0-released&gt;
+text search your Documents with Spring Data MongoDB &lt;http://spring.io/blog/2014/07/17/text-search-your-documents-with-spring-data-mongodb&gt;
+ SpEL support in Spring Data JPA Query definitions &lt;http://spring.io/blog/2014/07/15/spel-support-in-spring-data-jpa-query-definitions&gt;
+ Spring Data REST now comes with ALPS metadata &lt;http://spring.io/blog/2014/07/14/spring-data-rest-now-comes-with-alps-metadata&gt;
+ Further Cache Improvements in Spring 4.1 &lt;http://spring.io/blog/2014/06/16/further-cache-improvements-in-spring-4-1&gt;
+ Introducing the Spring IO Platform &lt;http://spring.io/blog/2014/06/26/introducing-the-spring-io-platform&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

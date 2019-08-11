@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Money 20/20_Q415.Follow Up</name>
+    <style>none</style>
+    <subject>It was great meeting you at Money20/20 in Las Vegas.</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Whether you joined us at the Hackathon, met us 1 on 1, or visited the Pivotal Kiosk, we were glad to meet you in person!  Below is some information we gathered that we thought would be of interest to you.
+ 
+
+
+ - Datasheet: Pivotal Cloud Foundry- &lt;http://pivotal.io/platform/datasheet/pivotal-cloud-foundry-the-leading-enterprise-paas-powered-by-cloud-foundry&gt; Cloud Native at Your Service
+ - News: First Data and Pivotal collaborate to enable developers to quickly integrate payments across eCommerce and Mobile &lt;https://www.firstdata.com/en_us/about-first-data/media/press-releases/09_23_15.html&gt;
+ - Learn How Your Enterprise Can Become Cloud Native &lt;http://pivotal.io/cloud-native&gt;
+ - Read more about how Digital Solutions can transform your industry &lt;http://pivotal.io/industries/&gt;
+
+
+
+To schedule a demo or speak with a Pivotal expert, contact
+ Nick DiRubio
+
+We look forward to conversing with you soon!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#FFFFFF</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#FFFFFF</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <description>Pivotal Data Services Race to $10M Contest - 1H 2016
+Eligible Services: PDE &amp; Data Science Services
+Top Teams from Americas AO, Americas AE, EMEA &amp; APJ will receive $10,000 each to spend at your discretion</description>
+    <isGridLayout>false</isGridLayout>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Excludes Forecast Status of Pipeline, Upside and Lost OR TAM/DSE Services</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>PDE_Dashboard_Reports/PDE_Pipeline_AMER</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>FY16 1H AMER Data Opptys Open/Closed</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Excludes Forecast Status of Pipeline, Upside and Lost OR TAM/DSE Services</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>PDE_Dashboard_Reports/PDE_Pipeline_EMEA</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>FY16 1H EMEA Data Opptys Open/Closed</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Excludes Forecast Status of Pipeline, Upside and Lost OR TAM/DSE Services</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>PDE_Dashboard_Reports/PDE_Pipeline_APJ</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>FY16 1H APJ Data Opptys Open/Closed</title>
+            <useReportChart>true</useReportChart>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>TOTAL_PRICE.CONVERT</column>
+            </chartSummary>
+            <componentType>BarStacked</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Excludes Forecast Status of Pipeline, Upside and Lost OR TAM/DSE Services</footer>
+            <groupingColumn>FULL_NAME</groupingColumn>
+            <groupingColumn>OpportunityLineItem.Product_Portfolio__c</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>PDE_Dashboard_Reports/PDE_Pipeline_AMER_Product_Portfolio</report>
+            <showPercentage>false</showPercentage>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>FY16 1H AMER Data Opptys by Portfolio</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Excludes Forecast Status of Pipeline, Upside and Lost OR TAM/DSE Services</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>PDE_Dashboard_Reports/PDE_Pipeline_EMEA_Product_Portfolio</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>FY16 1H EMEA Data Opptys by Portfolio</title>
+            <useReportChart>true</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>true</enableHover>
+            <expandOthers>false</expandOthers>
+            <footer>Excludes Forecast Status of Pipeline, Upside and Lost OR TAM/DSE Services</footer>
+            <legendPosition>Bottom</legendPosition>
+            <report>PDE_Dashboard_Reports/PDE_Pipeline_APJ_Product_Portfolio</report>
+            <showPercentage>false</showPercentage>
+            <showPicturesOnCharts>false</showPicturesOnCharts>
+            <showValues>false</showValues>
+            <sortBy>RowValueDescending</sortBy>
+            <title>FY16 1H APJ Data Opptys by Portfolio</title>
+            <useReportChart>true</useReportChart>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Medium</columnSize>
+    </rightSection>
+    <runningUser>kasmith@pivotal.io</runningUser>
+    <textColor>#000000</textColor>
+    <title>Pivotal Data Services Race to $10M</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>12</titleSize>
+</Dashboard>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_UK_Office_Opening_Q114.Confirmation - VIP</name>
+    <style>none</style>
+    <subject>RSVP Confirmation Pivotal UK Office Opening</subject>
+    <textOnly>{{lead.First Name:default=Thanks}},
+ 
+Thank-you for RSVP&apos;ing to the Pivotal UK Office Opening Party. Details can be found below, we hope to see you there:
+ 
+ 
+Date: Wednesday, March 5th, 2014
+ 
+What: VIP Reception at Pivotal Office
+Time: 5:00pm - 6:00pm
+Location: Pivotal UK
+Address: 168-172 Old Street, EC1V 9BP
+ 
+followed by:
+ 
+What: Launch Party at McQueen
+Time: 6:30pm - 9:30pm
+Location: McQueen &lt;http://www.mcqueen-shoreditch.co.uk/&gt;
+Address: 55-61 Tabernacle Street, EC2A 4AA
+ 
+Please email us at ateslia@gopivotal.com &lt;mailto:ateslia@gopivotal.com&gt; if you have any questions.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

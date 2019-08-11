@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.Newsletter January 2014</name>
+    <style>none</style>
+    <subject>Spring News: Introducing Spring Security 3.2</subject>
+    <textOnly>JANUARY 2014
+&lt;https://spring.io/blog/2013/12/16/spring-security-3-2-0-release-released&gt;
+Introducing Spring Security 3.2
+Spring Security has evolved for over ten years to protect against the latest security threats. The latest release of Spring Security 3.2 is no exception bringing: CSRF protection, Clickjacking protection, Java Configuration support, optional Spring MVC integration, Servlet 3 and Servlet 3.1 integration and concurrency support. To learn more take a look at What’s new in Spring Security 3.2 &lt;http://docs.spring.io/spring-security/site/docs/3.2.x/reference/htmlsingle/&gt; and the new guides &lt;http://docs.spring.io/spring-security/site/docs/3.2.x/guides/&gt;. Also stay tuned to http://spring.io/videos &lt;http://spring.io/videos&gt; to see the Spring Security 3.2 
+Webinar replay.
+Learn More &lt;http://projects.spring.io/spring-security/&gt;
+Improved Generics-Aware Dependency Injection in Spring Framework 4
+Spring 4 is out and without come a bevy of great new features. One such feature is generics-aware dependency injection, which Phil Webb elaborates on in this great blog post. The main takeaway is that you can disambiguate types by their generic component for dependency resolution. Thus: 
+
+@Autowired 
+
+ public void setFeedService(FeedService&lt;AtomEntry&gt; atomFeedService){
+
+ ...
+
+
+Is distinct from:
+
+@Autowired
+
+ public void setFeedService(FeedService&lt;RssEntry&gt; rssFeedService){
+
+ ...
+Optimize your JVM settings for Spring Tool Suite
+We ship the Spring Tool Suite with settings that provide a good starting point for all our users. That might work for everybody, but might not provide the best setting for each situation. The good news is: you can change those settings yourself. Take a look at the sts.ini file. It is located alongside the executable (on OSX you need to take a look inside the STS.app package under Contents/MacOS).
+
+The file contains a number of settings for STS and Eclipse in general, but it lists the JVM options at the end - one setting per line. There you can add your own settings or change existing ones. A more comprehensive discussion about which settings to choose can be found in our forum here. Don’t forget to save a backup of that file - just in case something goes wrong... :-)
+Intro to Apache Tomcat 8
+Speakers: Daniel Mikusa and Stuart Williams
+
+Apache Tomcat 8 implements new versions of the Servlet, JSP and EL specifications as well as adding support for the new WebSocket specification. Work has also been completed on internal refactoring in a number of areas that will impact a number of Tomcat specific features.
+
+This presentation will provide an overview of the changes and new features introduced by both the updated specifications and the Tomcat specific changes. This session will enable attendees to identify the Tomcat 8 features of greatest interest to them and provide them with the information required to start planning their migration to Tomcat 8.
+EUROPE
+Tuesday, February 11
+ 3:00pm GMT Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_IntrotoApacheTomcat87AM_Register.html&gt;
+NORTH AMERICA
+Tuesday, February 11
+ 10:00am PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_IntrotoApacheTomcat810AM_Register.html&gt;
+Spring Data Repositories – Best Practices
+Speakers: Oliver Gierke and Thomas Darimont
+
+The repository abstraction layer is one of the core pieces of the Spring Data projects. It provides a consistent, interface-based programming model to allow implementing data access layers easily for relational and NoSQL databases.
+
+We will have a look at the lessons learned from the application of it in various customer projects and summarize best practices for you to apply in your projects. The session will also discuss advanced features like the Querydsl integration, the integration of custom implementation code as well as hooks into Spring MVC and Spring HATEOAS.
+
+ 
+
+More Upcoming Events:
+
+Webinar on January 30th, 2014 at 3pm CEST on best practices when using Spring and Vaadin, Register for this Vaadin webinar now at https://t.co/vn7kP0wRxE &lt;https://t.co/vn7kP0wRxE&gt;.
+EUROPE
+Tuesday, February 18
+ 3:00pm GMT Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringDataRepositories7AM_Register.html&gt;
+NORTH AMERICA
+Tuesday, February 18
+ 10:00am PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringDataRepositories10AM_Register.html&gt;
+Build a robust REST-ful Web Service in less than 6 minutes  &lt;http://spring.io/blog/2013/12/10/build-a-robust-rest-ful-web-service-in-less-than-6-minutes&gt;
+ Build a Hello World REST service in less than 6 minutes  &lt;http://spring.io/blog/2013/12/10/build-a-hello-world-rest-service-in-less-than-6-minutes&gt;
+Archived videos
+SpringOne2GX 2013 Replay: REST-ful API Evolution &lt;https://spring.io/blog/2014/01/14/springone2gx-2013-replay-rest-ful-api-evolution&gt;
+ SpringOne2GX 2013 Replay: Integrating Spring Batch and Spring Integration &lt;http://spring.io/blog/2014/01/14/springone2gx-2013-replay-integrating-spring-batch-and-spring-integration&gt;
+ SpringOne2GX 2013 Replay: Building Your Java Configuration Muscle Memory &lt;http://spring.io/blog/2013/12/13/springone2gx-2013-replay-building-your-java-configuration-muscle-memory&gt;
+ SpringOne2GX 2013 replay: Data Modeling and Identity Management with OAuth2  &lt;http://spring.io/blog/2014/01/08/springone2gx-2013-replay-data-modelling-and-identity-management-with-oauth2&gt;
+ 
+SpringOne2GX 2013 replay: Spring RESTBucks – A hypermedia-driven REST webservice &lt;http://spring.io/blog/2014/01/08/springone2gx-2013-replay-spring-restbucks-a-hypermedia-driven-rest-webservice&gt; 
+ Webinar Replay: Reactor goes GA &lt;http://spring.io/blog/2013/12/17/webinar-replay-reactor-goes-ga&gt; 
+ Webinar Replay: Spring with Immutability &lt;http://spring.io/blog/2014/01/14/webinar-replay-spring-with-immutability&gt;
+
+Featured Guide:
+
+ &lt;http://spring.io/blog/2014/01/14/webinar-replay-spring-with-immutability&gt;
+
+ &lt;http://spring.io/blog/2014/01/14/webinar-replay-spring-with-immutability&gt;Securing Web Applications with Spring Security &lt;http://spring.io/guides/gs/securing-web/&gt;
+
+Whatever you&apos;re building - these 15-30 minute guides are designed to get you productive as quickly as possible, using the latest Spring project releases and techniques as recommended by the Spring team. http://spring.io/guides &lt;http://spring.io/guides&gt;.  
+
+If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor&apos;s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring XD 1.0.0M5 now available  &lt;http://spring.io/blog/2014/01/10/spring-xd-1-0-0-m5-released&gt;
+ Spring Integration 3.0 now available  &lt;http://spring.io/blog/2013/12/16/spring-integration-3-0-release-is-now-available&gt;
+ Spring Integration 4.0 Milestone 2  &lt;http://spring.io/blog/2013/12/18/spring-integration-4-0-milestone-2-is-now-available&gt;
+ Spring Security 3.2.0.RELEASE &lt;http://spring.io/blog/2013/12/16/spring-security-3-2-0-release-released&gt;
+ Spring LDAP 2.0.0 GA now available  &lt;http://spring.io/blog/2014/01/13/spring-ldap-2-0-0-release-released&gt;
+ Spring AMQP 1.3.0M1 and 1.2.1 releases now available  &lt;http://spring.io/blog/2014/01/13/spring-amqp-1-3-0-m1-and-1-2-1-release-available&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.5.0.M1  &lt;http://spring.io/blog/2013/12/12/spring-tool-suite-and-groovy-grails-tool-suite-3-5-0-m1-released&gt;
+ Spring Data Release Train Babbage – SR2 &lt;http://spring.io/blog/2013/12/12/spring-data-release-train-babbage-sr2-released&gt;
+Getting Started with Client-Side Development in Spring  &lt;http://spring.io/blog/2013/12/17/getting-started-with-client-side-development-in-spring&gt;
+ 
+Serving Static Web Content with Spring Boot  &lt;http://spring.io/blog/2013/12/19/serving-static-web-content-with-spring-boot&gt;
+ 
+What’s new I Spring Data MongoDB 1.4 M1 &lt;http://spring.io/blog/2013/12/04/what-s-new-in-spring-data-mongodb-1-4-m1&gt;
+ 
+Utilizing WebJars in Spring Boot  &lt;http://spring.io/blog/2014/01/03/utilizing-webjars-in-spring-boot&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

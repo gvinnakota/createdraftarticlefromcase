@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring by Pivotal</title>
+
+<style type="text/css">
+
+    body {margin:0; padding:0; background-color:#F1F1F1; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:14px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; width:100% !important;}
+    a, a:link, a:visited {color:#5FA134; text-decoration:underline;}
+    a:hover, a:active {text-decoration:none; color:#5FA134 !important;}
+    h1, h2, h3 {color:#333333 !important; padding:0px 0px 10px 0px; margin:0px 0px 10px 0px;}
+    p {margin:0 0 14px 0; padding:0;}
+    img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+    a img {border:none;}
+    table td {border-collapse:collapse;}
+    .highlighted {color:#5FA134;}
+
+    /**
+    * @tab Mobile Styles
+    * @section body image
+    * @tip Make the main body image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
+    */
+    #bodyImage{height:auto !important; /*@editable*/ max-width:560px !important; /*@editable*/ width:100% !important;}
+    
+    /* Clients specific styles */
+    .ReadMsgBody {width: 100%;}
+    .ExternalClass {width: 100%;}
+    .yshortcuts {color: #333333;}
+    .yshortcuts a span {color: #333333; border-bottom: none !important; background: none !important; text-decoration:none !important;}
+    /* / Clients specific styles */
+    
+    /* Media queries */
+    @media only screen and (max-width: 640px) {
+        table[class=row] {width:580px !important;}
+        img[class=wideImage], img[class=banner] {width:100% !important; height:auto !important; max-width:100%;}
+    }
+    @media only screen and (max-width: 610px) {
+        table[class=row] {width:570px !important;}
+        td[class=container] {padding:0px !important;}
+    }
+    @media only screen and (max-width: 540px) {
+        table[class=row] {width:510px !important;}
+        td[class=oneFromFour] {font-size:14px !important; line-height:15pt !important;}
+    }
+    @media only screen and (max-width: 480px) {
+        table[class=row] {width:450px !important;}
+        td[class=oneFromTwo], td[class=twoColumns] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=column] {display:block; width:390px !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=website] {display:block; width:390px !important; padding:15px 20px 15px 20px !important; text-align:center;}
+        td[class=socialIcons] {display:block; width:390px !important; padding:0px 20px 15px 20px !important; text-align:center !important;}
+        img[class=phoneIcon] {display:none !important;}
+        img[class=wideImage] {width:auto !important;}
+        table[class=quoteContainer] {width:190px !important;}
+    }
+    @media only screen and (max-width: 360px) {
+        table[class=row] {width:340px !important;}
+        td[class=column], td[class=website], td[class=socialIcons] {width:280px !important;}
+        td[class=logo] {display:block; width:280px !important; padding-bottom:0 !important; padding-right:20px !important; padding-left:20px !important;}
+        td[class=phone] {display:block; width:280px !important; padding:9px 20px 13px 20px !important; text-align:left !important; background-color:#EBF1E7;}
+        td[class=month] {display:block; width:280px !important; padding:8px 20px 8px 20px !important; text-align:left !important; /*border-top:1px solid #FFFFFF;*/}
+        td[class=icon] {padding-top:10px !important; padding-bottom:10px !important;}
+        table[class=quoteContainer] {width:140px !important;}
+        table[class=quoteContainer] td {font-size:12px !important; line-height:15pt !important;}
+        td[class=footer] {padding:0px 0px 25px 0px !important; text-align:left !important;}
+    }
+    @media only screen and (max-width: 320px) {
+        table[class=row] {width:300px !important;}
+        td[class=column], td[class=website], td[class=socialIcons], td[class=logo], td[class=phone], td[class=phone2] {width:240px !important;}
+        table[class=quoteContainer] {width:100% !important; border-bottom:1px solid #EEEEEE; margin-bottom:20px;}
+        table[class=quoteContainer] td {padding-left:0px !important;}
+        td[class=quoteAuthor] {padding-bottom:20px !important;}
+    }
+    @media only screen and (max-width: 240px) {
+        table[class=row] {width:220px !important;}
+        td[class=column], td[class=logo], td[class=phone], td[class=phone2] {width:160px !important;}
+        td[class=oneFromFour] {display:block; width:100% !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website], td[class=socialIcons] {width:220px !important; padding-right:0px !important; padding-left:0px !important;}
+        td[class=website] {font-size:18px !important;}
+        img[class=wideImage] {width:100% !important;}
+        table[class=iconContainer], table[class=imgContainer] {width:100% !important;}
+        td[class=icon], td[class=authorPicture] {padding-right:0px !important; padding-bottom:20px !important; text-align:center;}
+        td[class=icon] img, td[class=authorPicture] img {display:inline !important;}
+    }
+    /* / Media queries */
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-color:#F1F1F1; background-image:url('http://play.gopivotal.com/rs/pivotal/images/BG_Brown_SpringEmail.png'); background-repeat:repeat-x; font-size:14px; line-height:24px; " ><tr ><td class="container" style="padding-left:15px; padding-right:15px; " ><table class="row" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#FFFFFF;">
+<tr>
+<td class="logo" style="padding-top:10px; padding-right:15px; padding-bottom:15px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; line-height:25pt; color:#FFFFFF; font-weight:300;">
+<div style="margin-top:0px; margin-bottom:0px !important; padding:0px; line-height:100%;"><a href="http://www.springsource.org" title="Spring Newsletter by Pivotal" style="color:#FFFFFF !important;"><img src="http://play.gopivotal.com/rs/pivotal/images/Spring_FFF.png" alt="Spring by Pivotal" border="0" vspace="0" hspace="0" style="display:block; max-width:100%; height:auto !important;"></a></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table class="row" width="600" bgcolor="#FFFFFF" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; border-bottom:1px; border-bottom-color:#EEEEEE; border-bottom-style:solid; " ><tr ><td width="100%" style="padding-top:40px; padding-right:20px; padding-bottom:10px; padding-left:20px; " ><div class="mktEditable" id="salutation" ><h2 style="margin-top: 0px; margin-bottom: 10px !important; padding-top: 0px; padding-bottom: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 22pt; color: #333333 !important; font-weight: 500;">Everything Apache Tomcat with Mark Thomas</h2></div>
+</td>
+</tr>
+<tr ><td width="100%" style="padding-right:20px; padding-bottom:25px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:normal; font-size:14px; line-height:16pt; color:#333333; " ><div class="mktEditable" id="content" ><p style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 21px;">Join us Tuesday evening (September 24, 2013), at the San Francisco <a href="https://maps.google.com/maps?q=875+Howard+Street+5th+Floor,+San+Francisco,+CA">Pivotal Labs</a> office for a meetup with Mark Thomas! (http://www.meetup.com/Pivotal-Open-Source-Hub/events/136113432/)</p>
+<ul>
+<li><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">875 Howard Street 5th Floor, San Francisco, CA</span></span></li>
+<li><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">Tuesday, September 24, 2013</span></span></li>
+<li><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">Schedule:</span></span> 
+<ul>
+<li><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">5:30-6:30pm Networking drinks and pizza</span></span></li>
+<li><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">6:30-8:00pm Introductions and talk by speaker</span></span></li>
+<li><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">8:00-8:30pm Continued discussion</span></span></li>
+</ul>
+</li>
+</ul>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">It is a busy time in the Tomcat community. Release candidates for Tomcat 8 have started to appear (the second one should be out by the time of this meet-up), JSR-356 WebSocket support has been back-ported to Tomcat 7 and a much needed overhaul of the website and documentation is underway.</span></span></p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">The first half of the meet-up will look at the changes in Tomcat 8, covering new and changed features in both the specifications and Tomcat specific features. This will include the new support for JSR 356 which is also now part of Tomcat 7. The topics for the second half will be decided by the audience. I'll have material with me to cover security, memory leaks, clustering, reverse proxies and performance. There should be time to cover any two of these. If there is a lot of interest in some other Tomcat related topic then I'm happy to cover that as well. The evening will wrap up with an opportunity to ask any remaining questions.</span></span></p>
+<p><strong><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">Bio: Mark Thomas</span></span></strong></p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">I have been an Apache Tomcat committer since November 2003. I initially worked on Tomcat in my free time but since August 2008 I have been employed by SpringSource (now part of Pivotal) to work on Apache Tomcat. I spend most of my time working on Tomcat but I also work on tc Server, Pivotal's Servlet, JSP, EL and WebSocket container based on Apache Tomcat. Additionally, I lead the Pivotal Security Team.</span></span></p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">I am the Apache Tomcat 7 release manager where I try to release a new version every month or so. I am currently focused on Tomcat 8 development which will support the new versions of the Servlet, JSP and EL specifications as well as adding JSR356 (WebSocket) support. I am a member of the JCP expert groups for JSR 340, JSR 341 and JSR 356.</span></span></p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">Elsewhere as the ASF, I am a member of the ASF security team, a member of the ASF infrastructure team and I am also on the Commons PMC where I focus on Commons Pool and DBCP.</span></span></p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;"><span style="font-size: 14px; line-height: 21px;">I am a member of the ASF.</span></span></p>
+<p>See you at the event,</p></div>
+<h3 style="margin-top:40px; margin-bottom:20px !important; padding-top:0px; padding-bottom:0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:22pt; color:#333333 !important; font-weight:600;">The Spring Team</h3>
+</td>
+</tr>
+</table>
+
+<table class="row" width="600" bgcolor="#F1F1F1" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%;">
+<tr>
+<td width="100%">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; text-align:left; border-spacing:0; max-width:100%; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; border-bottom:1px; border-bottom-color:#DDDDDD; 
+border-bottom-style:solid;">
+<tr>
+<td class="website" width="50%" valign="top" style="padding-top:24px; padding-right:15px; padding-bottom:20px; padding-left:20px; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; line-height:100%; color:#6DB33F; font-weight:300;"><a style="text-decoration:none; 
+color:#6DB33F;" href="http://spring.io" title="Spring.io">spring.io</a></td>
+<td class="socialIcons" width="50%" style="padding-top:20px; padding-right:20px; padding-bottom:18px; padding-left:15px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:100%; color:#333333; text-align:right;"><a href="http://twitter.com/springcentral" 
+style="color:#6DB33F;"><img alt="Twitter" src="http://play.gopivotal.com/rs/pivotal/images/Ico_Twitter.png" border="0" vspace="0" hspace="0"></a>&nbsp;&nbsp; <a href="https://plus.google.com/u/0/b/109970428231307622681/109970428231307622681" style="color:#6DB33F;"><img alt="Google Plus" 
+src="http://play.gopivotal.com/rs/pivotal/images/Ico_GPlus.png" border="0" vspace="0" hspace="0"></a>&nbsp;&nbsp; <a href="http://www.youtube.com/user/SpringSourceDev" style="color:#6DB33F;"><img alt="YouTube" src="http://play.gopivotal.com/rs/pivotal/images/Ico_YouTube.png" border="0" vspace="0" 
+hspace="0"></a>&nbsp;&nbsp; <a href="http://www.linkedin.com/groups/Spring-Users-46964" style="color:#6DB33F;"><img alt="Linkedin" src="http://play.gopivotal.com/rs/pivotal/images/Ico_LinkedIn.png" border="0" vspace="0" hspace="0"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="footer" width="100%" bgcolor="#F1F1F1" style="padding-top:0;padding-right: 20px;padding-bottom: 25px;padding-left: 20px; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:13pt; color:#333333; text-align:left; -webkit-text-size-adjust:none;">
+<div style="height:20px">&nbsp;</div>
+&copy; 2013 Spring by Pivotal.
+ The Spring and Pivotal logo are registered trademarks or trademarks of GoPivotal, Inc.
+ in the United States and other countries.
+ All other trademarks used herein are the property of their respective owners.
+ © 2013 Go Pivotal, Inc.
+ All rights reserved.
+ Published in the USA.
+ To manage preferences for your Spring related communications, please click <a style="text-decoration:underline; color:#6DB33F;" href="http://play.gopivotal.com/OSSSubscriptions.html">here</a>.
+ To unsubscribe from all communications, please click <a style="text-decoration:underline; color:#6DB33F;" href="http://play.gopivotal.com/UnsubscribePage.html">here</a>.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

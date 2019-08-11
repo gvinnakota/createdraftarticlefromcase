@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Cloud Native Workshop_Missouri_Q415.Follow up - Attended</name>
+    <style>none</style>
+    <subject>It was great to see you last week</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for attending the Cloud Native Workshop on December 10, 2015. We hope the event met your expectations and the hands-on workshop provided you with new product knowledge.
+
+Next steps:
+
+
+ - Your feedback is important! Please take our short survey &lt;[[https://www.surveymonkey.com/r/9GFTCCH]]&gt; so we continue to make future workshops informative and relevant.
+ - Access to the hands-on labs and technical content is located here &lt;[[https://github.com/cbusch-pivotal/SpringCloudWorkshop]]&gt;.
+
+
+
+Contact us &lt;[[mailto:block@pivotal.io]]&gt; to schedule a technical evaluation with our team. Learn how to become Cloud Native today.
+
+Thank you again for joining us. For upcoming events visit us at Pivotal.io &lt;[[http://pivotal.io/news-events]]&gt; and select the events tab. We look forward to seeing you soon!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

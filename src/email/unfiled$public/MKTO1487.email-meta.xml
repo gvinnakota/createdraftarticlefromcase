@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.DC Apology</name>
+    <style>none</style>
+    <subject>Cloud Platform Roadshow - DC - Clarification</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Sorry we missed you today, Nov. 5th, at the Washington, DC Cloud Platform Roadshow.
+
+It has been brought to our attention that a few attendees received a registration confirmation in August that listed an incorrect date of Thursday Nov. 6.
+
+If you have relied on that earlier communication and planned on attending Nov 6th, we are very sorry for the miscommunication. We will be back in DC soon.
+
+Additionally, we will make the roadshow video recordings available to you as soon as possible.
+
+Again, we are sorry for the inconvenience.
+
+Best,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

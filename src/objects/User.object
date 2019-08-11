@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayouts>
+        <fullName>Portal_User_Detail</fullName>
+        <fields>Name</fields>
+        <label>Portal User Detail</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Area__c</fullName>
+        <externalId>false</externalId>
+        <label>Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Theater__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER Canada &amp; LATAM</fullName>
+                    <default>false</default>
+                    <label>AMER Canada &amp; LATAM</label>
+                </value>
+                <value>
+                    <fullName>AMER Central</fullName>
+                    <default>false</default>
+                    <label>AMER Central</label>
+                </value>
+                <value>
+                    <fullName>AMER Dell Synergy</fullName>
+                    <default>false</default>
+                    <label>AMER Dell Synergy</label>
+                </value>
+                <value>
+                    <fullName>AMER East</fullName>
+                    <default>false</default>
+                    <label>AMER East</label>
+                </value>
+                <value>
+                    <fullName>AMER New England</fullName>
+                    <default>false</default>
+                    <label>AMER New England</label>
+                </value>
+                <value>
+                    <fullName>AMER South</fullName>
+                    <default>false</default>
+                    <label>AMER South</label>
+                </value>
+                <value>
+                    <fullName>AMER Support Resources</fullName>
+                    <default>false</default>
+                    <label>AMER Support Resources</label>
+                </value>
+                <value>
+                    <fullName>AMER VMware Synergy</fullName>
+                    <default>false</default>
+                    <label>AMER VMware Synergy</label>
+                </value>
+                <value>
+                    <fullName>AMER West</fullName>
+                    <default>false</default>
+                    <label>AMER West</label>
+                </value>
+                <value>
+                    <fullName>APJ</fullName>
+                    <default>false</default>
+                    <label>APJ</label>
+                </value>
+                <value>
+                    <fullName>APJ Support Resources</fullName>
+                    <default>false</default>
+                    <label>APJ Support Resources</label>
+                </value>
+                <value>
+                    <fullName>APJ VMWare Synergy</fullName>
+                    <default>false</default>
+                    <label>APJ VMWare Synergy</label>
+                </value>
+                <value>
+                    <fullName>Chatter</fullName>
+                    <default>false</default>
+                    <label>Chatter</label>
+                </value>
+                <value>
+                    <fullName>EMEA Central</fullName>
+                    <default>false</default>
+                    <label>EMEA Central</label>
+                </value>
+                <value>
+                    <fullName>EMEA Dell Synergy</fullName>
+                    <default>false</default>
+                    <label>EMEA Dell Synergy</label>
+                </value>
+                <value>
+                    <fullName>EMEA Emerging Area</fullName>
+                    <default>false</default>
+                    <label>EMEA Middle East</label>
+                </value>
+                <value>
+                    <fullName>EMEA South</fullName>
+                    <default>false</default>
+                    <label>EMEA South</label>
+                </value>
+                <value>
+                    <fullName>EMEA Support Resources</fullName>
+                    <default>false</default>
+                    <label>EMEA Support Resources</label>
+                </value>
+                <value>
+                    <fullName>EMEA UKI</fullName>
+                    <default>false</default>
+                    <label>EMEA UK</label>
+                </value>
+                <value>
+                    <fullName>EMEA VMWare Synergy</fullName>
+                    <default>false</default>
+                    <label>EMEA VMWare Synergy</label>
+                </value>
+                <value>
+                    <fullName>Federal</fullName>
+                    <default>false</default>
+                    <label>Federal</label>
+                </value>
+                <value>
+                    <fullName>Global</fullName>
+                    <default>false</default>
+                    <label>Global</label>
+                </value>
+                <value>
+                    <fullName>Labs</fullName>
+                    <default>false</default>
+                    <label>Labs</label>
+                </value>
+                <value>
+                    <fullName>WW VMWare Synergy</fullName>
+                    <default>false</default>
+                    <label>WW VMWare Synergy</label>
+                </value>
+                <value>
+                    <fullName>Federal Civilian</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Federal Civilian</label>
+                </value>
+                <value>
+                    <fullName>Federal DoD/Intel</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Federal DoD/Intel</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>LABS</controllingFieldValue>
+                <valueName>Labs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Support Resources</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chatter Only</controllingFieldValue>
+                <valueName>Chatter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FEDERAL</controllingFieldValue>
+                <valueName>Federal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synergy</controllingFieldValue>
+                <valueName>AMER Dell Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synergy</controllingFieldValue>
+                <valueName>AMER VMware Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synergy</controllingFieldValue>
+                <valueName>APJ VMWare Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synergy</controllingFieldValue>
+                <valueName>EMEA Dell Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synergy</controllingFieldValue>
+                <valueName>EMEA VMWare Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synergy</controllingFieldValue>
+                <valueName>WW VMWare Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>EMEA Central</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>EMEA Emerging Area</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>EMEA South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>EMEA Support Resources</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>EMEA UKI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER Canada &amp; LATAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER Central</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER East</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER New England</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER Support Resources</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER</controllingFieldValue>
+                <valueName>AMER West</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Best_Method_of_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Best Method of Contact</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                    <label>Email</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Portal</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Portal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bookings_User__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bookings User?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contractor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contractor?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Div__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Theater__c,
+
+"AMER", "AMER",
+"Federal", "FEDERAL",
+
+"APJ", "APJ",
+
+
+"EMEA", "EMEA",
+
+
+'Global' )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Div</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EHSP_Qualified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>EHSP-Qualified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EU_Safe_Harbour_qualified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>EU Safe Harbour qualified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hiring_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Hiring Manager</label>
+        <relationshipName>Hiring_Manager</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Non_Sales_Opp_Access_Granted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the "Access to Opportunities and Opportunity Products" permission set been added to this user's permissions?</inlineHelpText>
+        <label>Non-Sales Opp Access Granted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>On_Comp_Plan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This filed is used to identify users who are also on a compensation plan.  Users on a comp plan will be automatically given access to the Callidus app.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This filed is used to identify users who are also on a compensation plan (so they are not deactivated for not logging in). Users on a comp plan will be automatically given access to the Callidus app.</inlineHelpText>
+        <label>On Comp Plan?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Customer_Number__c</fullName>
+        <description>This field is used to store Pivotal Customer Number</description>
+        <externalId>false</externalId>
+        <label>Pivotal Customer Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profile_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Profile Update</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is ready only, please contact the system administrator to change it.</inlineHelpText>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Area__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER Central</fullName>
+                    <default>false</default>
+                    <label>AMER Central</label>
+                </value>
+                <value>
+                    <fullName>AMER Data Sales</fullName>
+                    <color>#9999FF</color>
+                    <default>false</default>
+                    <label>AMER Data Sales</label>
+                </value>
+                <value>
+                    <fullName>AMER Dell Synergy</fullName>
+                    <default>false</default>
+                    <label>AMER Dell Synergy</label>
+                </value>
+                <value>
+                    <fullName>AMER East</fullName>
+                    <default>false</default>
+                    <label>AMER East</label>
+                </value>
+                <value>
+                    <fullName>AMER ISR</fullName>
+                    <color>#66FFFF</color>
+                    <default>false</default>
+                    <label>AMER ISR</label>
+                </value>
+                <value>
+                    <fullName>AMER Other</fullName>
+                    <color>#DDDDDD</color>
+                    <default>false</default>
+                    <label>AMER Other</label>
+                </value>
+                <value>
+                    <fullName>AMER PDE</fullName>
+                    <color>#FF9966</color>
+                    <default>false</default>
+                    <label>AMER PDE</label>
+                </value>
+                <value>
+                    <fullName>AMER South</fullName>
+                    <default>false</default>
+                    <label>AMER South</label>
+                </value>
+                <value>
+                    <fullName>AMER Sub Renewals</fullName>
+                    <color>#FFFF66</color>
+                    <default>false</default>
+                    <label>AMER Sub Renewals</label>
+                </value>
+                <value>
+                    <fullName>AMER-Support</fullName>
+                    <default>false</default>
+                    <label>AMER-Support</label>
+                </value>
+                <value>
+                    <fullName>AMER VMware Synergy</fullName>
+                    <default>false</default>
+                    <label>AMER VMware Synergy</label>
+                </value>
+                <value>
+                    <fullName>AMER West</fullName>
+                    <color>#A53711</color>
+                    <default>false</default>
+                    <label>AMER West</label>
+                </value>
+                <value>
+                    <fullName>APJ Australia New Zealand</fullName>
+                    <color>#990000</color>
+                    <default>false</default>
+                    <label>APJ Australia New Zealand</label>
+                </value>
+                <value>
+                    <fullName>APJ Greater China</fullName>
+                    <color>#419249</color>
+                    <default>false</default>
+                    <label>APJ Greater China</label>
+                </value>
+                <value>
+                    <fullName>APJ India</fullName>
+                    <default>false</default>
+                    <label>APJ India</label>
+                </value>
+                <value>
+                    <fullName>APJ ISR</fullName>
+                    <color>#FF9900</color>
+                    <default>false</default>
+                    <label>APJ ISR</label>
+                </value>
+                <value>
+                    <fullName>APJ Japan</fullName>
+                    <color>#641CCF</color>
+                    <default>false</default>
+                    <label>APJ Japan</label>
+                </value>
+                <value>
+                    <fullName>APJ Korea</fullName>
+                    <color>#F96FB7</color>
+                    <default>false</default>
+                    <label>APJ Korea</label>
+                </value>
+                <value>
+                    <fullName>APJ Other</fullName>
+                    <color>#66E9BD</color>
+                    <default>false</default>
+                    <label>APJ Other</label>
+                </value>
+                <value>
+                    <fullName>APJ South Asia</fullName>
+                    <default>false</default>
+                    <label>APJ South Asia</label>
+                </value>
+                <value>
+                    <fullName>APJ Southeast Asia</fullName>
+                    <color>#2F5D85</color>
+                    <default>false</default>
+                    <label>APJ Southeast Asia</label>
+                </value>
+                <value>
+                    <fullName>APJ-Support</fullName>
+                    <default>false</default>
+                    <label>APJ-Support</label>
+                </value>
+                <value>
+                    <fullName>APJ VMWare Synergy</fullName>
+                    <default>false</default>
+                    <label>APJ VMWare Synergy</label>
+                </value>
+                <value>
+                    <fullName>Bay Area</fullName>
+                    <default>false</default>
+                    <label>Bay Area</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <color>#0B24BE</color>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Central North</fullName>
+                    <color>#419249</color>
+                    <default>false</default>
+                    <label>Central North</label>
+                </value>
+                <value>
+                    <fullName>Central West</fullName>
+                    <default>false</default>
+                    <label>Central West</label>
+                </value>
+                <value>
+                    <fullName>Chatter Only</fullName>
+                    <color>#663333</color>
+                    <default>false</default>
+                    <label>Chatter Only</label>
+                </value>
+                <value>
+                    <fullName>EMEA - Central</fullName>
+                    <default>false</default>
+                    <label>EMEA - Central</label>
+                </value>
+                <value>
+                    <fullName>EMEA Central FSI/Telco</fullName>
+                    <default>false</default>
+                    <label>EMEA Central FSI/Telco</label>
+                </value>
+                <value>
+                    <fullName>EMEA Central Mfg/Chem/Pharma</fullName>
+                    <default>false</default>
+                    <label>EMEA Central Mfg/Chem/Pharma</label>
+                </value>
+                <value>
+                    <fullName>EMEA Central NL/CH/Gov</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>EMEA Central NL/CH/Gov</label>
+                </value>
+                <value>
+                    <fullName>EMEA Dell Synergy</fullName>
+                    <default>false</default>
+                    <label>EMEA Dell Synergy</label>
+                </value>
+                <value>
+                    <fullName>EMEA ISR</fullName>
+                    <color>#E27001</color>
+                    <default>false</default>
+                    <label>EMEA ISR</label>
+                </value>
+                <value>
+                    <fullName>EMEA Labs</fullName>
+                    <color>#F96FB7</color>
+                    <default>false</default>
+                    <label>EMEA Labs</label>
+                </value>
+                <value>
+                    <fullName>EMEA Middle East</fullName>
+                    <default>false</default>
+                    <label>EMEA Middle East</label>
+                </value>
+                <value>
+                    <fullName>EMEA Other</fullName>
+                    <color>#999999</color>
+                    <default>false</default>
+                    <label>EMEA Other</label>
+                </value>
+                <value>
+                    <fullName>EMEA South</fullName>
+                    <color>#FFFF66</color>
+                    <default>false</default>
+                    <label>EMEA South</label>
+                </value>
+                <value>
+                    <fullName>EMEA South France</fullName>
+                    <default>false</default>
+                    <label>EMEA South France</label>
+                </value>
+                <value>
+                    <fullName>EMEA South Israel</fullName>
+                    <default>false</default>
+                    <label>EMEA South Israel</label>
+                </value>
+                <value>
+                    <fullName>EMEA South Italy</fullName>
+                    <default>false</default>
+                    <label>EMEA South Italy</label>
+                </value>
+                <value>
+                    <fullName>EMEA South Spain</fullName>
+                    <default>false</default>
+                    <label>EMEA South Spain</label>
+                </value>
+                <value>
+                    <fullName>EMEA-Support</fullName>
+                    <default>false</default>
+                    <label>EMEA-Support</label>
+                </value>
+                <value>
+                    <fullName>EMEA UK</fullName>
+                    <default>false</default>
+                    <label>EMEA UK</label>
+                </value>
+                <value>
+                    <fullName>EMEA UK FSI</fullName>
+                    <default>false</default>
+                    <label>EMEA UK FSI</label>
+                </value>
+                <value>
+                    <fullName>EMEA UK General</fullName>
+                    <default>false</default>
+                    <label>EMEA UK General</label>
+                </value>
+                <value>
+                    <fullName>EMEA UKI</fullName>
+                    <color>#A845DC</color>
+                    <default>false</default>
+                    <label>EMEA UK Public Sector</label>
+                </value>
+                <value>
+                    <fullName>EMEA VMWare Synergy</fullName>
+                    <default>false</default>
+                    <label>EMEA VMWare Synergy</label>
+                </value>
+                <value>
+                    <fullName>Federal</fullName>
+                    <color>#2F5D85</color>
+                    <default>false</default>
+                    <label>Federal</label>
+                </value>
+                <value>
+                    <fullName>Federal Civilian</fullName>
+                    <color>#2F5D85</color>
+                    <default>false</default>
+                    <label>Federal Civilian</label>
+                </value>
+                <value>
+                    <fullName>Federal DoD/Intel</fullName>
+                    <color>#2F5D85</color>
+                    <default>false</default>
+                    <label>Federal DoD/Intel</label>
+                </value>
+                <value>
+                    <fullName>Federal SIs</fullName>
+                    <default>false</default>
+                    <label>Federal SIs</label>
+                </value>
+                <value>
+                    <fullName>Federal SLS</fullName>
+                    <default>false</default>
+                    <label>Federal SLS</label>
+                </value>
+                <value>
+                    <fullName>Federal Support Resources</fullName>
+                    <default>false</default>
+                    <label>Federal Support Resources</label>
+                </value>
+                <value>
+                    <fullName>Global</fullName>
+                    <color>#FF6600</color>
+                    <default>false</default>
+                    <label>Global</label>
+                </value>
+                <value>
+                    <fullName>Global Biz Ops</fullName>
+                    <default>false</default>
+                    <label>Global Biz Ops</label>
+                </value>
+                <value>
+                    <fullName>Global CS Renewals</fullName>
+                    <color>#A845DC</color>
+                    <default>false</default>
+                    <label>Global CS Renewals</label>
+                </value>
+                <value>
+                    <fullName>Global DS</fullName>
+                    <default>false</default>
+                    <label>Global DS</label>
+                </value>
+                <value>
+                    <fullName>Global EDU</fullName>
+                    <default>false</default>
+                    <label>Global EDU</label>
+                </value>
+                <value>
+                    <fullName>Global Finance</fullName>
+                    <default>false</default>
+                    <label>Global Finance</label>
+                </value>
+                <value>
+                    <fullName>Global GRO</fullName>
+                    <default>false</default>
+                    <label>Global GRO</label>
+                </value>
+                <value>
+                    <fullName>Global GSS</fullName>
+                    <default>false</default>
+                    <label>Global GSS</label>
+                </value>
+                <value>
+                    <fullName>Global IT</fullName>
+                    <default>false</default>
+                    <label>Global IT</label>
+                </value>
+                <value>
+                    <fullName>Global Labs</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>Global Labs</label>
+                </value>
+                <value>
+                    <fullName>Global Legal</fullName>
+                    <default>false</default>
+                    <label>Global Legal</label>
+                </value>
+                <value>
+                    <fullName>Global Marketing</fullName>
+                    <default>false</default>
+                    <label>Global Marketing</label>
+                </value>
+                <value>
+                    <fullName>Global Partners</fullName>
+                    <default>false</default>
+                    <label>Global Partners</label>
+                </value>
+                <value>
+                    <fullName>Global Product Mgmt</fullName>
+                    <default>false</default>
+                    <label>Global Product Mgmt</label>
+                </value>
+                <value>
+                    <fullName>Global Product Ops</fullName>
+                    <default>false</default>
+                    <label>Global Product Ops</label>
+                </value>
+                <value>
+                    <fullName>Global PS Project Ops</fullName>
+                    <default>false</default>
+                    <label>Global PS Project Ops</label>
+                </value>
+                <value>
+                    <fullName>Global Sales Productivity</fullName>
+                    <default>false</default>
+                    <label>Global Sales Productivity</label>
+                </value>
+                <value>
+                    <fullName>Global Support</fullName>
+                    <default>false</default>
+                    <label>Global Support</label>
+                </value>
+                <value>
+                    <fullName>Great Lakes</fullName>
+                    <default>false</default>
+                    <label>Great Lakes</label>
+                </value>
+                <value>
+                    <fullName>Labs</fullName>
+                    <color>#A53711</color>
+                    <default>false</default>
+                    <label>Labs</label>
+                </value>
+                <value>
+                    <fullName>LATAM</fullName>
+                    <default>false</default>
+                    <label>LATAM</label>
+                </value>
+                <value>
+                    <fullName>Mid-Atlantic</fullName>
+                    <default>false</default>
+                    <label>Mid-Atlantic</label>
+                </value>
+                <value>
+                    <fullName>Mountain West</fullName>
+                    <default>false</default>
+                    <label>Mountain West</label>
+                </value>
+                <value>
+                    <fullName>New England</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>New England</label>
+                </value>
+                <value>
+                    <fullName>NY/NJ 2</fullName>
+                    <default>false</default>
+                    <label>NY/NJ 2</label>
+                </value>
+                <value>
+                    <fullName>NY/NJ 3</fullName>
+                    <default>false</default>
+                    <label>NY/NJ 3</label>
+                </value>
+                <value>
+                    <fullName>NY/NJ Global Financial Services</fullName>
+                    <color>#33CC00</color>
+                    <default>false</default>
+                    <label>NY/NJ Global Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Pacific Southwest</fullName>
+                    <color>#CC0000</color>
+                    <default>false</default>
+                    <label>Pacific Southwest</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>South CAT</fullName>
+                    <default>false</default>
+                    <label>South CAT</label>
+                </value>
+                <value>
+                    <fullName>Southeast</fullName>
+                    <color>#A845DC</color>
+                    <default>false</default>
+                    <label>Southeast</label>
+                </value>
+                <value>
+                    <fullName>South GAF</fullName>
+                    <default>false</default>
+                    <label>South GAF</label>
+                </value>
+                <value>
+                    <fullName>TOLA</fullName>
+                    <color>#641CCF</color>
+                    <default>false</default>
+                    <label>TOLA</label>
+                </value>
+                <value>
+                    <fullName>WW VMWare Synergy</fullName>
+                    <default>false</default>
+                    <label>WW VMWare Synergy</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>EMEA Central</controllingFieldValue>
+                <valueName>EMEA - Central</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Central</controllingFieldValue>
+                <valueName>EMEA Central FSI/Telco</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Central</controllingFieldValue>
+                <valueName>EMEA Central Mfg/Chem/Pharma</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Central</controllingFieldValue>
+                <valueName>EMEA Central NL/CH/Gov</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Dell Synergy</controllingFieldValue>
+                <valueName>AMER Dell Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Emerging Area</controllingFieldValue>
+                <valueName>EMEA Middle East</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER VMware Synergy</controllingFieldValue>
+                <controllingFieldValue>WW VMWare Synergy</controllingFieldValue>
+                <valueName>AMER VMware Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA South</controllingFieldValue>
+                <valueName>EMEA South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA South</controllingFieldValue>
+                <valueName>EMEA South France</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA South</controllingFieldValue>
+                <valueName>EMEA South Israel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA South</controllingFieldValue>
+                <valueName>EMEA South Italy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA South</controllingFieldValue>
+                <valueName>EMEA South Spain</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WW VMWare Synergy</controllingFieldValue>
+                <controllingFieldValue>APJ VMWare Synergy</controllingFieldValue>
+                <valueName>APJ VMWare Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WW VMWare Synergy</controllingFieldValue>
+                <controllingFieldValue>EMEA VMWare Synergy</controllingFieldValue>
+                <valueName>EMEA VMWare Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WW VMWare Synergy</controllingFieldValue>
+                <valueName>WW VMWare Synergy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Support Resources</controllingFieldValue>
+                <valueName>EMEA Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Support Resources</controllingFieldValue>
+                <valueName>EMEA-Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA UKI</controllingFieldValue>
+                <valueName>EMEA UK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA UKI</controllingFieldValue>
+                <valueName>EMEA UK FSI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA UKI</controllingFieldValue>
+                <valueName>EMEA UK General</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA UKI</controllingFieldValue>
+                <valueName>EMEA UKI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Biz Ops</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global CS Renewals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global DS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global EDU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Finance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global GRO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global GSS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global IT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Labs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Legal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Marketing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Partners</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Product Mgmt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Product Ops</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global PS Project Ops</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Sales Productivity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Global</controllingFieldValue>
+                <valueName>Global Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Labs</controllingFieldValue>
+                <valueName>Labs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Canada &amp; LATAM</controllingFieldValue>
+                <valueName>Canada</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Canada &amp; LATAM</controllingFieldValue>
+                <valueName>LATAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER East</controllingFieldValue>
+                <valueName>AMER East</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER East</controllingFieldValue>
+                <valueName>Mid-Atlantic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER East</controllingFieldValue>
+                <valueName>NY/NJ 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER East</controllingFieldValue>
+                <valueName>NY/NJ 3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER East</controllingFieldValue>
+                <valueName>NY/NJ Global Financial Services</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER New England</controllingFieldValue>
+                <valueName>New England</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Central</controllingFieldValue>
+                <valueName>AMER Central</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Central</controllingFieldValue>
+                <valueName>Central North</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Central</controllingFieldValue>
+                <valueName>Central West</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Central</controllingFieldValue>
+                <valueName>Great Lakes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER South</controllingFieldValue>
+                <valueName>AMER South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER South</controllingFieldValue>
+                <valueName>South</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER South</controllingFieldValue>
+                <valueName>South CAT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER South</controllingFieldValue>
+                <valueName>Southeast</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER South</controllingFieldValue>
+                <valueName>South GAF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER South</controllingFieldValue>
+                <valueName>TOLA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Support Resources</controllingFieldValue>
+                <valueName>AMER Data Sales</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Support Resources</controllingFieldValue>
+                <valueName>AMER ISR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Support Resources</controllingFieldValue>
+                <valueName>AMER Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Support Resources</controllingFieldValue>
+                <valueName>AMER PDE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Support Resources</controllingFieldValue>
+                <valueName>AMER Sub Renewals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER Support Resources</controllingFieldValue>
+                <valueName>AMER-Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER West</controllingFieldValue>
+                <valueName>AMER West</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER West</controllingFieldValue>
+                <valueName>Bay Area</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER West</controllingFieldValue>
+                <valueName>Mountain West</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>AMER West</controllingFieldValue>
+                <valueName>Pacific Southwest</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Australia New Zealand</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Greater China</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ India</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ ISR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Japan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Korea</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ South Asia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ</controllingFieldValue>
+                <valueName>APJ Southeast Asia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APJ Support Resources</controllingFieldValue>
+                <valueName>APJ-Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Federal</controllingFieldValue>
+                <valueName>Federal Civilian</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Federal</controllingFieldValue>
+                <valueName>Federal DoD/Intel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Federal</controllingFieldValue>
+                <valueName>Federal SIs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Federal</controllingFieldValue>
+                <valueName>Federal Support Resources</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Chatter</controllingFieldValue>
+                <valueName>Chatter Only</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA Dell Synergy</controllingFieldValue>
+                <valueName>EMEA Dell Synergy</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Renewal_Booking__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>User has permission to book renewal opps</description>
+        <externalId>false</externalId>
+        <label>Renewal Booking</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Source_of_Creation__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Contact.Source_of_Creation__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source of Creation</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Theater__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is ready only, please contact the system administrator to change it.</inlineHelpText>
+        <label>Theater</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMER</fullName>
+                    <color>#0B6FCE</color>
+                    <default>false</default>
+                    <label>AMER</label>
+                </value>
+                <value>
+                    <fullName>APJ</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>APJ</label>
+                </value>
+                <value>
+                    <fullName>Chatter Only</fullName>
+                    <color>#A53711</color>
+                    <default>false</default>
+                    <label>Chatter Only</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <color>#E27001</color>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>FEDERAL</fullName>
+                    <default>false</default>
+                    <label>FEDERAL</label>
+                </value>
+                <value>
+                    <fullName>Global</fullName>
+                    <color>#A845DC</color>
+                    <default>false</default>
+                    <label>Global</label>
+                </value>
+                <value>
+                    <fullName>LABS</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>LABS</label>
+                </value>
+                <value>
+                    <fullName>Synergy</fullName>
+                    <default>false</default>
+                    <label>Synergy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UAA_Verification_Link__c</fullName>
+        <description>This field is used to hold the UAA verification link.</description>
+        <externalId>false</externalId>
+        <label>UAA Verification Link</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Create_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>User Create Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>User_Created_in_UAA__c</fullName>
+        <description>This field indicates whether an User has been created in UAA.</description>
+        <externalId>false</externalId>
+        <label>User Created in UAA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_ID18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <label>User ID18</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>View_All__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.View_Account_Cases__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>View All</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Zendesk_User_ID__c</fullName>
+        <description>Legacy field for Service Cloud Implementation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Legacy field for Service Cloud Implementation</inlineHelpText>
+        <label>Zendesk User ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Secondary_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <listViews>
+        <fullName>AMER_Role_User_List</fullName>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>AMER</value>
+        </filters>
+        <label>AMER Role User List</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>AMER_Sales_Manager_Reset_Sent</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>Theater__c</columns>
+        <columns>Region__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>AMER</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>Pivotal - Sales Manager</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>AMER &amp; Sales Manager</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>AMER_Sales_Rep_Reset_Sent</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>Theater__c</columns>
+        <columns>Region__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>AMER</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>Pivotal - Sales Rep</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>AMER &amp; Sales Rep</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>APJ_Profile_Contains_Sales_Rep</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>APJ</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>sales rep</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>APJ &amp; Sales Rep</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>APJ_Role_User_List</fullName>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>APJ</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>APJ Role User List</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>Region__c</columns>
+        <columns>Theater__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.SAML_SUBJECT</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Business_Operations_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Business</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Business Operations Users</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Role_User_List</fullName>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>EMEA</value>
+        </filters>
+        <label>EMEA Role User List</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Sales_Managers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>EMEA</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>manager</value>
+        </filters>
+        <label>EMEA &amp; Sales Managers</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>EMEA_Sales_Rep_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.DIVISION</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>EMEA</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>sales rep</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>EMEA &amp; Sales Rep</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>Exec_Role_User_List</fullName>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>Executive</value>
+        </filters>
+        <label>Exec Role User List</label>
+        <sharedTo />
+    </listViews>
+    <listViews>
+        <fullName>Pivotal_Community_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Community</value>
+        </filters>
+        <label>Pivotal Community  Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Pivotal_Labs_Users</fullName>
+        <booleanFilter>(1 OR 2) and 3</booleanFilter>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>LABS Lead Queue</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>LABS</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Pivotal Labs Users</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Support_Profile_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Pivotal</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>CSR,CE,Support Business Operations,R&amp;D,PKS</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Support Profile Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Users_Who_Haven_t_Logged_During_2014</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>Theater__c</columns>
+        <columns>Region__c</columns>
+        <columns>On_Comp_Plan__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.LAST_LOGIN</field>
+            <operation>lessThan</operation>
+            <value>3/1/2018 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>On_Comp_Plan__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Users w/ No Login Oct-2017 (no comp)</label>
+        <sharedTo>
+            <group>SFDC_Support</group>
+        </sharedTo>
+    </listViews>
+    <validationRules>
+        <fullName>Country_is_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( NOT(ISNULL(ContactId)), ISCHANGED(  CountryCode ),  Country == null)</errorConditionFormula>
+        <errorDisplayField>Country</errorDisplayField>
+        <errorMessage>Country is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Restrict_Registered_Users_Update_Email</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    ISCHANGED(Email),
+    NOT(CONTAINS( $Profile.Name , "System Administrator")),
+				ispickval($User.UserType,'PowerCustomerSuccess')
+)</errorConditionFormula>
+        <errorDisplayField>Email</errorDisplayField>
+        <errorMessage>Email Address cannot be updated. Please Contact your System Administrator.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>User_cannot_Update_PCN</fullName>
+        <active>true</active>
+        <description>If Account is RegisteredUser. Only then PCN should be editable. Else it should be read-only</description>
+        <errorConditionFormula>and(ispickval($User.UserType,'PowerCustomerSuccess'), 
+NOT( ISBLANK(PRIORVALUE(Pivotal_Customer_Number__c))),ischanged( Pivotal_Customer_Number__c ))</errorConditionFormula>
+        <errorMessage>You are not allowed to change Pivotal Customer Number.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Users_cannot_change_Manager</fullName>
+        <active>true</active>
+        <description>Only Sysadmins and Business Operations can change Manager field on Users</description>
+        <errorConditionFormula>ISCHANGED( ManagerId ) &amp;&amp; NOT ($Profile.Id = "00eU0000000sNFj") &amp;&amp; NOT ($Profile.Id = "00eU0000000sKBK" ) &amp;&amp; NOT ($Profile.Id = "00eU0000000iV5H" )</errorConditionFormula>
+        <errorDisplayField>ManagerId</errorDisplayField>
+        <errorMessage>The Manager field is used for Sales Approval processes; please contact SFDC-support@pivotal.io if you need to change your manager.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Users_cant_change_Employee_Number</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(EmployeeNumber) &amp;&amp; NOT ($Profile.Id = "00eU0000000sNFj") &amp;&amp; NOT ($Profile.Id = "00eU0000000sKBK" ) &amp;&amp; NOT ($Profile.Id = "00eU0000000iV5H" )</errorConditionFormula>
+        <errorMessage>Only Admins and Business Operations can change Employee Numbers.</errorMessage>
+    </validationRules>
+</CustomObject>

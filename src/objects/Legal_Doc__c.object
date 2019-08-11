@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>LegalDocsTab</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Legal Docs</relationshipLabel>
+        <relationshipName>Legal_Docs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Addendum_Status__c</fullName>
+        <description>Pending addendum status goes here.</description>
+        <externalId>false</externalId>
+        <label>Is this an Addendum or Amendment?</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Applicable</fullName>
+                    <default>true</default>
+                    <label>Not Applicable</label>
+                </value>
+                <value>
+                    <fullName>Addendum</fullName>
+                    <default>false</default>
+                    <label>Addendum</label>
+                </value>
+                <value>
+                    <fullName>Amendment</fullName>
+                    <default>false</default>
+                    <label>Amendment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Base_Agreement__c</fullName>
+        <description>Base agreement goes here.</description>
+        <externalId>false</externalId>
+        <label>Base Agreement</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Legal notes go here.</description>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EMC Addendum</fullName>
+                    <default>false</default>
+                    <label>EMC Addendum</label>
+                </value>
+                <value>
+                    <fullName>Eval Agreement</fullName>
+                    <default>false</default>
+                    <label>Eval Agreement</label>
+                </value>
+                <value>
+                    <fullName>MOA</fullName>
+                    <default>false</default>
+                    <label>MOA</label>
+                </value>
+                <value>
+                    <fullName>NDA</fullName>
+                    <default>false</default>
+                    <label>NDA</label>
+                </value>
+                <value>
+                    <fullName>Participation Agreement</fullName>
+                    <default>false</default>
+                    <label>Participation Agreement</label>
+                </value>
+                <value>
+                    <fullName>Pivotal Channel Partner</fullName>
+                    <default>false</default>
+                    <label>Pivotal Channel Partner</label>
+                </value>
+                <value>
+                    <fullName>Pivotal Channel Partner Plus</fullName>
+                    <default>false</default>
+                    <label>Pivotal Channel Partner Plus</label>
+                </value>
+                <value>
+                    <fullName>PSA</fullName>
+                    <default>false</default>
+                    <label>PSA</label>
+                </value>
+                <value>
+                    <fullName>SLA</fullName>
+                    <default>false</default>
+                    <label>SLA</label>
+                </value>
+                <value>
+                    <fullName>Subcontractor Agreement</fullName>
+                    <default>false</default>
+                    <label>Subcontractor Agreement</label>
+                </value>
+                <value>
+                    <fullName>Third Party Addendum to MOA</fullName>
+                    <default>false</default>
+                    <label>Third Party Addendum to MOA</label>
+                </value>
+                <value>
+                    <fullName>Pivotal Partner Program</fullName>
+                    <default>false</default>
+                    <label>Pivotal Partner Program</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is for legal to manage paperwork.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Legal Doc</label>
+    <nameField>
+        <displayFormat>LD-{000000}</displayFormat>
+        <label>Legal Doc Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Legal Docs</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Contract_Type__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All_Legal_Docs</fullName>
+        <columns>Account_Name__c</columns>
+        <columns>NAME</columns>
+        <columns>Contract_Type__c</columns>
+        <columns>Addendum_Status__c</columns>
+        <columns>Base_Agreement__c</columns>
+        <columns>Comments__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Legal Docs</label>
+    </listViews>
+</CustomObject>

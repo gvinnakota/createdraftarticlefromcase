@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CASE_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>OPEN</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case.Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Alpine Chorus for Pivotal Data Suite,Datometry Hyper-Q for Pivotal Data Suite,Datometry Workload Manager,Greenplum MapReduce,Open Source PostgreSQL,Pivotal Command Center,Pivotal GemFire,Pivotal GemFire XD,Pivotal GPText,Pivotal Greenplum,Pivotal Greenplum Command Center,Pivotal Greenplum Text,Pivotal HD,Pivotal HDB,Pivotal HDP</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brendan Stephens,Deepika Pandhi,Kevin Huang,Kushal Choubay,Suhasini Peddada,Nimish Avarsekar,Himanshu Pandey,Tod Morrison,David Wisler,Ash Heys,Geet Rawat,Srikanth Manvi,Michael Harris,Chi Xie,Chumo Son,Tyler Ramer,Nader Mustafa,Mike Berendsen</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AMER Data Team Ownership_ThisYear</name>
+    <params>
+        <name>units</name>
+        <value>h</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATEONLY</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Billing Correction Email_4-18.Correction Email - 1/21/15</name>
+    <style>none</style>
+    <subject>Important Info - Erroneous Blazemeter Message</subject>
+    <textOnly>Dear PWS User,
+
+Recently you may have received an email from Pivotal Web Services concerning the Blazemeter service. Due to a bug in our system the email wasn&apos;t appropriately marked as an email from a PWS third-party service: Blazemeter. It is possible that you have not used the Blazemeter service in the past, but your email was included as you were a user in a Cloud Foundry space in which some users have used Blazemeter in the past. In addition, your email was not shared with any third party as part of this erroneous mailing.
+
+We apologize for the confusion.
+
+Best Regards,
+Charles Wu
+Pivotal Web Services Product Manager</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Spring Connect_New York New Jersey_Q418.Reminder</name>
+    <style>none</style>
+    <subject>Spring Connect New York / New Jersey | Reminder</subject>
+    <textOnly>Hello,
+ 
+ Thank you for signing-up for the Pivotal Cloud Native Java workshop hosted by one of the world&apos;s leading Spring experts, Josh Long (@starbuxman).
+ 
+ Josh Long&apos;s workshop will be a very intensive live coding demo with deep dive explanations on Spring framework, Spring Boot, microservices, Cloud Native Framework and Cloud Native Application concepts; lot of insights shared on easiness provided by tools, frameworks and running platforms to create modern applications.
+ 
+ You are welcome to code and follow along, but we certainly don&apos;t expect that you finish every example. Most people find the biggest value in kicking back, observing the live coding session and uncovering new concepts and ideas, rather than focusing on the mechanics and details of the code and framework.
+ 
+
+Hello {{lead.First Name:default=there}},
+ 
+Thank you for registering for the [EVENT NAME] Event.
+ 
+
+
+
+Date:
+DAY, Month xx, 2017 
+
+
+
+Time:
+
+
+X:xxAM to Y:yyPM
+
+
+
+
+Location: 
+Venue Name
+Venue Address
+City, State, ZIP (map &lt;[[https://www.google.com/maps/place/Ponce+City+Market,+675+Ponce+De+Leon+Ave+NE,+Atlanta,+GA+30308/data=!4m2!3m1!1s0x88f50410912c7be9:0x275114353ab5ce34?sa=X&amp;ved=0ahUKEwjihMixwoPSAhWowlQKHY0MCAMQ8gEIGTAA]]&gt;)
+
+
+
+ 
+We look forward to seeing you there.
+ 
+Should you have any questions or would like more information about this event, please email CONTACT at contact@pivotal.io &lt;[[mailto:pschmitt@pivotal.io]]&gt;. - be sure to update this hyperlink
+
+Sincerely,
+The Pivotal Team
+See Agenda</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

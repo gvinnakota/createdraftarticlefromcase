@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.January 2015 Spring News</name>
+    <style>none</style>
+    <subject>January Spring News: Introducing Spring Session</subject>
+    <textOnly>JANUARY 2015
+&lt;http://spring.io/blog/2015/01/08/spring-session-1-0-0-release&gt;
+Introducing Spring Session
+HTTPSession data is an important part of any web facing application, and has been for a long time. Why not take a fresh, more portable look at it? Our Spring Security project lead Rob Winch thought it was time. This hot new Spring tech separates HTTPSession management from the container, and provides an API and implementation to do so. As you would expect, it can replace the HTTPSession object in a lightweight container like Apache Tomcat or Spring Boot, and then cluster it. Also, it’s built with REST and Websocket in mind – and leverages the extremely popular redis cache for its implementation. Head over to the project page &lt;http://projects.spring.io/spring-session/&gt; to check it out, and please, give us feedback!
+Learn More &lt;https://spring.io/blog/2015/01/08/spring-session-1-0-0-release&gt;
+Using Spring Session along with Spring Security
+This tip describes how to use Spring Session along with Spring Security. It assumes you have already applied Spring Security to your application. First you must update your dependencies, then configure Spring with a servlet filter, and lastly, initialize the servlet container correctly. Details on these steps can be found in the Spring Session documentation here &lt;http://docs.spring.io/spring-session/docs/current-SNAPSHOT/reference/html5/guides/security.html&gt;.
+Code completion support in Eclipse
+Code completion support in Eclipse and the Spring Tool Suite is aware of the camel case shortcuts. You don’t need to write NullPointerException, for example. It is enough to type in NPE and hit code completion to let it propose the right class name. This also works with lower case characters in between, so typing on “NuPoiEx” will also trigger the code completion to propose NullPointerException as class name.
+Documenting RESTful APIs
+Speaker: Andy Wilkinson
+
+An API&apos;s documentation is a vital part of making it easy to understand and easy to use. RESTful APIs are no different. In this webinar we&apos;ll look at what should be included in your RESTful API&apos;s documentation and, just as importantly, what should be omitted. To illustrate this we&apos;ll look at some real-world examples of good and bad API documentation. 
+
+We&apos;ll look at some of the problems and limitations of choosing a tool like Swagger to produce your API&apos;s documentation and conclude by looking at some alternatives that are better-suited to producing documentation that your users will love.
+Europe
+Tuesday, February 3, 2015
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/7AMDocumentingRESTfulAPIs_Register.html&gt;
+North America
+Tuesday, February 3, 2015
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/10AMDocumentingRESTfulAPIs_Register.html&gt;
+Spring XD: A Platform for data at scale and developer productivity
+Speaker: Sabby Anandan
+
+Worried about Big Data and the challenges inherent in making a real application? You don’t have to worry anymore! Spring XD provides a one-stop shop solution that spans traditional enterprise to Big Data use cases - both batch and streaming. It&apos;s important to choose the right tool for each use-case, which is why Spring XD integrates with technologies such as Spark, Reactor and RxJava to demonstrate the flexibility and the unified programming model to support complex data computation use-cases.
+
+In this webinar, we&apos;ll show you how to develop data-driven use cases much faster than other big data solutions on the out of the box XD runtime.
+Europe
+Tuesday, February 17, 2015
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/http://connect.pivotal.io/OSS_Webinar_7AMSpringXDAPlatformfordataatscaleanddeveloperproductivity_Register.html&gt;
+North America
+Tuesday, February 17, 2015
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMSpringXDAPlatformfordataatscaleanddeveloperproductivity_Register.html&gt;
+Introducing Spring Session
+Speaker: Josh Long
+
+Back in the era of the application server, HTTP Session replication was a common way to scale out user session data, as well as make it fault tolerant. In today&apos;s world of lightweight containers, PaaS, and virtualization, Spring Session offers a 100% server and/or container portable HTTP Session.
+
+See how Spring Session easily plugs in implementations like Redis, scales out across a cluster, handles multiple users&apos; browser sessions, works with WebSocket, and allows header based authentication within REST apps. It&apos;s a perfect fit for working with user data, particularly in a highly distributed environment like the cloud, or on a Platform like Cloud Foundry.
+Europe
+Tuesday, February 24, 2015
+ 3:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMIntroducingSpringSession_Register.html&gt;
+North America
+Tuesday, February 24, 2015
+ 10:00AM PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMIntroducingSpringSession_Register.html&gt;
+Spring Framework on Java 8
+Spring has a track record of providing dedicated support for new Java generations in a timely fashion, and now it’s right about time to go Java 8: With Spring Framework 4.0
+Watch Video &lt;http://spring.io/blog/2015/01/14/springone2gx-2014-replay-spring-framework-on-java-8&gt;
+Archived videos
+ Webinar Replay: Using Reactor for Async/Non-blocking Microservices &lt;http://spring.io/blog/2014/12/11/webinar-replay-using-reactor-for-asynch-non-blocking-microservices&gt;
+ Webinar Replay: Spring Boot and JRebel 6.0
+
+ SpringOne2GX 2014 Replay: Spring Integration - Java Configuration and More &lt;http://spring.io/blog/2015/01/14/springone2gx-2014-replay-spring-integration-java-configuration-and-more&gt;
+ SpringOne2GX 2014 Replay: Caching and Messaging Improvements in Spring Framework 4.1 &lt;http://spring.io/blog/2015/01/14/springone2gx-2014-replay-caching-and-messaging-improvements-in-spring-framework-4-1&gt;
+ SpringOne2GX 2014 Replay: From 0 to Spring Security 4.0 &lt;http://spring.io/blog/2015/01/14/springone2gx-2014-replay-from-0-to-spring-security-4-0&gt;
+ SpringOne2GX 2014 Replay: Spring Framework on Java 8 &lt;http://spring.io/blog/2015/01/14/springone2gx-2014-replay-spring-framework-on-java-8&gt;
+ SpringOne2GX 2014 Replay: REST Services with RabbitMQ, Spring Integration and 
+Node.JS
+ SpringOne2GX 2014 
+Replay: Inside spring.io: a Production Spring Reference Application
+ SpringOne2GX 2014 Replay: How to get Groovy with Java 8 &lt;http://spring.io/blog/2015/01/09/springone2gx-2014-replay-how-to-get-groovy-with-java-8&gt;
+ SpringOne2GX 2014 Replay: Experiences using Grails in a Microservice Architecture &lt;http://spring.io/blog/2015/01/08/springone2gx-2014-replay-experiences-using-grails-in-a-microservice-architecture&gt;
+ SpringOne2GX 2014 Replay: Android and Groovy, a winning pair? &lt;http://spring.io/blog/2015/01/08/springone2gx-2014-replay-android-and-groovy-a-winning-pair&gt;
+ SpringOne2GX 2014 Replay: Painless Build and Deploy for YARN Applications with Spring &lt;http://spring.io/blog/2015/01/08/springone2gx-2014-replay-painless-build-and-deploy-for-yarn-applications-with-spring&gt;
+How to use Spring Session with Spring Boot and Redis
+This guide describes how to use Spring Session to transparently leverage Redis to back a web application’s HttpSession when using Spring Boot. Before you use Spring Session, you must ensure to update your dependencies.
+View Guide &lt;http://docs.spring.io/spring-session/docs/current-SNAPSHOT/reference/html5/guides/boot.html&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+http://spring.io/guides
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Session 1.0.0 &lt;http://spring.io/blog/2015/01/08/spring-session-1-0-0-release&gt;
+ Spring IO Platform 1.1.1 &lt;http://spring.io/blog/2015/01/15/spring-io-platform-1-1-1-released&gt;
+ Spring Boot 1.2.1 released &lt;http://spring.io/blog/2015/01/08/spring-boot-1-2-1-released&gt;
+ Spring IO Platform 1.1.0.RC1 &lt;http://spring.io/blog/2014/12/12/spring-io-platform-1-1-0-rc1-released&gt;
+ Spring Integration, Spring AMQP Maintenance Releases &lt;http://spring.io/blog/2014/12/15/spring-integration-spring-amqp-maintenance-releases-available&gt;
+ Spring for Apache Hadoop 2.0.4 &lt;http://spring.io/blog/2014/12/16/spring-for-apache-hadoop-2-0-4-released&gt;
+ Spring Security OAuth 2.0.5.RELEASE &lt;http://spring.io/blog/2014/12/17/spring-security-oauth-2-0-5-release-available-now&gt;
+ Spring IO Platform 1.0.4 &lt;http://spring.io/blog/2014/12/17/spring-io-platform-1-0-4-released&gt;
+ Spring IO Platform 1.1.0 &lt;http://spring.io/blog/2014/12/17/spring-io-platform-1-1-0-released&gt;
+ Spring for Apache Hadoop 2.1.0.M3 &lt;http://spring.io/blog/2014/12/18/spring-for-apache-hadoop-2-1-0-m3-released&gt;
+ Spring Cloud 1.0.0.RC1 &lt;http://spring.io/blog/2014/12/19/spring-cloud-1-0-0-rc1-available-now&gt;
+ Spring XD 1.1 M2 and 1.0.3 &lt;http://spring.io/blog/2014/12/23/spring-xd-1-1-m2-and-1-0-3-released&gt;
+ Spring Framework 4.1.4 &amp; 4.0.9 &amp; 3.2.13 &lt;http://spring.io/blog/2014/12/30/spring-framework-4-1-4-4-0-9-3-2-13-released&gt;
+&quot;Configuring It All Out&quot; or &quot;12-Factor App-Style 
+Configuration with Spring&quot;
+ Spring and Angular JS: A Secure 
+Single Page Application
+ The Login Page: Angular JS and 
+Spring Security Part II
+ This Year in Spring 2014 &lt;http://spring.io/blog/2014/12/30/this-year-in-spring-december-30-2014&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;Search=Search&amp;subjectID=17750&amp;filters=subjectID&gt;
+
+Enterprise Integration with Spring &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Enterprise+integration+spring&amp;Search=Search&gt;
+
+Spring Web &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Spring+Web&amp;Search=Search&gt;
+
+What’s New in Spring (NEW) &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=What%27s+New+in+Spring&amp;Search=Search&gt;
+
+JPA with Spring (coming late 2014) - Current version ‘Hibernate with Spring’ &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=JPA&amp;Search=Search&gt;
+
+Groovy &amp; Grails &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Groovy&amp;Search=Search&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

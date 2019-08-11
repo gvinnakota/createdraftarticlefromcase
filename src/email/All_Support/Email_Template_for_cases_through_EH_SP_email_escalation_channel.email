@@ -1,0 +1,40 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div style=""><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; line-height: normal;"><span style="color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 10pt;">EHSP QUALIFIED MANAGERS ARE
+RESPONSIBLE FOR ENSURING ESCALATIONS ARE HANDLED ACCORDING TO OUR SEV 1 SLO.<br>
+<br>
+FIRST EHSP RESPONDER: REPLY-ALL TO THIS EMAIL INTERNALLY TO INDICATE OWNERSHIP.<br>
+<br>
+INSTRUCTIONS FOR HANDLING THE CUSTOMER'S ESCALATION:<br>
+<br>
+1) Acknowledge receipt of escalation case by replying back to the escalator.<br>
+2) Ask for the customer's preferred communication channel (phone number, or
+email alias if available) if not provided.<br>
+3) Follow up immediately with customer through the preferred communication channel.<br>
+4) Set proper expectations on how the case will be handled (State that their
+service request is under review by EH/SP Certified personnel).<br>
+5) Inform EH/SP resource and Manager on Duty about escalation and next
+steps.&nbsp;<br>
+<br>
+EHSP CASE DETAILS<br>
+-----------------------<br>
+Case Subject:&nbsp;<b>{!Case.Subject}</b><br>
+Case Contact:&nbsp;<b>{!Case.Contact}</b><br>
+Severity:&nbsp;<b>{!Case.Severity}</b><br>
+Product:&nbsp;<b>{!Case.Product}</b><br>
+Case Owner:&nbsp;<b>{!Case.Owner}</b><br>
+<br>
+Description:&nbsp;<b>{!Case.Description}</b><br>
+<br>
+Link to case:&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 13.3333px;"><a href="https://pivotal.lightning.force.com/one/one.app?source=alohaHeader#/sObject/{!Case.Id}/view">https://pivotal.lightning.force.com/one/one.app?source=alohaHeader#/sObject/{!Case.Id}/view</a></span></font></p><p class="MsoNormal" style="font-family: arial; font-size: 12pt; margin-bottom: 0.0001pt; line-height: normal;"><font face="Arial, sans-serif" style="" color="#ffffff"><br></font></p><p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><font face="Arial, sans-serif" style="" color="#ffffff">{!Case.ThreadId__c}</font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><a href="https://pivotal--staging.lightning.force.com/one/one.app#/sObject/{!Case.Id}/view"><o:p></o:p></a></p><br></div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[<br>]]></td>
+</tr>
+</table>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B2</blockId>
+            <joinTable>a</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Account.Super_Parent_Account__c</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT.NAME</field>
+        </columns>
+        <columns>
+            <field>Contact.refedge__Contact_Name__c</field>
+        </columns>
+        <columns>
+            <field>TITLE</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Account.Named_Account__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Yes</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Contacts &amp; Accounts block 4</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>ContactList</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CREATED_DATE</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Account</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Account.LeanData__Leads__r$Name</field>
+        </columns>
+        <columns>
+            <field>Account.LeanData__Leads__r$Title</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Account.LeanData__Leads__r$Is_Matched_Account_Named__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Yes</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Account with Related Leads Custo block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Account_with_Related_Leads_Custom__c</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>Account$CreatedDate</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>a</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_ID</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Named Accounts with Leads and Contacts</name>
+    <reportType>ContactList</reportType>
+    <showDetails>true</showDetails>
+</Report>

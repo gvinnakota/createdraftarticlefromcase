@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Hadoop Summit_Q215.Follow Up Attended</name>
+    <style>none</style>
+    <subject>Thanks for visiting Pivotal at Hadoop Summit in Brussels</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+If you missed Pivotal&apos;s keynote at Hadoop Summit in Brussels, the session described the Open Data Platform Initiative &lt;http://opendataplatform.org/&gt; (ODP) – a shared industry effort focused on promoting and advancing the state of open source big data technologies for the enterprise. A common ODP core – which anchors Pivotal Big Data Suite &lt;http://pivotal.io/big-data/pivotal-big-data-suite&gt; – will help avoid vendor lock-in, 
+simplify development of interoperable third-party technologies and, most importantly, reinforce the role of the Apache Software Foundation in the development and governance of upstream projects. 
+
+Check out this press 
+release for additional information about the first milestone in Pivotal’s commitment to deliver ecosystem interoperability rooted in open source.
+
+Want to learn how to be more open, agile and cloud-ready? Come see Pivotal in action at a Pivotal Big Data Roadshow &lt;http://www.pivotal.io/big-data/data-roadshow&gt; or Pivotal Cloud Roadshow &lt;http://pivotal.io/platform-as-a-service/cloud-platform-roadshow&gt; near you.
+
+We look forward to seeing you at the next Hadoop Summit in San Jose &lt;http://2015.hadoopsummit.org/san-jose/&gt;!
+
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

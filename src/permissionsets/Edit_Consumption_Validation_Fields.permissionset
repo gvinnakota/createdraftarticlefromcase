@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Edit Consumption Validation Fields</label>
+    <license>Salesforce</license>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.BDS_Consumption_Validated_by_Tech_Lead__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.PCF_Consumption_Validated_By_Tech_Lead__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>

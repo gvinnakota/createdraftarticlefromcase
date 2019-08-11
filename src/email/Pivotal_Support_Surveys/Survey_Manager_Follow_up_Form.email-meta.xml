@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Clicktools Mgr Survey email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Survey - Manager Follow-up Form</name>
+    <style>none</style>
+    <subject>Your action is required for customer feedback on case #{!Pivotal_Survey_Feedback__c.Case_Number_Feedback__c}</subject>
+    <textOnly>Manager Survey Followup Form
+
+&quot;https://survey.clicktools.com/app/survey/go.jsp?iv=rernlapx0f5v&amp;q11={!Pivotal_Survey_Feedback__c.Id}&quot;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

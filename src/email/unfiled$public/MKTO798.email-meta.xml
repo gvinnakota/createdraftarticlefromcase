@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.June 2014 Newsletter</name>
+    <style>none</style>
+    <subject>Spring IO Platform 1.0 introduces a cohesive and versioned Spring Platform</subject>
+    <textOnly>JUNE 2014
+&lt;http://platform.spring.io/platform/&gt;
+Spring IO Platform 1.0
+The real pain that we&apos;re addressing with Spring IO Platform comes from the wealth of open source libraries that we, and our customers, rely upon to build software quickly and effectively. Spring IO Platform tackles this problem in two ways: Firstly, we&apos;ve made at least one change to pretty much every project that&apos;s involved to harmonise their dependencies. By harmonise, we mean that, where there&apos;s a choice of dependencies that provide the same functionality, all of our projects are now using the same one, and, where there&apos;s a choice of versions, our projects by default are using the same version where possible. Secondly, we&apos;re providing a list of versions for both our projects and their direct dependencies that we&apos;re as sure as we can be will work together, i.e. we&apos;re helping customers to focus on using open source to build applications quickly and effectively without worry about what version of X will work with Y.
+
+Creating this platform represents 50,000 tests on across 36 Spring projects, and 436 3rd party dependencies on both Java 7 and 8!
+Learn More &lt;http://platform.spring.io/platform/&gt;
+Introducing Spring IO Platform: Big Things Come in Small (Java) Packages
+We&apos;ve just released the [Spring IO platform](). The Spring IO platform includes *Foundation Layer* modules and *Execution Layer* domain-specific runtimes (DSRs). The Foundation Layer represents the core Spring modules and associated third-party dependencies that have been harmonized to ensure a smooth development experience. The DSRs provided by the Spring IO Execution Layer dramatically simplify building production-ready, JVM-based workloads. The first release of Spring IO includes two DSRs: Spring Boot and Grails. Spring XD will be added to the Spring IO platform later in 2014. What&apos;s this all mean to you? It means that consuming the harmonized, integrated platform is easier than ever. We&apos;ve provided a BOM (&quot;bill of materials&quot;) dependency that you can consume from your build-tool. Shown below is the declaration for Maven.
+```
+ &lt;dependencyManagement&gt;
+ &lt;dependencies&gt;
+ &lt;dependency&gt;
+ &lt;groupId&gt;io.spring.platform&lt;/groupId&gt;
+ &lt;artifactId&gt;platform-bom&lt;/artifactId&gt;
+ &lt;version&gt;1.0.0.RELEASE&lt;/version&gt;
+ &lt;type&gt;pom&lt;/type&gt;
+ &lt;scope&gt;import&lt;/scope&gt;
+ &lt;/dependency&gt;
+ &lt;/dependencies&gt;
+ &lt;/dependencyManagement&gt;
+```
+
+Once in place, simply declare dependencies on your dependencies. For example a dependency on `org.springframework.boot:spring-boot-starter-web` will bring in a full working web stack supporting REST, validation, file uploads, and even an embedded web server. Omit the version in your dependency declaration - let us handle that for you! As we evolve the Spring IO platform, you simply need to update the `bom` declaration and you can trust that the updated pieces will work well together. Less fuss, more code, quicker.
+Working with Spring Boot projects in STS made easy - part 2
+Using the auto-completion and the content-assist features in your IDE is nice and saves you a lot of time. But what happens if you would like to use auto-completion for something that is not yet on the classpath of your project? Wouldn’t it be nice and convenient to just type in the beginning of the class name, for example, and let the IDE figure out the rest? We added this specifically for Spring Boot projects in STS 3.5.0.
+
+Let’s imagine you started with a simple Spring Boot project and want to write a controller with a request mapping. All you need to do is to type in “@Req” and trigger the content-assist in STS. It will show you a list of possible types from within your project classpath, but in addition to that a list of types that are typical for Spring Boot projects, but not yet on your classpath. Selecting one of those types adds the type and the import statement to your source code, but also adds the necessary dependency to the pom.xml file of your project.
+Building your app management tools with Spring Boot
+Speaker: Greg Turnquist
+
+Spring Boot lets you write apps better than ever. But did you ever think about writing all those support scripts and tools you inevitably need with Boot as well? In this webinar, see how the Spring team has already picked up and run with Spring Boot CLI as a powerful way to manage things like all open issues against the 60+ getting started guides. See how to monitor application logs using a little Spring Integration, Spring WebSocket+STOMP, and other technologies, all with some lightweight Boot+Groovy code.
+Europe
+Tuesday, July 8, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_BuildingYourAppManagementToolswithSpringBoot7AM_Register.html&gt;
+North America
+Tuesday, July 8, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_BuildingYourAppManagementToolswithSpringBoot10AM_Register.html&gt;
+Building a Shopping Cart in 24 Hours using Spring
+Speakers: Casey Doolittle and Phil Dutson
+
+Creating a transactional website that is secure, fast, and responsive is a challenge all on its own. Creating one in 24 hours borders madness, however with the resources that Spring brings to the table, this can be accomplished. Casey Doolittle and Phil Dutson were issued the task of creating a charity-benefit website two days before the sale started. By leveraging the flexibility and power that various Spring components bring to the table, this mighty feat was accomplished.
+
+During this talk Casey and Phil will discuss the how and why of using Spring 3.2.4, Spring Web MVC, and Spring Security 3.1.4 as their framework of choice to get the project done on time.
+Europe
+Tuesday, July 15, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_BuildingaShoppingCartin24HoursusingSpring7AM_Register.html&gt;
+North America
+Tuesday, July 15, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_BuildingaShoppingCartin24HoursusingSpring10AM_Register.html&gt;
+Why Do I recommend Spring
+Speaker: Michael Plod
+
+Is Spring the new legacy as quite a few people tell you on their blogs? I disagree on many levels. Throughout this session I will holistically detail without any polemics why I do recommend using the Spring Framework and its ecosystem. Aspects that will be covered include: operational impacts, ecosystem, coding and road maps. This presentations aim at IT managers, Architects and Developers alike.
+Europe
+Tuesday, July 22, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_WhydoIrecommendSpring7AM_Register.html&gt;
+North America
+Tuesday, July 22, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_WhydoIrecommendSpring10AM_Register.html&gt;
+Conquering Content-enabled Web and Mobile Applications with Spring and Groovy
+Speaker: Russ Danner, Crafter Software
+
+Rich media and digital content are an integral part of nearly all Web and mobile applications today, but the growing number of platforms, changing business demands and time to market are a major concern.
+
+Join this session to learn modern practices for building content-enabled Web and mobile apps. We will uncover common challenges faced by content and application teams, explain how these problems are solved by simple, powerful tools and the right architecture. We&apos;ll also demonstrate how leading organizations such as AT&amp;T, Marriott, and Harvard Business Publishing have succeeded by leveraging Spring Framework, Groovy and other leading Java development technologies along with content management frameworks to build and manage content rich applications.
+Europe
+Tuesday, July 29, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_ConqueringContentwithSpringandGroovy7AM_Register.html&gt;
+North America
+Tuesday, July 29, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_ConqueringContentwithSpringandGroovy10AM_Register.html&gt;
+&lt;http://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;
+Building &apos;Bootiful&apos;­ Applications with Spring Boot &lt;http://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;
+Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring&apos;s flexibility with conventional, common sense defaults to make application development not just fly, but pleasant!
+Watch Video &lt;http://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;
+Archived videos
+ Webinar Replay: Data-Driven Applications with Spring and Neo4j &lt;http://spring.io/blog/2014/05/28/webinar-replay-data-driven-applications-with-spring-and-neo4j&gt;
+ SpringOne2GX 2013 Replay: Making Connections with Spring Social  &lt;http://spring.io/blog/2014/06/10/springone2gx-2013-replay-making-connections-with-spring-social&gt;
+ SpringOne2GX 2013 Replay: Space Exploration: APIs for Secure Interconnected HTML5 Applications with 
+Sencha Space
+ SpringOne2GX 2013 Replay: How Not to Measure 
+Latency
+ SpringOne2GX 2013 Replay: The 
+Pitfalls Of Building Large Scale Applications
+ SpringOne2GX 2013 Replay: Build Your Very Own Private Cloud Foundry &lt;http://spring.io/blog/2014/05/27/springone2gx-2013-replay-build-your-very-own-private-cloud-foundry&gt;
+ SpringOne2GX 2013 Replay: Free Yourself with CloudFoundry: A Private Cloud Experience &lt;http://spring.io/blog/2014/05/27/springone2gx-2013-replay-free-yourself-with-cloudfoundry-a-private-cloud-experience&gt;
+ SpringOne2GX 2013 Replay: Virtualizing and Tuning Large Scale Java Platforms &lt;http://spring.io/blog/2014/05/20/springone2gx-2013-replay-virtualizing-and-tuning-large-scale-java-platforms&gt;
+ 
+SpringOne2GX 2013 Replay: Migrating from WLS, WAS, 
+JBoss to Pivotal tc Server
+&lt;http://spring.io/guides/gs/spring-boot/&gt;
+Building an Application with Spring Boot
+This guide provides a sampling of how Spring Boot helps you accelerate and facilitate application development. As you read more Spring Getting Started guides, you will see more use cases for Spring Boot. It is meant to give you a quick taste of Spring Boot.
+View Guide &lt;http://spring.io/guides/gs/spring-boot/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+
+
+http://spring.io/guides
+
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring XD 1.0.0.M7 Released &lt;http://spring.io/blog/2014/06/03/spring-xd-1-0-0-m7-released&gt;
+ Using new when.js 3.2.2 to build a front end for Spring Data REST &lt;http://spring.io/blog/2014/06/02/using-new-when-js-3-2-2-to-build-a-front-end-for-spring-data-rest&gt;
+ Spring Boot 1.1.0.RC1 Available Now &lt;http://spring.io/blog/2014/06/02/spring-boot-1-1-0-rc1-available-now&gt;
+ Spring Boot 1.1.0.M2 &lt;http://spring.io/blog/2014/05/27/spring-boot-1-1-0-m2-available-now&gt;
+ Spring Boot 1.1.0.M1 &lt;http://spring.io/blog/2014/05/14/spring-boot-1-1-0-m1-available-now&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.0.M1 released &lt;http://spring.io/blog/2014/05/30/spring-tool-suite-and-groovy-grails-tool-suite-3-6-0-m1-released&gt;
+ Spring Web Flow 2.4.0 and 2.3.4 Available &lt;http://spring.io/blog/2014/05/30/spring-web-flow-2-4-0-and-2-3-4-available&gt;
+ Spring Batch 3.0.0 is now GA &lt;http://spring.io/blog/2014/05/29/spring-batch-3-0-0-is-now-ga&gt;
+ Spring Batch 3.0.0.RC1 &lt;http://spring.io/blog/2014/05/13/spring-batch-3-0-0-rc1-is-now-available&gt;
+ Grails 2.4  &lt;http://spring.io/blog/2014/05/21/grails-2-4-released&gt;
+ Spring LDAP 
+2.0.2 Released
+ Spring Security 3.2.4 &lt;https://spring.io/blog/2014/05/21/spring-security-3-2-4-released&gt;
+ Spring Web Services 2.2.0 &lt;http://spring.io/blog/2014/05/22/spring-web-services-2-2-0-released&gt;
+ Spring for Apache Hadoop 2.0 RC4 &lt;http://spring.io/blog/2014/05/27/spring-for-apache-hadoop-2-0-rc4-released&gt;
+ Spring Data Release Train Dijkstra Goes GA &lt;http://spring.io/blog/2014/05/20/spring-data-release-train-dijkstra-goes-ga&gt;
+ Spring Framework 4.0.5 &amp; 3.2.9 – next stop: 4.1 &lt;http://spring.io/blog/2014/05/20/spring-framework-4-0-5-3-2-9-released-next-stop-4-1&gt;
+Introducing Spring Cloud &lt;http://spring.io/blog/2014/06/03/introducing-spring-cloud&gt;
+ Using the innovative Groovy template engine in Spring Boot &lt;http://spring.io/blog/2014/05/28/using-the-innovative-groovy-template-engine-in-spring-boot&gt;
+ Pivotal CF 1.2 Now Available Including Support for VMware Hybrid 
+Cloud Service
+ What’s New in Spring Data Dijkstra? &lt;http://spring.io/blog/2014/05/21/what-s-new-in-spring-data-dijkstra&gt;
+ Preview Spring Security Test: Web Security &lt;http://spring.io/blog/2014/05/23/preview-spring-security-test-web-security&gt;
+ Preview Spring Security Test: HtmlUnit &lt;http://spring.io/blog/2014/05/23/preview-spring-security-test-htmlunit&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

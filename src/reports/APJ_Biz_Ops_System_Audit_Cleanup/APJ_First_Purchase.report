@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.First_Purchase_Date_Labs__c</field>
+    </columns>
+    <columns>
+        <field>Account.First_purchase_Date_PCF__c</field>
+    </columns>
+    <columns>
+        <field>Account.First_Purchase_Date_Data_Products__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>User.Region__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>APJ Australia New Zealand,APJ Greater China,APJ India,APJ ISR,APJ Japan,APJ Korea,APJ Other,APJ South Asia,APJ Southeast Asia</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>APJ | First Purchase</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

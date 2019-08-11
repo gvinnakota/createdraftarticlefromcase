@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Nov 2016 1st issue.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.11-02-16 V4N12</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter—2 Nov 2016</subject>
+    <textOnly>November 2, 2016
+Vol. 4, No. 12
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – 4 Hands, 2 Brains, 1 Agreement
+All Things Product &lt;[[#product-update]]&gt; – It&apos;s All in The Text
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – A Pairing Tale
+My Name Is &lt;[[#my-name-is]]&gt; – Neha Batra
+the news is all good (eventually) 
+
+
+
+
+Steve Casale, Sr. Manager, Corporate Communications
+If Pivotal had a family crest one if its symbols would be pairing. As a colleague put it, pairing is a where two colleagues come to a joint understanding of—and agreement on—a problem, which they solve together. That kind of coding and colleague-proximity dispels most notions that developers are single-domain experts. It also helps developers learn faster from each other, and keep everyone on point if the mind wanders...
+
+There are other important symbols, but it&apos;s easy to see how pairing is transformational, and how between a frictionless platform and agile ways, it&apos;s the pairing part of agile that leaves a a deep imprint on our clients, who learn it and then teach it to their peers.
+
+In &quot;Labs+Culture&quot; Labs&apos; Jason Fraser paints a nice picture of this in an article on the impact of pairing in a Labs-inspired, data engineering-driven project with GE. And Bharath Sitaraman from our data team introduces us to GPtext in &quot;All Things Product&quot;, a tool that has homed in on managing the digital currency of much discovery: text.
+
+ 
+Speaking of data, Pivotal Greenplum (the commercial variety) 4.3.10.0 is a sizzling release, with GPORCA optimizer improvements, writable AWS S3 External Tables, and more. Watch the video &lt;[[https://www.youtube.com/watch?v=lCPvpnTzTPY&amp;feature=youtu.be]]&gt; for the high points. And in case you missed it, Pivotal Cloud Foundry is generally available on Azure &lt;[[https://pivotal.io/microsoft]]&gt;. FTW!
+Hope those who spooked out on Halloween had fun. Looked like it worked out for these pumpkins in New York, er... except for that one in the middle:
+
+And if you&apos;re not jealous of folks who live in Boulder, CO you probably will be after seeing photos of Jenn Dearth&apos;s stomping grounds in &quot;My Name is&quot;.
+Enjoy.
+It&apos;s All in the text
+
+
+
+
+Bharath Sitaraman, Principal Product Manager, GPDB
+When it comes to searching for and correlating pretty much anything, text still anchors the web and app experiences. Yet despite—or because of—its ubiquity, the slew of languages, slang, and colloquialisms tend to muddy the search waters of text search.
+Under the search hood, only sophisticated search metrics and analytics are able to make sense of all this structured and unstructured text.
+That&apos;s where GPText &lt;[[http://dsr.cise.ufl.edu/publications/gptext-greenplum-parallel-statistical-text-analysis-framework/]]&gt; (currently in beta) comes in.
+Understanding and leveraging text is a complex problem, but with GPText, we solve important parts of it. GPText is a combination of Solr &lt;[[https://lucene.apache.org/solr/]]&gt; and the Greenplum Database (GPDB). Solr is an open source search engine server, with multiple format APIs (XML, JSON, HTTP), highlighting and facet search/navigators, replication, and a Web-based management interface.
+GPText takes the flexibility and configurability provided by Solr and merges it with the scalability and easy SQL interface of GPDB. Customers with GPDB tables filled with raw text columns can index their data into Solr indexes. This means they can use the familiar SQL interface to search quickly and efficiently through raw text data and filter via the other structured columns in their table. Further, they can pipe the results of their searches into MADLib’s libraries for clustering, classification, sentiment analysis, and other advanced analytics capabilities.
+Many of our customers could use GPText in conjunction with other GPDB offerings to tackle a varied set of problems. For example, in the medical field, analyzing text helps detect and assess patient risk patterns and factors, which in turn determines course of action and tests to run for physicians and their patients. Financial firms can look through internal company communications to detect instances of fraud. Some of these use cases are in flight now with customers.
+Moreover, government institutions and enterprises can analyze social media and other data for feedback, and correlate it with positional data via PostGIS &lt;[[http://www.postgis.net/]]&gt; (think geospatial database). This will give them insights  on how various segments customers interact, or react to newly implemented changes. Think of this for correlating weather or traffic data, and other feedback loops (Pivotal just landed a deal in Japan where GPDB and PostGIS will harness IoT data. The client, the National Institute of Information and Communications Technology, is the main government body for information communications research.)
+Text plays a huge role in our daily lives. In its ability to catalogue and correlate text, GPText is taking meaningful steps to to deciphering the intentions behind all those words.
+Interestings
+
+
+
+
+
+
+
+
+
+ - Quips: James Watters on software as board-room strategy &lt;[[http://searchitchannel.techtarget.com/news/450401551/Dell-EMC-merger-Future-prospects-for-Virtustream-VMware-Pivotal]]&gt; and Pivotal in the Dell umbrella.
+ - Perspective: Uncle Bob post &lt;[[http://blog.8thlight.com/uncle-bob/2014/04/03/Code-Hoarders.html]]&gt; comparing not improving code constantly, to hoarding.
+ - Thoughts: Dat Tran blogs &lt;[[https://blog.pivotal.io/data-science-pivotal/case-studies/how-automakers-and-the-internet-of-things-are-colliding-to-save-lives]]&gt; on neural networks, machine learning and how the IoT is making smarter cars safer.
+ - What&apos;s the origin of Tracker? How did we help the US White House get agile? Watch the Pivotal story: Vignettes &lt;[[https://sites.google.com/a/pivotal.io/vignettes/episode-s1e1]]&gt;.
+ - If you missed it in New York, Kent Beck (yeah that one) stopped by to give a tech talk &lt;[[http://original.livestream.com/newchannel/popoutplayer?channel=pivotallabs&amp;clip=pla_ce5f9f61-b157-49da-8e51-0923df77ec87&amp;time=77]]&gt;.
+ - Around the globe for a Pivotal Halloween &lt;[[https://www.facebook.com/pivotalsoftware/photos/?tab=album&amp;album_id=631320187030004]]&gt; (see the &apos;brain food&apos;).
+a Pairing tale
+
+
+
+
+Jason Fraser, Principal Product Manager, Pivotal Labs
+In early September, we kicked off another interesting project with General Electric to rebuild a backend system that collects metrics from gas turbines used to drive massive generators. The system delivers those metrics to a user interface (UI) for the operators of power plants. The information allows operators and energy brokers to make decisions to optimize plant operations, and helps them calibrate their costs and margins in the bids they make for power.
+
+One of the best parts of this Labs-led project, has been the ongoing collaboration between our data engineers and Pivots. We&apos;re all learning new, repeatable things.
+
+This evolving system is currently in use at 10 power plants, and all of the number-crunching is done using stored procedures in SQL. It takes 18 hours to run the data for the ten power plants in service. GE would like to roll this system out to over 1,000 power plants, and the data has to be fresh daily, so the system we&apos;re helping them architect will allow for the efficient parallel processing from those plants.
+
+Our GE and Labs peers first got together for two weeks to tear apart the stored procedures in order to understand what they’re doing, and how we could systematically scale that functionality. We pretty quickly came to the conclusion that in order to do this right we needed help from our Pivotal Data Engineering colleagues.
+
+We ended up rolling off the Labs engineers and keeping on a pair of data engineers—one each from Data Science and Data Engineering. We’ve been full steam ahead since then (pun intended) at replacing these stored procedures with Python driving Spark &lt;[[http://spark.apache.org/]]&gt;. The primary stakeholders at GE are very excited about our test coverage and the team resilience that pair programming provides.
+
+As a Labs Product Manager, I’m having a great time working with our engineers outside of the Labs organization. We’re learning how to do TDD (test driven development) in some very interesting ways, getting creative about acceptance testing of back-end stories, and learning about how pairing could be applied on Data Science/Engineering projects.
+
+The project has affirmed some important things:
+
+
+
+
+ - Data Engineering and Labs can work together on a billable project, and all parts of the organization can be compensated appropriately (in both revenue and utilization
+ - You can use TDD for data engineering projects
+ - Pairing works regardless of the nature of the project
+ - Data Engineers and Data Scientists can work well on a Labs-style project
+ - It’s been valuable to have a Labs Product Manager on a data engineering project
+
+
+A big challenge has been getting to the appropriate infrastructure from GE, and we’re capturing all of the learnings around this so we can accomplish work at this scale with fewer hiccups in the future.
+Jenn dearth
+
+
+
+
+
+Jenn Dearth, Product Manager, Boulder
+At Pivotal I...
+Get to work with the most talented engineers, designers, and other product managers to help our clients ship products. Since joining Pivotal Labs, I’ve had the opportunity to work on a health insurance product, automaker backend platform, medical device dashboard, volunteer matching app, and a contract labor management system. Never a dull moment!
+You can find me...
+In the Boulder &lt;[[http://www.nytimes.com/interactive/2016/08/18/travel/what-to-do-36-hours-boulder-colorado.html]]&gt; office where we play foosball instead of ping pong, and are within 10 minutes of some of the world’s best hiking trails.
+Currently, I am working on…
+A contract labor management system for a large healthcare consulting company. As an example of the creativity brewing here, the product is called “Contract Labor Optimizer” so the acronym is “CLO”. It’s only natural then that our mascot is “CeeLo Orange”.
+ 
+
+
+
+
+In my spare time…
+I am in the mountains with my husband and son. If the weather is unfavorable, then we enjoy watching documentaries or playing indie video games like Undertale &lt;[[https://en.wikipedia.org/wiki/Undertale]]&gt;, Fez &lt;[[http://fezgame.com/]]&gt;, or Never Alone &lt;[[http://neveralonegame.com/]]&gt; (which is a creative mashup of the two mediums).
+Something you probably don’t know about me…
+I met my husband in line at a documentary screening about Ray Kurzweil at Sixth and I Synagogue in Washington DC. It was also coincidentally where we were married due to a last-minute change in our venue. We had a friend who knew the Washington Post “On Love” columnist, and she convinced us to meet with Ellen McCarthy who wrote this piece &lt;[[https://www.washingtonpost.com/lifestyle/style/on-love-i-just-got-a-really-warm-kind-feeling/2013/03/27/570a9d80-926e-11e2-bdea-e32ad90da239_story.html]]&gt; about our story.
+Neha
+
+Neha at work and play
+To me Pivotal is…
+
+ 
+&lt;&lt;A truly rare place. In addition to having the smartest people, there is a convicted civility &lt;[[http://www.forbes.com/sites/pauljankowski/2015/05/12/4-ways-to-exhibit-convicted-civility-in-the-workplace/#3c74098c7863]]&gt; that permeates our culture and fosters deep discussions that uncover thoughtful solutions. It is hands down the best place I’ve ever worked, and I am constantly reminded of how unique our company is.&gt;&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

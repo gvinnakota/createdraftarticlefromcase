@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_9AM_PCF-Deciphering the Buzzword Bingo_Q216.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: Deciphering the Buzzword Bingo</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+ Thank you for registering for the upcoming webinar Deciphering the Buzzword Bingo on Tuesday, June 28, 2016. 
+
+Please see event details below: 
+ Date: Tuesday, June 28, 2016 {{my.Save the Date:default=edit me}}
+Time: 9:00am–10:00am PDT (San Francisco, GMT-07:00) 
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1190422/2B5BECF5845424730286C5CACAAAA5BF]]&gt; 
+
+Audio Information: This webinar will be streaming via your computer speakers. 
+ 
+We look forward to you joining us.
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

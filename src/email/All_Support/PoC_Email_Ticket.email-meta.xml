@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>PoC Email Ticket</name>
+    <style>formalLetter</style>
+    <subject>Pivotal Customer Support - PoC</subject>
+    <textOnly>Thank you for contacting Pivotal Customer Service - PoC Support.
+To start with, please provide us the following details:
+
+Is this internal Pivotal /External Customer driven?
+
+
+
+Name of the Customer:
+
+
+Pivotal Employee Onsite:
+
+
+Pivotal Account Number:
+
+
+
+Name of the Pivotal Account Executive:
+
+
+Potential opportunity of deal $$:
+
+
+DSE involved:
+
+
+Product:
+
+
+Version:
+
+
+SFDC opportunity id:
+
+Our agents will review your request (Case # {!Case.CaseNumber}) and get back to you as soon as possible. Note that during weekends and holidays, we will respond on the next business day.
+
+If you have a system down situation and require immediate assistance, please call Customer Service at (877) 477-2269.
+
+Kind Regards,
+The Pivotal Customer Service Team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

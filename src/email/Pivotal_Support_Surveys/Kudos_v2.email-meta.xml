@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>[7.8.2019 HG] Notification for Positive Customer Feedback</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Kudos v2</name>
+    <style>none</style>
+    <subject>You are amazing! Your customer submitted feedback</subject>
+    <textOnly>Thanks for helping {!Pivotal_Survey_Feedback__c.ContactName_Feedback__c} from {!Pivotal_Survey_Feedback__c.Account_Name_Feedback__c} with their issue, &quot;{!Pivotal_Survey_Feedback__c.CaseSubject_Feedback__c}&quot; (case number: {!Pivotal_Survey_Feedback__c.CaseURL_Feedback__c})  
+
+They gave you a {!Pivotal_Survey_Feedback__c.CES_Survey_Score__c} out of 5. Customer comments (if any): {!Pivotal_Survey_Feedback__c.CES_Positive_Feedback__c} 
+
+------------------------------------------------------------------------  
+
+Nice work, {!Pivotal_Survey_Feedback__c.Case_Owner_Feedback__c}! 
+
+- Your Support Enablement team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

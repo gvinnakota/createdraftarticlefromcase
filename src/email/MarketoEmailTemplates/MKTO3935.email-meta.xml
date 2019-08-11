@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_QCon NY_Q216.Post-event email</name>
+    <style>none</style>
+    <subject>Thank You for Joining Pivotal’s Spring speakers at QCon New York 2016</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+
+ Thank you for joining Pivotal and Spring speakers at QCon New York. We hope you had the opportunity to learn how and why enterprises are adopting Cloud Native application architectures to drive modern software experiences for their customers. 
+
+ Start your Cloud Native journey on the Cloud Native microsite &lt;[[http://pivotal.io/cloud-native]]&gt; to learn why it matters, what it looks like, and how to become Cloud Native. When you or your manager are ready to dive a little deeper, we suggest O’Reilly’s Migrating to Cloud Native Applications &lt;[[http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook]]&gt; &amp; Beyond 
+the Twelve-Factor App, freely available on the Pivotal site. If you want to dive right in, we could arrange a hands-on workshop day at your offices or at a nearby hotel. Simply inquire here &lt;[[http://pivotal.io/cloud-native-workshop]]&gt; to begin. 
+
+ Learn even more at SpringOne Platform 2016
+
+ - Learn more about Reactive Spring, Data microservices, Spring Cloud Data Flow and much more at the Java conference for Spring &amp; Cloud Foundry professionals. 
+ - Aria Las Vegas August 1–4, 2016—Check out the agenda &lt;[[https://2016.event.springoneplatform.io/schedule/sessions]]&gt; and register today &lt;[[https://2016.event.springoneplatform.io/register]]&gt;!
+
+ In case you missed the Pivotal talks at QCon New York, here’s a quick recap:
+
+ - Rossen Stoyanchev gives a comprehensive view of Reactive Programing for Java Developers &lt;[[https://qconnewyork.com/ny2016/presentation/reactive-programming-java-developers]]&gt;—starting with JDK 9, Reactive Streams, to Spring Framework and even ecosystem topics around data 
+access, to the role of Project Reactor and RxJava 
+ - Mark Pollack’s talk on A Microservice Based Architecture for Stream Processing using Spring Cloud Data Flow &lt;[[https://qconnewyork.com/ny2016/presentation/microservice-based-architecture-stream-processing-using-spring-cloud-data-flow]]&gt; shows us how Spring Boot stream 
+processing applications can be decorated with Kafka and RabbitMQ messaging, with or without a high level DSL, to a variety of runtimes.
+
+ Related Resources
+
+ - Spring Blog: Reactive Spring  &lt;[[https://spring.io/blog/2016/02/09/reactive-spring]]&gt;
+ - Pivotal POV blog: A Quick Look at Spring Cloud Data Flow 
+ - Spring Blog: Configuring it it all out by Josh Long, 12 Factor App Style backing Services  &lt;[[https://spring.io/blog/2015/01/27/12-factor-app-style-backing-services-with-spring-and-cloud-foundry]]&gt;
+ - SpringOne2GX 2015 replay: 12 Factor, or Cloud Native Apps for Spring Developers  &lt;[[https://spring.io/blog/2015/10/19/springone2gx-2015-replay-12-factor-or-cloud-native-apps-for-spring-developers]]&gt;
+ - SpringOne2GX 2015 replay: Getting Started with Spring Cloud  &lt;[[https://spring.io/blog/2015/10/19/springone2gx-2015-replay-getting-started-with-spring-cloud]]&gt;
+ - SpringOne2GX 2015 replay: Developer Experience with Spring Cloud  &lt;[[https://spring.io/blog/2015/10/22/springone2gx-2015-replay-developer-experience-with-spring-cloud]]&gt;
+ - Pivotal POV blog: Now Available—Spring 
+Cloud Services for Pivotal Cloud Foundry
+
+ Stay in touch with Pivotal and join the conversation on our blogs &lt;[[https://blog.pivotal.io/]]&gt;, podcasts &lt;[[http://blog.pivotal.io/podcasts-pivotal]]&gt;, and on Twitter &lt;[[https://twitter.com/pivotal]]&gt;. We hope to see you again soon at a future event &lt;[[https://pivotal.io/news-events]]&gt;! 
+
+ Thanks, The Pivotal &amp; Spring Teams</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

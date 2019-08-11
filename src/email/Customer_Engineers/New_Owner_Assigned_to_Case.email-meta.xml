@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New Owner for Case</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer:New Owner Assigned to Case</name>
+    <style>freeForm</style>
+    <subject>New Owner Assigned for Case {!Case.CaseNumber}</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+My name is {!Case.OwnerFirstName}. I am the Customer Engineer taking ownership of your case.
+
+I have spoken with my colleague, &lt;CE to put name of last ticket owner&gt; who was previously assisting you and am now up to speed on the situation. To ensure we are moving together in the same direction, please note the below list of proposed next actions:
+
+Pivotal to perform:
+
+&lt;CE to insert bullet list with next steps / actions for this case&gt;
+
+Actions we have suggested on your end:
+
+&lt;CE to insert bullet list with next steps / actions for this case&gt;
+
+Kind regards,
+
+&lt;CE name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

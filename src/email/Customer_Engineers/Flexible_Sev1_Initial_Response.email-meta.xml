@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sev 1 Initial Response</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Engineer:Flexible Sev1 Initial Response</name>
+    <style>freeForm</style>
+    <subject>Sev1 Initial Response</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+My name is {!Case.OwnerFirstName}, I am the Engineer with Pivotal Support who will be assisting you with this issue. We understand that a Sev 1 case is an important issue requiring top prioritization and we are here to help.
+
+
+The questions I have outlined, below will allow me to assess which resources to engage and where best to initiate our immediate investigation. Please respond with answers to these questions as soon as possible.
+
+1.) How is your business impacted at this time? I will use this information to notify my management and raise awareness of your situation.
+
+&lt;ce-instructions&gt; Go through a relevant list of questions avoiding the imperative tense. Examples below:
+
+2.) Is your &lt;product name&gt; able to start and continue running?
+
+3.) Is your &lt;product name&gt; performing satisfactorily? Are responses slow? Is the CPU &amp; memory usage for the instance higher than expected? Specific examples will help us to better assess the situation.
+
+4.)  Is the reported problem affecting all applications or just a subset?
+
+5.) What versions of &lt;product name&gt; are deployed in this environment? If failure occurred during an upgrade, please include both old and new versions in your answer. This will help focus our troubleshooting efforts.
+
+6.) Are you able to provide the following logs: xxxxx? For your convenience, you may upload to our Secure Dropzone: https://securefiles.pivotal.io/dropzone/customer-service/{{ticket.id}}
+
+7.) Please reply with a list of any recent changes to your environment and when they occurred as this will help us rule out environmental triggers.
+&lt;/ce-instructions&gt;
+
+I will reach out shortly to you once I have reviewed this information, to discuss our action plan together. I will remain available to assist you promptly throughout the development of this case.
+
+Kind regards,
+
+&lt;engineer name&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

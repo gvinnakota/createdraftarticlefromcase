@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.9-24-15 V3N15</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 15</subject>
+    <textOnly>VOL. 3, NO. 15
+Thursday, September 24, 2015
+Editor Welcome: An (Always) Moveable Feast &lt;#editor-welcome&gt;
+Business Update: Rites of Passage-Legal Roundup &lt;#business-update&gt;
+Product Update: 3 Things to take away from SpringOne 2GX &lt;#product-update&gt;
+Agile Update: Are you Ready for Something New at Startup Week? &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: How Do You Transform a Culture? &lt;#people-update&gt;
+My Name Is... Rushenka Perera  &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ An (always) Movable feast
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+For six years up to the time I left in 2006, Shanghai pursued a singular vision of its future through the cool monuments of glass and steel that rose and poked at the skies from every corner of the city. The joke then was that you couldn’t revisit the new place you had found a month ago, because it hadn’t hung around for your return.
+
+In willing another kind of future into place, Pivotal shows a similar, fluid vitality. In this issue, two colleagues show us the legal engineering underway to smooth the passage to open source. Another duo recaps highlights from SpringOne 2GX &lt;https://twitter.com/springone2gx&gt;, perhaps the biggest statement yet that in Spring and Pivotal have both the cloud and native future down cold.
+ 
+And next week Pivotal will give further definition to open source data for an entire industry (read up on what’s in store from Pivotal at ApacheCon &lt;http://blog.pivotal.io/big-data-pivotal/features/what-to-expect-from-pivotal-at-apachecon-europe-2015&gt; and Strata + Hadoop &lt;http://pivotal.io/event/strata-ny-2015&gt;.)
+
+It’s not all sharp edges though. Take a moment to read Onsi Fakhouri’s account of his team’s elegant premise and approach to creating an everyday culture of inclusion. Finally, find out what’s going down at startup week in Denver &lt;http://www.denverstartupweek.org/&gt;—and how to help socialize the week’s doings.
+
+Enjoy.
+BUSINESS UPDATE
+ Rites Of passage - Legal Roundup
+Cyrus Wadia &lt;https://gopivotal-com.socialcast.com/users/955949-cyruswadia&gt;, Associate General Counsel, Intellectual Property
+Christopher Ing &lt;https://gopivotal-com.socialcast.com/users/1072699-christophering&gt;, Associate General Counsel, Corporate
+With no shortage of opportunities in 2015, our legal team continues to provide strategic legal advice and support across the company. Some of the business drivers we’ve tackled include:
+
+
+ - Finalizing ODPi (formerly called Open Data Platform Initiative &lt;http://opendataplatform.org/&gt;) governance documents. ODPi will enable collaboration between vendors and end users of big data technology. Stay tuned next week to hear all about big data’s giant steps ahead.
+ - Completing a joint venture agreement with Telstra &lt;http://pivotal.io/agile/press-release/pivotal-and-telstra-forge-partnership?account_id=&amp;pivotal=&amp;20150804=&gt;, Australia’s largest telecommunications and media company, to open a new Pivotal Labs office in Sydney, Australia later this year, as part of the Pivotal Labs global expansion plan.
+ - Closing the acquisition of QuickStep Technologies &lt;http://www.prnewswire.com/news-releases/pivotal-acquires-quickstep-technologies-300095838.html&gt; in June, a company which developed a powerful query processing technology that we expect to have a real impact on our SQL query performance across the Pivotal Big Data Suite.
+ - Assisting Roman Shaposhnik and the Pivotal GemFire &lt;http://pivotal.io/big-data/pivotal-gemfire&gt; and Pivotal HAWQ &lt;http://pivotal.io/big-data/pivotal-hawq&gt; teams to transition the cores of Gemfire and HAWQ to the Apache Software Foundation, as Apache Geode &lt;http://geode.incubator.apache.org/&gt; (April), and Apache HAWQ (September).
+
+
+
+We also teamed with our colleagues in HR to stand up:
+
+
+ - Our patent reward program &lt;https://sites.google.com/a/pivotal.io/pivotal-legal---intellectual-property/patents/patent-incentive-reward-policy&gt;, awarding employees $1,500 for each patent application filed, $3,000 for each individual patent issued, and $10,000 for an employee that is an inventor on 10 US patents issued while a Pivotal employee. This reinforces how patents protect Pivotal assets, and our open source offerings and their communities.
+ - A broad-based quarterly stock option exercise program, which included numerous communications with Pivotal colleagues in the U.S. and abroad, and the administration of hundreds of stock option exercises. A special thanks to Jane Jue &lt;https://gopivotal-com.socialcast.com/users/954880-janejue&gt; on our team who oversaw this effort.
+
+
+
+What’s next?
+
+In the spotlight right now is helping make our transition of MADlib and Pivotal Greenplum Database to open source, as smooth as possible. We’ll keep you posted on that, and stay tuned for some of the lessons on dos and don’ts in taking commercial software to open source.
+PRODUCT UPDATE
+ 3 things to take away frpm springone 2gx
+ Nick Cayou &lt;https://gopivotal-com.socialcast.com/users/912515-nickcayou&gt;, VP, Global Alliances
+Sabby Anandan &lt;https://gopivotal-com.socialcast.com/users/1032221-sabbyanandan&gt;, Product Manager, Spring 
+XD
+More than 1,000 java and Spring heavies descended on America’s capital last week for something other than government business at SpringOne 2GX &lt;http://www.springone2gx.com/&gt;. A platinum sponsor, Pivotal held 51 briefings (up from 19 last year), and had numerous presenters. Here are a some Pivotal takeaways from what many called the most impactful Spring event yet.
+
+Introducing Spring Cloud Data Flow
+Spring Cloud Data 
+Flow is Spring XD reimagined as a cloud native programming and operating model for composable data microservices on a structured Pivotal Cloud Foundry &lt;https://pivotal.io/platform&gt; platform. The integration and batch modules in this new architecture are Spring Boot &lt;http://projects.spring.io/spring-boot/&gt; applications. While the applications can correspond to modules in old architectures, they now operate “natively” as portable, autonomous, and independently deployable units.
+
+This brings the ease, speed, and availability that characterize cloud native development cycles. Capabilities include:
+
+
+
+ - Orchestrating applications across many distributed runtime platforms, including Cloud Foundry, Lattice &lt;http://lattice.cf/&gt;, Apache YARN &lt;http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html&gt;
+ - Consuming microservices as maven dependencies, and pushing them quickly to production
+
+ - Developing data pipelines with familiar tools: DSL &lt;https://en.wikipedia.org/wiki/Digital_subscriber_line&gt;, Shell, REST-APIs &lt;http://www.restapitutorial.com/lessons/whatisrest.html&gt;, Admin-UI, and Flo
+ - Scale stream and batch pipelines without interrupting data flows
+
+
+
+A New Partner in Cognizant
+As adoption of Pivotal Cloud Foundry &lt;https://pivotal.io/platform&gt; grows, we’re leveraging Pivotal Labs with success to build new, innovative ‘tier-1’ applications using 
+Spring Cloud &lt;http://projects.spring.io/spring-cloud/&gt;. Following large PCF investments, many big customers have thousands of applications in backlogs that need to be rewritten, refactored, and/or integrated with legacy systems. Pivotal increasingly partners with systems integrators to provide the scaling muscle needed to help big clients on that journey. That’s where  Cognizant &lt;http://www.cognizant.com/&gt; comes in, with its decades of java know-how.
+
+The Pivotal and Cognizant partnership &lt;http://blog.pivotal.io/pivotal-cloud-foundry/news/pivotal-and-cognizant-partner-to-drive-cloud-native-development&gt; will give customers the global delivery reach to help them meet ambitious goals on application transformation, in 
+geographies where Pivotal Labs does not serve customers, or where the requirements require different services or economics.
+
+
+The Pivotal Lounge was humming at SpringOne 
+2GX
+
+
+Spring is Here to Stay
+From among the 1400 tweets, Dekel Tankel &lt;https://twitter.com/dekt?lang=en&gt; summarized our success here as well:@dekt &lt;https://twitter.com/dekt?lang=en&gt; - Heading to my last customer briefing and then airport. BEST #s2gx SHOW I&apos;ve ever been to.
+AGILE UPDATE
+are you ready for something new at startup week?
+Veronica Orzechowski &lt;https://gopivotal-com.socialcast.com/users/1060652-veronicaorzechowski&gt;, Pivotal Labs, Marketing and Communications
+Denver Startup Week &lt;http://www.denverstartupweek.org/&gt; (DSW) begins on Monday and we’re very excited to be sponsoring and participating in the event this year.
+
+Known as one of the 
+largest free entrepreneurial events of its kind, DSW will attract more than 700 companies and 10,000 startup community members to participate in events, seminars, and panels in the Mile-High City.
+
+It will be a jam-packed week including startup mentoring hours generously lead by our 
+Pivots Theron McCollough and Zach Larson, a DSW Startup Crawl, a Job Fair and a Pivotal Labs Denver Open House. As sponsors of Denver Startup Week we are proud to be sharing our Denver office space to host key tracks such as “You are Not Agile Enough &lt;http://www.denverstartupweek.org/schedule/1248-you-are-not-agile-enough&gt;” as well as 
+other activities that provide education, inspiration and networking events for the entrepreneurial community. Even our very own Lean Startup guru and Director of the Pivotal Labs Innovation Practice, Janice Fraser, will be leading a discussion on “The Future of 
+Product Management.” A true ‘by the community, for the community’ collaborative event.
+
+ 
+
+
+Agile Icons: The mile-high city and Pivotal play host to their biggest startup event of the year
+
+
+We’ll also be celebrating the entrepreneurial spirit of intrapreneurs—the thoughtful innovators who dare to transform large, established organizations into agile and lean software companies—with appearances by CIO of DISH Network &lt;http://www.dish.com/&gt;, John Swieringa &lt;https://www.linkedin.com/pub/john-swieringa/24/8a9/793&gt;, and Jud Valeski &lt;https://twitter.com/jvaleski&gt; of GNIP fame. Injecting enterprises with startup culture is something we do best and will continue to share in iterating and learning as we guide our customers along their journeys.
+
+Finally, in keeping with Pivotal’s long history in the startup community we will be re-invigorating our 
+startup program with a new Startup Package. The details will be announced next week but I’ll hint that it pulls together some of the best tools and platforms Pivotal has to offer creators of great software experiences.
+
+Be sure to follow along: #DENStartupWeek @pivotallabs
+Customer Spotlight
+Video 1 + Video 2 = Sales Success
+Some of our top product and field folks are getting together to share insights in driving our sales plays through 2015, in a new video series called “Success in the Second Half of 2015.” Two great videos start this 
+off. One is Selling Pivotal Cloud Foundry - Cloud 1,2,3 &lt;https://pivotalfield.biglms.com/courses/PFS/SELL101/VWZ/about?mkt_tok=3RkMMJWWfF9wsRoisqTLZKXonjHpfsX97OkoWqa1lMI%2F0ER3fOvrPUfGjI4ATMZlNq%2BTFAwTG5toziV8R7bHKc1pz98QWxHr&gt;, featuring 
+Andrew Ettinger, Ian Andrews, and James Watters on getting customers on board with cloud native. The second, Selling Pivotal Labs and PCF Together &lt;https://pivotalfield.biglms.com/courses/PFS/SELL100/VWZ/about?mkt_tok=3RkMMJWWfF9wsRoisqTLZKXonjHpfsX97OkoWqa1lMI%2F0ER3fOvrPUfGjI4ATMZlNq%2BTFAwTG5toziV8R7bHKc1pz98QWxHr&gt;, is a 
+“better together” take on PCF and Pivotal Labs, with Edward Hieatt, Arni Raghvender and Alex Luttschyn.
+
+
+
+You’ll need to be logged into the Field 
+Enablement site to view them
+PEOPLE UPDATE
+ how do you transform a culture?
+ Onsi Fakhouri &lt;https://gopivotal-com.socialcast.com/users/1032710-onsifakhouri&gt;, VP, Cloud Foundry Engineering
+The tech industry is notorious for harboring workplace environments that are exclusionary—even unsafe. Time and again, too many people participating in our industry face an impossible choice: do I speak up and risk my career and further isolation? Or do I continue to endure the many experiences of exclusion that have become all-too-normal?
+
+At Pivotal we aspire to foster a culture 
+that embraces inclusion as a core value. While programs and initiatives play an important role in making measurable shifts in an organization, the work of fostering an inclusive environment is fundamentally one of culture making.  History teaches us repeatedly that simply passing legislation or setting policies (though both are important) is not enough.
+
+To really change our culture, we have to change our attitudes and hearts. There are no quick and easy shortcuts here.
+
+At a recent Cloud Foundry all-hands &lt;https://sites.google.com/a/pivotal.io/cloud-foundry/tech-talks&gt;, I shared our Vision for Inclusion—a statement drafted by a grassroots group 
+of Cloud Foundry employees committed to establishing inclusion as a core value (scroll down page to “CF All Hands”. Relevant section begins at 22:30). This statement paints a picture of what an inclusive and safe work environment looks like. A statement, alone, does not change hearts—but it points us in the right direction.
+
+The road to establishing this vision is long. It will have twists and turns, and we&apos;re embarking on the first steps of that journey with the rest of Cloud Foundry. Members of the Cloud Foundry engineering and product management teams will convene in small groups to begin a conversation. And since the first step in any healthy conversation involves listening, we&apos;ve solicited anonymous stories of inclusion and exclusion to share with one another. For these initial conversations we’ll simply be listening to these stories, allowing them to challenge us, to foster empathy, and to increase our awareness of what causes our fellow workers to experience inclusion and exclusion.
+
+My hope is that as we enter into these, and future 
+conversations, we will be planting seeds that will bear cultural fruit. I&apos;m hopeful for a Pivotal culture where practices that foster inclusion come naturally, where sharing stories begins to feel safer, and where the language of inclusion and welcome becomes a mainstream part of our vocabulary. Let me know if you have any questions, and we’ll keep you posted on how this goes.
+MY NAME IS...
+ Rushenka Perera
+ Rushenka Perera &lt;https://gopivotal-com.socialcast.com/users/1059023-rushenkaperera&gt;, Marketing Director, APJ
+Am an engineering manager based out of the Toronto office. Besides awesome labs projects, I&apos;m working on the co-op program, and core practice initiatives in Toronto. I came from Xtreme Labs.
+In the Sydney office with a headset on, as I’m constantly on conference calls.
+planning for the Pivotal Labs launches in Tokyo and Sydney, and thinking about 2016 marketing plans, and also how to differentiate Pivotal in six different regions.
+I live outdoors. I’m whatever the opposite of a vampire is, and crave sunlight. I try to keep up with my male-dominated household of husband, two sons, and a black lab (he’s a guy too). The family loves to surf, ski, mountain bike, and bushwalk (Australian thing).
+
+ 
+
+Sydney Colour Run. Jog 5K under a hail of dye; dance at the finish.
+I play old lady soccer (i.e., over 35’s) as a striker.
+has a huge future. I love the competition, and the thrill of watching the company grow and score goals against the industry titans, and having a part in this Pivotal story.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome new employees who joined Pivotal from Sept 1st through 
+21st.
+
+
+
+Abdullah Bakhsh, Software Engineer, Washington D.C.
+Abigail O&apos;Neill, 
+Workplace Advocate, London
+Anamjit Sivia, College Co-op Student, Toronto 
+Andrew Gassen, Senior Product Manager, Washington, D.C. 
+Angelo Biscardi, Account Manager, New York
+Anne Kroger, Senior Director 
+Finance, San Francisco
+Ashley Dunsmore, UX Designer, New York
+Ateth Neavyn, Senior Financial Analyst, US
+Aubrey Howell, Senior Tech Education Specialist, San Francisco
+Austin Gatlin, Software Engineer, San 
+Francisco
+Bing Xu, Senior Member of Technical Staff, Beijing
+Branko Mostic, College Co-op, Toronto
+Caelin Jackson-King, College Co-op, Toronto
+Chris Whitty, Software Engineer, London
+Christopher 
+Bethel, Sales Account Manager, US
+Ciaran McGuinness, Sr. Manager, Technical Staff, Cork IE
+Cindy Yuan Chen, Marketing Manager, Beijing
+Craig Olrich, Home Office Location, Sr Field Engineer, Pivotal
+Darrell Mudd, Recruiting Consultant, US
+David Barnes, Sr. Technical Content Developer, Beaverton OR
+Deborah Donohoe, Recruiting Consultant, Dublin
+Destiny Marquez, Senior HR Coordinator, Palo Alto
+Dirk Janssen, Software Engineer, Santa Monica, CA
+Eric Allen, 
+Software Engineer, Denver CO
+Fadi Yousuf, Account Executive, Dubai
+George Behrend, Senior Technical Account Manager
+Hilary Johnson, Product Mgr, London
+Houssem El Fekih, Software Engineer, London
+Jaime Aguilar, Senior Field Engineer, US
+James Campbell, Senior Data Engineer, US
+James Weaver, Consultant Technologist
+James Young, Software Engineer, New York
+Jane Beckman, Sr. Technical Content Developer, Palo Alto,
+Jason Maryland, Senior Member of Technical Staff, US
+Jeffrey Mew, College Co-op, Toronto
+Jeremy Coffield, Software Engineer, San Francisco
+Jerome Yang, Member of 
+Technical Staff, Beijing
+Jessica Bower, Principal Program Manager, San Francisco
+Jimmy Jiang, Member of Technical Staff 3, Shanghai
+Jorge Simao, Technical Education Consultant, EMEA
+Josh Mattila, Software 
+Engineer, Boulder
+Jvalant Dave, College Co-op, Toronto
+Ka Hin Ng, College Co-op, Toronto
+Karen Miller, Technical Content Developer, Beaverton OR
+Karthikeyan Jambu Rajaraman, Senior Member of Technical Staff, 
+Palo Alto
+Kavinder Dhaliwal, Senior Software Engineer, Palo Alto
+Ke Pin Lu, College Co-op, Toronto
+Kenneth Weinberg, Recruiting Consultant, US
+Kenny Bastani, Principal Technologist, US
+Lav 
+Jain, Technical  Staff 1, Palo Alto
+Letian Sun, College intern, Seattle WA
+Liam Morley, Software Engineer, Santa Monica CA
+Marie-Jeanne Dougados, Marketing Manager, Paris
+Mark Heckler, Principal 
+Technologist
+Michael Fischer, Senior Recruiting Consultant
+Minjee Koo, College Co-op, Toronto
+Mirko Cappuccio, Senior Account Manager, EMEA
+Mun Kay (Iris) Loke, Director HR, Singapore
+Nastassja 
+Lusengo, Workplace Advocate, London
+Nathaniel Flach, College Co-op, Toronto
+Neven Cvetkovic, Senior Field Engineer, EMEA
+Nick Wei, Software Engineer, San Francisco
+Nikhil Kak, Member of Technical 
+Staff 2, Palo Alto
+Oliver Neumann, Recruiting Consultant
+Phuong Dang, Principal Program Manager (Technical), Palo Alto
+Rachel Weissfeld, Account Manager, US
+Roxanne Mustafa, UX Designer, New York
+Sadhana Yerravally, Associate Data Engineer, US
+Sai Boorlagadda, Member of Technical Staff, Beaverton OR
+Shubham Sharma, Member of Technical Staff 3, Palo Alto
+Szu Hsuan Lai, UX Designer, Santa Monica
+Taehee Kim, Recruiting Consultant, Palo Alto
+Teresa Leighty, Program Management Director
+Tyler Wilson, Recruiting Consultant
+Tyson McNulty, Software Engineer, Boston
+William Martin, Software 
+Engineer, London
+Xiaocheng Tang, Member of Technical Staff 3, Palo Alto
+Yuan Kun Cai, College Co-op, Toronto
+Zhou Yu, Software Engineer, London</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

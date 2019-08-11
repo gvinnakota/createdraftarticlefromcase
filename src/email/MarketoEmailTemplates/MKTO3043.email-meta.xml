@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Velocity_Q415.Follow up Email</name>
+    <style>none</style>
+    <subject>Thank You for Joining Pivotal at Velocity New York  2015</subject>
+    <textOnly>Hello{{lead.First Name:default=edit me}},
+
+Thank you for visiting Pivotal at Velocity! We hope you enjoyed learning about the our comprehensive cloud native platform for building your future.
+
+In case you missed anything, we have made it easy for you to find related material to begin your cloud native journey.
+
+
+ - If you would like a free copy of Matt Stine’s book on Migrating to Cloud Native Applications you can download a copy &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook&gt; today.
+ - Sign-up for a hands-on workshop &lt;http://pivotal.io/cloud-native-workshop&gt; in your area.
+ - Michael Coté and Andrew Clay Shafer talk about That Cloud Native Lifestyle &lt;http://blog.pivotal.io/pivotal-conversations/features/that-cloud-native-lifestyle&gt; via Pivotal Conversations podcasts
+ - Sign up for two months of free Pivotal Web Services &lt;http://try.run.pivotal.io/DevOpsDaysAustin?utm_source=landingpage&amp;utm_medium=langingpagetext&amp;utm_term=FreePWS&amp;utm_campaign=DevOpsDaysAustin&gt;, giving you access to Pivotal Cloud Foundry without having to install and manage it yourself.
+
+
+
+Stay in touch with Pivotal and join the conversation on our blogs &lt;http://blog.pivotal.io/cloud-foundry-pivotal&gt;, podcasts &lt;http://blog.pivotal.io/podcasts-pivotal&gt;, and on Twitter &lt;https://twitter.com/pivotalcf/&gt;.
+
+We hope to see you again soon at a future event &lt;https://pivotal.io/news-events&gt;!
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Roadshow_Benchmark Breakfast_Australia_Q318.Attended</name>
+    <style>none</style>
+    <subject>Thanks for joining us for breakfast</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Sorry we missed you at the Pivotal breakfast this week. Should you wish to revisit any of the content shared or learn more about what we do, please find some available resources below:
+
+- View the slides from our presentation at the event: https://www.slideshare.net/Pivotal/innovating-at-startup-speed-in-a-software-driven-world
+- Watch DBS&apos;s presentation from SpringOne Platform 2018: https://content.pivotal.io/springone-platform-2018/day-3-keynote-siew-choo-soh
+- Read our interview with Security Asia &apos;Why it&apos;s pivotal to relook cybersecurity with a security-first approach&apos; from earlier this week: https://www.networksasia.net/article/why-its-pivotal-relook-cybersecurity-security-first-approach.1540264508
+- Contact us to speak directly with your local Pivot: https://pivotal.io/contact
+
+Regards,
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

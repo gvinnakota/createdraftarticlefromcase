@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal VIP Party at CF Summit_Basel_Q418.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation | Pivotal VIP Party at CF Summit</subject>
+    <textOnly>Dear {{lead.First Name:default=there}},
+
+Thank you for registering for the Pivotal VIP Party on the 10th of October at Baltazar in Basel. Please make sure to pick up your VIP wristband from the Pivotal booth at CF Summit for entry to the party. 
+
+
+
+Date:
+Wednesday, 10 October 
+
+
+
+Time:
+
+
+7:30PM to 11:00PM
+
+
+
+Location: 
+Baltazar &lt;[[http://www.baltazarbar.ch]]&gt;
+Steinenbachgässlein 34
+4051 Basel
+
+
+
+
+Please note: the bar front entrance is up the stairs at the end of the alleyway. We look forward to seeing you there!
+
+Best Regards,
+
+The Pivotal Team
+PARTY DETAILS &lt;[[https://connect.pivotal.io/Pivotal-VIP-Party-at-Cloud-Foundry-Summit.html]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

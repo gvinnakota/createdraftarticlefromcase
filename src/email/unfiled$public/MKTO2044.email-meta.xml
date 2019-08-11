@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_EMC Strategic Forum in NYC @ Pivotal_Q115.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: You are registered to join Pivotal after the EMC Strategic Forum in NYC</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering to join Pivotal after the EMC Strategic Forum at the Chelsea Pivotal office for an Informational Open House and Cocktail Hour. 
+
+Please find 
+event details below:
+
+Date: Tuesday, March 10, 2015
+Time: 3-6PM EST
+Location: Pivotal &lt;https://www.google.com/maps/place/Pivotal+Labs/@40.74028,-73.995083,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259bccd2dfbab:0xad7f9c23ffc3e702&gt;, 625 Avenue of the Americas, 2nd Floor, NYC
+
+Agenda:
+3:00 - 3:45 Presentations by Bill 
+Cook and Rob Mee
+3:45 - 4:00 Time for informal questions and chat
+4:00 - 4:30 Pivotal Labs tours
+4:30 - 6:00 Drinks and hors-d&apos;oeuvres
+
+{{my.Save the Date:default=edit me}}
+
+We look forward to you to seeing 
+you,
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Japan Paas Luncheon Series_Q414.Auto Responder Email</name>
+    <style>none</style>
+    <subject>無題ドキュメント</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+Thank you for registering for the Pivotal Executive Luncheon in Melbourne on Wednesday, October 8, 2014. Please see event details below: 
+
+Date: Wednesday 8th October 2014
+Time: 12.15 for registration with 12.30pm start – 2.30pm
+Location: Bistro Guillaume, Crown Entertainment Complex, Southbank &lt;http://bistroguillaumemelbourne.com.au/&gt;
+
+{{my.Save the Date - Melbourne:default=edit me}}
+
+We look forward to you joining us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

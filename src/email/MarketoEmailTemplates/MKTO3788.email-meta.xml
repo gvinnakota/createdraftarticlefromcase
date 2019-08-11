@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAM_Event_CloudFoundryWorkshop_DC_Q216.Reminder</name>
+    <style>none</style>
+    <subject>Reminder: Pivotal Cloud Foundry Workshop - Tuesday, May 31</subject>
+    <textOnly>Hi {{lead.First Name:default=edit me}}, 
+
+Thank you for registering for the upcoming Pivotal Cloud Foundry Workshop - Government Edition. We look forward to seeing you next week. See event details below:
+ 
+ Date: May 31st, 2016
+Time: 8:30 AM - 3:00 PM
+Location: Virginia Tech Executive Briefing Center &lt;[[http://www.ncr.vt.edu/engagement/executive_briefing_center.html]]&gt;
+ Ballston Room
+ 900 N. Glebe Road
+Arlington, VA 22203
+ 
+Questions? Please contact us via events@pivotal.io &lt;[[mailto:events@pivotal.io]]&gt; or visit our website &lt;[[http://pivotal.io/event/pivotal-cloud-foundry-workshop/dc]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

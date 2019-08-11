@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Cloud Foundry Developer Bootcamp_Q315.Confirmation - Tampa</name>
+    <style>none</style>
+    <subject>You are confirmed to attend the Pivotal Cloud Foundry Bootcamp in Tampa</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+ 
+Thank you for registering for the Pivotal Cloud Foundry Bootcamp on {{lead.PCF Session Date:default=edit me}}.
+See event details below.
+ 
+Time: 8:00am - 4:30pm
+Location: Room E1003, 7701 E Telecom Parkway, Temple Terrace, FL 33637 
+ 
+Should you have any questions or would like more information, please email gkortye@pivotal.io &lt;mailto:gkortye@pivotal.io&gt; or arshad.aziz@verizon.com &lt;mailto:arshad.aziz@verizon.com&gt;.
+ 
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

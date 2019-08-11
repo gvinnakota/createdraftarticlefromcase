@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.03-19-15 V3N5</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No.5</subject>
+    <textOnly>VOL. 3, NO. 5
+Thursday, March 19, 2015
+Editor Welcome: The Harder They Hit
+Business Update: Setting the Bar in EMEA &lt;#business-update&gt;
+Product Update: Get Agile Through Cloud-Native App Architectures
+Agile Update: Pivotal Santa Monica: Drive West on 2nd, to the Sea
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: Pivotal Pulse Survey: Good, with Room for Better
+My Name Is... Avid Zhang
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ The Harder They Hit
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+The only thing worse than being hit hard by competition is being ignored by it. With Cloudera eschewing the precise jab in favor of the roundhouse swing at Pivotal, the real message in the data wars is how serious the industry is taking our approach to agile data &lt;http://blog.pivotal.io/pivotal/features/build-newsletter-open-source-iot-and-devopsagile-transformation-march-2015&gt;. It’s hard to ignore Pivotal when we’re also pushing on many fronts of a cultural shift to modern product development – through agile, DevOps &lt;http://www.fiercedevops.com/story/take-baby-steps-devops-success/2015-02-09&gt;, continuous delivery &lt;http://blog.pivotal.io/cloud-foundry-pivotal/case-studies-2/how-pivotal-performs-continuous-delivery-of-mobile-services&gt;, and much more.
+ 
+ That was this week 
+underscored by Pivotal announcing a truly unique partnership &lt;http://blog.pivotal.io/pivotal/news-2/pivotal-and-eric-ries-partners-for-enterprise-transformation&gt; with Lean startup maven, Eric Ries. We’re backing his new work The Leader’s Guide &lt;https://www.kickstarter.com/projects/881308232/only-on-kickstarter-the-leaders-guide-by-eric-ries/posts/1170791&gt;, and in consultation with Ries, Pivotal 
+will marry agile and lean methods through a series of dynamite workshops on business transformation.
+ 
+ In this issue, Pivotal’s Matt Stine outlines his new eBook on cloud-native app architectures. Ross Hale introduces us to the sun-soaked offices of Pivotal Santa Monica, telling us of work with CoreLogic and Sundance (agile development on top of Pivotal Web Services &lt;https://run.pivotal.io/&gt;). Enter new EMEA sales head Alan Coad, who provides a snapshot of the region. We also get the results of the second Pivotal Pulse Survey, and learn a bit about our APJ salesperson of the year.
+ 
+ Enjoy!
+BUSINESS UPDATE
+ Setting the Bar in EMEA
+ Alan Coad &lt;https://gopivotal-com.socialcast.com/users/1106781-alancoad&gt;, VP &amp; General Manager EMEA
+Two months in and I still feel like the luckiest guy on the planet. While we have a ton of work still to do to realise our potential in EMEA, I am excited to find a team of folks here who are up for the challenge; a market that is increasingly talking about radical transformation; and a unique value proposition with Pivotal that can deliver. As a team we are committed to making 2015 our year.
+
+2015 Groundwork
+
+The first priority this year was to remind ourselves that we are still very much a startup - and that we needed to rediscover the vitally important, 
+doing-what-it-takes, and working together to win culture. It has been really great to see the London office come together over the past couple of months, with the Pivotal Labs style of open communication, the daily standups adopted by our management team, and both floors mixing it up. 
+
+Sales-wise, we have made a number of changes. We have gone back to basics with an approach that targets high potential accounts in focus markets, to which we have aligned our resources. We have made great strides in reaching out to Federation partners to harness their scale, and have also started the journey of broadening our base to include more Pivotal Labs and PCF, from what has been mainly a data-driven business in the region. While still very early days, we are really excited by the substantial Pivotal Labs-led opportunities we have shaped that are building our momentum for the rest of 2015. 
+
+Some great people have also recently joined the business, including Michael Ramsperger to head Germany/DACH, and Martin Reichenbach who will soon come across from EMC to drive our success in automotive/IoT. We will soon be announcing other hires, including leaders for other important markets including UK and France.
+
+Pivotal EMEA on the Road
+
+We continue to extend the Pivotal brand across the region. At the recent Mobile World Congress &lt;http://www.mobileworldcongress.com/&gt;, we held over 25 customer meetings to drive home the Pivotal story. We have multiple speaking engagements in EMEA’s top three markets, UK, France and Germany, with activities also planned in Italy, Austria, Switzerland, Ireland, Spain, Sweden and Dubai. The Pivotal Big Data Suite remains a cornerstone of our business, and we have several dates locked in for the Pivotal Data Roadshow &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/pivotal-big-data-roadshow&gt;.
+
+London Labs has also taken the lead in targeting prospects through very successful customer innovation days &lt;https://drive.google.com/a/pivotal.io/file/d/0B0srvt5wTLpdUkkwaHk2LUhuTjg/view?usp=sharing&gt;. Participating companies have included Volkswagen, Rolls Royce, Orange, Banco Sabadell and BMW, among others. These have been very helpful in building our credibility as innovators/change agents, and we look forward to building on our successes last year with Fidelity and Vodafone, by positioning Pivotal as the trusted partner for large-scale business transformation.
+
+More to come - Go Pivotal!
+PRODUCT UPDATE
+ Get Agile Through Cloud-Native App Architectures
+ Matt Stine &lt;https://gopivotal-com.socialcast.com/users/913842-matthewstine&gt;, Principal Software Engineer, Spring Cloud Services for Pivotal Cloud Foundry
+As software fuels new frameworks for developers, IT operators, and lines of business, cloud-native application 
+architectures are helping organizations achieve the agility they need to stay competitive. All good code needs good processes and good teams to achieve the right outcomes. So, while many organizations grasp the value created through cloud-native architectures, many more need assistance in making the fundamental transformation required to adopt them.
+ 
+ I’m pleased to share a new eBook I published with O’Reilly, called Migrating to Cloud Native Application Architectures &lt;http://pivotal.io/platform-as-a-service/migrating-to-cloud-native-application-architectures-ebook&gt; (you and your customers can download it for free). I examine the cultural, organizational and technical changes necessary to migrate traditional, monolithic applications and service-oriented architectures to application architectures that are native to the cloud.
+ 
+ I cover the characteristics of these new cloud-native architectures, 
+which include:
+
+
+ - The Twelve-Factor App: &lt;http://12factor.net/&gt; A collection of cloud-native app architecture patterns 
+ - Microservices &lt;http://microservices.io/patterns/microservices.html&gt;: Independently deployable services that do one thing well 
+ - Self-Service Agile Infrastructure: Platforms for rapid, repeatable and consistent provisioning of app environments and backing services
+ - API-based Collaboration: Published and versioned APIs that allow interaction between services in a cloud-native app architecture
+ - Anti-Fragility &lt;http://en.wikipedia.org/wiki/Antifragility&gt;: Systems that get stronger when subjected to stress 
+
+
+
+So how do customers get there? Readers will find a “migration cookbook” of recipes for decomposing massive, uniform applications into microservices, implementing fault-tolerant patterns, and performing automated testing of cloud-native services. Of course, Pivotal Cloud Foundry &lt;http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; is the platform that sits squarely in the middle of this – supporting and enabling the cloud-native architectures (and 
+Spring Cloud Services &lt;http://projects.spring.io/spring-cloud/&gt;) essential for rapid application development.
+
+It’s a brave new world, and we’re here to help customers embrace the changes and culture that help them win. Let me know your feedback, and tell your customers about this new publication!
+AGILE UPDATE
+ Pivotal Santa Monica: Drive West on 2nd, to the Sea
+ Ross Hale &lt;https://gopivotal-com.socialcast.com/users/949666-rosshale&gt;, LA Office Director, Pivotal Labs
+Yes, the rumors are true: the new Pivotal Santa Monica office is two blocks from the beach, with a partial ocean view. Pivotal Los Angeles has officially moved to a bigger, better, newer location at 1333 2nd Street &lt;https://www.google.com/maps/place/1333+2nd+St,+Santa+Monica,+CA+90401/data=!4m2!3m1!1s0x80c2a4cff165ae37:0xb2e0f317bfeb9f0c?sa=X&amp;ei=EOb9VJmNOMTloATvyoKQDQ&amp;ved=0CB4Q8gEwAA&gt; in Santa Monica.
+ 
+ We moved for two reasons: 1) We were bursting 
+at the seams in our old office; and 2) to support LA&apos;s first Pivotal Agile Transformation 
+with CoreLogic. CoreLogic will co-locate in our office for an estimated three years and execute dozens of projects. This is (as Rob Mee mentioned in his address &lt;https://drive.google.com/a/pivotal.io/file/d/0B1rVqn9ifV69QVRfQ1hhbXhFa2s/view?usp=sharing&gt; at the Sales Kick-off) an honor for us, and all part of their effort to 
+fundamentally change how they develop products through software.
+ 
+ Meanwhile, we plan to continue bringing the 1-2 punch of Pivotal Cloud Foundry and Pivotal Labs (with the optional Data uppercut) to strategic clients like Sundance and NBC Universal.
+ 
+ 
+ Hollywood chic: The new Santa Monica office and its view from the porch
+ 
+ Speaking of Sundance, this year&apos;s re-launch of the Sundance Film Festival website  &lt;http://www.sundance.org/festivals/sundance-film-festival&gt;was a smashing success &lt;http://blog.pivotal.io/pivotal/case-studies-2/behind-the-scenes-sundance-institutes-digital-transformation-with-pivotal-labs&gt;. We built an application that experienced record page views in the millions, all gracefully handled by Pivotal Web Services &lt;https://run.pivotal.io/&gt;. Thank you Charles Wu &lt;https://gopivotal-com.socialcast.com/users/1054841-charleswu&gt; and the PWS team for orchestrating the PWS + Enterprise support model (now called PWS-E), which allowed our Pivots to rest easy – 
+even during peak loads.
+ 
+ Special thanks to Mike McCormick &lt;https://gopivotal-com.socialcast.com/users/1032700-michaelmccormick&gt;, Elizabeth Gansen &lt;https://gopivotal-com.socialcast.com/users/1003767-elizabethgansen&gt;, Abby Sturges and Zach Gershman &lt;https://gopivotal-com.socialcast.com/users/1032903-zacharygershman&gt; for going 
+above and beyond during the move. I also want to thank Lisa Davern &lt;https://gopivotal-com.socialcast.com/users/950074-lisadavern&gt;, Katherine Loughridge &lt;https://gopivotal-com.socialcast.com/users/1039347-katherineloughridge&gt; and the rest of the Facilities team for the smooth transition. We&apos;re excited to begin the next chapter of the Pivotal LA story!
+Customer Spotlight
+New Pivotal Labs Case Study: The Sundance Institute &lt;https://pivotal.io/platform-as-a-service/case-study/new-sundance-website-and-digital-platform-leverage-pivotal-web-services-and-cloud-foundry-to-enable-incredible-storytelling&gt;
+ When the Sundance Institute  &lt;http://www.sundance.org/&gt;sought to tap the power of their film community, they engaged Pivotal Labs to turn that vision into a reality &lt;https://pivotal.io/platform-as-a-service/case-study/new-sundance-website-and-digital-platform-leverage-pivotal-web-services-and-cloud-foundry-to-enable-incredible-storytelling&gt;. Sundance’s Jessica Kantor said it best, &quot;The senior leadership and stakeholders at Sundance all agreed that we needed to create the right digital infrastructure, and a partner like Pivotal could help us get there over the long-term.&quot;  Find out how we made it happen.
+ 
+ Bringing the Internet of Things to Life: Pivotal GemFire White Paper &lt;http://pivotal.io/big-data/white-paper/bridging-high-velocity-and-high-volume-industrial-big-data-through-distributed-in-memory-storage-and-analytics&gt;
+ New systems are required to store and analyze what GE calls “Industrial Big Data,” or to leverage the growing number of sensors on industrial equipment that generate exponential increases in data. This paper &lt;https://docs.google.com/a/pivotal.io/viewer?a=v&amp;pid=sites&amp;srcid=cGl2b3RhbC5pb3xjdXN0b21lci1tYXJrZXRpbmctYW5kLXByb2dyYW1zfGd4OjNlMjE2YWZmMTU2NjVhZWY&gt; explains a new prototype infrastructure for GE, with 
+Pivotal GemFire at its core, to analyze high speed (&gt;100,000 points per second), high volume (terabytes) data produced by a fleet of GE gas turbines. Read how Pivotal brings the IoT to life.
+ 
+ Have questions or stories to tell? Please contact Sophia Tseng at: stseng@pivotal.io &lt;mailto:stseng@pivotal.io&gt;
+PEOPLE UPDATE
+ Pivotal Pulse Survey: Good, with Room for Better
+ Joe Militello &lt;https://gopivotal-com.socialcast.com/users/937505-joemilitello&gt;, VP, Pivotal People
+Thanks to those who participated in our second Pivotal Pulse survey. We once again had solid participation by 62% of those invited. By keeping it brief and soliciting feedback from a sample of employees every quarter, we’re creating a reliable feedback loop from which we can continuously improve the Pivotal experience.
+ 
+ Overall, 75% of the responses were favorable. Here’s a summary of the good, and what we need to improve:
+ 
+ Strengths
+
+
+ - The majority of participants indicated that they’re clear and confident in the company mission and goals.
+ - Participants affirmed again that Pivotal provides a real opportunity to improve their skills, and feel motivated to help the company succeed. We also saw an improvement in scores for how we work together as teams.
+
+
+
+Areas of Improvement
+
+
+ - The basics of the management/employee relationship continue to be a challenge. Many indicated a desire for more feedback from direct managers, and for more positive and engaging interactions.
+ - There was strong sentiment for a more open environment, where people feel free and confident to speak up. 
+
+
+
+The survey summary can be found here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1Sfo-Q1hQSj5F2A9Mst5impbiWJ0ADzCtAlnkuGsq98g/edit#slide=id.p4&gt;.
+ 
+ A priority will be helping managers. This includes adding management fundamentals courses, such as communications and development planning, to our current training offerings. More broadly, in the spirit of creating a more open environment and one of continuous improvement, we’ve been piloting a few teams to hash out the right guidelines and tools (think mobile) that enable people to provide each other feedback, both up the chain and across teams.
+ 
+ Please reach out to your manager, your HR Business Partners or me with any suggestions. The next survey will come around in late April or May. Keep the feedback coming!
+MY NAME IS...
+ Avid Zhang
+ Avid Zhang &lt;https://gopivotal-com.socialcast.com/users/927851-avidzhang&gt;, Senior Sales Manager, APJ
+I’m a sales manager responsible for named accounts (such as Huawei and ZTE) as well as the telecom and media industries in South China.
+At a customer site, or on the road to get to a customer site. I’m located in Guangzhou, southern China.
+Showing the unique value of Pivotal Cloud Foundry &lt;http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; and the Pivotal Big Data Suite &lt;http://pivotal.io/big-data/pivotal-big-data-suite&gt; to our customers, and boosting their confidence in going from the 2nd platform to the 3rd platform, with Pivotal’s help. Many customers are becoming aware that Pivotal is the right partner for their IT transformation.
+
+ A special thanks to all the China pre-sales and professional services folks – you can find their critical efforts behind many of our success stories in South China!
+I enjoy spending time doing outdoor-sports with my family – including running, rock-climbing and going on long treks.
+My wife and I enjoy high-altitude mountain climbing. I plan to cover one of the “14 Summits” (a summit of 8K and higher in altitude) in the next year or two.
+Is the perfect captain, leading a lot of excellent sailors on a sure course.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from March 2nd to March 16th:
+
+ Aditi Yadav, Associate Data Engineer, US
+ Anthony Gonzales, Technical Analyst, San Francisco
+ Anthony 
+Dreessen, Software Engineer, Santa Monica, CA
+ Bradley Davidson, Principal, Software Engineer, Denver, CO
+ Cecelia Story, Software Engineer, Chicago, IL
+ Darren Kong, Product Manager, New York
+ David 
+Ghent, UX Designer, San Francisco
+ George Lestaris, Software Engineer, London
+ Giuseppe Capizzi, Software Engineer, London
+ Guido Westenberg, Senior Consultant Software Engineer, US
+ Hetal Vakiani, 
+Senior Financial Analyst, San Francisco
+ James Thomson, Product Manager, NY
+ Jayender Annam, Technical Staff 1, US
+ Jessica Dirubio, Sales Account Manager, US
+ Joel Rolfe, Senior Field Engineer, US
+ 
+Karun Bakshi, Director of Product Marketing, San Francisco
+ Kendra Cutter, Administrative Assistant, Denver, CO
+ Kim Dykeman, Technical Consulting Program Manager, Palo Alto
+ Kira Combs, Software Engineer, Boulder, 
+CO
+ Mark Stokan, Software Engineer, San Francisco
+ Michelle Kang, UX Designer, San Francisco
+ Misato Sakamoto, Software Engineer, Toronto
+ Monica Hirano, Associate Business Operations Analyst, Toronto
+ 
+Mukund Babbar, Senior Field Engineer, Melbourne, AU
+ Muni Chada, Senior Member of Technical Staff, Bentonville, AR
+ Pei Su, Member of Technical Staff 3, Shanghai</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

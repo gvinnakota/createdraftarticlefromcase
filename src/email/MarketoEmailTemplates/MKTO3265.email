@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services"></p>
+</div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;"><span>2015 has been a big year for Pivotal Web Services; we expanded our Marketplace to include new services, we moved our runtime environment to the latest Diego environment (bringing with it SSH access) and lastly we  
+continue to have more and more developers hosting their mission critical applications on PWS</span><span>.
+  We close this year answering a commonly asked question about unexplained &ldquo;crashes&rdquo; and explore the latest release of the &lsquo;cf&rsquo; CLI tool and the Roles Based Access Control.
+  Lastly, we talk about our latest feature in development, TCP Routing, that is available for early access.<br /> <br /></span><span>Thank you for your continued interest in Pivotal Web Services and Pivotal Cloud Foundry, it&rsquo;s your feedback and support that help us make the product better.
+  While we have made a lot of progress, we know we have a lot more to do so stay tuned in 2016.&nbsp;Share what you want most from PWS in 2016 by tweeting to us at&nbsp;</span><a style="color: #059a91; text-decoration: none;" 
+href="http://info.pivotal.io/i3oI0AUf04N00C000002J00">@pivotalws</a><span>.
+  Here&rsquo;s to a happy New Year.<br /> <br /></span><strong>&ldquo;Why Does My App Disappear according to my logs?&rdquo;<br /></strong><span>A frequent question that we get into support is to understand why an application has unexplainedly crashed or disappeared based on applications  
+performance monitoring instrumentation (NewRelic, AppDynamics, etc..).
+  For all legitimate application crashes, there should be a record of the crash in `cf events` or in App Manager events.
+  If you see a record of the event then your application has crashed for some reason.
+  The most common reasons are exceeding the memory limit defined and application bugs.
+  In either case, application logs should provide more details.
+  If there is no record in &lsquo;cf events&rsquo; and there is no record in applications manager then the application instance was most likely restarted as a part of a system management event.<br /> <br /></span><span>What are system management events? These are changes that occur as we maintain  
+and upgrade the platform.
+  These can appear as application crashes because management events will terminate an applications for various reasons including application of a security patch to the base operating system, upgrade of the Cloud Foundry system and reallocation of applications among virtual machines.
+  Cloud Foundry is designed to preserve availability of the application during these operations and will make efforts to spin up a new instance and establish route requests to the new instance before terminating the previous instance.
+  However there is no guarantee of individual instance uptime so it is advised to maintain at least two instances of your application so that it will be deployed across multiple availability zones on PWS and thus retain at least one working instance even during system maintenance.<br /> <br 
+/></span><span>For jobs with scheduled workloads, Cloud Foundry will notify applications of an upcoming management event by issuing a SIGTERM then followed eventually by a SIGKILL.
+  PWS doesn't guarantee a specific amount of time between SIGTERM &amp; SIGKILL but at present we are allowing approximately 10 seconds between the two signals..
+  Applications can create check points as needed on the issuance of one of these events.<br /> <br /></span><span>To understand an app availability, it is best to include both internal and external monitoring.
+  Because there are multiple instances of an application, we suggest that you track app availability as opposed to app instance reliability.
+  External monitoring tools like Pingdom, AWS Cloudwatch and ThousandEyes etc.., can provide a good overview of when your application as a whole is available.<br /> <br /></span><strong>Role Based Access Control (RBAC) for Org and Space Managers<br /></strong><span>The latest release of the  
+&lsquo;cf&rsquo; CLI (6.14+) bring functionality that was limited to the App Manager web console in the past.
+  It is now possible for Org Managers to assign org and space roles to users from the CLI.
+  This can help if you are managing your users from scripts.
+  Additionally, Space Managers can assign space roles to users in the same org, using the existing `cf set-org-role` and `cf set-space-role` (and equivalent &lsquo;unset&rsquo;) commands.
+  This feature was previously only available to admin users and caused confusion for PWS users who tried to execute these commands in the past.<br /> <br /></span><span>Note that there are still CLI commands that are only exercisable by PWS wide admins.
+  A full list can be found&nbsp;</span><a style="color: #059a91; text-decoration: none;" href="http://info.pivotal.io/s01o0Nf00UA00I000020C0J">here</a><span>, but these steps improve our CLI usability.<br /> <br /></span><strong>Call for Feedback: TCP Routing<br /></strong><span>We often hear  
+requests for handling additional ports beyond the standard Web Requests on ports 80, 443 and 4443 (for our WebSockets).
+  The Cloud Foundry team has been working on supporting generalized TCP routing for your applications.
+  This enables developers to reserve TCP ports for routing requests to your application.
+  The team working on this feature is looking for early testers to evaluate and provide feedback.
+  If you are interested in participating in the early access to TCP routing please contact&nbsp;</span><a style="color: #059a91; text-decoration: none;" href="http://info.pivotal.io/U01000J0NU0ICo02fA00020">Charles Wu</a><span>.<br /> <br /></span><span>Best Regards,<br /></span><span>The Pivotal  
+Web Services Team</span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="30" cellspacing="20" border="0" class="full-block" style="border-collapse:collapse;text-align:center;background:white;border-top:1px solid #f7f7f7">
+<tr>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-twitter.png" alt="Follow us on Twitter" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-linkedin.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-fb.png" alt="Like us on Facebook" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-gplus.png" alt="Add us on Google+" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-youtube.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/icon-instagram.png" alt="Follow us on Instagram" border="0"></a></td>
+</tr>
+<!-- End of social links // --></table>
+<table width="600" cellpadding="0" bgcolor="white" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #f7f7f7">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#666666; font-size:13px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+<p style='margin:0'>&nbsp;</p>
+<p style='margin:0; font-family: Helvetica,sans-serif;color:#999999; font-size:12px;'>Pivotal's Cloud Native platform drives software innovation for many of the world’s most admired brands. With millions of developers in communities around the world, Pivotal technology touches billions of users every day. After shaping the software development culture of Silicon Valley's most valuable companies for over a decade, today Pivotal leads a global technology movement transforming how the world builds software. More at <a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none;">pivotal.io.</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2015 Pivotal Software, Inc. All rights reserved. Published in the USA.<br>
+<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#059a91; text-decoration:none;font-weight:600">Unsubscribe</a></td>
+<td width="30"></td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

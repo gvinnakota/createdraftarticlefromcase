@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Setup Default Opportunity Team</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>&quot;/opp/salesteaminsert.jsp?retURL=%2F&quot;+{!User.Id}+&quot;%3Fnoredirect%3D1%26retURL%3D%252Fui%252Fsetup%252FSetup%253Fsetupid%253DPersonalInfo%26setupid%3DPersonalInformation&amp;id=&quot;+{!User.Id}+&quot;&amp;uteam=opp&amp;setupid=PersonalInformation&amp;apply=1&quot;</url>
+</CustomPageWebLink>

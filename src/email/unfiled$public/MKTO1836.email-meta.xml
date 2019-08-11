@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Event_Seattle Mixer_Q115.Invite</name>
+    <style>none</style>
+    <subject>Pivotal Labs is coming to Seattle!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+In advance of our office opening in Seattle later this year, we’d like to invite you &lt;http://connect.pivotal.io/LabsSeattleMixer.html&gt; to join us for some appetizers and drinks. This is a great opportunity to meet other influencers in the Seattle tech community, as well as members from the Pivotal Labs Leadership team.  
+
+Register now &lt;http://connect.pivotal.io/LabsSeattleMixer.html&gt; to join us on Thursday, January 29, 2015 from 6-9PM. 
+
+We look forward to seeing you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

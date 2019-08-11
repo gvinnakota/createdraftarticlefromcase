@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Email_GPDB Alert_Q214.Email 2</name>
+    <style>none</style>
+    <subject>Product Advisory: GPCC 1.2.2.0 - Patch release (GPCC 1.2.2.1) available</subject>
+    <textOnly>Hello {{lead.First Name:default=edit me}},
+
+
+We&apos;re happy to announce the availability of Pivotal GreenPlum Command Center (GPCC) 1.2.2.1. This release contains the fix for the bug (found in GPCC 1.2.2.0)  where users that are not &quot;gpadmin&quot; or &quot;gpmon&quot; cannot login to the GPCC UI/website.
+
+
+You can download the binaries and release notes from https://network.gopivotal.com/products/pivotal-gpdb &lt;https://network.gopivotal.com/products/pivotal-gpdb&gt; under Greenplum Command Center. For customers having access to EMC software distribution website (SubscribeNet), the new GPCC 1.2.2.1 binaries can be found under the product section.
+
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Reactivation Campaign Q417.Reactivation_Email_2</name>
+    <style>none</style>
+    <subject>Quick Question: Do you want our emails?</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+We noticed that you haven’t opened or clicked on any of our emails in quite some time, which is totally fine, we just want to make sure you’re aware of all the free extras that Pivotal has to offer. 
+
+We have several complimentary white papers, eBooks, case studies, analyst reports, videos, and more on our Resources Page &lt;[[https://content.pivotal.io/resources]]&gt;.
+Or, if you like more of a hands-on approach, you can see our evangelists and product specialists in person at one of our Cloud-Native &lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow]]&gt; or Analytics Innovation &lt;[[https://pivotal.io/event/pivotal-analytics-innovation-roadshow]]&gt; roadshows, or attend Pivotal meetups &lt;[[https://pivotal.io/events]]&gt; held in our offices across the globe. For a complete event list, check out our website &lt;[[https://pivotal.io/events]]&gt;.
+
+That being said, let us know if you would like to continue receiving our promotional emails; or if you&apos;re simply not interested in this type of content or events, please feel free to unsubscribe &lt;[[http://connect.pivotal.io/UnsubscribePage.html]]&gt;.
+
+
+
+
+
+
+KEEP THE EMAILS COMING &lt;[[https://content.pivotal.io/welcome-back]]&gt;
+
+
+
+
+
+
+
+
+
+
+
+I WOULD LIKE TO UNSUBSCRIBE &lt;[[http://connect.pivotal.io/UnsubscribePage.html]]&gt;
+
+
+
+
+
+
+Thanks,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

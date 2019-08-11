@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Cloud Foundry Developer Bootcamp_Q315.Confirmation - Ashburn</name>
+    <style>none</style>
+    <subject>You are confirmed to attend the Pivotal Cloud Foundry Bootcamp in Ashburn</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+ 
+Thank you for registering for the Verizon Employee Only Pivotal Cloud Foundry Bootcamp on {{lead.PCF Session Date:default=edit me}}. Your registration is confirmed.
+See event details below.
+ 
+Time: 8:00am - 4:30pm
+Location: Room D1-2-222, 22001 Loudoun County Parkway, Ashburn, VA 20147 
+ 
+Pre-requisite work is required for all registered attendees and can be completed here &lt;http://oneconfluence.verizon.com/pages/viewpage.action?title=Prereqs+for+Bootcamp&amp;spaceKey=~V611391&gt;.
+
+Should you have any questions or would like more information, please email gkortye@pivotal.io &lt;mailto:gkortye@pivotal.io&gt; or arshad.aziz@verizon.com &lt;mailto:arshad.aziz@verizon.com&gt;.
+ 
+Sincerely,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

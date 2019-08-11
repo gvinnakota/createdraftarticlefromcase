@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.DC Reminder Email</name>
+    <style>none</style>
+    <subject>See you next Tuesday at SpringOne Tour DC!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+We look forward to seeing you at SpringOne Tour DC next week. Please review the event details here &lt;[[https://springonetour.io/2019/washington-dc]]&gt; and feel free to email the team at springonetour@pivotal.io &lt;[[mailto:springonetour@pivotal.io]]&gt; with any questions.
+
+
+Location:
+Convene
+1201 Wilson Blvd 30th Floor
+Arlington, VA 22209
+
+
+Directions:
+When transporting to Convene at 1201, guests are highly encouraged to utilize public transportation for a seamless commute. The Rosslyn Metro Station (1850 N. Moore Street, Arlington, VA 22209) is an approximate 3-4 minute walk from 1201 Wilson Blvd. For guests driving to the facility, below are the preferred parking garages closest to Convene at 1201 Wilson Blvd operated by Atlantic Parking. Guests can also visit this &lt;[[https://www.asgpark.com/parking-locator/]]&gt; link to check real time availability for the lots located in the 22209 zip code.
+1735 N Lynn (Lot #170)– Daily Rate – 1st hour – $8; Daily Max - $17
+1820 N Fort Myer (Lot #134) – Daily Rate – 1st hour - $5; Daily Max - $10; Evening Rate - $5 after 4PM
+1901/1911 N Fort Myer (Lot #45)– Daily Rate – 1st hour - $6; 2nd hour - $9; Daily Max - $12
+1500 Wilson Blvd (Lot #73) – Daily Rate – 1st hour - $5; Daily Max - $10; Evening Rate - $5 after 4PM
+
+
+
+
+Thanks,
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

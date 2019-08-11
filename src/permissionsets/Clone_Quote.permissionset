@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Clone Quote</label>
+    <classAccesses>
+        <apexClass>CloneBillingAccountController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CloneBillingAccountHelper</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CloneQuoteController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+</PermissionSet>

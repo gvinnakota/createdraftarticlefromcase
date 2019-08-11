@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Approval Level --></label>
+        <name>Approval_Level__c</name>
+        <picklistValues>
+            <masterLabel>Level 1</masterLabel>
+            <translation><!-- Level 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2</masterLabel>
+            <translation><!-- Level 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 3</masterLabel>
+            <translation><!-- Level 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 4</masterLabel>
+            <translation><!-- Level 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 5</masterLabel>
+            <translation><!-- Level 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 6</masterLabel>
+            <translation><!-- Level 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 7</masterLabel>
+            <translation><!-- Level 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Type --></label>
+        <name>Approval_Type__c</name>
+        <picklistValues>
+            <masterLabel>APLE</masterLabel>
+            <translation><!-- APLE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alliances</masterLabel>
+            <translation><!-- Alliances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App TX</masterLabel>
+            <translation><!-- App TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCS</masterLabel>
+            <translation><!-- BCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSO</masterLabel>
+            <translation><!-- CSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data</masterLabel>
+            <translation><!-- Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education &amp; Enablement</masterLabel>
+            <translation><!-- Education &amp; Enablement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engagement Director</masterLabel>
+            <translation><!-- Engagement Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab</masterLabel>
+            <translation><!-- Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCFS</masterLabel>
+            <translation><!-- PCFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Royalty</masterLabel>
+            <translation><!-- Royalty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAAS</masterLabel>
+            <translation><!-- SAAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracker</masterLabel>
+            <translation><!-- Tracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transformation</masterLabel>
+            <translation><!-- Transformation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver Hierarchy --></label>
+        <name>Approver_Hierarchy__c</name>
+        <picklistValues>
+            <masterLabel>1st Manager</masterLabel>
+            <translation><!-- 1st Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Manager</masterLabel>
+            <translation><!-- 2nd Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Manager</masterLabel>
+            <translation><!-- 3rd Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4th Manager</masterLabel>
+            <translation><!-- 4th Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Default Approver</masterLabel>
+            <translation><!-- Default Approver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Approver</masterLabel>
+            <translation><!-- Primary Approver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SVP</masterLabel>
+            <translation><!-- SVP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP</masterLabel>
+            <translation><!-- VP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver Type --></label>
+        <name>Approver_Type__c</name>
+        <picklistValues>
+            <masterLabel>Role</masterLabel>
+            <translation><!-- Role --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific</masterLabel>
+            <translation><!-- Specific --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approver --></label>
+        <name>Approver__c</name>
+        <relationshipLabel><!-- Quote Approver Mappings (Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Delegate --></label>
+        <name>Delegate__c</name>
+        <relationshipLabel><!-- Quote Approver Mappings (Delegate) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Discount Limit --></label>
+        <name>Discount_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Order --></label>
+        <name>Display_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email CC --></label>
+        <name>Email_CC__c</name>
+        <relationshipLabel><!-- Quote Approver Mappings (Email CC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lab Office --></label>
+        <name>Lab_Office__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lab? --></label>
+        <name>Lab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office --></label>
+        <name>Office__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ann Arbor</masterLabel>
+            <translation><!-- Ann Arbor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Atlanta</masterLabel>
+            <translation><!-- Atlanta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Austin</masterLabel>
+            <translation><!-- Austin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Berlin</masterLabel>
+            <translation><!-- Berlin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Boston</masterLabel>
+            <translation><!-- Boston --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago</masterLabel>
+            <translation><!-- Chicago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dallas</masterLabel>
+            <translation><!-- Dallas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denver</masterLabel>
+            <translation><!-- Denver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dublin</masterLabel>
+            <translation><!-- Dublin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paris</masterLabel>
+            <translation><!-- Paris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco</masterLabel>
+            <translation><!-- San Francisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santa Monica</masterLabel>
+            <translation><!-- Santa Monica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seattle</masterLabel>
+            <translation><!-- Seattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toronto</masterLabel>
+            <translation><!-- Toronto --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Approver --></label>
+        <name>Primary_Approver__c</name>
+        <relationshipLabel><!-- Quote Approver Mappings (Primary Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Discount % --></label>
+        <name>Primary_Discount_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Key --></label>
+        <name>Product_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>APJ</masterLabel>
+            <translation><!-- APJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services/Product --></label>
+        <name>Services__c</name>
+        <picklistValues>
+            <masterLabel>CSO</masterLabel>
+            <translation><!-- CSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lab</masterLabel>
+            <translation><!-- Lab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Theater --></label>
+        <name>Theater__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APJ</masterLabel>
+            <translation><!-- APJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VP Approver --></label>
+        <name>VP_Approver__c</name>
+        <relationshipLabel><!-- Quote Approver Mappings (VP Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VP Discount % --></label>
+        <name>VP_Discount_Limit__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Approver Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Approver Mappings</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

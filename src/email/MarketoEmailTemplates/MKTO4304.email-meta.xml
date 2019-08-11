@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Better-Faster Decision ISS-Knowtify_Q416.Cancel Email 10-27-16</name>
+    <style>none</style>
+    <subject>11/15 Webinar Cancelled: Make Better Decisions, Faster with ISS Knowtify and Pivotal Cloud Foundry</subject>
+    <textOnly>&lt;[[https://pivotal.io/platform/webinar/iss-knowtify-and-pivotal-cloud-foundry]]&gt;
+Hello {{lead.First Name:default=there}},
+ 
+Thank you for registering for this webinar about log management and Pivotal Cloud Foundry, scheduled on Tuesday, November 15th. Due to schedule conflicts and other factors, we&apos;ve decided to postpone this webinar to a future date. We apologize for any inconvenience this has caused.
+
+ Proper log collection and analysis is such an important part of modern software delivery. Application logs unlock key insight into application behavior, and will drive your decisions about scaling or evolving these applications. Make sure that you have a well-planned log strategy with your Pivotal Cloud Foundry environment! 
+
+ Please take a look at the ISS Knowtify tile &lt;[[https://network.pivotal.io/products/p-knowtify]]&gt; to learn more about using it in your Pivotal Cloud Foundry environment. Also, take a look at the built-in Pivotal Cloud Foundry Metrics offering &lt;[[https://docs.pivotal.io/pcf-metrics/1-1/using.html]]&gt; that makes it easy to correlate logs and visualize app performance. Finally, for your Java applications, consider using the powerful Spring Cloud Sleuth &lt;[[https://cloud.spring.io/spring-cloud-sleuth/]]&gt; which does easy instrumentation of applications and integrates with latency-visualization tool Zipkin. 
+
+ Please visit our Events page &lt;[[https://pivotal.io/resources]]&gt; for information on upcoming webinars, and let us know what future topics you want to hear about!
+ 
+We look forward to you joining us for future events.
+ 
+Kind regards,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle__ka$Id</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Zendesk_Legacy_ID__c</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Id</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Title</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$UrlName</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Legacy_URL__c</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>6.7.18 KB Article URLs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Articles_w_kav__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle__ka$ArchivedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Cloud Native Workshop_Missouri_Q415.Confirmation Email</name>
+    <style>none</style>
+    <subject>You are confirmed for Thursday, December 10th</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for registering for Pivotal’s Cloud Native Workshop taking place on Thursday, December 10, 2015 in St. Louis. The workshop will introduce you to key concepts in modern application design with Spring Boot and Spring Cloud. With expert guidance, you will:
+
+
+ - Get a hands on introduction to microservice architectures and application development.
+ - Learn how to iterate with a modern application development lifecycle and specifically how to leverage a platform for continuous delivery.
+ - Cover the key operational topics you’ll need to know to confidently run your own microservice applications.
+
+
+
+Prerequisites to be installed before workshop
+
+
+ - Cloud Foundry CLI &lt;https://github.com/cloudfoundry/cli&gt;
+ - Apache Maven &lt;https://maven.apache.org/download.cgi&gt;
+ - Gradle &lt;https://services.gradle.org/distributions/gradle-2.8-all.zip&gt;
+ - Git Client &lt;https://git-scm.com/downloads&gt;
+ - An IDE, like Spring Tool Suite &lt;https://spring.io/tools&gt;
+ - Java SE Development Kit &lt;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&gt;
+
+
+
+{{my.Save the date:default=edit me}}
+
+We look forward to you joining us!
+
+The Pivotal Team
+
+Questions? Please contact us via email &lt;mailto:pivotal-operations@pivotal.io&gt; or visit our website &lt;http://pivotal.io/event/cloud-native-workshop/st-louis&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

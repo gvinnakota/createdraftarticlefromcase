@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.6-11-15 V3N10</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 10</subject>
+    <textOnly>VOL. 3, NO. 10
+Thursday, May 21, 2015
+Editor Welcome: The Portable Valley &lt;#editor-welcome&gt;
+Business Update: Banking on Strong Currents in APJ &lt;#business-update&gt;
+Product Update: Spring XD 1.2 - The Machinery to Build Fast Data &lt;#product-update&gt;
+Agile Update: Business a Mile-High - Pivotal Denver &lt;#agile-update&gt;
+People Update: Code: Debugging the Gender Gap &lt;#people-update&gt;
+My Name Is... Chris Braney &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+
+THE PORTABLE VALLEY
+
+Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+In a recent keynote in Japan &lt;http://www.ustream.tv/recorded/63292528&gt;, Rob Mee crisply summarized the digital experiences that have upended business models everywhere. He offered Pivotal’s answer to the riddle of survival: Not just cloud-ready software, but fusing how Silicon Valley develops software to what industries already do better than anyone else. The ‘Valley way’ is portable, but other companies don’t bring it the way Pivotal does, with 25 years of agile behind it. We find evidence of this portability in our latest wins &lt;https://gopivotal-com.socialcast.com/groups/89227-ringthebell&gt;, and throughout this issue.
+
+
+
+APJ sales head Melissa Ries reports on Pivotal Cloud Foundry’s India debut and other sales firsts. Sabby Anandan outlines the advances in Spring XD 1.2 that make data-driven app development faster and easier. Our growing Denver office sounds a familiar meme: Helping customers adopt the ways of modern software development. Cornelia Davis also circles back on the big impact of a newly released documentary, which Pivotal helped sponsor, on the gender gap in IT.
+
+
+
+This issue also marks one year, 26 issues, and 144 articles for me as editor. Drop me a line - or pitch me your story! - and let me know &lt;mailto:scasale@pivotal.io&gt; how it’s going.
+
+
+
+Enjoy.
+BUSINESS UPDATE
+ BANKING ON STRONG CURRENTS IN APJ
+ Melissa Ries &lt;https://gopivotal-com.socialcast.com/users/927431-melissaries&gt;, VP of Field Operations, APJ
+If we summarized the year to date for Pivotal APJ, it would be momentum - driven by strong currents across all three areas of our business, and entry into new markets, such as India.
+
+
+
+We’ve made inroads on the platform with some of the biggest financial entities in the world, with regional powerhouse China. Following wins at the CITIC Securities &lt;http://www.cs.ecitic.com/en/index.htm&gt; (China’s largest investment bank), and Bank of Communications &lt;https://www.bankcomm.com.hk/en/aboutus/bankprofile.html&gt; (the 5th largest bank in China), we won an open bid with the China Merchants Bank &lt;http://english.cmbchina.com/&gt; - the first Chinese financial services customer for Pivotal that will use Pivotal Cloud Foundry &lt;https://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; to deploy credit card applications. (the bank is no. 1 in the credit card business, and at $700K, is a major Pivotal milestone!)
+
+
+
+We’ve also just landed our first ever PCF deal in India! Backed by a strong Federation relationship and a full solution IoT play, we closed a meaningful $400K for our platform.
+
+
+
+Big government in Asia is getting serious about digital transformation. The South Korean Government has chosen Pivotal Cloud Foundry as their “3.0 Standard Platform” across all government departments. Pivotal has also pitched the government of Singapore on the platform. The tender process takes time, but we’ve been an early and visible advocate, so stay tuned here.
+
+
+
+On the data side, late last year Telstra &lt;https://www.telstra.com.au/?direct&gt; invested $2.3M to purchase the Pivotal Big Data Suite &lt;https://pivotal.io/big-data/pivotal-big-data-suite&gt; for a data lake. They’ve started internal deployment, and our go to market with them continues, with Telstra looking to rollout customer solutions based on the Pivotal Big Data Suite. We’ve partnered with them on a roundtable with their top media, featuring our Pivotal Labs’ Sundance case study &lt;http://pivotal.io/platform-as-a-service/case-study/new-sundance-website-and-digital-platform-leverage-pivotal-web-services-and-cloud-foundry-to-enable-incredible-storytelling&gt;.
+
+
+
+While APJ doesn’t yet have a Pivotal Labs presence - coming soon! - that hasn’t stopped us from contributing to the formidable momentum of Pivotal Labs. We have major projects with the Singapore Government, and Australia-based Macquarie Bank &lt;http://www.macquarie.com/us/corporate&gt; was one of the largest APJ deals in Q1. Both entities are looking to deploy applications on PCF, and with Pivotal Labs opening in Tokyo in Q3, we expect to increase our PCF attach.
+
+
+
+All in all, we have great momentum across the sales plays, supported by vigorous marketing initiatives. We run events focused mainly on named accounts, and this half includes executive roundtables in financial services, government, media, healthcare and manufacturing, in six regions. We’re looking to close this half strong, and we’ll back with more.
+PRODUCT UPDATE
+
+SPRING XD 1.2 - THE MACHINERY TO BUILD FAST DATA
+
+Sabby Anandan &lt;https://gopivotal-com.socialcast.com/users/1032221-sabbyanandan&gt;, Product Manager, Spring XD and Spring Flo
+As we gear-up for the Spring XD 1.2. release &lt;https://network.pivotal.io/products/p-spring-xd&gt; on June 16, it’s the perfect time to review its powerful new capabilities, and what it brings to our customers and community. Spring XD 1.2 is a critical “glue” for the Pivotal Big Data Suite &lt;https://pivotal.io/big-data/pivotal-big-data-suite&gt;. New features and runtime improvements help developers and operators build highly scalable data pipelines that can be consumed from numerous endpoints, an essential capability for data-driven app development.
+
+
+
+We’ve met requirements driven by customers, the community, and Pivotal field engineers through a disciplined, three-month cadence between releases and frequent feedback. Spring XD 1.2 includes the following key enhancements:
+
+
+	- Anticipating greater needs for high throughput and low latency IoT requirements, we’ve made several performance optimizations to deliver 1M messages/second.
+	- We’re excited about the new “Flo for Spring XD &lt;https://www.youtube.com/watch?v=17pLpcdIu_M&gt;” in BETA, an HTML5-based visual canvas for data pipelines. Operators will gain deep insights through health monitoring and metrics UI fixtures, while developers can leverage a rich UI-DSL, and drag and drop features to create data pipelines.
+	- Developers and operators have the ability to run Spring XD as a native workload in Lattice/Diego &lt;http://lattice.cf/&gt; - a more familiar and consistent Cloud Foundry development and deployment model. Runtime improvements also accommodate out-of-the-box modules running Cloud Foundry Apps, and allow Spring XD to orchestrate streaming pipelines on Lattice/Diego &lt;https://drive.google.com/a/pivotal.io/file/d/0B_vAKm6QxSMLZ1laSXlnSm5XWUU/view&gt;.
+	- Extending our integration story with Pivotal Big Data Suite, we add an out-of-the-box gpfdist sink &lt;http://docs.spring.io/spring-xd/docs/1.2.0.RC1/reference/html/#gpfdist&gt; module. This fills product integration gaps between Spring XD and Greenplum Database and Pivotal HAWQ, and gives customers a unified, consistent application model to consume and write data to Pivotal HAWQ, Pivotal GemFire, GPDB, and Pivotal HD from Spring XD.
+	- Keeping up with the Open Data Platform (ODP) initiative, we’re now certified &lt;http://docs.spring.io/spring-xd/docs/1.2.0.RC1/reference/html/#using-hadoop&gt; to run Spring XD data pipelines in Pivotal Hadoop distribution (PHD) 3.0, and the Hortonworks Data Platform (HDP) 2.2 bits. To meet expected demand from Pivotal and Hortonworks engineers, we’ve added an Apache Ambari plugin &lt;https://github.com/spring-projects/spring-xd-ambari&gt;, which is supported on both Pivotal PHD 3.0 and Hortonworks HDP 2.2 &lt;https://spring.io/blog/2015/06/02/apache-ambari-meets-spring-xd&gt; distributions.
+
+
+
+And Next...
+
+With developer productivity in mind, we’re aggressively pursuing the public-BETA launch of Spring XD on Lattice/Diego. We want customers to get excited about seamless cloud on-ramps, as they migrate from monolithic data apps to data microservices, and to fully automated Spring XD on Lattice/Diego services. The journey to cloud-native continues!
+AGILE UPDATE
+BUSINESS A MILE-HIGH - PIVOTAL DENVER
+
+Brian Rose &lt;https://plus.google.com/116704667542656216604/posts&gt;, Director, Pivotal Denver
+Two years after opening Pivotal Labs in Denver, and seven years after opening - as its headquarters - Pivotal Tracker &lt;http://www.pivotaltracker.com/&gt; in downtown, we’ve 
+consolidated our offices under one roof as Pivotal Denver, and we’re busier than ever.
+ 
+ This combination is a huge step forward for our presence in the Denver area. More than fifty people across the Labs, Pivotal Tracker, sales, field engineering, and customer success teams now call 1644 Platte Street home - and we have plenty of room to grow!
+ 
+ 
+Agile chic - Inside the Pivotal Denver office.
+ 
+ Over the past two years we’ve grown the Denver Pivotal Labs team from two Boulder transplants and myself, to 20 Pivots, with more growth planned this year. We’ve partnered with startups like Sendgrid &lt;http://www.sendgrid.com&gt;, Active Junky &lt;http://www.activejunky.com&gt;, and GoSpotCheck &lt;http://www.gospotcheck.com&gt;, and local enterprises such as Dish Network &lt;http://www.dish.com/&gt; and Under Armour &lt;https://www.underarmour.com/&gt;, along with Colorado Access &lt;http://www.coaccess.com/&gt;, teaching them all we know about agile methods and cloud-native application development.
+ 
+ I would like to extend a special 
+thank you to Jennifer Donahue &lt;https://gopivotal-com.socialcast.com/users/1095112-jenniferdonahue&gt;, Kendra Cutter &lt;https://gopivotal-com.socialcast.com/users/1090027-kendracutter&gt;, 
+Chad Petersen &lt;https://gopivotal-com.socialcast.com/users/941117-chadpeterson&gt;, and the entire facilities and IT teams for their assistance in making the new Pivotal Denver a reality. Things went smoother than anyone could have expected, and it’s thanks to these individuals that we were able to do business in our new space on day one.
+ 
+ Stay tuned for details on the official launch party, and I 
+look forward to a great 2015 and beyond, as we continue to introduce Pivotal Labs and Pivotal Cloud Foundry to greater Denver.
+PEOPLE UPDATE
+ CODE: DEBUGGING THE GENDER GAP
+ Cornelia Davis &lt;https://gopivotal-com.socialcast.com/users/914971-corneliadavis&gt;, Director, Platform Engineering, Cloud Foundry
+Last October, in this newsletter &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/newsletters/pivotal-newsletter-october-30-2014#people-update&gt;, I shared with you how Pivotal was sponsoring a documentary on the dearth of women in computing. The film has now been released, and not only is it quite good, its impact has been even better!
+
+
+
+CODE: Debugging the Gender Gap &lt;http://www.codedocumentary.com/&gt;, premiered at the Tribeca Film Festival &lt;https://tribecafilm.com/festival&gt; on April 19 where it received special attention. The film touches on the history of women in computing through interviews with Walter Isaacson &lt;https://twitter.com/walterisaacson&gt;, and examines the stereotypes that discourage young girls from developing an interest in the field. It exposes biases that Hollywood - including a phenomenal interview with Pixar’s Danielle Feinberg &lt;https://www.linkedin.com/pub/danielle-feinberg/7/3b6/732&gt;, toy companies, and yes tech companies, all project and instill to devastating effect. It uncovers why women who do enter the workforce as computer science professionals leave the field in alarming numbers.
+
+
+
+The film hits several bright notes, covering the many fantastic programs like Girls Who Code &lt;https://girlswhocode.com/&gt; (we hosted a group in San Francisco last summer) and Black Girls Code &lt;http://www.blackgirlscode.com/&gt;, that are making a difference.
+
+
+
+
+Double XX speaks out: A scene from &quot;CODE: Debugging the Gender Gap&quot;.
+
+
+
+Perhaps the best thing about the movie are the conversations it triggers. I returned from TED Women &lt;https://conferences.ted.com/TEDWomen2015/&gt; at the end of May, where Citi Ventures &lt;http://ventures.citi.com/ventures/index.html&gt; sponsored a “Debugging the Gender Gap” workshop, hosted by film director Robin Hauser Reynolds &lt;https://www.linkedin.com/pub/robin-hauser-reynolds/18/742/b30&gt; and her co-producer, Staci Hartman &lt;https://www.linkedin.com/profile/view?id=42148636&amp;authType=NAME_SEARCH&amp;authToken=lf9b&amp;locale=en_US&amp;srchid=21829231433088635336&amp;srchindex=1&amp;srchtotal=7&amp;trk=vsrp_people_res_name&amp;trkInfo=VSRPsearchId%3A21829231433088635336%2CVSRPtargetId%3A42148636%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue&gt;. Discussions on women who code percolated throughout the three-day conference, making it clear that folks with expertise and a passion on this topic can make a difference.
+
+
+
+Robin also did a keynote at the Cloud Foundry Summit Diversity Lunch &lt;http://www.cfsummit.com/program/community-diversity-lunch&gt; (summarized in a great blog &lt;http://blog.pivotal.io/pivotal-cloud-foundry/p-o-v/diversity-at-the-cloud-foundry-summit&gt; by Abby Kearns), and showed the trailer and movie outtakes. Following lunch, a group met with Sam Ramji, who is steadfastly committed to making the Cloud Foundry Foundation &lt;http://cloudfoundry.org/index.html&gt; a place of inclusion.
+
+
+
+The response to the film has been fantastic, generating a great deal of national and global press coverage &lt;http://www.codedoc.co/press/&gt;. Robin and Staci will be doing private screenings for both the US State Department and US Congress, at the UN in Geneva, and at the Global Entrepreneurship Summit in Nairobi, where President Obama will be in attendance. Boom! The team will also hold private screenings and film festivals for the next year (keep an eye on their schedule &lt;http://www.codedoc.co/festival/&gt; for a location near you). We’re also looking to do one or more screenings for Pivotal staff.
+MY NAME IS...
+
+Chris Braney
+
+Chris Braney &lt;https://gopivotal-com.socialcast.com/users/928492-chrisbraney&gt;, Americas Business Manager
+Am currently the business manager for the East, Federal and Financial Services Areas. In Q3, I’ll be leading the Global Business Management Team responsible for the sales forecast management, sales productivity and pipeline metrics, and the profitability of GEO sales teams.
+On the 2nd floor in the Palo Alto office, and occasionally on the 4th floor at SF office
+Helping the collective sales teams in any way I can to close out what we hope to be another successful quarter.
+I enjoy exploring all the great state of California has to offer, hiking, wine tasting, beaches, etc.
+
+
+
+ 
+
+California Dreamin&apos; - Chris gets around the Golden State. 
+I initially started working at EMC as a Symmetrix systems technician in the manufacturing organization while still in college.
+
+
+
+And for football fans, just for the record: Tom Brady is innocent!! 
+Is a collective group of amazing people that has the unique opportunity to help customers transform the way they run their businesses.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees and college co-ops who joined Pivotal from May 18th to June 6th:
+
+
+
+
+Amanda Lavecchia, Business Ops Analyst, Toronto
+
+Andrew Oom, IT Technical Specialist, New York
+
+Antonio Gallego, Senior Field Engineer, Madrid
+
+Asfand Minhas, Business Ops Analyst, Toronto
+
+Benjamin T Bertka, Associate Field Engineer, US
+
+Boyi Liang, Senior Solutions Architect, Shanghai
+
+Brian M Byers, Associate Field Engineer, US
+
+Brendan Smith, College Co-op Student, Denver, CO
+
+Carl Seedhouse, Sales Account Manager, US
+
+Charles Zimmerman, IT Technical Specialist, Denver, CO
+
+Christopher Walter, College Co-op student, San Francisco
+
+Claire Jecks, Recruiting Consultant
+
+Connor Usry, College Co-op student, New York
+
+Connor Braa, Software Engineer, San Francisco
+
+Craig Erdmann, Senior Field Engineer, US
+
+Daniel Leibovic, College Co-op student, Denver
+
+Difan Zhao, Software Engineer, San Francisco
+
+Elenore Bastian, College Co-op student, Seattle
+
+Evan Short, Software Engineer, San Francisco
+
+Franklin Reilly, Sales Account Manager, US
+
+Goutam Tadi, College Co-op student, Palo Alto
+
+Hamish Cook, Product Manager, New York
+
+Heather Farley, College Co-op student, San Francisco
+
+Iain O&apos;Kelly, Senior Financial Analyst, Cork, Ireland
+
+James Quintana, College Co-op student, San Francisco
+
+Jennifer Donahue, Senior Workplace Advocate, Denver, CO
+
+John Matthews, Sales Account Manager, US West
+
+Kamalkumar K Trivedi, Senior Data Engineer, US
+
+Keaton Adams, Advisory Data Engineer, US
+
+Kelly Gerritz, College Co-op student, New York
+
+Heddy Stern, Product Manager, Boston, MA
+
+Kristofer Huffman, Member of Technical Staff 3, US
+
+John Calabrese III, Advisory Solutions Architect, US
+
+Jui Dai, Product Manager, Santa Monica, CA
+
+Larisa Berger, Software Engineer, Boston
+
+Li Zhang, College Co-op student, Beijing
+
+Lucas Lonergan, College Co-op student, Palo Alto
+
+Marcial Rosales, Advisory Solutions Architect, Madrid
+
+Matthew E Gunter, Senior Field Engineer, US
+
+Max Gordon, College Co-op student, San Francisco
+
+Michael Goelzer, Principal Product Manager, San Francisco
+
+Michael Oleske, Software Engineer, Santa Monica, CA
+
+Michael McDearmon, UX Designer, New York
+
+Michael Nixon, Director of Product Marketing, Palo Alto
+
+Molly Sweeney, College Co-op student, New York
+
+Nicholas Dirubio, College Co-op student, New York
+
+Nicholas Mahoney, Software Engineer 2, Santa Monica, CA
+
+Nick Holden, Sales Account Executive, EMEA
+
+Paul Reese, Business Development Manager, US
+
+Paul Hurley, Staff IT Technical Specialist, Santa Monica, CA
+
+Pravin Rao, Associate Data Engineer, US
+
+Radhakant Sahu, Associate Data Engineer, US
+
+Rahul Jain, Advisory Solutions Architect, US
+
+Raviteja Appalla, Associate Field Engineer, US
+
+Rebecca Cronin, Accountant, Cork, Ireland
+
+Richard Yau, Principal Network Engineer, Toronto
+
+Rohit Dilip Kelapure, Advisory Solutions Architect, US
+
+Sean Keery, Senior Solutions Architect, US
+
+Sean Paddock, Sales Account Manager, US
+
+Sheri McQueen, Sales Account Manager, US West
+
+Siddhu Warrier, Software Engineer, London
+
+Simon Kwok, Senior UX Designer, New York
+
+Sonya Yam, College Co-op student, Palo Alto
+
+Thomas Orr, Software Engineer, Santa Monica
+
+Timothy Hausler, College Co-op student, San Francisco
+
+Tyler Phelan, College Co-op student, San Francisco
+
+Wesley Charles Hewatt, Senior Field Engineer, US
+
+Xiang Sheng, College Co-op student, Beijing
+
+Yaht-Sun Huen, Senior Manager, IT Business Consulting, San Francisco
+
+Younjin Jeong, Principal Technologist, Seoul
+
+Yuliya Dzikovich, Software Engineer, Palo Alto</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

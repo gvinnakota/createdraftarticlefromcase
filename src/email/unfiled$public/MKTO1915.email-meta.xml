@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Event_VC Panel Event-NY_Q115.Reminder</name>
+    <style>none</style>
+    <subject>Reminder: VC Panel: Myth of the Technical Cofounder in NYC</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We&apos;d like to remind you of your registration for the upcoming VC Panel: Myth of the Technical Cofounder &lt;http://connect.pivotal.io/VC-Panel-Discussion-NYC.html&gt; in NYC. Please find the event details below:
+
+Date: Thursday, February 12, 2015
+Time: 7:00 PM to 9:00 PM
+Location: Pivotal Labs, 625 Avenue of the Americas, Second Floor, New York, NY 10011
+
+{{my.Save The Date - VC Panel:default=edit me}}
+
+Questions? Please contact us via email &lt;mailto:pivotal-operations@pivotal.io&gt; or visit our website &lt;http://www.pivotal.io&gt;.
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

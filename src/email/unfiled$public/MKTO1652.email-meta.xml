@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_ANZ_FSI Luncheon_Q414.06 Sorry we missed you</name>
+    <style>none</style>
+    <subject>We’re sorry you couldn’t attend the Pivotal FSI Executive Luncheon</subject>
+    <textOnly>&lt;http://connect.pivotal.io/APJ_Event_ANZ_FSI-luncheons_Q414_Registration.html&gt;
+We’re sorry you couldn’t attend
+ 
+Dear {{lead.First Name:default=Sir/Madam}},
+ 
+ Thank you for registering for our Pivotal Financial Services and Insurance Executive Luncheon. We are sorry you couldn’t attend.
+ 
+ Please find attached a copy of a whitepaper that Pivotal and Cap Gemini have produced around the Principles of the Business Data Lake &lt;http://www.pivotal.io/sites/default/files/The_Principles_of_the_Business_Data_Lake_2013-12-02_V07_WEB.pdf&gt;
+ 
+ If you would like to know more about Pivotal, you might like to subscribe to our blog: http://blog.pivotal.io/ &lt;http://blog.pivotal.io/&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

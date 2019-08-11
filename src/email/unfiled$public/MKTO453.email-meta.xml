@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Email_CustomerSatisfactionSurvey_Q114.Toronto</name>
+    <style>none</style>
+    <subject>Customer Satisfaction Survey</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+At Pivotal Labs, we take pride in every product we create for our customers and we realize how critical those products are for your everyday business.
+
+Just as importantly, your feedback is critical for us in learning how to serve you better. We’d like to invite you to take a few minutes of your time to fill out our customer satisfaction survey &lt;https://www.surveymonkey.com/s/PLsatisfactionsurvey&gt;. This short survey has been developed to understand what we are doing well, where we can improve, and to give you the opportunity to share any feedback with us.
+
+Please click on the link below to take a few moments to fill out the survey. Rest assured that all your responses are anonymous, confidential and will not be made public.
+
+This survey will close on Tuesday, April 1st at noon EST. It will take you about 5 minutes to complete.
+
+Link to the questions: https://www.surveymonkey.com/s/PLsatisfactionsurvey &lt;https://www.surveymonkey.com/s/PLsatisfactionsurvey&gt;. 
+
+We look forward to serving your team and your product needs better.
+
+Sincerely,
+Edward Hieatt
+COO, Pivotal Labs</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

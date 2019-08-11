@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Reminder - London</name>
+    <style>none</style>
+    <subject>See you tomorrow at the Pivotal Cloud Native Roadshow!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+
+ Thank you for signing up to attend the Cloud Native Roadshow taking place tomorrow in London. We look forward to seeing you there! 
+
+ Pivotal Cloud Native Roadshow—London 
+Wednesday, 6th July 2016 
+9:00am – 9:30am Breakfast 
+9:30am – 3:30pm Sessions 
+Roadshow Agenda &lt;[[http://pivotal.io/event/pivotal-cloud-native-roadshow/london]]&gt; 
+
+ 
+Location: 
+The Warehouse  
+211 Old Street, 2nd Floor 
+London EC1V 9NR 
+
+ Questions? 
+Contact Marie-Jeanne Dougados at mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt;. 
+
+ We look forward to seeing you tomorrow! 
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

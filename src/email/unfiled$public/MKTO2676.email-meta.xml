@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.7-1-15 V3N11 TAKE 2</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 11</subject>
+    <textOnly>VOL. 3, NO. 11
+Wednesday, July 1, 2015
+Editor Welcome: Something About July &lt;#editor-welcome&gt;
+Business Update: Road Notes: The Pivotal Big Data Roadshow &lt;#business-update&gt;
+Product Update: Why Spring Cloud Services on PCF Is a Very Big Deal &lt;#product-update&gt;
+Agile Update: Tracking The Great Tracker - From Femgineers to Features  &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: Welcome Quickstep &amp; Welcome to Next in Big Data &lt;#people-update&gt;
+My Name Is... Eoghan Dolan &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Something about july
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+With Bastille, Independence, and Canada Day crowding its early weeks, July has the best claim as the month of declarations. When kids watch the rainbow starbursts in celebration of them, I wonder if they see only hope, and not the resistance and fear behind revolutions.
+
+With a tech stack that mutates almost weekly, maybe another kind of independence reckoning is unfolding. Are we getting customers to this side of hope to till their best expertise and business landscape in an entirely new way? In a recent Andrew Clay Shafer podcast and talk with Matt Curry, Allstate’s cloud platform head &lt;http://blog.pivotal.io/pivotal-cloud-foundry/case-studies-2/changing-the-culture-at-allstate-an-interview-with-matt-curry&gt;, Curry talks of giving his business - any business - the tools Google, Amazon and others cooked up, to erect the same software shops and create the same possibilities that those tech titans disrupted their way into.
+
+We see that promise in this issue, with an update on why Spring Cloud has businesses excited, to an account on the full houses at our big data roadshows, the entry of Quickstep, and how Tracker remains the understated software organizing tool of choice for developers everywhere. Apache Geode also moves into high gear through the Apache Geode Hackathon &lt;http://ambitious-apps.challengepost.com/&gt;. Tell your developer friends, game on!
+
+Speaking of rainbow starbursts, the Pivotal community everywhere turned out to celebrate Pride month, which included a landmark decision for equality in the US. We pulled together photos from around our offices &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/corporate-communications/news-archive/pivotal-pride&gt; that celebrated in great Pivotal form.
+
+Enjoy.
+
+
+
+Denver Rainbow
+BUSINESS UPDATE
+ ROAD NOTES: The Pivotal Big Data Roadshow
+ Michael Cucchi &lt;https://gopivotal-com.socialcast.com/users/967726-michaelcucchi&gt;, Sr. Director of Product Marketing, Data
+Response to the Pivotal Big Data Roadshow &lt;https://pivotal.io/big-data/data-roadshow&gt; – which has been touring cities across North America (as well as Brazil, Australia and Singapore) – has been impressive. It clearly demonstrates the customer and market demand for hands-on experience and training with the tools for modern big data technologies.
+
+Many of these events packed the house, numbering nearly 100 attendees in each city. This represents massive progress within the open source Apache Hadoop ecosystem in recent years, and demonstrates the enterprise’s embrace of Hadoop in handling big data storage and analytics workloads (and further shows how Pivotal is now taking a leadership role in both!).
+
+
+
+
+(l to r): Michael Cucchi and Fred Melo present to packed houses in New Jersey, and Brazil, respectively.
+
+The roadshows have attracted executives, administrators and operations 
+staff, developers, data scientists and even tech-minded college students. That variety demonstrates the enormous impact these technologies have today across industries, and how important they are to their futures. Many attendees have already been leveraging our Data Lake solutions as Pivotal Big Data Suite &lt;http://pivotal.io/big-data/pivotal-big-data-suite&gt; customers – including Penske Corporation, Johnson &amp; Johnson, Prudential and 
+more. 
+
+It also underscores a key component of our 2015 strategy &lt;http://pivotal.io/new-approach-to-big-data&gt;: the entire technical portion of the Pivotal Big Data Roadshow rests on our unique cloud capabilities. All our attendee sessions are hosted in an enterprise, public cloud infrastructure, spun up seamlessly in minutes. This enables us to rapidly provision 50 IoT analytics labs across our entire product set. Some attendees have stayed hours past the scheduled end times to build out out new analytics pipelines with our expert engineering teams. They also left with their lab environments equipped to continue their experiences on their own cloud, learning into the future. 
+
+This has been a great initiative and a big thanks goes out to all who made it possible!
+
+For additional information:
+
+
+ - Visit the Pivotal Big Data Roadshow &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/events/the-big-data-roadshow&gt; page on Inside Pivotal.
+ - Check out the full blog post about the Pivotal Big Data Roadshow here &lt;http://blog.pivotal.io/big-data-pivotal/products/pivotal-data-roadshow-a-view-from-the-road&gt;.
+PRODUCT UPDATE
+ Why Spring Cloud Services on PCF Is a Very Big Deal
+ Pieter Humphrey &lt;https://gopivotal-com.socialcast.com/users/915134-pieterhumphrey&gt;, Cloud Foundry Tech Marketing
+We’re very excited to announce the release of Spring Cloud Services beta &lt;https://sites.google.com/a/pivotal.io/inside-pivotal-cf/services#SpringCloud&gt;, a PivNet tile &lt;https://network.pivotal.io/products/p-spring-cloud-services&gt; that integrates the open source Spring Cloud project &lt;http://projects.spring.io/spring-cloud&gt; with Pivotal Cloud Foundry &lt;http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt;. Netflix’s evangelism of their NetflixOSS &lt;http://netflix.github.io/&gt;, and well-timed blogs &lt;http://martinfowler.com/articles/microservices.html&gt; and talks &lt;http://www.slideshare.net/InfoQ/micro-services-java-the-unix-way&gt; from ThoughtWorks, has shown developers a distributed architecture that offers them unprecedented services and speed, making for one of the hottest trends in computing: microservices &lt;https://docs.google.com/document/d/1k5xTTphdY94EVGqxRqlGpQxHxqy3hZA86zQDcWl3heU/edit#&gt;, or cloud-native application development. Pivotal is breaking away in microservices, bringing them to customers in a truly unique way. 
+
+The traditional monolithic architecture on Cloud Foundry &lt;http://martinfowler.com/bliki/MonolithFirst.html&gt; is far from dead, and is still a recommended approach for the initial stages of an application’s 
+production life. Netflix has shown however, that microservices at a larger scale enable unprecedented speed to market. Microservices are a highly distributed workload, and thus ideally suited for Pivotal Cloud Foundry. Pivotal is first to market the integration of the NetflixOSS into both an application development stack (Spring), and our cloud-native deployment platform (Pivotal Cloud Foundry). The power of this coupling was evinced when Spring Cloud played a key role in helping us close a big and recent PCF deal with a global service provider.
+
+Highlights for the Spring Cloud beta include a Config Server, Service Registry (Eureka), and Circuit Breaker 
+(Hystrix/Turbine). 
+
+Fortune 2000 companies are looking to emulate the architecture Netflix and other internet giants have to drive ever-important and faster times to market for software products. Spring Cloud Services general availability is expected in mid-Q4, and will position Pivotal to offer the most complete commercial microservices stack available.
+
+Pivotal’s Matt Stine took a turn in the &quot;Cloud Foundry After Dark&quot; video series to announce the beta &lt;https://www.youtube.com/watch?v=yabE77yxWhQ&gt;. We owe a big thank you to Spring Cloud OSS and commercial team members like Dr. David Syer, Spencer Gibb, Brian Dussault, Josh Long, Matt Stine, Scott Frederick, Chris Schafer, Craig Walls, Roy Clarkson, and Will Tran. Reach out to pcf-concierge@pivotal.io &lt;mailto:pcf-concierge@pivotal.io&gt; if you have any questions. Onwards!
+AGILE UPDATE
+Tracking the great tracker - from femgineers to features
+ Dan Podsedly &lt;https://gopivotal-com.socialcast.com/users/1032733-danpodsedly&gt;, Senior Director, Pivotal Tracker
+The first six months of 2015 have seen Pivotal Tracker &lt;http://www.pivotaltracker.com/&gt; - the ultimate agile software management tool - expand in meaningful ways, including ones that keep us in the hearts and minds of the startup 
+community. 
+
+In Denver and after five years in our original space, we moved into the cool new Pivotal Denver 
+office on Platte Street. While the stunning view of the South Platte river and downtown skyline tend to distract, the larger space will allow us to grow aggressively. We also have a great opportunity to collaborate with our Pivotal teams along with the bustling Denver tech community.
+
+We’ve developed impactful new partnerships. Tracker has teamed with Poornima Vijayashanker &lt;https://www.linkedin.com/profile/view?id=5560343&amp;authType=NAME_SEARCH&amp;authToken=h-r5&amp;locale=en_US&amp;srchid=17231151435599385326&amp;srchindex=1&amp;srchtotal=1&amp;trk=vsrp_people_res_name&amp;trkInfo=VSRPsearchId%3A17231151435599385326%2CVSRPtargetId%3A5560343%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue&gt;, founding engineer at Mint &lt;https://www.mint.com/&gt;, to create a popular monthly web series called Femgineer TV &lt;http://femgineer.com/femgineer-tv/&gt;. The series—which just wrapped its fifth episode—is geared to forward-thinking tech professionals, and covers a wide range of topics related to entrepreneurship and leadership. We’re also kicking off a new partnership with the big tech news site Venture Beat &lt;http://venturebeat.com/&gt;.
+
+In January, we launched a new pricing structure &lt;http://www.pivotaltracker.com/community/tracker-blog/new-year-new-tracker-new-pricing&gt; that makes Tracker free for smaller teams, and reduces the pricing for startup-sized companies, while raising prices slightly to scale to larger accounts. The results have been great for all stakeholders, and we see a growing interest in Tracker from enterprises as they embark on the cultural change that comes with agile adoption.
+
+As for Pivotal Tracker, it’s been an especially productive time. In partnership with Pivotal Labs Toronto, we released a new version of our iOS app &lt;http://www.pivotaltracker.com/community/tracker-blog/introducing-pivotal-tracker-ios-3-0-part-1-2&gt; in May, with a design overhaul and many new features. The first version of the Tracker Android app is close behind with a release due in the coming weeks. Last but not least, we’ve made huge progress on a major initiative to overhaul Tracker’s reporting and analytical features, some of which are in beta now &lt;http://www.pivotaltracker.com/community/tracker-blog/weve-got-new-beta-charts-need-feedback&gt;, all of which buttress the tools that have made this the world’s leading collaborative software management tool.
+
+We’re looking forward to continued growth in 2015, and to deepening our imprint on Pivotal’s overall mission to transform how the world builds software.
+Customer Spotlight
+Purdue’s data-driven Success
+Pivotal Big Data Suite customer, Purdue University, is using big data management to improve the success of its students. We spotlight this latest data case study &lt;http://pivotal.io/big-data/case-study/purdue-university-real-time-big-data&gt;, where Purdue CIO Gerry McCartney highlights data’s starring role in helping to identify qualified students, 
+ensure success throughout their studies, and improve teacher effectiveness. Pivotal offered a reliable single solution and a knowledgeable support system, which proved to be the winning combination for Purdue. Check out the video &quot;Mining Data to Ensure Student Success at Purdue &lt;https://www.youtube.com/watch?v=N6oUkZHl-nw&gt;&quot; featuring McCartney, and read the Pivotal blog post &lt;http://blog.pivotal.io/big-data-pivotal/case-studies-2/pivotal-big-data-suite-sets-purdue-university-students-up-for-success&gt; for more on this customer success story.
+PEOPLE UPDATE
+ Welcome Quickstep &amp; Welcome to next in Big data
+ Elisabeth Hendrickson &lt;https://gopivotal-com.socialcast.com/users/966801-elisabethhendrickson&gt;, Vice President, Engineering for Data Products
+A few weeks ago Pivotal announced the acquisition of Quickstep &lt;https://quickstep.cs.wisc.edu/&gt;, an early-stage startup founded by a high-powered team from the University of Wisconsin-Madison.
+
+We&apos;re excited to have the Quickstep folks working with us in our Palo Alto office! The team is headed up by Jignesh Patel &lt;http://pages.cs.wisc.edu/~jignesh/&gt;, a noted figure in data circles, and includes Craig Chasseur, Shoban Chandrabose, Harshad Deshmukh, Adalbert (Gerald) Raj, Zuyu Zhang, and Navneet Potti.
+
+
+Quickstep Founder Jignesh Patel
+
+Quickstep is an important piece in our long-term strategy. Its innovative big data technology will help us with performance gains. While its BitWeaving index &lt;http://pages.cs.wisc.edu/~jignesh/publ/BitWeaving.pdf&gt; format has the potential to radically speed up scans, drastically improving query performance. In addition, Quickstep’s unique execution engine is highly performant, and also includes workload management features such as the ability to pause a query.
+
+But even more exciting: Quickstep&apos;s technology has a cloud-ready architecture, with scalability, elasticity, and multi-tenancy built into its DNA. While we still see most of our customers using our Pivotal Big Data Suite on bare metal, our customers are increasingly moving to virtualized infrastructures. Quickstep gives us a leg up as we adapt and make cloud-native data products. 
+
+In Jignesh’s words:
+&quot;We’re all excited to be part of Pivotal, and looking forward to helping Pivotal build on the Quickstep technologies to become a leader in data.&quot;
+
+So if you see Jignesh, Craig, Shoban, 
+Harshad, Gerald, Zuyu, and Navneet around, please extend them a hearty welcome - and stay tuned for what’s next in cloud-ready big data.
+MY NAME IS...
+ Eoghan Dolan
+ Eoghan Dolan &lt;https://gopivotal-com.socialcast.com/users/925569-eoghandolan&gt;, Director, Escalation Management - GSS
+Work with Escalation Management and Escalation Engineering under Global Support Services
+In Cork, Ireland (PST +8 hours)
+Managing and analysing major post sales escalations.  Also hiring for an incredibly exciting, customer/ incident crisis role in Palo Alto (Call me...!)
+I spend as much time as possible with my 22 and 7 year old sons, Alex and Louis - convincing the elder not to sell me out to the younger - I&apos;m also on week 9 of the Couch to 5k &lt;https://itunes.apple.com/us/app/couch-to-5k-running-app-training/id448474423?mt=8&gt; app.
+I was the last EMC&apos;er ever to wear a suit and tie to the Greenplum offices in San Mateo, tragically on the very same day Joe Militello announced a mission to remove the aforementioned formal attire, to a packed Town Hall.
+
+
+
+(l to r) Dolan the youngers - Alex (ready for his tech career); and Louis, with Dolan the elder
+Is exactly where I want to be. I feel utterly inspired by the people I work with and the technology transformation we espouse; from the EMC heads that took this shared leap, the West Coast/ Open/ Agile/Extreme Dev work dynamic, to being part of the Pivotal Ireland expansion. All wonderfully manic and entirely gripping.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees and college co-ops who joined Pivotal from June 8 - 29:
+
+ Abhishek Beniwal, Associate Data Engineer, 
+US
+ Adalbert Soosai Raj, College Co-Op, Palo Alto
+ Adam Berkovec, Software Engineer, San Francisco
+ Aly Blenkin, UX Designer, London
+ Benjamin Klein, 
+Technical Writer, US
+ Bonnie Nadri, Product Manager, US
+ Casey West, Principal Technologist, US
+ Catherine Zhang, Software Engineer, Santa Monica 
+ Daniel 
+Dzoan, Software Engineer, San Francisco 
+ Daniel Nemeth, Advisory Solutions Architect, US
+ David Axinn, Sales Account Manager, US
+ David Malone, Senior Solutions Architect, 
+US
+ Derek Sim, Senior Account Manager, Singapore
+ Dina Morgan, Sales Account Manager, US
+ Eli Pleaner, College Co-op Student, San Francisco
+ Eui Jin Jung, 
+College Co-op Student, San Francisco
+ Haohao Meng, College Co-op Student, Beijing
+ Harshad Deshmuk, College Co-op Student, Palo Alto
+ Isabella Kuhn, College Co-op Student, Palo Alto
+ Jay Badenhope, Product Manager, San Francisco
+ Jignesh Patel, Sr. Director Technical Staff, Palo Alto
+ Joel Szodfridt, Principal Solutions Architect, US 
+ John Feminella, Advisory Field Engineer, US
+ John Shahid, Software Engineer, New York
+ 
+Jonathan Wolfe, Senior Manager, Infosec, Palo Alto
+ Joseph Greubel, Software Engineer, Santa Monica, CA
+ Juan Dominguez, Software Engineer, San Francisco
+ Kathryn 
+Epperson, College Co-op Student, Palo Alto
+ Keaty Gross, Software Engineer, New York
+ Kenny Wang, Software Engineer, San Francisco
+ Kristen Henry, College Co-op Student, Palo 
+Alto
+ Leslie Chang, Software Engineer, San Francisco
+ Marco Nicosia, Consulting Product Manager, San Francisco
+ Marcus Verkler, College Co-op Student, Palo Alto
+ Marek 
+Gdala, Customer Support Tech 2, Cork Ireland
+ Matt Ross, Associate Data Engineer, US
+ Michael Pace, Software Engineer, Denver CO
+ Navyasri Canumalla, Software Engineer, Santa 
+Monica
+ Navneet Potti, College Co-op Student, Palo Alto
+ Nikhil Malladihalli Chandrappa, Associate Data Engineer, US
+ Nishtha Agarwal, Associate Field Engineer, US
+ 
+Paras Sanghavi, Software Engineer, New York
+ Pratheesh Nair, Member of Technical Staff 3
+ Qi Zhang, College Co-op student, Beijing 
+ Robert Atkins, Principal Software 
+Engineer, London
+ Samuel Ziegler, College Co-op, Palo Alto 
+ Sannidhi Jalukar, Software Engineer, Palo Alto
+ Scott Orlyck, Software Engineer, Santa Monica
+ Shoban 
+Chandrabose, College Co-op Student, Palo Alto
+ Suzan Choy, College Co-op Student, Santa Monica, CA 
+ Timothy Chasseur, Senior Member of Technical Staff, Palo Alto
+ Timothy Dalsing, 
+Advisory Data Engineer, US
+ Zuyu Zhang, College Intern Student, Palo Alto</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

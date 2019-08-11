@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Cloud Native Roadshow_2017.SF Post Event</name>
+    <style>none</style>
+    <subject>Thank you for spending the day with us</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+
+ Thank you for being a part of the Cloud-Native Roadshow in San Francisco. We hope our event provided you with a clear perspective on the process and technology it takes to become a cloud-native organization.
+ 
+We have made the presentation slides available for you:
+
+
+	- Cloud-Native Landscape &lt;[[https://content.pivotal.io/slides/cloud-native-roadshow-landscape-san-francisco?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;
+	- Cloud-Native Roadshow Microservices &lt;[[https://content.pivotal.io/slides/cloud-native-roadshow-microservices-san-francisco?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;
+	- Google Cloud Platform &lt;[[https://content.pivotal.io/slides/cloud-native-roadshow-google-san-francisco?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;
+	- Solace Messaging for Open Data Movement &lt;[[https://content.pivotal.io/slides/cloud-native-roadshow-solace-san-francisco?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;
+	- New Relic Resources &lt;[[https://content.pivotal.io/slides/cloud-native-roadshow-new-relic-san-francisco?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;
+
+
+In an effort to improve on events like this in the future, please take this brief survey &lt;[[http://pivotal.cnr-sf.sgizmo.com/s3/]]&gt;.
+ 
+If you are interested in having Pivotal present cloud-native &lt;[[https://pivotal.io/cloud-native?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt; content to your organization or want to learn more about Pivotal, contact us at cloudnativeroadshow@pivotal.io &lt;[[mailto:cloudnativeroadshow@pivotal.io]]&gt; to schedule a follow up with our team.
+ 
+Thank you again for joining us!
+The Pivotal Team
+ 
+For more in depth presentations on cloud-native topics and everything else to do with delivering software, please join us again at SpringOne Platform &lt;[[https://springoneplatform.io/?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;, taking place December 4 - 7, 2017 in San Francisco. Use the code below for $100 off registration!
+S1P_EVENT_CNR100 &lt;[[https://springoneplatform.io/?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

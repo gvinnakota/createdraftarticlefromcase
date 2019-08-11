@@ -1,0 +1,17 @@
+<apex:page id="QuoteRatePlanDeletedList" controller="QuoteRatePlanDeletedListController">
+    <apex:form >
+        <apex:pageBlock title="Deleted rate plans">
+            <apex:pageBlockButtons >
+                <apex:commandLink action="{!redirect}" value="Go to Quote {!cloneId}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageMessages />
+
+            <apex:pageBlockSection collapsible="false">
+                <apex:pageBlockTable value="{!deletedRatePlans}" var="ratePlan">
+                    <apex:column headerValue="Name" value="{!ratePlan.Name}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

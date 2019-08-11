@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314 - Q115.Sydney 6/17 - No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you at the Pivotal Cloud Platform Roadshow - Sydney</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Sorry we missed you at the Pivotal Cloud Platform Roadshow in Sydney on Wednesday, June 17th. Our workshop gave attendees the opportunity to collaborate with their peers and get hands-on experience pushing an app on Pivotal CF. All of our sessions were designed to give users a deep dive into PaaS and how it can change the way companies develop, deploy and scale applications for the cloud generation. 
+
+We have made our presentation slides available here &lt;http://www.slideshare.net/Pivotal/tagged/pivotal%20cloud%20platform%20roadshow&gt; and invite you to visit run.pivotal.io &lt;https://run.pivotal.io/&gt; to try Pivotal Web Services - simply upload your files and your app just works!
+
+Interested in connecting with us? Please contact us &lt;mailto:info@pivotal.io&gt; to learn more.
+
+Hope to see you next time.
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

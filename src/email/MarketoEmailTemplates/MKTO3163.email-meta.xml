@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.11-24-2015 V3N18</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 18</subject>
+    <textOnly>VOL. 3, NO. 18
+Tuesday, November 24, 2015
+Editor Welcome: Empires of the Mind  &lt;#14ebc20d8b820466_editor-welcome&gt;
+Business: How Microservices Fixes the Slow Train Problem &lt;#business-update&gt;
+Product: Unleashing Your IoT Data: It’s All in the Science &lt;#product-update&gt;
+Agile: Expanding the Digital Front From Toronto &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People: Managing at Light Speed: What I Learned Along the Way &lt;#people-update&gt;
+Hello, My Name Is... Phil Reay &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Empires of the Mind
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+“The empires of the future are the empires of the mind,” said Winston Churchill, some 90 years ago. While for some Silicon Valley represents the best and worst tendencies of empire building, on the better side of things is how the Valley is referred to as a state of mind.
+
+In this issue we get two “ideas” articles on what keeps the software machine humming. One is Michael Còte’s article on ways to understand and convey the benefits of decoupled architectures and microservices. Another is our People Update from engineering lead Matt Kocher, who writes on the lessons learned in his personal journey from managing a codebase to managing those who code. We also venture outside geographic Silicon Valley with an Agile update on the mobile-led edge of Pivotal Toronto. And for our Product Update, the data science crew shows us how it’s helping customers untangle the omnipresent Internet of Things.
+
+We had a torrent of activity the past week, but I’ll call out one. Janice Fraser led the first Pivotal workshops that nicely dovetail agile and lean methods at the Lean Startup Conference &lt;http://leanstartup.co/&gt;—outstanding sessions created with the support of Eric Ries &lt;https://en.wikipedia.org/wiki/Eric_Ries&gt;. Find the related slideware on Janice’s twitter feed &lt;https://twitter.com/clevergirl/status/667034155834736641&gt;.
+
+This is a week in the US where anyone and everyone are invited to get together to give and share thanks. In the spirit of the holiday, I’m thankful for any empire of the mind that keeps the door to ideas open, and understands that a better one is always around the corner.
+
+Enjoy.
+BUSINESS
+How Microservices Fixes the Slow Train Problem
+Michael Cóte &lt;https://gopivotal-com.socialcast.com/search?utf8=✓&amp;q=Michael+Cote&gt;, Director of Technical Marketing, Pivotal Cloud Foundry
+The ideas of &quot;dependencies&quot; and &quot;coupling&quot; are important touch points for understanding and conveying the software delivery benefits of a microservices approach to architecture.
+
+&quot;Coupling&quot; between services means that changes to one service have a big 
+impact on another service, and is considered bad in software architecture. Among other reasons, strong coupling usually means that each service can only be released as “fast” as the slowest changing service. For example, you might have an identity service and a reservation lookup service. Let&apos;s say the reservation service can be updated weekly—the team working on it is fast! But, the identity services release take six months. Thus, the reservation service is forced to deliver on a six-month schedule.
+
+Among other things, microservices remove the release cadence dependency. The goal is to allow each service to evolve as fast as makes sense for the business. Of course, there are some new problems to address:
+
+
+ - Ensuring backward API compatibility is a good idea. If we remove or change parts of identity services&apos; API and don&apos;t change the reservation system, things break. Thus, it&apos;s good to slowly remove functionality (or never do that!) with lots of testing, with the ability to rollback changes if/when things go haywire in production.
+ - Services should be able to isolate failures in order to &quot;quarantine&quot; errors in other services. If there&apos;s an error in the identity service in production, we&apos;d like the reservation service to gracefully fail. Operations patterns like the circuit breaker included in Spring Cloud &lt;http://cloud.spring.io/&gt;, help manage these types of operational complexities.
+
+
+
+Another benefit of decoupling services comes from shorter release cycles. The longer you wait to release code, the more code you’ll bundle into a release. Six months worth of code—across multiple services—is a lot. When errors occur in production and they will!) finding bugs in this ball of yarn will be much harder than finding the bad code in, say, a week&apos;s worth of code.
+
+Think of it as train tracks. If five tracks all converge at one point, a problem on one of the tracks can cause confusion and delay for the other trains&apos; schedules—they&apos;re strongly coupled. If each of the five tracks operates on its own schedule without having to converge, then of course there is no cascading schedule problem.
+PRODUCT
+Unleashing Your IoT Data:
+It’s All in the Science
+Kaushik Das &lt;https://gopivotal-com.socialcast.com/users/949693-kaushikdas&gt;, Director of Data Science
+When it comes to the Internet of Things (IoT) it’s all in the data. What really matters though is how you actually go about creating value from your IoT data.
+
+Car manufacturers know what they want from data. They’re wondering if they can understand behavior patterns of drivers, and link that to the wear and tear of parts that need repairs. The key here is not just teasing out the relationship between a driver’s actions and the breakdown of parts, but in the timely alerts that advise drivers to bring their cars to a certain dealer for repairs before a breakdown occurs.
+
+Automakers, and operators of heavy 
+machinery such as those used by oil and gas companies, are increasingly coming to Pivotal with such problems, and the data science team is helping them use Pivotal products and data science to solve them.
+
+The data can be quite varied. For example in drilling for oil, measurements such as pressure on drill bits, their rpm’s, etc., are continuously recorded; while in automobiles, multidimensional GPS data are used to describe the geo-location of vehicles. As the IoT evolves, the variety of data sources will only only expand, and applications must step up to be able process data of different kinds, such as sensor, image, and text data. Pivotal Greenplum &lt;http://pivotal.io/big-data/pivotal-greenplum&gt; and Apache HAWQ are uniquely equipped to deal with this kind of such data.
+
+We’ve also implemented complex models and techniques such as Kalman filters &lt;https://en.wikipedia.org/wiki/Kalman_filter&gt; for estimating geo-positions, Fourier transforms &lt;https://en.wikipedia.org/wiki/Fourier_transform&gt; for frequency decomposition, edge 
+detection for image processing, and window-level aggregations for time-series analyses using open source tools and libraries. Then we leverage MADlib &lt;https://en.wikipedia.org/wiki/Madlib&gt; to build models that predict failure. We’ve also built a couple of prototype apps for the consumption of these models which are deployed using PCF.  Thus we are able to provide an end-to-end solution for our IoT customers in oil and gas, automotive and other manufacturing industries.
+
+Customers in the above 
+industries and others are coming to us to help them untangle the IoT through data science, and to find new value along the way. Our colleagues, Vatsan, Rashmi and Gautam recently held a very well received meetup on all of this Palo Alto. We also have great IoT projects underway in EMEA and APJ. We’ll keep you posted, and let us know how we can help your customers.
+AGILE
+Expanding the Digital Front From Toronto 
+Boris Chan &lt;https://gopivotal-com.socialcast.com/users/950953-borischan&gt;, Director, Pivotal Toronto
+It’s been some time since we last updated you from Toronto. We’re growing our hard-earned reputation for delivering to customers new and modern ways to build mobile products at scale. And we’ve taken big steps to marry our native value to the larger Pivotal portfolio.
+
+We’ve been central to some truly amazing work around the connected car through Ford. We’re currently delivering the Ford Global Mobile App for iOS and Android across North America, Europe, and Asia. This is making us a key part of a key strategy for Ford’s future business &lt;http://techcrunch.com/2015/11/16/ford-borrows-a-play-from-tesla-launches-app-with-remote-start-unlocking-and-more/&gt;. Our focus has been on connected car features that line up with some truly impactful—but confidential—marketing features. We&apos;re having our APIs built on Pivotal Cloud Foundry and Pivotal Gemfire, in an effort that has some 25-plus Toronto Pivots across Engineering and Product.
+
+Other notable wins and work this half include:
+
+
+ - Collaborating deeply with AIMIA &lt;http://www.aimia.com/&gt; to rewrite their key loyalty apps on iOS and Android.
+ - Helping current customers like Loblaw &lt;http://www.loblaw.ca/&gt; and MCX &lt;http://www.mcx.com/&gt; move faster to get to continuous releases on their key mobile apps—or to get PCF in their stack for APIs that improve continuous delivery.
+
+ - We&apos;re expanding our footprint with the largest Canadian financial institutions, solving problems for their customers in new business segments through digital solutions. We’re helping many of these more established companies tackle these issues starting with Discovery and Framing projects, collaborating with us here, and pushing them to start thinking more like startups &lt;http://www.theglobeandmail.com/report-on-business/canada-bank-branches-disruption/article26150646/&gt;.
+
+
+
+
+Standing it up from Pivotal Toronto
+
+As we help more enterprises shape their digital futures, Toronto has a lead role in helping companies tap into 
+their inner entrepreneur. For 2016, we expect more large-scale engagements that leverage more of our strengths across the company, as customer start their journey to modern software development, with Pivotal.
+Customer Spotlight
+Healthcare Customers Tell Their Pivotal Stories
+Many of our customers around the world are on journeys to becoming data-driven software companies, and no industry has the potential to impact lives in a bigger way in their journey, than healthcare. Pivotal customers Humana &lt;http://pivotal.io/platform/case-study/humana&gt; and Philips &lt;http://pivotal.io/platform/case-study/philips&gt; have embraced Pivotal Cloud Foundry with 
+great results. Most recently, UK-based Aridhia &lt;http://www.aridhia.com/&gt; shared how they’re using Pivotal Greenplum &lt;http://pivotal.io/big-data/pivotal-greenplum&gt;, Pivotal HDB &lt;http://pivotal.io/big-data/pivotal-hdb&gt;, as well as Pivotal Cloud Foundry to manage chronic disease, for biomedical research, and stratified medicine. The new case study &lt;http://pivotal.io/big-data/case-study/powering-the-next-generation-of-clinical-and-translational-informatics&gt; focuses on how Aridhia is speeding up their analytics by sharing through a cloud-based subscription 
+platform. The results include more personalized healthcare, faster innovation, and more affordable solutions.
+
+With customer managed-care provider Wellcare &lt;https://www.wellcare.com/&gt;, and partner Attunity &lt;http://www.attunity.com/&gt;, a recent blog post &lt;https://blog.pivotal.io/big-data-pivotal/features/how-wellcare-accelerated-big-data-delivery-to-improve-analytics&gt; highlights a Pivotal webinar &lt;http://pivotal.io/big-data/webinar/healthcare-success-story-wellcare&gt; 
+focused on Wellcare&apos;s journey to adopting Pivotal Greenplum. The bottom line? Wellcare has reduced query times from thirty days to only seven on mission critical apps. That improvement impacts more than two million customers and 5,000 employees.
+
+Head to Pivotal.io/customers &lt;http://pivotal.io/customers&gt; for our latest case studies, videos, and webinars. And if you&apos;re ready to tell a customer story, e-mail Sophia Tseng &lt;mailto:stseng@pivotal.io&gt; or Estelle Hayes &lt;mailto:ehayes@pivotal.io&gt;.
+PEOPLE
+Managing at Light Speed:
+What I Learned Along the Way
+Matt Kocher &lt;https://gopivotal-com.socialcast.com/users/983863-matthewkocher&gt;, Director of Engineering, Cloud Foundry
+I started working for Pivotal Labs as a developer in 2009. In 2012 I moved to the Cloud Foundry team just as it was outgrowing its status as a science project. The following year, I took on the role of Director of Engineering on Cloud Foundry along with David Stevenson, and Elisabeth Hendrickson (who now helps lead our data effort).
+
+The changes and 
+growth we’ve experienced, from both a business and a team aspect have been remarkable. Here are some things I’ve learned that I wish I’d known then, as I went from managing the code to managing a team that manages the code.
+
+
+
+ - Chaos
+Chaos is a necessary component of growing a team as fast as possible. The goal has to be to keep this chaos at a manageable level. It shouldn’t be to eliminate it. I think of this as an internal combustion engine. Small contained explosions keep everything moving and going in the right direction.
+ 
+
+ - APIs
+When we want to go faster, we add developers to teams. When a team is small, we see a near-linear increase in productivity for a team with new each developer. When the team gets above a certain size (usually around eight or ten staff), adding developers no longer has the same impact. Having observed this many times, we now look for seams where we can divide a team into two halves. The best divisions are where clear APIs exist between two components, and the worst are where two separate concerns are entangled in the same codebase. In the beginning, we stumbled onto APIs. Now we look for places to insert a clean API, as a mechanism to grow our teams in the future.
+ 
+
+ - Continuous Integration
+The Cloud Foundry team has invested countless hours in continuous integration, and we actually 
+spend more time building out CI now, not less. This is only because it has become more central to simplifying our process. Concourse &lt;https://github.com/concourse&gt; is our 3rd-generation CI system for Cloud Foundry, and this time we built it ourselves because we’d tried everything 
+else out there, and knew we could do better.
+
+Thanks to CI we now have the ability to ship an upgrade to any piece of code, or to package it into software in 48 hours, with the confidence that all tests pass, and 
+that new releases will install cleanly on every infrastructure we support. Even more impressive, is how it upgrades cleanly from any supported previous release. This is great as a development tool, but it’s also a huge feature for a customers who count on us to keep them patched and up to date.
+ 
+
+ - It’s a Marathon, not a Sprint
+Every day can feel like a sprint, but the key to success is going 
+faster in a sustainable way. On every occasion where we’ve prioritized ‘getting things done’ in the short run with the idea of cleaning them up later, it’s taken far more effort than expected. Doing things sustainably doesn’t mean doing things perfectly, but you have to have a plan for the next year or two as well as for the next week.
+
+
+Our team will continue to learn, and stumble here and there. But the above practices have proven to be good bedrock upon which our team scales and thrives in the new code cycle.
+HELLO MY NAME IS...
+Phil Reay
+Phil Reay &lt;https://gopivotal-com.socialcast.com/search?utf8=%E2%9C%93&amp;q=Phil+Reay&gt;, Principal Marketing Manager for EMEA
+bring a touch of Northern English humour to the London office. I also work on the EMEA Field Marketing team executing programs to raise our brand awareness and drive demand in the Geo
+in the London office or on the road around Europe representing Pivotal at various events.
+programs to follow-up from our busy EMEA autumn event season and building a meaningful 2016 marketing plan to support our regional business growth.
+I run, run, and then run some more. With 14 marathons under my feet this year, I’m in training for ‘The Marathon Des Sables’ &lt;http://www.marathondessables.co.uk/&gt; (MdS) in April. Ranked by the Discovery Channel as the toughest footrace on earth, MdS is a self supported 250km run in 50C degree heat across the Sahara desert in Southern Morocco. It’s going to be so much fun…
+
+ 
+Phil Reay on the run: Blood, toil, tears and sweat
+I’m a wannabe Data Scientist, having graduated from university with a Mathematics and Statistics degree.
+is a lifestyle choice. I’ve been part of the Pivotal growth story from day one, and I love it. As a pioneer of digital disruption, this is a great place to work. Our commitment to user experience, and desire to work with and stay one step ahead of the customer to anticipate and deliver on future trends is meaningful. There are lifestyle transformations we can expect over the next few years—and Pivotal is central to them all. So this is one exciting place to work!!
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from Oct. 26th through Nov 19th:
+
+
+Abraham Chen, Senior Director, Information Security, Palo Alto
+Adam Hevenor, Senior Product Manager, Denver
+Adam Xiaoliang Li, Senior MTS , Beijing
+Adrian Zankich, Software Engineer, Santa Monica, 
+CA
+Alexander Ewy, Senior Account Manager, US
+Amit Jethani, Principal IT Product Manager, Toronto
+Amy Hong, UX Designer, San Francisco
+Annie Sing, Software Engineer, San Francisco
+Aruna 
+Srinivasan, Senior Member of Technical Staff, US
+Atri Sharma, Technical Staff 1, Bangalore
+Beatrice Guarnieri, IT Technical Analyst, London
+Catherine Crummey, Financial Analyst, Toronto
+Chen Yu Peng, 
+Administrative Assistant, Toronto
+Cheryl Lindsey, Executive Assistant, Palo Alto
+Christopher Lubaway, Senior Software Engineer, San Francisco
+Colm Roche, Senior UX Designer, Dublin, Ireland
+David Roth, Sales 
+Director, US
+Dino Bukvic, Advisory Solutions Architect, Stuttgart, Germany
+Eitan Suez, Consultant Instructor, Palo Alto, CA
+Esmaeil Amini, Senior Member of Technical Staff, Palo Alto, CA
+Fabio Mangione, Senior 
+Software Engineer, Dublin,Ireland
+Frederick Fleming, Senior Customer Solutions Director, US
+Gang Yan, Senior Solutions Architect, Shanghai
+Harry Chen Qian, College Co-op Student, Shanghai
+Hiroko Yamamoto, HR 
+Coordinator, Tokyo
+Hongquan Fu, Senior Member of Technical Staff, Beijing
+Ian Zink, Advisory Solutions Architect, US
+Jason Sherron, Director of Product Management, Seattle
+Jeffrey Kelly, Consulting Product 
+Marketing Manager, US
+Jinmei Liao, Senior Member of Technical Staff, Beaverton, Oregon
+Jose Sanchez, Software Engineer, London
+Kristine Luis, Senior Administrative Assistant, San Francisco
+Kristopher Nelson, 
+Business Development Manager, US
+Kyle Kot, Senior System Administrator, Palo Alto
+Laura Clampett, Product Manager, Dublin, Ireland
+Lucinda Miranda, Business Operations Consultant, US
+Megha Agarwal, Data 
+Scientist I, London
+Nathaniel Bujalance, Senior Member of Technical Staff, Cork, Ireland
+Neha Kumari, Software Engineer, New York
+Nikita Rathi, Software Engineer, New York
+Pablo Schuhmacher, Product Manager, 
+San Francisco
+Paul Spinrad, Technical Content Developer, San Francisco
+Pavel Orozco, Senior Customer Solutions Director, US
+Rita Manachi, Analyst Relations, San Francisco, CA
+Rob Hill, Software Engineer, 
+Denver, CO
+Robert Yule, Senior Director, Alliances, US
+Robert Strini, Advisory Solutions Architect, US
+Ryan Jones, Product Manager, San Francisco
+Ryan Collins, Software Engineer, Toronto
+Samantha 
+Cooper, Senior Field Engineer, Pivotal, London
+Sara McWhorter, UX Designer, Denver, CO
+Sarah McAlear, Software Engineer, Seattle
+Sarah Michaelson, Software Engineer, New York
+Scott L&apos;Hommedieu, 
+Principal Product Manager, Denver
+Shahzia Holtom, Senior Data Scientist, London
+Shuo Chen, College Co-op Student, Beijing
+Snigdha Sharma, Consulting Program Manager, San Francisco
+Sridhar Paladugu, Advisory 
+Data Engineer, US
+Tasha Isenberg, Senior Events Planner, US
+Tim Kersey, Software Engineer, Santa Monica, CA
+Tom Chen, Principal Software Engineer, Denver, CO
+Tyler Savage, Senior Business Operations Analyst, 
+San Francisco
+Vincent Russo, Associate Field Engineer, US</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

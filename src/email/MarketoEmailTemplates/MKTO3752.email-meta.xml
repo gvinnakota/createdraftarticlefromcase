@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Post-event- Toronto</name>
+    <style>none</style>
+    <subject>Thank you for spending time with us!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Thank you for attending the Pivotal Cloud Native Roadshow in Toronto on May 20, 2016. We hope our event provided you clear perspective on the process and technology of Cloud Native organizations. 
+
+ We have made our presentation slides available here:
+
+Cloud Native Roadshow Toronto &lt;[[http://www.slideshare.net/secret/H8vawxEv4gYZK7]]&gt;
+
+ 
+Cloud Native Apps with Cloud Foundry &amp; Spring &lt;[[http://www.slideshare.net/secret/eiVE8MLdHeA7ay]]&gt;
+How Platforms Work
+
+If you are interested in having Pivotal present cloud native content to your organization or want to learn more about Pivotal, contact us &lt;[[mailto:cloudnativeroadshow@pivotal.io]]&gt; to schedule a follow up with our team. 
+
+Thank you again for joining us! 
+
+The Pivotal Team 
+
+If you want to see more in depth presentations on cloud native topics and everything else to do with delivering software, please join us again at SpringOne Platform &lt;[[http://springoneplatform.io/]]&gt;, August 1–4.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

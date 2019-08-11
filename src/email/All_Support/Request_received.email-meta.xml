@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Case Contact of received request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Portal Technical Case Received Notification</name>
+    <style>formalLetter</style>
+    <subject>Request received {!Case.CaseNumber}: {!Case.Subject_Truncated__c}: {!Case.Thread_Id}</subject>
+    <textOnly>Hello,
+Your request has been received and assigned case #{!Case.CaseNumber}. An engineer will respond and assist you per the service level objective and remain engaged until the issue is resolved.
+
+To add detail to your case, you may reply to this message or access your case online:
+https://community.pivotal.io/s/case/{!Case.Id}
+
+Case Number: {!Case.CaseNumber}
+Subject: {!Case.Subject}
+{!Case.Thread_Id}
+(Please keep this code in your reply to ensure it joins your case)
+
+
+Kind regards,
+Pivotal Support</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

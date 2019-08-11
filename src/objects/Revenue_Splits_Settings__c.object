@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Automation_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Automation Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Failure_Warning_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Failure Warning Message</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Unsupported_Action_Warning_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Unsupported Action Warning Message</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Warning_Emails_c__c</fullName>
+        <description>Comma-separated list of email addresses to warn in case of failure or unsupported action</description>
+        <externalId>false</externalId>
+        <label>Warning_Emails__c</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <label>Revenue Splits Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

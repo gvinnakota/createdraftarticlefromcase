@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_10AM Bootiful CQRS with Axon_Q416.Confirmation</name>
+    <style>none</style>
+    <subject>You&apos;re confirmed!</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar  Bootiful CQRS with Axon.
+
+Please see event details below:
+
+Date: Wednesday, November 16, 2016   {{my.Save the Date:default=Save the Date}}
+ Time: 10:00AM PST / 1:00PM EST 
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1294920/9E6DB84C164CE4C8013258D608F452BE]]&gt;
+
+Audio Information:
+ This webinar will be streaming live via your computer speakers.
+ 
+ We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

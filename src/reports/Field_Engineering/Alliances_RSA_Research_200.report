@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10) AND 11</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>NATO,Verizon,VERIZON,FIRST DATA,First Data,COMMONWEALTH OF AUSTRALIA,PUBLIC HEALTH SERVICE,Wells Fargo,State Street,Samsung,Chase,Wal-Mart,WalMart</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>AUSTRALIAN TAXATION OFFICE,Baxter,NATIONAL INSTITUTE OF INFORMATION AND COMMUNICATIONS,NIIC,Global Payments,DOD,Dept. of Defense,ERNST &amp; YOUNG,E&amp;Y,Nestlé,Nestle,SunTrust Banks,BP,Computer Sciences Corporation,CSC</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Citi,Citigroup,U.S. Dept. of Commerce,Dept. of Commerce,United Services Automobile Association,USAA,Zurich Insurance Group,Coca-Cola,Coca Cola,American Express,Charles Schwab,Qualcomm,U.S. Dept. of Justice,DOJ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Defense Advanced Research Projects Agency (DARPA) ,DARPA,U.S. Air Force,Air Force,GOVERNMENT OF ISRAEL,U.S. Federal Deposit Insurance Corporation (FDIC),FDIC,Navy Federal Credit Union,E. I. Du Pont De Nemours and Company,Du Pont,DuPont,U.S. Dept. of State,General Dynamics,SAUDI ARABIAN OIL COMPANY,The Depository Trust &amp; Clearing Corporation,Web.com,Pricewaterhousecoopers,PWC,Cincinnati Bell,Conocophillips,Conoco,Johns Hopkins,Bank of New York Mellon,BNY,Mellon Bank,Teachers Insurance and Annuity Association of America.TIAA-CREF,Johnson &amp; Johnson,J&amp;J,Northern Trust,Massachusetts Institute of Technology,MIT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Weston,Schweizerische Eidgenossenschaft,FIS,National Agricultural Cooperative Federation,THE ROYAL BANK OF SCOTLAND GROUP,Juniper Networks,U.S. Dept. of Justice (DOJ) - FBI,FBI,DOJ,U.S. Dept. of Homeland Security,Homeland Security,SONY CORPORATION,Sony,Gobierno Federal de los Estados Unidos Mexicanos,EMIRATES TELECOMMUNICATIONS,U.S. House of Representatives,King Sounds,Fmr,Ship Investor &amp; Cy SCA,General Motors,TJX,DACISA,Ropes &amp; Gray,Tennessee Valley Authority (TVA),TVA,Cigna,Time Warner,Travelers,Florida Power &amp; Light Company,Florida Power,A.A. + A. MEDIA GROEP B.V.</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Gt Advanced Technologies,The Go Daddy Group,Go Daddy,Supervalu.,BABCOCK INTERNATIONAL GROUP,Rockwell Automation,Government of Canada,Hyundai,RusHydro,Kudelski,TURKIYE GARANTI BANKASI A S,State of Missouri,M.Tech,SEVEN &amp; I HOLDINGS,Exxon Mobil Corporation,Exxon,U.S. Dept. of Homeland Security,Homeland Security,Canadian Imperial Bank Of Commerce,Molina Healthcare,City of New York,BAE SYSTEMS,Perella Weinberg Partners,Apache Corporation,Government of The United States,US Government,United States Government,Allstate,Huntington Bancshares,Centurylink</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Metlife,Hamlet Holding,Brocade,GLAXOSMITHKLINE,U.S. Federal Reserve Board,Federal Reserve,Kinder Morgan,FOREIGN &amp; COMMONWEALTH OFFICE,Sixsigma Networks Mexico,S.A. de C.V.,OI S/A.,Paychex,Defense Commissary Agency (DeCA),DeCA,Nasdaq,Motorola Mobility,CITADEL,Australian Postal Corporation,Government Of The Province Of Alberta,ELECTRICITE DE FRANCE,VODAFONE,NIPPON TELEGRAPH AND TELEPHONE CORPORATION,Blackrock,Enbridge,ORDU YARDIMLASMA KURUMU,The Dow Chemical Company,Dow Chemical,AUSTRALIAN ENERGY MARKET OPERATOR LIMITED,Great River Energy</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Henry Schein,State of Michigan,U.S. Navy,Navy,ALINMA BANK,COMPUTERSHARE,COMPUTER SERVICES,Goldman Sachs,Bew Global,Erste Group Bank AG,State of Florida,SSI POOLING,MUBADALA DEVELOPMENT COMPANY,Trizetto,Lockheed Martin,FACEBOOK,Bristol-Myers Squibb,Lincoln National Corporation,Commonwealth of Massachusetts,Massachusetts Commonwealth,PWC,Uchicago Argonne,DELEK GROUP,SOUTH JERSEY INDUSTRIES,CONSTANT CONTACT,The George Washington University,U.S. Dept. of Health and Human Services (HHS) - CDC,USHHS,HHS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>INTESA SANPAOLO SPA,GOVERNMENT OF THE REPUBLIC INDONESIA,C. V. Starr,Financial Industry Regulatory Authority,U.S. Dept. of Health and Human Services (HHS),Svb Financial Group,TELECOM ITALIA,L-3 Communications,WEBROOT,U.S. Internal Revenue Service (IRS),IRS,Defense Information Systems Agency (DISA),DISA,CM CAPITAL,Hyundai,SUPER COL PTY LTD,GOVERNMENT OF ANDHRA PRADESH,INFOSYS LIMITED,MBDA,Major League Baseball,TELSTRA,Government of The Republic of Korea,State of South Carolina,ROLL GLOBAL,Northrop Grumman,Northrop,W.W. Grainger,BANK OF ENGLAND</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Shinhan Financial Group Co,CHAMBER OF COMMERCE OF THE UNITED STATES OF AMERICA,TACOMA,DEPARTMENT OF PUBLIC UTILITIES,OOREDOO Q.S.C.,EXOSTAR CORPORATION,Sierra Nevada,U.S. Army,Army,BANK HAPOALIM,I.S.G MIDDLE EAST,SENTINEL DATA CENTERS,QUALCOMM ASIA,Bruce Power,DENALI HOLDING,SUNCORP GROUP LIMITED,Suncorp,HCL CORPORATION LIMITED,HCL,Eplus,THE FORD FOUNDATION,Liberty Mutual,LINA INSURANCE,Cognizant,39TH IOS,PORT PLANNING &amp; RESEARCH,EMIGRANT SAVINGS BANK,MIZRAHI TEFAHOT BANK,YANBU ARAMCO SINOPEC REFINING CO LTD - YASREF</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notContain</operator>
+            <value>disable</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <aggregateType>Sum</aggregateType>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortByName>AMOUNT</sortByName>
+        <sortOrder>Desc</sortOrder>
+        <sortType>Aggregate</sortType>
+    </groupingsDown>
+    <name>Alliances - RSA Research 200</name>
+    <params>
+        <name>open</name>
+        <value>closedwon</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CLOSE_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>PARTNER_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ROLLUP_DESCRIPTION</field>
+    </columns>
+    <description>Opportunities associated with activities at MWC</description>
+    <filter>
+        <booleanFilter>(1 or 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Amdocs,AppDirect,Ericsson,Verizon,AT&amp;T,TDV,Brocade,Orange,Comptel Oyj,Orange Ivory Coast,Telstra,TIM,Nokia Solutions and Networks,NSN,Mastercard,Vodafone,Bharti Airtel,Starhub,HITSS,Redknee,Zettics,Alcatel-Lucent,Grameen Phone,HP.com,Tekcomm,Tunisiana</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PARTNER_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Amdocs,AppDirect,Ericsson,Verizon,AT&amp;T,TDV,Brocade,Orange,Comptel Oyj,Orange Ivory Coast,Telstra,TIM,Nokia Solutions and Networks,NSN,Mastercard,Vodafone,Bharti Airtel,Starhub,Siemens,HITSS,Redknee,Zettics,Alcatel-Lucent,Grameen Phone,HP.com,Tekcomm,Tunisiana</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>MWC - Opportunity Report</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <endDate>2015-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-01-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Business_Hours__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Business Hours</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Zone_Label__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Time Zone Label</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>TimeZone Business Hour</label>
+    <pluralLabel>TimeZone BusinessHours</pluralLabel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All_Time_Zones_and_Business_Hours</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Time_Zone_Label__c</columns>
+        <columns>DeveloperName</columns>
+        <columns>Business_Hours__c</columns>
+        <columns>NamespacePrefix</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Time Zones and Business Hours</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+</CustomObject>

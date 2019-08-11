@@ -1,0 +1,99 @@
+<aura:component controller="PortalNewCaseController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global"><!--Server-Side/Apex Controller-->
+    <ltng:require scripts="{!join(',', $Resource.jquery, $Resource.sendsafely)}" />
+    <aura:attribute name="ca"   type="Case" default="{'sobjectType': 'Case',}"/>
+    <aura:attribute name="showError" type="Boolean" required="false" description="" default="false" access="private"/>
+    <aura:attribute name="errorMessage" type="String" required="false" description="" access="private" default=''/>
+    <aura:attribute name="entRecorToPass" type="Entitlement"/>
+	<aura:attribute name="Entitlements" type="sobject[]"/><!--List Of Entitlements-->
+     <aura:attribute name="disablesubmit" type="Boolean" required="false"/>
+    <aura:attribute name="ssWidget" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.getEntitlements}" />
+    <aura:handler name="change"			value="{!v.pageNumber}"	action="{!c.renderPage}" />
+    <aura:attribute name="cUser" type="User"/>
+     <aura:attribute type="Boolean" name="sortAsc" />
+    <aura:attribute type="String" name="sortField" />
+	<aura:attribute type="Integer"      name="pageNumber"		default="1" />
+    <aura:attribute type="Integer"      name="maxPage"			default="1" />
+    <aura:attribute type="sobject[]"    name="currentList" />
+    <aura:attribute name="isWindowOpen" type="Boolean" default="false" />
+    <aura:attribute name="proceed" type="Boolean" default="false"/>
+    <aura:attribute name="oWindow" type="Boolean"/>
+    <aura:method name="updateEntitle" action="{!c.getEntitlements}">
+    </aura:method>
+   <h1>Subscriptions List View: <br/><br/></h1>
+    <aura:if isTrue="{!v.Entitlements}">
+    
+    
+    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal"><!--Table must be responsive-->
+        <thead>
+            <tr class="slds-text-heading--label">
+                 <th class="slds-is-sortable" onclick="{!c.sortByName}" scope="col">Product Subscriptions Name
+                 {!v.sortAsc ? '&#8593;' : '&#8595;'}
+                </th> <!--List Of Entitlements Name But displayed as Product Name-->
+                <th class="slds-is-sortable" onclick="{!c.sortByAccount}"  scope="col">Account
+                {!v.sortAsc ? '&#8593;' : '&#8595;'}
+                </th>
+                <th class="slds-is-sortable" onclick="{!c.sortByStartDate}" scope="col">Start Date
+                    {!v.sortAsc ? '&#8593;' : '&#8595;'}
+  				</th>
+               <th class="slds-is-sortable" onclick="{!c.sortByEndDate}" scope="col">End Date
+                {!v.sortAsc ? '&#8593;' : '&#8595;'}
+  				</th>
+                <th class="slds-is-sortable" onclick="{!c.sortByStatus}" scope="col">Status
+                {!v.sortAsc ? '&#8593;' : '&#8595;'}
+                </th>
+                
+                <th class="" scope="col">Action</th>
+            </tr>  
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.currentList}" var="Entitlements" indexVar="index"><!--Dynamic Listing of Entitlements-->
+                <tr class="slds-hint-parent">
+                    <td  data-label="Entitlements Name">{!Entitlements.Name}</td>
+                    <td id="AccountName" class="" data-label="Account"  value="{!Entitlements.AccountId}">{!Entitlements.Account.Name}</td>
+                    
+                    <td data-label="Start Date" style="padding-left:0;">{!Entitlements.StartDate}</td>
+                    <td data-label="End Date" style="padding-left:0;">{!Entitlements.EndDate}</td>
+					<td data-label="Status" style="padding-left:0;">{!Entitlements.Status}</td>
+                    <aura:renderIf isTrue="{!Entitlements.Status == 'Active'}"> 
+						<button data-selected-Index="{!index}" class="slds-button slds-button--brand buttonStyle " value= "{!Entitlements}" onclick="{!c.createNewCase}" name="{!Entitlements.AccountId}" data-id="{!Entitlements.Id}">Create Case</button>
+                        <div class = "backgrd"/>
+                    </aura:renderIf>
+                </tr>
+            </aura:iteration>
+        </tbody>
+		<aura:if isTrue="{!v.oWindow}">
+           <div class="slds-modal slds-fade-in-open backgrd">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <h2 id="header99" class="slds-text-heading--medium">New Case</h2>
+                    </div>
+                    <!--###### MODAL BOX BODY Part Start From Here ######-->
+                    <div class="slds-modal__content slds-p-around--medium">
+                        <div class="container-fluid">
+                            <c:TechnicalCase aura:id="techCase" origin="entTab" cObj="{!v.ca}" entitles="{!v.entRecorToPass}" cUser="{!v.cUser}" widget="{!v.ssWidget}"/>
+						</div>
+                        <aura:if isTrue="{!v.showError}">
+                            <div id="error">
+                                <ui:outputRichText value="{!v.errorMessage}"/>
+                            </div>
+                        </aura:if>
+                    <div class="slds-modal__footer">
+                        
+                        <button id = "Load" class="slds-button slds-button--brand buttonStyle" onclick="{!c.saveRecord}" disabled="{!v.disablesubmit}">Submit Case</button>
+                       
+                        <button class="slds-button slds-button--neutral cancel" onclick="{!c.closeModel}" >Cancel</button>
+                    </div>
+                        <c:ValidateCaseData aura:id="child"/>
+           		 </div>
+        		</div>
+            </div>
+        </aura:if>
+    </table>
+        <c:Pagination currentPageNumber="{!v.pageNumber}" 
+                        maxPageNumber="{!v.maxPage}" />
+          <aura:set attribute="else">
+        	<div>No Product Subscriptions to display.</div>
+        </aura:set>
+        </aura:if>
+</aura:component>

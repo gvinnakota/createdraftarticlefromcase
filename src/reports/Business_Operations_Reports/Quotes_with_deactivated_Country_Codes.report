@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>zqu__Quote__c.Company_Code__c</field>
+    </columns>
+    <columns>
+        <field>zqu__Quote__c.zqu__Status__c</field>
+    </columns>
+    <columns>
+        <field>zqu__Quote__c.zqu__Primary__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>zqu__Quote__c.Company_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>CN40,CN41,IT13,IN27,NL20</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Quotes with deactivated Country Codes</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$zqu__Quote__c@zqu__Quote__c.zqu__Opportunity__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

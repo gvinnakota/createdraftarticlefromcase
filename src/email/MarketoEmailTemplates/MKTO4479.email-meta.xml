@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>First 2017 newsletter</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.01-16-17 V5N1</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter – 20 Jan 2017</subject>
+    <textOnly>January 20, 2017
+Vol. 5, No. 1
+Letter From the Editor &lt;[[#letter-from-the-editor]]&gt; – Janus&apos; Month
+All Things Product &lt;[[#product-update]]&gt; – A Brilliant Gem Shines Brighter
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – A Brand New Workday
+My Name Is &lt;[[#my-name-is]]&gt; – Ed Espino
+tBD 
+
+
+
+
+Steve Casale, Sr. Manager, Communications
+Romans depicted their god Janus with two opposing faces: one gazing ahead, the other looking back. As January’s namesake, Janus marked endings, the passage of time, and new beginnings. As California storms through January, and rain falls like nails on a thirsty state, we finally seem to be moving on from a stubborn, four-year drought.
+
+Pivotal keeps moving Janus-like through stages, but January is particularly ripe with anticipation. The global field has wrapped its annual kickoff, giving a nod to an outstanding year, and laying out the template for success in a 2017 of higher expectations. Pivotal also launched its bold new website &lt;[[http://pivotal.io/]]&gt;, with a more personalized and content-rich information architecture.
+
+This issue&apos;s contributors also capture the spirit of Janus. Engineer Anthony Baker reflects on the year for GemFire, whose open source offspring, Apache Geode, has a proliferating community. And read how Pivotal-spun GemFire 9.0 plugs into our software play, helping customers transition to cloud-native architectures and composable data microservices.
+
+Finance&apos;s Alexandra Simonelli also writes on changes in the Pivotal machinery. Starting in February, Finance (followed by HR in the spring) will transition off a host of EMC systems for business critical operations, and onto Workday &lt;[[https://www.workday.com/]]&gt;. We may hardly notice it, but read more to find out how greater autonomy and ownership here benefits us all.
+Enjoy.
+A brilliant gem shines brighter
+
+
+
+
+Anthony Baker, Director Data R&amp;D, Beaverton
+The GemFire team celebrated the end of 2016 by achieving several long-awaited milestones!
+
+ 
+We released Apache Geode 1.0.0, the open source version of GemFire. Shortly thereafter, Geode was promoted &lt;[[https://blogs.apache.org/foundation/entry/the_apache_software_foundation_announces102]]&gt; to a top-level Apache project, and we commemorated the event with chocolate, a custom mortarboard, and real geode fragments from a local rock shop.
+
+In December, we followed up with the release of GemFire 9, the first release of GemFire based on the Geode codebase. This fulfills the vision &lt;[[https://pivotal.io/big-data/press-release/pivotal-introduces-first-open-source-enterprise-grade-big-data-product-suite]]&gt; for open source data products that Pivotal first announced back in early 2015. Along the way, we’ve learned a lot, built an open community &lt;[[http://geode.apache.org/community/]]&gt;, hosted a summit &lt;[[https://2016.event.geodesummit.com/schedule]]&gt;, and shifted to open and agile development processes.
+GemFire has a key role in the enterprise transition to cloud-native architectures and composable data microservices. It helps customers create the data fabrics which underpin smart applications using emerging patterns like CQRS and event sourcing &lt;[[https://www.linkedin.com/pulse/cqrs-apache-geode-you-takeaways-from-springone-platform-drewitz]]&gt;.
+One of the exciting new capabilities in GemFire 9 is the parallel data movement provided by the GemFire-Greenplum Connector (GGC). This big step allows customers to build systems that combine both transactional and analytical processing for better, faster decisions &lt;[[https://blog.pivotal.io/big-data-pivotal/products/big-data-meets-fast-data-to-fight-fraud-and-more]]&gt;. GemFire 9 also supports monstrously large datasets using off-heap memory and consistent, role-based access control &lt;[[https://www.youtube.com/watch?v=AhUPT3wfAMM&amp;feature=youtu.be]]&gt; across all endpoints.
+You know what else is cool? Early access support for full-text searching over cached data via the Lucene engine. The indexes are backed by GemFire regions and thus are automatically sharded, redundant, parallel, and fast. This means you can easily add that killer incremental search feature without overwhelming your database. Customers also benefit from a big reduction in operational complexity. Here’s a quick example of creating an index and running a query from the gfsh (pronounced ‘gee-fish’) shell:
+gfsh&gt;create lucene index --name=email --region=/person --field=email
+gfsh&gt;search lucene --name=email --region=/person --queryStrings=&quot;*pivotal.io&quot; --defaultField=email
+If you are a Redis user, you might be interested to explore the GemFire Redis &lt;[[http://geode.apache.org/docs/guide/tools_modules/redis_adapter.html]]&gt; protocol adapter (also early access). We’d love to get your feedback!
+It’s always interesting and humbling to pause and reflect on the scope of human activities that rely on GemFire deployments. By some accounts &lt;[[http://news.163.com/16/1227/20/C9ANU6GD0001899N.html]]&gt;, the China Railway site 12306.cn &lt;[[http://www.12306.cn]]&gt; sees over 40B page views per day, with queries peaking at over 400k/sec. That&apos;s a lot of train travel!
+Wishing our Pivotal colleagues in China an early Happy New Year!
+Interestings
+
+
+
+
+
+
+
+
+
+
+ - Our Pivotal.io &lt;[[http://pivotal.io/]]&gt; website has a new look (it&apos;s outta&apos; sight!)
+ - Watch: Pivotal kicks off new video series with the folks from Google. Check it out &lt;[[https://cloudplatform.googleblog.com/2017/01/partnering-on-open-source-Google-and-Pivotal-engineers-talk-Cloud-Foundry-on-GCP.html]]&gt;!
+ - Software, FORD, and how the future of cars &lt;[[http://www.bbc.com/news/business-38378018]]&gt; is wrapped up in both
+ - Mee Thoughts: Our CEO offers others&apos; thoughts on software trends for 2017 &lt;[[https://blog.pivotal.io/pivotal/features/software-trends-for-2017]]&gt;
+ - Dangerously fun: Wikipedia&apos;s Unusual—and funny and often questionable—Articles &lt;[[https://en.wikipedia.org/wiki/Wikipedia:Unusual_articles]]&gt;
+ - Therese Stowell and Maria Ntalla return (remember them)? Read about 2 careers paths from 2 two Pivots &lt;[[http://www.computerweekly.com/blog/WITsend/GUEST-BLOG-Two-women-in-tech-two-diaries-one-firm]]&gt;.
+A brand new workday
+
+
+
+
+Alexandra Simonelli, Manager, Finance
+Megan Beane from the People Operations team also contributed to this articie.
+ 
+Pivotal will soon reach a big internal milestone on its journey towards operational independence. Starting in February, Pivotal will roll out a new, foundational operations software: Workday Financials and Workday Human Capital Management (HCM). Workday will free us from our reliance on the disparate EMC systems we&apos;ve used to administer things like benefits, procurement, and more.
+
+While most you won&apos;t see any changes in your day-to-day activities, this shift will have a big and positive impact on how we operate.
+
+With Workday, support teams will now directly control critical Finance and HR systems and processes—benefits, timesheets, expenses, payroll, etc. Streamlining and integrating these operations and their data on Workday will make us more efficient and more effective. Workday will yield better insights for support teams that create and deliver programs tailored to Pivotal&apos;s business and its employees. Employees will similarly get a more consistent experience around benefits and other processes.
+
+ Workday Financials will begin rolling out in phases on February 4, 2017 in conjunction with our new fiscal calendar. Workday HCM is scheduled for a rolling launch starting in late April, with full adoption coming in July 2017.  
+Financial Backbone
+Workday Financials will become the backbone of our financial systems, allowing us to simplify and continuously improve processes as Pivotal moves towards financial independence and greater accountability. Rather than forklifting over EMC processes on Workday, support teams assessed them and refactored them as necessary. For example, Pivotal Accounting will adopt a whole new process, while procurement will get much easier once we take full ownership of it and no longer funnel orders and cases through EMC.
+Dedicated support people will manage the new system, and we&apos;ve been communicating actions and changes directly to stakeholders. Changes to purchasing will be effective on February 4, and starting next week, we&apos;ll provide regular updates and information about these changes on our Purchasing page &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/finance/travel-expense-t-e]]&gt; on Inside Pivotal.
+Better People Experience
+Starting in May, we&apos;ll unify and run the majority of our critical HR processes on Workday HCM (benefits, payroll, employee profiles, and organization charts, etc.). We&apos;ll not only manage this from within the Pivotal firewall, but enable things like a single directory, and new options for employees to edit their personal information, and more.
+The HCM project team has been working diligently to create an employee experience that meshes with our culture and preferences. Many Pivotal colleagues provided constructive feedback on their preferences for the new Pivotal benefits that we&apos;ll roll out in July, and Workday will help us manage a smooth transition to these benefits and other tools.
+We would like to thank all the folks in Finance, IT, and HR who collaborated on this complex, global project, and brought us to this stage. We&apos;ll keep everyone posted on important updates and any actions in the coming months.
+For questions on Workday Financials, please contact Alexandra Simonelli &lt;[[mailto:asimonelli@pivotal.io]]&gt;.
+For questions on Workday HCM, please contact Megan Beane &lt;[[mailto:mbeane@pivotal.io]]&gt;.
+ed espino
+
+
+
+
+
+Ed Espino, Director, Software Engineering, Palo Alto
+At Pivotal I...
+Am a member of Pivotal Data in Beijing. I&apos;m working with a fantastic team on Apache HAWQ, and am currently focused on big data platforms such as Hadoop SQL Engine.
+You can find me...
+In the Palo Alto office on the second 
+floor. Commuting from the town of Danville in the very far East Bay, I generally get into the office between 6:30 &amp; 7:00am. I know...I know...call me CRAY!
+Currently, I am working on…
+The Pivotal HAWQ Unmanaged Data team 
+contributing to the expansion of the Longevity, Stress, and Performance test framework (developed in Beijing by the HAWQ core team) for HAWQ PXF use. For those who don&apos;t know, HAWQ is also an Apache incubator project &lt;[[http://hawq.incubator.apache.org]]&gt;, with a vibrant, growing community. I most recently volunteered for the Release Manager role for the upcoming Apache HAWQ (incubator) release.
+In my spare time…
+I&apos;m outdoors hiking the East Bay peaks (Mission Peak, Monument Peak, Mount Allison, etc.) of the California Bay Area. With Mount Diablo State Park virtually in my backyard, I ascend all 3,849 ft. of it from the northern and southern routes several times a year. The view from the top is gorgeous and it keeps me feeling alive.
+While visiting the Data engineering teams in Beijing, I spent my spare time hiking, exploring the local parks, hutongs &lt;[[https://www.travelchinaguide.com/cityguides/beijing/hutong/]]&gt;, and numerous ventures off the beaten path.
+Something you probably don’t know about me…
+I like to post miniature movies of my travels. This past summer, while in Beijing to work with the Pivotal HAWQ team, I posted a series of &quot;Ed-venture&quot; video clips &lt;[[https://vimeo.com/175154264]]&gt; and photos for my family and friends to enjoy. In Beijing alone, I managed to log close to 70 miles (112 kilometers) afoot in 2016! 
+ 
+This past fall, I also had priceless experiences attending two co-worker weddings.  Both gave me new perspectives to our world’s cultural treasures. I was honored and am truly blessed for having been able to participate in these life celebrations.
+Top to bottom: Roaming the Bay Area hills in California; with colleague Kavinder and wife, at their wedding in Texas; more nuptials in China, with groom and colleague Hubert Zhang and wife.
+To me Pivotal is…
+ 
+...a place that has contributed in ways I would have never expected in my life’s journey. It is a place filled with talented and kind individuals.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

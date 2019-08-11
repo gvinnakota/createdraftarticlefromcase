@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>customer notification for maintenance during closed case clean up.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>Closed Case Clean Up Notification</name>
+    <style>freeForm</style>
+    <subject>Planned maintenance for Pivotal Support on 12/21/2018</subject>
+    <textOnly>Hello {!Contact.FirstName},
+
+This message is to notify you of a planned system maintenance.
+
+Pivotal Support will take a soft maintenance window on Friday, December 21st from 5pm to 7pm Pacific. During this time, you may continue to create and update cases, however notifications for new cases and case updates will be disabled without queue and release.
+
+If you have an open case with Pivotal Support, we recommend logging into community.pivotal.io after the maintenance window to check for case updates.
+
+Kind regards,
+Pivotal Support team</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

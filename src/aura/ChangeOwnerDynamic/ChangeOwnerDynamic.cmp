@@ -1,0 +1,121 @@
+<aura:component Controller="ChangeOwnerDynamicCtlr"  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <aura:attribute name="Opplist" type="Opportunity[]"/>
+    <aura:attribute name="selectRecIds" type="List[]"/>
+    <aura:attribute name="listViewId" type="string"/>
+    <aura:attribute name="listViewName" type="string"/>
+    <aura:attribute name="sobjectName" type="string"/>
+    <aura:attribute name="countOfRecord" type="integer" default="0"/>
+    <aura:attribute name="pageReference" type="Object"/>
+    <aura:attribute name="searchUser" type="string"/>
+    <aura:attribute name="UserId" type="string"/>
+    <aura:attribute name="listOfSearchRecords" type="User[]"/>
+    <aura:attribute name="ownerId" type="string"/>
+    <aura:attribute name="Message" type="String" />
+    <aura:attribute name="toastType" type="String" />
+    <aura:attribute name="isModalOpen" type="boolean" default="false"/>
+    <aura:attribute name="options" type="List" default="[
+    {'label': 'Send notification email', 'value': 'option1'}, ]"/>
+    <aura:attribute name="value" type="List" default=""/>
+      <aura:attribute name="Errorname" type="string" default="Select at least one record and try again."/>
+          <aura:attribute name="HideSubmit" type="boolean" default="false"/>
+    <lightning:navigation aura:id="navService"/>
+
+     <aura:attribute name="selectedRecord" type="User" default="{}" description="Use,for store SELECTED sObject Record"/>
+    <aura:handler name="oSelectedUserEvent" event="c:selectedUserEvent" action="{!c.handleComponentEvent}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+                <div class="modal-header slds-modal__header" data-aura-rendered-by="1081:0"><!--render facet: 1082:0-->
+                    <h2 class="title slds-text-heading--medium slds-hyphenate" id="title_1063:0" data-aura-rendered-by="1084:0">Change Owner</h2><!--render facet: 1086:0-->
+                        <lightning:buttonIcon iconName="utility:close"
+                        onclick="{! c.closeModel }"
+                        alternativeText="close"
+                        variant="bare-inverse"
+                        class="slds-modal__close"/>
+                   <div class="slds-p-top_medium"></div>
+                       
+                </div>
+            <div class="modal-body scrollable slds-modal__content slds-p-around--medium slds-show" aura:id="showDiv" >
+                <div class="changeOwnerContentWrapper slds-p-around--medium forceChangeOwnerContent">
+                    You've selected {!v.countOfRecord} record.
+                    <div >
+                        <lightning:input aura:id="enter-search" name="enter-search"  value="{!v.searchUser}" type="search" onchange="{!c.Search }"/>
+                        <div aura:id="lookupList" class="slds-lookup__item slds-hide" id="lookup-348">
+                            <div class="slds-lookup__item--label slds-text-body--small">{!v.Message}</div>
+                            <ul class="slds-lookup__list" role="listbox">
+                                <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                                    <c:ChangeOwnerLookupResult oRecord="{!singleRec}" /> 
+                                </aura:iteration>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nonEditableOptions"> 
+                       
+                        <div data-aura-rendered-by="146:1552;a">
+                            <span class="desc">The new owner</span> 
+                            will also become the owner of these records related to 
+                            <span class="desc">
+
+                            </span> that are owned by <span class="desc">the current record owner</span>.
+                        </div>
+
+                        <ul role="group" style="padding: 0; list-style-type: circle; margin: 1.5rem 25px 0;" data-aura-rendered-by="147:1552;a">
+                            <li data-aura-rendered-by="149:1552;a">Notes and attachments</li>
+                            <li data-aura-rendered-by="151:1552;a">Open activities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div  aura:id="showError" class="slds-hide modal-body scrollable slds-modal__content slds-p-around--medium" >
+                      <div class="slds-align_absolute-center" style="height:12rem">
+
+                        You're receiving this error message for one of the following reasons: <br/><br/>
+                        You may not have selected a record<br/><br/>
+                        OR<br/><br/>
+                        This List View is not compatible with mass updating the owner.<br/><br/>
+                        Please either choose a list view that's already displaying just one record type or edit your list view to limit the record types displaying to just one record type. For Opportunities, either choose Subscription or Services opportunities.<br/>
+
+
+                      </div>
+                </div>
+             <div class="modal-footer slds-modal__footer">
+                <lightning:button aura:id="cancel"  label="Cancel" onclick="{!c.closeModel}" /> 
+                   
+                <aura:if isTrue="{!v.HideSubmit}">
+                 <lightning:button  variant="brand"
+                                        label="Submit"
+                                        title="Submit"
+                                        onclick="{!c.submitDetails}"/>
+                    </aura:if>
+            </div>
+        </div>
+    </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    
+        <div  aura:id="noRecord" class="slds-hide">
+                
+            <div class="demo-only" style="height:4rem">
+                <div class="slds-notify_container slds-is-relative">
+                    <div class="{!'slds-notify slds-notify_toast slds-theme_'+v.toastType}" role="status">
+                        <span class="slds-assistive-text">error</span>
+                        <span class="{!'slds-icon_container slds-icon-utility-'+v.toastType+' slds-m-right_small slds-no-flex slds-align-top'}" title="Description of icon when needed">
+                        
+                        </span>
+                        <div class="slds-notify__content">
+                            <h2 class="slds-text-heading_small ">{!v.Message}
+                            <a href="javascript:void(0);"></a> </h2>
+                        </div>
+                        <div class="slds-notify__close">
+                            <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       </aura:component>

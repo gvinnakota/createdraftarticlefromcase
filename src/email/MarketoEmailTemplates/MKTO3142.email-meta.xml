@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_ Ensuring Cloud Native Success: Organization Transformation_Q415.</name>
+    <style>none</style>
+    <subject>You are Confirmed!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for the upcoming Ensuring Cloud Native Success: Organization Transformation on Tuesday, December 
+15, 2015. Please see event details below:
+
+Date: Tuesday, December 15, 2015
+Time: 10AM PST- 1:00PM EST
+Join the Session &lt;http://event.on24.com/wcc/r/1075104/66BC9B414AB6694857D7B7177CD31B1A&gt;
+Audio 
+Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date Organization Transformation :default=edit me}}
+
+While you wait, check out our replay &lt;http://pivotal.io/platform/webinar/the-cloud-native-journey?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar&gt; of The Cloud Native Journey with Matt Stine, Senior Product Manager, Spring Cloud Services for Pivotal Cloud Foundry. He reviewed how companies embracing the cloud native patterns of software delivery will survive and companies that don’t - will not. Watch it now &lt;http://pivotal.io/platform/webinar/the-cloud-native-journey?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar&gt;!
+
+Want more? Did you know that Matt Stine recently published an O&apos;Reilly Microservices eBook? This report defines the unique characteristics of cloud native application architectures such as microservices and twelve-factor applications. Download it now &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar-matt-stine-ebook&gt;!
+
+We Look Forward to you Joining us!
+The Pivotal 
+Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

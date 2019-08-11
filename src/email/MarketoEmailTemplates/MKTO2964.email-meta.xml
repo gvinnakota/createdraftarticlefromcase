@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 8 - September 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - September 2015</subject>
+    <textOnly>With the end of the summer and the beginning of fall, we start this issue with a recap of the harvest of announcements at the SpringOne2GX 2015 conference which is the premier event for Spring &lt;https://spring.io/&gt; developers. Next, a little end of summer fun to by pushing “Tweetable” apps and demonstrating the power of the Cloud Foundry Java Buildpack. Lastly, an update on a change we have made to enable our enterprise customers to access their logs more easily.
+ 
+We hope your summer was relaxing and that your fall harvest is abundant. As always, let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws.
+ 
+Best Regards,
+The Pivotal Web Services Team
+ 
+SpringOne2GX 2015 and Cloud Native Architectures
+
+SpringOne2GX was held in Washington DC from September 14 - 18, 2015 this year. Historically, one of the hallmarks of the SpringOne2GX conference is that it is heavily developer focused and this year was not any different. There were a lot of details on the optimizations in the Spring and Groovy that will increase performance. Additionally, there were introductions to the new improvements to the Spring Cloud &lt;http://projects.spring.io/spring-cloud/&gt; project, which is a collection of services to handle distributed systems.
+ 
+These libraries are being developed to support the container focused platforms such as Cloud Foundry that support a form of distributed applications based on microservices. The popularity of this microservice approach of highly decoupled services that work together to create rich applications is built on a “Cloud Native” approach. In this model, reliability and scale are built on the ability for platforms like PWS to spin up applications to scale and recover based on need. Pivotal’s Matt Stine has written an ebook which is available here &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook&gt;.
+ 
+The SpringOne2GX 2015 talks will be uploaded shortly and we’ll mention them in a future newsletter. The 2014 talks are available here &lt;https://www.youtube.com/results?search_query=springone2gx+2014&gt;.
+ 
+
+The JVM on PWS using Groovy in a “Tweetable” App
+The ease of deployment using Pivotal Web Services and Cloud Foundry is based on the buildpack, which is a set of heuristics that Cloud Foundry uses to detect which language or framework an application is written in. The buildpack once identified for a specific language will then download and assemble the requisite libraries and modules to deploy your application into the cloud.
+ 
+The Cloud Foundry Java buildpack supports Java, Spring and Grails. It also supports Groovy &lt;http://www.groovy-lang.org/&gt; which is a Java based language that brings many of benefits of interpreted languages to a statically compiled language. In this case the compilation target is the Java Virtual Machine which can be deployed into the cloud. This makes it a perfect fit for taking an application from prototype into a full force application. Tweetable apps were a popular meme during the 2014 SpringOne2GX conference where different developers showed their chops by getting the smallest app (an app that would fit in 140 characters) that would be deployable on the internet.
+ 
+So let’s use a “Tweetable” app modified from Richa Kandewahl &lt;http://tech.dealer.com/springone-2014-dallas-tx/&gt; to demonstrate how easy it is deploy an application on PWS.
+ 
+
+
+ - Login to PWS using the ‘cf’ tool. (If you need to create an account visit http://run.pivotal.io &lt;http://run.pivotal.io/&gt; and sign up for a free trial)
+
+ - In an empty directory, create a file called ‘tweetable.groovy’ with the following content (122 characters).
+ 
+@RestController
+class HelloController { 
+ @RequestMapping(&quot;/&quot;) 
+ public String home() { 
+ &quot;Hello World&quot;
+ }
+ }
+ 
+
+ -  ‘cf’ push your app with a unique name. For instance “cf push chwu-tweetable” you should choose your own unique identifier for “chwu”
+ - Visit your app in a browser with the provided URL.
+
+
+
+ 
+PWS will upload the file, do an analysis of the framework used, compile the source code and assemble the application. As a developer you do not need to configure an application server or deal with loading libraries. You can just focus on the application. This is the power of Cloud Foundry. Obviously this is a simple example, but imagine what you would have to do to set up and execute this application locally and you can see the benefit. PWS supports many JVM based languages including Spring and Scala. Theoretically, it would be possible to deploy any language that targets the JVM using Cloud Foundry by forking and modifying the Java buildpack.
+ 
+
+Access to cf logs on port 443
+In the past, some corporate users of PWS have been unable to access their logs from PWS because they are using the cf tool from behind a firewall which blocked the ports used to communicate. A common fix would be to set up a proxy, but this option was not available to all users. To address those issues, we now support the logging communications channel on port 443. This is the same port used by SSL and is accessible through most firewalls. If you continue to have issues accessing your logs, please contact us at support@run.pivotal.io &lt;mailto:support@run.pivotal.io&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

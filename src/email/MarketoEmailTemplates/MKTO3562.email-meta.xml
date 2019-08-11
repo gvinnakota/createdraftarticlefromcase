@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.2-11-16 V4N2</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 4, No. 2</subject>
+    <textOnly>VOL. 4, NO. 2
+Friday, February 12, 2016
+Editor Welcome: Pivotal Tapestry &lt;[[#editor-welcome]]&gt;
+Business Update: Kickoff 2016: Software + Culture + Customers &lt;[[#business-update]]&gt;
+Product Update: Introducing PCF Metrics &lt;[[#product-update]]&gt;
+Agile Update: “It’s All About Our People and Process” &lt;[[#agile-update]]&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: A Movement in CODE &lt;[[#people-update]]&gt;
+My Name Is... Rita Manachi &lt;[[#my-name-is]]&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Pivotal Tapestry
+ Steve Casale &lt;[[https://gopivotal-com.socialcast.com/users/1033819-stephencasale]]&gt;, Sr. Manager, Corporate Communications
+A data scientist whose best research focuses on the people behind the data; a Navy SEAL whose ability to quickly reconfigure teams in war zones helps him drive transformation; a field rep who saw a captive grade-school audience as a big sales opportunity; a leader humbled 
+by her chance survival while attempting to summit Everest. These are some of the people who make up Pivotal.
+
+Two years back there was a chance we’d play into the perception of being a collection of misfit toys. But in the furnace that is Silicon Valley, this concentration of talent has helped us put forth an integrated—and opinionated—cloud native narrative. The household names signing on with us see this, and believe in it.
+
+I’m pleased to have both Bill Cook, and UX design leader Kevin Menzie give us their WWKO takeaways in our Business and Agile updates, respectively. We continue to tease out the pieces of the “PCF effect” in our Product update from Scott Truitt. Maria Simeonova’s People update touches another wellspring that emerged from Kickoff: the renewed energy behind Diversity and Inclusion &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/corporate-communications/news-archive/a-message-from-the-diversity-council]]&gt;.
+
+Kickoff revealed more than anything else, the rich tapestry that is Pivotal.
+
+Enjoy.
+BUSINESS UPDATE
+ Kickoff 2016: Software + Culture + Customers  
+ Bill Cook, COO
+Congratulations! Although we shared numbers, aggressive goals, and awesome technology advances, the Worldwide Kickoff reminded us of one thing: we stand apart because of our people. There are many ways I could sum up Kickoff &lt;[[https://cdn.enablement.pivotal.io/wwko2016/index.html]]&gt;, but here are a few big things to carry with you in 2016.
+
+It&apos;s About Culture
+Pivotal is 
+an amazing company because of the incredible talent that we have. The “TED Talk” sessions showed us the diversity of thought, backgrounds, and paths that people have taken to get here. It showed us why we have an amazing company. We have great software, but it&apos;s the stamp of culture that we leave with customers that determines their—and our—successes. Edward Hieatt tied that up by talking about how we’ve raised the stakes in our promise to customers through the Customer Success Organization &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/corporate-communications/news-archive/2016-org-bcook]]&gt;. We want customers to adopt Pivotal, and drive a culture of renewals that convinces them want to stick with us.
+
+Customers Say it Best
+A variety of customers—most of them household names—joined us for Kickoff this year: Ford, 
+Comcast, Dish, and Time, to name a few. We gave them an inside view of Pivotal, and they walked away with a deep appreciation of our people, our culture, our technology, and trust in our ability to help them transform. Now more than ever, Pivotal is the one partner they believe can help them in what they see as a necessary digital transformation.
+
+Transformation is More Than the Sum of Software
+Software is the spark, but digital transformation involves an entire company. What we want to help others do through software means that we help them on a more holistic journey. As we cover more terrain in their organizations, our impact on them accelerates. At the Kickoff we sat with technology leaders, but also with business leaders from Finance to Compliance.
+
+Technology Integration Sets us Apart
+Pivotal Labs with Pivotal Cloud Foundry has set us apart. We’re extending that differentiation by bringing our data solutions to run directly from or on top of PCF, or to be accessed through the Spring ecosystem. We continue to strengthen a unique, integrated solution that helps customers lay the foundation for a cloud native future, by embracing all that Pivotal has to offer.
+
+
+KickOff! (clockwise, from top left): Ford talk; Time Inc. on transformation; Competing for social glory; Onsi on love, software, and Pivotal.
+
+Finally, my sincere thanks to all of you who helped put this together, who participated, and who made this event so special. I hope you left charged up, and with the understanding that we have a terrific opportunity and all the resources to win big, and to help transform how the world builds software.
+
+Here’s to an awesome 2016!
+PRODUCT UPDATE
+ Introducing PCF Metrics
+ Scott Truitt, Product Director, Pivotal Cloud Foundry
+Our customers buy and love Pivotal Cloud Foundry &lt;[[http://pivotal.io/platform]]&gt; for the transformational benefits of speed and agility. Once the platform is operational and the first few apps are planned for production, we’re often asked, “What should we use to monitor the health and performance of our apps and platform?”
+
+Most third-party monitoring solutions are expensive, require 
+additional product integration to get a full set of features, and have response times measured in minutes. Not exactly a story that matches the ease and elegance of PCF.
+
+Our customers turned to us for a true cloud native app and platform performance monitoring solution, and back in the summer of 2015, we set out to create a set of PCF-focused tools that could deliver on that promise, now called PCF Metrics.
+
+Our first experiments on PWS succeeded in proving the value of a real-time stream of metrics data. App developers could see performance issues within two to three seconds, and could also look back in time to see what happened while they were away. We’re going to ship these features in our v1.0 beta release for PCF too, which should finally be available on PivNet &lt;[[https://network.pivotal.io/]]&gt; next week.
+
+While we quickly realized that identifying where to look 
+for problems was important, helping to solve them was everything. That’s why we’re now working on a unified view of metrics and logs in v1.1. Rules-based notifications on thresholds and events will follow quickly in v1.2.
+
+All of that work so far is for app developers, but the same capabilities are directly applicable to platform operators who leverage a different set of data. And by unifying these two worlds in a single product, we can increasingly see apps and ops as two sides of the same coin: balanced, coordinated, and increasingly automated to stay that way.
+
+All told, PCF Metrics is the work of seven pairs of developers on four back-end teams in 
+Denver; two pairs on one front-end team in San Francisco; three pairs of designers researching notifications, designing logs and metrics for app developers (soon to be exploring a platform operator dashboard visualization); and six PMs to hold it all together. I’m grateful for their contributions, and beyond excited to bring PCF Metrics to our customers.
+AGILE UPDATE
+ “It’s All About Our People and Process”
+ Kevin Menzie, Office Director, Boulder
+That quote—and the headline of this article—said during a Keynote at Pivotal’s World Wide Kick-off, put a smile on my face. That’s the same thing I’ve been saying to our team for the last 15 years while leading Slice of Lime.
+
+When I look back on those years, I’m most proud of how we were able to find incredible individuals, and create an environment in which they could thrive. And thrive they did: Slice of Lime was recognized as the most effective UX Agency, and one of the top places to work in the country.
+
+While Pivotal stands out in a variety of ways, which include huge innovations with Cloud Foundry and Spring Cloud Services &lt;[[http://docs.pivotal.io/spring-cloud-services/]]&gt;, that&apos;s not what attracted me to Pivotal. Five years ago, Slice of Lime did its first project with Pivotal Labs in Boulder. I noticed then how incredibly smart, friendly, and process-driven their team was. After visiting the Pivotal Labs San Francisco office, I saw the same exact thing, on a much larger scale. This had a profound impact on me, and I set about mirroring the way that Pivotal Labs worked within the walls of Slice of Lime.
+
+That brings us to today, and I couldn’t be more excited that we’re all one team now.
+
+As the new Office Director in Boulder, I’m 
+already seeing the benefits of bringing so many like-minded people together. These are people who have a very high bar, who all talk about creating value for our clients, and have a thirst to learn and teach others. These are my kind of people.
+
+Many impressive milestones, advances in technology, and numbers were shared at WWKO. As someone new to the company, what stood out more was the friendly faces, the countless “congratulations”, the excitement to have more UX talent inside Pivotal, and the spirit of collaboration. It could be easy to feel lost going from a 20-person company to a 2,000 person company. Any emotion like that was quickly assuaged while grabbing a beer with Bill Cook, running across the Golden Gate Bridge with my new coworkers, listening to Rob Mee focus on the word “empathy”, and a strange football encounter with Leo Spiegel (you’ll just have to watch the 
+video).
+
+I couldn’t be more pleased by this warm welcome, or more happy and optimistic to be part of this larger team—a team that really values its people above all.
+Customer Spotlight
+Win Big Through Your Customer Reference
+If you&apos;re a Pivotal sales representative and you&apos;re not actively participating in the Customer Reference Program, you&apos;re missing out on a chance to earn cool incentives and rewards for getting Pivotal customers to 
+share their journeys with Pivotal, via external case studies, videos, webcasts, analyst calls, and more.
+
+Customer Marketing makes it easy to tell your customer story, and head to the Reference Program &lt;[[https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/references/reference-system]]&gt; on Inside Pivotal for the details. We&apos;re also building up the 2015 Wall of Champions &lt;[[https://sites.google.com/a/pivotal.io/customer-marketing-and-programs/reference-champion-wall-1]]&gt; with photos of the big winners with their prizes and a list of all the top reference 
+point winners listed. Contact Sophia Tseng (stseng@pivotal.io &lt;[[mailto:stseng@pivotal.io]]&gt;) or Estelle Hayes (ehayes@pivotal.io &lt;[[mailto:ehayes@pivotal.io]]&gt;) for more information, and stay tuned for 
+the 2016 Prize Catalogue to be posted!
+PEOPLE UPDATE
+ A Movement in CODE
+ Maria Simeonova, Executive Assistant
+Cornelia Davis’ presentation at Kickoff underscored an important moment for Pivotal. We’re seeing an enormous amount of interest and dialogue in diversity and inclusion, and importantly, momentum in how to move towards that (see our new Diversity &amp; Inclusion &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/human-resources/diversity-inclusion]]&gt; page for some of those efforts). Many more of us are eager to—in typical Pivotal fashion—hack away at this important topic.
+
+Pivotal is holding screenings of the movie CODE: Debugging the Gender Gap &lt;[[http://codedocumentary.com/]]&gt; in eight of our offices. You can check out the schedule here &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/human-resources/diversity-inclusion/events]]&gt;. These events have become great forums for voicing concerns, sharing personal experiences, and for brainstorming the kinds of things we can do around diversity and inclusion.
+
+I attended the first screening, which took place in our San Francisco office mid-January, organized by Pivot 
+Can Berk Güder, with Abby Kearns as moderator of a panel that included Janice Fraser, Onsi Fakhouri, and Sree Trummidi.
+
+Questions from the audience dictated the panel discussion. Topics of interest included the importance of providing young women and minorities with industry role models, ways to counter implicit bias, re-examining the screening process, and helping more women progress to positions of leadership.
+
+As the conversation turned to address the 
+recruiting pipeline, several Pivots shared their experience working with outside organizations, which aim to reach underrepresented talent and teach them the necessary skills.
+
+Watching CODE and taking part in the conversation reminded me of why I was so excited to join Pivotal last 
+spring—people here care about making this an awesome workplace. Pivots care about their work, but also about their peers and their community.
+
+To quote the movie, “culture is made in the heart,” so whether you join one of your office&apos;s grassroots efforts, share your stories of discrimination, make your voice heard on Slack’s 
+#diversity channel, or see CODE, you are helping make Pivotal a better place.
+
+So check out the upcoming CODE events &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/human-resources/diversity-inclusion/events]]&gt;, 
+and join the conversation.
+MY NAME IS...
+ Rita Manachi 
+ Rita Manachi, Consulting Analyst Relations Specialist
+Am responsible for our Analyst Relations program, reporting to Ian Andrews. While I work directly with the product team, I see my primary role as supporting our sales efforts by elevating the visibility of Pivotal, and our (awesome) value proposition among industry analyst heavies, like Gartner &lt;[[http://www.gartner.com/]]&gt;, Forrester &lt;[[http://www.forrester.com/]]&gt;, The 451 &lt;[[https://451research.com/]]&gt;, etc., so they recommend us to potential customers.
+Stalking analysts on Twitter and Facebook, or trying hard to resist the snack gauntlet in Palo Alto!
+Figuring out what the analysts know or don&apos;t know about us, and educating them about our technology and how we help customers build great software. 
+
+(l to r): ‘Crazy-hat’ Rita and son Hugo, on the trail; Viewing Yosemite Falls
+I eat, I cook, I go outside, I laugh.
+I was born in Beirut, Lebanon and speak Arabic (though not very well).
+Feels like coming home!
+Welcome to Pivotal!
+It’s nice to see your name, and we’ve liked publishing all our new hires. However, given the raft of new colleagues, this section has grown too big for a tidy digest.
+
+But we have you covered. Click here &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/human-resources/pivotal-new-hires-who-s-who-jan18-feb8-2016]]&gt; to see and welcome new colleagues who joined Pivotal from January 18th–February 8th.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

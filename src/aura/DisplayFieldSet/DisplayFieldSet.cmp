@@ -1,0 +1,27 @@
+<aura:component controller="DisplayFieldSetAuraController">
+    <aura:attribute name="sobject" type="Object"/>
+    <aura:attribute name="sobjectType" type="String"/>
+    <aura:attribute name="fieldSetName" type="String"/>
+    <aura:attribute name="fields" type="List"/>
+    <aura:attribute name="labelClass" type="String" default="label"/>
+    <aura:attribute name="valueClass" type="String" default="value"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <div class="container">
+    <aura:iteration items="{!v.fields}" var="f">
+        <div class="{!v.labelClass}">{!f.label}</div>
+        <div class="{!v.valueClass}">
+            <aura:if isTrue="{!f.apiName == 'Name'}">
+                <a href="{!'/'+v.sobject.Id}">{!f.value}</a>
+            </aura:if>
+            <aura:if isTrue="{!f.fieldType == 'REFERENCE'}">
+                <a href="{!'/'+f.value}"><c:MapEntry map="{!v.sobject}" key="{!f.refName}"/></a>
+            </aura:if>
+            <aura:if isTrue="{!and(f.fieldType != 'REFERENCE', f.apiName != 'Name')}">
+                <c:MapEntry map="{!v.sobject}" key="{!f.apiName}"/>                         
+            </aura:if>
+        </div>
+    </aura:iteration>
+    </div>
+</aura:component>

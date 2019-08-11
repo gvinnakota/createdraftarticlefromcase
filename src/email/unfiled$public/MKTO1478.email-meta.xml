@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Labs_Email_CustomerSatisfactionSurvey_Q114.Boulder Denver - Nov. 4</name>
+    <style>none</style>
+    <subject>Customer Satisfaction Survey</subject>
+    <textOnly>Dear {{lead.First Name:default=Sir/Madam}},
+
+
+At Pivotal Labs, your feedback is critical for us in learning how to serve you better. We&apos;ve designed a short Customer Satisfaction survey to understand what we are doing well, where we can improve, and to give you the opportunity to share your feedback with us.
+
+At this time, we would like to invite you to complete our survey. This survey will only take 5 minutes to complete.
+
+Click HERE &lt;https://www.surveymonkey.com/s/5NDQLQV&gt; to complete the survey.
+
+Rest assured that all your responses are anonymous, confidential and will not be made public. This survey will close Friday, November 14, 2014 at noon (local time). 
+
+We look forward to serving your team and your product needs better.
+
+Link to survey: https://www.surveymonkey.com/s/5NDQLQV &lt;https://www.surveymonkey.com/s/5NDQLQV&gt;
+
+Sincerely,
+Edward Hieatt
+COO, Pivotal Labs</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

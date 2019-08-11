@@ -1,0 +1,48 @@
+<apex:page id="ZuoraRevenueSplitsManagement" controller="ZuoraRevenueSplitsManagementController">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages escape="false"/>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!schedule}" value="Schedule" rendered="{!enableSchedule}"/>
+                <apex:commandButton action="{!abort}" value="Abort" rendered="{!enableAbort}"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" />
+            </apex:pageBlockButtons>
+            <!--<apex:pageBlockSection title="Settings" columns="1">
+
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Interval (Days)"/>
+                    <apex:outputLabel value="{!interval}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>-->
+            <apex:pageBlockSection title="Job Details" rendered="{!NOT(ISNULL(scheduledJob))}" columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Job Name"/>
+                    <apex:outputField value="{!scheduledJob.CronJobDetail.Name}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Next Fire Time"/>
+                    <apex:outputField value="{!scheduledJob.NextFireTime}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Cron Expression"/>
+                    <apex:outputField value="{!scheduledJob.CronExpression}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Run Manually" columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Start Date"/>
+                    <apex:inputField value="{!request.Start_Date__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="End Date"/>
+                    <apex:inputField value="{!request.End_Date__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value=""/>
+                    <apex:commandButton value="Run" action="{!runManually}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

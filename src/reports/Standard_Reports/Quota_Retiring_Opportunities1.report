@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_49559559</developerName>
+        <masterLabel>PSO - Sub Category</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Customer Education - PSO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Private Training - Core Spring - 4 days (per student, standard text, T&amp;E included)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Private Training - Hibernate with Spring - 3 days (per student, standard text, T&amp;E included)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Private Training - tc Server Administration - 2 days (per student, standard text, T&amp;E included)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Private Training- Pivotal RabbitMQ [V2.8] - Onsite (3 days)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GP HD DIRECT REGISTRATION</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>GP HD ONSITE TRAINING</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>1 TRAINING UNIT VALID 1 YR (GREENPLUM)</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>110 TRAINING UNITS VALID 1 YR (GREENPLU</sourceValue>
+            </sourceValues>
+            <value>EDU</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Assurance - Big Data Suite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Assurance - Cloud Foundry</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Business Critical Support Onsite - PSO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data Labs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Onboarding - Big Data Suite</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Onboarding - Cloud Foundry</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On Boarding CF - PSO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>On Boarding Data Suite - PSO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pivotal Data Labs - PSO</sourceValue>
+            </sourceValues>
+            <value>CSO</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Business Critical Support - DSE remote 10 hr - 12 month</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Business Critical Support - DSE remote 5 hr - 12 month</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Business Critical Support Remote - CS</sourceValue>
+            </sourceValues>
+            <value>BCS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Data Science</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data Science Lab 100</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data Science Lab Primer</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Data Science Labs - PSO</sourceValue>
+            </sourceValues>
+            <value>Data Science</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pivotal Labs - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pivotal Labs - Startup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pivotal Labs Enterprise - PSO</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pivotal Labs Startup - PSO</sourceValue>
+            </sourceValues>
+            <value>Labs</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Big Data Suite - SW Subscription</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Big Data Suite 4 Year Subscription</sourceValue>
+            </sourceValues>
+            <value>BDS Sub</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>App Suite 3 year Subscription</sourceValue>
+            </sourceValues>
+            <value>App Suite Sub</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>User.Theater__c</field>
+    </columns>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OpportunityLineItem.Adjusted_Amount__c</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_49559559</field>
+    </columns>
+    <columns>
+        <field>FAMILY</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Current quarter opportunities with quota retiring products.</description>
+    <filter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FAMILY</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Forecast__c</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Opportunity_Number__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Quota Retiring Opportunities</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

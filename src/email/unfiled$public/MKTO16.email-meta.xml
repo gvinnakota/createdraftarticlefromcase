@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Product_Email_Pivotal HD Launch.HAWQ Email</name>
+    <style>none</style>
+    <subject>HAWQ: Hadoop + SQL = Fast</subject>
+    <textOnly>SQL Queries At The Speed Of HAWQ
+Experience the World&apos;s Fastest Hadoop Distribution
+Hi {{lead.First Name:default=there}},
+
+Now that you have experienced Pivotal HD, would you like to really go in-depth with the amazing SQL Query Speed of HAWQ?
+
+As an interface to Hadoop, HAWQ allows you to use familiar SQL operations on petabyte sized data-sets at amazing speed. HAWQ provides support for multiple join SQL statements, ACID transactions, ODBC/JDBC connectivity providing the most flexibility for users. 
+
+HAWQ includes native mature technology:
+
+ - A Parallel Query Optimizer – 10 years of innovation in MPP, HAWQ delivers unmatched query optimization that decisively outperforms alternatives.
+ - Dynamic Pipelining – a parallel data flow framework, which implements all the operations that underlie all SQL queries. 
+ - Pivotal Extension Frameworks – allows you to run and integrate directly with data sets stored in Hadoop HDFS, Hbase or Hive, cutting latency and reducing duplication or movement of data.
+ - Advanced Analytics Functions - a library of parallelized analytics algorithms (MADLib) to speed analytics development and execution.
+
+
+Want to learn more? Contact us &lt;mailto:sales@gopivotal.com&gt;.
+ 
+
+Thank you,
+
+The Pivotal Team
+Stay current on all things Pivotal
+Visit our blog &gt;&gt; &lt;blog.gopivotal.com&gt;
+Pivotal HD Community Forum
+Join Now &gt;&gt; &lt;http://www.gopivotal.com/community/pivotal-hd&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

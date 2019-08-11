@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:520px !important;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100% !important;}
+ol {margin-left: -20px !important;}
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+.section-icon {padding-left:20px !important;}
+.blog-link {padding-left:20px !important;}
+.blog-thumb {padding-bottom:20px;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.date-block {text-align:left !important; padding-left:20px !important; padding-top:5px !important; padding-bottom:5px !important;}
+.brand-block {text-align:left !important; padding-left:0px !important; padding-top:5px !important; padding-bottom:5px !important;}
+.footer-block {text-align:left !important; padding-left:20px !important; padding-top:10px !important; padding-bottom:10px !important;}
+}
+
+
+</style>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse; " ><tr ><td width="300" align="left" valign="middle" class="stack brand-block" style="padding-top:20px; padding-bottom:20px;"><a href="ttp://insidepivotal.com" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/nl-insidepivotal-logo.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack brand-block" style="padding-top:10px; padding-right:0; padding-bottom:0; padding-left:0; color:#3c3d42; font-size:16px; line-height:16px; " >NEWSLETTER<br>
+<span class="mktEditable" id="vol-no" style="font-size:12px; " >VOL. 4, NO. 6</span>
+</td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="background:#FFF; border-top:solid 6px #01786E; border-bottom:solid 1px #F1F1F1; border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="stack date-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px; " ><span class="mktEditable" id="issue-date" style="font-size:12px; text-transform:uppercase; " >Monday, May 16</span>
+</td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" class="text-block" style="padding-top:30px; padding-right:40px; padding-bottom:20px; padding-left:40px; color:#666666; font-size:14px; line-height:22px; " ><p style="margin:0; font-size:20px; font-weight:bold; line-height:20px;">IN THIS ISSUE</p>
+<ol style="margin-left:-20px; color:#666666; font-size:14px; line-height:26px; " ><li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-editor" >Editor Welcome: <a style="color: #059a91; text-decoration: none;" href="#editor-welcome">Digital Portraits</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-business" >Business Update: <a style="color: #059a91; text-decoration: none;" href="#business-update">The New and Improved Customer Experience</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-product" >Product Update: <a style="color: #059a91; text-decoration: none;" href="#product-update">Pivotal Gemfire and Cloud Native Velocity</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-agile" >Agile Update: <a style="color: #059a91; text-decoration: none;" href="#agile-update">A Workspace Hack</a></span>
+</li>
+<li style="color:#666666; font-size:14px; line-height:18px; padding-bottom:5px; " ><span class="mktEditable" id="toc-my-name-is" >My Name Is... <a style="color: #059a91; text-decoration: none;" href="#my-name-is">David McClure</a></span>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of editor welcome // -->
+<a href="#editor-welcome" name="editor-welcome"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="editor-welcome-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/SC2nl-portrait.png" alt="Stephen Casale" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">EDITOR WELCOME</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;"><span id="docs-internal-guid-0451b2dd-61c9-4db3-68cc-0e388a88e576"><span><span id="docs-internal-guid-de0effd0-58cd-7224-2ed7-ff17905eed17"><span>Digital Portraits</span></span></span></span></span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;"><a style="color: #059a91; text-decoration: none;" href="https://gopivotal-com.socialcast.com/users/1033819-stephencasale">Steve Casale</a>, Sr. Manager, Corporate Communications</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="editor-welcome-entry" >Many years before software gave us the ability to spin them up at the click of a mouse, a group of artists treated us to the wonders of painstaking <a style="color: #059a91; text-decoration: none;" href="https://en.wikipedia.org/wiki/Photographic_mosaic">photomosaics</a>.
+       Taken as a whole, these image fragments form a portrait, while each photo itself held its own story.
+       <br><br> Much like those mosaics, the fragments of story in this issue come together as a portrait of change.
+       Labs Designer Michelle Kang writes on hacking a workspace to spur a Labs collaboration.
+       Fred Melo weighs in on bridging real-time and in-memory data with the inspired beta that is Pivotal Gemfire 9.0, and the GSS team introduces a sleek new customer portal.
+         <br><br> Somewhat related and for nearly two years running, Inside Pivotal has evolved—small-batch style.
+       The latest iteration brings a cleaner, user-friendly <a style="color: #059a91; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/departments/human-resources">People site</a> and a scaled-up but crisper <a style="color: #059a91; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/asset-library">Asset Library</a>.
+       <br><br> Finally, there are no dull moments at Pivotal, so be sure attend or watch <a style="color: #059a91; text-decoration: none;" href="https://sites.google.com/a/pivotal.io/inside-pivotal/pivotal-town-hall">tomorrow's Town Hall</a> (12:30pm PDT) for company updates on the recent funding round and other big items.
+       <br><br> Enjoy.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of Editor Welcome // -->
+<!-- Start of business update -->
+<a href="#business-update" name="business-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="business-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/johnnyscarborough-nl-portrait.jpg" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">BUSINESS UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">The New and Improved Customer Experience</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;"><a style="color: #059a91; text-decoration: none;" href="#author-socialcast-profile">Johnny Scarborough</a>, VP, Global Support Services</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="business-update-entry" >
+<p>At the end of April, the Global Support Services (GSS) team successfully launched the new <a style="color: #059a91; text-decoration: none;" href="https://support.pivotal.io/">Customer Portal</a>, bringing a greatly enhanced experience for customers and partners in their engagement with Pivotal.
+   The Customer Portal's new UI is cleaner and simpler, and makes it easier for customers to manage any issues and find assets.
+    <br /><br /> Customers and partners now come to a single place and a scalable infrastructure that serves thousands of users, and many more thousands of customer records.
+   The portal's user-minded features include enhanced Single Sign On (SSO), Support Entitlements, Ticket Management, User Management, and Knowledge Base Access.
+   Customers can now do the following from a single, SSO-enabled landing page:</p>
+<ul style="margin-top: 10px; margin-right: 40px;">
+<li>Access <a style="color: #059a91; text-decoration: none;" href="https://network.pivotal.io/">Pivotal Network</a> to download software</li>
+<li>Search an improved Knowledge Base for self-help solutions</li>
+<li>Learn about Pivotal's support offerings and policies</li>
+<li>View and download documentation</li>
+</ul>
+<p>The self-service Knowledge Base is searchable from any part of the site and offers answers to more Pivotal product questions than ever.
+   It saves customers time, and allows our support engineers to spend more of their own time focused on more difficult issues.
+   Taken together, this helps us resolve all issues faster, and improves the customer experience.
+   <br /><br /><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/bizupdatev4n6.png" alt="pivotal support homepage" width="500" height="328" /><br /><span style="font-size: 10px;"><em>The Customer Portal's new look</em></span><br /><br />This was a big and balanced team effort led by our IAD Development Team, and included IT specialists, UAA developers, PMs, UI and UX Designers, Digital 
+Marketers, Technical Writers Customer Support, and others from across Pivotal.
+    <br /><br /> We've reached a new level of support with this Portal, and we're just beginning.
+   Up next: more and richer offerings like video and webcasts, and integrating real-time user feedback.
+   Check out the new portal at <a style="color: #059a91; text-decoration: none;" href="https://support.pivotal.io/">support.pivotal.io</a>, and view our launch video on the <a style="color: #059a91; text-decoration: none;" href="https://www.youtube.com/playlist?list=PLAdzTan_eSPScpj2J50ErtzR9ANSzv3kl">GSS YouTube playlist</a>.</p>
+</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of business update // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="product-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/fredmelo-nl-portrait.jpg" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">PRODUCT UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">Pivotal Gemfire and Cloud Native Velocity</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;"><a style="color: #059a91; text-decoration: none;" href="#author-socialcast-profile"> Fred Melo</a>, Technical Director</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="product-update-entry" >One of the most important aspects of cloud native applications is their stateless nature.
+ Not carrying a state guarantees the ephemerality of application containers, which means they can be horizontally scaled, re-deployed and distributed by platforms like Pivotal Cloud Foundry—when and where needed.
+  <br><br> Microservices have become a standard for creating stateless cloud native applications, and how you feed these hungry, distributed systems is critical.
+ Breaking monoliths into microservice-based architectures then, has considerable implications for data architectures.
+ By adopting an architecture based on discrete services with well defined contracts, bounded contexts, and single responsibility, each component ends up with a fairly simple data model, and relies on event-driven behavior, which are essential characteristics of NoSQL solutions like <a style="color: #059a91; text-decoration: none;" href="http://pivotal.io/big-data/pivotal-gemfire">Pivotal 
+GemFire</a>.
+  <br><br> In this new paradigm, there is no centralized data transaction layer, and each microservice is responsible for modeling and maintaining its state, using its data persistence tool of choice, creating an heterogeneous data architecture called <a style="color: #059a91; text-decoration: none;" href="http://martinfowler.com/bliki/PolyglotPersistence.html">polyglot persistence</a>.
+  <br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/product2v4n6.png" alt="product1" width="500" height="172"><br> The communication between microservices is done exclusively through each microservice contract/interface—not by a database, creating the necessary decoupling that allows for smaller teams to iterate faster and develop better quality software.
+ <br><br> However, polyglot persistence is not without challenges.
+ The absence of a single data model on the transactional layer forces teams to rethink the traditional ETL-based, nightly batch job integration between the relational database and the analytical stores.
+ That's because transactional data is now spread between several different NoSQL stores, with different data models and interfaces.
+  <br><br> Furthermore, good, modern data science and analytics requires near real-time access to data persisted by applications in order to operationalize any data insights gained by analytical algorithms and machine learning.
+  <br><br> <strong>The Link—Hot and Warm Data</strong> <br><br> This is where the bidirectional integration between GemFire and <a style="color: #059a91; text-decoration: none;" href="http://greenplum.org/">Greenplum</a> being released as beta in the upcoming GemFire 9.0 becomes very handy.
+ While microservices elect GemFire as their NoSQL tool of choice, they won't only take advantage of predictable low latency, high-frequency transactions with configurable data consistency and multi-site replication.
+  <br><br> They will now be able to configure a bidirectional mapping between GemFire ("hot" real-time data) and Greenplum ("warm" stored data), where transactions in GemFire are automatically written behind Greenplum and Greenplum data is read back into GemFire, providing closed-loop analytics capabilities and delivering data insights to applications with minimum latency.
+  <br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/product1v4n6.png" alt="product2" width="500" height="269"><br> In the end, enterprises should be thoughtful in choosing which data services to power microservices, in order to unlock the most benefits and performance of their data-driven apps.
+ <br><br> More details can be found in this <a style="color: #059a91; text-decoration: none;" href="https://youtu.be/U4YeHBDX5GA?list=PL62pIycqXx-RCEP2APj4Mq9Oeyvskj_0K">Geode Summit talk</a> recording.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of agile update // -->
+<a href="#agile-update" name="agile-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="agile-update-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/michellekang-nl-portrait.jpg" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">AGILE UPDATE</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">A Workspace Hack</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;">Michelle Kang, Product Designer</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><div class="mktEditable" id="agile-update-entry" >
+<p>Physical space facilitates quality work in digital space.
+       Last month, I flew to Washington DC to work on a project that yielded the perfect opportunity to "hack a space" for optimal collaboration.
+       Given the whiteboarding, brainstorming, and collaboration essential to the start of the project (a classic <a style="color: #059a91; text-decoration: none;" href="https://blog.pivotal.io/labs/labs/discovery-and-framing-design-studio">Discovery &amp; Framing</a> session), we thought it would be good to redesign the space to enable our work.
+        <br /><br /> Our Washington DC office is comprised of a series of rented rooms from the coworking space <a style="color: #059a91; text-decoration: none;" href="https://www.wework.com/">WeWork</a>.
+       Our project had its own room, and one of its defining features was the island of standing desks combined in the middle of the room blocking open communication.
+       More chairs and additional shorter tables claimed valuable space next to the walls, and we had to maneuver around these obstacles to reach each other across the room.
+        <br /><br /> In the spirit of Labs, we tried an experiment.
+       Why not move the tall tables to the sides, and move the shorter desks to the middle? We could form a desk in the middle for workshops and impromptu meetings during the collaboration heavy portion of this research phase.
+       If it didn't work out, we could move it back.</p>
+<p><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/agile1v4n6.jpg" alt="dc office before" width="500" height="375" /></p>
+<p><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/agile2v4n6.jpg" alt="office after" width="500" height="375" /><span style="font-size: 10px;"><em>Above: Before and after shots featuring teammates Mariesa Dale and Laurel Gray.</em></span></p>
+<p><br /> The room also had no whiteboards, so we used easel pad paper to serve the same purpose, lining the remaining two walls with the paper and placed our movable  whiteboard by the workshop tables.
+     Here is the front of the room, lined with an agenda and brief notes on why we conduct D&amp;Fs, and beautiful blank spaces eagerly waiting to be filled:<br /><br /><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/agile3v4n6.png" alt="office wall" width="500" height="375" /><br /><br />With these simple changes the room opened up into an inviting space that set the tone for a Labs  
+engagement&mdash;or facilitating shared understanding, shared ownership, and equal voices in conversations.
+     We often take a room arrangement as a given, but arranging the space to meet team needs is crucial for facilitating our best work.
+     Space is fluid, not static.
+     In fact, once we started development on this project, we changed it again.
+     <br /><br /> And guess what? Solving real needs by identifying problems, experimenting with solutions, and continuing to iterate: that's design.</p>
+</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of agile update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="padding-bottom:10px; color:#666666; font-size:13px; line-height:22px; " ><div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><img style="display: block;" src="http://connect.pivotal.io/rs/625-IUJ-009/images/dave-mcclure-nl-portrait.jpg" alt="Name" align="right"> <span style="color: #666666; font-size: 12px; line-height: 16px;">MY NAME IS...</span><br> <span style="margin: 0; font-size: 20px; font-weight: bold; line-height: 24px; text-transform: uppercase;">David McClure</span><br> <span style="color: #666666; font-size: 14px; line-height: 18px;">David McClure, Software Engineer</span></div>
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="top" class="stack" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:20px; " ><span style="font-size:20px;">At Pivotal I&hellip;</span><div class="mktEditable" id="at-pivotal-i" style="padding-top:10px; " >Am a developer with Pivotal Labs in Santa Monica. I work with my team to do everything we can to improve our process and the product we deliver. And I try to learn everything I can from all the great people here.</div>
+<br>
+<span style="font-size:20px;">You can find me&hellip;</span><div class="mktEditable" id="you-can-find-me" style="padding-top:10px; " >Vacillating between dead seriousness and deadpan humor, debating myself just as vigorously as anyone else, and creating opportunities to get Philz coffee.</div>
+<br>
+<span style="font-size:20px;">Currently, I am working on&hellip;</span><div class="mktEditable" id="currently-i-am" style="padding-top:10px; " >A Java/Spring app that sits at the center of the "Disney Movies Anywhere" product.<br><br>Our big win so far is enabling the team with the process, the tooling and the confidence to streamline our delivery process. Instead of shipping new features every 6+ months we are now doing it multiple times a week.<br><br>I've also been working on <a style="color: #059a91; text-decoration: none;" href="https://www.pivotalk.io">Pivotalk</a>, which aims to enable Pivots from all timezones and all parts of the company to have meaningful discussions.</div>
+<br>
+<span style="font-size:20px;">In my spare time&hellip;</span><div class="mktEditable" id="in-my-spare-time" style="padding-top:10px; " >I hang out with my wife Jolene in her studio, where she spends most of her time painting. (You can check out her work <a style="color: #059a91; text-decoration: none;" href="http://www.enelojial.com/">here</a>). We also spend a lot of time walking around our neighborhood debating what movie to watch and where to eat our next meal.<br><br>I try to take advantage of the California weather by running regularly and playing an occasional game of pickup soccer.<br><br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/hellomynameis1v4n6.jpg" alt="looking at art" width="500" height="333"><br><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/hellomynameis2v4n6.jpg" alt="passtime" width="500" height="667"><br><em><span style="font-size: 10px;">LA contemplations (top to bottom): Art pose with Jolene; humanity's favorite "passtime"</span></em></div>
+<br>
+<span style="font-size:20px;">Something you probably don’t know about me&hellip;</span><div class="mktEditable" id="something-you-dont-know" style="padding-top:10px; " >It gives me great anxiety to finish a meal without coffee or chocolate.</div>
+<br>
+<span style="font-size:20px;">To me Pivotal&hellip;</span><div class="mktEditable" id="to-me-pivotal" style="padding-top:10px; " >Is an amazing place to work with great people who care about how to build teams that deliver quality products.</div>
+<a href="#top" style="color:#059a91; font-size:12px; text-decoration:none; padding-top:20px; display:block;">BACK TO TOP &uarr;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of tos -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #01786E; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://play.gopivotal.com/rs/pivotal/images/nl-pivotal-footer.png" alt="Pivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:10px; padding-right:40px; padding-bottom:10px; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;">Want More? Try <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a> or <a href="https://gopivotal-com.socialcast.com/groups/89753-pivotalnewsletter?" style="color:#FFFFFF; text-decoration:none;">SocialCast: @PivotalNewsletter</a></span></td>
+</tr>
+</table>
+<!-- End of tos -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2016 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

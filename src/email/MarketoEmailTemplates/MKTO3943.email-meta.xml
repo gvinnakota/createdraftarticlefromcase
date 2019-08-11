@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_9AM_PCF-Deciphering the Buzzword Bingo_Q216.Reminder</name>
+    <style>none</style>
+    <subject>Webinar Reminder: Deciphering the Buzzword Bingo</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+ A quick reminder for tomorrow&apos;s webinar, Deciphering the Buzzword Bingo with Duncan Winn from Pivotal. 
+
+ Date: Tuesday, June 28, 2016 
+Time: 9:00am–10:00am PDT (San Francisco, GMT-07:00) 
+
+Join the Session 
+
+Audio Information: This webinar will be streaming via your computer and speakers. 
+ 
+We look forward to you joining us.
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

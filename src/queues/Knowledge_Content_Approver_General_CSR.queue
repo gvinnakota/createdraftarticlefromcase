@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Knowledge Content Approver: General CSR</name>
+    <queueMembers>
+        <users>
+            <user>abyrne@pivotal.io</user>
+            <user>adehoogh@pivotal.io</user>
+            <user>cstrong@pivotal.io</user>
+            <user>lsaintarbor@pivotal.io</user>
+            <user>rchampati2@pivotal.io</user>
+            <user>yiwang@pivotal.io</user>
+            <user>sshervey@pivotal.io</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+</Queue>

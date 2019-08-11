@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When an internal user escalates an EH/SP case by emailing ehsp-escalations@pivotal.io, an email should be triggered back to the original user stating the case has been created</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Notifying user that the case has been created by EH SP escalation</name>
+    <style>formalLetter</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Thank you for contacting Pivotal EH/SP Support. We will review your escalated case and respond as soon as possible. 
+
+If you require immediate assistance with a mission critical system, please call our secure line: 866-993-5858
+
+{!Case.ThreadId__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

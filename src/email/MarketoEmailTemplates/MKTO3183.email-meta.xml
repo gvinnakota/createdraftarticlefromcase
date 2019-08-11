@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Event_Cloud Native Seminar_Singapore_Q415.Follow up Email</name>
+    <style>none</style>
+    <subject>Thank you for attending the Cloud Native Seminar in Singapore</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for attending Pivotal&apos;s Cloud Native Seminar last week. We hope you enjoyed the sessions and learned how Pivotal Cloud Foundry can enable and accelerate your next generation enterprise programming.
+
+Sign up now &lt;https://run.pivotal.io&gt; for your 60-day trial of Pivotal Cloud Foundry. Pivotal Cloud Foundry can reside in your own infrastructure (in house or cloud such as VMWare vSphere, Open Stack, AWS, Microsoft Azzure etc). Feel free to contact us for any help getting a Pivotal Cloud Foundry instance up and running within your organization.
+
+The latest version of Pivotal Cloud Foundry comes with many new features and capabilities such as .NET support, Docker image support and Spring 
+Cloud Services (Netflix OSS integrated as a managed service). To learn more about how organizations are adopting this cloud native platform and industry leading capabilities, check out this video &lt;https://www.youtube.com/watch?v=CDhLiqLhV8A&amp;list=TLnDaDBXULiYoyMjExMjAxNQ&gt;.
+
+Want to learn more?
+ 
+
+
+ - Register for our webinar series &lt;http://pivotal.io/cloud-native-journey-webinar-series&gt;
+ - Learn more about becoming cloud native &lt;http://pivotal.io/cloud-native&gt;
+ - Visit our  &lt;http://pivotal.io/cloud-native&gt;blog &lt;https://blog.pivotal.io/pivotal-cloud-foundry&gt;
+ - Download event slides here &lt;https://www.dropbox.com/sh/a96capvbm6uuwi1/AAAAGAyoiTM5_t9dp553Loh3a?oref=e#&gt;
+
+
+
+If you are interested in a visit to our Pivotal Innovation Centre for a detailed briefing and discussion, please email Jade 
+Tan.
+
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

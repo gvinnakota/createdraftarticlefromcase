@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>1st newsletter in new 2016 template.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.10-03-16 V4N10</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter September 2016</subject>
+    <textOnly>October 3, 2016
+Vol. 4, No. 10
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – New Look, Same Game
+All Things Product &lt;[[#product-update]]&gt; – PCF 1.8 - More Velocity and More Value
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy odd &amp; ends
+Labs + Culture &lt;[[#culture-update]]&gt; - A Retro App From Sydney
+My Name Is &lt;[[#my-name-is]]&gt; – James Nelson
+New Look, Same Game
+
+
+
+
+Steve Casale, Sr. Manager, Corporate Communications
+I can explain the new look.
+
+With Google, Microsoft, AWS, and other masters of software amplifying their orbital influence around a star called Cloud—and with Pivotal as a large body of influence in every sphere—it&apos;s important to keep a tab on the stars, rocket launches, and cosmic realignments. It&apos;s also getting real for Pivotal with customers in the auto, financial, health, entertainment, government, and you-name-it sectors.
+
+So to keep that cadence regular, we&apos;ve simplified the newsletter. &quot;All Things Product&quot; is the catch-all for big product news, but also for selling and other updates related to the business of software. &quot;Labs + Culture&quot; captures all things Agile and more, from office updates to activities around diversity, etc. &quot;Interestings&quot; is new—a curation of social, video, or publication snippets of interest. The fan favorite, &quot;My Name is&quot;, remains unchanged.
+
+I still aim to report on points in time across planet Pivotal, to connect the dots and help us feel plugged into an important cosmos. This issue we have a nice summary of PCF and a fine retro piece of work from Down Under (marking the Sydney office&apos;s first ever appearance in this newsletter). 
+
+Finally, the next Pivotal Town Hall is Thursday, 6 Oct, 12:30 PM (PST). Be sure to watch it here &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/pivotal-town-hall]]&gt;. A big thanks goes to Bryan Floberg, Chloe Jackson, and Amanda Egan on the creative side, and to Morgan Holzer for her candor and suggestions.  
+
+Enjoy.
+PCF 1.8 – More Velocity and More Value
+
+
+
+
+Jared Ruckle, Principal Product Marketing Manager, Cloud Foundry
+As companies adapt to become digital businesses, most challenges invariably boil down to how well you build software. More specifically, it comes down to how rapidly you can iterate on that software, and how fast you can realize time-to-value from new code.
+
+PCF 1.8 is a big release for Pivotal, offering several new features that help customers accelerate their time-to-value, including:
+
+
+ - Support for non-HTTP/S workloads. Now, with TCP Routing &lt;[[http://docs.pivotal.io/pivotalcf/1-8/devguide/deploy-apps/routes-domains.html#http-vs-tcp-routes]]&gt;, a new universe of applications can be run on PCF, including IoT apps that use MQTT, and legacy workloads. The more apps you can run on a single platform with standardized tooling, the easier it is to scale for developer and operations teams across the business.
+ - Log-integrated metrics &amp; monitoring &lt;[[http://docs.pivotal.io/pcf-metrics/1-1/using.html]]&gt; help resolve production issues faster. How? Devs and ops teams have the “same set of facts” to troubleshoot issues. This helps resolve a big and knotty issue where devs and ops teams wrangled over whose data was “right”. It sets both teams up to just analyze, diagnose, and solve problems.
+ - A simplified path to compliance with the IPSec Add-On. This new module now encrypts data in transit—a big boost to helping customers meet PCI audit requirements.
+
+
+
+All of these combine to achieve more velocity in the code cycle, which helps businesses accelerate and maintain a cycle of continuous innovation essential to the digital enterprise.
+
+Another 1.8 item to highlight for the roadmap: The BOSH cloud config &lt;[[https://bosh.io/docs/cloud-config.html]]&gt; is a slick piece of enabling technology. While customers can deploy on Google Cloud Platform &lt;[[https://twitter.com/bridgetkromhout/status/760881072565587968]]&gt; and Microsoft 
+Azure, these deployments do not support Ops Manager, and require significant management by Pivotal teams. Thanks to BOSH cloud config, PCF deployments on these clouds will soon be fully automated and customer self-service.
+
+Stay tuned for more on that front! Check out the full features of the release here:
+ 
+Inside PCF 1.8 Release Page &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal-cf/home/roadmap/pcf-release-archive/pcf-1-8-release]]&gt; | PCF 1.8 Blog Post &lt;[[https://blog.pivotal.io/pivotal-cloud-foundry/products/meet-pivotal-cloud-foundry-1-8-because-time-to-value-is-contagious]]&gt; | 
+PCF 1.8 Release Notes &lt;[[http://docs.pivotal.io/pivotalcf/1-8/pcf-release-notes/index.html]]&gt;
+Interestings
+
+
+
+
+
+
+
+
+
+ - The NetflixOSS and microservices journey is one of the best software stories in the industry. Pivotal&apos;s Richard Seroter just published an outstanding white paper &lt;[[https://pivotal.io/supercharging-your-microservices-with-netflixoss-and-spring-cloud]]&gt; on this.
+ - Allstate&apos;s @CompozedLabs hotshots releases Deployodactyl, company&apos;s 1st-ever open source project &lt;[[https://twitter.com/apc_lee/status/773181183765073921]]&gt; and command line tool to help scale PCF in multi-cloud environments!
+ - Pivotal Education adds Spring Boot Developer course and others to its Course Catalog &lt;[[https://pivotal.io/academy/student-center]]&gt;, with a new Sales presentation &lt;[[https://docs.google.com/presentation/d/1WPuKqVdUMHfFYWaUWd4TkEQ0JglCzCGERXVRMqgdTms/edit#slide=id.g10211a957b_0_6]]&gt; too.
+ - Discounts for Apigee&apos;s Adapt or Die Conference &lt;[[http://adapt.apigee.com/]]&gt; on 10/11 in NYC! Pivots and their select customers can use &quot;PivotalVIP&quot; code for free tix (up to 20); Pivots can use the code PIVOTAL99 to register themselves and save $400. Matt Stine and Kenny Bastani will demonstrate how to build cloud native apps and succeed in multi-cloud.
+A Retro App From Sydney
+
+
+
+
+
+Nicola Rushton, Product Designer, Sydney
+Ever had that moment in a retro where you’re stuck in a remote office, someone keeps typing over your cell in Google Sheets, and you keep losing track of the conversation when the AV cuts out?
+
+We know the 
+struggle.
+
+So we decided to do something about it while on the beach in Sydney and got to work on a retro app. In true Pivotal Labs style, we had a working product by the end of Week 1 that we used to run our own team retro. By Week 2, we had our first client team use the app and we continued gathering user feedback from a handful of Pivots. By Week 10, we (accidentally) unveiled Postfacto &lt;[[https://postfacto.io/?utm_source=internal&amp;utm_medium=email&amp;utm_campaign=pivotal-newsletter-sept]]&gt; to the entire company and have been overwhelmed by the amount of positive feedback. Almost 400 retros have been created within the last week!
+
+
+
+If you haven’t tried it already, Postfacto &lt;[[https://postfacto.io/?utm_source=internal&amp;utm_medium=email&amp;utm_campaign=pivotal-newsletter-sept]]&gt; allows you to create a retro board for your team or project. It has a built-in video conferencing, as well as three columns (happy/meh/sad) and space to create and keep track of action items. 
+
+
+
+At the start of the retro, everyone can add items using their phones. By selecting them on screen, a facilitator can highlight retro items for all participants and start the five-minute talk timer.
+
+
+
+Retros are an amazing way for a team to own their process and build trust, so removing barriers for teams with remote 
+members to get the full benefits out of their retro is something close to our hearts. 
+
+We’d love for you to check it out! Create a retro board to get started &lt;[[https://postfacto.io/?utm_source=internal&amp;utm_medium=email&amp;utm_campaign=pivotal-newsletter-sept]]&gt;
+
+If you give it a go and have any feedback, please reach out at postfacto@pivotal.io &lt;[[mailto:postfacto@pivotal.io]]&gt;. We’d love to hear from you! 
+
+– With love from the Sydney Beach Team 
+
+Bonus Tamarama – An excellent Sydney beach
+
+And a BIG thanks to the whole team, and to all the other Pivots in Sydney and 
+beyond who have offered their expertise, advice, feedback, and support on this. Keep it coming!
+James Nelson
+
+
+
+
+
+James Nelson, CISO
+At Pivotal I...
+Am our Chief Information Security Officer (CISO). I invite you to visit my team&apos;s page &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/information-security/customer-security]]&gt; on Inside Pivotal to learn more about us, what we do, and how we can help make you successful!
+You can find me...
+Typically in Palo Alto, right next to the rest of the InfoSec team, or in the San Francisco office.
+Currently, I am working on…
+Changing how we view security—I&apos;d like us to think of it as a core ingredient of our recipe for success, not just a topping.
+In my spare time…
+I enjoy traveling with my wife and our two teenaged kids, photography, and reading. Ask me for book recommendations. :-)
+Something you probably don’t know about me…
+I spent about nine years growing up in the Philippines and nearby countries, where my Mom flew medical mercy flights, and my Dad worked for the World Health Organization.
+James and family and a famous bridge
+
+Lens-ready James
+To me Pivotal…
+
+
+Already feels like home—I love working with such an energetic team!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM What&apos;s new in Spring Data.Confirmation</name>
+    <style>none</style>
+    <subject>Webinar Confirmation:  What&apos;s new in Spring Data</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar What&apos;s new in Spring Data on Tuesday, January 26, 2016. 
+
+Please see event details below:
+
+Date: Tuesday, January 26, 2016 
+Time: 3:00PM (London, GMT)
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1120587/A79B2BF0E3C7913C882A4A10C3F1D2A8]]&gt; 
+ Audio Information: 
+This webinar will be streaming live via your computer speakers. 
+{{my.My Token:default=Save the Date}} 
+
+We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

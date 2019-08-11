@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 10 - December 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - December 2015</subject>
+    <textOnly>2015 has been a big year for Pivotal Web Services; we expanded our Marketplace to include new services, we moved our runtime environment to the latest Diego environment (bringing with it SSH access) and lastly we 
+continue to have more and more developers hosting their mission critical applications on PWS. We close this year answering a commonly asked question about unexplained “crashes” and explore the latest release of the ‘cf’ CLI tool and the Roles Based Access Control. Lastly, we talk about our latest feature in development, TCP Routing, that is available for early access.
+ 
+Thank you for your continued interest in Pivotal Web Services and Pivotal Cloud Foundry, it’s your feedback and support that help us make the product better. While we have made a lot of progress, we know we have a lot more to do so stay tuned in 2016. Share what you want most from PWS in 2016 by tweeting to us at @pivotalws &lt;[[http://info.pivotal.io/i3oI0AUf04N00C000002J00]]&gt;. Here’s to a happy New Year.
+ 
+“Why Does My App Disappear according to my logs?”
+A frequent question that we get into support is to understand why an application has unexplainedly crashed or disappeared based on applications 
+performance monitoring instrumentation (NewRelic, AppDynamics, etc..). For all legitimate application crashes, there should be a record of the crash in `cf events` or in App Manager events. If you see a record of the event then your application has crashed for some reason. The most common reasons are exceeding the memory limit defined and application bugs. In either case, application logs should provide more details. If there is no record in ‘cf events’ and there is no record in applications manager then the application instance was most likely restarted as a part of a system management event.
+ 
+What are system management events? These are changes that occur as we maintain 
+and upgrade the platform. These can appear as application crashes because management events will terminate an applications for various reasons including application of a security patch to the base operating system, upgrade of the Cloud Foundry system and reallocation of applications among virtual machines. Cloud Foundry is designed to preserve availability of the application during these operations and will make efforts to spin up a new instance and establish route requests to the new instance before terminating the previous instance. However there is no guarantee of individual instance uptime so it is advised to maintain at least two instances of your application so that it will be deployed across multiple availability zones on PWS and thus retain at least one working instance even during system maintenance.
+ 
+For jobs with scheduled workloads, Cloud Foundry will notify applications of an upcoming management event by issuing a SIGTERM then followed eventually by a SIGKILL. PWS doesn&apos;t guarantee a specific amount of time between SIGTERM &amp; SIGKILL but at present we are allowing approximately 10 seconds between the two signals.. Applications can create check points as needed on the issuance of one of these events.
+ 
+To understand an app availability, it is best to include both internal and external monitoring. Because there are multiple instances of an application, we suggest that you track app availability as opposed to app instance reliability. External monitoring tools like Pingdom, AWS Cloudwatch and ThousandEyes etc.., can provide a good overview of when your application as a whole is available.
+ 
+Role Based Access Control (RBAC) for Org and Space Managers
+The latest release of the 
+‘cf’ CLI (6.14+) bring functionality that was limited to the App Manager web console in the past. It is now possible for Org Managers to assign org and space roles to users from the CLI. This can help if you are managing your users from scripts. Additionally, Space Managers can assign space roles to users in the same org, using the existing `cf set-org-role` and `cf set-space-role` (and equivalent ‘unset’) commands. This feature was previously only available to admin users and caused confusion for PWS users who tried to execute these commands in the past.
+ 
+Note that there are still CLI commands that are only exercisable by PWS wide admins. A full list can be found here &lt;[[http://info.pivotal.io/s01o0Nf00UA00I000020C0J]]&gt;, but these steps improve our CLI usability.
+ 
+Call for Feedback: TCP Routing
+We often hear 
+requests for handling additional ports beyond the standard Web Requests on ports 80, 443 and 4443 (for our WebSockets). The Cloud Foundry team has been working on supporting generalized TCP routing for your applications. This enables developers to reserve TCP ports for routing requests to your application. The team working on this feature is looking for early testers to evaluate and provide feedback. If you are interested in participating in the early access to TCP routing please contact Charles Wu &lt;[[http://info.pivotal.io/U01000J0NU0ICo02fA00020]]&gt;.
+ 
+Best Regards,
+The Pivotal 
+Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

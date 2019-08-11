@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case Resolution Customer Survey</name>
+    <style>none</style>
+    <subject>How did we do? - Case #{!Case.CaseNumber}</subject>
+    <textOnly>Pivotal Support Case Resolution &amp; Customer Satisfaction Survey
+
+How did we do? 
+https://www.surveymonkey.com/r/?sm=EjAQaRF_2BBY3EUUNrq5hEgUDMXoUiiNv7trDdMFhIvXcLRWdK0LKKkFB4K_2Bn3LQrK
+
+Your case {!Case.CaseNumber}: {!Case.Subject_Truncated__c} has been solved. To view the case details, select this link: {!Case.Link}.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

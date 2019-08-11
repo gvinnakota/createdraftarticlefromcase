@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SpringOne 2GX 2015.SpringOne 2GX InfoQ 9-14-15</name>
+    <style>none</style>
+    <subject>SpringOne 2GX 2015: Session Video Recordings -- Early Access for You!</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+We are filming all sessions and publishing them for registered attendees, and some sessions from the first day are already available - we&apos;ll be adding more everyday, to be completed within days of the conference.
+
+In order to watch the videos, go to http://www.infoq.com/conferences/springone2gx2015 &lt;http://www.infoq.com/conferences/springone2gx2014&gt; and choose the video you want to see:
+
+ - Login or register to InfoQ.com if you don&apos;t have an InfoQ account.
+ - Come back to the page above and enter your unique ID: {{lead.InfoQVideoCode:default=edit me}}
+
+If you receive multiple IDs it means you registered multiple individuals from your company using the same email address. Please make sure you distribute these unique IDs individually to the colleagues you registered. Each attendee unique ID will unlock QCon video early-access for your InfoQ account, just once -- these are single-use codes.
+
+Access to the session recordings means that you can see it all! Over the next 5-6 months, session recording videos will become freely available for non-SpringOne2GX 2014 attendees, but as an attendee, you&apos;ll have the entire content catalog by the end of this week!
+
+If you have any problems authenticating for the videos please contact conference-attendees@infoq.com &lt;mailto:conference-attendees@infoq.com&gt;. We hope you enjoy this offering and look forward to your feedback.
+
+Sincerely,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

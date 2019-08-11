@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>2018 Johnny customer email</name>
+    <style>freeForm</style>
+    <subject>Reflecting on Pivotal Support in 2018</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+2018 has been a year of significant change for Pivotal Support and our customers. In June, we migrated our suite of support tools to a new and powerful platform, providing more open, self-service resources via community.pivotal.io and our new homepage, pivotal.io/support. While these releases enabled new support capabilities, we had heard from several customers the changes also presented some new challenges. I want to apologize for these difficulties, and I am grateful to everyone that offered feedback upon which we were able to iterate, learn with you, and work together to continue to improve our platform.
+
+As the new year draws near, I would like to reaffirm that your Pivotal Support team is always here to help should you experience any issues with Pivotal products. I appreciate your desire to learn and succeed, and I thank you for your kindness throughout this year.
+
+You’ll be hearing much more from the Pivotal Support team in 2019, when we announce new changes designed to make your support experience even more personal and relevant. May you and yours have a happy and healthy New Year.
+
+
+Kind regards,
+Johnny Scarborough Jr.
+VP, Global Support | Pivotal</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

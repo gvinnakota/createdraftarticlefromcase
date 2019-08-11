@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Pivotal/EMA_Data Analytics in Cloud_Q216.Reminder 4-26-16</name>
+    <style>none</style>
+    <subject>Webinar Reminder for Analytics in the Cloud: Getting The Most Out Of Analytics Deployments</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+You are registered for today&apos;s webinar, Data Analytics in the Cloud with Lyndsay Wise, Research Director of Business Intelligence at EMA and Jeff Kelly, Technology Evangelist at Pivotal Software. 
+
+Please see event details below: 
+
+Date: Tuesday, April 26, 2016 
+Time: 11:00AM PDT (San Francisco, CA) 
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1157332/38CA12B21FFA6AE1002BBD37F1E16FAC]]&gt; 
+Audio Information: This webinar will be streaming live via your computer speakers. 
+
+ We look forward to you joining us! 
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

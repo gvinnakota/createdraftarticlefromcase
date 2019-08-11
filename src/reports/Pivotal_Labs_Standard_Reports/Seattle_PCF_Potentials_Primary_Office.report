@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_90321872</developerName>
+        <masterLabel>Product Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>PRODUCT_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Pivotal Labs - Enterprise</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pivotal Labs Enterprise - PSO</sourceValue>
+            </sourceValues>
+            <value>Pivotal Labs - Enterprise</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Pivotal Labs - Startup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pivotal Labs Startup - PSO</sourceValue>
+            </sourceValues>
+            <value>Pivotal Labs - Startup</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.Pivotal_Labs_Delivery_Office__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Is_ISR__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Client_Liaison__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_90321872</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE</field>
+    </columns>
+    <columns>
+        <field>AGE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast__c</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <booleanFilter>(1 OR 2 OR 3) AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>ACCOUNT_ID</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>001U000000nePph,001U000000n2x2u,001U000000n2x3B,001U000000aRGlx,001U000000orGqx,001U000000roVQI,001U000000zKGZL,001U000000zNn7P,001U000000ncfrY,001U000000lG3p8,001U000000roVE9,001U000000snD8H,001U000000qW1yH,001U000000yamdC,001U000000zKne6,001U000000roVOW,001U000000zNpZk,001U000000xj18m,001U000000n2x2Q,001U000000ukHW8,001U000001L4Cax,001U000000aRRiG,001U000000aRabF,001U000000zLxya,001U000000osfVg,001U000000nfyhP,001U000000nfzY3,001U000000n2x2n,001U000000ydudg,001U000000roUqm,001U000000osgxT,001U000000n4URH,001U000000n2x2a,001U000000n4O7L,001U0000010MDWt,001U000000wp8tK,001U000000r89d9,001U000000n4Sq1,001U000000n2x2U,001U000000wODhr,001U000000n2x2w,001U000000n2x2z,001U000000aRGj9,001U000000n2x30,001U000000aRRWn,001U000000aRaHm,001U000000wp91O,001U000000aRHUg,001U000000aRcVv,001U000000aRSFn,001U000000aRa3X,001U000000lG3rv,001U000000aRcSh,001U000000xiNOD,001U000000lG3qw,001U000000aRHc9,001U000000lG3vk,001U000000n2x2N,001U000000aRSGz,001U000000aRcrQ</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_ID</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>001U000000aRS0s,001U000000aRHcf,001U000000aRQLz,001U000000aRZDa,001U000000o2oAt,001U000000lG3q2,001U000000aRREs,001U000000aRQpZ,001U000000aRQYW</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Region__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Pacific Southwest</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Pivotal_Labs_Delivery_Office__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Seattle</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OpportunityLineItem.Product_Portfolio__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Pivotal CF</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Seattle PCF Potentials (Primary Office)</name>
+    <params>
+        <name>open</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

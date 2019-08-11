@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_JAX Germany_Q217.Post Event Email - JAX</name>
+    <style>none</style>
+    <subject>Thanks for attending JAX Germany 2017</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Thanks for joining Pivotal at JAX Germany  &lt;[[https://jax.de/]]&gt;2017. We hope you learned something new about how enterprises are adopting cloud-native application architectures to drive modern, software experiences for their customers. If you’d like to talk to us about arranging a hands-on workshop day in your offices or at a nearby hotel, simply inquire here &lt;[[https://pivotal.io/cloud-native-workshop]]&gt; to begin a discussion.
+
+In the meantime, if you are looking for spare capacity for CI builds, temporary development or test environments, check out Pivotal Web Services &lt;[[http://run.pivotal.io/]]&gt;, a great public cloud for running microservices Spring Framework (and .NET) on Cloud Foundry! Don’t forget to check out the free eBooks &lt;[[https://content.pivotal.io/ebooks]]&gt; we have for you on Cloud Native applications, microservices, and much more.
+
+In case you missed any of the conference talks, here’s a quick recap:
+
+
+
+ - Cloud-native Java &lt;[[https://jax.de/session/montag-08-05-2017-cloud-native-java-the-workshop/]]&gt; (the Workshop) with Josh Long, Pivotal
+ - Cloud-native Java &lt;[[https://jax.de/session/cloud-native-java/]]&gt; - Josh Long, Pivotal
+ - Spring Framework 5 Themes and Trends &lt;[[https://jax.de/session/from-zero-to-hero-with-spring-boot/]]&gt;, Stéphane Nicoll, Pivotal
+ - Sneak Peek on Spring Data &quot;Kay&quot; &lt;[[https://jax.de/session/sneak-peek-on-spring-data-kay/]]&gt; Christoph Strobl, Pivotal
+ - Next Level Spring Boot Tooling &lt;[[https://jax.de/session/next-level-spring-boot-tooling/]]&gt;, Martin Lippert, Pivotal
+
+
+
+
+And quite a lot of cool talks from the community on Spring as well!
+
+
+
+ - Reactive Spring &lt;[[https://jax.de/session/montag-08-05-2017-reactive-spring/]]&gt; - Michael Plod, InnoQ Germany GmbH
+ - Microservices Workshop: Architecture and Technology &lt;[[https://jax.de/session/montag-08-05-2017-microservices-workshop-architektur-und-technik/]]&gt; - Eberhard Wolff, innoQ Germany GmbH
+ - Microservices with Spring Boot, Angular 2 and Docker &lt;[[https://jax.de/session/microservices-mit-spring-boot-angular-2-und-docker/]]&gt; - Kai Tödter , Siemens AG
+ - Spring Cloud DataFlow: Event-driven Stream and Batch Processing &lt;[[https://jax.de/session/spring-cloud-data-flow-event-driven-stream-batch-processing/]]&gt; - Nicolas Byl, codecentric
+ - The meaning and benefit of RESTful Hypermedia APIs &lt;[[https://jax.de/session/sinn-und-nutzen-von-restful-hypermedia-apis/]]&gt; - Kai Tödter, Siemens AG
+ - Workshop: Cool web apps with Spring Boot, Angular 2 and TypeScript &lt;[[https://jax.de/session/freitag-12-05-2017-coole-web-apps-mit-spring-boot-angular-2-und-typescript/]]&gt; - Kai Tödter, Siemens AG
+ - Safe in the cloud with Angular 2 and Spring Boot &lt;[[https://jax.de/session/sicher-in-die-cloud-mit-angular-2-und-spring-boot/]]&gt; - Andreas Falk, NovaTec Consulting GmbH
+ - Spring Batch Performance Monitoring &lt;[[https://jax.de/session/spring-batch-performance-monitoring-wir-bringen-licht-in-die-dunkelverarbeitung/]]&gt; - We bring light into the dark processing - Christian Nockemann, viadee IT company consulting
+ - Microservices with Spring Cloud and Spring Boot &lt;[[https://jax.de/session/microservices-mit-spring-cloud-und-spring-boot/]]&gt; - Eberhard Wolff, innoQ Germany GmbH
+
+
+
+
+Hungry for the latest from Pivotal?
+
+Here are some content highlights from the Spring and Cloud Foundry content feeds:
+
+
+
+ - Pivotal Blog: Public cloud Beta of Spring Cloud Services and Container Networking live &lt;[[https://content.pivotal.io/blog/building-spring-microservices-with-cloud-foundrys-new-container-networking-stack]]&gt;
+ - Spring Blog: Notes on Reactive Programming Part I: The Reactive Landscape &lt;[[https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape]]&gt;
+ - Spring Blog: Reactive Programming with Spring Framework 5.0 M1 &lt;[[https://spring.io/blog/2016/07/28/reactive-programming-with-spring-5-0-m1]]&gt;
+ - Spring Blog: Coming to Spring Framework 5.0: Functional Web Framework &lt;[[https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework]]&gt;
+ - Pivotal Blog: What is Spring Cloud Data Flow? &lt;[[https://content.pivotal.io/blog/announcing-spring-cloud-data-flow-1-1-cloud-native-architecture-for-enterprise-data]]&gt;
+ - Pivotal blog: Now Available—Spring Cloud Services for Pivotal Cloud Foundry &lt;[[http://blog.pivotal.io/pivotal-cloud-foundry/products/now-available-spring-cloud-services-for-pivotal-cloud-foundry?utm_source=InfoQ-sponsored-post-newsltr&amp;utm_medium=sponsored-update&amp;utm_campaign=infoq-spring-cloud-services-blog]]&gt;
+ - SpringOne Platform 2016 talk: Cloud-Native Java &lt;[[https://spring.io/blog/2016/09/12/springone-platform-2016-replay-cloud-native-java]]&gt;
+ - SpringOne Platform 2016 talk:  The Journey From Monolith to Microservices: A Guided Adventure &lt;[[https://www.youtube.com/watch?v=Tx5h3hdvjfw]]&gt;
+ - SpringOne Platform 2016 talk: 12 Factor, or Cloud-Native Apps: What EXACTLY Does that Mean for Spring Developers? &lt;[[https://spring.io/blog/2016/09/12/springone-platform-2016-replay-12-factor-or-cloud-native-apps-what-exactly-does-that-mean-for-spring-developers]]&gt;  
+
+
+
+ &lt;[[https://content.pivotal.io/blog/building-spring-microservices-with-cloud-foundrys-new-container-networking-stack]]&gt;
+ &lt;[[https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape]]&gt;
+ &lt;[[https://spring.io/blog/2016/07/28/reactive-programming-with-spring-5-0-m1]]&gt;
+ &lt;[[https://spring.io/blog/2016/09/22/new-in-spring-5-functional-web-framework]]&gt;
+ &lt;[[https://content.pivotal.io/blog/announcing-spring-cloud-data-flow-1-1-cloud-native-architecture-for-enterprise-data]]&gt;
+ &lt;[[http://blog.pivotal.io/pivotal-cloud-foundry/products/now-available-spring-cloud-services-for-pivotal-cloud-foundry?utm_source=InfoQ-sponsored-post-newsltr&amp;utm_medium=sponsored-update&amp;utm_campaign=infoq-spring-cloud-services-blog]]&gt;
+ &lt;[[https://spring.io/blog/2016/09/12/springone-platform-2016-replay-cloud-native-java]]&gt;
+ &lt;[[https://www.youtube.com/watch?v=Tx5h3hdvjfw]]&gt;
+
+ 
+We hope to see you again soon at the Pivotal &amp; Google Cloud Native Roadshow &lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow]]&gt; in Munich &lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow/munich]]&gt; and Stuttgart &lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow/stuttgart]]&gt;! 
+
+ 
+Kind regards, 
+Ines Schuller
+Account Executive Pivotal 
+ischuller@pivotal.io</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

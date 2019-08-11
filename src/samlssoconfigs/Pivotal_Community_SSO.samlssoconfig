@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <errorUrl>https://pivotal.my.salesforce.com/apex/AuthenticationError</errorUrl>
+    <executionUserId>0050P000007ZR4l</executionUserId>
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>login.run.pivotal.io</issuer>
+    <loginUrl>https://login.run.pivotal.io/saml/idp/SSO/alias/login.run.pivotal.io</loginUrl>
+    <name>Pivotal Community</name>
+    <oauthTokenEndpoint>https://pivotal--DEV.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>true</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P10P0000008imn</requestSigningCertId>
+    <salesforceLoginUrl>https://pivotal--DEV.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://pivotal.my.salesforce.com</samlEntityId>
+    <samlJitHandlerId>01p0P0000028z4d</samlJitHandlerId>
+    <samlVersion>SAML2_0</samlVersion>
+    <singleLogoutBinding>RedirectBinding</singleLogoutBinding>
+    <singleLogoutUrl>https://login.run.pivotal.io/logout.do?redirect=http://pvtl.force.com&amp;client_id=salescloud-app</singleLogoutUrl>
+    <userProvisioning>true</userProvisioning>
+    <validationCert>MIIDaDCCAlACCQDFsMECzdtetjANBgkqhkiG9w0BAQUFADB2MQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzEfMB0GA1UECgwWUGl2b3RhbCBTb2Z0d2FyZSwgSW5jLjEZMBcGA1UEAwwQKi5ydW4ucGl2b3RhbC5pbzAeFw0xNTA5MDIyMzIwMDlaFw0xODA5MDEyMzIwMDlaMHYxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMR8wHQYDVQQKDBZQaXZvdGFsIFNvZnR3YXJlLCBJbmMuMRkwFwYDVQQDDBAqLnJ1bi5waXZvdGFsLmlvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyz8COS7PJbmziNx1H2tpwSuDSX5ThqasDk/7LZ9FG8s/Zu8IqGQvswoGYx3CWgSaNbVA+Oj9zo7awoaoCLCVfU82O3RxH/gNRJQLwBVlgVys5n9UQ2xmTRMOcCTpR5d/zW4jCBgL4q2hjntgDbQNnQKJExgtCGZJOQOFzsW3iG5NPfcAj+FPseVfD96I2OG3uxFPmO2Ov/EE7Hid6lETdNkXXEB2SxIebNgr03Djl6rFXTTdBXhi9gb+EQSZfbETsOHIDYIMLj0SpJvRcbA+7M4/Vynoxlv+/kICqFjjNATfOrqz7xoU/VlMn1Z3op3cW8GH3iNHvGfIO7sdy2G0gQIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQCq3PQDcIsscIS1Dq++d1dD4vkGt+8IzYz+ijOLECyXsSm7+b4L+CVinFZ9eF99PLlvvJZ8+zA7NfM1wRpjpdKp0xLTss8yBDHcZkgwvDrH8aTwUtq8gO67wY3JuWBxjTsnoAPbH8zInkHeolCUSobPxAx9XHqbAxfua8HJjDihi+cJYEb5lPSpvY5ytcPG9JAXAHQ6aalpJjkyB+eaGRYi8s5Ejr3luI3nzJEzfUj5y0fcFTv9CtDt9VfblSuHdRw4uFwat5e1Fb7LtEjATi4cKaG1+zZ80QyuChfC08for83TeQgjq7TA10FAkKe5nrXyHOORz+ttXkYkp5uEBhpZ</validationCert>
+</SamlSsoConfig>

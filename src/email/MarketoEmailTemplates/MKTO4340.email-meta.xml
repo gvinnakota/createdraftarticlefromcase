@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Lean+Leaders_General_2017.Confirmation</name>
+    <style>none</style>
+    <subject>Thank you</subject>
+    <textOnly>Hi {{lead.First Name:default=there}}, 
+
+Thank you for registering to win a Full-Day Leader’s Guide To Adopting Lean Startup at Scale Workshop!  
+ 
+If you win, you will receive notification of date and location details for your selected city by November 25, 2016.
+
+ If you have any questions or if you are interested in learning more about bringing The Leader’s Guide to your company, please contact us via leadersguide@pivotal.io &lt;[[mailto:leadersguide@pivotal.io]]&gt;.
+ 
+We hope to see you soon!
+
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

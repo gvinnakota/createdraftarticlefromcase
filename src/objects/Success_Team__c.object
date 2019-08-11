@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>SuccessSupportTeamLayout</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Support Success Teams</relationshipLabel>
+        <relationshipName>Success_Teams</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_User_Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>User__r.IsActive  = True</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is User Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <description>Choose "Case Notification" to be notified when a Case is created for this Account. 
+Choose "Case Team" to be emailed updates for all open Cases under this Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose "Case Notification" to be notified when a Case is created for this Account. 
+Choose "Case Team" to be emailed updates for all open Cases under this Account.</inlineHelpText>
+        <label>Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Case Notification</fullName>
+                    <default>false</default>
+                    <label>New Case Notification</label>
+                </value>
+                <value>
+                    <fullName>New Case Notification &amp; Case Team</fullName>
+                    <default>false</default>
+                    <label>New Case Notification &amp; Case Team</label>
+                </value>
+                <value>
+                    <fullName>Case Notification</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Case Notification</label>
+                </value>
+                <value>
+                    <fullName>Case Notification &amp; Case Team</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Case Notification &amp; Case Team</label>
+                </value>
+                <value>
+                    <fullName>Case Team</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Case Team</label>
+                </value>
+                <value>
+                    <fullName>New Case Team</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>New Case Team</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Unique_Member_Key__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__c + '#' + '#' +  User__c</formula>
+        <label>Unique Member Key</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Team Member</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>Only Standard and Customer Portal User can be on a Success Team</errorMessage>
+            <filterItems>
+                <field>User.UserType</field>
+                <operation>equals</operation>
+                <value>Standard</value>
+            </filterItems>
+            <filterItems>
+                <field>User.UserType</field>
+                <operation>equals</operation>
+                <value>Customer Portal User, Customer Portal Manager</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Success_Teams</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Customer Success Role for Strategic Accounts to trigger automation of Case Notifications or adding tot the Case Team.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Support Success Team</label>
+    <nameField>
+        <displayFormat>ST{000000}</displayFormat>
+        <label>Success Team Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Support Success Teams</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>User__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Role__c</customTabListAdditionalFields>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>User__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Role__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Role__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All_Support_Success_Teams</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Role__c</columns>
+        <columns>User__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Support Success Teams</label>
+    </listViews>
+    <validationRules>
+        <fullName>Account_Related_Contacts</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( User__r.Contact.AccountId  &lt;&gt;  Account__r.Id, User__r.Profile.Name = 'Pivotal - Community Registered User')</errorConditionFormula>
+        <errorMessage>Non Account related community users can not be added to success team!!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SP_Qualified</fullName>
+        <active>true</active>
+        <errorConditionFormula>User__r.EHSP_Qualified__c = false &amp;&amp; text(Account__r.Special_Handling__c) = 'SP - Special Practices'</errorConditionFormula>
+        <errorMessage>This Standard User is not SP Qualified</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pivotal Support Customer Satisfaction Survey</title>
+<style>
+p {
+    font-family: "Arial, Helvetica, sans-serif", Arial, sans-serif;
+	font-size:14px;
+    line-height:100%;
+}
+</style></head>
+<body>
+<p>Heads up: you have one day left to meet SLO and respond to critical feedback on a case owned by {!Pivotal_Survey_Feedback__c.Case_Owner_Feedback__c}. Please take these steps to follow-up today:</p>
+<ol style="font-family: "Arial, Helvetica, sans-serif";><li><p>View CES feedback rating and comments, if any: <br>*Score: {!Pivotal_Survey_Feedback__c.CES_Survey_Score__c} <br> Feedback: {!Pivotal_Survey_Feedback__c.CES_Constructive_Feedback__c}</p></li>
+<li><p>View case history: {!Pivotal_Survey_Feedback__c.CaseURL_Feedback__c}</p></li>
+<li><p>Follow-up with employee and/or customer and record your actions in the <a href="https://survey.clicktools.com/app/survey/go.jsp?iv=rernlapx0f5v&q11={!Pivotal_Survey_Feedback__c.Id}"  target="_blank">manager feedback form</a></p></ol>
+<p>Please direct any questions to <a href="mailto:support-enablement@pivotal.io" target="_blank">support-enablement@pivotal.io</a>, thank you!</p>
+<p style="font-size:11px">*1. Disagree, 2. Somewhat disagree, 3. Neither agree nor disagree</p>
+</body></html>

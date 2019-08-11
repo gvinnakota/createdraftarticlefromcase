@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.Newsletter April 2014 NORAM</name>
+    <style>none</style>
+    <subject>Spring Boot 1.0.0 GA turns over a new leaf for Spring</subject>
+    <textOnly>APRIL 2014
+&lt;http://spring.io/blog/2014/04/01/spring-boot-1-0-ga-released&gt;
+Spring Boot GA turns over new leaf for Spring
+Find out why Spring Boot is turning heads &lt;http://www.infoq.com/news/2014/04/spring-boot-goes-ga&gt; all over Java – fast. Having trouble believing that a Java app could fit in a tweet? See for yourself:
+
+@Controller &lt;https://twitter.com/controller&gt; class 
+
+ThisWillActuallyRun { 
+
+@RequestMapping(&quot;/&quot;) 
+
+@ResponseBody &lt;https://twitter.com/responsebody&gt; 
+
+String home() {
+
+&quot;Hello World!&quot; 
+
+ }
+
+}
+
+
+
+@RestController
+
+class ThisToo {
+
+ @RequestMapping(&quot;/&quot;)
+
+ String home() {
+
+ &quot;Hello!&quot;
+
+ }
+
+}
+
+
+
+
+
+Could Java be as easy as developing with Play and Rails while addressing the needs of enterprise Java? Read about Erdem Gunay, who re-wrote his existing Spring 3.x mobile backend into Spring Framework 4.0/Boot in one week for the win on the project &lt;http://egunaytech.tumblr.com/post/79957584772/porting-legacy-java-backend-to-spring-boot-in-one-week&gt;! Erden’s experience makes it clear: using Spring Boot can be habit forming.
+Learn More &lt;http://spring.io/blog/2014/04/01/spring-boot-1-0-ga-released&gt;
+Contributing Your Own Spring Boot Auto Configuration
+Spring Boot 1.0 is now available! This is good news because Spring Boot provides common-sense defaults for a large range of applications which means that you can get up and running all that much quicker. It&apos;s sort of like being able to call an expert on the Spring team and have him or her handle the configuration for you! But, what about when there&apos;s a use case that (gasp!) Spring Boot doesn&apos;t handle (yet)? Easy! Write your own and never worry about it again. In this tip, we&apos;ll demystify Spring Boot&apos;s autoconfiguration mechanism, which is basically just plain old Java configuration. 
+
+To better understand, let&apos;s look at an existing class, Spring Boot&apos;s
+
+Spring Boot&apos;s MongoAutoConfiguration class &lt;https://github.com/spring-projects/spring-boot/blob/master/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/mongo/MongoAutoConfiguration.java&gt;, which installs a default Mongo database if the com.mongodb.Mongo type is on the CLASSPATH.
+
+``` // imports ...
+
+@Configuration @ConditionalOnClass(Mongo.class) @EnableConfigurationProperties(MongoProperties.class) public class MongoAutoConfiguration {
+@Autowired
+private MongoProperties properties;
+private Mongo mongo;
+@PreDestroy
+public void close() throws UnknownHostException {
+ if (this.mongo != null) {
+ this.mongo.close();
+ }
+}
+@Bean
+@ConditionalOnMissingBean
+public Mongo mongo() throws UnknownHostException {
+ this.mongo = this.properties.createMongoClient();
+ return this.mongo;
+}
+
+} ```
+
+The @Configuration annotation signals that this class is a regular Spring Java configuration class and contains bean definitions. There&apos;s one bean here, Mongo mongo(). The @ConditionalOnMissingBean annotation is a Boot-specific stereotype of Spring 4&apos;s @Conditional annotation that tells Spring to only define this bean if there is no other bean of the same type defined elsewhere in the Spring context. The whole configuration class is guarded with such an annotation, @ConditionalOnClass(Mongo.class), which tests whether the Mongo type is on the CLASSPATH and - if so - activates the configuration class.
+
+The @EnableConfigurationProperties annotation tells Spring Boot to map values in the Environment (usually sourced from application.properties or application.yml) to the MongoProperties POJO&apos;s properties using JavaBean-style mapping. That mapped POJO is injected inside the configuration class and used - ultimately - to configure the Mongo instance.
+
+The last piece of the puzzle is the discovery of this auto configuration class. Spring Boot discovers auto configuration classes on startup by looking for all resources named spring.factories in the META-INF folders of all .jars on the CLASSPATH. In any given spring.factories &lt;https://github.com/spring-projects/spring-boot/blob/master/spring-boot-autoconfigure/src/main/resources/META-INF/spring.factories&gt; file is a line, like this:
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=... 
+
+Replace ... with a comma-separated list of fully qualified names of configuration classes, e.g: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration, etc. That&apos;s it! Spring Boot will pick up this file and the class if they&apos;re on the CLASSPATH and activate the configuration class assuming the @Conditional* guards evaluate to true. Now you can easily auto configure organizational libraries or third party libraries.
+Working with Spring Boot projects in STS made easy - part 1
+Running a Spring Boot project is easy and startup times are low. But restarting a Spring Boot application in STS or Eclipse (after you changed something, for example) could become a bit cumbersome. First you have to find the right console view and stop the running application there. Then you have to go back to the launch area, find the right launcher, and start your application again. But this got a lot easier now in the latest versions of the Spring Tool Suite. We added stop and restart buttons right to the toolbar, from where you can restart your running Spring Boot application (or any other application that is running) with just a single click. Sounds trivial? It is indeed. And you will love it.
+Web Application Diagnostics with Java and JavaScript
+Speakers: Josh Long (Pivotal) and Ashley Puls (New Relic)
+
+There is more and more usage of JavaScript on the client side today. Many are starting down the difficult path of full blown application development in JS on the client side, going beyond having a simple rollover menu logic or presentation component—but tracking and tracing effectively means looking at the whole application, not just the front end. New Relic can be used either in development or production to diagnose hybrid JavaScript/Java applications.
+
+In this session, Josh Long (Pivotal) and Ashley Puls (New Relic) will show how you can track and trace your way through today&apos;s hybrid JavaScript+Java web apps - resolving slow page loads, blocked threads, slow queries, etc.
+Europe
+Wednesday, April 30, 2014
+3:00pm BST Time
+(London, UTC+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_WebAppdiagnosticswJavaJavascript7AM_Register.html&gt;
+North America
+Wednesday, April 30, 2014
+10:00am PDT
+(San Francisco, UTC-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_WebAppdiagnosticswJavaJavascript10AM_Register.html&gt;
+Spring Integration 4.0 - The New Frontier
+The Spring Integration team has been hard at work on the latest release of the popular integration framework. Before version 4.0, it was impractical to define a complete Spring Integration flow without using XML. With this major release, the existing basic annotation support has received an overhaul and those who prefer to use java @Configuration classes can now define their applications without needing to use any XML (of course, XML is still supported as well).
+
+In this session we will cover these major changes to the framework, explaining how and when to use them. It will be mainly demonstration and code walk through, and we will build a useful Spring Boot / Integration application from scratch.
+
+ 
+
+More Webinars:
+
+Data-Driven Applications with Spring and Neo4j - Tuesday, May 20, 2014
+Speakers: Josh Long (Pivotal) &amp; Michael Hunger (Neo Technology)
+Spring Data Neo4j 3.0 is here and it supports Neo4j 2.0. Neo4j is a tiny graph database with a big punch. Graph databases are imminently suited to asking interesting questions, and doing analysis. Want to load the Facebook friend graph? Build a recommendation engine? Neo4j&apos;s just the ticket. Join Spring Data Neo4j lead Michael Hunger (@mesirii) and Spring Developer Advocate Josh Long (@starbuxman) for a look at how to build smart, graph-driven applications with Spring Data Neo4j and Spring Boot.
+
+3pm Europe Register Here &lt;http://play.gopivotal.com/OSS_Webinar_Neo4JTechnology7AM_Register.html&gt;
+10am North America Register Here &lt;http://play.gopivotal.com/OSS_Webinar_Neo4JTechnology10AM_Register.html&gt;
+Europe
+Tuesday, May 13, 2014
+3:00pm BST Time
+(London, UTC+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringIntegration4.0TheNewFrontier7AM_Register.html&gt;
+North America
+Tuesday, May 13, 2014
+ 10:00 PDT
+ (San Francisco, UTC-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringIntegration4.0TheNewFrontier10AM_Register.html&gt;
+Building Bootiful Applications with Spring Boot &lt;http://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;
+This talk will illustrate basic Spring Framework 4.0 concepts, and selected Java 8 features within Spring&apos;s programming model, exploring the impact on application architectures.
+Watch Video &lt;http://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;
+Spring videos
+ Webinar replay: Spring Framework 4.0 on Java 8 &lt;http://spring.io/blog/2014/03/26/webinar-replay-spring-framework-4-0-on-java-8&gt;
+ Webinar replay: Spring LDAP 2.0 &lt;http://spring.io/blog/2014/03/26/webinar-replay-spring-ldap-2-0-0&gt;
+
+Archived videos
+ SpringOne2GX 2013 replay: Hadoop – Just the Basics for Big Data Rookies &lt;http://spring.io/blog/2014/03/31/springone2gx-2013-replay-hadoop-just-the-basics-for-big-data-rookies&gt;
+ SpringOne2GX 2013 replay: Real Time Analytics with Spring &lt;http://spring.io/blog/2014/03/31/springone2gx-2013-replay-real-time-analytics-with-spring&gt;
+ SpringOne2GX 2013 Replay: In-memory data and compute on top of Hadoop &lt;http://spring.io/blog/2014/04/15/springone2gx-2013-replay-in-memory-data-and-compute-on-top-of-hadoop&gt;
+ SpringOne2GX 2013 Replay: Getting started with Spring Data and Apache Hadoop &lt;http://spring.io/blog/2014/04/15/springone2gx-2013-replay-getting-started-with-spring-data-and-apache-hadoop&gt;
+ 
+SpringOne2GX 2013 replay: Multi Environment Spring 
+Applications
+ SpringOne2GX 2013 replay: Building Smart Clients with Spring &lt;http://spring.io/blog/2014/03/18/springone2gx-2013-replay-building-smart-clients-with-spring&gt;
+ SpringOne2GX 2013 replay: AOP-ing your JavaScript &lt;http://spring.io/blog/2014/03/25/springone2gx-2013-replay-aop-ing-your-javascript&gt;
+ SpringOne2GX 2013 replay: 
+Tips and Tricks for Client Side Performance
+
+Featured Guide:
+ Application Development with Spring Boot and Javascript &lt;http://spring.io/guides/gs/spring-boot-cli-and-js/&gt;
+
+Whatever you&apos;re building -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team. 
+
+http://spring.io/guides &lt;http://spring.io/guides&gt;
+
+If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor&apos;s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Batch 2.2.6.RELEASE &lt;http://spring.io/blog/2014/04/11/spring-batch-2-2-6-release-is-now-available&gt;
+ Spring Boot 1.0.1.RELEASE &lt;http://spring.io/blog/2014/04/07/spring-boot-1-0-1-release-available-now&gt;
+ Spring Data Gemfire 1.3.4 &lt;http://projects.spring.io/spring-data-gemfire/&gt;
+ Spring Shell 1.1 RC1 &lt;http://spring.io/blog/2014/04/03/spring-shell-1-1-rc1-released&gt;
+ Spring for Apache Hadoop 2.0 RC2 &lt;http://spring.io/blog/2014/04/02/spring-for-apache-hadoop-2-0-rc2-released&gt;
+ Spring Web Flow 2.4 RC1 &lt;http://spring.io/blog/2014/04/02/spring-web-flow-2-4-rc1-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.5.0 &lt;http://spring.io/blog/2014/04/02/spring-tool-suite-and-groovy-grails-tool-suite-3-5-0-released&gt;
+ Spring Data Redis 1.2.1 &lt;http://spring.io/blog/2014/03/27/spring-data-redis-1-2-1-released&gt;
+ Spring Integration 3.0.2 and 4.0 Milestone 4 &lt;http://spring.io/blog/2014/03/31/spring-integration-3-0-2-and-4-0-milestone-4-released&gt;
+ File Milestone of Spring Data Release Train Dijkstra &lt;http://spring.io/blog/2014/04/01/first-milestone-of-spring-data-release-train-dijkstra-available&gt;
+ Spring AMQP 1.3 &lt;http://spring.io/blog/2014/03/28/spring-amqp-1-3-released&gt;
+ Spring Framework 4.0.3 with Java 8 support now production-ready &lt;http://spring.io/blog/2014/03/27/spring-framework-4-0-3-released-with-java-8-support-now-production-ready&gt;
+ Spring Security 3.2.3 &lt;http://spring.io/blog/2014/03/26/spring-security-3-2-3-released&gt;
+ First service release for Spring Data release train /Codd released &lt;http://spring.io/blog/2014/03/13/first-service-release-for-spring-data-release-train-codd-released&gt;
+ Spring Data Couchbase 1.0 GA &lt;http://spring.io/blog/2014/03/13/spring-data-couchbase-1-0-ga-released&gt;
+Java 8 in Enterprise Projects &lt;http://spring.io/blog/2014/03/21/java-8-in-enterprise-projects&gt;
+ Project Sagan: open-sourcing spring.io &lt;http://spring.io/blog/2014/03/27/project-sagan-open-sourcing-spring-io&gt;
+ Project Sagan: zero-downtime deployments &lt;http://spring.io/blog/2014/04/04/project-sagan-zero-downtime-deployments&gt;
+ CASE STUDY: EMC Q&amp;A Part 1: Reduced Costs, 10-200x Performance Improvements with Pivotal GemFire 
+&amp; SQLFire
+ CASE STUDY: EMC 
+Q&amp;A Part 2: How Spring and tc Server Reduce Costs and Improve Productivity
+ Cucumber-JVM-Spring-MVC-Test-HTMLUNIT-Demo &lt;http://github.com/excellentdrums/Cucumber-JVM-Spring-MVC-Test-HTMLUnit-Demo&gt;
+ Spring.IO site: Comments are back!  &lt;http://spring.io/blog/2014/04/01/comments-are-back&gt;
+ Spring MVC Test with HtmlUnit &lt;http://spring.io/blog/2014/03/25/spring-mvc-test-with-htmlunit&gt;
+ JavaScript modularity (without the buzzwords) &lt;http://spring.io/blog/2014/04/11/javascript-modularity-without-the-buzzwords&gt;
+ Spring MVC Test with WebDriver &lt;http://spring.io/blog/2014/03/26/spring-mvc-test-with-webdriver&gt;
+ Introducing Spring test MVC HtmlUnit &lt;http://spring.io/blog/2014/03/19/introducing-spring-test-mvc-htmlunit&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

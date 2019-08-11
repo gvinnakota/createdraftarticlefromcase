@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Pivotal Support Update.PCF End of Support Notification 12-7-16</name>
+    <style>none</style>
+    <subject>Notice of End of General Support for Pivotal Cloud Foundry releases 1.6 and 1.7</subject>
+    <textOnly>December 7, 2016
+
+
+
+All Pivotal customers still running PCF installations which include Operations Manager 1.6, 1.7 and Elastic Runtime 1.6, 1.7 are affected. If you have already upgraded to Ops Manager 1.8 and Elastic Runtime 1.8 or later, you may disregard this reminder.
+Per the Pivotal Support Lifecycle Policy &lt;[[https://pivotal.io/support/lifecycle_policy]]&gt; [1], End of General Support is approaching in April 2017 for Operations Manager 1.6, 1.7 and Elastic Runtime 1.6, 1.7. Pivotal encourages all customers still running on these releases to start planning their upgrades now.
+If you are still running Elastic Runtime 1.6 either entirely or partially on the legacy DEA runtime, additional planning is recommended in order to migrate apps to Diego from DEAs before you upgrade to Elastic Runtime 1.7, which no longer includes the DEA runtime. Please refer to Diego Migration documentation &lt;[[https://docs.pivotal.io/pivotalcf/1-6/adminguide/apps-enable-diego.html]]&gt; in the Administration Guide [2] for further detail and guidance.  Also see the Product Compatibility Matrix &lt;[[https://docs.pivotal.io/resources/product-compatibility-matrix.pdf]]&gt; for a reference of validated upgrade paths [3].
+As of March 1, 2017, new issues identified in Elastic Runtime 1.6 that require patches will be applied to Diego. Customers with workloads on the legacy DEAs will be requested to migrate to Diego to resolve issues.
+If you have questions, please reach out to Pivotal Support &lt;[[https://support.pivotal.io/]]&gt; [4].
+Thank you,
+The Pivotal Cloud Foundry team
+[1] https://pivotal.io/support/lifecycle_policy
+[2] https://docs.pivotal.io/pivotalcf/1-6/adminguide/apps-enable-diego.html
+[3] https://docs.pivotal.io/resources/product-compatibility-matrix.pdf
+[4] https://support.pivotal.io/ &lt;[[https://support.pivotal.io/]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

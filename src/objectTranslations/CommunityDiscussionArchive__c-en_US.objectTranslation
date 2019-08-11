@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Archive Date/Time --></label>
+        <name>Archive_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Archive Reason --></label>
+        <name>Archive_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Denied Party Restriction</masterLabel>
+            <translation><!-- Denied Party Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deprecated Content</masterLabel>
+            <translation><!-- Deprecated Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired Product</masterLabel>
+            <translation><!-- Retired Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Content Created By --></label>
+        <name>Content_Created_By__c</name>
+        <relationshipLabel><!-- Community Discussion Archives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Content Created Date --></label>
+        <name>Content_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feed Title --></label>
+        <name>FeedTitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feed Content --></label>
+        <name>Feed_Content__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Community Discussion Archive</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Community Discussion Archives</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Archived Community Question Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discussion Detail --></label>
+            <section>Discussion Detail</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_The Insiders Guide to Mobile Apps_Q414.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: The Insider&apos;s Guide to Mobile Apps 1/7</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for our upcoming webinar &quot;The Insider&apos;s Guide to Mobile Apps&quot; on Wednesday, January, 2015 at 10:00 AM PST. Please see the event details below:
+
+Date: Wednesday, January 7, 2015
+Time: 10:00AM PST (San Francisco)
+Event Number: 669 755 545
+Join the Session &lt;http://w.on24.com/r.htm?e=910773&amp;s=1&amp;k=AFFBE6BBB898B59DF2B8A6397D09EFCB&gt;
+ Audio Information:
+This webinar will be streaming live via audio bridge
+
+{{my.Save the Date:default=edit me}}
+ 
+We look forward to you joining us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

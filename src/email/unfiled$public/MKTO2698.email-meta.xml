@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Attunity/Wellcare_Q215.No Show</name>
+    <style>none</style>
+    <subject>Sorry We Missed You</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We&apos;re sorry you were unable to attend our Customer Spotlight webinar &lt;https://pivotal.io/big-data/webinar/healthcare-success-story-wellcare&gt;, How WellCare Accelerated Big Data Delivery to Improve Analytics.
+
+This session featured speakers from WellCare, Attunity and Pivotal discussing how WellCare uses Attunity Replicate &lt;http://www.attunity.com/products/attunity-replicate&gt; to offload data quickly and easily from its SQL Server and Oracle systems into Pivotal Greenplum Database &lt;https://pivotal.io/big-data/pivotal-greenplum-database&gt; to support real-time reporting and analytics.
+
+For more about the technologies that were discussed in the webinar, check out these resources: 
+
+
+ - Pivotal Greenplum Database Datasheet &lt;https://pivotal.io/big-data/datasheet/pivotal-greenplum-database&gt;
+ - Attunity Replicate Whitepaper &lt;http://learn.attunity.com/why-attunity-replicate-is-the-better-alternative-1&gt;
+ - Attunity Replicate for Pivotal Solution Sheet &lt;http://www.attunity.com/sites/default/files/content/attunity-replicate-for-pivotal-solution-sheet.pdf&gt;
+ - Value of Partnering Video &lt;https://www.youtube.com/watch?v=rRubhsBI1Fc&gt;
+
+
+
+Please feel free to share the on-demand replay &lt;https://youtu.be/ZYiwRUxlY2s&gt; of the webinar and the slides &lt;http://www.slideshare.net/Pivotal/customer-spotlight-how-wellcare-accelerated-big-data-delivery-to-improve-analytics&gt; with your colleagues.
+
+Any questions?
+
+
+ - Attunity &lt;http://learn.attunity.com/contact-us&gt; can provide additional information about data movement.
+ - If you’re interested in big data solutions, please contact Pivotal &lt;http://pivotal.io/contact&gt;.
+
+
+
+We look forward to sharing more insights with you at our next webinar!
+
+Thanks,
+The Pivotal &amp; Attunity Teams</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter (Pre-2018).March 2015 Spring News</name>
+    <style>none</style>
+    <subject>Spring Cloud 1.0.0 delivers app infrastructure for microservices</subject>
+    <textOnly>MARCH 2015
+&lt;https://spring.io/blog/2015/03/04/spring-cloud-1-0-0-available-now&gt;
+Spring Cloud 1.0.0 delivers app infrastructure for microservices
+Most developers want to work in a more iterative manner (agile) and release more frequently. The microservice style architecture has grown in popularity as a way to combat the challenges of monolithic applications. For folks new to microservices, Martin Fowler provides a great description of this architecture style in his blog &lt;http://martinfowler.com/articles/microservices.html&gt;. NetFlix, one of the key pioneers, had to build a lot of supporting infrastructure to run microservices. While they could leverage IaaS (Amazon EC2) back when it first arrived, PaaS like Cloud Foundry didn’t exist: they had to build their own. Then, they needed lots of supporting patterns at the application level to address putting network calls in-between components of what once would have been a big WAR or EAR file. Fortunately for us today, things like Cloud Foundry, NetflixOSS, and Spring Cloud exist.
+
+When building distributed applications (including microservice style applications), there are many common system patterns that appear. Spring Cloud makes it simple to adopt these patterns by providing out-of-the-box services to tackle the most common challenges. Spring Cloud implements patterns such as configuration management, service discovery, circuit breaker, intelligent routing, micro-proxy, and control bus. Spring Boot makes it drop dead simple to integrate these capabilities into your application.
+More Info &lt;https://spring.io/blog/2015/03/04/spring-cloud-1-0-0-available-now&gt;
+Spring Cloud 1.0 is here!
+Spring Cloud 1.0 is here &lt;http://cloud.spring.io&gt;! Spring Cloud concerns itself with the robust and resilient creation and consumption of microservices. Smaller, singly focused services exposed using REST (or messaging) are easier to scale, easier to evolve, and easier to refactor as demand requires. There is one fly in the ointment: what were simple in-process service invocations become HTTP calls for REST-based services. To simplify consuming REST services, Spring Cloud includes support for Netflix Feign-based &lt;https://github.com/Netflix/feign&gt; declarative REST clients. In the example below, two interfaces are decorated with Spring MVC mapping metadata that describe the nature of an HTTP request. In the example below, ContactClient and BookmarkClient are both clients to the contact-service and bookmark-service HTTP REST services. These services are resolved through a service registry, in this case, Netflix&apos;s Eureka &lt;https://github.com/Netflix/eureka&gt;. Note that these are REST clients. We are not sharing types between modules, so I&apos;ve included client-side representations (Bookmark and Contact) of the JSON structures returned from the REST services. You could as easily share types if you don&apos;t mind the coupling and if both the service and the clients are implemented in Java.
+Where to download older versions of STS and GGTS?
+The official download pages for STS and GGTS include the latest and greatest version only. But there is an easy way to get download links for older versions of STS (until we provide the older-versions-download directly from spring.io &lt;spring.io&gt; again): Just post a question on http://stackoverflow.com/ &lt;http://stackoverflow.com/&gt;, tag it with “spring-tool-suite”, and let us know which exact version you would like to download (STS/GGTS version number, operating system, 32bit vs. 64bit). We will reply with the download links.
+JHipster for Spring Boot
+Speaker: Julien Dubois
+
+JHipster focuses on generating a high quality application with a Java back-end using an extensive set of Spring technologies; Spring Boot, Spring Security, Spring Data, Spring MVC (providing a framework for websockets, REST and MVC), etc. an Angular.js front-end and a suite of pre-configured development tools like Yeoman, Maven, Gradle, Grunt, Gulp.js and Bower. JHipster creates a fully configured Spring Boot application with a set of pre-defined screens for user management, monitoring, and logging. The generated Spring Boot application is specifically tailored to make working with Angular.js a smoother experience.
+
+Join Julien for a quick-live coding session to build a simple application, and deploy it to Cloud Foundry.
+Europe
+Tuesday, March 17, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMJHipster_Register.html&gt;
+North America
+Tuesday, March 17, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMJHipster_Register.html&gt;
+Building a secure Polymer app with Spring backend
+Speaker: Scott Deeg
+
+Polymer is the latest web framework out of Google. Designed completely around the emerging Web Components standards, it has the lofty goal of making it easy to build apps based on these low level primitives. Along with Polymer comes a new set of Elements (buttons, dialog boxes and such) based on the ideas of &quot;Material Design&quot;. These technologies together make it easy to build responsive, componentized &quot;Single Page&quot; web applications that work for browsers on PCs or mobile devices. But what about the backend, and how do we make these apps secure?
+
+In this talk Scott Deeg will take you through an introduction to Polmyer and its related technologies, and then through the build out of a full blown cloud based app with a secure, RESTful backend based on Spring REST, Spring Cloud, and Spring Security and using Thymeleaf for backend rendering jobs. At the end he will show the principles applied in a tool he&apos;s currently building. The talk will be mainly code walk through and demo, and assumes familiarity with Java/Spring and JavaScript.
+Europe
+
+Tuesday, March 24, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMBuildingasecurePolymerappwithSpringbackend_Register.html&gt;
+North America
+Tuesday, March 24, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMBuildingasecurePolymerappwithSpringbackend_Register.html&gt;
+Smarter Service-to-Service Invocations with Spring Cloud
+Speaker: Josh Long 
+
+Spring Cloud 1.0 is here! It offers a powerful way to create and consume microservices. As you introduce new services, you introduce integration problems: services can be shaky, they can disappear and - as they&apos;re often exposed over HTTP - they require a bit more footwork than in-process method invocations.
+
+In this webinar, we&apos;ll focus specifically on how Spring Cloud integrates service registration (e.g.: Eureka, Consul, or Zookeeper), declarative REST clients (with Netflix&apos;s Feign), reactive programming and the circuit breaker pattern with Hystrix to support easy, robust service-to-service invocations.
+
+This is a deep dive on how to make connect and consume microservices, and is a natural next step after my introduction to building microservices with Spring Cloud.
+Europe
+Tuesday, April 21, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMSmarterService-to-ServiceInvocationswithSpringCloud_Register.html&gt;
+North America
+Tuesday, April 21, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMSmarterService-to-ServiceInvocationswithSpringCloud_Register.html&gt;
+Reactive data-pipelines with Spring XD and Kafka
+Speakers: Marius Bogoevici &amp; Mark Pollack
+
+In the recent years, drastic increases in data volume as well as a greater demand for low latency and high responsiveness has led to a radical shift in business requirements and application development methods. These needs have been addresses, by concepts such as reactive programming and reactive streams that ensure a high responsiveness even under increased data throughput.
+
+Spring XD natively supports asynchronous event-driven programming with observable streams through its integrations with RxJava and Project Reactor. With its own integration built on Kafka&apos;s Simple Consumer API, Spring XD emphasizes the strengths and specifics of Kafka as a transport based on the model of a high-throughput distributed log, while providing the flexibility to support partitioning, offset management and replayability, and generally preserving and emphasizing.
+
+Joining the power of observable streams and Kafka, in this webinar, we will demonstrate how to build data-centric reactive pipelines at enterprise scale.
+Europe
+Tuesday, April 28, 2015
+ 2:00PM GMT Time
+ (London, GMT)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_7AMReactivedata-pipelineswithSpringXDandKafka_Register.html&gt;
+North America
+Tuesday, April 28, 2015
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://connect.pivotal.io/OSS_Webinar_10AMReactivedata-pipelineswithSpringXDandKafka_Register.html&gt;
+Other Events
+Building a secure Polymer app with Spring backend with Scott Deeg at Pivotal in Palo Alto, CA
+Schedule: 6:00-6:30 pm Food and networking 
+6:30-8:00pm Talk and Q&amp;A 
+8:00-8:30 pm Wind down
+Register here: bit.ly/POSH0065 &lt;http://bit.ly/POSH0065&gt;
+
+Polymer is the latest web framework out of Google. Designed completely around the emerging Web Components standards, it has the lofty goal of making it easy to build apps based on these low level primitives. Along with Polymer comes a new set of Elements (buttons, dialog boxes and such) based on the ideas of &quot;Material Design&quot;. These technologies together make it easy to build responsive, componentized &quot;Single Page&quot; web applications that work for browsers on PCs or mobile devices. But what about the backend, and how do we make these apps secure?
+In this talk Scott Deeg will take you through an introduction to Polmyer and its related technologies, and then through the build out of a full blown 
+cloud based app with a secure, RESTful backend based on Spring REST, Spring Cloud, and Spring Security and using Thymeleaf for backend rendering jobs. At the end he will show the principles applied in a tool he&apos;s currently building. The talk will be mainly code walk through and demo, and assumes familiarity with Java/Spring and JavaScript.
+About the speaker: Scott Deeg began his journey with Java in 1996 as a member of the Visual Cafe team at Symantec, and since then has been bouncing 
+around Silicon Valley in a variety of positions, primarily in the enterprise Java application space. As a member of Pivotal he works with large enterprises on their strategy for building and operationalizing modern applications in cloud architectures, and occasionally even gets to write some code.
+&apos;Best Of…&apos; Meetup Video
+Building Distributed Systems w/Netflix OSS and Spring Cloud w/Matt Stine 
+January 15, 2015 Pivotal, San Francisco, CA
+View the playlist: bit.ly/POSH0060-yt  &lt;http://bit.ly/POSH0060-yt&gt;
+A Single-Page Application with Spring Security and Angular JS
+Learn how nice features of the component frameworks can be integrated simply to provide a pleasant and secure user experience. Start with a very basic single-server implementation and scale it up in stages, splitting out backend resources and authentication to separate services. Final state includes a simple API Gateway on the front end implemented declaratively using Spring Cloud.
+Watch Video &lt;https://spring.io/blog/2015/03/14/webinar-replay-a-single-page-application-with-spring-security-and-angular-js&gt;
+Archived videos
+ Webinar Replay: A Single-Page Application with Spring Security and Angular JS &lt;https://spring.io/blog/2015/03/14/webinar-replay-a-single-page-application-with-spring-security-and-angular-js&gt;
+ 
+Webinar Replay: Introducing Spring Session
+ Webinar Replay: Spring XD – A Platform for data at scale and developer productivity &lt;https://spring.io/blog/2015/02/20/webinar-replay-spring-xd-a-platform-for-data-at-scale-and-developer-productivity&gt;
+ SpringOne 2GX 2014 Replay: Reactive Oriented Architecture with Grails &lt;https://spring.io/blog/2015/02/17/springone2gx-2014-replay-reactive-oriented-architecture-with-grails&gt;
+ Stream Processing Spring XD 1.1 &lt;https://spring.io/blog/2015/02/20/stream-processing-in-spring-xd-1-1&gt;
+ SpringOne 2GX 2014 Replay: Artistic Spring Data Neo4j 3.x with Spring Boot &lt;https://spring.io/blog/2015/02/23/springone2gx-2014-replay-artistic-spring-data-neo4j-3-x-with-spring-boot&gt;
+ SpringOne 2GX 2014 Replay: Panel Session—Real World Boot-up 
+sequences
+ SpringOne 2GX 2014 Replay: Spring Batch 
+Performance Tuning
+ SpringOne 2GX 2014 Replay: 
+Spring Data REST – Data Meets Hypermedia
+ SpringOne 2GX 2014 Replay: Resource handling in Spring MVC 4.1 &lt;https://spring.io/blog/2015/03/03/springone2gx-2014-replay-resource-handling-in-spring-mvc-4-1&gt;
+ SpringOne 2GX 2014 Replay: Caching with Spring-Advanced Topics and Best Practices &lt;https://spring.io/blog/2015/03/03/springone2gx-2014-replay-caching-with-spring-advanced-topics-and-best-practices&gt;
+ SpringOne 2GX 2014 Replay: The Revolution Will Not Be Centralized &lt;https://spring.io/blog/2015/03/03/springone2gx-2014-replay-the-revolution-will-not-be-centralized&gt;
+ SpringOne 2GX 2014 Replay: RaveJS – Spring Boot concepts for JavaScript 
+applications
+ SpringOne2GX 
+2014 Replay: Simplify Cloud Applications using Spring Cloud Connectors
+ SpringOne2GX 2014 Replay: The Quest for the Holy Integration Test &lt;https://spring.io/blog/2015/03/10/springone2gx-2014-replay-creating-modular-test-driven-spas-with-spring-and-angularjs&gt;
+Building a RESTful Web Service
+This guide walks you through the process of creating a &quot;hello world&quot; RESTful web service with Spring. You’ll build a service that will accept HTTP GET requests and respond with a JSON representation of a greeting.
+View Guide &lt;https://spring.io/guides/gs/rest-service/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+http://spring.io/guides
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Cloud 1.0.0 &lt;https://spring.io/blog/2015/03/04/spring-cloud-1-0-0-available-now&gt;
+ Spring Framework 4.1.5 &lt;https://spring.io/blog/2015/02/20/spring-framework-4-1-5-released&gt;
+ Spring Security 3.2.6 &lt;https://spring.io/blog/2015/02/26/spring-security-3-2-6-released&gt;
+ Spring Security 4.0.0.RC2 &lt;https://spring.io/blog/2015/02/26/spring-security-4-0-0-rc2-released&gt;
+ Spring Boot 1.1.11 &lt;https://spring.io/blog/2015/02/27/spring-boot-1-1-11-released&gt;
+ Spring Boot 1.2.2 &lt;https://spring.io/blog/2015/02/27/spring-boot-1-2-2-released&gt;
+ Spring Data Release Train Fowler RC1 &lt;https://spring.io/blog/2015/03/05/spring-data-release-train-fowler-rc1-available&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.6.4 released &lt;https://spring.io/blog/2015/03/11/spring-tool-suite-and-groovy-grails-tool-suite-3-6-4-released&gt;
+ Spring Security Kerberos 1.0.0.RC1 Released &lt;https://spring.io/blog/2015/03/11/spring-security-kerberos-1-0-0-rc1-released&gt;
+Reactor 2.0.0.RC1 with native Reactive Streams support 
+now available!
+ Working with Spring Roo from Spring Tool Suite (STS) &lt;https://spring.io/blog/2015/02/19/working-with-spring-roo-from-spring-tool-suite-sts&gt;
+ Better dependency management for Gradle &lt;https://spring.io/blog/2015/02/23/better-dependency-management-for-gradle&gt;
+ The Portable, Cloud-Ready HTTP Session &lt;https://spring.io/blog/2015/03/01/the-portable-cloud-ready-http-session&gt;
+ Getting started with Activiti and Spring Boot &lt;https://spring.io/blog/2015/03/08/getting-started-with-activiti-and-spring-boot&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;Search=Search&amp;subjectID=17750&amp;filters=subjectID&gt;
+ Enterprise Integration 
+with Spring
+ Spring Web &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Spring+Web&amp;Search=Search&gt;
+ What’s New in Spring (NEW) &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=What%27s+New+in+Spring&amp;Search=Search&gt;
+ 
+Hibernate with Spring &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=JPA&amp;Search=Search&gt;
+ Groovy &amp; Grails &lt;http://mylearn.vmware.com/portals/www/search/results.cfm?ui=www_edu&amp;pID=www&amp;menu=search-results&amp;searchtype=simple&amp;orderBy=relevance&amp;category=catalog&amp;keyword=Groovy&amp;Search=Search&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

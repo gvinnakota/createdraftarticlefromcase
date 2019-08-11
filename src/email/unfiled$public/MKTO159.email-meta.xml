@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Pivotal@NYSE_Q413.Confirmation</name>
+    <style>none</style>
+    <subject>You are registered for the Pivotal workshop</subject>
+    <textOnly>Your registration is confirmed
+Hi {{lead.First Name:default=there}},
+
+Thank you for registering for the Agile Development Workshop with Pivotal. Please see event details below:
+
+Date: Tuesday, July 11, 2013
+Time: 9am - 12pm (lunch will be provided)
+Where: EMC Support Center, 11747 Lone Peak Pkwy, Draper, UT 84020
+
+Should you have any questions or would like to contact me, please email me at wmaddux@gopivotal.com &lt;mailto:wmaddux@gopivotal.com&gt;.
+
+I look forward to seeing you.
+
+Best,
+
+Ward Maddux
+Stay current on all things Pivotal.
+Visit our Blog&gt;&gt; &lt;http://blog.gopivotal.com/&gt;
+Read Pivotal&apos;s latest news.
+Visit our Resources page&gt;&gt; &lt;http://www.gopivotal.com/resources&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

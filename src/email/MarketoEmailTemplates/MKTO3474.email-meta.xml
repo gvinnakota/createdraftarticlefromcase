@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Stream Processing in the Cloud w/Data Microservices.Confirmation</name>
+    <style>none</style>
+    <subject>Webinar Confirmation:  Stream Processing in the Cloud with Data Microservices</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Thank you for registering for our upcoming webinar Stream Processing in the Cloud with Data Microservices on Tuesday, March 22, 2016. 
+
+Please see event details below:
+
+Date: Tuesday, March 22, 2016 
+Time: 3:00PM Time (London, GMT)
+
+Join the Session &lt;[[http://event.on24.com/wcc/r/1155067/157E3088E5F32497B5D13358FD9BE7A4]]&gt; 
+ Audio Information: 
+This webinar will be streaming live via your computer speakers. 
+{{my.My Token:default=Save the Date}} 
+
+We look forward to you joining us!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

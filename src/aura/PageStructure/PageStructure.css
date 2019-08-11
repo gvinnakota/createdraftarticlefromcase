@@ -1,0 +1,44 @@
+/* iPhone 6 portrait */
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 667px)
+    and (orientation: portrait){
+    .THIS .serviceboxposition{
+        top: 11rem;
+        left: 1rem;
+        width:95%;
+    }
+}
+/* iPhone 6 landscape */
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 667px)
+    and (orientation: landscape){
+    .THIS .serviceboxposition{
+        top: 15rem!important;
+        left: 2rem;
+    }
+    .THIS .newsposition {
+        margin-top: 9rem;
+    }
+    .THIS .forceCommunityLanguagePicker {
+        bottom: -12rem;
+    }
+}
+@media only screen 
+    and (min-device-width: 412px)
+    and (max-device-width: 732px)
+    and (orientation: landscape){
+    .THIS .serviceboxposition{
+        top: 13rem;
+        left: 2rem;
+        margin-bottom:1rem;
+    }
+    .THIS .newsposition {
+        margin-top: 9rem;
+    }
+    .THIS .forceCommunityLanguagePicker {
+        bottom: -12rem;
+    }
+    
+}

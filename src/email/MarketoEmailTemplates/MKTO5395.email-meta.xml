@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_DellEMC Pivotal Executive Dinner_Paris_Q417.Confirmation Modified</name>
+    <style>none</style>
+    <subject>Confirmation de votre réservation au dîner Pivotal</subject>
+    <textOnly>Bonjour {{lead.First Name:default=there}}, 
+
+Nous avons bien pris en compte votre réservation pour le dîner exclusif Pivotal.
+
+
+
+Date:
+Mercredi 29 Novembre 2017 {{my.SAMPLE Réservez cette date dans votre calendrier:default=edit me}}
+
+
+Time:
+A partir de 19h30 
+
+
+Location: 
+Le Laurent
+41, avenue Gabriel
+75008 Paris (plan &lt;[[https://www.google.be/maps/place/Restaurant+Laurent/@48.8692962,2.3110034,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fcf0a81cc21:0x422317ab0f9c2cd4!8m2!3d48.8692962!4d2.3131921]]&gt;)
+
+
+
+
+Si vous avez des questions ou si vous souhaitez obtenir plus d&apos;informations sur ce dîner, veuillez envoyer un email à mdougados@pivotal.io &lt;[[mailto: mdougados@pivotal.io]]&gt;.
+
+
+Dans l&apos;attente de vous accueillir,
+
+L&apos;Équipe Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

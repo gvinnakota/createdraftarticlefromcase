@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>EH_SP</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EH / SP</label>
+        <sharedTo>
+            <group>EH_SP</group>
+        </sharedTo>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Special_Handling_Type__c</field>
+            <operation>equals</operation>
+            <value>Executive Handling (Non-BRICE),"Special Practices (US Citizen, US Soil)"</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>InboundEmailAlias__c</field>
+            <operation>equals</operation>
+            <value>ehsp-escalations@pivotal.io</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>InboundEmailAlias__c</field>
+            <operation>equals</operation>
+            <value>ehsp@pivotal.io</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>EU_Safe_Harbour</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>EU Safe Harbour</label>
+        <sharedTo>
+            <group>EU_Safe_Harbour</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Special_Handling_Type__c</field>
+            <operation>equals</operation>
+            <value>EU - Safe Harbour</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pivotal_Container_Service_PKS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pivotal_Container_Service_PKS</label>
+        <sharedTo>
+            <group>PKS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Products__c</field>
+            <operation>equals</operation>
+            <value>24</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pivotal_PA_Case_Visibility</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Platform Architects Case Visibility paired with Public Group; Pivotal Platform Architects 2.19.2019[HG]</description>
+        <label>Pivotal PA - Case Visibility</label>
+        <sharedTo>
+            <group>Pivotal_Platform_Architects</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Special_Handling_Type__c</field>
+            <operation>notEqual</operation>
+            <value>EU - Safe Harbour,Executive Handling (Non-BRICE),"Special Practices (US Citizen, US Soil)"</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Email_to_case_Test__c</field>
+            <operation>notEqual</operation>
+            <value>EHSP Support,EHSP Escalations</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

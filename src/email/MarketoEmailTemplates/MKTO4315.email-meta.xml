@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Tech Workshops_Q3-416.TYFA - NYC AM/PM</name>
+    <style>none</style>
+    <subject>Thank you for attending Pivotal’s Data Science Technical Workshop</subject>
+    <textOnly>&lt;[[https://pivotal.io/event/data-science-workshops]]&gt;
+Hi {{lead.First Name:default=there}},
+ 
+Thank you for attending our Data Science Technical Workshop. We hope you found it enjoyable and informative as you explore your big data technology options for data science!
+
+
+
+Now that you have a taste of what is possible using big data technologies like Pivotal Greenplum and Apache MADlib (incubating), we invite you to join the Greenplum Database community &lt;[[http://greenplum.org/]]&gt;. Here you can download the Pivotal Greenplum Sandbox (which includes Apache MADlib (incubating)) and access helpful tutorials.
+
+
+
+Also, take advantage of our big data and analytics resources including:
+
+
+	- The workshop presentation &lt;[[http://d1fto35gcfffzn.cloudfront.net/slides/Pivotal_DS_Workshop.pdf]]&gt;  &lt;[[https://blog.pivotal.io/tag/data-science]]&gt;
+	- Blog posts related to Pivotal Data Science &lt;[[https://blog.pivotal.io/tag/data-science]]&gt;
+	- eBook: Shaping the Future of Data Warehousing through Open Source Software &lt;[[http://pivotal.io/shaping-the-future-of-data-warehousing-through-open-source-software]]&gt;
+	- Case study: Aridhia Powers Next-Gen Clinical Analytics Platform with Pivotal Greenplum &lt;[[http://pivotal.io/big-data/case-study/powering-the-next-generation-of-clinical-and-translational-informatics]]&gt;
+	- Webinar on-demand: Insights to Action: How to Transform Your Business with Smart Applications &lt;[[http://pivotal.io/big-data/webinar/how-to-transform-your-business-with-smart-applications]]&gt;
+
+
+
+If you would like more information or have any questions about big data and data science, submit your question and contact information at pivotal.io/contact &lt;[[mailto:pivotal.io/contact]]&gt;.
+
+
+
+Sincerely,
+
+The Pivotal Data Science Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,655 @@
+<apex:page standardController="zqu__Quote__c" extensions="NewQuotePageController" showHeader="true" sidebar="true">
+<script>
+  var timesCalled = 0;
+
+  function callMessage(message){
+
+    setTimeout(function(){
+      //var element = $jq("[id$='targetId']");
+      var element = $jq("[name$='targetId']");
+      var elementValues = [];
+      for (i = 0 ; i < element.length ; i++) {
+        //alert(element[i].value);
+        if (element[i].value == '') {
+          //alert('is null'+element[i].value);
+          elementValues[i] = 'null';
+        } else {
+          elementValues[i] = element[i].value;
+        }
+
+      }
+
+      if(timesCalled == 0){
+        timesCalled++;
+        loadOriginalContacts(elementValues.toString());
+        return;
+      }
+      //alert("winnner");
+      
+      //ensure the everything is done before trying to get the element values 
+      //that were set by the lookup component 
+
+      //var element = $jq("[id$='targetId']");
+      
+      
+      
+      displayStatusModal();
+      contactChange(elementValues.toString());
+    }, 0);
+    
+  }
+
+  function createContact(){
+    window.open('/003/e?con4_lkid={!acct.Id}','_blank');
+  }
+</script>
+  <apex:form id="form">
+
+  <apex:actionFunction name="continueToNextPage" action="{!continueToNextPage}" immediate="true" />
+    <apex:actionFunction name="stayOnCurrentPage" action="{!stayOnCurrentPage}" immediate="true" />
+    <zqu:Notification options="{!notificationOptions}" />
+
+    <apex:actionStatus id="createStatus"
+                             onstart="displayStatusModal();"
+                             onstop="closeStatusModal();"/>
+
+    <apex:pageBlock >
+      <apex:pageBlockButtons location="top">
+        <apex:commandButton value="Create Contact" onClick="createContact();" immediate="true" />
+      </apex:pageBlockButtons>
+    </apex:pageBlock>
+    <zqu:PropertyComponent options="{!propertyOptions}">
+      <!-- Custom Rendered Payment Term -->
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedPaymentPlan"
+                        rendered="{!IF(field.name == 'Payment_Plan__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+      
+        <!--
+        <apex:inputField  required="true" value="{!quote.Payment_Plan__c}" />
+        -->
+
+        <apex:selectList value="{!paymentPlanSelection}" 
+                             size="1" 
+                             required="true"
+                             id="paymentplan"
+                             rendered="{!paymentPlanEditable}">
+
+              <apex:selectOptions value="{!paymentPlanValues}"/>
+
+              <apex:actionSupport event="onchange"
+                                          action="{!paymentPlanChange}" 
+                                          reRender="form"
+                                          status="createStatus">
+
+              </apex:actionSupport>
+
+        </apex:selectList>
+        <apex:outputLabel rendered="{!!paymentPlanEditable}" value="{!quote.Payment_Plan__c}" />
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel"  html-data-id="customRenderedOverridePaymentPlan"
+                        rendered="{!AND(field.name == 'Override_Payment_Plan__c', getOverridePaymentPlanVisibleForUser)}">
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36.5%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="quoteOverridePaymentPlan" value="{!quote.Override_Payment_Plan__c}" />
+      </apex:outputPanel>
+
+			<apex:outputPanel styleClass="customRenderedFieldPanel"
+                        html-data-id="customRenderedBillingMethod"
+                        rendered="{!IF(field.name == 'zqu__BillingMethod__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:selectList value="{!billingMethod}" 
+                             size="1" 
+                             id="billingmethod">
+
+              <apex:selectOptions value="{!billingMethodValues}"/>
+
+              <apex:actionSupport event="onchange"
+                                          action="{!billingMethodChange}" 
+                                          reRender="form"
+                                          status="createStatus">
+
+              </apex:actionSupport>
+
+            </apex:selectList>
+
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedQuoteTemplate"
+                        rendered="{!IF(field.name == 'zqu__QuoteTemplate__c' && hasPrivilege, true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="quoteTemplate" value="{!quote.zqu__QuoteTemplate__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedChannelSO"
+                        rendered="{!IF(field.name == 'ChannelOrderID__c' && hasPrivilege, true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="channelSO" value="{!quote.ChannelOrderID__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedPONumber"
+                        rendered="{!IF(field.name == 'PurchaseOrder__c' && hasPrivilege, true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="poNumber" value="{!quote.PurchaseOrder__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedStartDate"
+                        rendered="{!IF(field.name == 'zqu__StartDate__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">Amendment Start Date</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="startDate" value="{!quote.zqu__StartDate__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedCompanyCode"
+                        rendered="{!IF(field.name == 'Company_Code1__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:selectList value="{!companyCodeSelection}" 
+                             size="1" 
+                             rendered="{!IF(isCurrencyEditable && hasPrivilege, true, false)}"
+                             id="companyCodeSelection"
+                             >
+
+              <apex:selectOptions value="{!companyCodeValues}"/>
+
+              <apex:actionSupport event="onchange"
+                                          action="{!companyCodeChange}" 
+                                          reRender="form"
+                                          status="createStatus">
+
+              </apex:actionSupport>
+
+        </apex:selectList>
+
+        <apex:outputText rendered="{!IF(!isCurrencyEditable || !hasPrivilege, true, false)}" value="{!quote.Company_Code1__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedChannel"
+                        rendered="{!IF(field.name == 'Channel__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="channel" value="{!quote.Channel__c}">
+              <apex:actionSupport event="onchange"
+                          action="{!channelChange}" 
+                          reRender="form,taxExempt,certificateId"
+                          status="createStatus">
+
+              </apex:actionSupport>
+
+        </apex:inputField>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedCertificateId"
+                        rendered="{!IF(field.name == 'Certificate_Id1__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">Certificate Id</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField id="certificateId" value="{!quote.Certificate_Id1__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedContactAddress"
+                        rendered="{!IF(field.name == 'Contact_Address__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Contact_Address__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedContactAddress2"
+                        rendered="{!IF(field.name == 'Contact_Address2__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Contact_Address2__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedSoldContactAddress"
+                        rendered="{!IF(field.name == 'Sold_Contact_Address__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Sold_Contact_Address__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedSoldContactAddress2"
+                        rendered="{!IF(field.name == 'Sold_Contact_Address2__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Sold_Contact_Address2__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedShipFirstName"
+                        rendered="{!IF(field.name == 'Ship_To_First_Name__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <div class = "requiredInput">
+          <div class = "requiredBlock"></div>
+        <apex:inputField value="{!quote.Ship_To_First_Name__c}" />
+        </div>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedShipLastName"
+                        rendered="{!IF(field.name == 'Ship_To_Last_Name__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+
+        <div class = "requiredInput">
+          <div class = "requiredBlock"></div>
+          <apex:inputField value="{!quote.Ship_To_Last_Name__c}" />
+        </div>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedShipContactAddress"
+                        rendered="{!IF(field.name == 'Ship_Contact_Address__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol"
+                          rendered="{!needShippingAddress}">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+
+
+        <apex:inputField style="width:55%;" rendered="{!needShippingAddress}" value="{!quote.Ship_Contact_Address__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedShipContactAddress2"
+                        rendered="{!IF(field.name == 'Ship_Contact_Address2__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol"
+                          rendered="{!needShippingAddress}">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputField style="width:55%;" rendered="{!needShippingAddress}" value="{!quote.Ship_Contact_Address2__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedContactEmail"
+                        rendered="{!IF(field.name == 'Contact_Email__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Contact_Email__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedContactCompany"
+                        rendered="{!IF(field.name == 'Contact_Company__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Contact_Company__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedSoldContactCompany"
+                        rendered="{!IF(field.name == 'Sold_Contact_Company__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Sold_Contact_Company__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedSoldContactEmail"
+                        rendered="{!IF(field.name == 'Sold_Contact_Email__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:outputLabel value="{!quote.Sold_Contact_Email__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedShipContactEmail"
+                        rendered="{!IF(field.name == 'Ship_Contact_Email__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <div class = "requiredInput">
+          <div class = "requiredBlock"></div>
+       <apex:inputField value="{!quote.Ship_Contact_Email__c}" />
+       </div>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedSameAsContact"
+                        rendered="{!IF(field.name == 'Same_As_Bill_To_Contact__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputCheckBox id="contactcheckbox" value="{!quote.Same_As_Bill_To_Contact__c}">
+                  
+                      <apex:actionSupport event="onclick"
+                                          action="{!contactCheckBoxChange}" 
+                                          reRender="form"
+                                          status="createStatus">
+
+                      </apex:actionSupport>
+                  
+        </apex:inputCheckBox>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedTaxExempt"
+                        rendered="{!IF(field.name == 'Tax_Exempt__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputCheckBox id="taxExempt" value="{!quote.Tax_Exempt__c}" disabled="{!lockAccountFields}">
+                  
+                      <apex:actionSupport event="onclick"
+                                          action="{!onTaxExemptChange}" 
+                                          reRender="form"
+                                          status="createStatus">
+
+                      </apex:actionSupport>
+                  
+        </apex:inputCheckBox>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedShippingAddressNeeded"
+                        rendered="{!IF(field.name == 'Shipping_Address_Needed__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <apex:inputCheckBox id="contactneededcheckbox" value="{!quote.Shipping_Address_Needed__c}">
+                  
+                      <apex:actionSupport event="onclick"
+                                          action="{!shippingCheckBoxChange}" 
+                                          reRender="form"
+                                          status="createStatus">
+
+                      </apex:actionSupport>
+                  
+        </apex:inputCheckBox>
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedPricingJustification"
+                        rendered="{!IF(field.name == 'Pricing_Justification__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <!-- <apex:outputLabel value="{!quote.Pricing_Justification__c}" /> -->
+
+        <apex:inputField style="width:55%;" value="{!quote.Pricing_Justification__c}" />
+
+      </apex:outputPanel>
+
+      <apex:outputPanel styleClass="customRenderedFieldPanel" 
+                        html-data-id="customRenderedCurrency"
+                        rendered="{!IF(field.name == 'zqu__Currency__c', true, false)}">
+        
+        <apex:outputPanel style="padding-right:8px; float: left; padding-top: 0px; width: {!IF(fieldSet.isSingleColumn, '18%','36%')};"
+                          styleClass="labelCol">
+
+          <apex:outputLabel id="newCurrency" style="margin-right: 10px;">{!field.label}</apex:outputLabel>
+
+        </apex:outputPanel>
+
+        <div class = "requiredInput">
+          <div class = "requiredBlock"></div>
+
+          <apex:selectList value="{!currencyVal}" 
+                             size="1" 
+                             id="currencyVal"
+                             rendered="{!isCurrencyEditable}">
+
+            <apex:selectOptions value="{!currencyValues}"/>
+
+            <apex:actionSupport event="onchange"
+                                        action="{!currencyChange}" 
+                                        reRender="form"
+                                        status="createStatus">
+
+            </apex:actionSupport>
+
+          </apex:selectList>
+
+          <apex:outputText rendered="{!!isCurrencyEditable}" value="{!quote.zqu__Currency__c}" />
+        </div>
+
+        
+
+
+
+      </apex:outputPanel>
+
+
+    </zqu:PropertyComponent>
+    <!-- Fucntion called when payment method changed -->
+
+
+
+
+    <!-- Fucntion called when payment method changed -->
+    <apex:actionFunction name="contactChange" 
+                         action="{!onContactChange}"
+                         rerender="form,customCurrency,newCurrency"
+                         immediate="true"
+                         oncomplete="javascript:closeStatusModal();">
+
+      <apex:param assignTo="{!selectedContact}" 
+                  value=""
+                  name="val" />
+      
+    </apex:actionFunction>
+
+    <apex:actionFunction name="loadOriginalContacts" 
+                         action="{!loadOriginalContacts}"
+                         rerender="form,customCurrency,newCurrency"
+                         immediate="true"
+                         oncomplete="javascript:closeStatusModal();">
+
+      <apex:param assignTo="{!originalSelectedContact}" 
+                  value=""
+                  name="val" />
+      
+    </apex:actionFunction>
+
+    <script type="text/javascript">
+      var $jq = jQuery.noConflict();
+      $jq(document).ready(function(){
+
+        window.addEventListener("message", callMessage.bind(this), false);
+
+        $jq('select option[value=]').remove();   
+
+        //capture the event when the lookup component changes the dom of the page
+        //onchange wouldn't work this is the only way i could find to make the lookup work
+        // window.addEventListener("message", 
+        //   selectProduct,
+        //   false);
+
+      });
+    </script>
+  </apex:form>
+</apex:page>

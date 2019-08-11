@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_65001245</developerName>
+        <masterLabel>Created By Group?</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Created_By_Region__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA ISR</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER Sub Renewals</sourceValue>
+            </sourceValues>
+            <value>ISR / RENEWALS</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Labs</sourceValue>
+            </sourceValues>
+            <value>LABS STARTUP</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>APJ Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER PDE</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>EMEA Other</sourceValue>
+            </sourceValues>
+            <value>OTHER</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER Labs</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Global Labs</sourceValue>
+            </sourceValues>
+            <value>LABS ENT</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Account.Created_by_Theater__c</groupingColumn>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Small</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Created_By_Region__c</field>
+    </columns>
+    <columns>
+        <field>CREATED</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STREET</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_CITY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_ZIP</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_COUNTRY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Governance_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Created_by_Theater__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_65001245</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Accounts Pending Approval</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>CREATED</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

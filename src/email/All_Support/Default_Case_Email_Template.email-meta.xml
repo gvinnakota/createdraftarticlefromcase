@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Default email template on case email tab</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Default Case Email Template</name>
+    <style>none</style>
+    <subject>Re: {!Case.CaseNumber}: {!Case.Subject_Truncated__c}: {!Case.Thread_Id}</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

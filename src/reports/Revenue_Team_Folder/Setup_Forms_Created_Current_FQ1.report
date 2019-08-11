@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Service_Setup__c.Account_Name__c</field>
+    </columns>
+    <columns>
+        <field>Zuora__Subscription__c.Opp_Number__c</field>
+    </columns>
+    <columns>
+        <field>Zuora__Subscription__c.Zuora__QuoteNumber__c</field>
+    </columns>
+    <columns>
+        <field>Zuora__Subscription__c.Zuora__OpportunityCloseDate__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_CREATED_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CHILD_LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>Service_Setup__c.Approved_Services_Setup__c</field>
+    </columns>
+    <columns>
+        <field>Service_Setup__c.Approved_Date__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Run to show the PA setup forms created within the current fiscal quarter.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Service_Setup__c.Theater__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Setup Forms Created- Current FQ</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Zuora__Subscription__c$Service_Setup__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CHILD_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.4-2-15 V3N6</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 6</subject>
+    <textOnly>VOL. 3, NO. 6
+Thursday, April 2, 2015
+Editor Welcome: If the Superlative Fits &lt;#editor-welcome&gt;
+Business Update: This Federation Data Lake Runs Deep &lt;#business-update&gt;
+Product Update: A Pivotal Original Fires Up Modern Data Analytics &lt;#product-update&gt;
+Agile Update: Agile, Lean, and a Transformation Blueprint &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People Update: Pivotal Education: The Value of Knowledgeable Customers &lt;#people-update&gt;
+My Name Is... Richard Enlow &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+
+If the Superlative Fits
+
+Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+The problem with claims like “industry leading, or “most complete” is often what’s not behind them. Like a timid knight in platinum armor, mediocrity is something no superlative can cover for long.
+
+
+
+Pushing the technical levers on portability as far as they go, Pivotal Cloud Foundry announced availability on AWS &lt;http://blog.pivotal.io/cloud-foundry-pivotal/products/pivotal_cloud_foundry_on_amazon_web_services&gt; last week, and added free hosting &lt;http://blog.pivotal.io/cloud-foundry-pivotal/products/free-hosting-with-pivotal-cloud-foundry&gt;. This makes complex cloud scale-outs easier and faster, and time-to-value very real for businesses. Developers who offer services on Pivotal Cloud Foundry love the rich features, feeding a DevOps culture of building fast, shipping early, and pivoting as needed.
+
+
+
+Cindy Lee introduces Greenplum’s brand new query optimizer, which solves an old problem of scale and speed, and we glimpse a new Federation Business Data Lake &lt;http://blog.pivotal.io/big-data-pivotal/news-2/new-federation-business-data-lake-should-be-your-silver-bullet-for-big-data-success&gt; that meets customers at any stage of their journey to modern big data. We’re delighted to have agile “fomenter”, Janice Fraser, report about our new collaboration with Eric Ries.
+
+
+
+We also unearthed a gem: A Pivotal Labs app for a customer that is a truly new interpretation of the digital wallet (see Customer Spotlight).
+
+
+
+Some of these projects took time, or had a bruising path to the finish. Many are certifiable firsts. We sometimes make mighty claims, but we intend to live up to them.
+
+
+
+Being ahead of a market is tricky though, so we’re happy to have an update from the Pivotal Education team, and their work to train up customers and seed markets.
+
+
+
+Enjoy.
+BUSINESS UPDATE
+
+This Federation Data Lake Runs Deep
+
+Craig Steel &lt;https://gopivotal-com.socialcast.com/users/1086765-craigsteel&gt;, GM, Pivotal Global Alliances, EMC Team
+On March 23rd, EMC officially launched version 1.0 of the Federation Business Data Lake (FBDL) with notable fanfare, logging over 43,000 hits on its official launch site &lt;http://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:1;F:US!100&amp;PreviousLoginCount=NULL&amp;ForceProfileToBeFilledOut=0&amp;DisplayItem=NULL&amp;ShowKey=23126&amp;ShowFrameFormatOverride=NULL&amp;RandomValue=1427420040609&gt;, 1207 unique views in the first 24 hours, an EMC launch record! To put this in context, the launch of EHC &lt;http://www.emc.com/cloud/hybrid-cloud-computing/index.htm&gt; took 10 days to hit the same milestone. There were dozens of articles and hundreds of tweets. The new Federation &lt;http://www.emcfederation.com/&gt; partnership makes it easy for customers at any stage of their data journey to build a data lake and leverage big data analytics.
+
+
+
+It’s a complete Federation story: Built on EMC storage and EMC Data Lake Foundations; with VMware vSphere running on Vblocks with Isilon; while Pivotal Big Data Suite &lt;https://pivotal.io/big-data/pivotal-big-data-suite&gt; (BDS) and Pivotal Cloud Foundry &lt;https://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; (PCF) products are fundamental to the core architecture.
+
+
+
+The openness at the heart of the Federation Data Lake helps customers transition to modern data management. It allows for choice in Hadoop distributions and third-party databases, as well as analytics products such as Tableau and SAS. With a host of EMC services and education tools, we ease migrations to the data lake for customers at various stages of big data investment and maturity.
+
+
+
+Aidan O’Brien, who runs the Big Data Solutions team at EMC and led this Federation effort, summarized its plans in 2015. “You will see the expansion of our Big Data Solution, story and ecosystem. There will be additional refreshes of the Big Data Playbook and EMC.com/bigdata &lt;http://www.emc.com/bigdata&gt; experience. In the second half of the year, we’ll also be taking and expanding the initial Business Data Lake enablement plan that is currently focused on 16 accounts across the three theatres.”
+
+
+
+We’re super excited to be part of the Federation Big Data Lake, and to see dedicated EMC resources focused on growing its revenue. If you missed the live launch, I encourage you to take an hour to watch the replay &lt;https://vts.inxpo.com/scripts/Server.nxp?LASCmd=L:0&amp;AI=1&amp;InitialDisplay=1&amp;ClientBrowser=0&amp;ShowKey=23126&amp;RFR=BDS-AOEmai&gt;, or at least check out a 2-minute summary &lt;http://www.emc.com/big-data/marketing.htm?vid=4129201113001&gt;.
+
+
+
+We’re happy to answer any of your questions at EMCGlobalAlliance@pivotal.io &lt;mailto:EMCGlobalAlliance@pivotal.io&gt;
+PRODUCT UPDATE
+
+A Pivotal Original Fires Up Modern Data Analytics
+
+Cindy Lee &lt;https://gopivotal-com.socialcast.com/users/912723-cindylee&gt;, Principal Product Manager, Greenplum Database
+Big data has sparked a renewed interest in query optimization – that is, the most efficient way to execute a given query. This is pushing the envelope for unprecedented scalability, availability and processing capabilities in order to serve up massive data sets of hundreds of terabytes (or petabytes), for analysis through SQL or SQL-like interfaces.
+ 
+ The performance of analytical query processing in 
+databases depends heavily on the system&apos;s query optimizer. Massive data volumes and the heightened interest in optimizing complex analytical queries all led Pivotal to build a new query optimizer that could manage modern big data workloads.
+ 
+ After extensive R&amp;D, the Pivotal Query Optimizer (PQO) &lt;https://gopivotal-com.socialcast.com/attachments/3046749&gt;, the world’s newest and first query optimizer for big data, will be released on April 6th with Pivotal Greenplum Database 4.3.5. &lt;https://network.pivotal.io/products/pivotal-gpdb&gt; The PQO (formerly called ORCA &lt;https://pivotal.io/big-data/white-paper/orca-a-modular-query-optimizer-architecture-for-big-data&gt;) unites state-of-the-art query optimization technology with original Pivotal research – resulting in a powerful, extensible optimizer designed specifically to meet the demands of today’s analytic workloads.
+ 
+ The PQO lives up to its name. Its unique features and exceptional performance and scalability distinguish it from other optimizers in every important category:
+
+
+ - Extensibility – By representing all query elements (and their optimization) on equal footing, PQO is highly scalable. It avoids the trap of multi-phase optimization, which deprioritizes some optimizations, subsequently making it notoriously difficult to extend, because new query constructs or optimizations often do not match previously set boundaries.
+ - Multi-Core Readiness – The PQO deploys a highly-efficient, multi-core aware scheduler that distributes individual, fine-grained optimization subtasks across multiple CPU cores. In other words, it’s about scaled-out optimization at great speeds.
+ - Verifiability – The PQO has special provisions, built-in mechanisms for ascertaining correctness and performance. In addition to improving engineering practices, these tools enable rapid development with high confidence, and reduce turnaround times for new features as well as bug fixes.
+ - Performance – The PQO is a substantial improvement over its predecessor, the Planner Optimizer, performing queries at 10x to 1000x faster!
+
+
+
+Finally, huge congratulations to the Query Processing team – Lyublena Antova &lt;https://gopivotal-com.socialcast.com/users/940773-lyublenaantova&gt;, George Caragea &lt;https://gopivotal-com.socialcast.com/users/947596-georgecaragea&gt;, Jimmy Da &lt;https://gopivotal-com.socialcast.com/users/919407-jimmyda&gt;, Amr El-Helw &lt;https://gopivotal-com.socialcast.com/users/940772-amrelhelw&gt;, Noa Horn &lt;https://gopivotal-com.socialcast.com/users/949803-noahorn&gt;, Carlos Garcia-Alvarado &lt;https://gopivotal-com.socialcast.com/users/940783-carlosgarciaalvarado&gt;, Jesse Zhang &lt;https://gopivotal-com.socialcast.com/users/1032267-jessezhang&gt;, Michalis Petropoulos &lt;https://gopivotal-com.socialcast.com/users/940256-michalispetropoulos&gt;, Venkatesh Raghavan &lt;https://gopivotal-com.socialcast.com/users/942016-venkateshraghavan&gt;, Foyzur Rahman &lt;https://gopivotal-com.socialcast.com/users/953606-foyzurrahman&gt;, Saurin Shah &lt;https://gopivotal-com.socialcast.com/users/1032658-saurinshah&gt;, Entong Shen &lt;https://gopivotal-com.socialcast.com/users/943369-entongshen&gt;, Mohamed Soliman &lt;https://gopivotal-com.socialcast.com/users/968396-mohamedsoliman&gt; and Sujeet Varakhedi &lt;https://gopivotal-com.socialcast.com/users/946860-sujeetvarakhedi&gt; – on this 
+monumental achievement!
+AGILE UPDATE
+
+Agile, Lean, and a Transformation Blueprint
+
+Janice Fraser &lt;https://gopivotal-com.socialcast.com/users/1080303-janicefraser&gt;, Director, Innovation Practice, Pivotal
+Last month, we announced a fantastic partnership between Pivotal and Eric Ries, &lt;http://blog.pivotal.io/pivotal/news-2/pivotal-and-eric-ries-partners-for-enterprise-transformation&gt; the best-selling author of The Lean Startup &lt;http://theleanstartup.com/&gt;. Eric has been a long-time friend of Pivotal Labs, and has asked Pivotal to be a key partner in the launch of his latest, limited-edition book project, The Leader&apos;s Guide &lt;https://www.kickstarter.com/projects/881308232/only-on-kickstarter-the-leaders-guide-by-eric-ries&gt;. In the book, Eric will share the tools, techniques and lessons that he uses with Fortune 1000 companies like GE and Intuit.
+
+
+
+But there is much more to come…
+
+
+
+Eric understands how challenging agile transformation can be. &quot;I’ve seen a lot of people who immediately “got” it,&quot; he says. But they &quot;struggle after experiencing the challenges that come when trying to build a new company, or transform an existing one.&quot;
+
+
+
+We&apos;re thrilled to announce that Pivotal Labs&apos; Innovation Practice &lt;https://docs.google.com/a/pivotal.io/viewer?a=v&amp;pid=sites&amp;srcid=cGl2b3RhbC5pb3xwaXZvdGFsd2lraXxneDo0NjdhMWNlMzBlNTUyMzcw&gt; will be among the first in the world to put the Leader&apos;s Guide into practice. Our Innovation Practice provides workshops that help clients make bold steps and navigate difficult decisions on the path to becoming successful digital companies.
+
+
+
+Over the coming months, and with the help of Eric Ries, Pivotal will be developing a one-day workshop to introduce the concepts, tools and techniques outlined in the Lean Startup and Leader&apos;s Guide – offering a blueprint for transformation.
+
+
+
+Pivotal Labs facilitators will deliver Innovation Workshops in 11 cities, starting in October.
+
+
+
+Stay tuned for details!
+Customer Spotlight
+Have you heard about UGO?
+
+Thanks to Pivotal Labs, a first-of-its-kind app made its debut in Canada this week, UGO &lt;http://www.ugo.ca/&gt;. No, it’s not a moniker for a cheap car. UGO is a totally new way to do store participating credit cards, and collect and redeem rewards points – all through your phone, with unprecedented ease. UGO has shipped this digital wallet for both Android and Blackberry 10, and Canada’s largest retailer (Loblaw &lt;http://www.loblaw.ca/&gt;) is among the participants. Cooked up through our engagement with Toronto Dominion bank (TD Bank), this is a great example of helping enterprises stay nimble. Check out the promotional video &lt;https://www.ugo.ca/videos/webm/ugo_in_action.webm&gt;.
+
+
+
+Register Your Prospects!
+
+The Cloud Foundry Summit &lt;http://www.cfsummit.com/&gt; is coming to Santa Clara, CA on May 11-12. Participants will immerse themselves on the latest for the world’s leading open platform and Cloud Foundry developer community. Attendees can hear from a stellar line-up of Pivotal customers – including Verizon, Humana, Kroger, Lockheed Martin, Garmin, and more!  Visit the CF Summit website &lt;http://www.cfsummit.com/&gt; to register and get additional details about this exciting event.
+
+
+
+If you have customer stories to share, or questions, let Sophia Tseng (stseng@pivotal.io) know!
+PEOPLE UPDATE
+
+Pivotal Education: The Value of Knowledgeable Customers
+
+Natasa Koledin &lt;https://gopivotal-com.socialcast.com/users/1085592-natasakoledin&gt;, Sr. Director, Pivotal Education
+Taking its cue from the Worldwide Sales Kick-Off &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015&gt;, the Pivotal Education &lt;https://gopivotal-com.socialcast.com/groups/79775-educationpivotalacademy&gt; team is moving boldly to train and certify as many global customers, partners and employees as possible. Pivotal certification trainings are an effective way to educate our customers, help seed the market and accelerate customer adoption of Pivotal products.
+
+
+
+Through Q1 we launched new or updated courses and product-oriented certifications around HAWQ Architecture and Implementation &lt;https://d1fto35gcfffzn.cloudfront.net/training/Pivotal_EDU_HAWQArchitectureandImplementation_Datasheet.pdf&gt;, Pivotal GemFire Administration &lt;https://d1fto35gcfffzn.cloudfront.net/training/Pivotal_EDU_GemFireAdmin_Datasheet.pdf&gt;, Spring Web 4.0 certification exam &lt;https://pivotal.io/training&gt;, and more.
+
+
+
+We’ve completely redesigned our customer-facing website &lt;http://www.pivotal.io/training&gt; to make it easier for users to explore and enroll in trainings, as well as our internal Inside Education site &lt;https://sites.google.com/a/pivotal.io/education/?pli=1&gt;, which the Field can visit to find a host of tools and resources on our customer trainings.
+
+
+
+Also new in Q1 were exclusive, and FREE opportunities to attend live online training classes – many of which filled up in a matter of days. Finally, Pivotal Education formed a partnership with Hortonworks Education to provide f &lt;http://training.hortonworks.com/&gt;ree access to Hadoop training &lt;http://training.hortonworks.com/&gt; for all technical Field employees (check out my message on Socialcast &lt;https://gopivotal-com.socialcast.com/messages/23588292&gt; for registration instructions).
+
+
+
+We’re just getting started. Over the next several months, we’ll launch new Data and Enterprise PaaS courses and certifications. We have a lot of work ahead, and here are some ways you can partner with us:
+
+
+	- Help customers understand the importance of training: Visit the new Inside Education page &lt;https://sites.google.com/a/pivotal.io/education/?pli=1&gt; for resources and tools on what we offer and its value.
+	- Encourage customers to enroll in the free introductory and foundational training Pivotal Education offers online around our technology. Visit www.pivotal.io/training &lt;http://www.pivotal.io/training&gt; and search for courses with “Introduction” in the title.
+
+	- Contact us at Education@pivotal.io &lt;mailto:Education@pivotal.io&gt; to scope your next training deal. Our team can help your customers build customized training plans unique to their deployment and user base.
+
+
+
+
+
+
+Pivotal customer training’s new look and offers
+
+
+
+We’ve scoped out more public and online classes for Q2, to make it easier for customers to train up when they need it, and we’re partnering with Marketing on campaigns to reach customers around new offerings and promotions. Thank you for your support. We look forward to being bold together in 2015!
+MY NAME IS...
+
+Richard Enlow
+
+Richard Enlow &lt;https://gopivotal-com.socialcast.com/users/1096989-richardenlow&gt;, UX Designer, Pivotal
+Design digital products and the way users interact with them for Pivotal Labs. I also host Pivotal Palo Alto’s Lunch Time Draw Time (every third Friday of the month at 12:30pm). If you haven’t been, then you should – it’s the most fun you can have in a conference room.
+Out with users getting to know them and how they work – either chatting with them or watching Nat-Geo style while trying to fit important insights on a 3” x 3” Post-it note.
+Wrapping up one engagement with a Pivotal Labs client in the high tech server infrastructure space. Who know’s what next? There’s never a dull moment as a consultant!
+I’m probably out exploring with my pup &lt;https://instagram.com/ohiathedog&gt;. If you’re ever in the Palo Alto Office while she’s around, she loves treats. Ask her to “sneeze,” it’s wild!
+
+
+
+
+
+Clockwise l to r: Prague by boat; dog’s birthday in style!; Richard and Pivotal design crew
+Long before coming to work here, a few of my smart engineering friends and I were so inspired by a visit to Pivotal Labs that we started our own consultancy, Amoeba Labs. Needless to say, it helped prepare me for the real thing.
+Represents a lot of what’s interesting and exciting about building digital solutions.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from March 17th to 30th
+
+
+
+Aaron Hurley, Software Engineer, San Francisco
+
+Alexandra Ferrari, College Co-op student, San Francisco
+
+Alpha Chen, Software Engineer, US
+
+Congmin Guo, College Co-op student, Beijing
+
+Corey Norton, ISR, Product, Austin Texas
+
+David Croney, Product Manager, Santa Monica
+
+Fernando De Souza, Member of Technical Staff 3, Cork, Ireland
+
+Issaq Al-Ahmed, Software Engineer, San Francisco
+
+Julian Horwood, Sales Account Executive, EMEA
+
+Kristen Koss, Software Engineer, Chicago
+
+Louis Lam, Cloud Services Architect, Palo Alto
+
+Martin O&apos;Driscoll, College Co-op student, Cork Ireland
+
+Mason Demone, Senior IT Client Support Specialist, New York
+
+Mette Alasti, Principal Program Manager (Technical), Palo Alto
+
+Michael Long, UX Designer, San Francisco
+
+Piotr Kawalec, College Co-op student, Cork, Ireland
+
+Toby Rumans, Software Engineer, US
+
+William Welense, UX Designer, Chicago</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Pivotal Analytics Day_KC_Q317.FieldMktg2017_Reminder_No_Tech_Requi</name>
+    <style>none</style>
+    <subject>Pivotal Analytics Day Kansas City | Reminder</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+
+We look forward to seeing you at the Pivotal Analytics Day, hosted by Pivotal in Kansas City. As a reminder, this will be a full, fun day to learn about patterns and technology. We’ll take care of breakfast and lunch, so don’t worry about packing anything!
+Please bring your laptop for the hands-on workshop. Windows students will need an SSH program installed such as MobaXterm. MacOS students can use the standard terminal application. 
+ 
+
+
+
+Date:
+Thursday, September 21, 2017 
+
+
+
+Time:
+
+
+8:00AM to 5:15PM
+
+
+
+
+Location: 
+Sprint Accelerator
+210 W 19th Terrace
+Kansas City, MO 64108 (map &lt;[[https://www.google.com/maps/place/210+W+19+Terrace,+Kansas+City,+MO+64108/@39.090328,-94.586786,14z/data=!4m5!3m4!1s0x87c0f04161cb0517:0x2b238264ef40b0a9!8m2!3d39.0903282!4d-94.5867859?hl=en]]&gt;)
+
+
+
+
+{{my.Pivotal Analytics Day Kansas City:default=edit me}}
+
+Should you have any questions or would like more information about this event, please email Alex at aewy@pivotal.io &lt;[[mailto:aewy@pivotal.io]]&gt;.
+
+Sincerely,
+
+Alex Ewy and The Pivotal Team
+See Agenda &lt;[[http://connect.pivotal.io/Pivotal-Analytics-Day-Kansas-City.html]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

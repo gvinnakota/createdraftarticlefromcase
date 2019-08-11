@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>noreply@pivotal.io</email>
+    <name>Labs Lead Queue</name>
+    <queueMembers>
+        <roleAndSubordinatesInternal>
+            <roleAndSubordinateInternal>Pivotal_Labs_Executive</roleAndSubordinateInternal>
+        </roleAndSubordinatesInternal>
+        <users>
+            <user>elim@pivotal.io</user>
+            <user>tmccollough@pivotal.io</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

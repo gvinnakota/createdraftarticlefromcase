@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Online_TechTarget_Big Data-PaaS QSO_Q314.QSO Big Data Q314</name>
+    <style>none</style>
+    <subject>Get Value from your Data</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+If you&apos;re like most organizations, you&apos;re considering all the options available for getting value from all of your data. To that end, we&apos;d like to share information about the Pivotal Big Data Suite, the most advanced, flexible and friendly big data analytic platform, available by subscription, that allows you to store, accelerate processing and operationalize data for business impact within a single system.
+
+Please check out how customers are using products in the Pivotal Big Data Suite, as well as other information:
+
+
+ - Watch this video about Qrious &lt;https://www.youtube.com/watch?v=86ivnCdhl3I&gt;, a media company using Pivotal big data products to unlock new business opportunities
+ - See this webcast on Arhidia &lt;http://www.pivotal.io/big-data/hadoop/customer-case-study/pivotal-hadoop-and-aridhia-revolutionize-healthcare&gt;, a Pivotal customer that&apos;s created a healthcare data safe haven
+ - Read our press release &lt;http://www.pivotal.io/big-data/pivotal-big-data-suite-gets-real-time-boost-with-in-memory-upgrade&gt; with the latest news on Pivotal&apos;s Big Data Suite
+
+
+
+You also can check out product specifics on the Pivotal Big Data Suite web page. We look forward to speaking with you about the benefits of the Pivotal Big Data Suite, or schedule a demo. Please reply to this email and we can set up time at your convenience.
+
+Best Regards, 
+
+{{lead.Lead Owner First Name:default=The Pivotal Team}} {{lead.Lead Owner Last Name:default=edit me}}
+{{lead.Lead Owner Email Address:default=edit me}} 
+{{lead.Lead Owner Phone Number:default=edit me}}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

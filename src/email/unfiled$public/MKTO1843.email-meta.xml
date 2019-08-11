@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314 - Q115.DC Follow Up Email - No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you at the Pivotal Cloud Platform Workshop - DC</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+ We’re sorry you were unable to attend the Pivotal Cloud Platform Roadshow in Tysons Corner, November 
+5, 2014. 
+
+Visit run.pivotal.io &lt;run.pivotal.io&gt; to try Pivotal Web Services - simply upload your files and your app just works! Additionally, 
+we’ve made the workshop presentations available here &lt;http://www.slideshare.net/Pivotal/tagged/pivotal%20cloud%20platform%20roadshow&gt; so you 
+can catch up on what you missed.
+
+Interested in learning more about what Pivotal CF can do for your organization? Contact us &lt;mailto:info@pivotal.io&gt; to schedule a technical evaluation with our team.
+
+We are looking forward to seeing you at a future event!           
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

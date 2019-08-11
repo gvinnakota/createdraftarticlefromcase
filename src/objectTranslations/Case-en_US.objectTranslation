@@ -1,0 +1,2750 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <fields>
+        <label><!-- * --></label>
+        <name>Alert__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used to store BCS Status information --></help>
+        <label><!-- BCS Status --></label>
+        <name>BCS_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Method of Contact --></label>
+        <name>Best_Method_of_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buildpacks Category --></label>
+        <name>Buildpacks_Category__c</name>
+        <picklistValues>
+            <masterLabel>Binary</masterLabel>
+            <translation><!-- Binary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go</masterLabel>
+            <translation><!-- Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Java</masterLabel>
+            <translation><!-- Java --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Node.js</masterLabel>
+            <translation><!-- Node.js --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Community)</masterLabel>
+            <translation><!-- Other (Community) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHP</masterLabel>
+            <translation><!-- PHP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Python</masterLabel>
+            <translation><!-- Python --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ruby</masterLabel>
+            <translation><!-- Ruby --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staticfile</masterLabel>
+            <translation><!-- Staticfile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tc Server</masterLabel>
+            <translation><!-- tc Server --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customer Comments received from Closed case survey --></help>
+        <label><!-- CES Case Survey Comments --></label>
+        <name>CES_Case_Survey_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Score from Case Survey sent to customer --></help>
+        <label><!-- CES Case Survey Score --></label>
+        <name>CES_Case_Survey_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- CF CLI Category --></label>
+        <name>CF_CLI_Category__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Linux</masterLabel>
+            <translation><!-- Linux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OS X</masterLabel>
+            <translation><!-- OS X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plugins</masterLabel>
+            <translation><!-- Plugins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows</masterLabel>
+            <translation><!-- Windows --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CSR Hand Off to --></label>
+        <name>CSR_Hand_Off_to__c</name>
+        <picklistValues>
+            <masterLabel>Hand Off::Ask IT</masterLabel>
+            <translation><!-- Hand Off::Ask IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Customer Engineers</masterLabel>
+            <translation><!-- Hand Off::Customer Engineers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Customer Service Team</masterLabel>
+            <translation><!-- Hand Off::Customer Service Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::EH/SP Escalation Team</masterLabel>
+            <translation><!-- Hand Off::EH/SP Escalation Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Education Team</masterLabel>
+            <translation><!-- Hand Off::Education Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::GSS Escalation Team</masterLabel>
+            <translation><!-- Hand Off::GSS Escalation Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::HR Department</masterLabel>
+            <translation><!-- Hand Off::HR Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Marketing Team</masterLabel>
+            <translation><!-- Hand Off::Marketing Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Operations Team</masterLabel>
+            <translation><!-- Hand Off::Operations Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::PWS Customer Engineer Team</masterLabel>
+            <translation><!-- Hand Off::PWS Customer Engineer Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::PivNet Team</masterLabel>
+            <translation><!-- Hand Off::PivNet Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Pivotal Labs</masterLabel>
+            <translation><!-- Hand Off::Pivotal Labs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Pivotal Tracker Team</masterLabel>
+            <translation><!-- Hand Off::Pivotal Tracker Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Product Team</masterLabel>
+            <translation><!-- Hand Off::Product Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand Off::Sales Team</masterLabel>
+            <translation><!-- Hand Off::Sales Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CaseClosedDayOfWeek --></label>
+        <name>CaseClosedDayOfWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseClosedMonth --></label>
+        <name>CaseClosedMonth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field for reporting displaying day of week Case was escalated. --></help>
+        <label><!-- CaseEscalateDayOfWeek --></label>
+        <name>CaseEscalateDayOfWeek__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field for reporting displaying time of escalation in HH:MM (24-hr). --></help>
+        <label><!-- CaseEscalateTime --></label>
+        <name>CaseEscalateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseID18 --></label>
+        <name>CaseID18__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field for reporting only; populates day of week Case was created --></help>
+        <label><!-- CaseOpenDayOfWeek --></label>
+        <name>CaseOpenDayOfWeek__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden field for reporting to display time (HH:MM 24-hr clock) only of Case created time. --></help>
+        <label><!-- CaseOpenTime --></label>
+        <name>CaseOpenTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOwnerMgrEmail --></label>
+        <name>CaseOwnerMgrEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOwnerName --></label>
+        <name>CaseOwnerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseURL --></label>
+        <name>CaseURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Comments --></label>
+        <name>Case_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Case Contact GEO not on page layout . To be used in Queue lists --></help>
+        <label><!-- Case Contact Geo --></label>
+        <name>Case_Contact_Geo__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hidden Field for  reporting only. Counts the number of Cases. HG 9.10.18 --></help>
+        <label><!-- Case Count --></label>
+        <name>Case_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Manager --></label>
+        <name>Case_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Role --></label>
+        <name>Case_Owner_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Resolution Time --></label>
+        <name>Case_Resolution_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>Case_Type__c</name>
+        <picklistValues>
+            <masterLabel>Escalation</masterLabel>
+            <translation><!-- Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Account / Dashboard</masterLabel>
+            <translation><!-- Problem::Account / Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Defect</masterLabel>
+            <translation><!-- Problem::Defect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Documentation</masterLabel>
+            <translation><!-- Problem::Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Error</masterLabel>
+            <translation><!-- Problem::Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Implementation</masterLabel>
+            <translation><!-- Problem::Implementation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Installation</masterLabel>
+            <translation><!-- Problem::Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Logging</masterLabel>
+            <translation><!-- Problem::Logging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Performance</masterLabel>
+            <translation><!-- Problem::Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Security</masterLabel>
+            <translation><!-- Problem::Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Technical Issues</masterLabel>
+            <translation><!-- Problem::Technical Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem::Upgrade</masterLabel>
+            <translation><!-- Problem::Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question::Contract / Maintenance / Licensing</masterLabel>
+            <translation><!-- Question::Contract / Maintenance / Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question::Partnership / Business Development</masterLabel>
+            <translation><!-- Question::Partnership / Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question::Software Availability / Compatibility / Upgrades</masterLabel>
+            <translation><!-- Question::Software Availability / Compatibility / Upgrades --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Access Meetings</masterLabel>
+            <translation><!-- Remote Access Meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request::Customer Service Improvement</masterLabel>
+            <translation><!-- Request::Customer Service Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request::Documentation Improvement</masterLabel>
+            <translation><!-- Request::Documentation Improvement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request::Product Feature Improvement</masterLabel>
+            <translation><!-- Request::Product Feature Improvement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case hold time staring --></label>
+        <name>Case_hold_time_staring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case on hold time --></label>
+        <name>Case_on_hold_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case on hold total time --></label>
+        <name>Case_on_hold_total_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Solved Time --></label>
+        <name>Case_solved_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commented By --></label>
+        <name>Commented_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component --></label>
+        <name>Component__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email Address --></label>
+        <name>Contact_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact FirstName --></label>
+        <name>Contact_FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact LastName --></label>
+        <name>Contact_LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Secondary Phone --></label>
+        <name>Contact_Secondary_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Services Category --></label>
+        <name>Customer_Service_Category__c</name>
+        <picklistValues>
+            <masterLabel>CSR PWS Support</masterLabel>
+            <translation><!-- CSR PWS Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entitlement</masterLabel>
+            <translation><!-- Entitlement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Communications</masterLabel>
+            <translation><!-- Internal Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onboarding</masterLabel>
+            <translation><!-- Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivnet</masterLabel>
+            <translation><!-- Pivnet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Support Portal</masterLabel>
+            <translation><!-- Pivotal Support Portal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Services Sub Category 1 --></label>
+        <name>Customer_Service_Sub_Category_1__c</name>
+        <picklistValues>
+            <masterLabel>Account Deletion</masterLabel>
+            <translation><!-- Account Deletion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Questions</masterLabel>
+            <translation><!-- Account Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AskIT</masterLabel>
+            <translation><!-- AskIT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beta Tile Request</masterLabel>
+            <translation><!-- Beta Tile Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Questions</masterLabel>
+            <translation><!-- Billing Questions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot locate PCN</masterLabel>
+            <translation><!-- Cannot locate PCN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Escalation</masterLabel>
+            <translation><!-- Case Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Owner Update</masterLabel>
+            <translation><!-- Case Owner Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Requeue</masterLabel>
+            <translation><!-- Case Requeue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close User Account</masterLabel>
+            <translation><!-- Close User Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Onboarding AMER</masterLabel>
+            <translation><!-- Completed Onboarding AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Onboarding APJ</masterLabel>
+            <translation><!-- Completed Onboarding APJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Onboarding EMEA</masterLabel>
+            <translation><!-- Completed Onboarding EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed Partner Onboarding</masterLabel>
+            <translation><!-- Completed Partner Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Engineers</masterLabel>
+            <translation><!-- Customer Engineers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service Team</masterLabel>
+            <translation><!-- Customer Service Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DPL Check</masterLabel>
+            <translation><!-- DPL Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation Team</masterLabel>
+            <translation><!-- Documentation Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EH/SP</masterLabel>
+            <translation><!-- EH/SP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOA Request</masterLabel>
+            <translation><!-- EOA Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOA/EOL Request</masterLabel>
+            <translation><!-- EOA/EOL Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education Team</masterLabel>
+            <translation><!-- Education Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired Support Contract</masterLabel>
+            <translation><!-- Expired Support Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Assist</masterLabel>
+            <translation><!-- Field Assist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heightened Awareness</masterLabel>
+            <translation><!-- Heightened Awareness --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How to Submit Pivotal Support Request</masterLabel>
+            <translation><!-- How to Submit Pivotal Support Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How to Submit VMWare Requests</masterLabel>
+            <translation><!-- How to Submit VMWare Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Team</masterLabel>
+            <translation><!-- Legal Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Entitlement</masterLabel>
+            <translation><!-- Manual Entitlement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Demand</masterLabel>
+            <translation><!-- On Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCN Validation</masterLabel>
+            <translation><!-- PCN Validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partners</masterLabel>
+            <translation><!-- Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance Issue</masterLabel>
+            <translation><!-- Performance Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivnet User Account Issue</masterLabel>
+            <translation><!-- Pivnet User Account Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker Team</masterLabel>
+            <translation><!-- Pivotal Tracker Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portal Login Issues</masterLabel>
+            <translation><!-- Portal Login Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questions about Pivotal</masterLabel>
+            <translation><!-- Questions about Pivotal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quota Increase Request</masterLabel>
+            <translation><!-- Quota Increase Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Queue</masterLabel>
+            <translation><!-- Re-Queue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-assignment</masterLabel>
+            <translation><!-- Re-assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMS Issue</masterLabel>
+            <translation><!-- SMS Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Team</masterLabel>
+            <translation><!-- Sales Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Availability</masterLabel>
+            <translation><!-- Service Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ServiceCloud issues</masterLabel>
+            <translation><!-- ServiceCloud issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Severity Upgrade</masterLabel>
+            <translation><!-- Severity Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Downtime / Problems</masterLabel>
+            <translation><!-- Site Downtime / Problems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spam</masterLabel>
+            <translation><!-- Spam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship Question</masterLabel>
+            <translation><!-- Sponsorship Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talkdesk Inbound</masterLabel>
+            <translation><!-- Talkdesk Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talkdesk Outbound</masterLabel>
+            <translation><!-- Talkdesk Outbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Talkdesk Voicemail</masterLabel>
+            <translation><!-- Talkdesk Voicemail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing</masterLabel>
+            <translation><!-- Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Period Extension</masterLabel>
+            <translation><!-- Trial Period Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Phone Number</masterLabel>
+            <translation><!-- Used Phone Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMware Customer Support Request</masterLabel>
+            <translation><!-- VMware Customer Support Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VMware Entitlement</masterLabel>
+            <translation><!-- VMware Entitlement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Services Sub Category 2 --></label>
+        <name>Customer_Service_Sub_Category_2__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APJ</masterLabel>
+            <translation><!-- APJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add New Entitlement</masterLabel>
+            <translation><!-- Add New Entitlement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon - Entitled</masterLabel>
+            <translation><!-- Amazon - Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amazon - Not Entitled</masterLabel>
+            <translation><!-- Amazon - Not Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entitled</masterLabel>
+            <translation><!-- Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Cloud Platform - Entitled</masterLabel>
+            <translation><!-- Google Cloud Platform - Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Cloud Platform - Not Entitled</masterLabel>
+            <translation><!-- Google Cloud Platform - Not Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure - Entitled</masterLabel>
+            <translation><!-- Microsoft Azure - Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure - Not Entitled</masterLabel>
+            <translation><!-- Microsoft Azure - Not Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Entitled</masterLabel>
+            <translation><!-- Not Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic</masterLabel>
+            <translation><!-- Strategic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Exception Granted</masterLabel>
+            <translation><!-- Support Exception Granted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Exception Rejected</masterLabel>
+            <translation><!-- Support Exception Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Typical</masterLabel>
+            <translation><!-- Typical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Contract Date</masterLabel>
+            <translation><!-- Update Contract Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Eg Runbook/Timeline Doc if available --></help>
+        <label><!-- Customer&apos;s Planned Procedure --></label>
+        <name>Customer_s_Planned_Procedure__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSE involved?: --></label>
+        <name>DSE_involved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disable Survey Email --></label>
+        <name>Disable_Survey_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Survey --></label>
+        <name>Do_Not_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- EM Disengage Time --></label>
+        <name>EM_Disengage_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- EM Disengage --></label>
+        <name>EM_Disengage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email to Case Origin --></label>
+        <name>Email_to_Case_Origin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email to case --></label>
+        <name>Email_to_case_Test__c</name>
+        <picklistValues>
+            <masterLabel>Customer-Service</masterLabel>
+            <translation><!-- Customer-Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EHSP Escalations</masterLabel>
+            <translation><!-- EHSP Escalations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EHSP Support</masterLabel>
+            <translation><!-- EHSP Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federation Support</masterLabel>
+            <translation><!-- Federation Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Demand Support</masterLabel>
+            <translation><!-- On Demand Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POC Support</masterLabel>
+            <translation><!-- POC Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PWS Run Support</masterLabel>
+            <translation><!-- PWS Run Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PWS-Account</masterLabel>
+            <translation><!-- PWS-Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PWS-Feedback</masterLabel>
+            <translation><!-- PWS-Feedback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PWS-Support</masterLabel>
+            <translation><!-- PWS-Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Escalations</masterLabel>
+            <translation><!-- Support Escalations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Company Name --></label>
+        <name>End_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Environment --></label>
+        <name>Environment__c</name>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoC</masterLabel>
+            <translation><!-- PoC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA / Test</masterLabel>
+            <translation><!-- QA / Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Escalate to Engineering --></label>
+        <name>Escalate_to_Engineering__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation Accept Time --></label>
+        <name>Escalation_Accept_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation Accepted --></label>
+        <name>Escalation_Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation Management Requested --></label>
+        <name>Escalation_Management_Escalation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation Request Time --></label>
+        <name>Escalation_Request_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Federation Service Request # --></label>
+        <name>Federation_Service_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Federation --></label>
+        <name>Federation__c</name>
+        <picklistValues>
+            <masterLabel>Alpine::Alpine-Connect to Data Sources</masterLabel>
+            <translation><!-- Alpine::Alpine-Connect to Data Sources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alpine::Alpine-License</masterLabel>
+            <translation><!-- Alpine::Alpine-License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alpine::Alpine-Operating Alpine</masterLabel>
+            <translation><!-- Alpine::Alpine-Operating Alpine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alpine::Alpine-Others</masterLabel>
+            <translation><!-- Alpine::Alpine-Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alpine::Alpine-System Requirements are not met</masterLabel>
+            <translation><!-- Alpine::Alpine-System Requirements are not met --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMC</masterLabel>
+            <translation><!-- EMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vmware</masterLabel>
+            <translation><!-- Vmware --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First Response Date/Time --></label>
+        <name>First_Response_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Product Version --></label>
+        <name>Full_Product_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- HA Event End Date/Time --></label>
+        <name>HA_Event_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- HA Event Start Date/Time --></label>
+        <name>HA_Event_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Heightened Awareness Event Type --></label>
+        <name>Heightened_Awareness_Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expand/Scale - Adding VM/Node/Clusters</masterLabel>
+            <translation><!-- Expand/Scale - Adding VM/Node/Clusters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IaaS Migration</masterLabel>
+            <translation><!-- IaaS Migration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infrastructure Change</masterLabel>
+            <translation><!-- Infrastructure Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install</masterLabel>
+            <translation><!-- Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance/Housekeeping</masterLabel>
+            <translation><!-- Maintenance/Housekeeping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Customer Event</masterLabel>
+            <translation><!-- Major Customer Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Change</masterLabel>
+            <translation><!-- Network Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shutdown/Restart</masterLabel>
+            <translation><!-- Shutdown/Restart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Heightened Awareness Event? --></label>
+        <name>Heightened_Awareness_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- IaaS --></label>
+        <name>IaaS__c</name>
+        <picklistValues>
+            <masterLabel>AWS</masterLabel>
+            <translation><!-- AWS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azure</masterLabel>
+            <translation><!-- Azure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Compute Platform</masterLabel>
+            <translation><!-- Google Compute Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kubernetes</masterLabel>
+            <translation><!-- Kubernetes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OpenStack</masterLabel>
+            <translation><!-- OpenStack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>vSphere</masterLabel>
+            <translation><!-- vSphere --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- InboundEmailAlias --></label>
+        <name>InboundEmailAlias__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsESHP? --></label>
+        <name>IsESHP__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsFuture --></label>
+        <name>IsFuture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this internal Pivotal/external Custom --></label>
+        <name>Is_this_internal_Pivotal_external_Custom__c</name>
+        <picklistValues>
+            <masterLabel>External Customer</masterLabel>
+            <translation><!-- External Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Pivotal</masterLabel>
+            <translation><!-- Internal Pivotal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- KB/Doc Resource --></label>
+        <name>KB_Doc_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Customer Response --></label>
+        <name>Last_Customer_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date Custom --></label>
+        <name>Last_Modified_Date_Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Support Team Response --></label>
+        <name>Last_Support_Team_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- LegacySFDCCaseID18TEMP --></label>
+        <name>LegacySFDCCaseID18TEMP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Zendesk Case Number --></label>
+        <name>Legacy_Zendesk_Case_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logged in user --></label>
+        <name>Logged_in_user__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of the Pivotal Account Executive --></label>
+        <name>Name_of_the_Pivotal_Account_Executive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the product version the customer will be upgrading to if applicable --></help>
+        <label><!-- New Product Version --></label>
+        <name>New_Product_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- NonTech SLO Time Remaining --></label>
+        <name>NonTech_SLO_Time_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Success Team --></label>
+        <name>Notify_Success_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- PCFS OSS Utilities --></label>
+        <name>PCFS_OSS_Utilities__c</name>
+        <picklistValues>
+            <masterLabel>PCF Dev</masterLabel>
+            <translation><!-- PCF Dev --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>c[0] pipelines</masterLabel>
+            <translation><!-- c[0] pipelines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cfops</masterLabel>
+            <translation><!-- cfops --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>firehose-to-syslog</masterLabel>
+            <translation><!-- firehose-to-syslog --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PCN Check --></label>
+        <name>PCN_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- POC? --></label>
+        <name>POC__c</name>
+    </fields>
+    <fields>
+        <label><!-- PWS Category --></label>
+        <name>PWS_Category__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing and Account Management (BAM)</masterLabel>
+            <translation><!-- Billing and Account Management (BAM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buildpacks</masterLabel>
+            <translation><!-- Buildpacks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLI</masterLabel>
+            <translation><!-- CLI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer Question</masterLabel>
+            <translation><!-- Developer Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation</masterLabel>
+            <translation><!-- Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logging</masterLabel>
+            <translation><!-- Logging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Login/Authentication</masterLabel>
+            <translation><!-- Login/Authentication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketplace</masterLabel>
+            <translation><!-- Marketplace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime</masterLabel>
+            <translation><!-- Runtime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Apps</masterLabel>
+            <translation><!-- User Apps --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PWS Primary Cause --></label>
+        <name>PWS_Primary_Cause__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation><!-- Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bug</masterLabel>
+            <translation><!-- Bug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Docs</masterLabel>
+            <translation><!-- Docs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature Request</masterLabel>
+            <translation><!-- Feature Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Production</masterLabel>
+            <translation><!-- Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spam</masterLabel>
+            <translation><!-- Spam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be Filled Later</masterLabel>
+            <translation><!-- To be Filled Later --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Error</masterLabel>
+            <translation><!-- User Error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PWS Primary SubSystem --></label>
+        <name>PWS_Primary_Subsystem__c</name>
+        <picklistValues>
+            <masterLabel>Admin Request</masterLabel>
+            <translation><!-- Admin Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buildpacks</masterLabel>
+            <translation><!-- Buildpacks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Command Line Interface</masterLabel>
+            <translation><!-- Command Line Interface --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer Console</masterLabel>
+            <translation><!-- Developer Console --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation</masterLabel>
+            <translation><!-- Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logging</masterLabel>
+            <translation><!-- Logging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Login / Authentication</masterLabel>
+            <translation><!-- Login / Authentication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketplace</masterLabel>
+            <translation><!-- Marketplace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other CF Clients</masterLabel>
+            <translation><!-- Other CF Clients --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runtime</masterLabel>
+            <translation><!-- Runtime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spam</masterLabel>
+            <translation><!-- Spam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To be Filled Later</masterLabel>
+            <translation><!-- To be Filled Later --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User App</masterLabel>
+            <translation><!-- User App --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Services Category --></label>
+        <name>Partner_Services_Category__c</name>
+        <picklistValues>
+            <masterLabel>Aerospike EE OnDemand Service for PCF</masterLabel>
+            <translation><!-- Aerospike EE OnDemand Service for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospike Enterprise Edition for PCF</masterLabel>
+            <translation><!-- Aerospike Enterprise Edition for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aerospike Service Broker for PCF</masterLabel>
+            <translation><!-- Aerospike Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Altoros AWS S3 for PCF</masterLabel>
+            <translation><!-- Altoros AWS S3 for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Altoros Cassandra for PCF</masterLabel>
+            <translation><!-- Altoros Cassandra for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Altoros Log Search for PCF</masterLabel>
+            <translation><!-- Altoros Log Search for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apigee Edge Service Broker for PCF</masterLabel>
+            <translation><!-- Apigee Edge Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AppDynamics Service Broker for PCF</masterLabel>
+            <translation><!-- AppDynamics Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Azuqua Service Broker for PCF</masterLabel>
+            <translation><!-- Azuqua Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue Medora Nozzle for PCF</masterLabel>
+            <translation><!-- Blue Medora Nozzle for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloudbees Jenkins Platform for PCF</masterLabel>
+            <translation><!-- Cloudbees Jenkins Platform for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloudsoft Service Broker for PCF</masterLabel>
+            <translation><!-- Cloudsoft Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crunchy PostgreSQL for PCF</masterLabel>
+            <translation><!-- Crunchy PostgreSQL for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DataStax Cassandra Service Broker for PCF</masterLabel>
+            <translation><!-- DataStax Cassandra Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dingo PostgreSQL for PCF</masterLabel>
+            <translation><!-- Dingo PostgreSQL for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynatrace Full-Stack Add-On for PCF</masterLabel>
+            <translation><!-- Dynatrace Full-Stack Add-On for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynatrace Service Broker for PCF</masterLabel>
+            <translation><!-- Dynatrace Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDB Postgres Service Broker for PCF</masterLabel>
+            <translation><!-- EDB Postgres Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edge Installer for PCF</masterLabel>
+            <translation><!-- Edge Installer for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Data Payments Service Broker for PCF</masterLabel>
+            <translation><!-- First Data Payments Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Forgerock Service Broker for PCF</masterLabel>
+            <translation><!-- Forgerock Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GCP Service Broker for PCF</masterLabel>
+            <translation><!-- GCP Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GitLab Enterprise Plus for PCF</masterLabel>
+            <translation><!-- GitLab Enterprise Plus for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gluon CloudLink Service Broker for PCF</masterLabel>
+            <translation><!-- Gluon CloudLink Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guardtime Blockchain-enabled Service Broker for PCF</masterLabel>
+            <translation><!-- Guardtime Blockchain-enabled Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazelcast Jet for PCF</masterLabel>
+            <translation><!-- Hazelcast Jet for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honeycomb Nozzle for PCF</masterLabel>
+            <translation><!-- Honeycomb Nozzle for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JFrog Artifactory for PCF</masterLabel>
+            <translation><!-- JFrog Artifactory for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Azure Service Broker for PCF</masterLabel>
+            <translation><!-- Microsoft Azure Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MongoDB Managed Service for PCF</masterLabel>
+            <translation><!-- MongoDB Managed Service for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mulesoft Anypoint Platform Solution Service Broker for PCF</masterLabel>
+            <translation><!-- Mulesoft Anypoint Platform Solution Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Relic Service Broker for PCF</masterLabel>
+            <translation><!-- New Relic Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PagerDuty Service Broker for PCF</masterLabel>
+            <translation><!-- PagerDuty Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis Enterprise Pack for PCF</masterLabel>
+            <translation><!-- Redis Enterprise Pack for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis Labs Enterprise Cluster Service Broker for PCF</masterLabel>
+            <translation><!-- Redis Labs Enterprise Cluster Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMB Volume Service for PCF</masterLabel>
+            <translation><!-- SMB Volume Service for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solace Messaging for PCF</masterLabel>
+            <translation><!-- Solace Messaging for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Splunk Nozzle for PCF</masterLabel>
+            <translation><!-- Splunk Nozzle for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stardog Service Broker for PCF</masterLabel>
+            <translation><!-- Stardog Service Broker for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sumo Logic Nozzle for PCF</masterLabel>
+            <translation><!-- Sumo Logic Nozzle for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIBCO BusinessWorks Container Edition Buildpack for PCF</masterLabel>
+            <translation><!-- TIBCO BusinessWorks Container Edition Buildpack for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WombatOAM Erlang Monitoring for PCF</masterLabel>
+            <translation><!-- WombatOAM Erlang Monitoring for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a9s Bosh for PCF</masterLabel>
+            <translation><!-- a9s Bosh for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a9s Consul DNS for PCF</masterLabel>
+            <translation><!-- a9s Consul DNS for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a9s Elasticsearch for PCF</masterLabel>
+            <translation><!-- a9s Elasticsearch for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a9s MongoDB for PCF</masterLabel>
+            <translation><!-- a9s MongoDB for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a9s PostgresSQL for PCF</masterLabel>
+            <translation><!-- a9s PostgresSQL for PCF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a9s RabbitMQ for PCF</masterLabel>
+            <translation><!-- a9s RabbitMQ for PCF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Employee Onsite?: --></label>
+        <name>Pivotal_Employee_Onsite__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential Opportunity of Deal $$ --></label>
+        <name>Potential_Opportunity_of_Deal__c</name>
+        <picklistValues>
+            <masterLabel>$0 to $500K</masterLabel>
+            <translation><!-- $0 to $500K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500K to $1M</masterLabel>
+            <translation><!-- $500K to $1M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$Over $1M</masterLabel>
+            <translation><!-- $Over $1M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Pivotal Contact --></label>
+        <name>Primary_Pivotal_Contact__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;D On Hold Start Time --></label>
+        <name>R_D_On_Hold_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- R&amp;D On Hold Stop Time --></label>
+        <name>R_D_On_Hold_Stop_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record # (Ltd. to 15 Characters) --></label>
+        <name>Related_Case_Ltd_to_15_Characters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Record --></label>
+        <name>Related_Case__c</name>
+        <picklistValues>
+            <masterLabel>EMC CSI</masterLabel>
+            <translation><!-- EMC CSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hortonworks</masterLabel>
+            <translation><!-- Hortonworks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JIRA</masterLabel>
+            <translation><!-- JIRA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker</masterLabel>
+            <translation><!-- Pivotal Tracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAC</masterLabel>
+            <translation><!-- TRAC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related KB Article --></label>
+        <name>Related_KB_Article__c</name>
+        <picklistValues>
+            <masterLabel>KB Needed</masterLabel>
+            <translation><!-- KB Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KB/Doc Exists</masterLabel>
+            <translation><!-- KB/Doc Exists --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requestupdate --></label>
+        <name>Requestupdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution Code --></label>
+        <name>Resolution_Code__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party Software</masterLabel>
+            <translation><!-- 3rd Party Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Education</masterLabel>
+            <translation><!-- Customer Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Defect Reported</masterLabel>
+            <translation><!-- Defect Reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documentation</masterLabel>
+            <translation><!-- Documentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environment/Hardware</masterLabel>
+            <translation><!-- Environment/Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalation</masterLabel>
+            <translation><!-- Escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature Request</masterLabel>
+            <translation><!-- Feature Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISV</masterLabel>
+            <translation><!-- ISV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Information/Unresolved</masterLabel>
+            <translation><!-- Insufficient Information/Unresolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Known Issue</masterLabel>
+            <translation><!-- Known Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Known Limitation</masterLabel>
+            <translation><!-- Known Limitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Entitled</masterLabel>
+            <translation><!-- Not Entitled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Reproducible</masterLabel>
+            <translation><!-- Not Reproducible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Fix</masterLabel>
+            <translation><!-- Product Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Be Filled Later</masterLabel>
+            <translation><!-- To Be Filled Later --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won't Fix</masterLabel>
+            <translation><!-- Won&apos;t Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workaround</masterLabel>
+            <translation><!-- Workaround --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prevention Opportunity --></label>
+        <name>Resolution_Opportunity_Root_Cause__c</name>
+        <picklistValues>
+            <masterLabel>Account Management</masterLabel>
+            <translation><!-- Account Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Education</masterLabel>
+            <translation><!-- Customer Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Improvement - Already Reported</masterLabel>
+            <translation><!-- Product Improvement - Already Reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Improvement - New</masterLabel>
+            <translation><!-- Product Improvement - New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Resolve - Community Forum Post</masterLabel>
+            <translation><!-- Self Resolve - Community Forum Post --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Resolve - Create Knowledge Article</masterLabel>
+            <translation><!-- Self Resolve - Create Knowledge Article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Resolve - Documentation Improvement</masterLabel>
+            <translation><!-- Self Resolve - Documentation Improvement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolution --></label>
+        <name>Resolution__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Opportunity Number: --></label>
+        <name>SFDC_Opportunity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLO Target Date/Time --></label>
+        <name>SLA_Target_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Color Definitions:
+-Blue = SLO was met
+-Green = 1+ hours remaining on SLO
+-Yellow = 1 hour or less remaining on SLO
+-Orange = 30 minutes or less remaining on SLO
+-Red = SLO missed --></help>
+        <label><!-- SLO Flag --></label>
+        <name>SLO_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLO Time Remaining --></label>
+        <name>SLO_Time_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- SendSafely URL --></label>
+        <name>SendSafely_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Category --></label>
+        <name>Services_Category__c</name>
+        <picklistValues>
+            <masterLabel>API Gateway (EOL)</masterLabel>
+            <translation><!-- API Gateway (EOL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App AutoScaler</masterLabel>
+            <translation><!-- App AutoScaler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App AutoScaler::1.3.x</masterLabel>
+            <translation><!-- App AutoScaler::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App Distribution</masterLabel>
+            <translation><!-- App Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App Distribution::1.2.x</masterLabel>
+            <translation><!-- App Distribution::1.2.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App Distribution::1.3.x</masterLabel>
+            <translation><!-- App Distribution::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concourse</masterLabel>
+            <translation><!-- Concourse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concourse::Alpha</masterLabel>
+            <translation><!-- Concourse::Alpha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Sync (EOL)</masterLabel>
+            <translation><!-- Data Sync (EOL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire</masterLabel>
+            <translation><!-- Gemfire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.0.x</masterLabel>
+            <translation><!-- Gemfire::1.0.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.1.x</masterLabel>
+            <translation><!-- Gemfire::1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.2.x</masterLabel>
+            <translation><!-- Gemfire::1.2.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.3.x</masterLabel>
+            <translation><!-- Gemfire::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.4.x</masterLabel>
+            <translation><!-- Gemfire::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.5.x</masterLabel>
+            <translation><!-- Gemfire::1.5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gemfire::1.6.x</masterLabel>
+            <translation><!-- Gemfire::1.6.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kafka</masterLabel>
+            <translation><!-- Kafka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kafka::Alpha</masterLabel>
+            <translation><!-- Kafka::Alpha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MongoDB</masterLabel>
+            <translation><!-- MongoDB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MongoDB::1.3.x</masterLabel>
+            <translation><!-- MongoDB::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MongoDB::1.4.x</masterLabel>
+            <translation><!-- MongoDB::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL</masterLabel>
+            <translation><!-- MySQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL::1.3.2.0</masterLabel>
+            <translation><!-- MySQL::1.3.2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL::1.4.0.0</masterLabel>
+            <translation><!-- MySQL::1.4.0.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL::1.5.0.0</masterLabel>
+            <translation><!-- MySQL::1.5.0.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL::1.6.x</masterLabel>
+            <translation><!-- MySQL::1.6.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL::1.7.x</masterLabel>
+            <translation><!-- MySQL::1.7.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MySQL::1.8.x</masterLabel>
+            <translation><!-- MySQL::1.8.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j</masterLabel>
+            <translation><!-- Neo4j --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j::1.3.x</masterLabel>
+            <translation><!-- Neo4j::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neo4j::1.4.x</masterLabel>
+            <translation><!-- Neo4j::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCF JMX Bridge</masterLabel>
+            <translation><!-- PCF JMX Bridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCF Log Search</masterLabel>
+            <translation><!-- PCF Log Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHD</masterLabel>
+            <translation><!-- PHD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker</masterLabel>
+            <translation><!-- Pivotal Tracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker::1.1.1.x</masterLabel>
+            <translation><!-- Pivotal Tracker::1.1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker::1.2.1.x</masterLabel>
+            <translation><!-- Pivotal Tracker::1.2.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pivotal Tracker::1.3.1.x</masterLabel>
+            <translation><!-- Pivotal Tracker::1.3.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Notification</masterLabel>
+            <translation><!-- Push Notification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Notification::1.2.x</masterLabel>
+            <translation><!-- Push Notification::1.2.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Notification::1.3.x</masterLabel>
+            <translation><!-- Push Notification::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Notification::1.4.x</masterLabel>
+            <translation><!-- Push Notification::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Push Notification::1.5.x</masterLabel>
+            <translation><!-- Push Notification::1.5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ</masterLabel>
+            <translation><!-- RabbitMQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.0.x</masterLabel>
+            <translation><!-- RabbitMQ::1.0.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.1.x</masterLabel>
+            <translation><!-- RabbitMQ::1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.2.x</masterLabel>
+            <translation><!-- RabbitMQ::1.2.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.3.x</masterLabel>
+            <translation><!-- RabbitMQ::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.4.x</masterLabel>
+            <translation><!-- RabbitMQ::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.5.x</masterLabel>
+            <translation><!-- RabbitMQ::1.5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.6.0</masterLabel>
+            <translation><!-- RabbitMQ::1.6.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.6.1</masterLabel>
+            <translation><!-- RabbitMQ::1.6.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.6.2</masterLabel>
+            <translation><!-- RabbitMQ::1.6.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.6.3</masterLabel>
+            <translation><!-- RabbitMQ::1.6.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.6.x</masterLabel>
+            <translation><!-- RabbitMQ::1.6.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.7</masterLabel>
+            <translation><!-- RabbitMQ::1.7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RabbitMQ::1.8</masterLabel>
+            <translation><!-- RabbitMQ::1.8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis</masterLabel>
+            <translation><!-- Redis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis::1.3.x</masterLabel>
+            <translation><!-- Redis::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis::1.4.x</masterLabel>
+            <translation><!-- Redis::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis::1.5.x</masterLabel>
+            <translation><!-- Redis::1.5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis::1.6.x</masterLabel>
+            <translation><!-- Redis::1.6.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redis::1.7.x</masterLabel>
+            <translation><!-- Redis::1.7.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riak</masterLabel>
+            <translation><!-- Riak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riak::1.3.x</masterLabel>
+            <translation><!-- Riak::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riak::1.4.x</masterLabel>
+            <translation><!-- Riak::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riak::1.5.x</masterLabel>
+            <translation><!-- Riak::1.5.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSHFS</masterLabel>
+            <translation><!-- SSHFS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSHFS::1.3.x</masterLabel>
+            <translation><!-- SSHFS::1.3.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSHFS::1.4.x</masterLabel>
+            <translation><!-- SSHFS::1.4.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO</masterLabel>
+            <translation><!-- SSO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO::1.0.x</masterLabel>
+            <translation><!-- SSO::1.0.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO::1.1.x</masterLabel>
+            <translation><!-- SSO::1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSO::1.2.x</masterLabel>
+            <translation><!-- SSO::1.2.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Broker for AWS::0.1.1</masterLabel>
+            <translation><!-- Service Broker for AWS::0.1.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Broker for AWS::0.1.2</masterLabel>
+            <translation><!-- Service Broker for AWS::0.1.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Broker for AWS::0.1.3</masterLabel>
+            <translation><!-- Service Broker for AWS::0.1.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Broker for AWS::0.1.x</masterLabel>
+            <translation><!-- Service Broker for AWS::0.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services SDK</masterLabel>
+            <translation><!-- Services SDK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services SDK::0.1.0</masterLabel>
+            <translation><!-- Services SDK::0.1.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Session State Caching</masterLabel>
+            <translation><!-- Session State Caching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Session State Caching::1.0.x</masterLabel>
+            <translation><!-- Session State Caching::1.0.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Session State Caching::1.1.x</masterLabel>
+            <translation><!-- Session State Caching::1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Session State Caching::1.2.x</masterLabel>
+            <translation><!-- Session State Caching::1.2.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Cloud Services</masterLabel>
+            <translation><!-- Spring Cloud Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Cloud Services::1.0.x</masterLabel>
+            <translation><!-- Spring Cloud Services::1.0.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Cloud Services::1.1.0.x</masterLabel>
+            <translation><!-- Spring Cloud Services::1.1.0.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Cloud Services::1.1.1.x</masterLabel>
+            <translation><!-- Spring Cloud Services::1.1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Cloud Services::1.1.x</masterLabel>
+            <translation><!-- Spring Cloud Services::1.1.x --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Insights</masterLabel>
+            <translation><!-- Spring Insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Insights::Beta</masterLabel>
+            <translation><!-- Spring Insights::Beta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring XD</masterLabel>
+            <translation><!-- Spring XD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring XD::1.0.x</masterLabel>
+            <translation><!-- Spring XD::1.0.x --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Severity 1 Details --></label>
+        <name>Severity_1_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slack Channel Name --></label>
+        <name>Slack_Channel_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Handling Instructions --></label>
+        <name>Special_Handling_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Handling Type --></label>
+        <name>Special_Handling_Type__c</name>
+        <picklistValues>
+            <masterLabel>EU - Safe Harbour</masterLabel>
+            <translation><!-- EU - Safe Harbour --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Handling (Non-BRICE)</masterLabel>
+            <translation><!-- Executive Handling (Non-BRICE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Practices (US Citizen, US Soil)</masterLabel>
+            <translation><!-- Special Practices (US Citizen, US Soil) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Handling --></label>
+        <name>Special_Handling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Steps to Resolve --></label>
+        <name>Steps_to_Resolve__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party/ISV Software Issue</masterLabel>
+            <translation><!-- 3rd Party/ISV Software Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Application Issue</masterLabel>
+            <translation><!-- Customer Application Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Environment Issue</masterLabel>
+            <translation><!-- Customer Environment Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documented Limitation</masterLabel>
+            <translation><!-- Documented Limitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Issue (Tracked in Different Ticket)</masterLabel>
+            <translation><!-- Duplicate Issue (Tracked in Different Ticket) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering Intervention Required</masterLabel>
+            <translation><!-- Engineering Intervention Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feature Request</masterLabel>
+            <translation><!-- Feature Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fix in Higher Version (Upgrade)</masterLabel>
+            <translation><!-- Fix in Higher Version (Upgrade) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Information</masterLabel>
+            <translation><!-- Insufficient Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Configuration</masterLabel>
+            <translation><!-- Network Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Reproducible</masterLabel>
+            <translation><!-- Not Reproducible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Configuration</masterLabel>
+            <translation><!-- Product Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reported Product Defect (pending fix)</masterLabel>
+            <translation><!-- Reported Product Defect (pending fix) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VM/JVM Configuration</masterLabel>
+            <translation><!-- VM/JVM Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workaround Provided</masterLabel>
+            <translation><!-- Workaround Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Works as Designed</masterLabel>
+            <translation><!-- Works as Designed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Component --></label>
+        <name>Sub_Component__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Status --></label>
+        <name>Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>RPS Hold</masterLabel>
+            <translation><!-- RPS Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting For Customer</masterLabel>
+            <translation><!-- Waiting For Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting For R&amp;D</masterLabel>
+            <translation><!-- Waiting For R&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting For Support</masterLabel>
+            <translation><!-- Waiting For Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 8.6.18[HG] Hidden field created to truncate Case Subject for Email templates --></help>
+        <label><!-- Subject (Truncated) --></label>
+        <name>Subject_Truncated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Exceptions Granted --></label>
+        <name>Support_Exceptions_Granted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Exceptions Rejected --></label>
+        <name>Support_Exceptions_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Score --></label>
+        <name>Survey_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swarming? --></label>
+        <name>Swarming__c</name>
+    </fields>
+    <fields>
+        <label><!-- TURNOVER? --></label>
+        <name>TURNOVER__c</name>
+        <picklistValues>
+            <masterLabel>AMER</masterLabel>
+            <translation><!-- AMER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APJ</masterLabel>
+            <translation><!-- APJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GLOBAL CSR</masterLabel>
+            <translation><!-- GLOBAL CSR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ThreadId Text --></label>
+        <name>ThreadId_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- ThreadId --></label>
+        <name>ThreadId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time Spent --></label>
+        <name>Total_Time_Spent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time Spent last update sec --></label>
+        <name>Total_Time_Spent_last_update_sec__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Version --></label>
+        <name>Versions__c</name>
+    </fields>
+    <fields>
+        <label><!-- What action were you performing? --></label>
+        <name>What_action_were_you_performing__c</name>
+        <picklistValues>
+            <masterLabel>Crash/Failure</masterLabel>
+            <translation><!-- Crash/Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deploy a new version of my application</masterLabel>
+            <translation><!-- Deploy a new version of my application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expand/Scale - Adding VM/Node/Clusters</masterLabel>
+            <translation><!-- Expand/Scale - Adding VM/Node/Clusters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infrastructure Configuration Change</masterLabel>
+            <translation><!-- Infrastructure Configuration Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install</masterLabel>
+            <translation><!-- Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance/HouseKeeping</masterLabel>
+            <translation><!-- Maintenance/HouseKeeping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network Configuration Change</masterLabel>
+            <translation><!-- Network Configuration Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal Operations (Steady State)</masterLabel>
+            <translation><!-- Normal Operations (Steady State) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start/Restart</masterLabel>
+            <translation><!-- Start/Restart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Non Technical Case Layout</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Category Information --></label>
+            <section>Category Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handling Instructions --></label>
+            <section>Handling Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Heightened Awareness Event Details --></label>
+            <section>Heightened Awareness Event Details</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- POC --></label>
+            <section>POC</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Survey Feedback --></label>
+            <section>Pivotal Survey Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Web Services Information --></label>
+            <section>Pivotal Web Services Information</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Contact --></label>
+            <section>Primary Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Information --></label>
+            <section>Resolution Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Details --></label>
+            <section>Technical Details</section>
+        </sections>
+        <sections>
+            <label><!-- Testing Only --></label>
+            <section>Testing Only</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Support LEX Non-Technical Page Layout</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Support LEX Technical Page Layout</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Support Non Technical Field Engineering</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Survey Feedback --></label>
+            <section>Pivotal Survey Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Support Non-Technical Pagelayout</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Survey Feedback --></label>
+            <section>Pivotal Survey Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Support Technical Field Engineering</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Survey Feedback --></label>
+            <section>Pivotal Survey Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non-Support Technical Page Layout</layout>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Survey Feedback --></label>
+            <section>Pivotal Survey Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Portal Non-Technical Case Page</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Portal Technical Case Page</layout>
+        <sections>
+            <label><!-- Attachments --></label>
+            <section>Attachments</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Product Detail --></label>
+            <section>Product Detail</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Technical Case Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Category Information --></label>
+            <section>Category Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- From This Section  Below Not on Mock Up --></label>
+            <section>From This Section  Below Not on Mock Up</section>
+        </sections>
+        <sections>
+            <label><!-- POC --></label>
+            <section>POC</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Survey Feedback --></label>
+            <section>Pivotal Survey Feedback</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Web Services Information --></label>
+            <section>Pivotal Web Services Information</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Contact --></label>
+            <section>Primary Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Information --></label>
+            <section>Resolution Information</section>
+        </sections>
+        <sections>
+            <label><!-- SendSafely --></label>
+            <section>SendSafely</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Details --></label>
+            <section>Technical Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VMware(PKS) Non-Technical Case Layout</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Category Information --></label>
+            <section>Category Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Handling Instructions --></label>
+            <section>Handling Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- POC --></label>
+            <section>POC</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Web Services Information --></label>
+            <section>Pivotal Web Services Information</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Contact --></label>
+            <section>Primary Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Information --></label>
+            <section>Resolution Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Details --></label>
+            <section>Technical Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>VMware(PKS) Technical Case Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Case Description --></label>
+            <section>Case Description</section>
+        </sections>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Category Information --></label>
+            <section>Category Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- From This Section  Below Not on Mock Up --></label>
+            <section>From This Section  Below Not on Mock Up</section>
+        </sections>
+        <sections>
+            <label><!-- POC --></label>
+            <section>POC</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Web Services Information --></label>
+            <section>Pivotal Web Services Information</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Contact --></label>
+            <section>Primary Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Resolution Information --></label>
+            <section>Resolution Information</section>
+        </sections>
+        <sections>
+            <label><!-- SendSafely --></label>
+            <section>SendSafely</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Details --></label>
+            <section>Technical Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Case --></label>
+        <name>CustomUpdate</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>Empty_Email</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Escalate --></label>
+        <name>Request_Escalation_Management</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>SendEmail1</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Solve --></label>
+        <name>Solve_Case_NonTechnical</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Solve --></label>
+        <name>Solve_Case_Technical</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Non-Technical --></label>
+        <name>Non_Technical</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technical --></label>
+        <name>Technical</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please open this case under an active entitlement. --></errorMessage>
+        <name>Case_Open_on_Expired_Entitlement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case Owner cannot be changed on solved case. --></errorMessage>
+        <name>Case_owner_on_solved_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case can not be closed if a case queue is the case owner --></errorMessage>
+        <name>Close_Case_Queue_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not transfer this case to a user who isn&apos;t EH/SP qualified. --></errorMessage>
+        <name>EH_SP_user</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Case with special handling as EU Safe harbour should route to EU Safe Harbour queue --></errorMessage>
+        <name>EU_Safe_Habour_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add an entitlement to this case before transferring to CE queue --></errorMessage>
+        <name>Entitlement_Needed_to_Change_to_Tech</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to Turnover --></errorMessage>
+        <name>Not_Able_to_Turnover</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Portal User cannot be a case owner. --></errorMessage>
+        <name>Portal_users_cannot_be_case_owners</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out KB Doc Resource field. --></errorMessage>
+        <name>Required_KB_Doc_Resource</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Product, Customer Services Category, Customer Services Sub Category 1 &amp; Related KB Article in order to solve the case. --></errorMessage>
+        <name>Solve_Case_NonTechnical</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Product, Related KB Article, Case Type, Resolution Code, Resolution, Steps to Resolve &amp; Prevention Opportunity fields in order to solve the case. --></errorMessage>
+        <name>Solve_Case_Technical</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please check the Product, Product Version and Resolution fields. They cannot be blank or selected as &quot;Other&quot;. --></errorMessage>
+        <name>Specific_value_to_solve_a_case</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Case --></label>
+        <name>Close_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_Update --></label>
+        <name>Request_Update</name>
+    </webLinks>
+</CustomObjectTranslation>

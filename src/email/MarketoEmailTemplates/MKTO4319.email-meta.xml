@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_7AM_PCF Metrics 1.2_Q416.Confirmation</name>
+    <style>none</style>
+    <subject>You&apos;re confirmed</subject>
+    <textOnly>&lt;[[https://pivotal.io/platform/webinar/troubleshooting-with-pcf-metrics-7am]]&gt;
+Hi {{lead.First Name:default=there}},
+
+
+
+Thank you for registering for the upcoming webinar Troubleshooting App Health and Performance with PCF Metrics 1.2 on Tuesday, November 29, 2016.
+
+
+
+Please see event details below:
+
+Date: Tuesday, November 29, 2016 {{my.Save the Date:default=edit me}}
+
+Time: 7:00am PST / 3:00pm GMT / 3:00pm CET
+
+ &lt;[[http://event.on24.com/wcc/r/1190422/2B5BECF5845424730286C5CACAAAA5BF]]&gt;
+ 
+Join the Session &lt;[[http://event.on24.com/wcc/r/1293763/AB9A36A44558B6385619B69BB74A6EA4]]&gt;
+
+
+
+Audio Information: This webinar will be streaming via your computer speakers. 
+ 
+We look forward to you joining us.
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

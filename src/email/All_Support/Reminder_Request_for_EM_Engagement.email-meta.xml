@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>If an hour has elapsed and the EM team has not accepted the escalation, a notification should be sent again with the callout that an hour as passed to CSRs and EM team with the callout that an hour as passed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Reminder - Request for EM Engagement</name>
+    <style>formalLetter</style>
+    <subject>Reminder - Request for EM Engagement {!Case.CaseNumber}</subject>
+    <textOnly>This request for EM engagement has not been accepted yet.
+
+https://pivotal--scdev2.cs13.my.salesforce.com/console#{!Case.Id}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

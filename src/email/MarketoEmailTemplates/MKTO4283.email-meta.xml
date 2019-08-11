@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Data Science Tech Workshops_Q3-416.Reminder - BOSCH 10-24-16</name>
+    <style>none</style>
+    <subject>BOSCH Data Science Technical Workshop Location &amp; Logistics</subject>
+    <textOnly>&lt;[[https://pivotal.io/event/data-science-workshops]]&gt;
+Hi {{lead.First Name:default=there}},
+
+ You are receiving this email because you have been registered for the BOSCH Pivotal Data Science Technical Workshop, in Stuttgart, on October 25th (8h30 - 13h30). 
+
+ Here are some important details that you need to know prior to attending the workshop. 
+
+Location:
+BOSCH
+Steiermärker Straße 3-5
+70469 Stuttgart (Feuerbach)
+Raum 4_6 (room)
+Map &lt;[[https://www.google.sn/maps/place/Robert+Bosch+GmbH/@48.818189,9.1607094,17z/data=!3m1!4b1!4m5!3m4!1s0x4799da929244da6b:0xf9968668232be083!8m2!3d48.818189!4d9.1628981]]&gt;
+
+Your Pivotal instructor: Sarah Aerni
+
+Prepare your system for the workshop: If you are planning to follow the workshop labs, you will need to have a client ssh program installed. There are several open source / free programs available:
+
+ - Windows: Putty &lt;[[http://www.putty.org/]]&gt; or MobaXterm &lt;[[http://mobaxterm.mobatek.net/download.html]]&gt; (MobaXterm is preferred)
+ - MacOS: Native built in 
+ - Linux: Native built in
+ - You are also welcome to use any commercial version you may have
+
+Please contact Marie-Jeanne Dougados at mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt; for additional questions.
+
+ Kind Regards, 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

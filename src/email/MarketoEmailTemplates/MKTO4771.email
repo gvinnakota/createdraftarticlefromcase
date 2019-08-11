@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse;background-color:#ffffff" bgcolor='#FFFFFF'>
+<tr>
+<td height='60' style='background-color:#ffffff" bgcolor='></td>
+</tr>
+<tr>
+<td width='40' bgcolor='#FFFFFF'></td>
+<td bgcolor='#FFFFFF' align="center" valign="middle" class="stack brand-block"><a href="http://insidepivotal.com" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/logo-inside-pivotal-newsletter.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td width='40' bgcolor='#FFFFFF'></td>
+</tr>
+<tr>
+<td height='40'></td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" bgcolor="#FFFFFF" style="border-collapse:collapse; " ><tr>
+<td height='15'></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr ><td width='40'></td>
+<td align="left" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue-date" style="font-size:12px; color:#4f504f; " >April 24, 2017</span>
+</strong>
+</td>
+<td align="right" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue" style="font-size:12px; color:#4f504f; " >Vol 5, No 6</span>
+</strong>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='10'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='40'></td>
+</tr>
+<tr ><td width='40'></td>
+<td style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; " ><p style="font-family:Helvetica, Arial, sans-serif;margin:0; font-size:34px; line-height:1.2em;color:#000000;font-weight: 300;padding-bottom: 7px;">In This Issue</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-letter-from-the-editor" ><a style="color: #00ae9e; text-decoration: none;" href="#letter-from-the-editor">Letter from the Editor</a> – Day 1, Again</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-product" ><a style="color: #00ae9e; text-decoration: none;" href="#product-update">All Things Product</a> – Going Reactive with Spring Framework 5.0</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-seen" ><a style="color: #00ae9e; text-decoration: none;" href="#seen-update">Interestings</a> – Noteworthy Odds &amp; Ends</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-culture" ><a style="color: #00ae9e; text-decoration: none;" href="#culture-update">Labs + Culture</a>&nbsp;– Culture Takes Courage</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-my-name-is" ><a style="color: #00ae9e; text-decoration: none;" href="#my-name-is">My Name Is</a> – Annamaria Boheim</span>
+</p>
+</td>
+<td width='40px'></td>
+</tr>
+<tr>
+<td height='45'></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of Letter from the Editor // -->
+<a href="#letter-from-the-editor" name="letter-from-the-editor"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td style="color:#666666; font-size:14px; line-height:22px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#008774" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Letter&nbsp;from&nbsp;the Editor</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="letter-from-the-editor-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/portrait-template-inside-pivotal-newsletter-2016-scasale.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">day 1, again</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #008774; text-decoration: none;" href="#author-socialcast-profile">Steve Casale</a>, Pivotal Communications</p></div>
+<div class="mktEditable" id="letter-from-the-editor-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-d39370e2-2489-1c21-68a0-2525c232b6f3"><span id="docs-internal-guid-8b722556-86b1-9511-a31b-269ebde42b71"><span id="docs-internal-guid-1ff2462a-fd48-3ac8-5eb9-f6611fef14db"><span 
+id="docs-internal-guid-b79ba944-3ef9-ffdd-36b3-5c37c6f9184c"><span id="docs-internal-guid-54b2d91e-a1c6-f33c-4ced-54e29f725c0b"><span>Every year in his </span><a style="color: #008774; text-decoration: none;" href="https://www.recode.net/2017/4/12/15274220/jeff-bezos-amazon-shareholders-letter-day-2-disagree-and-commit"><span>annual letter to shareowners</span></a><span>, Amazon founder and CEO  
+    Jeff Bezos gets around to rekindling (no pun  intended) the spirit of "Day 1".
+       This year he included thoughts on flushing out the perils of "Day 2".
+       To Bezos, Day 2 doesn't mean abandoning Amazon's commitment to customers, but quite the opposite.
+       Day 2 is where process is no longer a means to an end, but an end in and of itself that degrades decision velocity and the will to take risks; or where market research compromises the deep, learned intuitions about customers.</span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-d39370e2-2489-1c21-68a0-2525c232b6f3"><span id="docs-internal-guid-8b722556-86b1-9511-a31b-269ebde42b71"><span id="docs-internal-guid-1ff2462a-fd48-3ac8-5eb9-f6611fef14db"><span 
+id="docs-internal-guid-b79ba944-3ef9-ffdd-36b3-5c37c6f9184c"><span id="docs-internal-guid-54b2d91e-a1c6-f33c-4ced-54e29f725c0b"><span>Amazon's CEO is cut from the same Valley cloth that gives leaders their existential aversion to stasis.
+     Despite the trappings of bureaucracy to which Amazon is susceptible, Bezos still seems ruthlessly focused on the causes and not the effects of its runaway success.
+       Courage is action, or avoiding the pitfalls of hierarchy or vanity that pull companies into slow death spirals.
+       It's taking risks that open up leads that others simply have to follow.
+ </span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-d39370e2-2489-1c21-68a0-2525c232b6f3"><span id="docs-internal-guid-8b722556-86b1-9511-a31b-269ebde42b71"><span id="docs-internal-guid-1ff2462a-fd48-3ac8-5eb9-f6611fef14db"><span 
+id="docs-internal-guid-b79ba944-3ef9-ffdd-36b3-5c37c6f9184c"><span id="docs-internal-guid-54b2d91e-a1c6-f33c-4ced-54e29f725c0b"><span>Which brings us to this issue.
+       We get a variation on&nbsp;the theme of courage from New York Office Director, Julie Babb, who muses on its value to clients and Pivots alike, in Labs+Culture.
+   In All Things Product, engineer Rossen Stoyanchev writes on Spring Framework 5.0 and its dovetail with reactive programming&mdash;the loosely coupled, responsive system that is helping propel the most popular Java web framework bravely forward.
+ </span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-d39370e2-2489-1c21-68a0-2525c232b6f3"><span id="docs-internal-guid-8b722556-86b1-9511-a31b-269ebde42b71"><span id="docs-internal-guid-1ff2462a-fd48-3ac8-5eb9-f6611fef14db"><span 
+id="docs-internal-guid-b79ba944-3ef9-ffdd-36b3-5c37c6f9184c"><span id="docs-internal-guid-54b2d91e-a1c6-f33c-4ced-54e29f725c0b"><span>Finally, Pivotal takes the cloud native creed back on the road.
+ </span><a style="color: #008774; text-decoration: none;" href="https://docs.google.com/presentation/d/1-4nmjStltqdDeAUIQ81cpRm_UafDvMt-hUHqIbVHug4/edit#slide=id.g207bd63830_0_14"><span>This neat deck</span></a><span> captures the roadshows and webinars you can get your customers and partners to attend</span></span></span></span></span></span>.</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">Enjoy.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td height='30'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of Letter from the Editor // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:40px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00AE9E" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>All&nbsp;Things&nbsp;Product</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="product-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/rossen-portrait.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">going reactive with spring framework 5.0&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #00ae9e; text-decoration: none;" href="#author-socialcast-profile"><span id="docs-internal-guid-800c6784-8763-904d-0af5-ccabbbc651de"><span>Rossen Stoyanchev</span></span></a>, Senior Staff</p></div>
+<div class="mktEditable" id="product-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>Spring emerged as an open source project in early 2003.
+  Some of its earliest code was for web applications&mdash;what we know today as Spring MVC&mdash;which makes perfect sense as a starting point, since most applications need a web interface.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>Fourteen years later, Spring MVC continues to be the </span><a style="color: #00ae9e; text-decoration: none;" href="https://zeroturnaround.com/rebellabs/java-web-frameworks-index-by-rebellabs/"><span>most popular web framework</span></a><span> on the JVM, having evolved through four major Java language versions, the </span><a 
+style="color: #00ae9e; text-decoration: none;" href="https://www.infoq.com/articles/tilkov-rest-doubts"><span>rise of REST</span></a><span>, single page apps, and more recently, microservice-style applications.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>Over the course of 15 years it&rsquo;s likely to come up against something that requires deeper change.
+  This is the case with </span><a style="color: #00ae9e; text-decoration: none;" href="https://spring.io/blog/2017/02/23/spring-framework-5-0-m5-update"><span>Spring WebFlux</span></a><span>, the new web application stack in Spring Framework 5.0 scheduled to release in June 2017.
+  Two years in the making, Spring WebFlux passes the </span><a style="color: #00ae9e; text-decoration: none;" href="https://en.wikipedia.org/wiki/Wikipedia:The_duck_test"><span>duck test</span></a><span> in that it looks, feels, and behaves like Spring MVC, but runs on a completely different execution model aimed at creating responsive, resilient applications that scale better with less 
+resources.
+  Enabled by Java 8+, Spring WebFlux also sports all-new functional programming models for client and server web applications.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>Why the big changes? Many of the benefits are described in the </span><a style="color: #00ae9e; text-decoration: none;" href="http://www.reactivemanifesto.org/"><span>Reactive Manifesto</span></a><span> and companion </span><a style="color: #00ae9e; text-decoration: none;" 
+href="http://www.reactive-streams.org/"><span>specification</span></a><span> that includes contributions from Pivotal.
+  In plain terms this is about applications that are non-blocking, and consequently event-driven, all the way to their core.
+  This gives devs first-class options for addressing asynchronicity, concurrency, and latency for building scalable, resilient apps.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span><span><span><span><span><span><br /></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>One could say this: what Spring Boot did to provide Rails-style productivity to Java developers, Spring WebFlux does to bring a Node.js-style, execution model with an event-loop&mdash;and limited threads, versus the more traditional approach of scaling with large thread pools.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>For a real-world case study, take this </span><a style="color: #00ae9e; text-decoration: none;" href="http://techblog.netflix.com/2016/09/zuul-2-netflix-journey-to-asynchronous.html"><span>Netflix blog post</span></a><span> describing their journey to asynchronous, non-blocking systems for the Netflix gateway, allowing their  
+developers to &ldquo;benefit greatly by decreasing the cost of network connections to enable push and bi-directional communication to and from devices.&rdquo; Spring Framework 5.0 enables Spring applications to make the same journey.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>Why does it matter for Pivotal and our customers? Cloud-native applications are distributed and asynchronous by nature, so techniques that embrace them while using less resources to do so are relevant and important.
+  The Spring Framework is not the first to offer such features.
+  What&rsquo;s truly unique with Spring is the choice it offers to use the right technology for the job at hand.
+  Even in a company like Netflix, there are countless applications that don&rsquo;t need to change as deeply as the main gateway.</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c8b97935-2005-dc47-5e47-c897c4edb51f"><span id="docs-internal-guid-3b433b8b-728d-52a4-c502-baef9c511ef9"><span id="docs-internal-guid-3af88623-f72c-be78-ea8f-d18ffab4c9f1"><span id="docs-internal-guid-4b26595f-39d4-86a0-3000-9424812c02c6"><span><span 
+id="docs-internal-guid-800c6784-875f-96e6-8bbf-b0f5eeb09efb"><span>&ldquo;Reactive Spring&rdquo; goes far beyond Spring Framework 5.0 and Spring WebFlux.
+  For starters, we couldn&rsquo;t have done it without </span><a style="color: #00ae9e; text-decoration: none;" href="https://github.com/reactor/reactor-core"><span>Project Reactor</span></a><span>, the reactive library sponsored by Pivotal and underlying Spring Framework 5.0.
+  Also later this year you can expect follow-up releases from </span><a style="color: #00ae9e; text-decoration: none;" href="https://spring.io/blog/2016/11/28/going-reactive-with-spring-data"><span>Spring Data</span></a><span>, Spring Boot, Spring Security, and Spring Cloud.
+  Each will include their own support for reactive-style applications.</span></span></span></span></span></span></span></p>
+</div>
+<a href="#top" style="color:#00ae9e; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+<tr>
+<td height='27'></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of seen and heard -->
+<a href="#seen-update" name="seen-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#026D63" ><tr ><td width='40'></td>
+<td ><div class="mktEditable" id="seen-and-heard" ><table style="border-collapse: collapse;">
+<tbody>
+<tr>
+<td width="180px" height="32px" align="center" bgcolor="white">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #026d63; font-weight: 200; font-size: 17px; margin: 0;">Interestings</p>
+</td>
+</tr>
+<tr>
+<td height="30"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-580360af-8ca0-7c8d-90b4-54bf5c5ccae3">Read this: Polish investment bank recounts move to Spring for app development&mdash;what they needed, and <a style="color: white;" href="https://blog.gft.com/blog/2017/04/07/migrating-to-spring-boot-in-an-investment-bank/">how Spring helped</a></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="color: white; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 300;"><span id="docs-internal-guid-580360af-8ca7-0624-a0f1-e0acdd54fe24"><span>Err...Rapid lunch consumption model? 313 Days of breakfast at </span><a style="color: white;" href="https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBTuLsXO8SpAMfh6taPomuXyq8WlQHB6retAlD-2BVzyF6f_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMSpb0OVvTfn3UEyHPexUnT5Yu1pkMfVdHny-2FQYAIAlR5BStrldtb71QAhfOD-2BPOia-2FhHuICqeHwM1N59jDitFV6TTjadU4wZTsuozTbYSCZ833PDrmO6A3QShVsC0yom1wNUDhDoSRzNC0VX5I1RhKwpXdtGW5Hs43CeLzdkdLtcSz-2B6WlLIfSRWvY0f4ivnL0-3D"><span>Pivotal Sydney</span></a><span>&nbsp;on video (thanks Christos Roussos).</span></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="color: white; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 300;"><span id="docs-internal-guid-580360af-8caa-003c-d9ce-f3880e625cf1"><span>Out of the Hat&mdash;PCF brings on-demand services and more for go-to message broker with&nbsp;</span><span><a style="color: white;" href="http://docs.pivotal.io/rabbitmq-cf/1-8">RabbitMQ for PCF</a>.</span></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="color: white; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 300;"><span id="docs-internal-guid-580360af-8caa-8aac-11a8-531d286bdafe"><span>Facebook adds VR dimension with launch of </span><span style="color: white;"><a style="color: white;" href="https://www.facebook.com/spaces">Facebook spaces</a></span></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="color: white; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 300;"><span><span id="docs-internal-guid-580360af-8caa-f650-7a05-85847abffd15"><span>Bookish@Pivotal&mdash;Cornelia Davis expands the&nbsp;</span><a style="color: white;" href="https://content.pivotal.io/ebooks"><span>cloud native canon</span></a><span> (first 30 pages of her new book are free!)</span></span></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span style="color: white; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 300;"><span><span id="docs-internal-guid-580360af-8cab-97c8-6886-550176bffa44"><span>Technologists made tactile musical plants, and turned it into a Stanford talk on why the physical world is </span><a style="color: white;" href="https://u3457624.ct.sendgrid.net/wf/click?upn=pqvOS5XKhES1c9DQDbKnBQQveVcXkXAkCQ4BMWlD7gT-2FWvqASbI53Z-2F9UTZNuPFB_aCoIV7BZZolBUjN7a-2BHJ1b9r-2BpnQMHGW0RxZWn9rbMQJDZ9sXuT9P-2BYiZFeBsPveD18JHn6uJZVD2N0VELRtJfc3QdYGOYjcuKuL8sFfAhWXxxlHu5ds2mdRg8L6q6jaCS2dZfcx-2BXnLi3KsmTHnMKo6XhnjBBs3k1f5C2oPOfYCkrehvp2uqSOzV8WB5ht-2FHqGNTtDoXawrq5vpDAqQ2Il3jWdt5luHl7cf7JTNuKk-3D"><span>the next frontier</span></a></span></span></span></li>
+</ul></div>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='40'></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<!-- End of seen and heard // -->
+<!-- Start of culture update // -->
+<a href="#culture-update" name="culture-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='60'></td>
+</tr>
+<tr ><td width='40'></td>
+<td ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#87C876" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Labs&nbsp;+&nbsp;Culture</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="culture-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/JulieB.png" alt="" width="130" height="172" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">culture takes Courage</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #87c876; text-decoration: none;" href="#author-socialcast-profile">Julie Babb</a>, Office Director, Pivotal New York</p></div>
+<div class="mktEditable" id="culture-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c157c742-8775-5a9c-aaaa-c61f9fd86101">We recently had a large financial client's HR team visit us here in NY.
+  They asked us, "How do you shape a culture that supports the business outcomes you need?"&lt;&lt;We discussed the tenets that are at the heart of our culture at Pivotal: Do What Works; Do the Right Thing; and Be Kind&mdash;three straightforward guardrails that help us calibrate our instincts about how to work well together.
+  We talked about the <a style="color: #87c876; text-decoration: none;" href="http://agilemanifesto.org/">agile manifesto</a>, and how challenging it is to adopt and internalize it across a scaled organization.
+  Lastly, we touched on other values that are dearly held by both our project and leadership teams at Pivotal: communication, transparency, simplicity, and courage.
+  Pointing to how these values manifest themselves on the floor&mdash;through small empowered teams&mdash;made for a straightforward tour that helped our guests connect the dots between values and practices.</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c157c742-8775-5a9c-aaaa-c61f9fd86101">Since that conversation, I&rsquo;ve been thinking about how courage at Pivotal is ubiquitous, yet seldom discussed.
+  It takes courage for our clients to partner with us and attempt something new, and it takes courage for our teams to lean on each other to prioritize with incomplete information.
+  It also takes courage for leadership to open new offices and expand into new cities, and for the field to make cold calls to groups we think we can help.
+  Most importantly, it takes incredible courage for us to hold each other accountable and own our results&mdash;both when they&rsquo;re worth celebrating and especially when they&rsquo;re not.</span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c157c742-8775-5a9c-aaaa-c61f9fd86101">Culture is a team sport.
+  For our clients, what is unleashed by software will be absorbed across teams&mdash;and the billing of transformation will prove to be just that without the courage to change</span>.</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c157c742-8776-731a-e936-6009f3b1d0b9"><span>The godfather of extreme programming,</span><span> </span><a style="color: #87c876; text-decoration: none;" href="https://en.wikipedia.org/wiki/Kent_Beck"><span>Kent Beck</span></a><span>, teaches us that  
+when courage is done well, it&rsquo;s celebrated in the service of other values, not by itself individually.
+  &ldquo;If courage alone is dangerous, in concert with other values it is powerful.
+  The courage to speak truths, pleasant or unpleasant, fosters communication and trust.
+  The courage to discard failing solutions and seek real, concrete answers creates feedback.&rdquo;</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c157c742-8776-731a-e936-6009f3b1d0b9"><span>It was a pleasure and inspiration to have clients who wanted to go deep on values.
+  It&rsquo;s more common in these types of conversations to frame the value of Labs through the tactical practices that allow us to execute.
+  And it served as a good reminder of a quiet value we often exhibit and don&rsquo;t often recognize.</span></span></p>
+<ul style="margin-top: 10px; margin-right: 40px;">
+</ul>
+</div>
+<a href="#top" style="color:#87c876; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of culture update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; border-top:1px solid #f1f1f1; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00A1E4" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin:0'>My&nbsp;Name&nbsp;Is</p>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/AnnaBoheim-portrait.png" alt="ABoheim" width="170" height="183" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">annamaria boheim</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;">Product Designer, Berlin</p></div>
+<div class="mktEditable" id="my-name-is-entry" ><p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;">At Pivotal I...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span><span id="docs-internal-guid-e9cc81bb-f71b-049c-6e30-f399864df42e"><span><span id="docs-internal-guid-36607bb1-8899-e242-e1e9-6135ac5f198c"><span>Work as a Product Designer</span></span>.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">You can find me...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-8208-2e4c-0f2a-b461c45aa234"><span id="docs-internal-guid-e9cc81bb-f71b-ace5-fdb4-f0aaf9148ce2"><span style="color: #00a1e4; text-decoration: none;"><span style="color: #666666;"><span id="docs-internal-guid-36607bb1-889a-29d5-0a41-baf1b9edc165"><span>Until most recently, in the Berlin office, but at the moment and for the next year, I'll be in Paris to help kick off the new Labs location. If you don't find me in our WeWork space on the 7th floor, I'm probably on the rooftop terrace enjoying the amazing view over Sacre C&oelig;ur. Magnifique!</span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Currently, I am working on&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-8488aa3f-35c3-3cfb-dc3c-93bc527a94f6"><span><span id="docs-internal-guid-36607bb1-889a-b508-5da0-554bdf6471bd"><span>Improving the e-commerce experience of our Orange B2B customers. I've just started a D+F, which will focus on Orange pro user accounts, and how customers can manage their existing contracts</span></span></span></span>.</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">In my spare time&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-820c-d633-5d86-a1190e77d3de"><span id="docs-internal-guid-e9cc81bb-f720-72ff-8d10-0b99138bfc0e"><span id="docs-internal-guid-8488aa3f-35c3-9fce-6fba-1bcede3da978"><span style="text-decoration: none;"><span style="color: #666666;"><span id="docs-internal-guid-36607bb1-889b-5b4f-5032-4dffef61bd66"><span>I enjoy getting lost! Both by randomly walking around a foreign city or area, and therefore discovering new places and hidden spots; or by getting lost in the rabbit holes of music libraries; intriguing movies or TV series; in deep conversations with good friends; or by dancing in the club like nobody's watching :)&nbsp;</span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Something you probably don&rsquo;t know about me&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-d26932b9-2024-6f3f-4562-1c32c533bb1b"><span><span id="docs-internal-guid-8488aa3f-35c5-e25a-5249-dabc0afca4ef"><span><span id="docs-internal-guid-36607bb1-889d-1a36-7f82-be0d22ca2c8f"><span>I'm not a morning person, so if I ever meet you at a Pivotal breakfast table, and give you the could shoulder&hellip; sorry!</span></span></span></span></span></span></p></div>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; " ><tr ><td ><div class="mktEditable" id="my-name-is-photo" ><p><img src="http://connect.pivotal.io/rs/pivotal/images/Berlin2.jpg" alt="Berlin2" width="600" height="450" /><img src="http://connect.pivotal.io/rs/pivotal/images/Paris1.jpg" alt="family" width="600" height="228" /></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666; font-size: 12px; font-style: italic; margin: 20px auto 0; max-width: 520px;">Your author (far left), cool black in Berlin; The view from Pivotal Paris c'est tres bien.</p></div>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-top:30px; padding-bottom:60px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><div class="mktEditable" id="my-name-is-outro" ><p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">To me Pivotal&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-36607bb1-889f-cba8-79de-48a932078eb7"><span>Is full of great and inspiring people that I enjoy learning from and working with every day, and I feel lucky to call some of them friends</span></span>.</p></div>
+<p style='font-family:Helvetica, Arial, sans-serif;color:#00a1e4;font-weight: bold'><a href="#top" style="color:#00a1e4; font-size:14px; text-decoration:none; display:block;font-weight:bold">Back to the Top</a></p>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of end -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #008774; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://connect.pivotal.io/rs/pivotal/images/white-i.png" alt="InsidePivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:20px; padding-right:40px; padding-bottom:20px; font-weight:300; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;font-family:Helvetica, Arial, sans-serif;">Find all issues on <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/newsletters" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a></span></td>
+</tr>
+</table>
+<!-- End of end -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="font-family:Helvetica, Arial, sans-serif;color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif;padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2017 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

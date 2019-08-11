@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Survey_Manager_CES_Follow_up</fullName>
+        <description>Survey - Manager CES Follow-up</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CaseOwnerMgr_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Pivotal_Support_Surveys/Survey_Manager_Follow_up_Form</template>
+    </alerts>
+    <alerts>
+        <fullName>Survey_Manager_CES_Follow_up_5Day_Reminder</fullName>
+        <description>Survey - Manager CES Follow-up 5Day Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CaseOwnerMgr_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Pivotal_Support_Surveys/Survey_Manager_Follow_up_Form_5_Day_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Survey_SupportBusOps_CES_Survey_Kudos_Notification</fullName>
+        <description>Survey - SupportBusOps CES Survey Kudos Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>boleary@pivotal.io</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>hgeisert@pivotal.io</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jgregson@pivotal.io</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kcunningham2@pivotal.io</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sfautomation@pivotal.io</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>Pivotal_Support_Surveys/Survey_SupportBusOps_Kudos_Notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Survey_CaseOwnerManagerEmail</fullName>
+        <field>CaseOwnerMgr_Email__c</field>
+        <formula>CaseOwnerMgrEmailFormula__c</formula>
+        <name>Survey - CaseOwnerManagerEmail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Survey - CaseOwnerMgrEmail</fullName>
+        <actions>
+            <name>Survey_CaseOwnerManagerEmail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Pivotal_Survey_Feedback__c.CaseOwnerMgrEmailFormula__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Pivotal_Survey_Feedback__c.CaseOwnerMgr_Email__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

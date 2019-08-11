@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.News May 2014</name>
+    <style>none</style>
+    <subject>Spring News: Spring Integration 4.0.0 introduces XML free apps</subject>
+    <textOnly>MAY 2014
+&lt;http://spring.io/blog/2014/04/30/spring-integration-4-0-released&gt;
+Spring Integration 4.0.0 introduces XML free apps
+Spring Integration (SI) 4.0.0 offers support for both annotation driven development, and Java Configuration in this major new release, which requires Spring Framework 4.0. The introduction of Spring Framework 4.0 and Java Configuration support opens the door for Spring Boot – another major addition to SI 4.0. With Boot, the getting started experience with SI has transformed completely! But don’t worry, you can still use SI 4.0 without Boot. Also, check out the new Java DSL &lt;https://github.com/spring-projects/spring-integration-extensions/tree/master/spring-integration-java-dsl&gt; (in development) and give us your feedback!
+Learn More &lt;http://spring.io/blog/2014/04/30/spring-integration-4-0-released&gt;
+Easy EAI with Spring Integration 4 and Java 8
+Spring Integration 4 just dropped and the new Java configuration support and Java configuration DSL are among my favorite new features. In this tip, we&apos;ll look at the new Java configuration DSL. This tip can only hope to offer the proverbial tip of the iceberg on the subject, though, so be sure to check out Spring Integration team member and ninja Artem Bilan&apos;s epic blog introducing the DSL &lt;http://spring.io/blog/2014/05/08/spring-integration-java-dsl-milestone-1-released&gt; and his epic reworking of the canonical Cafe example &lt;https://github.com/artembilan/si-java-dsl-cafe-demo/blob/master/src/main/java/org/springframework/integration/samples/dsl/cafe/CafeConfiguration.java&gt;. The Cafe The Cafe example, of course, refers to our example implementation of the scenario from Gregor Hohpe&apos;s amazing article, &quot;Starbucks does not use two phase commit &lt;http://www.eaipatterns.com/ramblings/18_starbucks.html&gt;&quot;.
+
+In the following example, we describe a small Spring Integration flow using the IntegrationFlows factory. The flow starts by receiving the data from the integerMessageSource() bean. In this case it&apos;s MessageSource that simply invokes getAndIncrement on an AtomicInteger. Spring Integration MessageSources connect your Integration flow to the outside world (when you read from a file-system, or Twitter, you&apos;re using a MessageSource somewhere). In this case our MessageSource simply generates Integers every 10 seconds. Those Integers are passed as payloads to a filter (which we provide as a Java 8 lambda; convenient!) which then get transformed using a Java 8 method reference (toString will be called on each Integer).
+
+Finally, we use the handle method as a sort of escape-hatch in which we print out the payload (the newly created String representation of the Integer). Yes, I could&apos;ve also used a method reference, but where would the fun in that be? You could as easily send the results off a Spring Integration channel, which could connect to any other component or indeed even another Spring 
+Integration flow. Or, just route the result to an outbound adapter to write it somewhere, like a filesystem, HDFS, a message queue, etc.
+
+
+
+Not bad! If we replaced the MessageSource with a FileReadingMessageSource, we&apos;d be well on our way to building something for processing files, instead! That&apos;s the beauty of 
+integration: loosely coupled components string together to handle more sophisticated processing chores. With this new Java configuration DSL, it&apos;s easy to string together sophisticated processing pipelines of your own.
+Working with Spring Boot projects in STS made easy - part 2
+Creating a new Spring Boot project in STS is already easy and straightforward: Select the “New -&gt; Spring Starter Project” wizard and select the starters that you would like to include right away. Or create a new project from the guides (by using the “Import Spring Getting Started Content” wizard). Both wizards create a project that is based on Spring Boot. But how can you add additional starters afterwards? Right click on the pom.xml file of your Spring Boot project and select “Spring -&gt; Edit Starters”. It will open a dialog that allows you to edit the set of starters that should be on your project.
+Data-Driven Applications with Spring and Neo4j
+Speakers: Josh Long (Pivotal) and Michael Hunger (Neo Technology)
+
+Spring Data Neo4j 3.0 is here and it supports Neo4j 2.0. Neo4j is a tiny graph database with a big punch. Graph databases are imminently suited to asking interesting questions, and doing analysis. Want to load the Facebook friend graph? Build a recommendation engine? Neo4j&apos;s just the ticket. Join Spring Data Neo4j lead Michael Hunger (@mesirii) and Spring Developer Advocate Josh Long (@starbuxman) for a look at how to build smart, graph-driven applications with Spring Data Neo4j and Spring Boot. 50 lucky registrants per event will get free copies of Spring Data: Modern Data Access for Enterprise Java! &lt;http://shop.oreilly.com/product/0636920024767.do&gt;
+Europe
+Tuesday, May 20, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_Neo4JTechnology7AM_Register.html&gt;
+North America
+Tuesday, May 20, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_Neo4JTechnology10AM_Register.html&gt;
+Abstracting PaaS services to be portable with Spring Cloud
+Speaker: Ramnivas Laddad
+
+Developing an application to a cloud platform involves working with deployed application&apos;s environment and connecting to services. Spring Cloud, a new project, simplifies these tasks in a variety of cloud platforms including Cloud Foundry and Heroku. Spring Cloud makes it possible to deploy the same artifact (a war or a jar) to multiple cloud environments. It supports multiple clouds through the concept of Cloud Connector and provides out of the box implementation for Cloud Foundry and Heroku, and extension points for other cloud platforms.
+
+In this talk, we will introduce the Spring Cloud project, show how you can simplify configuring applications for cloud deployment, discuss its extensibility mechanism, and put it to good use by showing practical examples from the field.
+Europe
+Tuesday, June 3, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_AbstractingPaaSServicesPortablewSpringCloud7AM_Register.html&gt;
+North America
+Tuesday, June 3, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_AbstractingPaaSServicesPortablewSpringCloud10AM_Register.html&gt;
+Spring Batch 3.0.0
+Speaker: Michael Minella
+
+The Spring team is gearing up for a major rev of Spring Batch - Spring Batch 3.0.0 RC1 which introduces JSR-352 support, among other features. Adopting a Java EE standard that was directly based on Spring Batch to begin with is fortunately, fairly straightforward for us. JavaEE7 compliance updates and expands the scope of Spring Batch 3.0.0 to combine JavaEE7/352 compliance with years of Batch&apos;s battle-tested, proven-in-production codebase. Of course, there is a wealth of capability and features that go far beyond the specification into distributed processing and beyond.
+
+In this webinar, project lead Michael Minella will cover Spring Batch&apos;s implementation of JSR-352 as well as some of the new features in the 3.0 release.
+Europe
+Tuesday, June 10, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringBatch3.0.07AM_Register.html&gt;
+North America
+Tuesday, June 10, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringBatch3.0.010AM_Register.html&gt;
+Spring Integration Done Boot-ifully
+Speaker: Glenn Renfro
+
+With the increase in the number of devices that emit information it has become ever more important to be able to retrieve this data and process accordingly. In response to this need, MQTT has become the defacto lightweight transport for connecting an &quot;Internet of things&quot;. With that being said, how do your applications support for eventing, messaging, and scheduling? Utilizing Spring Boot and Spring Integration you will see how to create an application with a scheduler that will retrieve data from a web service, cleanse and emit the data via MQTT. Then we&apos;ll show you how to create an application also written using Spring Boot and Spring Integration, that will capture the MQTT events and record the results. From this discussion you can see how to use these tools and take advantage of them for your own big data projects as soon as you return to the office.
+Europe
+Tuesday, June 17, 2014
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringIntegrationDoneBoot-ifully7AM_Register.html&gt;
+North America
+Tuesday, June 17, 2014
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringIntegrationDoneBoot-ifully10AM_Register.html&gt;
+&lt;http://spring.io/blog/2014/05/15/webinar-replay-spring-integration-4-0-the-new-frontier&gt;
+Webinar Replay: Spring Integration 4.0 – The New Frontier
+In this session we will cover these major changes to the framework, explaining how and when to use them. It will be mainly demonstration and code walk through, and we will build a useful Spring Boot/Integration application from scratch.
+Watch Video &lt;http://spring.io/blog/2014/05/15/webinar-replay-spring-integration-4-0-the-new-frontier&gt;
+Spring videos
+ Webinar Replay: Web Application diagnostics with Java and JavaScript &lt;http://spring.io/blog/2014/05/08/webinar-replay-web-application-diagnostics-with-java-and-javascrip&gt;
+ Webinar Replay: Building ‘Bootiful’ Applications with Spring Boot &lt;http://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;
+ Webinar replay: Spring Framework 4.0 on Java 8 &lt;http://spring.io/blog/2014/03/26/webinar-replay-spring-framework-4-0-on-java-8&gt;
+ Webinar replay: Building ‘Bootiful’ Applications with Spring &lt;https://www.youtube.com/watch?v=T7kLMrqNI9k&gt;
+
+
+ Archived videos
+ SpringOne2GX 2013 Replay: spring.io inside and out &lt;http://spring.io/blog/2014/05/12/springone2gx-2013-replay-spring-io-inside-and-out&gt;
+ SpringOne2GX 2013 Replay: Getting Started with Spring Security 3.2 &lt;http://spring.io/blog/2014/05/12/springone2gx-2013-replay-getting-started-with-spring-security-3-2&gt;
+ SpringOne2GX 2013 replay: Building Spring Applications on Cloud Foundry &lt;http://spring.io/blog/2014/05/06/springone2gx-2013-replay-building-spring-applications-on-cloud-foundry&gt;
+ SpringOne2GX 2013 replay: Extending Cloud Foundry with Custom Integration &lt;http://spring.io/blog/2014/05/06/springone2gx-2013-replay-extending-cloud-foundry-with-custom-integration&gt;
+ SpringOne2GX 2013 replay: Futures and Rx 
+Observables: powerful abstractions for consuming web services asynchronously
+ SpringOne2GX 2013 replay: Going Beyond Dependency Injection &lt;http://spring.io/blog/2014/04/29/springone2gx-2013-replay-going-beyond-dependency-injection&gt;
+ SpringOne2GX 2013 Replay: Application Security Pitfalls &lt;http://spring.io/blog/2014/04/22/springone2gx-2013-replay-application-security-pitfalls&gt;
+ SpringOne2GX 2013 Replay: Your Data, Your Search, Elasticsearch &lt;http://spring.io/blog/2014/04/22/springone2gx-2013-replay-your-data-your-search-elasticsearch&gt;
+Integrating Data
+This guide walks you through the process of using Spring Integration to create a simple application that retrieves data from Twitter, manipulates the data, and then writes it to a file.
+View Guide &lt;http://spring.io/guides/gs/integration/&gt;
+Whatever you’re building  -  these 15-30 minute guides are designed to get you productive as quickly as possible , using the latest Spring project releases and techniques as recommended by the Spring team.
+
+
+
+http://spring.io/guides
+
+
+ If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor’s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Batch 3.0.0 RC1 is available &lt;http://spring.io/blog/2014/05/13/spring-batch-3-0-0-rc1-is-now-available&gt;
+ Spring Integration Java DSL M1 &lt;http://spring.io/blog/2014/05/08/spring-integration-java-dsl-milestone-1-released&gt;
+ Groovy 2.3 &lt;http://spring.io/blog/2014/05/07/groovy-2-3-released&gt;
+ Spring for Apache Hadoop 2.0 RC3 &lt;http://spring.io/blog/2014/05/05/spring-for-apache-hadoop-2-0-rc3-released&gt;
+ Spring Integration 4.0 &lt;http://spring.io/blog/2014/04/30/spring-integration-4-0-released&gt;
+ Spring Framework 4.0.4 &lt;http://spring.io/blog/2014/05/01/spring-framework-4-0-4-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.5.1 &lt;http://spring.io/blog/2014/05/06/spring-tool-suite-and-groovy-grails-tool-suite-3-5-1-released&gt;
+ Spring Hateoas 0.11 &lt;https://github.com/spring-projects/spring-hateoas/tree/0.11.0.RELEASE&gt;
+ Reactor 1.1.0.RELEASE &lt;http://spring.io/blog/2014/05/06/reactor-1-1-0-release-now-available&gt;
+ Spring Social 1.1.0 &lt;http://spring.io/blog/2014/04/24/spring-social-1-1-0-released&gt;
+ Spring Boot 1.0.2.RELEASE &lt;http://spring.io/blog/2014/04/24/spring-boot-1-0-2-release-available-now&gt;
+ Spring XD 1.0.0.M6 &lt;http://spring.io/blog/2014/04/16/spring-xd-1-0-0-m6-released&gt;
+ Second Service Release for Spring Data Release Train Codd Released &lt;http://spring.io/blog/2014/04/16/second-service-release-for-spring-data-release-train-codd-released&gt;
+ Spring Security OAuth 2.0.0.RC1 &lt;http://spring.io/blog/2014/04/18/spring-security-oauth-2-0-0-rc1-available&gt;
+Preview Spring Security Test: Method Security &lt;http://spring.io/blog/2014/05/07/preview-spring-security-test-method-security&gt;
+ Spring Data Dijkstra RC1 &lt;https://github.com/joshlong/ws.tagit/blob/master/service/src/main/java/ws/tagit/Application.java&gt;
+ Spring 4.1’s Upcoming JMS Improvements &lt;http://spring.io/blog/2014/04/30/spring-4-1-s-upcoming-jms-improvements&gt;
+ Project Sagan: client-side architecture &lt;http://spring.io/blog/2014/04/28/project-sagan-client-side-architecture&gt;
+ DISID to lead Spring Roo Project &lt;http://spring.io/blog/2014/04/24/disid-to-lead-spring-roo-project&gt;
+ 6 Easy Steps: Deploy Pivotal’s Hadoop on Docker &lt;http://blog.gopivotal.com/pivotal/products/6-easy-steps-deploy-pivotals-hadoop-on-docker&gt;
+ Project Sagan: Upgrading to JDK 8 &lt;http://spring.io/blog/2014/04/18/project-sagan-upgrading-to-jdk-8&gt;
+ Spring MVC Test with Geb &lt;http://spring.io/blog/2014/04/15/spring-mvc-test-with-geb&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

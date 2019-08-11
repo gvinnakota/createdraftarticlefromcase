@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Impossible People_UK_Q316.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: Lunch &amp; Learn London</subject>
+    <textOnly>&lt;[[http://pivotal.io/event/lunch-and-learn/london]]&gt;
+Hi {{lead.First Name:default=there}}, 
+
+ Thank you for registering for the upcoming Lunch &amp; Learn in London. Please see event details below: 
+
+ Date: 15 September 2016 {{my.Save the Date:default=Save the Date!}}
+Time: 12:30 - 1:30 PM
+ Location: Pivotal, The Warehouse, 211 Old Street, 2nd Floor, London EC1V 9NR
+
+ We look forward to meeting you soon! 
+
+ The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_QCon London_Q115.Thanks for Attending</name>
+    <style>none</style>
+    <subject>Thank You for Joining Pivotal and the Spring Team at QCon London 2015</subject>
+    <textOnly>Hello {{lead.First Name:default=There}}, 
+
+Did we meet you, or did you hear from us at QCon London &lt;http://www.qconlondon.com&gt;? We’re coming to conferences like QCon to specifically to help developers learn that cloud-native application architectures aren’t just available to pioneers like Netflix anymore - Spring and Cloud Foundry are making it accessible.  Grab a free copy of the 50 page concept primer from O&apos;Reilly - “Migrating to Cloud Native Application Architecture &lt;http://pivotal.io/platform-as-a-service/migrating-to-cloud-native-application-architectures-ebook?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=qcon-london-q315&gt;”. 
+
+If you weren&apos;t able to catch our talks, cool schwag, or technology, here’s a quick recap:
+
+
+ - Dr. David Syer showed developers how Spring Boot makes using NetflixOSS in Spring simple in his talk:  “Microservices Made Easy with Spring Cloud and NetflixOSS”.
+
+ - Familiar with Kubernetes or Mesos? Great! Download Lattice.cf &lt;http://lattice.cf&gt; today and get started with Spring Cloud via vagrant on your local machine or via AWS, using Cloud Foudry’s advanced “diego” 
+scheduler, self-healing, http load balancer, and log aggregation.
+
+
+
+If NetflixOSS gets you excited about the future, make sure to learn more now:
+
+
+ - CF Summit 2015 talk: Deploying Microservice Architectures with Cloud Foundry &lt;https://www.youtube.com/watch?v=DBIm6gDpSNg&gt;
+
+ - Check out the Spring Cloud Services 1.0.0 beta &lt;https://network.pivotal.io/products/p-spring-cloud-services&gt;, which integrates the open source Spring Cloud project &lt;http://projects.spring.io/spring-cloud&gt; with Pivotal Cloud 
+Foundry.
+ - Sign up for two months of Free Pivotal Web Services &lt;http://run.pivotal.io&gt;, simply the best public cloud environment for hosting Spring &amp; Java applications available today.
+
+ - Coté and Andrew Clay 
+Shafer talk about DevOps - in one of our recent Pivotal Conversations podcasts.
+ - Learn about the Cloud-Native Enterprise from James Watters’ CF Summit keynote here &lt;https://www.youtube.com/watch?v=xA-674cNI3w&gt;.
+
+
+
+Stay in touch with Pivotal and join the conversation on our blogs &lt;http://spring.io/blog&gt;, YouTube &lt;http://spring.io/video&gt;, and on Twitter &lt;https://twitter.com/springcentral&gt;. 
+
+We hope to see you again soon at a future event &lt;https://pivotal.io/news-events?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=qcon-london-q315&gt;! 
+
+The Spring Team at Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

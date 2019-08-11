@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<title></title>
+</head>
+<body ><div ><div class="mktEditable" ><table style="border-collapse: collapse; font-family: Helvetica, Arial,sans-serif;" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td style="padding-right: 10px; padding-left: 10px;" width="100%" align="center" bgcolor="#F8F8F8">
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" width="600">
+<tbody>
+<tr>
+<td style="padding-bottom: 30px; padding-top: 30px;" align="left" valign="top"><img class="CToWUd" style="display: block;" src="http://notifications-ui.run.pivotal.io/assets/pws-logo.png" border="0" alt="Pivotal Web Services" width="250" height="34" /></td>
+</tr>
+</tbody>
+</table>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" width="600">
+<tbody>
+<tr>
+<td align="left" valign="top" bgcolor="#FFFFFF">
+<table style="border-collapse: collapse; border: 1px solid #e0e4e5;" border="0" cellspacing="0" cellpadding="40" width="600">
+<tbody>
+<tr>
+<td style="color: #666666; font-size: 16px; line-height: 22px;">
+<div>
+<p>Dear PWS Application Developer,</p>
+<p>Recent versions of various Cloud Foundry buildpacks have removed support for older versions of binary dependencies. This was done not only to reduce the sizes of buildpacks, thereby making CF deployment less painful for operators, but also to ensure that a default CF installation doesn't contain insecure or unsupported versions of application runtimes. Please see <a style="color: #3ea7bc; text-decoration: none;" href="https://github.com/cloudfoundry-incubator/buildpack-packager/issues/4">this announcement</a> for more background on the motivation for this decision.</p>
+<p>On <strong>June 25, 2015</strong>, updates to the latest Pivotal Web Services system buildpack versions will include fewer supported runtimes and libraries:</p>
+<table style="border: 1px solid #e0e4e5; width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left; font-family: Helvetica, Arial,sans-serif;">
+<tbody>
+<tr>
+<th style="border: 1px solid #e0e4e5; padding: 15px 10px; background-color: #f8f8f8; border-color: #d4d9d9; border-right: 1px solid #d4d9d9; letter-spacing: 0.3;">Buildpack</th> <th style="border: 1px solid #e0e4e5; padding: 15px 10px; background-color: #f8f8f8; border-color: #d4d9d9; border-right: 1px solid #d4d9d9; letter-spacing: 0.3;">Supported Binary Dependencies</th>
+</tr>
+<tr>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;"><a style="color: #3ea7bc; text-decoration: none;" href="https://github.com/cloudfoundry/go-buildpack/releases/tag/v1.3.1">go-buildpack v1.3.1</a></td>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;">golang 1.4.{1,2}<br /> golang 1.3.{2,3}<br /> golang 1.2.{1,2}<br /> golang 1.1.{1,2}<br /></td>
+</tr>
+<tr>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;"><a style="color: #3ea7bc; text-decoration: none;" href="https://github.com/cloudfoundry/nodejs-buildpack/releases/tag/v1.3.1">nodejs-buildpack v1.3.1</a></td>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;">0.8.{27,28}<br /> 0.9.{11,12}<br /> 0.10.{37,38}<br /> 0.11.{15,16}<br /> 0.12.{1,2}<br /></td>
+</tr>
+<tr>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;"><a style="color: #3ea7bc; text-decoration: none;" href="https://github.com/cloudfoundry/php-buildpack/releases/tag/v3.2.1">php-buildpack v3.2.1</a></td>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;">PHP:<br /> 5.6.{6,7}<br /> 5.5.{22,23}<br /> 5.4.{38,39}<br /> <br /> HHVM (cflinuxfs2 stack):<br /> 3.5.{0,1}<br /> 3.6.{0,1}<br /> <br /> Apache HTTPD:<br /> 2.4.12<br /> <br /> nginx:<br /> 1.7.10<br /> 1.6.2<br /> 1.5.13<br /></td>
+</tr>
+<tr>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;"><a href="https://github.com/cloudfoundry/python-buildpack/releases/tag/v1.3.1">python-buildpack v1.3.1</a></td>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;">2.7.{8,9}<br /> 3.2.{4,5}<br /> 3.3.{5,6}<br /> 3.4.{2,3}<br /></td>
+</tr>
+<tr>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;"><a style="color: #3ea7bc; text-decoration: none;" href="https://github.com/cloudfoundry/ruby-buildpack/releases/tag/v1.4.1">ruby-buildpack v1.4.1</a></td>
+<td style="border: 1px solid #e0e4e5; padding: 10px; background-color: #f8f8f8;">MRI:<br /> 2.2.{1,2}<br /> 2.1.{5,6}<br /> 2.0.0p645<br /> <br /> JRuby:<br /> ruby-1.9.3-jruby-1.7.19<br /> ruby-2.0.0-jruby-1.7.19<br /> ruby-2.2.0-jruby-9.0.0.0.pre1<br /></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why is this important</strong></p>
+<p>Applications that specify or rely on binary dependencies that are no longer included in the buildpack will fail to deploy.</p>
+<p>Existing applications that were deployed using a previous buildpack version and specify or depend on binary dependencies that are no longer included will continue to run but will fail to re-deploy.</p>
+<p>A typical example of an error message in this situation is as follows:</p>
+<pre>Could not get translated url, exited with: 
+DEPENDENCY_MISSING_IN_MANIFEST: https://path/to/ruby-2.1.0.tgz
+                                        
+</pre>
+<p><strong>What you should do</strong></p>
+<p>If your application specifies or depends on a binary dependency that is supported in the new buildpack versions listed above, you do not need to take any further action.</p>
+<p>If your application specifies or depends on a binary dependency that is no longer supported, please refer to this <a style="color: #3ea7bc; text-decoration: none;" href="http://www.google.com/url?q=http%3A%2F%2Fsupport.run.pivotal.io%2Fentries%2F82311705-What-runtime-language-and-server-versions-are-support-for-a-build-pack-&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGnGGWIDAcviC8wgayuOZW1krZduQ">knowledge base article</a> for instructions.</p>
+<p>Please contact <a style="color: #3ea7bc; text-decoration: none;" href="mailto:support@run.pivotal.io">support@run.pivotal.io</a> if you have any questions.</p>
+<p>Sincerely,<br /> The Pivotal Web Services Team</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br /> 
+<table style="border-collapse: collapse; font-size: 12px; color: #b4b4b4;" border="0" cellspacing="0" cellpadding="0" width="600">
+<tbody>
+<tr>
+<td style="padding-bottom: 20px;" align="left" valign="middle">Pivotal Web Services, and the Pivotal Web Services logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.</td>
+</tr>
+<tr>
+<td style="padding-bottom: 20px;" align="left" valign="middle">&Acirc;&copy; 2014 Pivotal Software, Inc. All rights reserved. Published in the USA.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</body>
+</html>

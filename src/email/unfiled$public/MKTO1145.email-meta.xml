@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_VMworld_Exec_Reception_Q314.Follow Up - No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you at our event</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+We’re sorry you were unable to join us for our executive event during VMworld. It was great to see so many VMware and Pivotal customers come together to chat about the synergy between VMware and Pivotal solutions. With Pivotal CF, the leading enterprise PaaS cloud platform powered by Cloud Foundry, and VMware infrastructure products, you can build modern cloud platforms.
+
+If you are looking for ways to take your VMware infrastructure further and build a modern cloud platform, please check this page out &lt;http://www.pivotal.io/platform-as-a-service/pivotal-vmware-cloud ?utm_source=email&amp;utm_medium=pivotal-email-link&amp;utm_campaign=vmware-target-account&gt;. If you have any questions or would like a Pivotal representative to contact you, please email us at info@pivotal.io &lt;mailto:info@pivotal.io&gt; or visit our contact page &lt;http://www.pivotal.io/contact&gt;.
+
+ Lastly, we are bringing the Cloud 
+Platform Roadshow to you. Check to see if your city &lt;http://www.pivotal.io/cloud-platform-roadshow#cities?utm_source=email&amp;utm_medium=pivotal-email-link&amp;utm_campaign=vmware-target-account&gt; is on the list.
+
+Thank you again for joining 
+us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

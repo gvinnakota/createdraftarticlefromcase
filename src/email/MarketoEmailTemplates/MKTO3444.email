@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services"></p>
+</div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p><span id="docs-internal-guid-d7b3d71a-c1e5-9ac9-bc10-a53118a8c688"> </span></p>
+<p><span id="docs-internal-guid-827b7062-1bf9-8870-eb2b-894d2718f646"> </span></p>
+<p dir="ltr">We lead off this newsletter with the announcement of our new SSL offering on PWS.
+  We have long offered free SSL with our partner <a style="color: #059a91; text-decoration: none;" href="http://www.cloudflare.com">Cloudflare</a>, but many users have asked for the ability to bring their own certs and we have listened.
+  The new year also brings new tasks, so we&rsquo;ll close this issue with information about a recently publicized CVE or security announcement that will require action if you have not done so already.<br /><br /><strong>Introducing Pivotal SSL for Custom Domains on Pivotal Web Services<br 
+/></strong>Security is a base requirement for today&rsquo;s applications.
+  Transport level security and authentication of identity are two items that are resolved through the use of the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) that are often referred to as &lsquo;https&rsquo; support.
+  Pivotal Web Services has always provided based level transport layer encryption by providing all applications secure transport for the domain .cfapps.io.
+  We also work with Cloudflare to offer free SSL with certain restrictions including using Cloudflare&rsquo;s DNS.
+  However, some users needed more flexibility including full certificate management.
+  To meet their needs, we are announcing native SSL for Custom Domain support on PWS.
+  For $20 USD per month, developers can bring their own SSL certificates to use for their applications utilizing a custom or private domain.
+  To enable this new service, developers can go to the marketplace and provision the &ldquo;<a style="color: #059a91; text-decoration: none;" href="https://console.run.pivotal.io/marketplace/ssl">Pivotal SSL</a>&rdquo; service.
+  Unlike most services which operate on the Cloud Foundry space level, Pivotal SSL works for all applications using that domain on PWS.
+  So there is no need to provision multiple instances of the service in each space.
+  The Pivotal SSL for Custom Domains is available now.<br /><br /><strong>Security Vulnerability in Spring Socia, Update Recommended<br /></strong>Pivotal recently announced <a style="color: #059a91; text-decoration: none;" href="https://pivotal.io/security/cve-2016-0708">CVE-2016-0708</a> [1] and 
+<a style="color: #059a91; text-decoration: none;" href="https://pivotal.io/security/cve-2016-0715">CVE-2016-0715</a> [2], both of which are applicable to Pivotal Web Services.<br /><br />In summary, Java or PHP applications that were staged and deployed to Pivotal Web Services between April 8, 
+2014 - January 7, 2016 may have been vulnerable to  remote information disclosure, including, but not limited to environment variables and bound service details.<br /><br />Note that although non-standard and less likely, applications written in Ruby, Node.js, Python or Go that were configured to 
+serve files from the root of the application  server&rsquo;s local file system as well as applications using the static buildpack may also have been vulnerable.<br /><br />For applications to be vulnerable, they must have been staged using automatic buildpack detection and configured to allow the 
+serving of static content from within the  deployed artifact.<br /><br />Pivotal has remediated these vulnerabilities on Pivotal Web Services and applications are not &nbsp;vulnerable at this time.
+  &nbsp;However, it is possible that sensitive application information may have been disclosed before the remediation.<br /><br />Therefore, it is recommended that applications that meet the above criteria rotate credentials including environment variables for bound services, user-provided service 
+ instances, and developer provided environment variables.
+  Most Services provide new credentials to each application using an unbind-service and bind-service sequence of commands.<br /><br />In additional, Pivotal recommends re-staging your application so that sensitive information is not written to disk even if that information is no longer vulnerable  
+to disclosure.
+  Please contact <a style="color: #059a91; text-decoration: none;" href="mailto:support@run.pivotal.io">support@run.pivotal.io</a> if you have any questions.<br /><br />Best Regards,<br />The Pivotal Web Services Team</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="30" cellspacing="20" border="0" class="full-block" style="border-collapse:collapse;text-align:center;background:white;border-top:1px solid #f7f7f7">
+<tr>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-twitter.png" alt="Follow us on Twitter" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-linkedin.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-fb.png" alt="Like us on Facebook" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-gplus.png" alt="Add us on Google+" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-youtube.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/icon-instagram.png" alt="Follow us on Instagram" border="0"></a></td>
+</tr>
+<!-- End of social links // --></table>
+<table width="600" cellpadding="0" bgcolor="white" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #f7f7f7">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#666666; font-size:13px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+<p style='margin:0'>&nbsp;</p>
+<p style='margin:0; font-family: Helvetica,sans-serif;color:#999999; font-size:12px;'>Pivotal's Cloud Native platform drives software innovation for many of the world’s most admired brands. With millions of developers in communities around the world, Pivotal technology touches billions of users every day. After shaping the software development culture of Silicon Valley's most valuable companies for over a decade, today Pivotal leads a global technology movement transforming how the world builds software. More at <a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none;">pivotal.io.</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2015 Pivotal Software, Inc. All rights reserved. Published in the USA.<br>
+<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#059a91; text-decoration:none;font-weight:600">Unsubscribe</a></td>
+<td width="30"></td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

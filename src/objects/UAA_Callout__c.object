@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Value__c</fullName>
+        <description>This will contain the value of the fields like Endpoint, Client Id, Client Secret etc.</description>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>This Custom setting is used to store the End point, Client Id, Client Secret etc for the Callout to UAA from Service Cloud.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>UAA Callout</label>
+    <visibility>Public</visibility>
+</CustomObject>

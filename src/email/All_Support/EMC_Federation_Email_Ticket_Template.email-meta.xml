@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>The response to this email must be tracked within the case</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>EMC Federation Email Ticket Template</name>
+    <style>formalLetter</style>
+    <subject>Pivotal Customer Support - EMC Federation Support</subject>
+    <textOnly>Thank you for contacting Pivotal Support - EMC Federation Support. 
+
+To start with, please provide us the following details:  
+1. End Company Name:  
+2. End Customer Name:  
+3. End Customer contact information, email &amp; phone #:  
+4. Pivotal Customer Number:  
+5. Product:  
+6. Product version:  
+7. Problem description:  
+8. Severity: (ex. S1-S4)  
+9. Latest action plan: (ex. Last update to customer)  
+10. Federation Support request #:  
+11. Last Federation Customer Engineer contact: Name, email &amp; phone #:  
+
+Our agents will review your case {!Case.CaseNumber} and get back to you as soon as possible. Note that during weekends and holidays, we will respond on the next business day.  
+
+If you require immediate assistance with a mission critical system, please call  +1-877-477-2269 or one of Pivotal&apos;s local toll-free support numbers. See https://pivotal.io/support/contact  
+
+Kind regards, 
+Pivotal Support
+
+
+{!Case.ThreadId__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign_Newsletter FY16.Newsletter - 6-22-16</name>
+    <style>none</style>
+    <subject>June 2016 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+We enjoyed seeing some of you in person at last month’s Cloud Foundry Summit &lt;[[https://www.cloudfoundry.org/community/summits/program/about/?summitId=10016]]&gt;. One of the popular talks at summit was the introduction of “Route Services” to Cloud Foundry, which are now available on PWS. Route services are a new way to add functionality to your application’s route, such as rate limiting and analytics. If you missed CF Summit, there is another opportunity to learn more at SpringOne Platform &lt;[[http://springoneplatform.io/]]&gt;, taking place August 1 - 4 in Las Vegas. Join us and hear from experts like former Netflix cloud architect and current technology fellow at Battery Ventures, Adrian Cockcroft, to learn about the future of Cloud Native platforms. You can register here &lt;[[https://2016.event.springoneplatform.io/register]]&gt; and use the code &quot;pivotal_pws_300&quot; to save $300 off your registration.
+
+ In this month’s issue, we will cover how to store your logs using Logsene, a logging service provider 
+that now supports integration with Cloud Foundry. 
+ We will also discuss some of the recent buildpack changes announced in our June blog. 
+
+ Thanks for reading and let us know what you think by tweeting us @pivotalws or contacting us with any questions at support@run.pivotal.io &lt;[[mailto:support@run.pivotal.io]]&gt;. 
+
+ Best Regards, 
+
+ The Pivotal Web Services Team 
+
+ Introduction to Route Services on PWS 
+
+ We are happy to announce the availability of route services on PWS. Route services are a new class of service that can be dynamically inserted in front of applications to perform a wide variety of functions. Examples include authentication, rate-limiting, request/response transformation and analytics. Cloud Foundry route services enable developers to:
+
+ - Reduce complexity in code bases by extracting common requirements into services that can be shared and reused 
+ - Offload operational overhead for these services to a service provider 
+ - Manage use of these services with a few simple CLI commands 
+
+By binding an instance of a route service to an application route, PWS will automatically proxy requests for the route to the service instance instead of forwarding the request to your app. After processing, the route service may forward requests to your application or reject the request before it reaches your application. For example, a service may collect analytics about your traffic, or add HTTP headers before forwarding the request to your application. Alternatively, a route service may reject unauthenticated/unauthorized requests, reject requests when a rate-limiting threshold is reached, or serve cached content. 
+
+ If the route service does forward the request to your application, your application response returns back through the route service, enabling additional opportunity for transformation, processing, and analytics. 
+
+ Current limitations of route services:
+
+ - A route can only be bound to one service instance at a time. 
+ - Binding of route services is supported through the CLI only (Apps Manager support is coming soon!)
+
+ We are currently working with potential partners to offer these kind of services to our customers in the PWS marketplace. Until then, you can add your own! Integration involves honoring a few headers passed in requests proxied to the route service, and can be easily tested using a User-Provided Service. For a more dynamic user experience, implement a private service broker and expose your service in your private Marketplace! 
+
+ For more information...
+
+
+ - Learn how to integrate your own Route Service &lt;[[http://docs.pivotal.io/pivotalcf/services/route-services.html]]&gt; 
+ - Learn how to create a User-Provided Service Instance for a Route Service and bind it to your application route &lt;[[http://docs.pivotal.io/pivotalcf/devguide/services/user-provided.html#route-service]]&gt; 
+ - Learn about Routes and Domains &lt;[[http://docs.pivotal.io/pivotalcf/devguide/deploy-apps/routes-domains.html]]&gt; 
+
+Draining Logs using Sematext’s Logsene 
+
+ Logsene &lt;[[https://sematext.com/logsene/]]&gt; is an Elasticsearch Logstash Kibana (ELK) offering for storing logs from Sematext. They recently added support for Cloud Foundry, which includes PWS, demonstrating the growing ecosystem of integrations that Cloud Foundry is fostering. Sematext offers both hosted and on-premise options. Below are the instructions on how to integrate with Sematext’s hosted offering.
+
+
+ - Create &lt;[[https://apps.sematext.com/users-web/register.do?smtuc=1&amp;src=pivotal-pws-logsene]]&gt; a Logsene Account. 
+ - Register &lt;[[https://apps.sematext.com/users-web/register.do?r&amp;null]]&gt; your application and obtain a token. 
+
+ - Create the log drain service using the cf CLI and include the token from step 2. cf cups my-logs -l 
+https://logsene-cf-receiver.sematext.com/LOGSENE_TOKEN  &lt;[[https://logsene-cf-receiver.sematext.com/LOGSENE_TOKEN]]&gt;
+
+ - Bind an app to the service via the CLI 
+cf bind-service APPLICATION-NAME my-logs 
+
+ - Restart your application to become aware of the new log drain using the CLI 
+cf restage APPLICATION-NAME
+
+You should now be able to visit the Logsene console and search through your application logs. We are excited to have another option for log management on PWS. 
+
+ Recent Changes to the PWS Buildpacks Announced on the PWS Blog 
+
+ The buildpack teams are continually upgrading and making changes to the buildpack to ensure they are up to date with the latest features and security patches. To ensure you are notified of any upcoming changes, be sure to subscribe to the PWS blog &lt;[[http://blog.run.pivotal.io/]]&gt;. Some recent changes include making Nginx 1.11.1 the default server in the PHP buildpack and making 2.3.x the default version of Ruby in the Ruby buildpack. 
+
+ That&apos;s a wrap for this month. Remember to check out the videos from the Cloud Foundry Summit talks on our YouTube Channel &lt;[[https://www.youtube.com/playlist?list=PLhuMOCWn4P9gGrKEtCBKYpEl5BXGBCsQZ]]&gt; and keep pushing apps.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

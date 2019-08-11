@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>User.Theater__c</field>
+    </columns>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
+        <field>PROFILE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Pivotal - Sales Rep</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <name>Pivotal Core Field - Users</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

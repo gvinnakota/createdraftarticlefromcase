@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.10-2-14 V2N20</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.20</subject>
+    <textOnly>VOL. 2, NO. 20
+Thursday, October 2, 2014
+Fall is a Steady March &lt;#editor-welcome&gt;
+Pivotal Powers the New Financial Services &lt;#business-update&gt;
+Pivotal CF – The Market’s Best Gets Better &lt;#product-update&gt;
+Pivotal Celebrates a Year of Agile Excellence in Canada &lt;#agile-update&gt;
+Legal Momentum &lt;#people-update&gt;
+Susie Gilfix &lt;#my-name-is&gt;
+Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Fall is a Steady March
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+It may not be all the roads yet, but many of them now lead to Pivotal. If you include the Cloud Platform Roadshow &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow&gt; (which is attracting standing-room-only attendance) and our first big splash at one of the world’s 
+premier financial services events (Sibos &lt;http://www.sibos.com/&gt;), October has us present at ten major industry events.
+ 
+ Cloud visionary Josh McKenty &lt;http://blog.pivotal.io/cloud-foundry-pivotal/news-2/co-founder-of-piston-openstack-board-member-joshua-mckenty-joins-pivotal&gt; becomes the latest visionary to join the Pivotal fold. In successfully leading start-ups and offering enterprise cloud solutions through market-changing software, his move speaks volumes on where leadership around the 3rd Platform is heading. And right on time for the final stretch of 2014 comes the release of Pivotal CF 1.3 &lt;https://network.pivotal.io/products/pivotal-cf&gt;. Its enterprise-grade security and governance show once again that Pivotal has the interests of the enterprise in mind when it comes to extending the best commercial platform for modern app development.
+ 
+ Pivotal Toronto is celebrating today. In announcing its official launch, our North American hub of the east (see the Agile update to learn more) is affirming its global leadership at the nexus of app development and mobility.
+ 
+ Finally, we get a glimpse into the doings of chief legal counsel Andy Cohen and team. They’re busy architecting a delicate balance that is expanding open communities while protecting our commercial IP.
+ 
+ Enjoy!
+BUSINESS UPDATE
+ Pivotal Powers the New Financial Services
+ Richard Reichgut &lt;https://gopivotal-com.socialcast.com/users/950288-richardreichgut&gt;, Director, Financial Services Product Sales, Pivotal
+Pivotal is poised to become the de facto next-generation platform for global financial services firms. It’s a bold statement. Achievable? Absolutely.
+ 
+ As app stores and app marketplaces become the norm, banks and securities firms are placing their bets on what apps to build, buy, outsource, or provide and host for other partners and customers, as a service. This transformation to cloud architectures is the perfect opportunity for Pivotal CF &lt;http://www.pivotal.io/platform-as-a-service/pivotal-cf&gt; to become the foundation on which to build, deploy and consume vital services 
+– such as payments and securities processing, anti-money laundering risk management and mobile banking.
+ 
+ Pivotal counts 10 of the top 10 US banks as customers. You’ll see us commit more resources to ensure that we spread the word on our pedigree in this vertical, and how we’re collaborating with our customers to shape the bank of the future. Earlier in the year, Paul Maritz hosted a dinner with executives from Citigroup, JPMC, Bank of New York and others to explore challenges (such as regulatory requirements and legacy integration) that make it difficult for financial institutions to keep apace with change.
+ 
+ This week, 
+for the first time, Pivotal is a sponsor at Sibos &lt;http://www.sibos.com/&gt;, the world’s premier financial services event, which attracts close to 7,000 delegates from across the globe. With our strategic partners Atos, Canopy, and Samsung, we’re showcasing an integrated mobile banking platform. Jemish Patel &lt;https://gopivotal-com.socialcast.com/users/916277-jemishpatel&gt;, with help from Phil Slavin &lt;https://gopivotal-com.socialcast.com/users/982302-philslavin&gt;, Kim Marie Ruquet &lt;https://gopivotal-com.socialcast.com/users/1072700-kimmarieruquet&gt; and Al Sargent &lt;https://gopivotal-com.socialcast.com/users/914434-alsargent&gt; built a mobile KYC/AML as-a-service demo (coming soon to the Demo Center). We’ve also rolled out an Enterprise Risk architecture and solution story &lt;https://docs.google.com/a/gopivotal.com/file/d/0B4gYFEi5xgokZU1mMVNKeDBKVGM/edit?pli=1&gt;, and are working with early customers on 
+implementations.
+ 
+ 
+ Connected Sibos: Pivotal helps lead the way to the banking of tomorrow
+ 
+
+ We’ll keep you posted on how Pivotal is helping financial titans work at start-up agility, while bringing enterprise-grade security and compliance to meet complex global regulations. If you’re working with financial firms in your area, call me &lt;https://gopivotal-com.socialcast.com/users/950288-richardreichgut&gt; – I’m here to help!
+PRODUCT UPDATE
+ Pivotal CF – The Market’s Best Gets Better 
+ James Bayer &lt;https://gopivotal-com.socialcast.com/users/914815-jamesbayer&gt;, Sr. Director of Product Management
+On behalf of the entire Pivotal CF &lt;http://www.pivotal.io/platform-as-a-service/pivotal-cf&gt; team, I’m excited and proud to share the highlights of the new Pivotal CF 1.3 &lt;http://bit.ly/blogpcf13&gt; release, and give a glimpse at what’s next for our flagship product. This release bears the stamp of the many who have worked very hard since May of 2014 to make the world’s leading enterprise PaaS even better. New capabilities have been added to help customers in important ways when as they build and deploy applications on Pivotal CF. These include:
+
+
+ - Availability Zones automatically balance customer applications and Pivotal CF across failure domains in customer data centers. This gives developers continuous availability from Pivotal CF, even during significant infrastructure failures.
+ - Multiple Networks give infrastructure operations teams fine-grained control over Pivotal CF product placement in their networks. By enabling different network policies for different Pivotal CF product deployments, operators can easily secure Pivotal CF to run in a production environment.
+ - Application Security Groups provide administrators with a set of network access policies that are automatically applied to Pivotal CF applications. This limits network connections to only pre-approved whitelists, which enable customers to use a single installation for applications with different network policies – instead of having to support multiple, separate Pivotal CF installations.
+
+
+
+Taken together, along with other key release features, our customers can deploy Pivotal CF applications to production with full confidence, and with an increasing array of available services for app development. Please refer to the excellent Pivotal CF 1.3 release blog &lt;http://bit.ly/blogpcf13&gt; for the details, and to Socialcast for a host of field resources &lt;https://gopivotal-com.socialcast.com/groups/pivotalprofessionalservices&gt;, or check out our release video &lt;http://spr.ly/6182U80g&gt;.
+ 
+ We’re just getting 
+started. The team is hard at work on data services that can be run in production, Ops Manager support for AWS and OpenStack. We’re also on the road to becoming the hands-down best platform for Docker and in extending the platform to support Windows and .NET applications.
+ 
+ Our goal is to ensure that Pivotal CF is the definitive platform for software development. Try out the latest release, give us your feedback and follow our new Pivotal CF handle &lt;https://twitter.com/pivotalcf&gt; (@PivotalCF) on Twitter!
+AGILE UPDATE
+ Pivotal Celebrates a Year of Agile Excellence in Canada
+ Megan Wheeler &lt;https://gopivotal-com.socialcast.com/users/950223-meganwheeler&gt;, Marketing Communications, Pivotal Labs
+On October 2nd, Pivotal celebrated its heavyweight contribution to the burgeoning Toronto tech scene, with our 
+official Toronto office launch &lt;http://www.theglobeandmail.com/report-on-business/small-business/sb-tools/small-business-briefing/pivotal-opens-its-second-largest-office-in-toronto/article20880513&gt; (and one-year 
+anniversary). With our feet firmly planted in this bustling tech hub, Pivotal Toronto draws on a local knowledge base to serve companies worldwide, putting customers on a transformative path to building modern applications.
+ 
+ Toronto will bring the best of application development to enterprises 
+and start-ups alike, showcasing examples of ground-breaking apps and the latest in agile development and collaboration technology, and our cutting-edge work with third-party technologies, such as iBeacons &lt;https://developer.apple.com/ibeacon/&gt; and Google Glass &lt;https://www.google.com/glass/start/?utm_source=google_sem&amp;utm_medium=text&amp;utm_content=bkws&amp;utm_campaign=evergreen&amp;gclid=CNu13P-2h8ECFdCCfgodZH8AcA&gt;.
+ 
+ Amar Varma &lt;https://gopivotal-com.socialcast.com/users/974185-amarvarma&gt;, Farhan 
+Thawar and Leo Spiegel &lt;https://gopivotal-com.socialcast.com/users/950070-leospiegel&gt; kicked off the celebrations. Over 150 customers and prospects also attended, including representatives from Apple, Google, Hailo &lt;https://www.hailoapp.com/&gt;, IBM, Mastercard, Microsoft, Samsung and MLSE &lt;http://www.mlse.com/&gt;.
+ 
+ Situated in the heart of downtown, the Pivotal Toronto office serves as a focal point for employees, partners, customers and others in the tech community to experience the latest in software innovation and development. Stay tuned for more from Toronto!
+PEOPLE UPDATE
+ Legal Momentum
+ Andy Cohen &lt;https://gopivotal-com.socialcast.com/users/931979-andrewcohen&gt;, General Counsel
+Unlike some corporate legal departments, that view themselves as separate from the rest of the company, Pivotal Legal works as part of the team. We focus on two things: supporting Pivotal go-to-market and long-term value creation, and building a culture of integrity and compliance.
+ 
+ Those principles guide everything we do, and the following are a few examples of recent initiatives.
+ 
+ Cloud Foundry &lt;http://cloudfoundry.org/&gt; continues to expand its influence and community of talented developers, and Cyrus Wadia &lt;https://gopivotal-com.socialcast.com/users/955949-cyruswadia&gt; is playing a key role in standing up a strong framework for the Cloud Foundry Foundation. He has been working around the clock to draft its bylaws and governance documents – a process akin to a constitutional convention, to which Cyrus has brought his considerable tact and legal expertise. Getting this right can help the foundation community flourish in the long run. Dave Schachner &lt;https://gopivotal-com.socialcast.com/users/949608-davidschachner&gt;, who holds a BS in Computer Science in addition to his JD, is working with Cyrus and the development and operations teams to establish the 
+open source license and IP (intellectual property) compliance processes. The goal is to make compliance easier for developers, establish customer and community trust and to protect Pivotal IP.
+ 
+ Susie Gilfix &lt;https://gopivotal-com.socialcast.com/users/953582-susiegilfix&gt; together 
+with Kevin Wentzel, and a new addition to the commercial team, Adrienne Sutton &lt;https://gopivotal-com.socialcast.com/users/1076794-adriennesutton&gt;, have been heads down closing end-user customer deals. Working across our teams they recently rolled out an open source indemnification program to support deal velocity and ensure appropriate contract terms for Pivotal. Adrienne, a seasoned negotiation expert, closed her first deal within a few weeks of joining Pivotal.
+ 
+ Pivotal Legal’s newest addition is Chris Ing, who joins us from Oracle, where as a senior leader he oversaw a large legal team. He is a corporate and securities law expert who will also support strategic transactions.
+ 
+ Senior Paralegal and Equity Administrator, Jane Jue &lt;https://gopivotal-com.socialcast.com/users/954880-janejue&gt;, and 
+Executive Assistant, Norma Stanton &lt;https://gopivotal-com.socialcast.com/users/955999-normastanton&gt;, support our team. Jane is one of the most efficient and customer-oriented people I’ve ever met, and Norma is one of the most organized and truly thoughtful.
+ 
+ Pivotal Legal is here to help you make it happen – the right way.
+MY NAME IS...
+ Susie Gilfix
+ Susie Gilfix &lt;https://gopivotal-com.socialcast.com/users/953582-susiegilfix&gt;, Associate General Counsel
+Susie Gilfix, Associate General Counsel
+ 
+ I am a member of the best legal department in the business, managing our global commercial legal transactions with resellers and end users. I support our tireless Field to make revenue happen, while protecting Pivotal.
+Among my east coast Pivotal pals in Hopkinton, MA…though I enjoy “hanging out” with folks virtually. If not there, I’m at my nearby home in Southborough (or preferably hiking or skiing in the mountains or chilling on the beach).
+Driving efficiency, scalability and velocity in our contract negotiation process, ensuring we provide crisp, agile legal advice. I have an exceptional team; I couldn’t do what I do without them.
+I am running, from one teenager’s cross-country meet to another’s tennis match, or to meet my husband for some live tunes and dancing. You may know that my hobby is (hot) yoga!
+ 
+ 
+ Susie Gilfix and clan: (l to r) Zack, Talia, Susie, Ron, and Adam at Mt. Washington (New Hampshire)
+Is that I was a competitive gymnast as well as a civil rights attorney for the Attorney General’s Office.
+The chance to be on the cutting edge of technology, surrounded by visionary, passionate and genuinely good people.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from September 22 to 29:
+ 
+ Amy Jie Bai, College Co-op student, Beijing
+ Beatrice Peng, Software Engineer, New York
+ Benjamin Cooper, 
+Product Manager, Boulder CO
+ Dormain Drewitz, Director of Product Marketing, San Francisco
+ Douglas Pitek, Director of Customer Success, Americas South
+ Jacob Morris, Software Engineer, Denver
+ Jennifer Le, Sr. HR Coordinator, Palo Alto
+ Katie Moulang, Software Engineer, London
+ Murilo Costa, Sales Account Executive, Americas South (Sao Paolo)
+ Nicole Sullivan, Principal Software Engineer, New York
+ Oliver Peate, 
+Software Engineer, London
+ Paul Kato Sr., Sr. Manager Program Management
+ Ramiro Salas, Advisory Solutions Architect
+ Sai Devulapalli, Consulting Product Marketing Manager, Texas
+ Sean Murray, Director of Information Systems, Palo Alto
+ Uma Ravi, 
+Designated Support Engineer I</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

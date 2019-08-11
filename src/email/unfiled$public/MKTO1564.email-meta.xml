@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_AppSphere_Q414.Follow Up</name>
+    <style>none</style>
+    <subject>AppSphere - A Pivotal Thanks!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thanks for joining us in our booth at AppSphere in Las Vegas!
+
+
+ - Discover how AppDynamics makes it easy to monitor Java apps running on Cloud Foundry and Pivotal Web Services here &lt;http://blog.pivotal.io/cloud-foundry-pivotal/products/monitoring-java-apps-appdynamics&gt;.   
+ - Learn more about Pivotal CF &lt;http://www.gopivotal.com/platform-as-a-service/pivotal-cf&gt;®, the world’s leading enterprise Platform-as-a-Service powered by Cloud Foundry here &lt;http://www.gopivotal.com/platform-as-a-service/pivotal-cf&gt;. 
+ - Get a free 60 day trial &lt;run.pivotal.io/? utm_source=AppDynamics&amp;utm_medium=email&amp;utm_term=appdynamics&amp;utm_content=FollowUp&amp;utm_ campaign=Appdynamics%20Followup&gt; to see how easy it is to use AppDynamics with Pivotal Web Services for a best in class Java experience
+ - Go deeper -  sign up to attend a free workshop as part of the Pivotal Cloud Platform Roadshow &lt;http://www.pivotal.io/platform-as-a-service/cloud-platform-roadshow&gt;. You’ll get hands-on experience as you test drive Pivotal’s CF platform. Coming soon to a city near you!
+
+
+Finally, If you have any questions or would like a Pivotal representative to contact you, please email  &lt;mailto:info@pivotal.io&gt;us or visit our contact page &lt;http://pivotal.io/contact&gt;. 
+
+Thanks!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

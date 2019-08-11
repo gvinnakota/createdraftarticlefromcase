@@ -1,0 +1,85 @@
+<messaging:emailTemplate subject="Order Confirmation for {!relatedTo.zqu__Opportunity__r.Account_Name__c}" recipientType="User" relatedToType="zqu__Quote__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <STYLE type="text/css">
+                    TH {font-size: 11px; font-face: arial;background: #CCCCCC;
+                    border-width: 1;  text-align: center; padding: 0.5rem }
+                    TD  {font-size: 11px; font-face: verdana}
+                    TABLE {border: solid #CCCCCC; border-width: 1}
+                    TR {border: solid #CCCCCC; border-width: 1}
+                </STYLE>
+                <font face="arial" size="2">
+
+
+                    <apex:image id="PivotalLogo" value="https://pivotal--c.na37.content.force.com/servlet/servlet.ImageServer?id=015U0000003J2XR&oid=00DU0000000YQaz" 
+                    height="64" width="200"/>
+                    
+                  <p><b>ORDER CONFIRMATION FOR {!relatedTo.zqu__Opportunity__r.Account_Name__c}</b></p>
+                  <p/>
+                  <p><b>Pivotal Customer Number:</b>&nbsp;{!relatedTo.Pivotal_Customer_Number__c}</p>
+                  <p><b>Purchase Order Number:</b>&nbsp;{!relatedTo.PurchaseOrder__c}</p>
+                  
+                   <p><apex:outputPanel rendered="{!IF(relatedTo.Channel__c =='Pivotal Direct' ||relatedTo.Channel__c =='Federation', true, false)}">
+                        <apex:outputLabel value="Quote Number:" for="quoteno" style="font-weight: bold" />
+                        <apex:outputField value="{!relatedTo.zqu__Number__c}" label="Quote Number:" id="quoteno" />
+                    </apex:outputPanel></p>
+
+                    <p><apex:outputPanel rendered="{!IF(relatedTo.Channel__c !='Pivotal Direct' && relatedTo.Channel__c !='Federation', true, false)}">
+                        <apex:outputLabel value="Sales Order #: " for="salesorderno" style="font-weight: bold" />
+                        <apex:outputField value="{!relatedTo.ChannelOrderID__c}" id="salesorderno"/>
+                    </apex:outputPanel></p>
+
+                  <p><b>Order Date:</b>&nbsp;<apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText></p> 
+                  <p/>
+                  <p>Dear {!relatedTo.Ship_To_First_Name__c},</p>  
+                  <p><b>Thank you for your purchase with Pivotal Academy!</b></p>
+
+                   <apex:outputPanel rendered="{!IF(relatedTo.Channel__c !='Pivotal Direct' && relatedTo.Channel__c !='Federation', true, false)}">
+                      <p>{!relatedTo.zqu__Opportunity__r.Account_Name__c} has licensed the Pivotal product(s) below on Sales Order Number on {!relatedTo.ChannelOrderID__c} on&nbsp;<apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText>.</p>
+                  </apex:outputPanel>
+                  
+                  
+                  <apex:outputPanel rendered="{!IF(relatedTo.Channel__c =='Pivotal Direct' || relatedTo.Channel__c =='Federation', true, false)}">
+                      <p>{!relatedTo.zqu__Opportunity__r.Account_Name__c} has licensed the Pivotal product(s) below on Purchase Order Number {!relatedTo.PurchaseOrder__c} on&nbsp;<apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText>.</p>
+                  </apex:outputPanel>
+                  
+                  <c:Zquote_EmailTemplate quoteRecordId="{!relatedTo.id}" ApprovalProductType="Ed Services">
+
+                       <table border="1" >
+                           <tr>
+                               <th>Class Name</th>
+                               <th>SKU</th>
+                               <th>Service Description</th>
+                               <th>Qty</th>
+                               <th>UOM</th>
+                           </tr>
+                           <apex:repeat var="qcsvar" value="{!varResults}">
+                              <tr>
+                                       <td>{!qcsvar.zqu__Product_Name__c}</td>
+                                       <td>{!qcsvar.SKU__c}</td>
+                                       <td>{!qcsvar.Name}</td>
+                                       <td align="right"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!qcsvar.zqu__Quantity__c}"/> </apex:outputText></td>
+                                       <td align="right">{!qcsvar.zqu__UOM__c}</td>
+                                   </tr>
+                             </apex:repeat>
+
+                       </table>
+                 
+                </c:Zquote_EmailTemplate>         
+                    
+                    <p />
+                    <p>Pivotal's Education Operations team will contact you shortly regarding the requested class(es). In the meantime, feel free to visit our <a href="http://pivotal.io/academy">Pivotal Academy website</a> or email us at <a href="mailto:education@pivotal.io">education@pivotal.io</a> if you have any questions.</p>
+                    
+                    <p>Thank you for your business.  We look forward to providing you with a world-class customer experience.</p>
+                    
+                                        
+                    <p>-Pivotal Academy</p>
+                    <p/>
+                    <p/>
+                    <p/>
+                    </font>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

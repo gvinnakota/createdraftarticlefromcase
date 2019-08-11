@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Global Ecosystem Incumbency --></label>
+        <name>Global_Ecosystem_Incumbency__c</name>
+        <relationshipLabel><!-- Global Ecosystem Incumbencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Install Vendor - Choose this level if all we know is that the Partner has done work/sold product to this customer.
+Primary Vendor - Choose this level if we validated that the Partner has an executive-level, economic and relevant relationship w/ customer --></help>
+        <label><!-- Level of Incumbency --></label>
+        <name>Level_of_Incumbency__c</name>
+        <picklistValues>
+            <masterLabel>Install Vendor</masterLabel>
+            <translation><!-- Install Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Vendor</masterLabel>
+            <translation><!-- New Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Vendor</masterLabel>
+            <translation><!-- Primary Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Contact --></label>
+        <name>PartnerContact__c</name>
+        <relationshipLabel><!-- Global Ecosystem Incumbencies --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Name --></label>
+        <name>PartnerName__c</name>
+        <relationshipLabel><!-- Global Ecosystem Incumbencies (ISV Partner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Type --></label>
+        <name>Partner_Type__c</name>
+        <picklistValues>
+            <masterLabel>ISV</masterLabel>
+            <translation><!-- ISV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IaaS/Strategic Partner</masterLabel>
+            <translation><!-- IaaS/Strategic Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Integrator</masterLabel>
+            <translation><!-- System Integrator --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Global Ecosystem Incumbency</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Global Ecosystem Incumbencies</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Global Ecosystem Incumbency Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

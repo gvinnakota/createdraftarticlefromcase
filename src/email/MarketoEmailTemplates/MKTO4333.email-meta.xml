@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Open House &amp; DTF_Istanbul_Q416.Reminder 11-2-16</name>
+    <style>none</style>
+    <subject>Reminder: Pivotal Digital Transformation Forum</subject>
+    <textOnly>&lt;[[http://pivotal.io/event/digital-transformation-forum/istanbul]]&gt;
+Hi {{lead.First Name:default=there}}, 
+
+ Thank you for registering for tomorrow&apos;s Digital Transformation Forum in Turkey. See event details below: 
+
+ Date: 3 November 2016 {{my.Save the Date}}
+Time: 9h00 - 16h00
+ Location: The Ritz-Carlton &lt;[[http://www.ritzcarlton.com/en/hotels/europe/istanbul]]&gt;, No:6, Harbiye, Süzer Plaza, 34367 Istanbul/Şişli/İstanbul, Turkey
+Map &lt;[[https://www.google.com/maps/dir/]]&gt;
+ 
+We look forward to meeting you soon! 
+
+ The Pivotal Team 
+
+ Questions? Please contact Phil Reay at preay@pivotal.io &lt;[[mailto:preay@pivotal.io]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

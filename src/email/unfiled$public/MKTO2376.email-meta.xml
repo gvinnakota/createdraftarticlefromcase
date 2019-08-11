@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 3 - April 2015</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - April 2015</subject>
+    <textOnly>April is tax time here in the US, and as Benjamin Franklin said, “In this world nothing can be said to be certain, except death and taxes.” To that you can add security fixes. In this edition of Push With Success, we lead with a new cf stack that will address security support going forward. If you have apps currently hosted on PWS, you’ll want to pay attention, since you’ll have to re-deploy your apps. Next we’ll explore the power of Cloud Foundry CLI Plugins. Lastly, in our partner spotlight we talk about database options available on PWS.
+
+If you find Cloud Foundry, the technology behind PWS, consider attending the CF Summit May 11 - 12, 2015 in Santa Clara, CA. It will be an opportunity to meet with over 1500 Ap­pli­ca­tion De­vel­op­ers, IT Op­er­a­tions Ex­perts, Tech­ni­cal Man­agers, Line-of-Busi­ness Lead­ers, Ser­vice Providers and Cloud Foundry Con­trib­u­tors. Learn every­thing you need to con­tribute to the pro­ject. More details are available at http://www.cfsummit.com/ &lt;http://www.cfsummit.com/&gt;. 
+ 
+We hope you enjoy this month’s issue. Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws &lt;https://twitter.com/pivotalws&gt;.
+ 
+Moving to the new cflinuxfs2 stack on PWS
+Developers with applications currently hosted on Pivotal Web Services will need to re-push their applications to explicitly use the new cflinuxfs2 stack by May 28, 2015. A stack is a prebuilt file system, including an operating system, that supports running applications. PWS is moving to the new stack vendor in order to support future security fixes.
+
+We encourage developers to deploy their applications using the new cflinuxfs2 stack as a separate “test” application to verify that their applications are not impacted before deploying to production. If you are using a custom buildpack, you should verify that it functions with the new stack. More details are available in our knowledge base 
+article.
+
+
+Using a Cloud Foundry CLI Plugins on 
+PWS
+Cloud Foundry has a powerful cf Command Line Interface (CLI) tool that supports most frequently used actions. However, there may be times when you would like the CLI to do more or to include a combination of actions that you use frequently. To address that desire, recent versions of the cf tool support plugins, which enable developers to add custom commands to the cf CLI. For instance, there is a plugin that lets you record sequences of cf commands to use later. More timely, there is a stack changer plugin &lt;https://github.com/simonleung8/cli-stack-changer&gt; to assist developers with the stack migration discussed above. As a PWS user, you can install and use this and other plugins that Cloud Foundry developers and third-party developers create. Installing a plugin is simple. Just download the binary file for your platform, and from the command line, type:
+
+cf install-plugin BINARY_FILENAME
+
+Replace BINARY_FILENAME with the path to the plugin file you have downloaded. You can find many contributed plugins at http://plugins.cfapps.io/ui/ &lt;http://plugins.cfapps.io/ui/&gt;.
+
+The Cloud Foundry consultancy Stark and Wayne &lt;https://starkandwayne.com/&gt; have a nice blog &lt;https://blog.starkandwayne.com/2015/03/04/installing-cloud-foundry-cli-plugins/&gt; post that provides more details about how to use CLI Plugins.
+
+Relational Database Options On PWS
+Most modern web application requires a relational database. To address that need, the PWS marketplace supports SaaS providers for MySQL and Postgres databases. These services are available on a monthly subscription basis and have different levels of database quota and simultaneous connection support.  
+
+MySQL users can take advantage of the ClearDB &lt;https://console.run.pivotal.io/marketplace/cleardb&gt; 
+offering. Postgres users can use the ElephantSQL &lt;https://console.run.pivotal.io/marketplace/elephantsql&gt; offering. There are times where a new application requires a legacy database. Cloud Foundry--and by extension, PWS--offers User Provided 
+Services to access these legacy assets so you are not limited to marketplace services. This means that all apps in the space now can bind to your existing database in the same easy manner as a marketplace service. Developers can choose the right database solutions for their applications on PWS. Refer to this knowledge base 
+article for more information. Give these database options a try getting your free trial account here &lt;https://console.run.pivotal.io/register?PWS_newsletter&gt;.
+ 
+ Best Regards,
+Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

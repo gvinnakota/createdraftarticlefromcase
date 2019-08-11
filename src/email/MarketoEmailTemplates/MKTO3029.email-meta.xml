@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.10-12-2015 V3N16</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 16</subject>
+    <textOnly>VOL. 3, NO. 16
+Thursday, October 15, 2015
+Editor Welcome: Still Pivotal Native  &lt;#14ebc20d8b820466_editor-welcome&gt;
+Business: Why Big Data will Never Be the Same Again &lt;#business-update&gt;
+Product: Apache HAWQ Takes Flight &lt;#product-update&gt;
+Agile: Start Them Up - Pivotal&apos;s New Startup Initiative &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People: When we Walk, Cancer Runs &lt;#people-update&gt;
+Hello, My Name Is... Bridget Kromhout &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+
+Still pivotal Native
+
+Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+Since we last checked in two weeks ago, Pivotal open-sourced the fastest SQL query tool on the planet (see Lei Chang’s product update on Apache 
+HAWQ), and expanded the open source front through ODPi, a community effort to build an enterprise-hardened Hadoop standard (covered in this issue’s business update).
+ 
+Pivotal also anchored Denver Startup Week &lt;http://www.denverstartupweek.org/&gt;, announcing its new agile and startup toolkit, powered by Pivotal Web Services &lt;https://run.pivotal.io/&gt;, and covered by Theron McCollough in our Agile update. During his talk at a Pivotal reception, GNIP &lt;https://gnip.com/&gt; co-founder Jud Valeski &lt;https://www.linkedin.com/in/jvaleski&gt; claimed—half seriously and 
+unabashedly—that where agile was concerned, GNIP  “stole everything they knew” from Pivotal. Semantics. Jud just took what was on offer, which was a whole new way to fish in software development.
+ 
+ With another impressive quarter behind us, more open source to come, and a lot to say at the Cloud 
+Foundry Summit in Berlin, we’re going from advocating for, to becoming a new center of gravity.
+ 
+ Oh yeah, there was also this Dell and EMC thing. A colleague summed it up best on Monday: “I still have a job to do, and a lot of work ahead of me.” For Pivotal, our business remains the same as it was last Friday—to transform how the world builds software.
+ 
+ Enjoy.
+BUSINESS
+ Why Big Data Will NEVER BE THE SAME AGAIN
+Leo Spiegel &lt;https://gopivotal-com.socialcast.com/users/950070-leospiegel&gt;, SVP Strategy and Corporate Development
+ Mike Maxey &lt;https://gopivotal-com.socialcast.com/users/917174-mikemaxey&gt;, Strategy and Corporate Development
+Data is one of the most valuable assets a company has today, and as it has done for other software initiatives and communities, Pivotal is filling in the pieces for an open source big data ecosystem. Last week it made ripples at both Strata + Hadoop and ApacheCon, making SQL synonymous with Hadoop when it open sourced Pivotal HAWQ &lt;http://pivotal.io/big-data/pivotal-hawq&gt; and MADlib &lt;http://madlib.incubator.apache.org/&gt; (and finding them a home in the Apache Software Foundation &lt;http://www.apache.org/&gt;).
+ 
+ And after months of preparation, we led the launch of the ODPi &lt;http://odpi.org/&gt; to marry the ever-changing data demands of enterprises with the real-world experience of a vast open source community that has grown up around Hadoop &lt;https://hadoop.apache.org/&gt;. The goal is to build a common, flexible, Hadoop-based core that includes the participation of the developers and enterprises it seeks to benefit.
+ 
+ The Open Ecosystem Of Big Data
+The ODPi in its blueprint remains true to the spirit 
+of Pivotal’s aim to cultivate software ecosystems where every voice counts, and where engineers are empowered through their contributions, to lead and steward the evolution of the ODPi codebase. Some highlights of this community:
+
+
+ - All ODPi member companies have a forum to define enterprise requirements for big data.
+ - Every member gets an equal vote on ODPi core decisions, regardless of their investment level. This levels the field for all participants and will facilitate enterprise requirements that are broadly representative of the industry.
+ - A Technical Steering Committee (TSC) of developers leads the work. Representation on this committee is based on expertise and the value of contributions to the ODPi core—equity in bits as opposed to capital. The TSC will work with release teams and the larger ODPi developer community.
+
+
+
+To date we have seen the release of an initial ODPi core specification and reference implementation on github &lt;https://github.com/odpi&gt;. More than 35 maintainers/developers across 25 companies have been named to lead the ongoing work. An ODPi Certification Program is also being drawn up to ensure consistency and compatibility across the big data ecosystem.
+ 
+ Our thanks and gratitude goes out to all the outstanding efforts in our legal, finance, engineering and product teams, and to our members, who helped bring 
+the ODPi to life. A special thank you to Roman Shaposhnik for leading the technical working, delivering an ODPi specification, and getting the opinionated community of Hadoop experts aligned; and to Mike Weir, who led the Marketing working group, which delivered a flawless ODPi launch at Strata.
+ 
+ 
+ODPi infographic summing up how and why it works: http://odpi.org/howitworks
+ 
+The full low-down on participation in the ODPi: http://blog.odpi.org/the-odpi-low-down-participation-and-governance/
+ 
+To learn more on technical progress, visit: https://github.com/odpi &lt;https://github.com/odpi&gt;, or the ODPi: http://ODPi.org &lt;http://odpi.org/&gt;
+PRODUCT
+ Apache hawq takes flight
+ Lei Chang &lt;https://gopivotal-com.socialcast.com/users/959793-leichang&gt;, Director of R&amp;D Pivotal HAWQ and Apache HAWQ
+Pivotal recently open sourced and turned over the Pivotal HAWQ &lt;http://pivotal.io/big-data/pivotal-hawq&gt; core (now called Pivotal HDB) to the Apache 
+Software Foundation (ASF), and is now incubating as Apache HAWQ &lt;http://hawq.incubator.apache.org/&gt;. Apache HAWQ is a redesign of the HAWQ SQL query architecture. It will use the developer community to give it greater elasticity, and meet the enterprise requirements of a growing user base.
+ 
+ To Hadoop Native
+An entire ecosystem has grown up around what Hadoop &lt;https://en.wikipedia.org/wiki/Apache_Hadoop&gt; created for big data. Open sourcing HAWQ is a significant step towards a fully Hadoop native, high-performance analytic database infrastructure. To paraphrase Scott Yara, this moves us from the idea of SQL on Hadoop, to where SQL is synonymous with Hadoop, or where SQL is Hadoop &lt;http://pivotal.io/hadoop-native-sql&gt;.
+ 
+ With open contributions and community collaboration 
+from customers, ecosystem partners, and academic researchers, among others, Apache HAWQ has great potential to become the world’s de facto Analytical SQL engine in the world.
+ 
+ Contributions to HAWQ include not just writing code, but helping new users on mailing lists, testing 
+releases, and improving documentation. Exciting areas that we’re keen to collaborate on with the community include ecosystem integration, geo-replication, synchronized catalog and data snapshots, and distributed indexes. Those interested in contributing to HAWQ can reference Apache HAWQ &lt;http://hawq.incubator.apache.org/&gt; website for detailed steps.
+ 
+ This has and will continue to be a process of discovery by doing. It took our HAWQ team roughly a year to change the underlying infrastructure. The technical overview can be found in this blog: Introducing The Newly Redesigned Apache HAWQ &lt;http://blog.pivotal.io/big-data-pivotal/products/introducing-the-newly-redesigned-apache-hawq&gt;. I’d like to congratulate the whole HAWQ team for their deep and innovative work to make this happen!
+AGILE
+ start them up - pivotal&apos;s new startup initiative
+ Theron McCollough &lt;https://gopivotal-com.socialcast.com/users/1093351-theronmccollough&gt;, Senior Marketing Manager
+At the end of September some 12,000 fellow travelers from the Denver and Boulder tech scene gathered for the region’s biggest startup event—Denver Startup Week &lt;http://www.denverstartupweek.org/&gt; (DSW).
+
+
+
+Pivotal showed up in full force, as a sponsor, key venue, and participant. Janice Fraser’s talk on The Future of Product Management drew a standing room only crowd of 250. We also joined our upstairs neighbors, incubator Galvanize &lt;http://www.galvanize.com/&gt;, to host the DSW’s Startup Crawl, where we met a lot of great talent from the area, and danced on the roof-deck to a live band. But Pivotal’s Open House was the shining star of the week. Not only did we land new Pivotal accounts, Drew McManus introduced a new initiative for this community: Pivotal for Startups &lt;https://pivotal.io/startups&gt;.
+
+
+
+Pivotal has a strong track record with startup communities everywhere—particularly developer communities. Pivotal for Startups &lt;https://pivotal.io/startups&gt; will be one way we nurture transformation through software, by helping up and coming companies bring their visions to life.
+
+
+
+Its launch in the Denver and Boulder startup community will serve as the initiative’s MVP (minimum viable product). Drew McManus outlined the new Startup program at our VIP opening event, where it was received by hoots and hollers of endorsement. Several startups have already applied for the program, and we expect sign-ups to continue apace.
+
+
+
+
+
+The queue outside Pivotal Offices during startup crawl; GNIP founder Jud Valeski extols the pivotal way.
+
+
+
+While a sizable number of technology startups open shop every year, a large percentage of these will not survive—great ideas or not. The program is tailored to help this segment of businesses through high-value tools and services.
+
+
+
+Pivotal for Startups includes three components of services and tools geared towards early stage companies. The package includes one year of both Pivotal Web Services &lt;https://run.pivotal.io/&gt; (up to 2GB) and Pivotal Tracker &lt;https://www.pivotaltracker.com/&gt; free of charge, as well as an hour of consulting from Pivotal Labs. Together, these three items create a smart offering—native to the cloud—to give any startup a boost.
+
+
+
+Pivotal for Startups will run through its MVP stages in the Denver/Boulder region of developers, incubators, accelerators and VC communities. This is the first Pivotal startup package of this sort, and we expect it to grow from here in 2016.
+
+
+
+You can find more about Pivotal for Startups here &lt;https://pivotal.io/startups&gt;. If you know of incubators, early-stage VC’s and/or startups who might be interested in Pivotal for Startups, please reach out to Theron McCollough &lt;mailto:tmccollough@pivotal.io&gt;.
+Customer Spotlight
+Customer Stories, Pivotal Style
+Are you sitting on the best untold customer story of 2015? Don&apos;t close the year without sharing it! Pivotal offers multiple opportunities to position customers as industry and software trailblazers. Whether it&apos;s a conversation with an industry analyst, a blog post, a case study for the website &lt;http://pivotal.io/customers&gt;, or speaking at an industry event, involving our customers in these activities is always a win-win. Let’s surface all the great stories around our Data, PCF and Pivotal Labs customers. Contact Sophia Tseng &lt;mailto:stseng@pivotal.io&gt; or Estelle Hayes &lt;mailto:ehayes@pivotal.io&gt; in customer marketing to discuss your opportunities and creative ways to share your customer story.
+PEOPLE
+when we walk, cancer runs
+ Kim Marie Ruquet &lt;https://gopivotal-com.socialcast.com/users/1072700-kimmarieruquet&gt;, Director, Field Marketing
+On October 1, 2015, Pivotal New York participated in the The Leukemia &amp; Lymphoma Society Light the Night Walk &lt;http://www.lightthenight.org/&gt; in Manhattan.
+
+Light The Night (LTN) is The Leukemia &amp; Lymphoma 
+Society’s, annual evening walk and gathering as a community in the fight against cancer, to celebrate cancer survivors, and to raise funds for cancer research. Each “Champion For Cures” team member receives an illuminated lantern: white for survivors, red for supporters, and gold for the memory of loved ones lost to cancer.
+
+It was a remarkable Pivotal effort: Despite heavy winds and a downpour, 8 members from Team Pivotal, EMC, 
+and Home Depot donned their rain gear and walked a mile along the Hudson River in Manhattan to help the cause.
+
+Pivotal Team NYC sponsored the KidZone, and among other things, we taught children a Pivotal staple: How to shoot Pivotal foam rockets! To date, the team has raised over $2,700 
+of our $5,000 target.
+ 
+ 
+Pivotal supports cancer survivors and the fight for a cure, rain or shine.
+
+
+ Giving back to the community is not that much different to coding software or trying to sell software and services. It takes time and effort, but the end results are always worth it.
+ 
+ Thanks to Team Pivotal, Pivots, customers, and executives who partook in the event by buying a raffle ticket and/or donating funds to help us reach our goals. And a special shoutout to everyone who is helping to make a real difference in their own communities!
+HELLO MY NAME IS...
+
+Bridget Kromhout 
+
+Bridget Kromhout &lt;https://gopivotal-com.socialcast.com/users/1519185-bridgetkromhout&gt;, Principal Technologist, Cloud Foundry
+provide pink-haired thought leadership as a service. (Actually, I work on the technical advocacy team for Cloud Foundry, helping everyone understand enough to know they want it. The era of ad-hoc automation is at an end, and a structured platform is the reason why.)
+in Minneapolis when I’m at home, at tech conferences the rest of the time, and always on Twitter &lt;https://twitter.com/bridgetkromhout&gt;.
+learning all about Cloud Foundry and BOSH, and writing my first talk about them. (I’d agreed to speak at Velocity in Amsterdam thinking I wouldn’t need to write a new talk… the joke’s on me!)
+—or in the parallel universe where I have spare time, I enjoy gardening and bicycling &lt;http://powderhorn24.com/&gt; with my partner Joe. I also help organize devopsdays &lt;http://www.devopsdays.org/&gt; conferences around the world and co-host the Arrested DevOps &lt;http://www.arresteddevops.com/&gt; podcast.
+
+
+Life in color (clockwise from top): Bridget and partner Joe at Pride; a garden of plenty; at the 24-hour Minneapolis Powderhorn team relay (t-shirt is anagram for team name). 
+In 2009, my brother and I traveled for two weeks in southern Africa with no reservations and one bag each (mine being a 30L daypack)!
+is a great adventure. I’m enjoying learning and sharing! (Plus, Working for Andrew Clay Shafer is the new Eating sushi with Andrew Clay Shafer &lt;https://twitter.com/bridgetkromhout/status/462009165347450881&gt;.)
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from Sept. 28th through Oct 12th:
+ 
+
+
+ 
+Arul Khanna Vannala, Senior Member of Technical Staff
+ Barry Williams, Software Engineer, Denver CO
+ Brian Pentecost, Senior UX Designer, Chicago
+ Camila Diaz Contreras, UX Designer, London
+ 
+Christopher Bove, Senior Data Engineer, US
+ Clara Tam, Business Operations Analyst, Toronto,
+ Cody Palmer, Software Engineer, Denver CO
+ Daniel Kelly, Product Manager, Chicago
+ Dat Tran, Data 
+Scientist II, Berlin
+ David Jahn, Software Engineer, New York
+ Dirk Ott, Sales Account Executive, EMEA
+ Elliot Dahl, UX Designer, San Francisco
+ Evan Farrar, Software Engineer, Santa Monica CA
+ 
+Genevieve L&apos;Esperance, Software Engineer, Santa Monica, CA
+ Greg Jagiello, Consultant Product Manager, San Francisco
+ Haisheng Yuan, Member of Technical Staff 3, Palo Alto
+ Ian Fisher, Principal Software Engineer, 
+San Francisco
+ Jade Pearl Tan, Marketing Manager, Singapore
+ Jeffrey Howard, Sales Account Manager, US
+ Jennifer Quinn, Executive Assistant, San Francisco
+ John Sandfort, Software Engineer, New York
+ 
+Josh Mattila, Software Engineer, Boulder
+ Judy Van Soldt, Product Manager, San Francisco
+ Kevin Gates, Senior UX Designer, San Francisco
+ Kun Li, Technical Staff 1, Palo Alto
+ Mark Sliva, 
+Software Engineer, Denver CO
+ Michael Harris, Senior Member of Technical Staff, US
+ Michael Martell, Senior Member of Technical Staff, Beaverton OR
+ Michael Vos, Sales Account Manager, US
+ Nikolaos 
+Armenatzoglou, Member of Technical Staff 3, Palo Alto
+ Paulo Da Silva, Sales Account Executive, EMEA
+ Phil Metcalfe, New York, NY, Product Mgr
+ Qi Shao, Data Engineer, US
+ Robert Bennett, Data 
+Scientist II, New York
+ Sarah Jerger, UX Designer, Chicago
+ Scott Hajek, Data Scientist II, New York
+ Scott Sisil, Senior Product Manager, San Francisco
+ Steven Benario, Senior Product Manager, New 
+York
+ Timothy Rauch, Sales Account Manager, US
+ Tracy Kerr, Senior Workplace Advocate, Sydney
+ Van Hamel, Business Operations Principal, San Francisco
+ Veronika Druchynina, UX Designer, San Francisco
+ 
+Winna Bridgewater, Software Engineer, London
+ Xin Zhang, Technical Staff 2, Seattle WA</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

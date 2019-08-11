@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Executive Luncheon_VA_Q116.Confirmation</name>
+    <style>none</style>
+    <subject>You are confirmed!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+Thank you for registering for the Executive Luncheon with Ian Andrews on Wednesday, February 17, 2016. Please see event details below.
+
+Date: February 17, 2016
+Time: 12:00 PM
+Location: Flemings Restaurant &lt;[[https://www.google.com/maps/dir/]]&gt;, 9200 Stony Point Pkwy, Richmond, VA 23235
+
+{{my.Save the date:default=edit me}}
+
+We look forward to you joining us!
+The Pivotal Team
+
+
+Questions? Please contact us 
+via email &lt;[[mailto:pivotal-operations@pivotal.io]]&gt; or visit our 
+website.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

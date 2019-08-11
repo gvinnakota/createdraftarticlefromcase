@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>o</joinTable>
+        </blockInfo>
+        <columns>
+            <field>MEMBER_NAME</field>
+        </columns>
+        <columns>
+            <field>MEMBER_ROLE</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Opportunity.Total_Pivotal_Labs__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>greaterThan</operator>
+                <value>USD 0</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>MEMBER_ROLE</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Labs Client Liaison</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Opportunities with Opportunity T block 2</name>
+        <params>
+            <name>include</name>
+            <value>open</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>OpportunityTeam</reportType>
+        <scope>organization</scope>
+        <sortColumn>MEMBER_ROLE</sortColumn>
+        <sortOrder>Asc</sortOrder>
+        <timeFrameFilter>
+            <dateColumn>CLOSE_DATE</dateColumn>
+            <interval>INTERVAL_CURNEXT1</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>o</joinTable>
+        </blockInfo>
+        <columns>
+            <field>PRODUCT_NAME</field>
+        </columns>
+        <columns>
+            <field>Opportunity.Forecast_Status__c</field>
+        </columns>
+        <columns>
+            <field>ACCOUNT_NAME</field>
+        </columns>
+        <columns>
+            <aggregateTypes>Sum</aggregateTypes>
+            <field>UNIT_PRICE</field>
+        </columns>
+        <columns>
+            <field>CLOSE_DATE</field>
+        </columns>
+        <columns>
+            <field>Opportunity.Forecast__c</field>
+        </columns>
+        <columns>
+            <field>STAGE_NAME</field>
+        </columns>
+        <columns>
+            <field>FULL_NAME</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Opportunity.Total_Pivotal_Labs__c</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>greaterThan</operator>
+                <value>USD 0</value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>PRODUCT_NAME</column>
+                <isUnlocked>false</isUnlocked>
+                <operator>equals</operator>
+                <value>Pivotal Labs Enterprise - PSO,Pivotal Labs Startup - PSO,Pivotal Labs - Enterprise,Pivotal Labs - Startup</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Opportunities with Products block 1</name>
+        <params>
+            <name>open</name>
+            <value>open</value>
+        </params>
+        <params>
+            <name>probability</name>
+            <value>&gt;0</value>
+        </params>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>OpportunityProduct</reportType>
+        <scope>organization</scope>
+        <timeFrameFilter>
+            <dateColumn>CLOSE_DATE</dateColumn>
+            <interval>INTERVAL_CURNEXT1</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>o</joinTable>
+    </blockInfo>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Assigning Enterprise Opps</name>
+    <reportType>OpportunityProduct</reportType>
+    <showDetails>true</showDetails>
+</Report>

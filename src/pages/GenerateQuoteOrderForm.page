@@ -1,0 +1,296 @@
+<apex:page standardController="zqu__Quote__c" extensions="GenerateQuoteOrderForm_Controller"
+           contentType="application/msword#{!zqu__Quote__c.zqu__Number__c}.doc"
+           showHeader="false" applyHtmlTag="true" applyBodyTag="false" cache="true" standardStylesheets="false">
+
+    <head>
+        <style>
+            p.MsoHeader, li.MsoHeader, div.MsoHeader {
+                margin: 0in;
+                margin-top: .0001pt;
+                mso-pagination: widow-orphan;
+                tab-stops: center 3.0in right 6.0in;
+            }
+            p.MsoFooter, li.MsoFooter, div.MsoFooter {
+                margin: 0in;
+                margin-bottom: .0001pt;
+                mso-pagination: widow-orphan;
+                tab-stops: center 3.0in right 6.0in;
+            }
+            @page Section1 {
+                size: 8.5in 11.0in; 
+                margin: 0.5in 0.5in 0.5in 0.5in;
+                mso-header-margin: 0.5in;
+                mso-header: h1;
+                mso-footer: f1; 
+                mso-footer-margin: 0.5in;
+                mso-paper-source: 0;
+            }
+            div.Section1 {
+                page: Section1;
+            }
+            table#hrdftrtbl {
+                margin: 0in 0in 0in 9in;
+            }        
+            
+            body {
+                font-family: Arial Unicode MS;
+                font-size: 10pt;
+            } 
+            
+            td.signature {
+                height: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+    <div class="Section1">    
+        <center><b><u>ORDER</u></b></center>
+    
+        <br/>
+
+        <div style="text-align: justify">
+            This Order ("<b>Order</b>"), is entered into by {!zqu__Quote__c.zqu__Account__r.Name}, with a principal 
+            place of business at {!zqu__Quote__c.zqu__Account__r.BillingStreet} 
+            {!zqu__Quote__c.zqu__Account__r.BillingCity} {!zqu__Quote__c.zqu__Account__r.BillingCountry} 
+            ("<b>Customer</b>"), and PIVOTAL-CUSTOMER ("<b>Pivotal</b>") whose business 
+            address is {!zqu__Quote__c.zqu__Account__r.BillingStreet} {!zqu__Quote__c.zqu__Account__r.BillingCity} 
+            {!zqu__Quote__c.zqu__Account__r.BillingCountry}. This Order shall be effective as of the date of the 
+            last-executed signature below (the "<b>Order Effective Date</b>"). The Order is made subject to the terms 
+            of, governed by, and made a part of the GOVERNING AGREEMENT ("<b>Agreement</b>") dated January 8th 2018 
+            between Pivotal and Customer. In the event of a conflict between a term or condition of the Order and that 
+            of the Agreement, the terms of this Order shall control. Capitalized terms used but not defined in this 
+            Order shall have the meanings ascribed to them in the Agreement.
+        </div>
+    
+        <br/>
+
+        <b>I. <u>SOFTWARE, LICENSE TYPE and FEE INFORMATION</u></b>
+    
+        <br/><br/>
+    
+        <b>Table 1 (Quote Number {!zqu__Quote__c.zqu__Number__c})</b>
+    
+        <br/>
+    
+        <table border="1" width="100%" style="border-collapse: collapse;">
+            <tr>
+                <th>SKU</th>
+                <th>Product <br/>Name</th>
+                <th>Unit of <br/>Measure</th>
+                <th>Subscription <br/>Period</th>
+                <th>Quantity</th>
+                <th>Price/Unit/Year</th>
+                <th>Fees</th>
+            </tr>
+            
+            <apex:repeat value="{!products}" var="product">
+                <tr>
+                    <td>
+                        {!product.sku}
+                    </td>
+                    <td>
+                        {!product.name}
+                    </td>
+                    <td>
+                        {!product.uom}
+                    </td>
+                    <td>
+                        {!product.period}
+                    </td>
+                    <td>
+                        <apex:outputText value="{0, Number, 0.0}">
+                            <apex:param value="{!product.quantity}"/>
+                        </apex:outputText>
+                    </td>
+                    <td>
+                        <apex:outputText value="{0, Number, Currency}">
+                            <apex:param value="{!product.price}"/>
+                        </apex:outputText>
+                    </td>
+                    <td>
+                        <apex:outputText value="{0, Number, Currency}">
+                            <apex:param value="{!product.fee}"/>
+                        </apex:outputText>
+                    </td>
+                </tr>
+            </apex:repeat>
+
+            <tr>
+                <td><b>Total</b></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <b>
+                        <apex:outputText value="{0, Number, Currency}">
+                            <apex:param value="{!totalFee}"/>
+                        </apex:outputText>
+                    </b>
+                </td>
+            </tr>
+        </table>
+        
+        <br/>
+
+        <b>II. <u>ADDITIONAL PROVISIONS</u></b>
+
+        <br/><br/>
+
+        <ol type="1">
+            <li>
+                Upon execution of this Order, Customer must submit a valid purchase order to Pivotal for the total 
+                Subscription License fees set forth herein. Subject to Pivotal's receipt of such purchase order 
+                Customer may electronically download the Software and Documentation, which shall be deemed accepted and 
+                delivered, at the following Pivotal website: <a href="https://network.pivotal.io/">https://network.pivotal.io/</a>
+            </li>
+            <li>
+                Subject to the terms of the Agreement, Customer shall pay a non-cancelable, non-refundable, fee of US 
+                XXXXXXX for the Subscription License set forth herein.
+            </li>
+            <li>
+                The Subscription License fees will be billed on the Subscription start date in Table 1 ("<b>Subscription 
+                Period</b>") herein.
+            </li>
+            <li>
+                Customer may purchase additional quantity of Software at the same rates as set forth in Table 1 herein 
+                during the Subscription Period ("<b>Add-On Orders</b>") by submitting a valid purchase order to Pivotal 
+                for the number of Add On licenses. Any Add-On Orders purchased shall be coterminous with the initial 
+                Subscription Period.
+            </li>
+            <li>
+                As a courtesy, Pivotal will electronically send Customer an order confirmation letter at the following 
+                address: INSERT EMAIL ADDRESS HERE
+            </li>
+        </ol>
+
+        <br/>
+
+        <b>III. <u>RENEWALS</u></b>
+
+        <br/><br/>
+
+        <ol type="1">
+            <li>
+                <u>Initial Subscription Renewal</u>
+                <ol type="a">
+                    <li>
+                        At the end of the Subscription Period, Customer shall have the right to renew the Subscription
+                        Licenses listed in Table 1 herein for one (1) additional year at the same annual rate plus 5%
+                        stated in this Order.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <u>Add-On Order Subscription Renewals</u>
+                <ol type="a">
+                    <li>
+                        At the end of the Subscription Period, Customer shall have the right to renew the Add-On Orders 
+                        purchased during the Subscription Period for one (1) additional year at the same annual rate 
+                        plus 5% stated in this Order.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <u>Submitting Renewals Order</u>
+                <ol type="a">
+                    <li>
+                        Upon the issuance of a Quote from Pivotal to the Customer, Customer may submit a valid purchase 
+                        order to Pivotal for the renewal of the Initial Subscription and any Add-On Orders.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    
+        <br/>
+
+        <table border="1" width="100%" style="border-collapse: collapse;">
+            <tr>
+                <td>Customer</td>
+                <td>Pivotal Software, Inc. ("<b>Pivotal</b>")</td>
+            </tr>
+            <tr>
+                <td class="signature"></td>
+                <td class="signature"></td>
+            </tr>
+            <tr>
+                <td>Signature</td>
+                <td>Signature</td>
+            </tr>
+            <tr>
+                <td class="signature"></td>
+                <td class="signature"></td>
+            </tr>
+            <tr>
+                <td>Printed Name</td>
+                <td>Printed Name</td>
+            </tr>
+            <tr>
+                <td class="signature"></td>
+                <td class="signature"></td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td>Title</td>
+            </tr>
+            <tr>
+                <td class="signature"></td>
+                <td class="signature"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>Date</td>
+            </tr>
+        </table>
+
+        <table id='hrdftrtbl' border='0' cellspacing='0' cellpadding='0'>
+            <tr>
+                <td>
+                    <!--Header-->
+                    <div style='mso-element:header' id="h1" >
+                        <p class="MsoHeader">
+                        <table border="0" width="100%">
+                            <tr>
+                                <td width="30%">
+                                    <img src="https://newrelic.cdn.prismic.io/newrelic/4080a2492514766cbfaddd717b4b0ab5e761b277_pivotal_logo.png" width="125" height="28"/>
+                                </td>
+                                <td align="center" width="40%">
+                                    <!--Center<br/> Header-->
+                                </td>
+                                <td align="right" width="30%">
+                                    <!--Right<br/>Header-->
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </td>
+
+                <td>
+                    <!--Footer-->
+                    <div style='mso-element:footer' id="f1">
+                        <p class="MsoFooter">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30%">
+                                    <!--Left<br/>Footer-->
+                                </td>
+                                <td align="center" width="40%">
+                                    <span style='mso-field-code: PAGE '></span> / <span style='mso-field-code: NUMPAGES '></span>
+                                </td>
+                                <td align="right" width="30%">
+                                    <!--Right<br/>Footer-->
+                                </td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    </body>
+</apex:page>

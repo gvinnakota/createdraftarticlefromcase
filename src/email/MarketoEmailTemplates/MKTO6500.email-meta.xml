@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne_Platform_2018.S1P Pre-Conference Training 9-17-18</name>
+    <style>none</style>
+    <subject>See You at the SpringOne Platform Pre-Conference Training!</subject>
+    <textOnly>&lt;[[https://springoneplatform.io/2018/training]]&gt;
+Hi {{lead.First Name:default=there}},
+
+Thank you for registering for the upcoming pre-conference training &lt;[[https://springoneplatform.io/2018/training]]&gt; at SpringOne Platform 2018. We are looking forward to seeing you there shortly.
+
+In preparation of your class, you can access the lab setup guides here &lt;[[https://drive.google.com/file/d/1K1PDruknNXfJcETHvpvG3aoPD6MUcxVO/view?usp=sharing]]&gt;. Please ensure your laptop meets the minimum hardware and technical specifications for your class.
+
+If you have any questions about the material or courses, please feel free to reply to this email.
+
+Kind regards,
+The SpringOne Platform Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

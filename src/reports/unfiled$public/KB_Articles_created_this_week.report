@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle$Title</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$LastPublishedDate</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$IsVisibleInCsp</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle.ViewStats$NormalizedScore</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeArticle.ViewStats$ViewCount</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticle.ViewStats$Channel</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>KB Articles created this week</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SK__Knowledge_Articles_with_view__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

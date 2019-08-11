@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle$Title</field>
+    </columns>
+    <currency>USD</currency>
+    <dataCategoryFilters>
+        <dataCategory>All</dataCategory>
+        <dataCategoryGroup>Products</dataCategoryGroup>
+        <operator>aboveOrBelow</operator>
+    </dataCategoryFilters>
+    <format>Tabular</format>
+    <name>articles filtered by data categories</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SK__Knowledge_Articles__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

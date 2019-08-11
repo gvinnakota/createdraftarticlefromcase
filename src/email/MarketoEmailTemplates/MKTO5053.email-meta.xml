@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Cloud Native Roadshow_2017.Seoul Confirmation</name>
+    <style>none</style>
+    <subject>Pivotal Cloud-Native Roadshow에 등록해 주셔서 감사합니다</subject>
+    <textOnly>안녕하세요 {{lead.First Name:default=there}},
+ 
+Pivotal Cloud-Native Roadshow에 등록해 주셔서 감사합니다. 하단의 로드쇼 일정과 장소에 대해 참고하시고 기타 문의사항이 있으시면wrlee@pivotal.io &lt;[[mailto:wrlee@pivotal.io]]&gt; 로 연락주시기 바랍니다.
+ 
+
+
+
+로드쇼 일정:
+2017년 8월 23일 {{my.Seoul:default=edit me}}
+
+
+
+시간표:
+9:30부터 - 오후 4:30 (오전 9:30 부터 등록시작)
+
+
+
+로드쇼 장소: 
+서울시 강남구 영동대로 417 오토웨이타워 B2 캠퍼스 서울 이벤트 홀 
+
+
+비망록:
+스케쥴 저장하기 &lt;[[https://pivotal.io/event/pivotal-cloud-native-roadshow/seoul?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-roadshow-2017]]&gt;
+
+
+
+ 
+Cloud-Native에 관한 더 자세한 정보를 원하시는 분은 홈페이지를 참고하시기 바랍니다 &lt;[[https://pivotal.io/cloud-native]]&gt;.
+ 
+로드쇼에서 만나요!,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

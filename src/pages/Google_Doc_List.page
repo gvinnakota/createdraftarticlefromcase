@@ -1,0 +1,15 @@
+<apex:page sidebar="true" showHeader="true" standardStylesheets="true">
+<html>
+      <apex:includeLightning />
+      <div id="lightning"/>
+      
+      <script>
+      var parentId = "{!$CurrentPage.parameters.parentId}";
+          $Lightning.use("c:googleDocEventApp",function(){
+              $Lightning.createComponent("c:GoogleDocDetails",{parentId:parentId},"lightning",
+              function(component){ 
+              }); 
+          });
+      </script>
+      </html>
+</apex:page>

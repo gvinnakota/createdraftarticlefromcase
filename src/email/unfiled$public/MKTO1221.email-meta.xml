@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PCF Roadshow_Q314.Email Confirm - Denver</name>
+    <style>none</style>
+    <subject>You are confirmed: Pivotal Cloud Platform Roadshow - Denver</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for the upcoming Pivotal Cloud Platform Roadshow in Denver. Please find the event details below:
+
+Date: Thursday, November 20, 2014
+Time: Session #1 begins @ 8:00AM/Session #2 begins @ 11:45 AM/Session #3 begins @ 2:45PM/Session #4 begins @ 4:15PM
+Location: Venue coming soon! We will email you location specifics once we have secured a venue.
+
+Prior to the event, please create an account on Pivotal Network &lt;https://network.pivotal.io/&gt;. To fully participate in the workshop, bring your laptop with wireless connectivity enabled. 
+
+Questions? Please contact us via email &lt;mailto:pivotal-operations@pivotal.io&gt; or visit our website &lt;http://www.pivotal.io&gt;.
+
+Thank you,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

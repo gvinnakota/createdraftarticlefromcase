@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Named_Account__c</field>
+    </columns>
+    <columns>
+        <field>Account.First_purchase_Date_PCF__c</field>
+    </columns>
+    <columns>
+        <field>Account.App_Modernization__c</field>
+    </columns>
+    <columns>
+        <field>Account.Innovative_AppDev__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cloud_Native_Security__c</field>
+    </columns>
+    <columns>
+        <field>Account.Platform_as_a_Product__c</field>
+    </columns>
+    <columns>
+        <field>Account.Container_Orchestration__c</field>
+    </columns>
+    <columns>
+        <field>User.Region__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Sales QBR Sales Play</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

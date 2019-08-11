@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.06-30-2017 V5N9</name>
+    <style>none</style>
+    <subject>Inside Pivotal Newsletter, June 30</subject>
+    <textOnly>June 30, 2017
+Vol 5, No 9
+Letter from the Editor &lt;[[#letter-from-the-editor]]&gt; – The Humbler Valley
+All Things Product &lt;[[#product-update]]&gt; – Partners Find a Friend in PAL
+Interestings &lt;[[#seen-update]]&gt; – Noteworthy Odds &amp; Ends
+Labs + Culture &lt;[[#culture-update]]&gt; – Data Transformation: What&apos;s Missing?!
+My Name Is &lt;[[#my-name-is]]&gt; – Tom Meyer
+the humbler valley  
+
+
+
+
+Steve Casale &lt;[[#author-socialcast-profile]]&gt;, Pivotal Communications
+JP Morgan Chase boss Jamie Dimon&apos;s now famous quip, &quot;Silicon Valley is coming&quot;, has made its way through executive keynotes as a cautionary note—or unflattering finger wag—on business&apos;s need to reckon with software.
+ 
+It may be high tide for software and its incursion into commerce, but June has thrown a cold shade on Silicon Valley. There is righteous rebellion (Uber), creeping fears over AI, and subsurface rumblings on an overdue retribution  &lt;[[https://www.thetimes.co.uk/magazine/the-sunday-times-magazine/tech-the-tables-are-turning-on-the-ping-pong-geeks-k3776vs87]]&gt;for the high priests of technology.
+ 
+Shoots of a more generous culture &lt;[[https://content.pivotal.io/diversity]]&gt;, however, can grow on tech&apos;s stony shores.
+ 
+Pivotal Berlin&apos;s Dat Tran picks up that thread in Labs+Culture, with an article on how culture is as important as the science when integrating data science into a business. In All Things Product, Alejandro Goyen explains how coupling Google Kubernetes to BOSH brings any Pivotal Cloud Foundry customer a simpler way to deploy both Kubernetes- and PCF-driven applications.
+ 
+As for JPMC, they&apos;ve taken the software plunge for some time, and Dimon now boasts that the bank can compete with any Valley company. Pivotal has helped instill that state of mind across multiple engagements, and the JPMC presentation is my pick from the Cloud Foundry Summit &lt;[[https://youtu.be/zNHprC7mlnU?list=PLhuMOCWn4P9hTlDEWJZV8JbVsW01avHF1]]&gt;.
+ 
+June also brought both Ramadan and Pride, and their celebration of values. That values part (for Pivots, it&apos;s doing the right thing, doing what works, and being kind) will be the ultimate measure of any lasting success from within and beyond the shores of Silicon Valley.
+ 
+Enjoy.
+Pivotal and google redux – KUBO 
+
+
+
+
+Alejandro Goyen &lt;[[#author-socialcast-profile]]&gt;, Principal Product Manager, Pivotal Cloud Foundry
+Earlier this summer, in a joint engineering effort, Pivotal and Google launched and announced Project Kubo (Kubernetes &lt;[[https://kubernetes.io/]]&gt; on BOSH). Kubo offers a uniform way for customers to instantiate, deploy, and manage highly available Kubernetes clusters on any public or private cloud, using BOSH. We unveiled this new OSS project at Google’s Next ‘17 conference in March, and the source code repos &lt;[[https://github.com/pivotal-cf-experimental/kubo-deployment]]&gt; are available on Github and Apache2 licensed.
+ 
+In its short commercial life, Pivotal Cloud Foundry (PCF) has become the cloud-native application runtime platform that is helping 
+30% of the Fortune 100&apos;s developers and operators build great software. By abstracting away the complexity of deploying, managing, and running the infrastructure that coordinates and powers lower levels of the application stack, developers can focus on building applications for their business, at start-up speeds.
+ 
+PCF already has a rock-solid container orchestration engine beneath it (Diego &lt;[[https://docs.pivotal.io/pivotalcf/1-7/concepts/diego/diego-architecture.html]]&gt;), which is proven at scale, and optimized for applications that run on Cloud Foundry. There are no plans to change that! Kubernetes, on the other hand, is less of an application lifecycle platform like PCF, and more of a pure container automation and orchestration engine. Therefore, it takes takes a lower-level approach, placing greater burden and responsibility on the developer to deploy the infrastructure that runs Kubernetes, building and package their applications, etc.
+ 
+Kubo Logic
+ 
+The joint Kubo effort is logical: It brings the power of 
+BOSH to Kubernetes, providing consistency and simplicity in the deployment and operation of Kubernetes (k8) clusters. A K8 cluster provisioned via BOSH enjoys the many benefits of any other BOSH managed software, including automated infrastructure deployment, monitoring, healing, and scaling of the cluster’s underlying infrastructure. This not only keeps Kubernetes clusters highly available, but also simplifies many other common “day-2 activities” such as orchestrating and coordinating a rolling upgrade process for a large fleet of clusters.
+ 
+Our long-term vision for Kubo is to empower our PCF 
+customers with a single management control plane—via the Cloud Foundry command line interface (CLI)—for both PCF-deployed and Kubernetes-deployed apps. This will give developers the ability to use CF &amp; BOSH toolchains and workflows that are already familiar to them, to deploy Docker-based software applications that would not be appropriate to run on PCF/Elastic Runtime, and to make Kubernetes services easily discoverable and consumable within PCF applications (and vice versa).
+ 
+Kubo is another great example of the strong and growing 
+partnership between Google and Pivotal, and another way in which developers are getting—and creating—more value out of cloud-native architectures.
+Interestings
+
+
+
+
+
+
+
+
+
+ - 451 Research&apos;s grand take &lt;[[https://content.pivotal.io/analyst-reports/in-memory-specialist-pivotal-unveils-a-cloud-cache]]&gt; on Pivotal Cloud Cache (share, share!)
+ - If you missed it: read the full Holder report findings &lt;[[https://www.recode.net/2017/6/13/15794412/read-entire-investigation-uber-culture-management-ethics-eric-holder]]&gt; from the recent investigation into Uber&apos;s culture.
+ - CF Summit closer: PCF security is a slippery fish &lt;[[https://venturebeat.com/2017/06/16/pivotal-cloud-foundry-aims-to-thwart-hackers-with-ever-changing-passwords/]]&gt; (for hackers, thank goodness).
+ - Noam Chomsky&apos;s discerning take on AI &lt;[[https://techdigg.com/2017/06/16/google-talks-noam-chomsky-on-the-trouble-with-artificial-intelligence/]]&gt;, the Google interview.
+
+ - Loosely coupled particles: China, quantum communications &lt;[[https://www.geekwire.com/2017/chinas-micius-satellite-sets-distance-record-quantum-communications-space/]]&gt;, and security.
+
+ - Found in Stand-up: World&apos;s first floating wind farm &lt;[[https://www.theguardian.com/business/2017/jun/27/hywind-project-scotland-worlds-first-floating-windfarm-norway]]&gt; project—from Norway to Scotland.
+Data Transformation—What&apos;s Missing?!
+
+
+
+
+Dat Tran &lt;[[#author-socialcast-profile]]&gt;, Data Scientist, Berlin
+Earlier this year I visited South Korea to support the local team on its Big Data roadshow. One thing I noticed is that AI is a big thing there (and not only in Korea). A lot of people were asking me how they can make use of AI—deep learning—to harness any business value. This is kind of déjà vu for me, because not too long ago—and I mean recent memory—everyone was just searching for a way to make use of “Big Data”.
+ 
+In reality, taking advantage of data is hard, and many customers I’ve come across do not always grasp the most important 
+factors to capturing its value. Rather, they pour a lot of money into building huge, digital &quot;data transformation&quot; projects, without creating the kind of value they expected. 
+ 
+I&apos;ve seen clients open up ambitious data labs around an ambitious promise to unlock the data treasures of their company or domain 
+expertise, only to find a year or two down the line that  they have yet to fill in the outlines of that promise. The reality often is is that this kind of innovation is not embedded into the core of their business—it&apos;s isolated. Hence, these companies face big challenges in industrialising their data work!
+ 
+So what&apos;s wrong?
+ 
+The problem is that data science models—whether they are just a small feature of an overall 
+smart product or the core of the product itself—only generate real value when they are in production—that is, integrated into production cycles. 
+ 
+It&apos;s not just smart technology and hopes, but how people organize themselves around it that matters. These include something many have probably not heard about, such as an API first culture &lt;[[http://engineering.pivotal.io/post/api-first-for-data-science/]]&gt;. Another important factor that comes with this is constant communication and collaboration. Since creating a data product like any other good product is a team sport, it would help a lot to work in a balanced team &lt;[[https://www.ianhuston.net/2016/11/data-science-in-the-balanced-team/]]&gt; to break down the walls between different teams.
+ 
+
+To be fair, enterprises often make the kinds of assumptions on where data innovation fits into their business that ends up costing 
+time and money. There are many factors that drive a successful data project, and I blogged about some of those factors on Built to Adapt, “8 Simple Guidelines for Data Projects” &lt;[[https://builttoadapt.io/8-simple-guidelines-for-data-projects-859a1a738ffc]]&gt;. 
+ 
+At the end of the day, and as I note in that blog, the most important success factor boils down to culture. Pivotal Labs did a phenomenal job of creating a methodology to build better software products in a more agile way. Now is the right time to use those learnings to help our clients build better data products!
+tom meyer
+
+
+
+
+Software Engineer, Palo Alto
+At Pivotal I...
+Work as a software engineer on the Greenplum database &lt;[[http://greenplum.org/]]&gt; team in our Palo Alto office, and am currently helping develop backup and migration tools for Greenplum.
+How I got into software…
+
+Partway through my sophomore year in college, when I was in the doldrums of a thermodynamics class, I realized the mechanical engineering degree I was working towards was not the best direction for me. The introductory software classes, on the other hand, were tons of fun. It was pretty clear I needed to switch to computer science, so I stayed an extra summer semester to catch up, and I never looked back.
+
+ 
+
+In my spare time…
+I tend to exercise a lot. Swimming, biking, and hiking are my go-to activities. Luckily, the SF bay area is a fantastic location for doing these things!
+Something you probably don’t know about me…
+I recently got back from a 2,350 mile bike trip. Starting in my hometown in South Dakota, I rode to the Pacific Ocean just south of Santa Barbara in 28 days (averaging over 80 miles per day). My route took me over the Rocky Mountains, through Utah, Bryce Canyon, the Grand Canyon, and the Mojave Desert. It was an amazing experience, and I&apos;m already eager to start planning my next trip.
+There and back again: From grasslands to peaks on Tom&apos;s long ride home.
+To me Pivotal…
+Is the melting pot of Enterprise and Startup!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

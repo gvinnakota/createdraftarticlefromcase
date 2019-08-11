@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AccountID (Feedback) --></label>
+        <name>AccountID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Name (Feedback) --></label>
+        <name>Account_Name_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- CES Manager Case Handling - Asked Agent for Context --></help>
+        <label><!-- CESMgr - Asked Agent for Context --></label>
+        <name>CESMgrCH_Asked_Agent_for_Context__c</name>
+    </fields>
+    <fields>
+        <help><!-- CES Manager Case Handling - Coached Agent --></help>
+        <label><!-- CESMgr - Coached Agent --></label>
+        <name>CESMgrCH_Coached_Agent__c</name>
+    </fields>
+    <fields>
+        <help><!-- CES Manager Case Handling Shared feedback with Agent --></help>
+        <label><!-- CESMgr - Shared Feedback with Agent --></label>
+        <name>CESMgrCH_Shared_Feedback_with_Agent__c</name>
+    </fields>
+    <fields>
+        <help><!-- The person who actually filled out the manager follow-up form (survey), should the manager forward it to someone else to complete. --></help>
+        <label><!-- CESMgr - Alternate Mgr --></label>
+        <name>CESMgr_Alternate_Mgr__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - What did you learn from the customer? --></help>
+        <label><!-- CESMgr - Customer Engagement Feedback --></label>
+        <name>CESMgr_Customer_Engagement_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Customer follow-up: Emailed Client --></help>
+        <label><!-- CESMgr - Customer follow-up: Email --></label>
+        <name>CESMgr_Customer_follow_up_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Manager Follow-up with Customer not applicable --></help>
+        <label><!-- CESMgr - Customer follow-up: N/A --></label>
+        <name>CESMgr_Customer_follow_up_N_A__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Customer follow-up: Called Client --></help>
+        <label><!-- CESMgr - Customer follow-up: Phone --></label>
+        <name>CESMgr_Customer_follow_up_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Do opportunities for improvement remain? --></help>
+        <label><!-- CESMgr - Future Improvements --></label>
+        <name>CESMgr_Future_Improvements__c</name>
+    </fields>
+    <fields>
+        <label><!-- CESMgr - MgrSurvey Complete Date --></label>
+        <name>CESMgr_MgrSurvey_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- CES Manager Follow-up Agent-related questions not applicable --></help>
+        <label><!-- CESMgr - N/A --></label>
+        <name>CESMgr_N_A__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Agent Coaching --></help>
+        <label><!-- CESMgr - SurveyTopic: AgentCoaching --></label>
+        <name>CESMgr_SurveyTopic_AgentCoaching__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Customer Onboarding --></help>
+        <label><!-- CESMgr - SurveyTopic: CustomerOnboarding --></label>
+        <name>CESMgr_SurveyTopic_CustomerOnboarding__c</name>
+    </fields>
+    <fields>
+        <help><!-- CES Manager follow-up Topic section not applicable --></help>
+        <label><!-- CESMgr - SurveyTopic: N/A --></label>
+        <name>CESMgr_SurveyTopic_N_A__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Product Feedback --></help>
+        <label><!-- CESMgr - SurveyTopic: ProductFeedback --></label>
+        <name>CESMgr_SurveyTopic_ProductFeedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: UI Improvement --></help>
+        <label><!-- CESMgr - SurveyTopic: UI Improvement --></label>
+        <name>CESMgr_SurveyTopic_UI_Improvement__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: UX Improvement --></help>
+        <label><!-- CESMgr - SurveyTopic: UX Improvement --></label>
+        <name>CESMgr_SurveyTopic_UX_Improvement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Survey required question field to be used to drive Salesforce process behind the scenes --></help>
+        <label><!-- CESMgr - Survey Completed --></label>
+        <name>CESMgr_Survey_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- CESMgr - What did you learn from the team member engagement? --></help>
+        <label><!-- CESMgr - Team Member Engagement Feedback --></label>
+        <name>CESMgr_Team_Member_Engagement_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populates on from Survey when Disagree (1), Somewhat disagree is selected (2) or Neither agree or disagree (3) --></help>
+        <label><!-- CES Constructive Feedback --></label>
+        <name>CES_Constructive_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Values from Clicktools survey CES question --></help>
+        <label><!-- CES Issue Satisfaction --></label>
+        <name>CES_Issue_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>Agree</masterLabel>
+            <translation><!-- Agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disagree</masterLabel>
+            <translation><!-- Disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neither agree or disagree</masterLabel>
+            <translation><!-- Neither agree or disagree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat agree</masterLabel>
+            <translation><!-- Somewhat agree --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat disagree</masterLabel>
+            <translation><!-- Somewhat disagree --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Populates on from Survey when Agree (5), Somewhat Agree is selected (4). --></help>
+        <label><!-- CES Positive Feedback --></label>
+        <name>CES_Positive_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Converts the Survey issue Satisfaction text value to a number (Score): Agree = 5, Somewhat agree = 4, Neither agree or disagree = 3, Somewhat disagree = 2, Disagree =1 --></help>
+        <label><!-- CES Survey Score --></label>
+        <name>CES_Survey_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- CampaignID (Feedback) --></label>
+        <name>CampaignID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign Name (Feedback) --></label>
+        <name>Campaign_Name_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseID (FeedBack) --></label>
+        <name>CaseID_FeedBack__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CaseOwnerMgrEmailFormula --></label>
+        <name>CaseOwnerMgrEmailFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseOwnerMgr Email --></label>
+        <name>CaseOwnerMgr_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- CaseSubject from the Survey Feedback Case --></help>
+        <label><!-- CaseSubject (Feedback) --></label>
+        <name>CaseSubject_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseURL (Feedback) --></label>
+        <name>CaseURL_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Number (Feedback) --></label>
+        <name>Case_Number_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner (Feedback) --></label>
+        <name>Case_Owner_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner ID (Feedback) --></label>
+        <name>Case_Owner_ID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback (Case Owner ID (Feedback)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Case Owner&apos;s Manager --></help>
+        <label><!-- Case Owner Manager (Feedback) --></label>
+        <name>Case_Owner_Manager_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContactID (Feedback) --></label>
+        <name>ContactID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ContactName (Feedback) --></label>
+        <name>ContactName_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email (Feedback) --></label>
+        <name>Contact_Email_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone (Feedback) --></label>
+        <name>Contact_Phone_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- EntitlementID(Feedback) --></label>
+        <name>EntitlementID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Entitlement Name(Feedback) --></label>
+        <name>Entitlement_Name_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback ID18 --></label>
+        <name>Feedback_ID18__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Yes/No follow-up with survey contact Product Surveys --></help>
+        <label><!-- Follow-up with Survey Contact --></label>
+        <name>Follow_up_with_Survey_Contact__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- LeadID (Feedback) --></label>
+        <name>LeadID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LeadName(Feedback) --></label>
+        <name>LeadName_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpportunityID (Feedback) --></label>
+        <name>OpportunityID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name (Feedback) --></label>
+        <name>Opportunity_Name_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- General feedback for misc survey comment --></help>
+        <label><!-- Pivotal Product Feedback --></label>
+        <name>Pivotal_Product_Feedback__c</name>
+        <picklistValues>
+            <masterLabel>Dislike it</masterLabel>
+            <translation><!-- Dislike it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hate it!!</masterLabel>
+            <translation><!-- Hate it!! --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Like it</masterLabel>
+            <translation><!-- Like it --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Love it!!</masterLabel>
+            <translation><!-- Love it!! --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Survey essay for what can be improved on the surveyed Pivotal Product --></help>
+        <label><!-- Pivotal Product Improvements --></label>
+        <name>Pivotal_Product_Improvements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Survey essay on what was liked about the surveyed Pivotal Product --></help>
+        <label><!-- Pivotal Product Positives --></label>
+        <name>Pivotal_Product_Positives__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Survey OwnerID --></label>
+        <name>Pivotal_Survey_Owner_ID__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Survey Owner --></label>
+        <name>Pivotal_Survey_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription ID(Feedback) --></label>
+        <name>Subscription_ID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription Name(Feedback) --></label>
+        <name>Subscription_Name_Feedback__c</name>
+    </fields>
+    <fields>
+        <help><!-- Subscription Product &amp; Charge Name --></help>
+        <label><!-- Subscription P&amp;C ID(Feedback) --></label>
+        <name>Subscription_P_C_ID_Feedback__c</name>
+        <relationshipLabel><!-- Pivotal Survey Feedback --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Subscription Product &amp; Charge Name --></help>
+        <label><!-- Subscription P&amp;C Name(Feedback) --></label>
+        <name>Subscription_P_C_Name_Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- SurveyAge (In days) --></label>
+        <name>SurveyAge_In_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Contact Email --></label>
+        <name>Survey_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Contact Name --></label>
+        <name>Survey_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Contact Phone --></label>
+        <name>Survey_Contact_Phone__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Pivotal Survey Feedback</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pivotal Survey Feedback</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Pivotal Product Survey</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Product Survey Information --></label>
+            <section>Pivotal Product Survey Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pivotal Support Feedback</layout>
+        <sections>
+            <label><!-- Case Information --></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Management Follow-up Survey on CES Survey - Agent Follow-up --></label>
+            <section>Management Follow-up Survey on CES Survey - Agent Follow-up</section>
+        </sections>
+        <sections>
+            <label><!-- Management Follow-up Survey on CES Survey - Customer Follow-up --></label>
+            <section>Management Follow-up Survey on CES Survey - Customer Follow-up</section>
+        </sections>
+        <sections>
+            <label><!-- Management Follow-up Survey on CES Survey - Survey Topics --></label>
+            <section>Management Follow-up Survey on CES Survey - Survey Topics</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Support CSAT Feedback --></label>
+            <section>Pivotal Support CSAT Feedback</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pivotal Surveys Feedback Admin</layout>
+        <sections>
+            <label><!-- CES Manager Follow-up Survey --></label>
+            <section>CES Manager Follow-up Survey</section>
+        </sections>
+        <sections>
+            <label><!-- Clicktools Survey Hidden Fields --></label>
+            <section>Clicktools Survey Hidden Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Product Surveys Info --></label>
+            <section>Pivotal Product Surveys Info</section>
+        </sections>
+        <sections>
+            <label><!-- Pivotal Support Surveys Info CES Survey --></label>
+            <section>Pivotal Support Surveys Info CES Survey</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Pivotal Surveys --></label>
+        <name>Pivotal_Surveys</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Product Survey --></label>
+        <name>Product_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Support CES --></label>
+        <name>Support_CES</name>
+    </recordTypes>
+</CustomObjectTranslation>

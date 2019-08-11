@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.9-18-14 V2N19</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 2, No.19</subject>
+    <textOnly>VOL. 2, NO. 19
+Thursday, September 18, 2014
+Pivotal Fast and Slow &lt;#editor-welcome&gt;
+A Great First Half! Let’s Keep It Going &lt;#business-update&gt;
+Business at the Speed of HAWQ &lt;#product-update&gt;
+Two Years of Excellence in Product Design &lt;#agile-update&gt;
+Notes from Field Engineering &lt;#people-update&gt;
+Alexandre Vasseur &lt;#my-name-is&gt;
+Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ Pivotal Fast and Slow
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+In Thinking Fast and Slow &lt;http://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow&gt;, psychologist Daniel Kahneman writes about the tendency we have to build rules-of-thumb and make quick judgments based mostly on 
+processes that we have become familiar with. He talks too of a “slower thinking”, the more deliberate analysis that involves a broad calculation of variables we may not be so familiar with.
+ 
+ When you’re moving fast and working hard, it can be hard not to flip the rule-of-thumb switch. It often works. And sometimes it works against us. Sometimes the “slow thinking” is firmer ground for judgment. And at times this too is misapplied and works against us.
+ 
+ The Agile update this issue illustrates the power behind fast: user inputs and rapid iterations in guiding a process to reach a great outcome. The update from our CFO shows the value of “slower thinking” – weighing variables that impact any business in order to set a firm course. The first often transforms customers. The second can transform markets. Doing both helps us win.
+ 
+ Enjoy!
+BUSINESS UPDATE
+ A Great First Half! Let’s Keep It Going
+ Robert O’Donovan &lt;https://gopivotal-com.socialcast.com/users/950116-robertodonovan&gt;, CFO
+With our dynamic market opportunity and the associated pressures, we can sometimes lose sight of the fact that we, Pivotal, have made exceptional progress since our formation in April of last year. I’m very pleased to have the opportunity to share this good news with you.
+ 
+ At the start of this year, the executive team laid out a 2014 plan and multi-year thesis. We emphasized hyper-growth – accelerating towards 50% growth in bookings year over year – and achieving software-like margins. Both are key to achieving our longer-term goals and to commanding an exciting valuation for the company! The great news is that, after our first-half performance, we’re on track against both measures.
+ 
+ We also shifted our go-to-market strategy more towards a subscription-based 
+business. A successful subscription business creates a predictable, growing revenue stream, and is highly desirable in today’s market. To say that we achieved these goals is an understatement.
+ 
+ The numbers in the first half speak for themselves:
+
+
+ - 73% above plan in subscription bookings
+ - 86% above plan in subscription backlog (the number of contracts we have booked where we will take revenue in future periods)
+
+
+
+In short, we’re ahead of plan on some of our most important financial objectives. We should all feel very proud of that, and excited about the future. Looking ahead, we have a healthy pipeline in our key subscription offerings – Pivotal Big Data Suite and Pivotal CF – and Pivotal Labs continues its impressive performance.
+ 
+ No one however, should be surprised that we need to focus on maintaining this momentum. We have a lot to do as we continue to evolve our business model. Also, moving to more subscription contracts, where we earn revenues evenly over the period of the contract, means taking less revenue in the current quarter. This puts short-term pressure on a current quarter’s EBIT &lt;http://en.wikipedia.org/wiki/Earnings_before_interest_and_taxes&gt; (profit). To manage that short-term effect, we need to continue to be prudent in our 2H spending.
+ 
+ That said, the future is very bright, and everything you do has an impact on our business. So, thank you for a great first half. We’ll continue to make decisions that support aggressive growth targets, while being thoughtful in where we spend our money.
+ 
+ Finally, making Pivotal a truly special place to work remains top of mind. I’m pleased to say that we’ll be rolling out a host of things in the next quarter that should improve inefficient processes and make it easier for you to do your jobs. Stay tuned for the details!
+ 
+ I’d be happy to chat with, or present to, any of your teams regarding our financial objectives. Just reach out to me at rodonovan@pivotal.io &lt;mailto:rodonovan@pivotal.io&gt;.
+ 
+ Congratulations again on an impressive first half. Now, let’s work hard to make the second half of 2014 great. Thank you in advance for your input and contributions as we continue the 2015 planning process!
+PRODUCT UPDATE
+ Business at the Speed of HAWQ
+ Gavin Sherry &lt;https://gopivotal-com.socialcast.com/users/958818-gavinsherry&gt;, Sr. Director, R&amp;D
+Within the R&amp;D team it’s been an exciting few months for HAWQ &lt;http://www.pivotal.io/sites/default/files/Hawq_WP_042313_FINAL.pdf&gt; – the industry-leading, massively-parallel SQL processing Hadoop 
+solution.
+ 
+ We’re releasing HAWQ 1.2.1 &lt;https://network.pivotal.io/products/pivotal-hd&gt; imminently, and it’s sure to be our best release yet, providing customers an SQL analytics toolset with 
+exceptional ease and speed. Release highlights include:
+
+
+
+ - Achieving the final milestone in our Parquet &lt;http://parquet.incubator.apache.org/&gt; storage program, where we have adopted a new data warehouse oriented storage format that is emerging as the standard for SQL on Hadoop 
+systems
+ - A new memory accounting framework that makes it easier for operators to plan for and tune systems for complex and demanding workloads
+ - Hundreds of other improvements, such as enhanced integration and performance when executing queries against Hive-managed data
+
+
+
+We continue to innovate in HAWQ through the Pivotal Query Optimizer. The optimizer is part of the “secret sauce” inside HAWQ – enabling lightning-fast performance and the broadest range of SQL workload support in the market. You can read more about the significant achievements of this project on the Pivotal POV 
+blog.
+ 
+ All of this supports our strategy to give customers a peerless SQL-based Hadoop solution: through unprecedented performance for SQL on Hadoop; with the broadest range of SQL functionality where SQL skills transfer easily to Hadoop; as the most enterprise-ready SQL on Hadoop 
+database; and to evolve HAWQ closely with Hadoop.
+ 
+ Finally, I’d like you all to welcome Parham Parvizi &lt;https://gopivotal-com.socialcast.com/users/915058-parhamparvizi&gt; to the HAWQ product management team. Many of you know Parham as one of the go-to HAWQ experts in the field today. I feel lucky to have a person so familiar with HAWQ in critical sales and operational scenarios, and as fellow traveler in shaping the future direction of HAWQ.
+AGILE UPDATE
+ Two Years of Excellence in Product Design 
+ Tim McCoy &lt;https://gopivotal-com.socialcast.com/users/949638-timmccoy&gt;, Director of Product Design, Pivotal Labs
+This month marks the two-year anniversary of Pivotal Labs Product Design. Our goal has been to accompany Pivotal’s development expertise with first-class user experience and visual design to help clients define and build better products. Along with our product management team, we now represent almost 20% of Pivots on client projects.
+ 
+ We’ve grown because of our success in engaging clients early in the product life cycle. Working alongside our clients, we define products at the intersection of user needs and business goals – employing broad strategies from our User-Centered Design &lt;http://en.wikipedia.org/wiki/User-centered_design&gt;, 
+Lean Startup &lt;http://en.wikipedia.org/wiki/Lean_startup&gt; and Design Thinking &lt;http://en.wikipedia.org/wiki/Design_thinking&gt; backgrounds.
+ 
+ Our methods are adapted specifically to Agile development at Pivotal. Unlike many design agencies, we don’t focus on documentation and deliverables. We work directly within development teams to iterate and evolve product designs in the working software. This shortens delivery and feedback cycles, and ensures that design efforts stay focused on shipping software.
+ 
+ A user-centric approach was the basis of our iOS and Android applications for Humana Vitality &lt;https://www.humana.com/learning-center/health-and-wellbeing/healthy-living/humanavitality-mobile-app&gt;. From a design process that incorporated and validated user desires, came a product that addressed complex needs in assessing and tracking customers’ health and activities in a logical, intuitive and engaging way.
+ 
+ 
+ Lean and Agile: The Humana Vitality mobile app meets complex fitness needs
+ 
+ I’m proud of everyone who has helped on the journey to integrate product design 
+and management into our teams. From user research and business validation to design collaboration and live style guides, client enablement extends beyond Agile development to encompass lean user experience and product strategy – all in the service of transforming how the world builds software.
+PEOPLE UPDATE
+ Notes from Field Engineering
+ John Jahnke &lt;https://gopivotal-com.socialcast.com/users/912443-johnjahnke&gt;, VP, Global Field Engineering
+What a great year we’ve had so far. We’re at crunch time in Q3, and I’m looking forward to more deal action to come in next the 12 days! I’d like to acknowledge the efforts of everyone across our diverse, global technical community &lt;http://batchgeo.com/map/2e91821e3226d3eace9029a4b9b371c0&gt;. Selling is truly a team sport, where contributions from every corner of Pivotal help us succeed. Thanks for all that you do!
+ 
+ We have much to report in how we’re positioning Global Field Engineers and Pivotal for success. Highlights include:
+
+
+ - We brought on 15 new FEs across the globe in Q3 – more amazing Field talent, and we’re excited by the impact they’ll make!
+
+ - We built a new demo environment for Pivotal CF that is up and running on  &lt;https://gopivotal-com.socialcast.com/messages/21713548-vcloud-air-rollout---complete?ref=stream&gt;vCloud Air &lt;https://gopivotal-com.socialcast.com/messages/21713548-vcloud-air-rollout---complete?ref=stream&gt;. Each area and theater has a dedicated environment, which should dramatically increase our ability to do end-to-end Pivotal CF demos for customers and partners. We also created a central demo  &lt;https://sites.google.com/a/pivotal.io/fe-demos/home&gt;catalogue &lt;https://sites.google.com/a/pivotal.io/fe-demos/home&gt; for all field engineers to share their great work (this includes information on a contest we have to incent teams to share demos across the Field and close with customers)!
+ - We’ve finalized the blueprint to expand our team’s skills in 2014 and 2015. Field engineers have targets for becoming what we call a “300-level” across the portfolio, and a 400- to 500-level practitioner in two disciplines. This includes a process to achieve Principal-level status. We’ll integrate this skills building into our 2015 plan of record to ensure we’re developing people against our business goals. Reach out to your regional field engineer leader with any questions.
+ - As part of a role-level project, we’re creating guideposts for career development, and have completed the requirements for Principal-level FE. Details will be rolled out throughout Q4.
+
+ - In pursuit of continuous learning, we’ve been doing specialization bootcamps &lt;https://sites.google.com/a/pivotal.io/community-engineering/pivotal-cf/q3-ninja-bootcamp&gt; – workshops to dive deep on critical 
+product lines. We’ve completed two so far on Pivotal CF and one for Pivotal GemFire. Others, including a Data Lake Bootcamp, are planned for Q4. We’ve also embraced the new enablement tools and trainings that are now available.
+ - I’m delighted about the Associate Field Engineering program that we’ll be piloting soon (first in the US, then worldwide). We’ll put six first-time field engineers with strong skills into a program to help them develop into great pre-sales engineers. For this pilot phase, which starts in Q4, we’ll focus on Pivotal CF.
+
+
+
+
+ (l to r): Pivotal FEs winding down in London; Architecting success for the John Deere 
+pilot
+ 
+ I’d like to close by thanking those behind the exceptional efforts at VMworld &lt;http://www.vmworld.com/index.jspa&gt; and SpringOne 2GX &lt;http://springone2gx.com/&gt; – in particular to those who built demos, staffed booths and worked with others on presentations. I look forward to seeing you all in the Field, and reporting out next time around!
+MY NAME IS...
+ Alexandre Vasseur
+ Alexandre Vasseur &lt;#https://gopivotal-com.socialcast.com/users/912757-alexandrevasseur&gt;, Field Engineer Manager, South EMEA
+Lead the Southern EMEA Field Engineering team, which covers France, Spain, Italy, Israel, Dubai and South Africa.
+In Paris, at the EMC or VMware offices. But you have an equal chance to find me on Pivotal’s Google mail chat from wherever I may be in the Field.
+Wearing two hats at Pivotal. I&apos;m growing my team headcount and helping them develop their skill sets. My daily activities also include cultivating several opportunities, especially in France, around strategic multi-product sales on Pivotal CF and Data Lake.
+With three kids (ages 3, 6 and 9), I’m pretty much a family guy. I enjoy spending time with my wife and the kids in our home and garden, and visiting other family as much as we can.
+ 
+ 
+ The Vasseur kin working hard at play
+I once contributed to several open source projects that helped shape what Spring AOP &lt;http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/aop.html&gt; and complex event processing has become today.
+Is what every company I want to give time and energy to, should be. Talented people, solid engineering and products full of innovation, combined with incredible vision and an integrated platform opportunity. I love our agility in the fast-moving global ecosystem we’re helping to shape, and (last but not least) to profit from!
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees who joined Pivotal from September 3 to September 15:
+ 
+ Abigail Kearns, Product Marketing Manager, San Francisco
+ Adrienne Sutton, Sr. Counsel Business Law, Hopkinton MA
+ Andrew Poydence, Software Engineer, Boulder CO
+ David Randall, UX Designer, San Francisco
+ Donald Ford, Principal Solutions Architect
+ Daniel Cahill, Customer Support, Tech 
+2, Cork Ireland
+ Eddie Zuniga, Associate Business Operations Analyst, Palo Alto
+ Jeffrey Ahrens, Sales Account Manager, Americas West
+ Jeffrey Sdoeung, Member of Technical Staff 3
+ Jenna-Marie Warnecke, Sr. Workplace Advocate, New York
+ Keith Martin, Director Customer Success, Americas West
+ Kuien Liu, Software Engineer, Beijing 
+ Mike Berendson, Member of Technical Staff 3, Palo Alto
+ Ming Ling, Sr. Field Engineer, Americas Federation
+ Nancy Silver, Sales Account Manager, Americas West
+ Noa Horn, Member of Technical Staff 3, Palo Alto
+ Piotr Osmenda, UX Design, Toronto
+ Saurabh Gupta, Sr. Field Engineer, Americas North
+ Shaun O’Brien, Sr. Manager Technical Staff, Hopkinton MA
+ Sanjay Dwivedi, Sr. Field Engineer, Americas South
+ Warren Fernandes, Software Engineer, Boulder CO
+ William Oliveira, Sr. Member of Technical Staff, Beaverton OR
+ Xiaoting Sun, Product Manager, Toronto</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

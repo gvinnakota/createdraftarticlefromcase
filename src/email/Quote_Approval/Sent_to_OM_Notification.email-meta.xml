@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify OM when Quote sent to OM</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Sent to OM Notification</name>
+    <style>none</style>
+    <subject>Quote {!zqu__Quote__c.zqu__Number__c} sent for order processing</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

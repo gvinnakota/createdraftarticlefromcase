@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_NY User Group_Q114.Confirmation</name>
+    <style>none</style>
+    <subject>Confirmation: New York User Group Meeting 3/4/14</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+Thank you for registering for our New York User Group Meeting on Tuesday, March 4, 2014. We look forward to you joining us. Here are the event details below:
+Date: Tuesday, March 4, 2013
+Time: 6:30PM (EST)
+Location: Pivotal Office, 625 Avenue of the Americas, 2nd Floor, New York, NY 10011
+Have questions? Email &lt;mailto:info@gopivotal.com&gt; us.
+Thank you,
+ 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

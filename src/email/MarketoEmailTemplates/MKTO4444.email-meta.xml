@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Pivotal/Microsoft-Azure-3rdpartyhosted_Q416.Invite 12-19-16</name>
+    <style>none</style>
+    <subject>12/21 Pivotal &amp; Microsoft Webinar - Learn How To Build and Operate Microservices on Azure</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+ Join Joshua McKenty of Pivotal and Sean McKenna of Microsoft for a demo-heavy webinar on building innovative and differentiated software. See how together, Pivotal and Microsoft provide a comprehensive continuous delivery platform that accelerates application development. 
+
+ In this webinar, you’ll learn how to:
+
+ - Build Java microservices with the Spring Boot framework and deploy them worldwide on any environment using Pivotal Cloud Foundry on Azure 
+ - Quickly integrate data capabilities like Azure SQL in your Pivotal Cloud Foundry applications using the Azure Service Broker 
+ - Simplify management and operations by combining Pivotal Cloud Foundry with services like Azure AD, Visual Studio Team Services, and Operations Management Suite
+
+Webinar Details:
+
+Date: Wednesday, December 21 
+Time: 10:00am PST / 1:00pm EST
+
+Save My Seat &lt;[[https://info.microsoft.com/building-and-operating-microservices.html?ls=partner-pivotal]]&gt;
+
+Speakers: 
+Joshua McKenty, Head of Platform Ecosystem, Pivotal 
+Sean McKenna, Principal Program Manager, Azure Compute, Microsoft
+
+We look forward to you joining us.
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

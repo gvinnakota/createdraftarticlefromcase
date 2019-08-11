@@ -1,0 +1,136 @@
+<apex:page controller="PACDataLoaderController">
+    <head>
+        <apex:includeScript value="{!$Resource.chartjs}"/>
+    </head>
+
+    <style>
+        .chart-container {
+            position:   relative;
+            width:      calc(100vw - 120px);
+        }
+
+    </style>
+
+    <apex:pageBlock title="PAC Data Loader">
+        <apex:form >
+            <apex:pageBlockSection title="File Selection" collapsible="false" rendered="{!NOT(isFileSelected)}">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Import file. .csv must be prepared by cutting the relevant columns, pasting them in a new file, and rows 4-5 removed. Comma must be used as a file separator."/>
+                    <apex:inputFile value="{!file.Body}" fileName="{!file.Name}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton action="{!submitFile}" value="Submit"/>
+                </apex:pageBlockSectionItem>
+                <!--<apex:pageBlockSectionItem>
+                    <apex:outputText>.csv must be prepared by cutting the relevant columns, pasting them in a new file, and rows 4-5 removed. Comma must be used as a file separator.</apex:outputText>
+                </apex:pageBlockSectionItem>-->
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="1" collapsible="false" title="Stats" rendered="{!NOT(isFileSelected)}">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Existing PACs"/>
+                    <apex:outputText value="{!all}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Unassigned PACs"/>
+                    <apex:outputText value="{!unassigned}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Allocated PACs"/>
+                    <apex:outputText value="{!allocated}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Assigned PACs"/>
+                    <apex:outputText value="{!assigned}"/>
+                </apex:pageBlockSectionItem>
+                <div class="chart-container">
+                    <canvas id="inventoryChart"/>
+                </div>
+
+                <script>
+                    var inventoryLabels = new Array();
+                    var inventoryValues = new Array();
+
+                    inventoryLabels = {!inventoryChartLabels};
+                    inventoryValues = {!inventoryChartValues};
+
+
+                    window.onload = function(){
+                        var ctx = document.getElementById("inventoryChart").getContext("2d");
+                        window.myBar = new Chart('inventoryChart', {
+                            type: 'horizontalBar',
+                            data: {
+                                labels: inventoryLabels,
+                                datasets: [{
+                                    label:              'PACs running out of stock',
+                                    data:               inventoryValues,
+                                    backgroundColor:    inventoryValues.map(function(value){
+                                                            return value < 5 ? 'rgba(230, 20, 20, 0.5)' : value < 25 ? 'rgba(230, 230, 20, 0.5)' : 'rgba(100, 220, 157, 0.5)';
+                                                        }),
+                                    borderColor:        inventoryValues.map(function(value){
+                                                            return value < 5 ? 'rgba(230, 20, 20, 0.8)' : value < 25 ? 'rgba(230, 230, 20, 0.8)' : 'rgba(100, 220, 157, 0.8)';
+                                                        }),
+                                    borderWidth:        1,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                scales: {
+                                    xAxes: [{
+                                        ticks: {
+                                            beginAtZero:    true,
+                                            max:            50,
+                                            stepSize:       10,
+                                        }
+                                    }],
+                                    yAxes: [{
+                                        gridLines:  {
+                                            display:    false,
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                    }
+                </script>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection columns="1" collapsible="false" title="Controls" rendered="{!AND(NOT(isFileSelected),isSandbox)}">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Delete all existing PACs"/>
+                    <apex:commandButton value="Delete" action="{!deletePACs}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Unassign all existing PACs"/>
+                    <apex:commandButton value="Unassign" action="{!unassignAll}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Unassign all already allocated PACs"/>
+                    <apex:commandButton value="Delete" action="{!unassignAllocated}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Unassign all already assigned PACs"/>
+                    <apex:commandButton value="Delete" action="{!unassignAssigned}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="New Records" columns="1" rendered="{!isFileSelected}">
+                <apex:commandButton action="{!saveRecords}" value="Insert Records"/>
+                <apex:pageBlockTable value="{!pacWrappers}" var="wrp">
+                    <apex:column headerValue="Is duplicate">
+                        <apex:inputCheckbox value="{!wrp.duplicate}" disabled="true"/>
+                    </apex:column>
+                    <apex:column value="{!wrp.pac.Code__c}"/>
+                    <apex:column value="{!wrp.pac.Product__c}"/>
+                    <apex:column value="{!wrp.pac.Duration__c}"/>
+                    <apex:column value="{!wrp.pac.Quantity__c}"/>
+                    <apex:column value="{!wrp.pac.Key__c}"/>
+                </apex:pageBlockTable>
+                <apex:outputLabel value="Duplicates won't be inserted" rendered="{!ContainsDuplicates}" />
+                <apex:commandButton action="{!saveRecords}" value="Insert Records"/>
+            </apex:pageBlockSection>
+        </apex:form>
+        <apex:pageMessages />
+    </apex:pageBlock>
+</apex:page>

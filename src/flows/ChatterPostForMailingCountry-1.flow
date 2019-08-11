@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>ChatterPostForMailingCountry {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ChatterPostForMailingCountry</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>ChatterPostForMailingCountry</name>
+        <label>ChatterPostForMailingCountry</label>
+        <locationX>191</locationX>
+        <locationY>35</locationY>
+        <inputAssignments>
+            <field>Body</field>
+            <value>
+                <stringValue>Before you help this customer, ask for their first name, last name, and country. Then, follow the Export validation process. SLO is on hold pending customer validation.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>CaseId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>FeedItem</object>
+    </recordCreates>
+    <startElementReference>ChatterPostForMailingCountry</startElementReference>
+    <variables>
+        <name>CaseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

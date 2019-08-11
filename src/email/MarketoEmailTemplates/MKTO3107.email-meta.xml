@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_LA Open House_Q415.Day Before Email</name>
+    <style>none</style>
+    <subject>Reminder: Pivotal Los Angeles Open House is tomorrow 11/10</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+
+We are sending you a friendly reminder that you are registered for Pivotal Los Angeles Open House. The open house will take place on Tuesday, November 10, 2015. Please see event details below:
+
+Date: November 10, 2015
+Time: 6:00PM - 9:00PM
+Location: Pivotal &lt;https://www.google.com/maps/place/1333+2nd+St,+Santa+Monica,+CA+90401/@34.0157177,-118.4996616,17z/data=!3m1!4b1!4m2!3m1!1s0x80c2a4cff165ae37:0xb2e0f317bfeb9f0c&gt;, 1333 2nd Street, Suite 200, Santa Monica, 90401
+
+If you&apos;re in Santa Monica for the week of Nov 9 - 13, we 
+invite you to join us for Tech Week LA where Pivotal will be hosting the following activities:
+ 
+
+
+
+ - Talk: The Real Meaning of Digital Transformation for Businesses Today, Siobhan McFeeney 
+ Date: Wednesday, November 11, 2015 Time: 12:00 - 1:30PM Location: Pivotal Office, 1333 2nd Street, Suite 200, Santa Monica, 
+CA 90401  Register
+
+
+
+ - Film Screening and Q&amp;A of Code: Debugging the Gender Gap
+ Date: Wednesday, November 11, 2015 Time: 7:00 - 9:00PM Location: AMC Theater, 310 3rd St, Santa Monica, CA 90401 
+(Third Street Promenade) Register
+
+
+
+ - Talk: Leading into the Future: The Lean Startup Mindset, Janice Fraser 
+ Date:Thursday, November 12, 2015 Time: 3:10 - 3:45PM Location: 200 Santa Monica Pier, Launch Stage Register
+
+
+
+ - Talk: Making Design Matter, Tim McCoy 
+Date: Friday, November 13, 2015 Time: 12:00 - 12:30PM Location: 200 Santa Monica Pier, Summit Stage Register &lt;http://sched.co/4cEj&gt;
+
+
+{{my.Save The Date:default=edit me}}
+
+We look forward to you joining us at the Pivotal Open House!
+
+The Pivotal Team
+
+Questions? Please contact us via email &lt;mailto:pivotal-operations@pivotal.io&gt; or visit our website &lt;http://pivotal.io/news-events&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_Spring London_London_Q217.Confirmation Email</name>
+    <style>none</style>
+    <subject>Thank you for registering for the Spring London event!</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+
+Thank you for registering for the Spring London Event.
+
+
+
+Date:
+DAY-Tuesday, May 9th, 2017 {{my.Spring London:default=edit me}}
+
+Time:
+9:30AM to 4:30PM
+
+
+Location: 
+Pivotal
+The Bower, 211 Old Street - Floor 2
+London, EC1V 9NR (map &lt;[[https://www.google.co.uk/maps/place/Old+St,+London+EC1V+9NR/@51.5259091,-0.0912885,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ca61bf76b2d:0x524bb1ae87636501!8m2!3d51.5258309!4d-0.0891406]]&gt;)
+
+
+
+
+We look forward to seeing you there.
+
+Should you have any questions or would like more information about this event, please email CONTACT at preay@pivotal.io &lt;[[mailto:events@pivotal.io]]&gt;. 
+
+Sincerely,
+
+The Pivotal Team
+See Agenda &lt;[[http://connect.pivotal.io/spring-london.html?utm_source=pivotal-email&amp;utm_medium=confirmation-link&amp;utm_campaign=spring_london_q22017]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

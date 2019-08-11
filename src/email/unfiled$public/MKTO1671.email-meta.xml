@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>GemFire.GemFire 8 Launch follow up promotion</name>
+    <style>none</style>
+    <subject>Scale-Out Your SQL and NoSQL Spring Apps with New Releases of Pivotal GemFire and GemFire XD</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+If you are responsible for creating data-centric applications that need to scale-out to serve massively concurrent transactions, here&apos;s something important you need to know.
+
+This fall Pivotal software released two important updates to its line of distributed in-memory databases that are heavily used by Spring Data Gemfire developers building apps that scale:
+
+Pivotal GemFire 8.0 for NoSQL data &lt;http://blog.pivotal.io/big-data-pivotal/products/gemfire-8&gt;
+
+ - Now supports more data per node through in-memory compression 
+ - Improved resilience with self healing clusters 
+ - New RESTful API supports more programming languages
+
+Pivotal GemFire XD 1.3 for SQL data &lt;http://blog.pivotal.io/big-data-pivotal/products/announcing-the-new-version-of-gemfire-xd-and-sqlfire-pivotal-gemfire-xd-1-3&gt;
+
+ - Now supports in-memory stand alone and persist in Hadoop use cases 
+ - Improved performance and resilience
+
+You can get more details about these latest releases by watching the webinar &quot;What&apos;s New in Pivotal GemFire 8 and Pivotal GemFire XD 1.3 &lt;http://www.pivotal.io/big-data/scale-out-your-big-data-apps&gt;&quot;, or request a conversation with someone from Pivotal &lt;http://www.pivotal.io/big-data/pivotal-gemfire&gt;.
+
+Community editions for the runtime and documentation are available for free usage. The community edition license permits deployment of small clusters of up to 3 nodes &amp; 12 cores for personal development purposes. Get your Pivotal GemFire software &lt;https://network.pivotal.io/&gt; at the Pivotal Network. Spring Data Gemfire, which provides a &quot;Springy&quot; API for Gemfire, is free and open source, available from Maven or Gradle.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

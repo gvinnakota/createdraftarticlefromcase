@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.08-24-16 V4N9</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 4, No. 9</subject>
+    <textOnly>VOL. 4, NO. 7
+Wednesday, August 24
+Editor Welcome: SprinOne Platform Wins  &lt;[[#editor-welcome]]&gt;
+Business: Cloud Foundry Summit 2016: Maturity, Ease, and Velocity &lt;[[#business-update]]&gt;
+Product: Spring Cloud Data Flow and the Versatile Enterprise &lt;[[#product-update]]&gt;
+Agile: In Berlin?... Yes! &lt;[[#agile-update]]&gt;
+Customer: One-on-Ones and Hands-on Training at SpringOne Platform &lt;[[#customer-update]]&gt;
+My Name Is... Bob Smith &lt;[[#my-name-is]]&gt;
+EDITOR WELCOME
+SpringOne Platform Wins
+ Steve Casale &lt;[[https://gopivotal-com.socialcast.com/users/1033819-stephencasale]]&gt;, Sr. Manager, Corporate Communications
+Did you miss us? We &apos;flipped&apos; the idea of summer at Pivotal—accelerating instead of decelerating, tightening the coil of activity and unleashing much of it at SpringOne Platform &lt;[[https://springoneplatform.io/]]&gt; in early August. We even hit pause on the newsletter, but now we&apos;re back.
+
+Redmonk analyst James Governor may have summed it up best when he declared that &quot;SpringOne won.&quot; It was a win in the sense that Microsoft talked Java on Azure through Pivotal Cloud Foundry; that Adrian Cockcroft—who helped build a microservices culture at Netflix that outpaced the industry for years—was 
+right at home; and the community circle that is Spring, PCF, agile, and data was never more apparent.
+
+
+
+Pivotal&apos;s outstanding event site &lt;[[https://springoneplatform.io/]]&gt; captures the keynotes, the recaps, the 
+social, sessions, and more (shortcut to the slideware is here &lt;[[http://www.slideshare.net/Pivotal/tagged/SpringOne%20Platform]]&gt;). I panned for nuggets from the abundance of stories that spilled out of the conference halls, and we&apos;ll be unpacking and presenting that narrative for months to come.
+
+In this issue, Sabby Anandan provides a fitting coda to that event in his Spring Cloud Data Flow article on data microservices. Jacque Istok gives us an inside look at Pivotal data&apos;s new customer-adaptive technical team (think Conway&apos;s Law). Sannidhi Jalukar offers keen insights on how improv helped her become a better engineer. We wrap with a neat summary of the Girls Who Code &lt;[[https://www.facebook.com/GirlsWhoCode/]]&gt; summer program at Pivotal, and the outstanding cohort of young women who showed us the power of what might be in computer science.
+
+Enjoy.
+BUSINESS UPDATE
+ Analyst Relations—Advancing the Frontlines
+ Rita Manachi, Analyst Relations Lead
+It&apos;s been some time since we had an update on the Pivotal Data technical teams. I&apos;m happy to report that for the second half of 2016, we&apos;ve organized ourselves in way that will accelerate deal cycles and help us continue to drive wins with strategic customers across more industries. In case you missed it, here are the highlights: 
+
+To make it easier to close deals and to organize in a way that reflects how and where our customers spend their money, we have brought our data technical field teams—both pre- and post-sales—together. This involved combining the Data Science and Data Engineering technical teams into a single, field-facing organization, within the Customer Success Organization (CSO). 
+
+This change aligns our teams to how our customers both consume and spend money on our products, and with our dasta sales plays. Many of our data products center around the need for superb analytics, and once a customer procures our technology, there&apos;s no surer way for them to accomplish their analytics goals than through a combination of both Data Engineering and Data Science. As these teams come together, I’m excited to think of how much faster our sales teams will be able to leverage that talent in a way that shows the broadest value to customers. 
+
+A quick look at some of the highlights on some business that we quickly closed in Q3, include Southwest Airlines, SAT Mexico, and Springleaf Financials. We&apos;re also close to wrapping up a big deal with the US government. 
+
+These deals all add significantly to the software revenue targets we have set and are part of a good second half pipeline that has been encouraging to see. Additionally, the above deals all closed within the first six weeks of Q3—a tricky quarter given that things slow down for the vast number of our customers over the summer. 
+
+We&apos;re hyper-focused in the second half on bringing in revenue, with a ton of low-hanging fruit in mainstay areas like the DCA refresh &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/data/federation-partners#TOC-Federation]]&gt; and our Netezza (IBM) takeout &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal-competitive-intelligence-page/ibm-bds]]&gt;. We&apos;re also focused on meeting customer needs through our smart apps &lt;[[https://pivotal.io/big-data/webinar/data-science-driven-software-product-innovation?platform=hootsuite]]&gt; and a cohesive platform story. We have the right team structure and a ton of good momentum—so we&apos;ll keep you posted!
+PRODUCT UPDATE
+ Spring Cloud DATA FLOW and the Versatile Enterprise
+ Sabby Anandan, Product Manager
+As we go deeper into enterprises, we&apos;ve found a lasting association between developers and IT operations and the ever versatile Java. It&apos;s no surprise then to see the Spring ecosystem that we&apos;re helping evolve through microservices and modern runtimes, continue to expand. 
+
+Spring Cloud Data Flow &lt;[[http://cloud.spring.io/spring-cloud-dataflow/]]&gt;, an orchestration service for composable data microservices on modern runtimes, is the latest extension of Spring capabilities. Developers, data engineers, and data scientists can use Spring Cloud Data Flow to compose and orchestrate loosely coupled applications for common use cases such as data import/export and real-time analytics. 
+
+Reincarnating from Spring XD, Spring Cloud Data Flow builds upon the following ecosystem of projects with a strong focus towards Cloud Native architecture patterns—you can refer to the launch blog &lt;[[https://blog.pivotal.io/big-data-pivotal/products/data-goes-cloud-native-with-the-new-spring-cloud-data-flow]]&gt; for more 
+details.
+
+
+ - Spring Cloud Stream &lt;[[http://cloud.spring.io/spring-cloud-stream/]]&gt; is a lightweight event-driven microservices framework to quickly build applications that can connect to external systems (ex: kafka, cassandra, mysql, hadoop, etc.). 
+ - Spring Cloud Task &lt;[[http://cloud.spring.io/spring-cloud-task/]]&gt; is a short-lived microservices framework to quickly build applications that perform finite amounts of data processing (ex: batch-jobs). 
+ - Spring Cloud Data Flow provides the orchestration mechanics to deploy applications built with the above two frameworks to a variety of runtime platforms. 
+
+
+
+The 1.0 GA release of Spring Cloud Data Flow&apos;s implementation is complete, and we gave several presentations and demos on at SpringOne Platform—you can find all of them on our Inside Pivotal page &lt;[[https://sites.google.com/a/pivotal.io/inside-pivotal/departments/data/springcloud]]&gt;.
+AGILE UPDATE
+ What Improv Can Do for Your Engineering
+ Sannidhi Jalukar, Software Engineer, Pivotal Labs
+I first got interested in improvisation in 2011, after reading about Tina Fey&apos;s experiences in Bossypants &lt;[[https://www.amazon.com/Bossypants-Tina-Fey/dp/0316056898]]&gt;. I enrolled in a couple of improv classes, and soon realized that I was not a very good performer. Outside of its value for entertainment though, I loved it because I gained a few techniques that have helped me be a better engineer. 
+
+Before we get into that, Wikipedia defines improv as a type of theatre where the dialogue, action, characters, and story are collaboratively created by the actors in real time (no scripts involved). There are 10 guiding principles of improv &lt;[[http://www.jesterzimprov.com/fundamental-improv-principles/]]&gt;, and while each one can be applied to what I do at work, four have personally impacted me the most: When I describe these principles, I want to encourage the reader to think of their work—and their team—and see if you can 
+draw comparisons from it.
+
+
+ - &quot;Yes, and… &quot;—This is the supreme principle of improv. It is a powerful affirmation of encouragement, and a tenet that inspires trust. For example: If player 1 starts a &quot;play&quot; with &quot;The river is full of fish,&quot; player two can add &quot;yep, and one of them is enormous and he&apos;s swimming towards us.” However, if player two denies her fellow performer, it all breaks down: &quot;The river is full of fish!&quot; Player two: &quot;No,there is no water here. Did you forget we&apos;re in California?&quot; The scene is dead on arrival! Moreover, the burden to come up with a new start to the story is now on player one. 
+ - &quot;Listen&quot;—Easier said than done. Good improvisers are not necessarily more clever, or more quick-witted. They do listen better. Improv is about hearing what others are offering, and building off it. 
+ - Teamwork—We&apos;re all in this together. A single person is not responsible for the success or failure of a scene. Whether it succeeds or not is based on our ability to work together. It discourages super-heroism. 
+ - Let go of your need to control—The only thing we control in improv are our own choices. Realizing that we are not in control of anyone else&apos;s actions helps us focus our energy on our creativity. For example, before you go on stage, you have thought of a great start to the play, and might have imagined a magnificent ending for it. However, once you deliver your start you cannot control the flow of the story and if you try to keep controlling it by pulling it towards yourself, you will be violating the above principles, and very likely the audience will sense this, and will not enjoy the performance. 
+ - In engineering at Pivotal the agile way, eight hours daily, 40 hours a week, we pair program—which means I work closely with another engineer to solve problems. Having a relationship based on mutual respect not only makes it wonderful to work with others, but it keeps us focused on the common goal of success. 
+
+
+
+
+
+
+Thanks to improv, I have learned not to correct many obvious errors of my teammates. I&apos;m not talking about code, but typos, mispronunciations, slips of the tongue. These are unintentional, and it&apos;s best to not to call it out when it has no impact. I&apos;ve learned to catch my own bad habits of feigning surprise, or responding with &quot;but more importantly&quot; as opposed to &quot;and also.&quot; If it is not something I will do on stage, I probably don’t want to do it in front of my team. 
+
+Happy &quot;improv&quot;ing!
+CUSTOMER UPDATE
+One-on-Ones AND hands-on training at SpringOne Platform
+Do you have customers or prospects attending SpringOne Platform 2016 &lt;[[http://springoneplatform.io/]]&gt;? Great! Get them signed up for a one-on-one product briefing with a Pivotal engineer or product manager. Are you still trying to convince a lead of the benefits of coming to SpringOne? Use these meetings as one more incentive to get them there. Customer Marketing is happy to reach out to your contacts, and work directly with them to find a day, time, and session for them. Contact Estelle Hayes &lt;[[mailto:ehayes@pivotal.io]]&gt; in Customer Marketing for more information. 
+ 
+Topics we can cover for your customer include Spring, Cloud Native, Microservices, PCF, Spring+Hadoop, Big Data Suite, IoT, Spring Core, and Spring+System Integration. This is a great opportunity for your customers to get to know Pivotal!
+ 
+Pivotal Education &lt;[[https://pivotaleducation.com/]]&gt; is also delivering hands-on, pre-conference training classes. These 2-day, instructor-led classes are offered exclusively to conference attendees, delivered by Certified Pivotal Instructors, and cost only $600! Five unique classes span the Pivotal stack–including sessions on Spring Cloud Data Flow, Building Big Data Solutions, and more. 
+ 
+Space is limited, so encourage your customers to enroll today and maximize their conference experience! Learn more at our pre-conference training page &lt;[[https://springoneplatform.io/training]]&gt;.
+MY NAME IS...
+ Pilar Serna
+ Pilar Serna, Designer
+Work in the San Francisco office as the Communications Intern.
+Looking for the Michelle Obama mug in the SF office, creating Post-It note art on the 4th windows in the SF office, or at Yerba Buena Gardens catching Pokemon.
+Just wrapped up a Discovery and Framing for Volkswagen&apos;s project, guiding product decisions through user research and designing cooperatively and collaboratively.
+I like to read, watch movies, and visit exhibitions. I love to discover and listen to music and draw illustrations full of lines and dots that are mostly graphic representations of my childhood in Venezuela.
+Is that I love plants, birds, and clouds (well, maybe clouds is not such a surprising love as a Pivotal employee).
+Is an innovative, kind, and inspiring place to work.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

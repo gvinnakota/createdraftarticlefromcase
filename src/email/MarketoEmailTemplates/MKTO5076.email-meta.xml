@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign_Newsletter_FY17.Newsletter 7-27-17</name>
+    <style>none</style>
+    <subject>July 2017 Push With Success</subject>
+    <textOnly>&lt;[[http://run.pivotal.io/]]&gt;
+July 2017 Push With Success 
+
+ Wow! We’re still recovering from last month’s Cloud Foundry Summit where our enterprise customer base shared their Pivotal Cloud Foundry success stories about how they transformed their software development traditional waterfall shops into agile powerhouses. Pivotal Web Services can offer the same benefits to smaller companies and individuals that Pivotal Cloud Foundry offers to the Fortune 500. 
+
+ In this edition, we’ll cover the ability to self provision Container-to-Container Networking (C2CN) on PWS. Now you can take advantage of the performance and security benefits of C2CN more easily. We’ll also share a little shortcut for Ruby on Rails developers to access the Rails console. Then we will close with a customer profile on Structurizr, a startup that takes advantage of PWS capabilities. 
+
+ Please follow us on Twitter at @PivotalWS &lt;[[https://twitter.com/pivotalws?lang=en]]&gt; for the latest news and check out our blog &lt;[[https://blog.run.pivotal.io]]&gt; for the latest platform updates. 
+
+ Best Regards, 
+The Pivotal Web Services Team 
+
+ Self Service Container to Container Networking on PWS 
+
+ Container to container networking (C2CN) has been available as a beta feature since early 2017. Details about the benefits of C2CN are available here &lt;[[https://docs.run.pivotal.io/concepts/understand-cf-networking.html#policies]]&gt;. Until recently, users had to contact PWS support to request access to this feature, but now container networking is enabled for all PWS users and the update is backwards compatible and fully supported. Any Space Developer can configure network policies for applications in their space(s). The commands are executed from the CLI Network Access plug-in and the resulting ‘cf allow-access’ command. More details are covered in our original blog post &lt;[[https://content.pivotal.io/blog/building-spring-microservices-with-cloud-foundrys-new-container-networking-stack]]&gt;. If you are a beta user of this feature, your applications will continue to work with no further action required. To help us improve the product, we’re looking for feedback from our users, which can be provided here &lt;[[https://goo.gl/forms/u36QD15ea1vsb60u2]]&gt;. Thank you in advance for sharing your experience with us 
+
+ Accessing the Rails Console on PWS  
+
+ One of the common requests when running Rails apps on PWS is &apos;how do I get a Rails console to inspect my app?&apos; In the past, there wasn’t a way to access the terminal, but that has changed with the addition of the ‘cf ssh’ command to the 
+Cloud Foundry cf CLI tool. You should be able to access the Rails console once you have shelled in, however that’s not the case as you need to execute and load the environment. 
+
+ However, there is a work around, by typing the following: 
+
+ $ cf ssh myapp -t -c “/tmp/lifecycle/launcher /home/vcap/app ‘rails c’ ”” 
+
+ Substitute myapp with the name of your app. 
+
+ A more elegant solution is in the public backlog, which is available in this Pivotal Tracker story &lt;[[https://www.pivotaltracker.com/n/projects/1042066/stories/146900873]]&gt;. One of the benefits of Cloud Foundry is that, as an open source project, it’s possible to see how future features get included. If you want to contribute to Cloud Foundry, become a committer by visiting the Cloud Foundry Foundation &lt;[[https://www.cloudfoundry.org/engineering/]]&gt;. 
+
+ Customer Profile: Structurizr 
+
+ Earlier this month, on the PWS blog, we had a conversation &lt;[[https://blog.run.pivotal.io/a-conversation-with-pws-customer-simon-brown-on-architecture-and-platforms/]]&gt; with Simon Brown of Structurizr &lt;[[https://structurizr.com/]]&gt;, a service that helps visualize your code to improve your design. In that conversation, Brown talked about the advantages of using a platform like PWS. 
+
+ “There’s a lot of hype around things like Docker at the moment. And I’m a huge fan, but I don’t necessarily like the way that it’s being marketed as “a way to build better apps”. There are certainly a number of benefits to creating a single shippable unit that includes everything needed to run the various parts that make up any given software system. However, I’m concerned that many developers are jumping on this without the prerequisite operations knowledge about patching infrastructure, hardening containers, scaling, clustering, failover, log aggregation, monitoring, etc. 
+
+ I think that PaaS provides a much better set of abstractions for developers to work with. In addition to the software architecture training and consulting that I do, I also have a startup called Structurizr, which is a collection of tooling to help teams visualise, document and explore their software architecture. Part of this is a Software as a Service offering, and it’s hosted on Pivotal Web Services. As an early stage startup, I have a couple of options for getting something running on the web. The first is to go down the Infrastructure as a Service route, where I build and provision all of the web and database servers that I need, potentially with Docker. As a software developer myself, (1) this is a lot of work and (2) it’s not necessarily my core skill set. With PaaS, I simply push my applications (Java .war files in my case) and the platform (PWS) does the rest.” 
+
+ If you have an interesting use case or application on PWS and want to share your experience, please reach out to Charles Wu at chwu@pivotal.io &lt;[[mailto:chwu@pivotal.io]]&gt;.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

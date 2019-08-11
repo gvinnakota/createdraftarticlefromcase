@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inside Pivotal Newsletter</title>
+</head>
+<body ><a href="#top" name="top"></a><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><!-- Start of logo and month/year -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" style="border-collapse:collapse;background-color:#ffffff" bgcolor='#FFFFFF'>
+<tr>
+<td height='60' style='background-color:#ffffff" bgcolor='></td>
+</tr>
+<tr>
+<td width='40' bgcolor='#FFFFFF'></td>
+<td bgcolor='#FFFFFF' align="center" valign="middle" class="stack brand-block"><a href="http://insidepivotal.com" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/logo-inside-pivotal-newsletter.png" alt="InsidePivotal" border="0" style="display:block;"></a></td>
+<td width='40' bgcolor='#FFFFFF'></td>
+</tr>
+<tr>
+<td height='40'></td>
+</tr>
+</table>
+<!-- End of logo and month/year -->
+<!-- Start of date -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block text-block" bgcolor="#FFFFFF" style="border-collapse:collapse; " ><tr>
+<td height='15'></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr ><td width='40'></td>
+<td align="left" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue-date" style="font-size:12px; color:#4f504f; " ><p style="margin-left: 30px;">June 30, 2017</p></span>
+</strong>
+</td>
+<td align="right" valign="bottom" class="stack date-block" style="font-family:Helvetica, Arial, sans-serif; " ><strong ><span class="mktEditable" id="issue" style="font-size:12px; color:#4f504f; " >Vol 5, No 9</span>
+</strong>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='10'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td style='border-bottom: solid 1px #F1F1F1;'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of date -->
+<!-- Start of toc -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='40'></td>
+</tr>
+<tr ><td width='40'></td>
+<td style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; " ><p style="font-family:Helvetica, Arial, sans-serif;margin:0; font-size:34px; line-height:1.2em;color:#000000;font-weight: 300;padding-bottom: 7px;">In This Issue</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-letter-from-the-editor" ><a style="color: #00ae9e; text-decoration: none;" href="#letter-from-the-editor">Letter from the Editor</a> – The Humbler Valley</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-product" ><a style="color: #00ae9e; text-decoration: none;" href="#product-update">All Things Product</a> – Pivotal and Google Redux—KUBO</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-seen" ><a style="color: #00ae9e; text-decoration: none;" href="#seen-update">Interestings</a> – Noteworthy Odds &amp; Ends</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-culture" ><a style="color: #00ae9e; text-decoration: none;" href="#culture-update">Labs + Culture</a>&nbsp;–&nbsp;Data Transformation: What's Missing?!</span>
+</p>
+<p style="font-family:Helvetica, Arial, sans-serif; color:#525e66; font-size:16px; line-height:1.2em; padding-bottom:7px; padding-top:7px; font-weight:300; margin:0; " ><span class="mktEditable" id="toc-my-name-is" ><a style="color: #00ae9e; text-decoration: none;" href="#my-name-is">My Name Is</a> – Tom Meyer</span>
+</p>
+</td>
+<td width='40px'></td>
+</tr>
+<tr>
+<td height='45'></td>
+</tr>
+</table>
+<!-- End of toc // -->
+<!-- Start of Letter from the Editor // -->
+<a href="#letter-from-the-editor" name="letter-from-the-editor"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td style="color:#666666; font-size:14px; line-height:22px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#008774" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Letter&nbsp;from&nbsp;the Editor</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="letter-from-the-editor-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/portrait-template-inside-pivotal-newsletter-2016-scasale.png" alt="" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">the humbler valley &nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #008774; text-decoration: none;" href="#author-socialcast-profile">Steve Casale</a>, Pivotal Communications</p></div>
+<div class="mktEditable" id="letter-from-the-editor-entry" style="padding-right:40px; " ><p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-889e56d8-8a5d-904f-98d4-30c59fcb9051"><span><span id="docs-internal-guid-0df6ee9c-f9f4-f446-cd6a-7f3a7f45b419"><span>JP Morgan Chase boss Jamie Dimon's now famous quip, "Silicon Valley is coming", has made its way through executive keynotes as a cautionary note&mdash;or unflattering finger wag&mdash;on business's need to reckon with software.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-889e56d8-8a5d-904f-98d4-30c59fcb9051"><span><span id="docs-internal-guid-0df6ee9c-f9f4-f446-cd6a-7f3a7f45b419"><span>It may be high tide for software and its incursion into commerce, but June has thrown a cold shade on Silicon Valley. There is righteous rebellion (Uber), creeping fears over AI, and subsurface rumblings on an overdue </span><a style="color: #008774; text-decoration: none;" href="https://www.thetimes.co.uk/magazine/the-sunday-times-magazine/tech-the-tables-are-turning-on-the-ping-pong-geeks-k3776vs87"><span>retribution </span></a><span>for the high priests of technology.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-889e56d8-8a5d-904f-98d4-30c59fcb9051"><span><span id="docs-internal-guid-0df6ee9c-f9f4-f446-cd6a-7f3a7f45b419">Shoots of a <a style="color: #008774; text-decoration: none;" href="https://content.pivotal.io/diversity">more generous culture</a>,&nbsp;however, can grow on tech's stony shores.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-889e56d8-8a5d-904f-98d4-30c59fcb9051"><span><span id="docs-internal-guid-0df6ee9c-f9f4-f446-cd6a-7f3a7f45b419"><span>Pivotal Berlin's Dat Tran picks up that thread in </span><span><em>Labs+Culture</em>, with an&nbsp;</span><span>article on how culture is as important as the science when integrating data science into a business. </span><span>In <em>All Things Product</em></span><span>, Alejandro Goyen explains how coupling Google Kubernetes to BOSH brings any Pivotal Cloud Foundry customer a simpler way to deploy both Kubernetes- and PCF-driven applications.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-889e56d8-8a5d-904f-98d4-30c59fcb9051"><span><span id="docs-internal-guid-0df6ee9c-f9f4-f446-cd6a-7f3a7f45b419"><span>As for JPMC, they've taken the software plunge for some time, and Dimon now boasts that the bank can compete with any Valley company. Pivotal has helped instill that state of mind across multiple engagements, and the JPMC presentation is </span><a style="color: #008774; text-decoration: none;" href="https://youtu.be/zNHprC7mlnU?list=PLhuMOCWn4P9hTlDEWJZV8JbVsW01avHF1"><span>my pick from the Cloud Foundry Summit</span></a><span>.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span id="docs-internal-guid-889e56d8-8a5d-904f-98d4-30c59fcb9051"><span><span id="docs-internal-guid-0df6ee9c-f9f4-f446-cd6a-7f3a7f45b419"><span>June also brought both Ramadan and Pride, and their celebration of values. That values part (for Pivots, it's doing the right thing, doing what works, and being kind) will be the ultimate measure of any lasting success from within and beyond the shores of Silicon Valley.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #525e66; font-size: 15px; line-height: 18px; font-weight: 300; margin: 0;"><span><span><span><span>Enjoy.</span></span></span></span></p></div>
+</td>
+</tr>
+<tr>
+<td height='30'></td>
+<td></td>
+</tr>
+</table>
+<!-- End of Letter from the Editor // -->
+<!-- Start of product update -->
+<a href="#product-update" name="product-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:40px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00AE9E" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>All&nbsp;Things&nbsp;Product</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="product-title" style="padding-bottom:20px; " ><p style="color: #666666; font-weight: 300;"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/Alejandro-portrait.png" alt="Alejandro portrait" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">Pivotal and google redux &ndash; KUBO&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #00ae9e; text-decoration: none;" href="#author-socialcast-profile"><span id="docs-internal-guid-800c6784-8763-904d-0af5-ccabbbc651de"><span style="color: #00ae9e; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 12px;">Alejandro&nbsp;Goyen</span></span></span></a><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 12px;">,&nbsp;<span id="docs-internal-guid-90cc6b89-f4c4-a833-5608-d82d26c4e67b"><span>Principal Product Manager, Pivotal Cloud Foundry</span></span></span></span></p></div>
+<div class="mktEditable" id="product-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-90cc6b89-f4f0-9014-b414-35797f184d53"><span><span id="docs-internal-guid-90cc6b89-f67d-db58-8bff-9b237fcf718c"><span>Earlier this summer, in a joint engineering effort, Pivotal and Google launched and announced Project Kubo (</span><a style="color: 
+#00ae9e; text-decoration: none;" href="https://kubernetes.io/"><span>Kubernetes</span></a><span> on BOSH).
+  Kubo offers a uniform way for customers to instantiate, deploy, and manage highly available Kubernetes clusters on any public or private cloud, using BOSH.
+  We unveiled this new OSS project at Google&rsquo;s Next &lsquo;17 conference in March, and the </span><a style="color: #00ae9e; text-decoration: none;" href="https://github.com/pivotal-cf-experimental/kubo-deployment"><span>source code repos</span></a><span> are available on Github and Apache2 licensed.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-90cc6b89-f4f0-9014-b414-35797f184d53"><span><span id="docs-internal-guid-90cc6b89-f67d-db58-8bff-9b237fcf718c"><span>In its short commercial life, Pivotal Cloud Foundry (PCF) has become the cloud-native application runtime platform that is helping  
+30% of the Fortune 100's developers and operators build great software.
+  By abstracting away the complexity of deploying, managing, and running the infrastructure that coordinates and powers lower levels of the application stack, developers can focus on building applications for their business, at start-up speeds.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-90cc6b89-f4f0-9014-b414-35797f184d53"><span><span id="docs-internal-guid-90cc6b89-f67d-db58-8bff-9b237fcf718c"><span>PCF already has a rock-solid container orchestration engine beneath it (</span><a style="color: #00ae9e; text-decoration: none;" 
+href="https://docs.pivotal.io/pivotalcf/1-7/concepts/diego/diego-architecture.html"><span>Diego</span></a><span>), which is proven at scale, and optimized for applications that run on Cloud Foundry.
+  There are no plans to change that! Kubernetes, on the other hand, is less of an application lifecycle platform like PCF, and more of a pure container automation and orchestration engine.
+  Therefore, it takes takes a lower-level approach, placing greater burden and responsibility on the developer to deploy the infrastructure that runs Kubernetes, building and package their applications, etc.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><strong><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;">Kubo Logic</span></span></strong></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c4f0be47-84fd-7dbd-3efd-5630378329f1"><span><span id="docs-internal-guid-90cc6b89-f4f2-b8a9-b3df-b8e893c43f92"><span><span id="docs-internal-guid-90cc6b89-f680-3768-0e4d-5ff2b3de8081"><span>The joint Kubo effort is logical: It brings the power of 
+BOSH to Kubernetes, providing consistency and simplicity in the deployment and operation of Kubernetes (k8) clusters.
+ A K8 cluster provisioned via BOSH enjoys the many benefits of any other BOSH managed software, including automated infrastructure deployment, monitoring, healing, and scaling of the cluster&rsquo;s underlying infrastructure.
+ This not only keeps Kubernetes clusters highly available, but also simplifies many other common &ldquo;day-2 activities&rdquo; such as orchestrating and coordinating a rolling upgrade process for a large fleet of clusters.</span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c4f0be47-84fd-7dbd-3efd-5630378329f1"><span><span id="docs-internal-guid-90cc6b89-f4f2-b8a9-b3df-b8e893c43f92"><span><span id="docs-internal-guid-90cc6b89-f680-3768-0e4d-5ff2b3de8081"><span>Our long-term vision for Kubo is to empower our PCF 
+customers with a single management control plane&mdash;via the Cloud Foundry command line interface (CLI)&mdash;for both PCF-deployed and Kubernetes-deployed apps.
+ This will give developers the ability to use CF &amp; BOSH toolchains and workflows that are already familiar to them, to deploy Docker-based software applications that would not be appropriate to run on PCF/Elastic Runtime, and to make Kubernetes services easily discoverable and consumable within PCF applications (and vice versa).</span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c4f0be47-84fd-7dbd-3efd-5630378329f1"><span><span id="docs-internal-guid-90cc6b89-f4f2-b8a9-b3df-b8e893c43f92"><span><span id="docs-internal-guid-90cc6b89-f680-3768-0e4d-5ff2b3de8081"><span>Kubo is another great example of the strong and growing 
+partnership between Google and Pivotal, and another way in which developers are getting&mdash;and creating&mdash;more value out of cloud-native architectures</span></span></span></span></span></span>.</p>
+</div>
+<a href="#top" style="color:#00ae9e; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+<tr>
+<td height='27'></td>
+</tr>
+</table>
+<!-- End of product update // -->
+<!-- Start of seen and heard -->
+<a href="#seen-update" name="seen-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#026D63" ><tr ><td width='40'></td>
+<td ><div class="mktEditable" id="seen-and-heard" ><table style="border-collapse: collapse;">
+<tbody>
+<tr>
+<td width="180px" height="32px" align="center" bgcolor="white">
+<p style="font-family: Helvetica, Arial, sans-serif; color: #026d63; font-weight: 200; font-size: 17px; margin: 0;">Interestings</p>
+</td>
+</tr>
+<tr>
+<td height="30"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-580360af-8ca0-7c8d-90b4-54bf5c5ccae3"><span id="docs-internal-guid-0abd0e53-88ac-bc4b-9405-e85092b18559"><span><span id="docs-internal-guid-3571e4b3-f699-9fe7-d9b1-fdd1df6c0b4b">451 Research's <a style="color: white;" href="https://content.pivotal.io/analyst-reports/in-memory-specialist-pivotal-unveils-a-cloud-cache">grand take</a> on Pivotal Cloud Cache (share, share!)</span></span></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-3571e4b3-f69a-c4a4-e955-fd3e6005c4f4">If you missed it: read the full <a style="color: white;" href="https://www.recode.net/2017/6/13/15794412/read-entire-investigation-uber-culture-management-ethics-eric-holder">Holder report findings</a>&nbsp;from the recent investigation into Uber's culture.</span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-3571e4b3-f69d-2f38-8a2c-b088796dfd8a"><span>CF Summit closer: PCF security is </span><a style="color: white;" href="https://venturebeat.com/2017/06/16/pivotal-cloud-foundry-aims-to-thwart-hackers-with-ever-changing-passwords/"><span>a slippery fish</span></a><span> (for hackers, thank goodness).</span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-3571e4b3-f69e-2610-2457-4c741a25ba50"><span>Noam Chomsky's </span><a style="color: white;" href="https://techdigg.com/2017/06/16/google-talks-noam-chomsky-on-the-trouble-with-artificial-intelligence/"><span>discerning take on AI</span></a><span>, the Google interview.</span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span><span><span id="docs-internal-guid-3571e4b3-f6a0-86d1-7613-c895b7becdfe">Loosely coupled particles: <a style="color: white;" href="https://www.geekwire.com/2017/chinas-micius-satellite-sets-distance-record-quantum-communications-space/">China, quantum communications</a>, and security.</span><br /></span></span></li>
+<li style="font-family: Helvetica, Arial, sans-serif; color: white; font-size: 15px; font-weight: 300; margin: 0 0 15px 0;"><span id="docs-internal-guid-3571e4b3-f69f-ec77-28cb-1831104a984e"><span>Found in Stand-up: World's first </span><a style="color: white;" href="https://www.theguardian.com/business/2017/jun/27/hywind-project-scotland-worlds-first-floating-windfarm-norway"><span>floating wind farm</span></a><span> project&mdash;from Norway to Scotland.</span></span></li>
+</ul></div>
+</td>
+<td width='40'></td>
+</tr>
+<tr>
+<td height='40'></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<!-- End of seen and heard // -->
+<!-- Start of culture update // -->
+<a href="#culture-update" name="culture-update"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="white" ><tr>
+<td height='60'></td>
+</tr>
+<tr ><td width='40'></td>
+<td ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#87C876" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin: 0;'>Labs&nbsp;+&nbsp;Culture</p>
+</td>
+<td style="border-top:1px solid #f1f1f1;width: 342px;"></td>
+<td width='40'></td>
+</tr>
+</table>
+<div class="mktEditable" id="culture-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/DTran2.png" alt="" width="130" height="172" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;"><span id="docs-internal-guid-e54802cd-f4c7-eff0-3b15-652f5e7290fe"><span>Data Transformation&mdash;What's Missing?</span></span>!</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;"><a style="color: #87c876; text-decoration: none;" href="#author-socialcast-profile">Dat Tran</a>, Data Scientist, Berlin</p></div>
+<div class="mktEditable" id="culture-entry" style="padding-right:40px; " >
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c34910d3-84d0-cc94-360e-f4233ee9c9a1"><span><span id="docs-internal-guid-e54802cd-f4e6-1697-49fb-ddc96790dc1a"><span>Earlier this year I visited South Korea to support the local team on its Big Data roadshow.
+    One thing I noticed is that AI is a big thing there (and not only in Korea).
+    A lot of people were asking me how they can make use of AI&mdash;deep learning&mdash;to harness any business value.
+    This is kind of d&eacute;j&agrave; vu for me, because not too long ago&mdash;and I mean recent memory&mdash;everyone was just searching for a way to make use of &ldquo;Big Data&rdquo;.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c34910d3-84d0-cc94-360e-f4233ee9c9a1"><span><span id="docs-internal-guid-e54802cd-f4e6-1697-49fb-ddc96790dc1a"><span>In reality, taking advantage of data is hard, and many customers I&rsquo;ve come across do not always grasp the most important    
+factors to capturing its value.
+    Rather, they pour a lot of money into building huge, digital "data transformation" projects, without creating the kind of value they expected.
+ </span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c34910d3-84d0-cc94-360e-f4233ee9c9a1"><span><span id="docs-internal-guid-e54802cd-f4e6-1697-49fb-ddc96790dc1a"><span>I've seen clients open up ambitious data labs around an ambitious promise to unlock the data treasures of their company or domain    
+expertise, only to find a year or two down the line that &nbsp;they have yet to fill in the outlines of that promise.
+    The reality often is is that this kind of innovation is not embedded into the core of their business&mdash;it's isolated.
+    Hence, these companies face big challenges in industrialising their data work</span></span>!</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span><span>So what's wrong?</span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;"><span id="docs-internal-guid-e54802cd-f4e7-48b9-6305-522f83f9c7de"><span>The problem is that data science models&mdash;whether they are just a small feature of an overall    
+smart product or the core of the product itself&mdash;only generate real value when they are in production&mdash;that is, integrated into production cycles.
+ </span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span style="color: #666666; font-family: Helvetica, Arial, sans-serif;"><span style="font-size: 15px;"><span id="docs-internal-guid-e54802cd-f4e7-48b9-6305-522f83f9c7de"><span>It's not just smart technology and hopes, but how people organize themselves around it that matters.
+    These include something many have probably not heard about, such as an </span><a style="color: #87c876; text-decoration: none;" href="http://engineering.pivotal.io/post/api-first-for-data-science/"><span>API first culture</span></a><span>.
+    Another important factor that comes with this is constant communication and collaboration.
+    Since creating a data product like any other good product is a team sport, it would help a lot to </span><a style="color: #87c876; text-decoration: none;" href="https://www.ianhuston.net/2016/11/data-science-in-the-balanced-team/"><span>work in a balanced team</span></a><span> to break down the walls between different teams.</span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><img src="http://connect.pivotal.io/rs/pivotal/images/DataScience-Cartoon.jpg" alt="friday retro" width="530" height="530" /></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c34910d3-84d0-cc94-360e-f4233ee9c9a1"><span><span id="docs-internal-guid-e54802cd-f4e8-0f55-1cee-9095130ea30b"><span>To be fair, enterprises often make the kinds of assumptions on where data innovation fits into their business that ends up costing    
+time and money.
+    There are many factors that drive a successful data project, and I blogged about some of those factors on </span><a style="color: #87c876; text-decoration: none;" href="https://builttoadapt.io/8-simple-guidelines-for-data-projects-859a1a738ffc"><span>Built to Adapt, &ldquo;8 Simple Guidelines for Data Projects&rdquo;</span></a><span>.
+ </span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;">&nbsp;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 15px; line-height: 18px; margin: 0px;"><span id="docs-internal-guid-c34910d3-84d0-cc94-360e-f4233ee9c9a1"><span><span id="docs-internal-guid-e54802cd-f4e8-0f55-1cee-9095130ea30b"><span>At the end of the day, and as I note in that blog, the most important success factor boils down to culture.
+    Pivotal Labs did a phenomenal job of creating a methodology to build better software products in a more agile way.
+    Now is the right time to use those learnings to help our clients build better data products!</span></span></span></span></p>
+</div>
+<a href="#top" style="color:#87c876; font-size:14px; text-decoration:none; padding-top:20px; display:block;font-weight:bold">Back to the Top</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of culture update // -->
+<!-- Start of my name is // -->
+<a href="#my-name-is" name="my-name-is"></a><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-bottom:50px; font-family:Helvetica, Arial, sans-serif; font-weight:300; border-top:1px solid #f1f1f1; " ><table style="border-collapse:collapse;">
+<tr>
+<td bgcolor="#00A1E4" width="178px" height="32px" align='center'>
+<p style='font-family:Helvetica, Arial, sans-serif;color:white;font-weight:200;font-size:17px;margin:0'>My&nbsp;Name&nbsp;Is</p>
+</td>
+</tr>
+</table>
+<div class="mktEditable" id="my-name-is-title" style="padding-bottom:20px; " ><p><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/TMeyer.png" alt="Tom Meyer" width="170" height="183" align="right" /></p>
+<table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="15'"></td>
+</tr>
+<tr>
+<td>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0; font-size: 30px; line-height: 1.2em; color: #000000; font-weight: 300; text-transform: uppercase;">tom meyer</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 12px; line-height: 18px; margin: 0px;">Software Engineer, Palo Alto</p></div>
+<div class="mktEditable" id="my-name-is-entry" ><p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; margin: 0; font-weight: bold;">At Pivotal I...</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span><span id="docs-internal-guid-e9cc81bb-f71b-049c-6e30-f399864df42e"><span><span id="docs-internal-guid-36607bb1-8899-e242-e1e9-6135ac5f198c"><span><span id="docs-internal-guid-d1cf31fd-1369-1c40-31ff-3c6466933c49"><span><span id="docs-internal-guid-d1eae7d2-84b1-5694-2ac1-3ef2103ea787"><span id="docs-internal-guid-a4aa4a73-f4f4-1111-6b6f-339d6dedb271">Work as a software engineer on the <a style="color: #00a1e4; text-decoration: none;" href="http://greenplum.org/">Greenplum&nbsp;database</a> team&nbsp;in our Palo Alto office, and am currently helping develop backup and migration tools for Greenplum</span></span></span></span></span></span>.</span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">How I got into software&hellip;</p>
+<p><span id="docs-internal-guid-8488aa3f-35c3-3cfb-dc3c-93bc527a94f6"><span id="docs-internal-guid-36607bb1-889a-b508-5da0-554bdf6471bd"><span id="docs-internal-guid-d1cf31fd-135a-9768-76d2-c4ba00ce2bd7"><span id="docs-internal-guid-d1eae7d2-84b4-b101-1dd8-398e2c29abfc"><span><span id="docs-internal-guid-a4aa4a73-f4f4-ee61-c5ff-900e61563f9b"><span>Partway through my sophomore year in college,     when I was in the doldrums of a thermodynamics class, I realized the mechanical engineering degree I was working towards was not the best direction for me.     The introductory software classes, on the other hand, were tons of fun. It was pretty clear I needed to switch to computer science, so I stayed an extra summer semester to catch up, and I never looked back</span></span></span></span></span></span></span>.</p>
+<ol> </ol>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">In my spare time&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-54942db0-820c-d633-5d86-a1190e77d3de"><span id="docs-internal-guid-e9cc81bb-f720-72ff-8d10-0b99138bfc0e"><span id="docs-internal-guid-8488aa3f-35c3-9fce-6fba-1bcede3da978"><span style="text-decoration: none;"><span style="color: #666666;"><span id="docs-internal-guid-36607bb1-889b-5b4f-5032-4dffef61bd66"><span><span id="docs-internal-guid-d1cf31fd-135c-a041-3c8d-5725877fda3d"><span><span id="docs-internal-guid-d1eae7d2-84b5-42a6-9083-c3f315a92437"><span><span id="docs-internal-guid-a4aa4a73-f4f6-f3c4-b8f1-7f95efd234c0"><span>I tend to exercise a lot.     Swimming, biking, and hiking are my go-to activities.     Luckily, the SF bay area is a fantastic location for doing these things!</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">Something you probably don&rsquo;t know about me&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-d26932b9-2024-6f3f-4562-1c32c533bb1b"><span><span id="docs-internal-guid-8488aa3f-35c5-e25a-5249-dabc0afca4ef"><span><span id="docs-internal-guid-36607bb1-889d-1a36-7f82-be0d22ca2c8f"><span><span id="docs-internal-guid-d1cf31fd-135d-4605-d7c2-c75ade58f8db"><span><span id="docs-internal-guid-d1eae7d2-84b6-a6dc-cdb4-4b6af3915338"><span><span id="docs-internal-guid-a4aa4a73-f4f8-5918-f86e-28d15312b751"><span>I recently got back from a 2,350 mile bike trip.   Starting in my hometown in South Dakota, I rode to the Pacific Ocean just south of Santa Barbara in 28 days (averaging over 80 miles per day).   My route took me over the Rocky Mountains, through Utah, Bryce Canyon, the Grand Canyon, and the Mojave Desert.   It was an amazing experience, and I'm already eager to start planning my next trip</span></span></span></span>.</span></span></span></span></span></span></span></span></p></div>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; background:white; " ><tr ><td ><div class="mktEditable" id="my-name-is-photo" ><p><img src="http://connect.pivotal.io/rs/pivotal/images/Adventure_Tom1.jpg" alt="music man" width="600" height="453" /><img src="http://connect.pivotal.io/rs/pivotal/images/Adventure-Tom2.jpg" alt="on the tube" width="600" height="646" /></p>
+<p style="font-family: Helvetica, Arial, sans-serif; color: #666; font-size: 12px; font-style: italic; margin: 20px auto 0; max-width: 520px;">There and back again: From grasslands to peaks on Tom's long ride home.</p></div>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " bgcolor="#FFFFFF" ><tr ><td width='40'></td>
+<td align="left" valign="middle" class="text-block" style="color:#666666; font-size:14px; line-height:22px; padding-top:30px; padding-bottom:60px; font-family:Helvetica, Arial, sans-serif; font-weight:300; " ><div class="mktEditable" id="my-name-is-outro" ><p style="font-family: Helvetica, Arial, sans-serif; color: #00a1e4; font-weight: bold;">To me Pivotal&hellip;</p>
+<p style="font-family: Helvetica, Arial, sans-serif; margin: 0;"><span id="docs-internal-guid-36607bb1-889f-cba8-79de-48a932078eb7"><span><span id="docs-internal-guid-d1eae7d2-84b7-0cc9-dec3-bafa7a72e4e1"><span>Is t<span id="docs-internal-guid-a4aa4a73-f689-c5d3-d6ef-fd512521b996"><span>he melting pot of Enterprise and Startup!</span></span></span></span></span></span></p></div>
+<p style='font-family:Helvetica, Arial, sans-serif;color:#00a1e4;font-weight: bold'><a href="#top" style="color:#00a1e4; font-size:14px; text-decoration:none; display:block;font-weight:bold">Back to the Top</a></p>
+</td>
+<td width='40'></td>
+</tr>
+</table>
+<!-- End of my name is // -->
+<!-- Start of end -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block footer-block" style="background: #008774; border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack date-block" style="padding-top:10px; padding-bottom:10px; padding-left:40px;"><img src="http://connect.pivotal.io/rs/pivotal/images/white-i.png" alt="InsidePivotal" border="0" style="display:block;"></td>
+<td align="right" valign="middle" class="stack date-block" style="padding-top:20px; padding-right:40px; padding-bottom:20px; font-weight:300; color:#FFFFFF; font-size:12px; line-height:16px;"><span style="font-size:12px;font-family:Helvetica, Arial, sans-serif;">Find all issues on <a href="https://sites.google.com/a/pivotal.io/inside-pivotal/newsletters" style="color:#FFFFFF; text-decoration:none;">InsidePivotal.io</a></span></td>
+</tr>
+</table>
+<!-- End of end -->
+<!-- Start of social links -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="left" valign="middle" class="stack footer-block" style="padding-top:15px; padding-bottom:15px; padding-left:40px;"><a href="http://pivotal.io" target="_blank" style="font-family:Helvetica, Arial, sans-serif;color:#059a91; text-decoration:none; font-size:15px;">pivotal.io</a></td>
+<td align="right" valign="middle" class="stack footer-block" style="padding-top:15px; padding-right:40px; padding-bottom:15px;">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:16px;"><a href="http://gopivotal-com.socialcast.com/" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-socialcast-small.png" alt="Pivotal on Socialcast" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://twitter.com/pivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-twitter-small.png" alt="Follow us on Twitter" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-linkedin-small.png" alt="Join the conversation on LinkedIn" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://ww.facebook.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-facebook-small.png" alt="Like us on Facebook" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-google-small.png" alt="Add us on Google+" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td style="padding-right:16px;"><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-youtube-small.png" alt="Visit our YouTube channel" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+<td><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/pivotal/images/email-social-instagram-small.png" alt="Follow us on Instagram" border="0" style="max-width:25px; height:24px; display:block;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- End of social links // -->
+<!-- Start of Copyright -->
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif;padding-top:20px; padding-bottom:20px; border-top:1px solid #CCCCCC; color:#999999; font-size:12px; line-height:14px;">&copy; 2017 Pivotal Software, Inc. All rights reserved. Privileged &amp; Confidential.</td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project_Time_Entry__c$Name</field>
+    </columns>
+    <columns>
+        <field>Project_Time_Entry__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Project_Time_Entry__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Project_Time_Entry__c$Date_Completed__c</field>
+    </columns>
+    <currency>EUR</currency>
+    <description>EOGS Current Exceptions list</description>
+    <filter>
+        <criteriaItems>
+            <column>Project_Time_Entry__c$Name</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>EOGS Exception</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project_Time_Entry__c$Date_Completed__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>YESTERDAY</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>EOGS Current Exceptions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Project_Time_Entries__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Project_Time_Entry__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

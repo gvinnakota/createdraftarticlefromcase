@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <fields>
+        <fullName>AccountID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AccountID (Feedback)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>AccountID_Feedback__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CESMgrCH_Asked_Agent_for_Context__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CES Manager Case Handling - Asked Agent for Context</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CES Manager Case Handling - Asked Agent for Context</inlineHelpText>
+        <label>CESMgr - Asked Agent for Context</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgrCH_Coached_Agent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CES Manager Case Handling - Coached Agent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CES Manager Case Handling - Coached Agent</inlineHelpText>
+        <label>CESMgr - Coached Agent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgrCH_Shared_Feedback_with_Agent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CES Manager Case Handling Shared feedback with Agent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CES Manager Case Handling Shared feedback with Agent</inlineHelpText>
+        <label>CESMgr - Shared Feedback with Agent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Alternate_Mgr__c</fullName>
+        <description>Populates a text field from the survey should the actual manager forward the manager survey form to someone else to follow-up on and fill out.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The person who actually filled out the manager follow-up form (survey), should the manager forward it to someone else to complete.</inlineHelpText>
+        <label>CESMgr - Alternate Mgr</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Customer_Engagement_Feedback__c</fullName>
+        <description>CESMgr - What did you learn from the customer?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - What did you learn from the customer?</inlineHelpText>
+        <label>CESMgr - Customer Engagement Feedback</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Customer_follow_up_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Customer follow-up: Emailed Client</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Customer follow-up: Emailed Client</inlineHelpText>
+        <label>CESMgr - Customer follow-up: Email</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Customer_follow_up_N_A__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Manager Follow-up with Customer not applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Manager Follow-up with Customer not applicable</inlineHelpText>
+        <label>CESMgr - Customer follow-up: N/A</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Customer_follow_up_Phone__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Customer follow-up: Called Client</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Customer follow-up: Called Client</inlineHelpText>
+        <label>CESMgr - Customer follow-up: Phone</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Future_Improvements__c</fullName>
+        <description>CESMgr - Do opportunities for improvement remain?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Do opportunities for improvement remain?</inlineHelpText>
+        <label>CESMgr - Future Improvements</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CESMgr_MgrSurvey_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( CESMgr_Survey_Completed__c = TRUE,NOW(),Null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CESMgr - MgrSurvey Complete Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_N_A__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CES Manager Follow-up Agent-related questions not applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CES Manager Follow-up Agent-related questions not applicable</inlineHelpText>
+        <label>CESMgr - N/A</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_SurveyTopic_AgentCoaching__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Agent Coaching</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Agent Coaching</inlineHelpText>
+        <label>CESMgr - SurveyTopic: AgentCoaching</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_SurveyTopic_CustomerOnboarding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Customer Onboarding</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Customer Onboarding</inlineHelpText>
+        <label>CESMgr - SurveyTopic: CustomerOnboarding</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_SurveyTopic_N_A__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CES Manager follow-up Topic section not applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CES Manager follow-up Topic section not applicable</inlineHelpText>
+        <label>CESMgr - SurveyTopic: N/A</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_SurveyTopic_ProductFeedback__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Product Feedback</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: Product Feedback</inlineHelpText>
+        <label>CESMgr - SurveyTopic: ProductFeedback</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_SurveyTopic_UI_Improvement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: UI Improvement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: UI Improvement</inlineHelpText>
+        <label>CESMgr - SurveyTopic: UI Improvement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_SurveyTopic_UX_Improvement__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: UX Improvement</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - Topic that applies to manager survey follow-up with team member and/or customer: UX Improvement</inlineHelpText>
+        <label>CESMgr - SurveyTopic: UX Improvement</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Survey_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Survey required question field to be used to drive Salesforce process behind the scenes</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Survey required question field to be used to drive Salesforce process behind the scenes</inlineHelpText>
+        <label>CESMgr - Survey Completed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CESMgr_Team_Member_Engagement_Feedback__c</fullName>
+        <description>CESMgr - What did you learn from the team member engagement?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>CESMgr - What did you learn from the team member engagement?</inlineHelpText>
+        <label>CESMgr - Team Member Engagement Feedback</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CES_Constructive_Feedback__c</fullName>
+        <description>Populates on from Survey when Disagree (1), Somewhat disagree is selected (2) or Neither agree or disagree (3)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populates on from Survey when Disagree (1), Somewhat disagree is selected (2) or Neither agree or disagree (3)</inlineHelpText>
+        <label>CES Constructive Feedback</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CES_Issue_Satisfaction__c</fullName>
+        <description>Picklist values from Clicktools survey CES question</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Values from Clicktools survey CES question</inlineHelpText>
+        <label>CES Issue Satisfaction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agree</fullName>
+                    <default>false</default>
+                    <label>Agree</label>
+                </value>
+                <value>
+                    <fullName>Somewhat agree</fullName>
+                    <default>false</default>
+                    <label>Somewhat agree</label>
+                </value>
+                <value>
+                    <fullName>Neither agree or disagree</fullName>
+                    <default>false</default>
+                    <label>Neither agree or disagree</label>
+                </value>
+                <value>
+                    <fullName>Somewhat disagree</fullName>
+                    <default>false</default>
+                    <label>Somewhat disagree</label>
+                </value>
+                <value>
+                    <fullName>Disagree</fullName>
+                    <default>false</default>
+                    <label>Disagree</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CES_Positive_Feedback__c</fullName>
+        <description>Populates on from Survey when Agree (5), Somewhat Agree is selected (4).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populates on from Survey when Agree (5), Somewhat Agree is selected (4).</inlineHelpText>
+        <label>CES Positive Feedback</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CES_Survey_Score__c</fullName>
+        <description>Converts the Survey issue Satisfaction text value to a number (Score): Agree = 5, Somewhat agree = 4, Neither agree or disagree = 3, Somewhat disagree = 2, Disagree =1</description>
+        <externalId>false</externalId>
+        <formula>CASE (  CES_Issue_Satisfaction__c ,
+"Agree", 5, 
+"Somewhat agree", 4 ,
+"Neither agree or disagree", 3,
+"Somewhat disagree", 2,
+"Disagree", 1,
+NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts the Survey issue Satisfaction text value to a number (Score): Agree = 5, Somewhat agree = 4, Neither agree or disagree = 3, Somewhat disagree = 2, Disagree =1</inlineHelpText>
+        <label>CES Survey Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CampaignID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CampaignID (Feedback)</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Campaign_Name_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>CampaignID_Feedback__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campaign Name (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseID_FeedBack__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CaseID (FeedBack)</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CaseOwnerMgrEmailFormula__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID_FeedBack__r.CaseOwnerMgrEmail__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CaseOwnerMgrEmailFormula</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseOwnerMgr_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>CaseOwnerMgr Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseSubject_Feedback__c</fullName>
+        <description>CaseSubject from the Survey Feedback Case</description>
+        <externalId>false</externalId>
+        <formula>CaseID_FeedBack__r.Subject</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>CaseSubject from the Survey Feedback Case</inlineHelpText>
+        <label>CaseSubject (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CaseURL_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID_FeedBack__r.CaseURL__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CaseURL (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Number_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID_FeedBack__r.CaseNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Number (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Owner_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>CaseID_FeedBack__r.Owner:User.FirstName &amp; " " &amp; CaseID_FeedBack__r.Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Owner (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Owner_ID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case Owner ID (Feedback)</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback (Case Owner ID (Feedback))</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case_Owner_Manager_Feedback__c</fullName>
+        <description>Case Owner's Manager</description>
+        <externalId>false</externalId>
+        <formula>CaseID_FeedBack__r.Case_Owner_Manager__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Case Owner's Manager</inlineHelpText>
+        <label>Case Owner Manager (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>ContactID (Feedback)</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactName_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>ContactID_Feedback__r.FirstName &amp; " " &amp;   ContactID_Feedback__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ContactName (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Email_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>ContactID_Feedback__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Email (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>ContactID_Feedback__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Phone (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EntitlementID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>EntitlementID(Feedback)</label>
+        <referenceTo>Entitlement</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Entitlement_Name_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>EntitlementID_Feedback__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Entitlement Name(Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback_ID18__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Feedback ID18</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Follow_up_with_Survey_Contact__c</fullName>
+        <description>For Yes/No follow-up with survey contact Product Surveys</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For Yes/No follow-up with survey contact Product Surveys</inlineHelpText>
+        <label>Follow-up with Survey Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LeadID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>LeadID (Feedback)</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LeadName_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>LeadID_Feedback__r.FirstName &amp; " " &amp; LeadID_Feedback__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LeadName(Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>OpportunityID (Feedback)</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Name_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>OpportunityID_Feedback__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Name (Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Product_Feedback__c</fullName>
+        <description>General feedback for misc survey comment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>General feedback for misc survey comment</inlineHelpText>
+        <label>Pivotal Product Feedback</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Love it!!</fullName>
+                    <default>false</default>
+                    <label>Love it!!</label>
+                </value>
+                <value>
+                    <fullName>Like it</fullName>
+                    <default>false</default>
+                    <label>Like it</label>
+                </value>
+                <value>
+                    <fullName>Neutral</fullName>
+                    <default>false</default>
+                    <label>Neutral</label>
+                </value>
+                <value>
+                    <fullName>Dislike it</fullName>
+                    <default>false</default>
+                    <label>Dislike it</label>
+                </value>
+                <value>
+                    <fullName>Hate it!!</fullName>
+                    <default>false</default>
+                    <label>Hate it!!</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Product_Improvements__c</fullName>
+        <description>Survey essay for what can be improved on the surveyed Pivotal Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Survey essay for what can be improved on the surveyed Pivotal Product</inlineHelpText>
+        <label>Pivotal Product Improvements</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Product_Positives__c</fullName>
+        <description>Survey essay on what was liked about the surveyed Pivotal Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Survey essay on what was liked about the surveyed Pivotal Product</inlineHelpText>
+        <label>Pivotal Product Positives</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Survey_Owner_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>To be used for surveys not linked to specific Salesforce records. ie: Pivotal product surveys which would live under the Pivotal Survey Feddback object</description>
+        <externalId>false</externalId>
+        <label>Pivotal Survey OwnerID</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pivotal_Survey_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Pivotal_Survey_Owner_ID__r.FirstName  &amp; " " &amp;  Pivotal_Survey_Owner_ID__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pivotal Survey Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subscription_ID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Subscription ID(Feedback)</label>
+        <referenceTo>Zuora__Subscription__c</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_Name_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subscription_ID_Feedback__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Subscription Name(Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subscription_P_C_ID_Feedback__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Subscription Product &amp; Charge Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Subscription Product &amp; Charge Name</inlineHelpText>
+        <label>Subscription P&amp;C ID(Feedback)</label>
+        <referenceTo>Zuora__SubscriptionProductCharge__c</referenceTo>
+        <relationshipLabel>Pivotal Survey Feedback</relationshipLabel>
+        <relationshipName>Pivotal_Survey_Feedback</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Subscription_P_C_Name_Feedback__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subscription_P_C_ID_Feedback__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Subscription Product &amp; Charge Name</inlineHelpText>
+        <label>Subscription P&amp;C Name(Feedback)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SurveyAge_In_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() -  DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SurveyAge (In days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Contact_Email__c</fullName>
+        <description>For Survey forms not tied to other SFDC Objects (Besides the Survey object)</description>
+        <externalId>false</externalId>
+        <label>Survey Contact Email</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Contact_Name__c</fullName>
+        <description>For Survey forms not tied to other SFDC Objects (Besides the Survey object)</description>
+        <externalId>false</externalId>
+        <label>Survey Contact Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Contact_Phone__c</fullName>
+        <description>For Survey forms not tied to other SFDC Objects (Besides the Survey object)</description>
+        <externalId>false</externalId>
+        <label>Survey Contact Phone</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object to hold survey sent out by various Pivotal departments</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Pivotal Survey Feedback</label>
+    <nameField>
+        <label>Pivotal Survey Feedback Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Pivotal Survey Feedback</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Case_Number_Feedback__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Case_Owner_Feedback__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Pivotal_CES_Survey_Pivotal_Survey_Feedback</fullName>
+        <columns>NAME</columns>
+        <columns>Case_Number_Feedback__c</columns>
+        <columns>CES_Survey_Score__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Queue</filterScope>
+        <label>Survey - Pivotal CS CES</label>
+        <queue>Survey_Pivotal_CS_CES</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Pivotal_Tracker_App_for_Slack_Pivotal_Survey_Feedback</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Survey_Contact_Name__c</columns>
+        <columns>Survey_Contact_Email__c</columns>
+        <columns>Follow_up_with_Survey_Contact__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Pivotal Tracker App for Slack</label>
+        <queue>Pivotal_Tracker_App_for_Slack</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Survey_Pivotal_CS_CES_Pivotal_Survey_Feedback</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Survey - Pivotal CS CES</label>
+        <queue>Survey_Pivotal_CS_CES</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <recordTypes>
+        <fullName>Pivotal_Surveys</fullName>
+        <active>true</active>
+        <label>Pivotal Surveys</label>
+        <picklistValues>
+            <picklist>CES_Issue_Satisfaction__c</picklist>
+            <values>
+                <fullName>Agree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disagree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neither agree or disagree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat agree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat disagree</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_up_with_Survey_Contact__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pivotal_Product_Feedback__c</picklist>
+            <values>
+                <fullName>Dislike it</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hate it%21%21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Like it</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Love it%21%21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Product_Survey</fullName>
+        <active>true</active>
+        <label>Product Survey</label>
+        <picklistValues>
+            <picklist>CES_Issue_Satisfaction__c</picklist>
+            <values>
+                <fullName>Agree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disagree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neither agree or disagree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat agree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat disagree</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_up_with_Survey_Contact__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pivotal_Product_Feedback__c</picklist>
+            <values>
+                <fullName>Dislike it</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hate it%21%21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Like it</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Love it%21%21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Support_CES</fullName>
+        <active>true</active>
+        <label>Support CES</label>
+        <picklistValues>
+            <picklist>CES_Issue_Satisfaction__c</picklist>
+            <values>
+                <fullName>Agree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disagree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neither agree or disagree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat agree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat disagree</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Follow_up_with_Survey_Contact__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Pivotal_Product_Feedback__c</picklist>
+            <values>
+                <fullName>Dislike it</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hate it%21%21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Like it</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Love it%21%21</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

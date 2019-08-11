@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Certification Name --></label>
+        <name>Certification_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Account --></label>
+        <name>Partner_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Product Version --></label>
+        <name>Partner_Product_Version__c</name>
+        <relationshipLabel><!-- Certifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Product --></label>
+        <name>Partner_Product_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Product Version --></label>
+        <name>Pivotal_Product_Version__c</name>
+        <relationshipLabel><!-- Certifications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Product --></label>
+        <name>Pivotal_Product_f__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Certification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Certifications</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Certification Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Must pick a field --></errorMessage>
+        <name>notEmpty</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New_Certification --></label>
+        <name>New_Certification</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Certification_Partner --></label>
+        <name>New_Certification_Partner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Certification_Pivotal --></label>
+        <name>New_Certification_Pivotal</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Product_Interoperability_Matrix --></label>
+        <name>Product_Interoperability_Matrix</name>
+    </webLinks>
+</CustomObjectTranslation>

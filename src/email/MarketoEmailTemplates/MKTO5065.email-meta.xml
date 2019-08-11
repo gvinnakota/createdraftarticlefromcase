@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_dotNET CloudNative Bootcamp_Denver_Q317.dotNet Post Event - No sho</name>
+    <style>none</style>
+    <subject>We Missed You at the Cloud-Native .NET Bootcamp</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+ 
+Thank you for registering for the first Cloud-Native .NET Bootcamp in Denver. We missed seeing you there, and you missed lots of fun conversations in the room. It was impressive to see so many folks successfully push modern applications to Pivotal Cloud Foundry.
+If you’re considering a cloud-native application style for your new and existing .NET applications, here are a few resources that may help you out:
+
+
+ - This &lt;[[https://pivotal.io/cloud-native]]&gt; gives you a detailed look at what makes up a cloud-native application.
+ - Of course you’re not just dealing with new applications, but existing ones as well. We’ve got some guidance &lt;[[https://pivotal.io/replatforming]]&gt; on replatforming those valuable assets.
+ - Pivotal Cloud Foundry gives you a great place to run both new and existing .NET apps, and this  &lt;[[https://pivotal.io/platform]]&gt;includes all sorts of capabilities to keep your app online and performing well.
+ - A platform won’t do EVERYTHING you need, so that’s why a healthy ecosystem matters. Check out the constantly-updated list of partner integrations here &lt;[[https://pivotal.io/platform/services]]&gt;.
+ - Steeltoe really does improve how your .NET Framework and .NET Core applications operate. Take a look at these docs &lt;[[http://steeltoe.io/]]&gt; and download the latest packages.
+
+
+
+Please don’t hesitate to reach out to me at rseroter@pivotal.io &lt;[[mailto:rseroter@pivotal.io]]&gt; or your Pivotal rep if you’d like further help with Cloud Foundry, or have feedback that can make any of our products better.
+Richard Seroter &amp; The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

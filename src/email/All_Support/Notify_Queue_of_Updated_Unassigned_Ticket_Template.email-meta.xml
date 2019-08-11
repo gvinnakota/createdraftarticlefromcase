@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Notify Queue of Updated Unassigned Ticket Template</name>
+    <style>formalLetter</style>
+    <subject>{!Case.OwnerFullName} {!Case.Product} assignment:  {!Case.Subject}</subject>
+    <textOnly>Ticket (#{!Case.CaseNumber}) is assigned to {!Case.OwnerFullName}.
+
+Title: {!Case.Subject}
+
+Comment Update: {{ticket.latest_comment_formatted}}
+
+Url: {{ticket.link}}
+
+Description:
+{!Case.Description}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

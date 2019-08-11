@@ -1,0 +1,294 @@
+<apex:page standardController="zqu__Quote__c" extensions="CloneQuoteController" tabStyle="zqu__Quote__c" action="{!redirectClone}">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+    <!-- CSS -->
+    <style>
+        input[type="checkbox"] {
+            -webkit-appearance: radio; // Chrome, Safari, Opera
+            -moz-appearance: radio;    // Firefox
+            -ms-appearance: radio;     // not currently supported 
+        }
+        
+        .diff {
+            background-color: #ff9999 !important;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: fit-content;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 1em;
+        }
+        
+        #loading-modal{
+        	display: none;
+			position: fixed;
+			z-index: 20;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.4);
+        }
+
+        .loader {
+        	position: fixed;
+    		top: calc(50% - 50px);
+    		left: calc(50% - 50px);
+			border: 10px solid #f3f3f3;
+			border-top: 10px solid #74c5b2;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			animation: spin 2s linear infinite;
+		}
+
+        @keyframes spin {
+		    0% { transform: rotate(0deg); }
+		    100% { transform: rotate(360deg); }
+		}
+    </style>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+        // style checkboxes as radio buttons and prevent selecting multiple inputs
+        function handleCheckboxes(checkedInput) {
+            var inputs = document.querySelectorAll("input[type='checkbox']");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].className === "radioGroup") {
+                    inputs[i].checked = false;   
+                }
+            }
+            
+            if (checkedInput) {
+                checkedInput.checked = true;
+            }
+        }
+        
+        // define attributes observer
+        (function($) {
+            var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+        
+            $.fn.attrchange = function(callback) {
+                if (MutationObserver) {
+                    var options = {
+                        subtree: false,
+                        attributes: true
+                    };
+        
+                    var observer = new MutationObserver(function(mutations) {
+                        mutations.forEach(function(mutation) {
+                            callback.call(mutation.target, mutation.attributeName);
+                        });
+                    });
+        
+                    return this.each(function() {
+                        observer.observe(this, options);
+                    });
+                }
+            }
+        })(jQuery);
+        
+        // refresh Biling Account table
+        function refreshTable() {
+            $("tr[class*='dataRow']").attrchange(function(attrName) {
+                if (attrName === 'class') {
+                    highlightDiffs();
+                }
+            });
+        }
+        
+        // highlight differences in table
+        function highlightDiffs() {            
+            var table = document.querySelector("table[id$='billingAccountTable']");
+            
+            // find selected row & remove all diff style classes
+            var selectedRow;
+            var selectedRowIndex;
+            for (var i = 0, row; row = table.rows[i]; i++) {
+                if (row && row.className && row.className.includes("highlight")) {
+                    selectedRow = row;
+                    selectedRowIndex = i;
+                }
+                for (var j = 1, col; col = row.cells[j]; j++) {
+                    col.classList.remove("diff");       
+                }
+            }
+            
+            // iterate over cells and add diff style class to found differences
+            if (selectedRow) {
+                for (var i = 1, row; row = table.rows[i]; i++) {
+                    if (i === selectedRowIndex) {
+                        continue;
+                    }
+                    
+                    for (var j = 1, col; col = row.cells[j]; j++) {
+                        if (col.textContent !== selectedRow.cells[j].textContent) {
+                            col.className += " diff";           
+                        }
+                    }
+                }
+            }
+        }
+        
+        function showLoading() {
+    		document.getElementById('loading-modal').style.display = "block";
+        }
+
+        function hideLoading() {
+        	document.getElementById('loading-modal').style.display = "none";
+        }
+    </script>
+    
+    <apex:form >
+        <apex:pageMessages id="messages"/>
+        
+        <apex:pageBlock title="Clone Quote">
+        
+            <!-- BUTTONS -->
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!cloneQuote}" disabled="{!disableClone}" value="Clone" id="topCloneButton" rerender="messages" onClick="showLoading();"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!cloneQuote}" disabled="{!disableClone}" value="Clone" id="bottomCloneButton" rerender="messages" onClick="showLoading();"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection collapsible="false" title="Quote Properties" columns="1">
+                <apex:pageBlockSectionItem >
+                    Billing Account Associated: 
+                    <apex:outputLabel value="{!accountAssociated}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Number of Billing Accounts associated with Salesforce account: 
+                    <apex:outputLabel value="{!billingAccounts.size}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <!-- SELECTION PANEL -->
+            <apex:pageBlockSection collapsible="false" title="Select Action" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="I want to:"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:selectRadio value="{!option}" layout="pageDirection">
+                        <apex:selectOptions value="{!OPTIONS}"/>
+                        <apex:actionSupport event="onchange" onSubmit="showLoading();" onComplete="refreshTable(); hideLoading();" 
+                                            rerender="accounts, topCloneButton, bottomCloneButton"/>
+                    </apex:selectRadio> 
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <!-- OPTION 2 AND 3 - SELECT FROM RELATED BILLING ACCOUNTS -->
+            <apex:outputPanel id="accounts">
+                <apex:pageBlockSection collapsible="false" rendered="{!showBillingAccountTable}" title="Select Billing Account" columns="1">
+                    <apex:pageBlockTable value="{!billingAccounts}" var="billingAccount" width="100%" id="billingAccountTable">
+                        <apex:column width="1%">
+                            <apex:inputCheckbox value="{!billingAccount.selected}" styleClass="radioGroup">
+                                <apex:actionSupport event="onchange" onSubmit="handleCheckboxes(this);" onComplete="refreshTable();" 
+                                                    rerender="accounts, topCloneButton, bottomCloneButton"/>
+                            </apex:inputCheckbox>
+                        </apex:column>
+                        <apex:column value="{!billingAccount.account.Name}"/>
+            
+                        <apex:column >
+                            <apex:facet name="header">Bill To: <br/>Name</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Bill_To_Contact__r.Name}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Bill To: <br/>Street</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Bill_To_Contact__r.MailingStreet}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Bill To: <br/>City</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Bill_To_Contact__r.MailingCity}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Bill To: <br/>State</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Bill_To_Contact__r.MailingState}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Bill To: <br/>Country</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Bill_To_Contact__r.MailingCountry}"/>
+                        </apex:column>
+            
+                        <apex:column >
+                            <apex:facet name="header">Sold To: <br/>Name</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Sold_To_Contact__r.Name}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Sold To: <br/>Street</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Sold_To_Contact__r.MailingStreet}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Sold To: <br/>City</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Sold_To_Contact__r.MailingCity}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Sold To: <br/>State</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Sold_To_Contact__r.MailingState}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Sold To: <br/>Country</apex:facet>
+                            <apex:outputField value="{!billingAccount.account.CRM_Sold_To_Contact__r.MailingCountry}"/>
+                        </apex:column>
+                        
+                        <apex:column width="3%" value="{!billingAccount.account.Company_Code__c}"/>
+                        <apex:column width="3%" value="{!billingAccount.account.Channel__c}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+        </apex:pageBlock>
+        
+        <div id="typeModal" class="modal">
+            <script type="text/javascript">
+                var modal = document.getElementById('typeModal');
+
+                function refreshModal(showModal) {
+                    if(showModal){
+                        modal.style.display = "block";
+                    }else{
+                        modal.style.display = "none";
+                    }
+                }
+
+                refreshModal({!showQuoteSubscriptionTypeError})
+            </script>
+            
+            <div class="modal-content">
+                Only quotes with subscription type "New Subscription" can be cloned!<br/>
+                <div class="buttons">
+                    <apex:commandButton action="{!cancel}" value="Return to quote detail page" reRender="typeModal"/>
+                </div>
+            </div>
+        </div>
+        
+        <div id="loading-modal">
+            <div class="loader"></div>
+        </div>
+    </apex:form>
+</apex:page>

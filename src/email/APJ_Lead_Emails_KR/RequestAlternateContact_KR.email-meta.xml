@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ks_c_5601-1987</encodingKey>
+    <name>Customers Not Reached (Multiple Attempts): Request Alternate Contact Info-KR</name>
+    <style>none</style>
+    <subject>참가자: {!Lead.FirstName} {!Lead.LastName} – 피보탈로부터 최근 미수신 된 전화</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

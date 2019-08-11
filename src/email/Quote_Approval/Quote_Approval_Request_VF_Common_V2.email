@@ -1,0 +1,126 @@
+<messaging:emailTemplate subject="Request for an Approval: {!relatedTo.Name}" recipientType="User" relatedToType="zqu__Quote__c">
+<messaging:htmlEmailBody >
+
+<html>
+<body>
+<p class="text-left"> Quote Albertsons HQ: PRE Extension #3 requires your approval.</p>
+
+
+<p class="text-left"> Please approve/reject by replying to this email with APPROVED or REJECTED, followed by any comments on the second line. You can also approve/reject within Salesforce in the Items to Approve section of your Home tab.</p>
+
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table,td {
+  height:20px;
+}
+</style>
+</head>
+<table style="width:100%">
+
+<tr>
+      <th scope="row">Deal Amount:</th>
+      <td><apex:outputText value="{0,number,$###,###,##0}"><apex:param value="{!relatedTo.Test_TCV_USD__c}"/> </apex:outputText> USD</td>
+      <th scope="row">Payment Term:</th>
+      <td>{!relatedTo.zqu__PaymentTerm__c}</td>
+</tr>
+<tr>
+      <th scope="row">Initial Term (Months):</th>
+      <td><apex:outputText value="{0,number,###,##0}"><apex:param value="{!relatedTo.zqu__InitialTerm__c}"/>{!relatedTo.zqu__InitialTerm__c} </apex:outputText></td>
+      <th scope="row">Account Name:</th>
+      <td>{!relatedTo.zqu__Opportunity__r.Account_Name__c}</td>
+</tr>
+<tr>
+      <th scope="row">Payment Plan:</th>
+      <td>{!relatedTo.Payment_Plan__c}</td>
+      <th scope="row">Forecast Status:</th>
+      <td>{!relatedTo.zqu__Opportunity__r.ForecastCategoryName}</td>
+</tr>
+<tr>
+      <th scope="row">Pivotal Rep:</th>
+      <td>{!relatedTo.zqu__Opportunity__r.Sales_Rep__c}</td>
+      <th scope="row">Core Order Processor:</th>
+      <td>{!relatedTo.zqu__Opportunity__r.Core_Order_Processed__c}</td>
+</tr>
+<tr>
+      <th scope="row">Close Date:</th>
+      <td><apex:outputText value="{0,date,MM.dd.yyyy}"><apex:param value="{!relatedTo.zqu__Opportunity__r.CloseDate}"/>{!relatedTo.zqu__Opportunity__r.CloseDate}</apex:outputText></td>
+      <th scope="row"></th>
+      <td></td>
+</tr>
+   </table>
+   
+   <p class="font-weight-bold">Special Terms and Notes:</p>
+
+<p>Pricing Justification:</p>
+   
+   <p class="font-weight-bold">Line Items:</p>
+   
+<c:Zquote_EmailTemplate quoteRecordId="{!relatedTo.id}"  ApprovalProductType="">   
+<table style="width:100%">
+  <thead>
+ <tr>
+    <th scope="col">SKU</th> 
+    <th scope="col">Product Name</th> 
+    <th scope="col">Total Unit List Price</th>
+    <th scope="col">Qty    </th>
+    <th scope="col">UoM</th> 
+    <th scope="col">Discount%</th>
+    <th scope="col">TCV</th>
+  </tr>
+  </thead>
+  <tbody>
+   <apex:repeat var="cx" value="{!varResults}">
+   <tr>
+  <td>{!cx.SKU__c}</td>
+  <td>{!cx.Name}</td>
+  <td align="right"><apex:outputText value="{0,number,###,###,##0.00}"><apex:param value="{!cx.zqu__TotalPrice__c}"/> </apex:outputText> USD</td>
+  <td align="right"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!cx.zqu__Quantity__c}"/>{!cx.zqu__Quantity__c} </apex:outputText></td>
+  <td align="right">{!cx.zqu__UOM__c}</td>
+  <td align="right"><apex:outputText value="{0,number,#0.0}"><apex:param value="{!cx.ApproveDiscount__c}"/>{!cx.ApproveDiscount__c} </apex:outputText></td>
+  <td align="right"><apex:outputText value="{0,number,###,###,##0.00}"><apex:param value="{!cx.Custom_TCV_Formula__c}"/> </apex:outputText> USD</td>
+  
+  </tr>
+  </apex:repeat>
+  </tbody>
+</table> 
+</c:Zquote_EmailTemplate>  
+  
+  <p class="text-left">Discount Summary:</p>
+  
+  <table style="width:100%">
+  <thead>
+ <tr>
+    <th scope="col">Approval Type</th> 
+    <th scope="col">Max Discount</th> 
+    <th scope="col">Rate Plan Count</th>
+ </tr>
+ </thead>
+ 
+<tbody> 
+<apex:repeat var="qds" value="{!relatedTo.Quote_Discount_Summary__r}"> 
+<tr>
+  <td>{!qds.Approval_Type__c} </td>
+  <td> {!qds.Max_Discount__c} </td>
+  <td> {!qds.Approval_Type_Count__c } </td>
+</tr>
+</apex:repeat> 
+</tbody>
+</table>
+ 
+   
+<!--<p class="text-left">Link to Quote:<a href="https://pivotal.my.salesforce.com/{!relatedTo.Id}"> https://pivotal.my.salesforce.com/{!relatedTo.Id}</a></p> -->
+  
+<p class="text-left">Link to Quote:<a href="https://pivotal--dev.my.salesforce.com/{!relatedTo.Id}"> https://pivotal--dev.my.salesforce.com/{!relatedTo.Id}</a></p>
+  
+
+</body>
+</html>
+
+
+
+</messaging:htmlemailbody>
+</messaging:emailTemplate>

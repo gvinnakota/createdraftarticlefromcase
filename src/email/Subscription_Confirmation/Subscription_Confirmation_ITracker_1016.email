@@ -1,0 +1,73 @@
+<messaging:emailTemplate subject="Order Confirmation for {!relatedTo.zqu__Opportunity__r.Account_Name__c}" recipientType="User" relatedToType="zqu__Quote__c">
+<messaging:htmlEmailBody >
+        <html>
+            <body>
+                <STYLE type="text/css">
+                    TH {font-size: 11px; font-face: arial;background: #CCCCCC;
+                    border-width: 1;  text-align: center; padding: 0.5rem }
+                    TD  {font-size: 11px; font-face: verdana}
+                    TABLE {border: solid #CCCCCC; border-width: 1}
+                    TR {border: solid #CCCCCC; border-width: 1}
+                </STYLE>
+                <font face="arial" size="2">
+
+
+                    <apex:image id="PivotalLogo" value="https://pivotal--c.na37.content.force.com/servlet/servlet.ImageServer?id=015U0000003J2XR&oid=00DU0000000YQaz" 
+                    height="64" width="200"/>
+                    
+                  <p><b>ORDER CONFIRMATION FOR {!relatedTo.zqu__Opportunity__r.Account_Name__c}</b></p>
+                  <p/>
+                  <p><b>Pivotal Customer Number:</b>&nbsp;{!relatedTo.Pivotal_Customer_Number__c}</p>
+                  <p><b>Purchase Order Number:</b>&nbsp;{!relatedTo.PurchaseOrder__c}</p>
+                  <p><b>Sales Order #:</b>&nbsp;{!relatedTo.ChannelOrderID__c }</p>
+                  <p><b>Order Date:</b>  &nbsp; <apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText></p>
+                  <p/>
+                  <p>Dear {!relatedTo.Ship_To_First_Name__c},</p>  
+                  
+                  <p><b>Thank you for choosing Pivotal Tracker!</b></p>
+                  
+                  <p>{!relatedTo.zqu__Opportunity__r.Account_Name__c} has licensed <a href="https://www.pivotaltracker.com/">Pivotal Tracker</a> on Sales Order Number {!relatedTo.ChannelOrderID__c} on&nbsp;<apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!relatedTo.ConfOrderDate__c}"/> </apex:outputText>.</p>
+               
+                   <c:Zquote_EmailTemplate quoteRecordId="{!relatedTo.id}" ApprovalProductType="Tracker"> 
+                    <table border="1" >
+                        <tr>
+                            <th>Product</th>
+                            <th>Product Description</th>
+                            <th>Qty</th>
+                            <th>UOM</th>
+                            <th>Duration (No. of Years)</th>
+                            <th>Subscription Period</th>
+                        </tr>
+                        <apex:repeat var="cx" value="{!varResults}">
+                            <tr>
+                                <td>{!cx.zqu__Product_Name__c}</td>
+                                <td>{!cx.Name}</td>
+                                <td align="center"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!cx.zqu__Quantity__c}"/> </apex:outputText></td>
+                                <td align="right">{!cx.zqu__UOM__c}</td>
+                                <td align="center"><apex:outputText value="{0,number,###,##0}"><apex:param value="{!cx.ConfYears__c}"/> </apex:outputText></td>
+                                <td align="right"> {!cx.ConfDateRange__c}</td>
+                            </tr>
+                        </apex:repeat>                
+                    </table>
+                  </c:Zquote_EmailTemplate>    
+                    <p />
+                    <b>The <a href="mailto:tracker@pivotal.io">Pivotal Tracker support team</a> will assist in creating or updating your organization's existing Tracker account to the Enterprise plan.</b>
+                    
+                    <p>We appreciate your business and look forward to providing you with a world-class customer experience.</p>
+                    
+                    <ul>
+                        <li><a href="mailto:tracker@pivotal.io">Email us</a> with general questions </li>
+                        <li>See the <a href="http://www.pivotaltracker.com/help/">Tracker Help Center</a></li> 
+                        <li>Call the Pivotal help desk at 1-877-477-2269, and please have your Pivotal customer number ({!relatedTo.Pivotal_Customer_Number__c}) and Sales Order Number ({!relatedTo.ChannelOrderID__c }) available</li>
+                    </ul>
+
+                    
+                    <p>-The Tracker Team</p>
+                    <p/>
+                    <p/>
+                    <p/>
+                    </font>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

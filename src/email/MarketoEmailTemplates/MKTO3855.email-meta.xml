@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_Pivotal_Roadshow_Q216.Post-event - Minneapolis</name>
+    <style>none</style>
+    <subject>Thank you for spending time with us!</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Thank you for attending the Pivotal Cloud Native Roadshow in Minneapolis on June 1st, 2016. We hope our event provided you clear perspective on the process and technology of Cloud Native organizations. 
+
+ We have made our presentation slides available here:
+
+Cloud Native Apps with Spring &lt;[[http://www.slideshare.net/secret/NCQT7Jh197jK3T]]&gt;
+From Microservices to Data Microservices &lt;[[http://www.slideshare.net/secret/jCqEgIySW0bZgM]]&gt;
+How Platforms Work &lt;[[http://www.slideshare.net/secret/G4wocK3wehUbjl]]&gt;
+Cloud Native Roadshow Minneapolis &lt;[[http://www.slideshare.net/secret/tmewD8fAIHOVb3]]&gt;
+
+If you are interested in having Pivotal present cloud native content to your organization or want 
+to learn more about Pivotal, contact us &lt;[[mailto:cloudnativeroadshow@pivotal.io]]&gt; to schedule a follow up with our team. 
+
+Thank you again for 
+joining us! 
+
+The Pivotal Team 
+
+If you want to see more in depth presentations on cloud native topics and everything else to do with delivering software, please join us again at 
+SpringOne Platform &lt;[[http://springoneplatform.io/]]&gt;, August 1–4.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

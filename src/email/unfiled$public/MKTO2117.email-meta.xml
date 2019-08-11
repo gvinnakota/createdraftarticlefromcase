@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_7AM Smarter Service-to-Service Invocations with Spring Cloud.Confirm</name>
+    <style>none</style>
+    <subject>Webinar Confirmation: Smarter Service-to-Service Invocations with Spring Cloud</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Your registration is confirmed for the webinar Smarter Service-to-Service Invocations with Spring Cloud with Josh Long. We are looking forward to having you join us. 
+To help maximize your webinar experience we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html &lt;http://www.webex.com/test-meeting.html&gt;.
+Event Details:
+
+Date: Tuesday, April 21, 2015  {{my.My Token:default=Save the Date}}
+Europe: 2:00pm GMT (London, GMT)  Join the WebEx &lt;https://pivotal-io.webex.com/pivotal-io/onstage/g.php?MTID=e733af9f45063cfc7790293195f9f0bd0&gt;
+Dial In:
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show toll-free dialing restrictions
+
+Access code:  663 140 375
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

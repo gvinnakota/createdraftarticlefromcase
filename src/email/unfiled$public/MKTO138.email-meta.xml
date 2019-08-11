@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Webinar_Have you seen Spring lately? 7AM.Confirmation 1</name>
+    <style>none</style>
+    <subject>Webinar Confirmation: Have You Seen Spring Lately?</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+Your registration is confirmed for Have You Seen Spring Lately? We are looking forward to having you join us. 
+To help maximize your webinar experience we recommend that you join a test meeting before the session to check your system and browser compatibility at http://www.webex.com/test-meeting.html.
+Event Details:
+
+Date: Thursday, November 21, 2013
+Europe: 3:00pm GMT (London, GMT)  Join the WebEx &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=664612248&gt;
+Dial In:
+US TOLL FREE+1-855-749-4750
+US TOLL+1-415-655-0001
+Show all global call-in numbers
+Show toll-free dialing restrictions
+
+Access code: 664 612 248
+
+ 
+Thank you,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

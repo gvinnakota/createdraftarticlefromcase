@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>APJ_Webinar_The Greenfield Journey_Q415.Confirmation</name>
+    <style>none</style>
+    <subject>You&apos;re confirmed!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Thank you for registering for the upcoming Ensuring Cloud Native Success: The Greenfield Journey  on Thursday, December 10, 2015. Please see event details below:
+
+Date: Thursday, December 10, 2015
+Time: 10:30 AM Mumbai / 1:00 PM Singapore / 4:00 PM Sydney 
+Join the Session &lt;http://event.on24.com/wcc/r/1101252/F626EC180AF2686A58F3E9AFFD0DF82B&gt;
+Audio Information:
+This webinar will be streaming live via your computer speakers.
+{{my.Save the Date - APJ Greenfield:default=edit me}} 
+
+Did you know that Matt Stine recently published an O&apos;Reilly Microservices eBook? This report defines the unique characteristics of cloud native application architectures such as microservices and twelve-factor applications. Download it now &lt;http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=cloud-native-journey-webinar-matt-stine-ebook&gt;!
+
+We Look Forward to you Joining us!
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

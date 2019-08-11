@@ -1,0 +1,142 @@
+<apex:page id="PACManagement" controller="PACManagementController">
+    <apex:includeScript value="https://code.jquery.com/jquery-1.12.4.js"></apex:includeScript>
+    <script>
+        function uncheck(targetCheckboxId, currentCheckboxId) {
+            var currentCheckbox = document.getElementById(currentCheckboxId);
+            if (currentCheckbox.checked) {
+                var checkbox = document.getElementById(targetCheckboxId);
+                checkbox.checked = false;
+            }
+
+        }
+
+        $(document).keydown(function (e) {
+            if (e.keyCode == 13) {
+                callFilterMethod();
+                e.preventDefault();
+            }
+        });
+    </script>
+    <apex:form id="formId">
+        <apex:actionFunction name="callFilterMethod" action="{!queryQuotes}"/>
+        <apex:pageBlock title="PAC Management">
+            <apex:pageBlockButtons location="both">
+                <apex:commandButton action="{!proceed}" value="Proceed" rendered="{!quoteSelected}" reRender="formId"/>
+            </apex:pageBlockButtons>
+            <!--Quote Picker-->
+            <apex:pageBlockSection columns="1" title="Pick a Quote" rendered="{!NOT(quoteSelected)}"
+                                   collapsible="false">
+                <!--Filter-->
+
+                <apex:pageBlockSection columns="2">
+                    <apex:inputText label="Filter by Number: " value="{!filterString}"/>
+                    <apex:commandButton action="{!queryQuotes}" value="Filter" reRender="pgTable"/>
+                </apex:pageBlockSection>
+                <apex:pageBlockTable value="{!quoteOptions}" var="q" id="pgTable">
+                    <apex:column headerValue="{!"Use This Record"}">
+                        <apex:commandButton action="{!q.nextStep}" value="Next Step"/>
+                    </apex:column>
+                    <apex:column headerValue="{!"Name"}">
+                        <apex:commandLink value="{!q.record.Name}" action="/{!q.record.Id}"/>
+                    </apex:column>
+                    <apex:column value="{!q.record.zqu__Number__c}" headerValue="Quote Number"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:messages />
+            <apex:pageBlockSection columns="1" collapsible="false" rendered="{!quoteSelected}" title="Quote Details">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Quote Name"/>
+                    <apex:outputLink value="/{!quote.Id}">
+                        {!quote.Name}
+                    </apex:outputLink>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Quote Charges:
+                    <apex:pageBlockTable value="{!quoteCharges}" var="charge" title="Quote Charges">
+                        <apex:column value="{!charge.Name}"/>
+                        <apex:column value="{!charge.zqu__Quantity__c}"/>
+                        <apex:column value="{!charge.Initial_Term__c}" headerValue="Initial Term (months)"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Current PAC Codes:
+                    <apex:pageBlockTable value="{!pacs}" var="assignedPac" title="Currently assigned PACs">
+                        <apex:column value="{!assignedPac.Assigned_Product2__r.Name}"
+                                     headerValue="Assigned Product Name"/>
+                        <apex:column value="{!assignedPac.Product__c}" headerValue="Product"/>
+                        <apex:column value="{!assignedPac.Quantity__c}" headerValue="Quantity"/>
+                        <apex:column value="{!assignedPac.Duration__c}" headerValue="Duration (years)"/>
+                        <apex:column value="{!assignedPac.Key__c}" headerValue="Key"/>
+                        <apex:column value="{!assignedPac.Subscription_Period__c}"/>
+                        <apex:column value="{!assignedPac.Status__c}" headerValue="Status"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection collapsible="false" rendered="{!quoteSelected}" title="Controls" columns="1">
+                <apex:inputCheckbox id="unassignId" value="{!unassign}" label="Unassign"
+                                    title="Unassign">
+                    <apex:actionSupport reRender="manualAllocateId" event="onchange"/>
+                </apex:inputCheckbox>
+                <apex:inputCheckbox id="allocateId" value="{!allocate}" label="Allocate"
+                                    title="Allocate">
+                    <apex:actionSupport reRender="manualAllocateId" event="onchange"/>
+                </apex:inputCheckbox>
+            </apex:pageBlockSection>
+            <apex:outputPanel id="manualAllocateId">
+                <apex:pageBlockSection collapsible="false" rendered="{!allocate}" title="Allocate Manually" columns="1">
+                    <apex:inputCheckbox value="{!allocateManually}" title="Allocate Manually" label="Allocate Manually">
+                        <apex:actionSupport reRender="availablePACs" event="onchange"/>
+                    </apex:inputCheckbox>
+                    <apex:inputCheckbox value="{!markAsAssigned}" title="Mark PACs as Assigned instead of Allocated" label="Mark PACs as Assigned instead of Allocated"/>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:outputPanel id="availablePACs">
+                <apex:pageBlockSection columns="1" collapsible="false" title="Allocation Step"
+                                       rendered="{!AND(allocateManually, allocate)}">
+                    <apex:pageBlockSectionItem >
+                        <apex:pageBlockTable value="{!pacsToManuallyAllocate}" var="selectedPac" title="PACs to be allocated">
+                            <apex:column value="{!selectedPac.Assigned_Product2__r.Name}"
+                                         headerValue="Assigned Product Name"/>
+                            <apex:column value="{!selectedPac.Product__c}" headerValue="Product"/>
+                            <apex:column value="{!selectedPac.Quantity__c}" headerValue="Quantity"/>
+                            <apex:column value="{!selectedPac.Duration__c}" headerValue="Duration (years)"/>
+                            <apex:column value="{!selectedPac.Key__c}" headerValue="Key"/>
+                            <apex:column headerValue="Remove">
+                                <apex:commandButton action="{!removePacFromSelectedList}" value="Remove"
+                                                    reRender="availablePACs">
+                                    <apex:param value="{!selectedPac.Id}" assignTo="{!pacToRemove}" name="pacToRemove"/>
+                                </apex:commandButton>
+                            </apex:column>
+                        </apex:pageBlockTable>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSection collapsible="false" columns="2">
+                        <apex:pageBlockSectionItem >
+                            Search PAC by Key:
+                            <c:AutoCompleteV2 labelField="Key__c" SObject="PAC__c" valueField="Id"
+                                              targetField="{!pacToAdd.Id}" allowClear="true" syncManualEntry="false"
+                                              importJquery="true" whereClause="{!whereClause}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            Assigned Product:
+                            <apex:inputField value="{!pacToAdd.Assigned_Product2__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            Subscription Start Date:
+                            <apex:inputField value="{!pacToAdd.Subscription_Period_Start_Date__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            Subscription End Date:
+                            <apex:inputField value="{!pacToAdd.Subscription_Period_End_Date__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem />
+                        <apex:pageBlockSectionItem >
+                            <p/>
+                            <apex:commandButton action="{!addPacToSelectedList}" value="Add Selected PAC"
+                                                reRender="availablePACs"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

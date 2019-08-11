@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.Amsterdam_Venue</name>
+    <style>none</style>
+    <subject>SpringOne Tour Amsterdam: Venue Update</subject>
+    <textOnly>Hello {{lead.First Name:default=there}}, 
+ 
+Thank you for registering for SpringOne Tour Amsterdam. Please note that the venue has been confirmed, and the event will be taking place in B. Amsterdam. You can find the address, along with the agenda, on the SpringOne Tour Amsterdam page &lt;[[https://springonetour.io/2019/amsterdam?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=global-event-springone-tour-amsterdam]]&gt;. 
+ 
+We look forward to seeing you at the event!
+Thanks, 
+Tasha Isenberg
+tisenberg@pivotal.io &lt;[[mailto: tisenberg@pivotal.io]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

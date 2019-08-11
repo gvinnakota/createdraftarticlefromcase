@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><a href="http://run.pivotal.io/"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services" /></a></p></div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="color: #666666; font-size: 15px; line-height: 1.5em; text-align: left; margin: 0; font-family: Helvetica,sans-serif;">We enjoyed seeing some of you in person at last month&rsquo;s  <a style="color: #059a91; text-decoration: none;" href="https://www.cloudfoundry.org/community/summits/program/about/?summitId=10016">Cloud Foundry  Summit</a>.
+                    One of the popular talks at summit was the introduction of &ldquo;Route Services&rdquo; to Cloud Foundry, which are now available on PWS.
+                   Route services are a new way to add functionality to your application&rsquo;s route, such as rate limiting and analytics.
+                   If you missed CF Summit, there is another opportunity to learn more at <a style="color: #059a91; text-decoration: none;" href="http://springoneplatform.io/">SpringOne Platform</a>, taking place August 1 - 4 in Las Vegas.
+                   Join us and hear from experts like former Netflix cloud architect and current technology fellow at Battery Ventures, Adrian Cockcroft, to learn about the future of Cloud Native platforms.
+                   You can register <span style="color: #059a91;"><a style="color: #059a91; text-decoration: none;" href="https://2016.event.springoneplatform.io/register">here</a></span>&nbsp;<span>and use the code "pivotal_pws_300" to save $300 off your registration.</span><br /><br /> In this month&rsquo;s issue, we will cover how to store your logs using Logsene, a logging service provider   
+that now supports integration with Cloud Foundry.
+          <br /> We will also discuss some of the recent buildpack changes announced in our June blog.
+                     <br /><br /> Thanks for reading and let us know what you think by tweeting us @pivotalws or contacting us with any questions at <a style="color: #059a91; text-decoration: none;" href="mailto:support@run.pivotal.io">support@run.pivotal.io</a>.
+                    <br /><br /> Best Regards,  <br /><br /> The Pivotal Web Services Team <br /><br /> <strong>Introduction to Route Services on PWS</strong> <br /><br /> We are happy to announce the availability of route services on PWS.
+                   Route services are a new class of service that can be dynamically inserted in front of applications to perform a wide variety of functions.
+                   Examples include authentication, rate-limiting, request/response transformation and analytics.
+                   Cloud Foundry route services enable developers to:</p>
+<ol>
+<li><span style="font-family: helvetica; font-size: 14px;">Reduce complexity in code bases by extracting common requirements into services that can be shared and reused </span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Offload operational overhead for these services to a service provider </span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Manage use of these services with a few simple CLI commands </span></li>
+</ol>
+<p><span style="font-family: helvetica; font-size: 14px;">By binding an instance of a route service to an application route, PWS will automatically proxy requests for the route to the service instance instead of forwarding the request to your app.
+                   After processing, the route service may forward requests to your application or reject the request before it reaches your application.
+                   For example, a service may collect analytics about your traffic, or add HTTP headers before forwarding the request to your application.
+                   Alternatively, a route service may reject unauthenticated/unauthorized requests, reject requests when a rate-limiting threshold is reached, or serve cached content.
+ </span><br /><br /><span style="font-family: helvetica; font-size: 14px;"> If the route service does forward the request to your application, your application response returns back through the route service, enabling additional opportunity for transformation, processing, and analytics.
+ </span><br /><br /><span style="font-family: helvetica; font-size: 14px;"> Current limitations of route services:</span></p>
+<ul>
+<li><span style="font-family: helvetica; font-size: 14px;">A route can only be bound to one service instance at a time.
+ </span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Binding of route services is supported through the CLI only (Apps Manager support is coming soon!)</span></li>
+</ul>
+<p><span style="font-family: helvetica; font-size: 14px;"> We are currently working with potential partners to offer these kind of services to our customers in the PWS marketplace.
+                   Until then, you can add your own! Integration involves honoring a few headers passed in requests proxied to the route service, and can be easily tested using a User-Provided Service.
+                   For a more dynamic user experience, implement a private service broker and expose your service in your private Marketplace! </span><br /><br /><span style="font-family: helvetica; font-size: 14px;"> For more information...</span></p>
+<ul>
+<li><span style="font-family: helvetica; font-size: 14px;"><a style="color: #059a91; text-decoration: none;" href="http://docs.pivotal.io/pivotalcf/services/route-services.html">Learn how to integrate your own Route Service</a>&nbsp;</span></li>
+<li><span style="font-family: helvetica; font-size: 14px;"><a style="color: #059a91; text-decoration: none;" href="http://docs.pivotal.io/pivotalcf/devguide/services/user-provided.html#route-service">Learn how to create a User-Provided Service Instance for a Route Service and bind it to your application route</a>&nbsp;</span></li>
+<li><span style="font-family: helvetica; font-size: 14px;"><a style="color: #059a91; text-decoration: none;" href="http://docs.pivotal.io/pivotalcf/devguide/deploy-apps/routes-domains.html">Learn about Routes and Domains</a>&nbsp;</span></li>
+</ul>
+<p><strong><span style="font-family: helvetica; font-size: 14px;">Draining Logs using Sematext&rsquo;s Logsene </span></strong><br /><br /><span style="font-family: helvetica; font-size: 14px;"><a style="color: #059a91; text-decoration: none;" href="https://sematext.com/logsene/"> Logsene</a> is an Elasticsearch Logstash Kibana (ELK) offering for storing logs from Sematext.
+                   They recently added support for Cloud Foundry, which includes PWS, demonstrating the growing ecosystem of integrations that Cloud Foundry is fostering.
+                   Sematext offers both hosted and on-premise options.
+                   Below are the instructions on how to integrate with Sematext&rsquo;s hosted offering.</span></p>
+<ol>
+<li><span style="font-family: helvetica; font-size: 14px;"><a style="color: #059a91; text-decoration: none;" href="https://apps.sematext.com/users-web/register.do?smtuc=1&amp;src=pivotal-pws-logsene">Create</a> a Logsene Account.
+ </span></li>
+<li><span style="font-family: helvetica; font-size: 14px;"><a style="color: #059a91; text-decoration: none;" href="https://apps.sematext.com/users-web/register.do?r&amp;null">Register</a> your application and obtain a token.
+ </span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Create the log drain service using the cf CLI and include the token from step 2.
+                   <span style="font-family: 'courier new', courier;">cf cups my-logs -l</span> <br /><a style="color: #059a91; text-decoration: none;" href="https://logsene-cf-receiver.sematext.com/LOGSENE_TOKEN">https://logsene-cf-receiver.sematext.com/LOGSENE_TOKEN </a></span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Bind an app to the service via the CLI <br /><span style="font-family: 'courier new', courier;">cf bind-service APPLICATION-NAME my-logs </span></span></li>
+<li><span style="font-family: helvetica; font-size: 14px;">Restart your application to become aware of the new log drain using the CLI&nbsp;<br /><span style="font-family: 'courier new', courier;">cf restage APPLICATION-NAME</span></span></li>
+</ol>
+<p><span style="font-family: helvetica; font-size: 14px;">You should now be able to visit the Logsene console and search through your application logs.
+                   We are excited to have another option for log management on PWS.
+ </span><br /><br /><strong><span style="font-family: helvetica; font-size: 14px;"> Recent Changes to the PWS Buildpacks Announced on the PWS Blog </span></strong><br /><br /><span style="font-family: helvetica; font-size: 14px;"> The buildpack teams are continually upgrading and making changes to the buildpack to ensure they are up to date with the latest features and security patches.
+                   To ensure you are notified of any upcoming changes, be sure to subscribe to the <a style="color: #059a91; text-decoration: none;" href="http://blog.run.pivotal.io/">PWS blog</a>.
+                   Some recent changes include making Nginx 1.11.1 the default server in the PHP buildpack and making 2.3.x the default version of Ruby in the Ruby buildpack.
+    <br /><br /> That's a wrap for this month.
+    Remember to check out the videos from the Cloud Foundry Summit talks on our <a style="color: #059a91; text-decoration: none;" href="https://www.youtube.com/playlist?list=PLhuMOCWn4P9gGrKEtCBKYpEl5BXGBCsQZ">YouTube Channel</a> and keep pushing apps.</span></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- Start of social links -->
+<table width="600" cellpadding="30" cellspacing="20" border="0" class="full-block" style="border-collapse:collapse;text-align:center;background:white;border-top:1px solid #f7f7f7">
+<tr>
+<td style='display: inline-block;'><a href="https://twitter.com/pivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-twitter.png" alt="Follow us on Twitter" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-linkedin.png" alt="Join the conversation on LinkedIn" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-fb.png" alt="Like us on Facebook" border="0"></a></td>
+<td style='display: inline-block;'><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-gplus.png" alt="Add us on Google+" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="https://d1fto35gcfffzn.cloudfront.net/newsletter/icon-youtube.png" alt="Visit our YouTube channel" border="0"></a></td>
+<td style='display: inline-block;'><a href="http://www.instagram.com/pivotalsoftware" target="_blank"><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/icon-instagram.png" alt="Follow us on Instagram" border="0"></a></td>
+</tr>
+<!-- End of social links // --></table>
+<table width="600" cellpadding="0" bgcolor="white" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;text-align:center;border-top:1px solid #f7f7f7">
+<tr>
+<td align="center" valign="top"><!-- Start of footer -->
+<table cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="color:#666666; font-size:13px; line-height:18px;">
+<p style='margin:0'>&nbsp;</p>
+<p style="color:#059a91; text-decoration:none; font-size:16px;font-weight:600;margin:0"><a href="http://pivotal.io" style="color:#059a91; text-decoration:none;">pivotal.io</a></p>
+<p style='margin:0'>&nbsp;</p>
+<p style='margin:0; font-family: Helvetica,sans-serif;color:#999999; font-size:12px;'>Pivotal's Cloud Native platform drives software innovation for many of the world’s most admired brands. With millions of developers in communities around the world, Pivotal technology touches billions of users every day. After shaping the software development culture of Silicon Valley's most valuable companies for over a decade, today Pivotal leads a global technology movement transforming how the world builds software. More at <a href="http://pivotal.io" target="_blank" style="color:#059a91; text-decoration:none;">pivotal.io.</a></p>
+</td>
+<td width="30"></td>
+</tr>
+<tr>
+<td width="30"></td>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners. &copy; 2016 Pivotal Software, Inc. 3495 Deer Creek Road, Palo Alto, CA 94304. All rights reserved. Published in the USA.<br>
+<a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#059a91; text-decoration:none;font-weight:600">Unsubscribe</a></td>
+<td width="30"></td>
+</tr>
+</table>
+<!-- End of footer // --></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

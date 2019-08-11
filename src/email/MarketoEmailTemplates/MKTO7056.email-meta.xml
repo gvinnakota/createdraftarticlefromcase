@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.STL Reminder Email</name>
+    <style>none</style>
+    <subject>See you tomorrow at SpringOne Tour St. Louis!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+We look forward to seeing you at SpringOne Tour St. Louis tomorrow. Please review the event details here &lt;[[https://springonetour.io/2019/st-louis]]&gt; and feel free to email the team at springonetour@pivotal.io &lt;[[mailto:springonetour@pivotal.io]]&gt; with any questions.
+
+
+Location:
+Eric P. Newman Education Center
+320 S Euclid Ave, St. Louis, MO 63110
+
+
+
+Directions:
+Parking: If you are driving, the 2 closest garages are the Euclid 
+Garage and the Metro Parking Garage (map &lt;[[https://drive.google.com/file/d/11HxBL-TeFmL2WeapzPF8SQ1sHcgxXGWj/view?usp=sharing]]&gt;). Both garages have a daily rate of $15. The Metro Parking Garage is located at the corner of Taylor Avenue. Please utilize levels 6-7 of the garage, go to level 3 to enter into the pedestrian walkway. Press handicap button to open the door. Turn left into the walkway. Make the first right (past Kaldi’s Coffee). Walk a short distance, and you will enter EPNEC at the 2nd level.
+
+Public Transport: The closest bus station to the venue is Central West End/Metro Garage Bus Station. The closest train station is the Central West End stop. More information on Metro Transit Centers can be found here &lt;[[https://drive.google.com/file/d/0B5Z_2cBSiBMOaHp3VUIyd0h2T0lESndrTmJGWWpxdE5Bd1A4/view?usp=sharing]]&gt;. 
+
+Thanks,
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

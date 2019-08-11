@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne Tour_PARENT_2019.London Reminder Email</name>
+    <style>none</style>
+    <subject>See you next week at SpringOne Tour London!</subject>
+    <textOnly>Hi {{lead.First Name:default=}},
+
+We look forward to seeing you at SpringOne Tour London on Monday. Please review the event details here &lt;[[https://springonetour.io/2019/london]]&gt; and feel free to email the team at springonetour@pivotal.io &lt;[[mailto:springonetour@pivotal.io]]&gt; with any questions.
+
+
+Location:
+CodeNode
+10 South Pl
+London EC2M 7EB
+
+
+
+Getting There:
+Underground:
+The nearest London underground stations are Moorgate and Liverpool Street, both approximately a five-minute walk from CodeNode. Journeyplanner or Citymapper are great resources should you need further help planning your journey.
+Train:
+
+The nearest national rail stations are Liverpool Street and King&apos;s Cross. Kings Cross is just a ten-minute underground journey away. 
+
+Car/Parking:
+The venue is located in Congestion Charge Zone meaning charges for nonresidents may apply. More info here &lt;[[https://tfl.gov.uk/modes/driving/congestion-charge/congestion-charge-zone]]&gt;. 
+
+There are several NCP car parks nearby:
+● NCP Finsbury Square, London, EC2A 1AD 
+● NCP Whitechapel High Street, London, E1 7RA 
+
+Bike:
+If you’re arriving or departing using a Santander Cycles Hire bike &lt;[[https://tfl.gov.uk/modes/cycling/santander-cycles]]&gt;, there’s a docking 
+station on South Place.
+
+
+
+
+Thanks,
+
+Tasha Isenberg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

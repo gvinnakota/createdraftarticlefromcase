@@ -1,0 +1,122 @@
+.THIS.slds-grid.mainDiv.slds-container--fluid{
+   position:relative;
+   background-color: #243641;
+   padding: 0 20px;
+}
+.THIS .slds-grid.mainDiv{    
+    margin:auto;
+    background-color:#243641;
+}
+
+.THIS .slds-grid, .THIS .slds-col, .THIS .slds-col a,
+.THIS [class*=slds-col_padded], .THIS [class*=slds-col--padded]{
+    color:#F8F8F8;
+    background-color:#243641; 
+    font-size: 1.0rem;
+    font-family: Source Sans Pro;
+    text-decoration:none;
+    padding-top: 1rem;
+    padding-right:1.7rem;
+    
+}
+.THIS .slds-col.right{
+    text-align :right;
+    padding-right:0.5em;
+}
+.THIS .menuitem {
+    font-family: Source Sans Pro;
+    /*background-color:#686868!important;*/
+    padding-left : 15px;
+    font-weight:Italic;
+    color: white;
+    text-decoration:none;
+}
+.THIS .menuitem:hover {
+    color:#00AE9E;;
+    text-decoration:none;
+    /*background-color:#686868!important;*/
+    padding-left : 15px;
+}
+.THIS .menuitem:active {
+    /*background-color:#686868!important;*/
+    text-decoration:none;
+}
+
+
+.THIS .slds-col .right.a{
+    text-decoration:none;
+}
+.THIS .logo{
+    width: 100%;
+    max-width: 300px;
+    height: 49px;
+    padding-top: .5rem;
+}
+
+.THIS .super-nav{
+    float: right;
+    text-align: right;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+	margin-bottom: .5rem;
+}
+
+.THIS .super-nav-links {
+    padding: .5rem 1rem .5rem 0;
+	width: 100%;    
+}
+
+.THIS .super-nav a{
+    margin: 0 19px 10px 0;
+    color:white;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.THIS .super-nav a:hover {
+    color: #00ae9e;
+    text-decoration: none;
+}
+
+.THIS .super-nav #supportlink {
+    color: #2574a9;
+    font-weight: bold;
+}
+
+.THIS .super-nav #supportlink:hover {
+    color:white;
+}
+
+.THIS .logo_text{
+    text-decoration:none;
+    color:white;
+    font-size: 1.0rem;
+    font-family: Source Sans Pro;
+    padding-top:1em;
+}
+
+@media (max-width: 767px) {
+    .cMenubar {
+        flex-flow: row wrap;
+    }
+    .THIS .cTopLeftCon {
+        display: none;
+    }
+}
+
+@media (max-width: 539px) {
+    .cMenubar .slds-col a {
+        padding-right: 0px;  
+    }
+    .cMenubar .slds-col {
+        padding-top: .5em;
+    }
+    .THIS .super-nav {
+        display:none;
+    }
+    .cMenubar .logo {
+      max-width: 150px;
+      height: 25px;
+	}
+}

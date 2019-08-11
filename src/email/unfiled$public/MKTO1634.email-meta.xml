@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Mobile First World_Q414.Reminder</name>
+    <style>none</style>
+    <subject>Reminder: It’s a Mobile First World: Faster Mobile Apps with Pivotal and VMware 12/3</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+A friendly reminder of your registration for our upcoming webinar &quot;It’s a Mobile First World: Faster Mobile Apps with Pivotal and VMware &quot; on Wednesday, December 3, 2014 at 10:00 AM PST. Please see the event details below:
+
+Date: Wednesday, December 3, 2014
+Time: 10:00AM PST (San Francisco)
+Event Number: 668 800 780
+Join the Webex &lt;https://pivotal-io.webex.com/pivotal-io/onstage/g.php?d=668800780&amp;t=a&gt;
+ Teleconferencing Information:
+This webinar will be streaming live, however dial-in options are available:
+
+
+
+ - US TOLL FREE: 1-855-749-4750
+ - Global call-in numbers &lt;https://pivotal-io.webex.com/pivotal-io/globalcallin.php?serviceType=EC&amp;ED=33226853&amp;tollFree=1&gt; 
+ - Toll-free dialing restrictions &lt;http://www.webex.com/pdf/tollfree_restrictions.pdf&gt; 
+ - Access code: 668 800 780
+
+
+
+{{my.Save the Date:default=edit me}}
+ 
+We look forward to you joining us,
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

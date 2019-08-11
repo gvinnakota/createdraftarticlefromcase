@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Phone --></label>
+        <name>Account_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Partnerships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- In the event that the Partnership is perpetual, an arbitrary date will be selected. i.e. 01/01/2999 --></help>
+        <label><!-- Agreement Expiry --></label>
+        <name>Agreement_Expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Start --></label>
+        <name>Agreement_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Analytics/Dashboard/BI</masterLabel>
+            <translation><!-- Analytics/Dashboard/BI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Monitoring</masterLabel>
+            <translation><!-- Application Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Data</masterLabel>
+            <translation><!-- Big Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Block Storage</masterLabel>
+            <translation><!-- Block Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Monitoring</masterLabel>
+            <translation><!-- Cloud Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cloud Test/Load</masterLabel>
+            <translation><!-- Cloud Test/Load --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code Mgmt/Release</masterLabel>
+            <translation><!-- Code Mgmt/Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation><!-- Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNS, CDN</masterLabel>
+            <translation><!-- DNS, CDN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Warehouse</masterLabel>
+            <translation><!-- Data Warehouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database - NoSQL</masterLabel>
+            <translation><!-- Database - NoSQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Database - SQL</masterLabel>
+            <translation><!-- Database - SQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identity Management</masterLabel>
+            <translation><!-- Identity Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infrastructure, IaaS</masterLabel>
+            <translation><!-- Infrastructure, IaaS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language Platform</masterLabel>
+            <translation><!-- Language Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Load Balancing/Caching</masterLabel>
+            <translation><!-- Load Balancing/Caching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logging</masterLabel>
+            <translation><!-- Logging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Messaging/AMQP</masterLabel>
+            <translation><!-- Messaging/AMQP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middleware</masterLabel>
+            <translation><!-- Middleware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Platform</masterLabel>
+            <translation><!-- Mobile Platform --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OTHER</masterLabel>
+            <translation><!-- OTHER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Storage</masterLabel>
+            <translation><!-- Object Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orchestration</masterLabel>
+            <translation><!-- Orchestration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search</masterLabel>
+            <translation><!-- Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test/QA/Load Testing</masterLabel>
+            <translation><!-- Test/QA/Load Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice/SMS</masterLabel>
+            <translation><!-- Voice/SMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Additional information about the Partnership --></help>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Market Traction --></label>
+        <name>Partner_Market_Traction__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid</masterLabel>
+            <translation><!-- Mid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partnership Account Owner --></label>
+        <name>Partnership_Account_Owner__c</name>
+        <relationshipLabel><!-- Partnerships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select more than one if applicable. --></help>
+        <label><!-- Partnership Competency --></label>
+        <name>Partnership_Competency__c</name>
+        <picklistValues>
+            <masterLabel>App</masterLabel>
+            <translation><!-- App --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data &amp; Analytics</masterLabel>
+            <translation><!-- Data &amp; Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PaaS</masterLabel>
+            <translation><!-- PaaS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partnership Name --></label>
+        <name>Partnership_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pivotal Priority --></label>
+        <name>Pivotal_Priority__c</name>
+        <picklistValues>
+            <masterLabel>0 - Not Priority</masterLabel>
+            <translation><!-- 0 - Not Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 - Low</masterLabel>
+            <translation><!-- 1 - Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Med Low</masterLabel>
+            <translation><!-- 2 - Med Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Medium</masterLabel>
+            <translation><!-- 3 - Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Med High</masterLabel>
+            <translation><!-- 4 - Med High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - High</masterLabel>
+            <translation><!-- 5 - High --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Partnerships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Program --></label>
+        <name>Program__c</name>
+        <relationshipLabel><!-- Partnerships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Potential</masterLabel>
+            <translation><!-- No Potential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Support Entitlement End Date --></label>
+        <name>Support_Entitlement_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Entitlement --></label>
+        <name>Support_Entitlement__c</name>
+        <picklistValues>
+            <masterLabel>Developer Support</masterLabel>
+            <translation><!-- Developer Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier Support</masterLabel>
+            <translation><!-- Premier Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tech Interoperability Status --></label>
+        <name>Tech_Interoperability_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Going</masterLabel>
+            <translation><!-- On Going --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Review</masterLabel>
+            <translation><!-- Under Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work Begun</masterLabel>
+            <translation><!-- Work Begun --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tier --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>Advanced</masterLabel>
+            <translation><!-- Advanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premier</masterLabel>
+            <translation><!-- Premier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Partnership</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partnerships</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Partnership Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

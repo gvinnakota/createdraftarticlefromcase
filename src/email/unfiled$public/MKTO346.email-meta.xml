@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.Newsletter February 2014 NORAM</name>
+    <style>none</style>
+    <subject>Spring News: Spring Integration 3.0.0 GA release</subject>
+    <textOnly>FEBRUARY 2014
+&lt;http://spring.io/blog/2013/11/27/spring-integration-3-0-release-candidate-1-is-now-available&gt;
+Spring Integration 3.0.0 GA release
+With all the Spring Framework 4.0 release excitement, you may have missed the Spring Integration 3.0.0 release in December 2013 (the 3.0.1 maintenance release is now available). The 3.0.x release uses Spring Framework 3.2.x by default but is also compatible with Spring 3.1.x and 4.0.x, and has a ton of new features for you to enjoy: new and updated endpoints, inbound adapters, Redis support and much more. Click the graphic above to get the release details, or click the learn more button to go directly to the project page.
+Learn More &lt;http://projects.spring.io/spring-integration/&gt;
+Deploying Spring Boot Applications
+When you use the default (Maven project) Spring Boot application generated from inside of the Spring Tool Suite wizard or from the Spring Initializr &lt;http://start.spring.io/&gt;, Spring Boot will - by default - build a .jar file 
+which you can run like any other executable .jar: java -jar target/your-boot-app.jar. If you&apos;re using Spring Boot&apos;s web application support then Spring Boot will, by default, start up an embedded Tomcat 7 instance. You can, by simply using Maven dependencyManagement configuration (or the equivalent), bump those dependencies up to Tomcat 8 or remove Tomcat all together and 
+simply import the spring-boot-starter-jetty dependency. In this scenario, you&apos;ll get embedded Jetty, instead.
+
+But, I imagine you wondering, &quot;how do I deploy it to an existing Tomcat, or even to more classic application servers like JBoss?&quot; Easy! It&apos;s still just Spring, after all. Comment out the declaration of the spring-boot-maven-plugin plugin in your Maven pom.xml file, then change the packaging type to war. Then, you need only have your entry point class (Application.java in the a default, generated project) extend SpringBootServletInitializer and override the configure method, like this:
+
+``` // ...
+
+@ComponentScan @EnableAutoConfiguration public class Application extends SpringBootServletInitializer {
+
+private static final Class APPLICATION_CLASS = Application.class;
+
+public static void main(String[] args) { SpringApplication.run(APPLICATION_CLASS, args); }
+
+@Override protected SpringApplicationBuilder configure(SpringApplicationBuilder application) { return application.sources(APPLICATION_CLASS); } }
+
+`` Not bad! You can run the application from your public static void mainentry-point and use the embedded, lightweight web server, or deploy it to an application server as a proper.war. Even better, Spring Boot benefits from Spring&apos;s vaunted portability. You can take a regular Spring Boot.jaror.war` archive and deploy it to more exotic destinations like a Platform-as-a-Service cloud &lt;http://cloudfoundry.com/&gt;, and it just works!
+Spring-specific validations in Spring Tool Suite (STS)
+The Spring Tool Suite can run a huge number of validations on your Spring projects - to highlight possible bugs or to tell you about potential misuses of Spring. They run as part of the project build and can be configured via the preferences:
+Spring Data Repositories – Best Practices
+Speakers: Oliver Gierke and Thomas Darimont
+
+The repository abstraction layer is one of the core pieces of the Spring Data projects. It provides a consistent, interface-based programming model to allow implementing data access layers easily for relational and NoSQL databases.
+
+We will have a look at the lessons learned from the application of it in various customer projects and summarize best practices for you to apply in your projects. The session will also discuss advanced features like the Querydsl integration, the integration of custom implementation code as well as hooks into Spring MVC and Spring HATEOAS.
+Europe
+
+Tuesday, February 18
+ 3:00pm GMT Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringDataRepositories7AM_Register.html&gt;
+North America
+
+Tuesday, February 18
+ 10:00am PST
+ (San Francisco, GMT-08:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringDataRepositories10AM_Register.html&gt;
+Spring LDAP 2.0
+Speaker: Mattias Arthusson
+
+The recently released 2.0 version has given the Spring LDAP project a significant facelift. With new features like Spring Data Repository and QueryDSL support, a fluent LDAP query builder, and XML namespace configuration, LDAP administration applications can now be built more efficiently than ever.
+
+This webinar will provide an overview of the goals and scope of Spring LDAP and demonstrate all the improvements in version 2.0, giving you plenty of hands-on tips along the way on how to make maximum use of the library.
+
+More Upcoming Events:
+
+Spring by Pivotal Webinar: Spring Framework 4 on Java 8 with Juergen Hoeller
+
+Click here &lt;http://play.gopivotal.com/OSS_Webinar_SpringFramework4onJava87AM_Register.html&gt; to register for Europe
+Click here &lt;http://play.gopivotal.com/OSS_Webinar_SpringFramework4onJava810AM_Register.html&gt; to register for North America
+Europe
+Tuesday, March 18
+2:00pm GMT Time
+ (London, GMT)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringLDAP207AM_Register.html&gt;
+North America
+
+Tuesday, March 18
+ 10:00am PDT
+ (San Francisco, GMT-07:00)
+Register &lt;http://play.gopivotal.com/OSS_Webinar_SpringLDAP2010AM_Register.html&gt;
+Webinar Replay: Introduction to Spring Framework 4.0  &lt;http://spring.io/blog/2014/01/23/webinar-replay-introduction-to-spring-framework-4-0&gt;
+Archived videos
+SpringOne2GX 2013 replay: JSR-352, Spring Batch and You &lt;http://spring.io/blog/2014/02/03/jsr-352-spring-batch-and-you&gt;
+ SpringOne2GX 2013 replay: Real life use of Spring Integration with RabbitMQ &lt;http://spring.io/blog/2014/02/03/real-life-use-of-spring-integration-with-rabbitmq&gt;
+ SpringOne2GX 2013 replay: Intro to WebSocket Applications with Spring Framework 4.0
+ Webinar Replay: Spring Security 
+3.2
+ SpringOne2GX 2013 replay: Spring Testing &lt;http://spring.io/blog/2014/01/21/springone2gx-2013-replay-spring-testing&gt; 
+ Build a robust REST-ful Web Service in less than 6 minutes 
+
+
+Build a Hello World REST service in less than 6 minutes &lt;http://spring.io/blog/2013/12/10/build-a-hello-world-rest-service-in-less-than-6-minutes&gt;
+
+Featured Guide:
+
+ &lt;http://spring.io/blog/2014/01/14/webinar-replay-spring-with-immutability&gt;
+
+Integrating Data &lt;http://spring.io/guides/gs/integration/&gt;
+
+Whatever you&apos;re building - these 15-30 minute guides are designed to get you productive as quickly as possible, using the latest Spring project releases and techniques as recommended by the Spring team. http://spring.io/guides &lt;http://spring.io/guides&gt;.  
+
+If you want to make contributions to an existing guide, there is a set of guidelines &lt;https://github.com/spring-guides/draft-gs-template/wiki&gt; you can read. They include instructions on installing Asciidoctor as well as rendering the content to check out your edits. Just sign our contributor&apos;s agreement &lt;https://support.springsource.com/spring_committer_signup&gt; and submit a pull request.
+Spring Framework 4.0.1 &amp; 3.2.7 &amp; 3.1.x retired 
+
+ Spring Data Release Train Codd 
+RC1
+ Spring Boot 1.0.0.RC1 &lt;http://spring.io/blog/2014/01/22/spring-boot-1-0-0-rc1-released&gt;
+ Spring Web Flow 2.3.3 &lt;http://spring.io/blog/2014/01/27/spring-web-flow-2-3-3-released&gt;
+ Spring Data Redis 1.1.1 &lt;http://spring.io/blog/2014/01/28/spring-data-redis-1-1-1-released&gt;
+Migrating from Spring Framework 3.2 to 4.0.1 &lt;http://spring.io/blog/2014/01/30/migrating-from-spring-framework-3-2-to-4-0-1&gt;
+ Have you seen Spring lately? With Josh Long  &lt;http://www.slideshare.net/joshlong/have-you-seen-spring-lately&gt;
+ Pivotal Homebrew-Tap &lt;https://github.com/pivotal/homebrew-tap&gt;
+ Hadoop and Spring Data Hadoop by Kailash Kutti &lt;https://speakerdeck.com/michaelisvy/hadoop-and-spring-data-hadoop-by-kailash-kutti&gt;
+
+Create or Contribute to a Getting Started Guide by 
+Greg Turnquist
+ Time Series Analysis #1: Introduction to Window Functions &lt;http://blog.gopivotal.com/products/time-series-analysis-1-introduction-to-window-functions&gt;
+ Adding Years to your RDBMS by Scaling with Spring and NoSQL &lt;http://blog.gopivotal.com/products/adding-years-to-your-rdbms-by-scaling-with-spring-and-nosql&gt;
+ Exploiting encrypted cookies for fun and 
+profit
+
+Correctly use PagedResourcesAssembler from Spring 
+Data
+ Breaking the Benchmark: Moving from 20K to 1 Million Complex Events Processed Per Second &lt;http://blog.gopivotal.com/case-studies-2/breaking-the-benchmark-moving-from-20k-to-1-million-complex-events-processed-per-second&gt;
+ 3 Steps to Help Migrate Spring Apps to Real Time Data Grids &lt;http://blog.gopivotal.com/products/3-steps-to-help-migrate-spring-apps-to-real-time-data-grids&gt;
+ Case Study: Scaling Reservations for the World’s Largest Train System &lt;http://blog.gopivotal.com/case-studies-2/china-railway-corp-for-chinese-new-year-chunyun&gt;
+
+Using Consumer Priorities with RabbitMQ &lt;http://www.rabbitmq.com/blog/2014/01/23/preventing-unbounded-buffers-with-rabbitmq/&gt;
+&lt;http://www.gopivotal.com/training#spring&gt;
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+
+Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+
+Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+
+Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+
+Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=41320&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

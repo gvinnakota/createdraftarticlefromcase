@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SpringOne 2GX 2015.SpringOne 2GX InfoQ 9-14-15</name>
+    <style>none</style>
+    <subject>SpringOne 2GX 2015: Session Video Recordings -- Early Access for You!</subject>
+    <textOnly>Hello {{lead.First Name:default=There}},
+We are filming all tracks and publishing almost all of them, save for a few in the “Groovy and Grails Special Topics” track. Recordings are available for attendees only. Videos will start to become available Wednesday Sept 16th.
+
+Now you can choose what session to go to and see any you missed! Here are the steps to follow to be able to watch the SpringOne 2GX 2015 videos:
+
+
+	- Log in to your www.InfoQ.com &lt;http://www.infoq.com&gt; account. If you don’t have an InfoQ.com account, please register for one and log in.
+	- Then go to the SpringOne 2GX 2015 conference page on InfoQ: http://www.infoq.com/conferences/springone2gx2015 &lt;http://www.infoq.com/conferences/springone2gx2015&gt;
+	- Hover over the video of interest to see if it&apos;s &apos;Published&apos; or &apos;Not published&apos; and, if the video is available click on it and then enter your unique access code: {{lead.InfoQVideoCode:default=edit me}}
+
+
+
+You need to enter the code once (they are single use codes) and then you can view all available presentations. You just have to be logged in to your InfoQ account.
+
+If you receive multiple IDs it means you registered multiple individuals from your company using the same email address. Please make sure you distribute these unique IDs individually to the colleagues you registered. Each attendee email or unique ID will unlock SpringOne 2GX video early-access for your InfoQ account, just once.
+
+Videos will also become freely available, 3-4/week, for non-SpringOne 2GX attendees over the next 6 months, but as attendees you get instant access now. If you have any problems authenticating for the videos please contact conference-attendees@infoq.com &lt;conference-attendees@infoq.com&gt;. We hope you enjoy this offering and look forward to your feedback.
+
+Sincerely,</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>PWS_Email_Nurture Campaign FY15.Email 2 - March</name>
+    <style>none</style>
+    <subject>Push With Success Newsletter - March 2015</subject>
+    <textOnly>Spring is here, and in this issue of Push With Success we’re sharing some of our best Java Buildpack tips for 
+Spring. Spring &lt;http://www.spring.io&gt;, a popular open source Java application framework largely credited with replacing Java EE circa 2004, today is extremely focused on highly distributed computing architectures like PaaS and Microservices. After exploring Spring, we’ll close with a focus on our new marketplace partner, Statica.
+
+We hope you enjoy this month’s issue. Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter @pivotalws &lt;https://twitter.com/pivotalws&gt;.
+ 
+Deploying Spring Apps and Microservices on Pivotal Web Services (PWS)
+Microservices &lt;http://martinfowler.com/articles/microservices.html&gt; is the 
+latest design pattern that has emerged to address the needs of an agile marketplace. By focusing on discrete services that have a single responsibility, it is possible to deploy features (and scale dev teams) more quickly than historic monolithic architectures. Microservice-driven approaches assume that you have certain cultural &lt;http://www.infoq.com/interviews/adrian-cockcroft-microservices-devops&gt; and infrastructural &lt;http://martinfowler.com/bliki/MicroservicePrerequisites.html&gt; elements in place, and Pivotal is unique in that it provides foundation at multiple levels.   
+
+
+ - Pivotal’s Matt Stine has an overview &lt;http://www.slideshare.net/mstine/microservices-cf-summit&gt; of Cloud Foundry (the platform for Pivotal Web Services) and Microservices. This provides a coherent, distributed platform atop IaaS clouds.
+ - Pivotal’s Josh Long introduces the core microservice container, Spring Boot &lt;https://spring.io/blog/2014/04/16/webinar-replay-building-bootiful-applications-with-spring-boot&gt;, and then dives into applying it specifically for microservices with Spring Cloud and NetFlixOSS. &lt;https://spring.io/blog/2014/09/17/webinar-replay-building-bootiful-microservices-with-spring-boot&gt;
+ - Pivotal’s Scott Frederick has published sample code &lt;https://github.com/cf-platform-eng/spring-boot-cities&gt; on “Building and consuming a cloud-ready Microservice” that you can use for your own exploration.  
+ - Spring Cloud &lt;http://projects.spring.io/spring-cloud/&gt; contains boilerplate patterns / foundational infrastructure for microservices by wrapping select NetFlixOSS, adding value, and making sure it works on developers’ local laptops, bare metal, and of course, Cloud Foundry.
+
+
+Another introduction to both Spring 
+Boot and Microservices is Chris Richardson’s “Building microservices with Spring Boot – part 1” blog post &lt;http://plainoldobjects.com/2014/04/01/building-microservices-with-spring-boot-part1/&gt; (and part 2 &lt;http://plainoldobjects.com/2014/05/05/building-microservices-with-spring-boot-part-2/&gt;), for a different perspective. 
+
+It’s simple to run a build on your application via Eclipse’s Spring Tool 
+Suite, Maven &lt;http://maven.apache.org/&gt; or Gradle &lt;https://gradle.org/&gt;.  But what about deployment, so often a scary step? It is simple to deploy your application to Pivotal Web Services &lt;http://run.pivotal.io&gt;. Once you have an account, login &lt;https://login.run.pivotal.io/login&gt; from the CLI and execute the following command:
+
+‘cf push -p PATH_TO_YOUR_ARCHIVE’
+
+And your microservice(s) will be deployed to PWS. Alternatively, you can push from popular IDE tools like Eclipse / Spring Tool Suite just as easily &lt;https://spring.io/guides/gs/sts-cloud-foundry-deployment/&gt;. If you don’t have a PWS account, you can get a free trial account here &lt;https://console.run.pivotal.io/register?PWS_newsletter&gt;.
+
+Static IPs for a PaaS World: Flexibility and Predictability
+The PWS marketplace continues to add new partners and our team strives hard to fill in the gaps that developers need. One such challenge is integrating an application hosted on Pivotal Web Service’s Cloud Foundry instance with an internal service protected by a corporate firewall. Pivotal Web Services makes deploying and scaling your application a one-command operation. However, the IP addresses for your application can change. This is good for the developer but not good for the network engineer who only wants to allow a few known IP addresses through their corporate firewall.
+
+Statica solves this problem with an 
+easy-to-use, elegant solution by offering a managed proxy service that will route any application traffic via a static IP address maintained by Statica. Resources behind firewalls and IP whitelisted services can be accessed by fronting a trusted static IP for the PWS traffic back to the firewalled service. Service requests always originate from the same IP address regardless of where your app is running or how many instances of the application are running. This allows for access to firewall protected services when your application is scaled up to handle peak traffic. Statica is accessible as an HTTP or SOCKS5 proxy, so it is language and platform agnostic. There is native support for Ruby, Python, Node.js, Scala, Java and every other mainstream language. More details are available in the blog post &lt;http://blog.pivotal.io/cloud-foundry-pivotal/news-2/statica-now-available-in-the-pivotal-web-services-marketplace-2&gt; introducing Statica to the PWS 
+family.
+ 
+ Best Regards,
+Pivotal Web Services Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

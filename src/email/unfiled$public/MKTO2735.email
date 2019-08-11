@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pivotal Newsletter</title>
+
+<style type="text/css">
+body {margin:0; font-family:Helvetica, Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+p {margin:0 !important;}
+img {border:0; -ms-interpolation-mode: bicubic; max-width:100%;}
+a img {border:none;}
+
+/* Media queries */
+@media only screen and (max-width: 640px) {
+
+.full-block {width:100% !important; max-width:600px;}
+.nested-full-block {width:100% !important; max-width:600px;}
+.text-block {padding-top:20px !important; padding-right:20px !important; padding-bottom:20px !important; padding-left:20px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+.stack {display:block;}
+.name-tagline-block {text-align:left !important;}
+.event-name-block {text-align:left !important;}
+.event-tagline-block {text-align:left !important;}
+.register-lesser {display:none;}
+}
+
+
+</style>
+</head>
+<body ><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td width="100%" align="center" bgcolor="#F1F1F1" style="padding-right:10px; padding-left:10px; " ><table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td width="128" align="left" valign="top" class="stack" style="padding-right:20px; padding-bottom:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/Pivotal-email-header-logo.png" alt="" border="0" style="display:block;"></a></td>
+<td align="right" valign="middle" class="stack name-tagline-block" style="padding-top:9px; padding-right:0; padding-bottom:17px; padding-left:0; " ><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td align="right" class="event-name-block" ><div class="mktEditable" id="event-name" style="margin:0; padding:0; color:#3c3d42; font-size:24px; " ></div>
+</td>
+</tr>
+<tr ><td align="right" class="event-tagline-block" ><div class="mktEditable" id="event-tagline" style="color:#3c3d42; font-size:13px; " ></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse; " ><tr ><td ><div class="mktEditable" id="event-banner-image" ><p style="margin: 0;"><img style="display: block;" src="http://connect.pivotal.io/rs/pivotal/images/PWSPaaSHeader-New.png" alt="Pivotal Web Services" /></p></div>
+</td>
+</tr>
+<tr ><td align="left" valign="top" bgcolor="#FFFFFF" ><table cellpadding="40" cellspacing="0" border="0" style="border-collapse:collapse; " ><tr ><td class="text-block" style="color:#666666; font-size:14px; line-height:22px; " ><div class="mktEditable" id="event-description" >
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;"><span id="docs-internal-guid-93bda32f-1cbc-2676-db8f-49f9e11b65f9"><span><span id="docs-internal-guid-31d88ca8-d154-beaf-2519-da8f870da61c"><span>With the summer upon us, this issue of Push With Success focuses on ensuring   
+    your application is production ready in the first of a two part series.
+       In this series of articles we&rsquo;ll provide answers to some commonly asked questions about bringing your Pivotal Web Services (PWS) hosted application to production.
+       We&rsquo;ll follow up with our partner focus on 3scale, a SaaS provider that offers services for your APIs including authentication, security and analytics for your API tier.
+       Lastly, we are deprecating our experimental consoleapi API endpoint this week, if you are using this endpoint read on to find out more.</span></span><br /><br /><span id="docs-internal-guid-31d88ca8-d154-ef6f-7d76-ea07549b85bd"><span>If you have not tried PWS in the past, visit </span><a 
+style="color: #3ea7bc; text-decoration: none;" href="http://run.pivotal.io"><span>http://run.pivotal.io</span></a><span> for a 60 day free trial.
+       If you have tried PWS in the past and want to see what&rsquo;s new, drop our Product Manager Charles Wu a note at </span><a style="color: #3ea7bc; text-decoration: none;" href="mailto:chwu@pivotal.io"><span>chwu@pivotal.io</span></a><span> to explain what you are looking for and we&rsquo;ll 
+   get    you set up for another trial.
+ </span></span></span></span><br /><br />We hope you enjoy this month&rsquo;s issue.
+                                   Let us know your thoughts about how to make Pivotal Web Services and Cloud Foundry better for you by reaching us on Twitter <a style="color: #3ea7bc; text-decoration: none;" href="https://twitter.com/pivotalws">@pivotalws</a>.</p>
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;">&nbsp;</p>
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;"><span style="font-size: 16px;"><strong><span id="docs-internal-guid-bf248a89-fbd4-8247-fb04-f19f9e91601c"><span><span><span id="docs-internal-guid-362a47fa-90bb-10cc-b6dd-fb95b40a54e8"><span><span 
+id="docs-internal-guid-93bda32f-1cbc-866b-77c0-fc09a6e2cf3a"><span><span id="docs-internal-guid-31d88ca8-d155-62af-7188-23392ed7baa2"><span>A Production-Ready Checklist for Apps on Pivotal Web Services</span></span></span></span></span></span></span></span></span></strong></span></p>
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;"><span id="docs-internal-guid-d7edfc37-336e-9e2e-da75-a869dc4f371e"><span><span id="docs-internal-guid-bf248a89-fbd4-b1ed-f9b9-0b7cf41bfce8"><span><span id="docs-internal-guid-bf248a89-fc7a-2c5d-2fd8-758b4b90e312"><span><span 
+id="docs-internal-guid-362a47fa-90bb-54d7-ad50-14c958140cba"><span><span id="docs-internal-guid-93bda32f-1cbc-b929-5448-25568fa624e6"><span><span id="docs-internal-guid-31d88ca8-d155-974f-979c-0861e4496436"><span>The following is the first of a two part series covering a step-by-step checklist for 
+      preparing an application for production readiness on Pivotal Web Services.
+       The questions below highlight the different decisions one needs to act upon in order to ready an application for production.
+       Be sure to check out our </span><a style="color: #3ea7bc; text-decoration: none;" href="http://support.run.pivotal.io/forums/22251622-Cloud-Foundry-Knowledge-Base-Articles#recent"><span>Support Knowledge Base</span></a><span> and </span><a style="color: #3ea7bc; text-decoration: none;" 
+href="http://support.run.pivotal.io/forums#recent"><span>forums</span></a><span> for answers to other   questions as well.
+ </span></span><br /><br /><strong><span id="docs-internal-guid-31d88ca8-d155-c3cc-e346-e0443733bebd"><span>1.
+       How many instances do I require?</span></span></strong><br /><br /><span id="docs-internal-guid-31d88ca8-d155-f3ae-6d57-d39ed33ff8a6"><span>When you enter production, you should deploy at least two instances of your front-facing application for availability purposes.
+       Cloud Foundry ensures that applications are distributed across Amazon AWS availability zones (AZ) so you get the following forms of redundancy:</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ul>
+<li><span dir="ltr">Instance-level redundancy if an individual instance crashes</span></li>
+<li><span>Availability Zone-level redundancy: if AWS has an outage in the AZ where one instance of your app is running, the other will continue to run in a different AZ.
+       Note that PWS is only deployed in one Amazon region, so if an Amazon region failure occurs, access to your app will be compromised as well.</span></li>
+</ul>
+<p><span id="docs-internal-guid-31d88ca8-d156-2e65-b52e-3d54f083f083"><span>This also highlights the benefit of hosting apps on Cloud Foundry instead of directly on the IaaS layer, since the complexity of managing multiple redundancy strategies is handled by the platform instead of by the       
+application logic or deployment configuration.<br /><br /><strong><span id="docs-internal-guid-31d88ca8-d156-566f-61ff-f9de1a2c5902"><span>2.
+       How much memory should I allocate for different languages and/or runtimes?</span></span></strong><br /><br /><span id="docs-internal-guid-31d88ca8-d156-7d5b-a8fc-907b7ce557e8"><span>Different runtimes require different amounts of memory.
+       But the following are some guidelines to start with.
+       You should also note that Cloud Foundry distributes CPU in proportion to the memory that is allocated for an application.
+       So if your application requires substantial compute resource, you can increase your memory allocation to improve performance.</span></span><br /> <br /><img src="http://connect.pivotal.io/rs/625-IUJ-009/images/PWS July.png" alt="" width="500" height="183" /><br /></span></span></p>
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;"><span id="docs-internal-guid-d7edfc37-336e-9e2e-da75-a869dc4f371e"><span><span id="docs-internal-guid-bf248a89-fbd4-b1ed-f9b9-0b7cf41bfce8"><span><span id="docs-internal-guid-bf248a89-fc7a-2c5d-2fd8-758b4b90e312"><span><span 
+id="docs-internal-guid-362a47fa-90bb-54d7-ad50-14c958140cba"><span><span id="docs-internal-guid-93bda32f-1cbc-b929-5448-25568fa624e6"><span><strong><span id="docs-internal-guid-31d88ca8-d170-034b-73f9-02c4dae820e1"><span>3.
+      How do I apply a customized domain to my apps on PWS?</span></span></strong><br /><br /><span id="docs-internal-guid-31d88ca8-d170-544d-7e82-27b8e883deea"><span>The default domain for PWS is cfapps.io.
+      However, for most production deployments you will want to host at your own domain.
+      Cloud Foundry supports the ability to support other domains.
+      Please check out the </span><a style="color: #3ea7bc; text-decoration: none;" href="http://docs.run.pivotal.io/devguide/deploy-apps/domains-routes.html"><span>documentation</span></a><span> for instructions and this support </span><a style="color: #3ea7bc; text-decoration: none;" 
+href="http://docs.run.pivotal.io/devguide/deploy-apps/domains-routes.html"><span>post</span></a><span> on this  matter.
+      &nbsp;</span></span><br /><br /><strong><span id="docs-internal-guid-31d88ca8-d170-72b8-6852-1d156559b92d"><span>4.
+      How do I support HTTPS or SSL?</span></span></strong><br /><br /><span id="docs-internal-guid-31d88ca8-d170-926d-2b7e-3cd3c4e0a142"><span>PWS offers SSL to all apps in the &ldquo;cfapps.io&rdquo; domain, so by default your apps can support SSL by being requested using https.
+      If you require SSL on a custom domain that you own, PWS supports free SSL via our partner </span><a style="color: #3ea7bc; text-decoration: none;" href="https://www.cloudflare.com/"><span>Cloudflare</span></a><span> via these </span><a style="color: #3ea7bc; text-decoration: none;" 
+href="http://docs.run.pivotal.io/marketplace/integrations/cloudflare/"><span>instructions</span></a><span>.
+      If you need to bring your own SSL certificate, Cloudflare offers premium plans.
+ </span></span><br /><br /><strong><span id="docs-internal-guid-31d88ca8-d170-bbbe-9bea-f1ea05197038"><span>5.
+      How does one monitor an application on PWS?</span></span></strong><br /><br /><span id="docs-internal-guid-31d88ca8-d170-d825-d0af-45c3e6853350"><span>It is possible to view your application&rsquo;s behavior on PWS using the Applications Manager or CLI logs functionality.
+      For more detailed data, you can follow the </span><a style="color: #3ea7bc; text-decoration: none;" href="http://docs.run.pivotal.io/marketplace/services/newrelic/"><span>documentation</span></a><span> to use PWS Marketplace partner </span><a style="color: #3ea7bc; text-decoration: none;" 
+href="http://www.newrelic.com"><span>New Relic</span></a><span>.
+      If you need greater logging history, please use a third party log drain product.</span></span><br /><br /><span id="docs-internal-guid-31d88ca8-d170-f0e2-411c-803fb366fb65"><span>Next month, we&rsquo;ll cover questions about log archiving, shell access, blue green deploys and using external  
+    services.&nbsp;<br /><br /></span></span></span></span></span></span></span></span></span></span></span></span><strong style="font-size: 16px;"><span id="docs-internal-guid-d7edfc37-336f-b054-0c31-c052b3129650"><span id="docs-internal-guid-bf248a89-fbd5-b9ed-c2cc-6bad25c7ed94"><span 
+id="docs-internal-guid-362a47fa-90bb-c199-eae0-31c396f468f3"><span id="docs-internal-guid-93bda32f-1cbc-f44b-45bd-d2eb37f629d4"><span id="docs-internal-guid-31d88ca8-d171-233b-0522-9cf1a056f7fe">3scale: Securing and securing your     APIs</span></span></span></span></span></strong></p>
+<p style="margin: 0; color: #666666; font-size: 14px; line-height: 22px;"><span id="docs-internal-guid-d7edfc37-336f-ed93-355e-6113abf6d885"><span><span id="docs-internal-guid-bf248a89-fbd5-e905-d376-114626ca410d"><span><span id="docs-internal-guid-bf248a89-fc7b-01e4-d0f9-d06bf3097792"><span><span 
+id="docs-internal-guid-362a47fa-90bc-2379-8261-887d83f794b8"><span><span id="docs-internal-guid-93bda32f-1cbd-140d-35a5-28310fb9d0b2"><span><span id="docs-internal-guid-31d88ca8-d171-4535-1350-fddf4a1521c2"><span>Pivotal Web     Services introduces </span><a style="color: #3ea7bc; text-decoration: 
+none;" href="http://www.3scale.net/"><span>3scale</span></a><span> to its services marketplace.
+      PWS is increasingly being used to host the backend infrastructure of mobile applications.
+      Where in the past energy and effort was focused on UI on top of the business logic, the mobile first world requires hardening your API layer with authentication, security and analytics.
+      Much of this work is resource-intense, and this is where 3scale fits by easily adding these features to your existing API layer.</span></span><br /><br /><span id="docs-internal-guid-31d88ca8-d171-7bed-6006-ec64ae0562cf"><span>3scale is a SaaS service that fronts your API layer with a     
+combination  of their API program management cloud coupled with either a deployed gateway or linked application library to provide core API management services.
+      In addition, for developers creating API-based service offerings, 3scale addresses marketplace needs including a developer portal, onboarding processes, application management, Swagger-based active API documentation or invoicing.
+      It&rsquo;s for these reasons that PWS added 3scale to the marketplace: to address the needs of developers hosting APIs.
+ </span><span>&nbsp;</span></span><br /></span></span></span></span></span></span></span></span><br /><span style="font-size: 16px;"><strong><span id="docs-internal-guid-bf248a89-fbd6-a076-3d3d-38d1a1a0a77a"><span id="docs-internal-guid-362a47fa-90bc-c64d-6a86-77d3124bf8cb"><span><span 
+id="docs-internal-guid-93bda32f-1cbd-5d58-c26e-d2627e679901"><span><span id="docs-internal-guid-31d88ca8-d171-b561-5d25-25613faf4e50"><span>Deprecating the 'consoleapi.run.pivotal.io' endpoint for 'cf' CLI tool on July 29, 2015 12:00 PM PDT 
+</span></span></span></span></span></span></span></strong></span><br /><span id="docs-internal-guid-bf248a89-fbd7-22a5-c163-56bc08e1fcf1"><span><span id="docs-internal-guid-bf248a89-fc7c-0094-a390-89ac615ce704"><span><span id="docs-internal-guid-362a47fa-90bc-f88b-9587-3ee849a0d323"><span><span 
+id="docs-internal-guid-93bda32f-1cbd-8e3c-939f-04d204a6d9fc"><span><span id="docs-internal-guid-31d88ca8-d171-dcd5-b1cc-5de21e54064d">Developers who have set the 'cf' CLI API endpoint to the host 'consoleapi.run.pivotal.io' will need to change their API endpoint to 'api.run.pivotal.io' This can be 
+     done by logging out of the CLI via 'cf logout' and then entering 'cf api api.run.pivotal.io' and the logging in again via 'cf login'.
+      Developers already using 'api.run.pivotal.io' do not need to update their settings.
+      If you have issues or questions, please contact <a style="color: #3ea7bc; text-decoration: none;" href="mailto:support@run.pivotal.io">support@run.pivotal.io</a></span><br /></span></span></span></span></span></span></span></span></span></span><br /> Best Regards,<br />Pivotal        Web     
+Services Team</p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td style="padding-right:2px;"><a href="https://twitter.com/pivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-twitter.png" alt="Follow us on Twitter" border="0" style="display:block;"></a></td>
+<td style="padding-right:2px;"><a href="http://www.linkedin.com/company/3048967" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-linkedin.png" alt="Join the conversation on LinkedIn" border="0" style="display:block;"></a></td>
+<td style="padding-right:2px;"><a href="https://www.facebook.com/pivotalsoftware" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-facebook.png" alt="Like us on Facebook" border="0" style="display:block;"></a></td>
+<td style="padding-right:2px;"><a href="https://plus.google.com/105320112436428794490/posts" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-google.png" alt="Add us on Google+" border="0" style="display:block;"></a></td>
+<td><a href="http://www.youtube.com/gopivotal" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-social-youtube.png" alt="Visit our YouTube channel" border="0" style="display:block;"></a></td>
+</tr>
+<tr>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+<td><img src="http://play.gopivotal.com/rs/pivotal/images/5px.png" alt="" style="display:block;"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#1D1D1D" style="padding-right:10px; padding-left:10px;">
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="full-block" style="border-collapse:collapse;">
+<tr>
+<td align="center" style="padding-top:15px; padding-bottom:15px; border-bottom:1px solid #333333;"><a href="http://pivotal.io" target="_blank" style="color:#3EA7BC; text-decoration:none; font-size:16px;">www.pivotal.io</a></td>
+</tr>
+<tr>
+<td style="padding-top:30px; padding-bottom:25px; border-bottom:1px solid #333333;">
+<table width="600" cellpadding="0" cellspacing="0" border="0" class="nested-full-block" style="border-collapse:collapse;">
+<tr>
+<td width="50" align="left" valign="top" style="padding-right:20px;"><a href="http://pivotal.io" target="_blank"><img src="http://play.gopivotal.com/rs/pivotal/images/email-blockP-med.png" alt="Pivotal" border="0" style="display:block;"></a></td>
+<td align="left" valign="top" style="color:#999999; font-size:12px; line-height:14px;"><a href="http://pivotal.io" target="_blank" style="color:#3EA7BC; text-decoration:none;">Pivotal</a> is a trusted partner for IT innovation, enabling enterprises to provide modern software-driven experiences for their customers and workforces. The combination of leading agile development services, an open cloud platform and open suite of big data products accelerate innovation cycles for our customers across every industry. More at <a href="http://pivotal.io" target="_blank" style="color:#3EA7BC; text-decoration:none;">pivotal.io.</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" style="padding-top:20px; padding-bottom:20px; color:#999999; font-size:12px; line-height:14px;">&copy; Pivotal, and the Pivotal logo are registered trademarks or trademarks of Pivotal Software, Inc. in the United States and other countries. All other trademarks used herein are the property of their respective owners.<br>
+&copy; 2015 Pivotal Software, Inc. All rights reserved. Published in the USA. <a href="http://connect.pivotal.io/UnsubscribePage.html" target="_blank" style="color:#3EA7BC; text-decoration:none;">Unsubscribe</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

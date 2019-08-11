@@ -1,0 +1,26 @@
+<apex:page id="PACProdMapEdit" standardController="PAC_Product_Map__c">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Mapping Details" collapsible="false" columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="PAC Product"/>
+                    <apex:inputField value="{!PAC_Product_Map__c.PAC_Product__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Mapped Product SKU"/>
+                    <c:AutoCompleteV2 labelField="zqu__SKU2__c" SObject="Product2" valueField="Id"
+                                      targetField="{!PAC_Product_Map__c.Product2__c}" allowClear="true"
+                                      syncManualEntry="false" importJquery="true" whereClause="zqu__Deleted__c = FALSE"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Active"/>
+                    <apex:inputField value="{!PAC_Product_Map__c.Active__c}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

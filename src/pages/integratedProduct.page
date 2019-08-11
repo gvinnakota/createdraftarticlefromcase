@@ -1,0 +1,114 @@
+<apex:page controller="matrixController" cache="false" >
+    <apex:tabPanel switchType="server" value="{!selectedTab}" id="theTabPanel">
+        <!--Product Interoperability Matrix Tab-->
+        <apex:tab label="Product Interoperability Matrix" name="Matrix" id="tabFour" title="Product Interoperability Matrix">
+            <apex:sectionHeader title="Product Interoperability Matrix"/>
+                <apex:form >
+
+                <table width="100%">
+                    <td width="350">
+                    <apex:pageBlock title="Search Partner Certifications" id="searchBy">
+                   
+                    <apex:pageBlockSection columns="1"  >
+                       
+                            <apex:inputField id="FieldId2" value="{!partnerProduct.Name}" style="width: 200px" label="Partner Product" onkeypress="return noenter(event);">
+                                <c:Autocomplete objectname="Partner_Product__c" input_id="{!$Component.FieldId2}" numberOfResultsToDisplay="200" wildcardBefore="true"/>
+                            </apex:inputField>
+
+                            
+                            <apex:selectList size="1" label="Partner Category" value="{!partnerProductCategory}" >
+                                <apex:selectOptions value="{!ProductCategories}" ></apex:selectOptions>
+                            </apex:selectList>                           
+
+                        
+                            <apex:selectList size="1" label="Pivotal Product" value="{!pivotalProductName}" >
+                                <apex:selectOptions value="{!PivProdObj}" ></apex:selectOptions>
+                            </apex:selectList>
+                         
+                            <apex:outputpanel layout="block" style="text-align: center;">
+                            <apex:commandButton value="Search" action="{!Results}" reRender="results" status="searchStatus" id="btnSearchButton"/>
+                            <br/>
+                            <br/>
+                            <apex:commandLink value="View And Export All Partner Certification Data" action="{!Report}"/> 
+                            
+                            </apex:outputpanel>
+                                                        
+
+                            
+
+
+
+                            <apex:actionFunction name="doSearchAF" action="{!Results}" /> 
+
+                    </apex:pageBlockSection> 
+
+
+                    </apex:pageBlock>
+                 
+                    </td>
+                                 
+                    <!-- Results -->
+
+                    <td>
+                    
+                    <apex:pageBlock title="Results" id="results" onkeyup="submitForm(event)">
+
+                    <apex:pageBlockSection rendered="{!hasResults}">
+                   
+                    <p style="font-weight: bold;">Total: {!totalResultCount} records.</p> 
+                    </apex:pageBlockSection>
+                        <apex:pageBlockTable value="{!certifications}" var="cert" rendered="{!hasResults}">
+                            <apex:column value="{!cert.Certification_Name__c}"/>
+                            <apex:column value="{!cert.Pivotal_Product_f__c}" />
+                            <apex:column value="{!cert.Partner_Product_f__c}" />
+                            <apex:column value="{!cert.Partner_Product_Version__r.Product_Name_Partner__r.Product_Category__c}" />
+                            <apex:column value="{!cert.Partner_Account__c}" />
+                            <apex:column value="{!cert.Status__c}"/>
+                            <apex:column value="{!cert.Effective_Date__c}"/>
+                            <apex:column value="{!cert.SystemModstamp}" headerValue="Last Modified"/>
+                        </apex:pageBlockTable>
+                        <apex:pageBlockSection rendered="{!showMsg}">
+                            <p style="font-size:small"> There are currently no certifications for this product. </p>
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                    
+                    </td>
+                    </table>
+                           
+            </apex:form>
+            
+            <!--The following script allows the user to see results when pressing the ENTER key instead of the search button-->
+            <script type='text/javascript'>
+                function noenter(ev)  {
+                    if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+                        doSearchAF();
+                        return false;
+                    } else {
+                        return true;
+                    }
+                }
+            </script>
+     
+        </apex:tab>
+        
+        
+        
+        <!--Pivotal Products Tab-->
+        <apex:tab title="Pivotal Products" label="Pivotal Products" name="Pivotal" id="tabOne">
+            <apex:enhancedList type="Pivotal_Integrated_Product__c" height="1000" rowsPerPage="25" id="PivIntegratedProductList" />
+        </apex:tab> 
+        
+        <!--Partner Products Tab-->
+        <apex:tab title="Partner Products" label="Partner Products" name="Partner" id="tabTwo">
+            <apex:enhancedList type="Partner_Product__c" height="1000" rowsPerPage="25" id="PartnerProductList" />
+        </apex:tab>
+        
+        <!--Certifications Tab-->
+        <apex:tab title="Certifications" label="Certifications" name="Certification" id="tabThree">
+            <apex:enhancedList type="Certification__c" height="1000" rowsPerPage="25" id="Certification" />
+        </apex:tab>
+        
+
+        
+    </apex:tabPanel> 
+</apex:page>

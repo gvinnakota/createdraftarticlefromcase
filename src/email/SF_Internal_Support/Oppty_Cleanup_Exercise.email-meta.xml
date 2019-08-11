@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be used for quarterly opportunity cleanup exercise.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Blank</letterhead>
+    <name>Oppty Cleanup Exercise</name>
+    <style>freeForm</style>
+    <subject>ACTION: SFDC Opportunity Clean Up STARTS TODAY</subject>
+    <textOnly>SFDC Users:
+
+The quarterly Salesforce.com opportunity clean-up starts today and will continue through July 12th.
+
+YOUR ACTION: Clean out all your SFDC opportunity bad data by following the instructions below.  Also remember to add all known opportunities to SFDC, including future quarter pipeline!
+
+Step 1: Navigate to the Reports tab in SFDC and click on &quot;SFDC CLEAN UP PROJECT&quot; Folder on the left
+Step 2: Review each report and remove all bad data by following the instructions below
+
+Report and Action
+Current Quarter Mgmt Call Oppty with NO Quote  REP: Create a quote for all in quarter opportunities, specifically Mgmt Call deals
+Opportunities with Close Date Past Due  REP:  Update close date to future or mark as Closed Lost
+Opportunities Not Modified in 30 Days  REP: Update or close
+Opportunities with NO Product  REP: Add the appropriate product(s)
+Current Quarter Oppty in &quot;Pipeline&quot; Status  REP:  Update close date or forecast status
+Opportunities Owned by Deactivated User  MGR: Reassign to an active user
+Opportunities with Non-Rep Owner  SUPPORT RESOURCE:  Reassign to a sales rep
+
+
+Please note that any open opportunities with close dates in the past will be Closed Lost after this cleanup if the close date is not updated.  
+
+We appreciate your assistance as we continue to make Salesforce, and the data that lives there, more accurate for us to leverage as a company.
+
+Thank you,
+Chris Braney</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

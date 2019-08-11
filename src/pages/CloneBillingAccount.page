@@ -1,0 +1,184 @@
+<apex:page controller="CloneBillingAccountController" action="{!cloneAccount}" tabStyle="Zuora__CustomerAccount__c">
+    
+    <!-- CSS -->
+    <style>
+        input[type="checkbox"] {
+            -webkit-appearance: radio; // Chrome, Safari, Opera
+            -moz-appearance: radio;    // Firefox
+            -ms-appearance: radio;     // not currently supported 
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: fit-content;
+        }
+
+        .buttons {
+            align-items: center;
+            margin-top: 1em;
+        }
+
+        #loading-modal{
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .loader {
+            position: fixed;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border: 10px solid #f3f3f3;
+            border-top: 10px solid #f764b2;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+        // style checkboxes as radio buttons and prevent selecting multiple inputs
+        function handleCheckboxes(checkedInput) {
+            var className = checkedInput.className;
+            
+            var inputs = document.querySelectorAll("input[type='checkbox']");
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].className === className) {
+                    inputs[i].checked = false;
+                }
+            }
+            
+            if (checkedInput) {
+                checkedInput.checked = true;
+            }
+        }
+    </script>
+    
+    <apex:outputPanel >
+        <apex:form >
+            <apex:pageBlock title="Edit Billing Account Information" rendered="{!enableEdit}">
+                <!-- MESSAGES -->
+                <apex:pageMessages id="messages"/>
+                
+                <!-- BUTTONS -->
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!cloneAccount}" value="Clone" rerender="messages,duplicateModal"
+                                        onClick="openLoader();" onComplete="refreshModal({!showDuplicateModal});">
+                        <apex:param value="true" name="edited"/>
+                    </apex:commandButton>
+                    <apex:commandButton onclick="createContact();" value="Create Contact" reRender="billAccPanel"/>
+                    <apex:commandButton action="{!fetchContacts}" value="Refresh data" rerender="billAccPanel"/>
+                </apex:pageBlockButtons>
+
+                <!-- ITERATE OVER BILLING ACCOUNT FIELDS -->
+                <apex:pageBlockSection collapsible="false" columns="1" id="billAccPanel">
+                    <apex:repeat value="{!$ObjectType.Zuora__CustomerAccount__c.fieldSets.Editable_Clone_Fields}"
+                                 var="field">
+
+                        <!-- INPUT FIELD -->
+                        <apex:pageBlockSectionItem rendered="{!!CONTAINS(field.Label, 'To Contact')}">
+                            <apex:outputLabel value="{!field.Label}"/>
+                            <apex:inputField value="{!acc[field]}"/>
+                        </apex:pageBlockSectionItem>
+
+                        <!-- CONTACT LOOKUP FIELD -->
+                        <apex:pageBlockSectionItem rendered="{!CONTAINS(field.Label, 'To Contact')}">
+                            <apex:pageBlockSection collapsible="false" columns="1" title="Select {!field.Label}">
+                                <apex:pageBlockTable value="{!IF(CONTAINS(field.Label, 'Bill'), billToContactWrapperList, soldToContactWrapperList)}" var="wrapper">
+                                    <apex:column width="1%">
+                                        <apex:inputCheckbox value="{!wrapper.selected}" styleClass="{!IF(CONTAINS(field.Label, 'Bill'), 'bill', 'sold')}RadioGroup">
+                                            <apex:actionSupport event="onchange" onSubmit="handleCheckboxes(this);" rerender="fake"/>
+                                        </apex:inputCheckbox>
+                                    </apex:column>
+
+                                    <apex:column value="{!wrapper.contact.FirstName}"/>
+                                    <apex:column value="{!wrapper.contact.LastName}"/>
+                                    <apex:column value="{!wrapper.contact.Email}"/>
+                                    <apex:column value="{!wrapper.contact.Phone}"/>
+                                    <apex:column value="{!wrapper.contact.MailingStreet}"/>
+                                    <apex:column value="{!wrapper.contact.MailingCity}"/>
+                                    <apex:column value="{!wrapper.contact.MailingState}"/>
+                                    <apex:column value="{!wrapper.contact.MailingPostalCode}"/>
+                                    <apex:column value="{!wrapper.contact.MailingCountry}"/>
+                                </apex:pageBlockTable>
+                            </apex:pageBlockSection>
+                        </apex:pageBlockSectionItem>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+
+                <!-- DUPLICATE MODAL -->
+                <div id="duplicateModal" class="modal">
+                    <script type="text/javascript">
+                        function createContact() {
+                            window.open('/003/e?con4_lkid={!quote.zqu__Opportunity__r.AccountId}', '_blank')
+                        }
+
+                        var modal = document.getElementById('duplicateModal');
+
+                        function closeModal(){
+                            modal.style.display = "none";
+                        }
+
+                        function refreshModal(showModal) {
+                            closeLoader();
+                            if(showModal){
+                                modal.style.display = "block";
+                            }
+                        }
+
+                        function openLoader() {
+                            document.getElementById('loading-modal').style.display = "block";
+                        }
+
+                        function closeLoader() {
+                            document.getElementById('loading-modal').style.display = "none";
+                        }
+                    </script>
+                    <div class="modal-content">
+                        There is an existing billing account that matches the one you are about to create. Do you want to use the duplicate account or go back and make edits?<br/>
+                        <div class="buttons">
+                            <apex:commandButton action="{!useDuplicate}" onClick="closeModal();openLoader();" value="Use duplicate account" reRender="duplicateModal"/>
+                            <apex:commandButton onClick="closeModal();" value="Go back and make edits" reRender="duplicateModal"/>
+                        </div>
+                    </div>
+                </div>
+            </apex:pageBlock>
+        </apex:form>
+        
+        <!-- SPINNER -->
+        <div id="loading-modal">
+            <div class="loader"></div>
+        </div>
+    </apex:outputPanel>
+</apex:page>

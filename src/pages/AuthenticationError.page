@@ -1,0 +1,85 @@
+<apex:page showHeader="false" applyHtmlTag="false">
+
+
+    <html dir="ltr" lang="en">
+
+    <head>
+        <title>Pivotal</title>
+        <link href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAYAAACPZlfNAAAAAXNSR0IArs4c6QAABYtJREFUeAHtnVtsFFUYx7/d3ruWotUKVIkNaCw02YgJGBRTMd4CokUejD4QH4gxQcIDeHnBmPjkhSghUYLGe3ywPtAHNCo0QgkWwi2tXG2V1kIpLXTbLt1tS9dzlmzSJssZhv32zDk7/2km2znn7Pd9+/vt2Z2dmW0D9Obat4gCiwiLBQQSLflSViAQeN6Can1fYiJBFPQ9BcsAQBiEWUbAsnIxwyDMMgKWlYsZBmGWEbCsXMwwCLOMgGXlYoZBmGUELCsXMwzCLCNgWbmYYRBmGQHLysUMgzDLCFhWLmYYhFlGwLJyMcMgzDIClpWLGQZhlhGwrFzMMAizjIBl5WKGQZhlBCwrV1xbb96y59V1VFJQmLawQNrWa43x8XEaHo1fW+Oj1H8lSqf6eulEbw+dvNhLvcNDinvb0WWksAdm3UWhwiJ2gt2RAWo80UY7jrdSU8cZGrt6lT1HtgMaKSxbD7qqfDq99tAjyTUSG6FP9v1BH+3dTUPxeLZSssf17U5HeXEJbXr8aerY+A6tf7iOxFeu2OFmI6BvhaVgVoRCtHl5PTW8/AoV5xekmo299b2wlJn6+WFqWrOWKkpDqSYjbyFskpZFs++hL1e9NKnFvF+t3OmQOwzdkcgUmnnBABXm5Ys1j8qKisVadFPvS8tramn1goX09eEDU+KbsmGlsMbjbbT6x++UDOVORGXoFppXOYMerLqbVsyrpcWzqykYdH5R+fjZlcnd/8sjV5Q5vOh0rt6LqhhyJsQ3uC+ID8ry89aHYtf90W1bKLzlffr19EnH6HIP8oXasOM4LwbkrLB0MP+6cJ6e+eoz+vTP5nTdU9peDC+Ysm3Khq+ESehy5r3e2ECHu7uUDuqq59Id4iXVtMV3wqSACSHt3V2/KF3I97qayjuVY7zo9KUwCfq3M6coNjamZD6zrFzZ70Wnb4XFxseoK3JZyXzWtGnKfi86fStMwu6LRpXMZ5RBmBKQ7k75XqZa8gLmPZ/Nq0hFkLnvttJSZUT5Oc60xbfC5CGs6lsrlD56hgaV/V50+lbYkuo5VFygPp3SMwxhXjwp0+bcsGRp2vZU48TEBB09153aNObWlzNMHo1/6r4apYTmsx10MTqsHONFp5VH6zMBtWbhYtq6YpVjiJ/ajjmO8WKAL4QFxamWZffPT1678dicex05D4jTKj8cO+Q4zosBOSXs7bonktci5ovjgPIUye3ieo3wzKrk+TC5faPLGz83On6ovtFY3ONySth7Ty67qbPMk6Hu+edv+vzg/slNRv3uy52O6xk40HWW6r/94nrdRrTn1AzLhOju9tP03DfbKTo6mkmYrN/X98L6xQHgTb/vpG0t+5LnybJOPMMEvhXWOXCJvj9yiD7Yu4sGRkYyxKjv7r4RJi+Na+05Rwf/66SG1qO0v/NffZQZM+WUsI07d1BC/MTE144GYzHxJYcYDYq1vb/f8WQlI9OshsopYZubm7IKy4Tg2K03wYKLGiDMBSwThkKYCRZc1ABhLmCZMBTCTLDgogYIcwHLhKEQZoIFFzVAmAtYJgyFMBMsuKgBwlzAMmEohJlgwUUNEOYClglDIcwECy5qgDAXsEwYCmEmWHBRA4S5gGXCUAgzwYKLGow84yyvuyhR/GW19kt9Lh5ibg01UtjS7VtzizLjo8FLIiNMHaEgTAdlxhwQxghTRygI00GZMQeEMcLUEQrCdFBmzAFhjDB1hIIwHZQZc0AYI0wdoSBMB2XGHBDGCFNHKAjTQZkxB4QxwtQRCsJ0UGbMAWGMMHWEgjAdlBlzQBgjTB2hIEwHZcYcEMYIU0coCNNBmTEHhDHC1BEKwnRQZswBYYwwdYSCMB2UGXNAGCNMHaEgTAdlxhziUu1Ei8M/+WFMh1CZEUi0/A+j7hNSB5Wo2wAAAABJRU5ErkJggg=='
+            rel='shortcut icon' />
+        <meta charset='utf-8' />
+        <meta name='author' content="Pivotal" />
+        <meta name='copyright' content="©2019 Pivotal Software, Inc. All Rights Reserved."
+        />
+        <meta name='robots' content='all' />
+        <meta name='Description' content="" />
+        <meta name='keywords' content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" media="screen" href="https://login.run.pivotal.io/resources/oss/stylesheets/pui-3.0.0/pivotal-ui.min.css"
+        />
+        <link rel="stylesheet" media="screen" href="https://login.run.pivotal.io/resources/oss/stylesheets/pui-3.0.0/flexbox.css"
+        />
+        <link rel="stylesheet" media="screen" href="https://login.run.pivotal.io/resources/oss/stylesheets/chooser.css"
+        />
+        <!-- removed by shane as it does not exist
+        <link rel="stylesheet" media="screen" href="https://login.run.pivotal.io/resources/oss/stylesheets/css/whitespace"
+        />
+        -->
+        <!-- Added by Shane Feb 8, 2019 to fix styling for https://www.pivotaltracker.com/story/show/162551929 -->
+        <link rel="stylesheet" href="https://d2bsvk2etkq8vr.cloudfront.net/pui-css/pui-components-16.0.0.css"
+        />
+    </head>
+
+    <body class="bg-neutral-10 login">
+
+        <div class="page">
+            <div class="login-email panel panel-basic bg-neutral-11 mvxl paxl">
+                <div class="panel-body">
+                    <div class="txt-c paxl">
+                        <img class="img-responsive logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfwAAAB0CAYAAABgxoASAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDA2RjJERTREREYyMTFFODhFMTc5MEI4QTI2RkVDQTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDA2RjJERTVEREYyMTFFODhFMTc5MEI4QTI2RkVDQTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEMDZGMkRFMkRERjIxMUU4OEUxNzkwQjhBMjZGRUNBNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEMDZGMkRFM0RERjIxMUU4OEUxNzkwQjhBMjZGRUNBNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Po3fUOkAABDzSURBVHja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"
+                        />
+
+                    </div>
+                    <div>
+                        <h4 class="txt-c pbxxl ptxl">&nbsp;</h4>
+                        <form action="/login/idp_discovery" method="post" role="form" _lpchecked="1"><input type="hidden" name="X-Uaa-Csrf" value="v4G4kEleOP2GvivKAxR7cz"
+                            />
+
+                            <hr class="divider-alternate-1" />
+                         
+                            <!--added by Shane for new updates on SSO page from Kim Cunningham under https://www.pivotaltracker.com/story/show/162551929-->
+                            <!--<div class="alert alert-error mbxl bg-warn-6" style="color:#000;"> -->
+                                <div class="alert pui-alert alert-warning pui-alert-warning" role="alert">
+
+                                        <p style="text-align: left;">Looks like you've hit a snag. If you need urgent
+                                          assistance, please <a href="https://pivotal.io/support/contact"  class="pui-alert-link">contact our global support
+                                           team</a>.
+                                            <br/><br/> 遇到问题，<a href="https://pivotal.io/support/contact"  class="pui-alert-link">请找[全球技术支持中心</a>，
+                                            助您解决燃眉之急
+                                            <br/><br/> お困りごとや緊急の問題については、<a href="https://pivotal.io/support/contact"  class="pui-alert-link">[グローバルサポートチーム]
+                                            までお問い合わせください</a>
+                                            <br/><br/> 에러가 발생하였습니다. 도움이 필요한 경우, <a href="https://pivotal.io/support/contact"  class="pui-alert-link">[저희 글로벌 서포트 팀에 연락주시길 바랍니다]</a>(링크)
+                                        </p>
+                                </div>
+
+                        </form>
+
+                        <hr class="divider-alternate-1" />
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="txt-c type-neutral-5 type-sm footer-text mvl" title="Version: 4.26.0, Commit: 1399275, Timestamp: 2018-12-21T22:47:00+0000, UAA: https://uaa.run.pivotal.io">
+            ©2019 Pivotal Software, Inc. All Rights Reserved.
+            <a href="https://pivotal.io/privacy-policy/" style="color:#000">Privacy Policy</a>            &mdash;
+            <a href="https://pivotal.io/legal/" style="color:#000">Terms of Use</a>
+        </div>
+
+    </body>
+
+    </html>
+
+</apex:page>

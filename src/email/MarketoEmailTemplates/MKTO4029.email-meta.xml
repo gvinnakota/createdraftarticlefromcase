@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_SpringOne_Platform_2016.Reg/Confirmation w/logos API-First Dev Work</name>
+    <style>none</style>
+    <subject>Registration Confirmation for API-First Development Workshop at SpringOne Platform</subject>
+    <textOnly>&lt;[[https://springoneplatform.io/]]&gt;
+Hello {{lead.First Name:default=there,}}
+
+Thank you for your RSVP to the API-First Development workshop with Apigee and Pivotal Cloud Foundry! This is a no-cost event for registered SpringOne Platform attendees. Below you will find additional event details: 
+
+Date: Monday, August 1st  {{my.Save the Date:default=Save the Date!}}
+Time: 9:00am - 12:00pm PT 
+Location: Aria Hotel &lt;[[https://springoneplatform.io/travel]]&gt;
+Room: Bristlecone 6 [Level 1]
+
+Important course pre-requisites and more details can be found on the Workshop website &lt;[[http://info.pivotal.io/hN0k80U00I0000CTA020JH0]]&gt;.
+
+ In this course, you will:
+
+ - Build an API Proxy in Apigee Edge on top of a Pivotal Cloud Foundry app 
+ - Add security and monitoring to an API 
+ - Learn how to use Apigee Edge Analytics 
+ - Learn about OpenAPI 
+ - Use Pivotal Route Services to apply API management to a service running in Cloud Foundry 
+ - Learn ways to document and provide self-service access to APIs
+
+Questions? Contact us via email &lt;[[mailto:events@pivotal.io]]&gt;.             
+ We look forward to seeing you there!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

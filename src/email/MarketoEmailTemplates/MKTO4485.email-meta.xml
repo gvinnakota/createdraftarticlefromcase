@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>EMEA_Event_TransformationAdvocacySquad_FR_Q117.ConfirmationWithBanner</name>
+    <style>none</style>
+    <subject>Merci</subject>
+    <textOnly>Bonjour {{lead.First Name:default=}}, 
+ 
+Merci de votre inscription. Retrouvez ci-dessous les détails de l’événement.
+ 
+Date et heure
+23 et 24 mars 2017
+Jeudi 23 mars 2017 à partir de 10h00
+ 
+Lieu
+Le Grand Hôtel de Cabourg
+Les Jardins du Casino
+14390 CABOURG 
+ 
+{{my.Reservez votre agenda}}
+ 
+Des questions ?
+Pour toute question, contactez Marie-Jeanne Dougados à l’adresse mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt;.
+ 
+Nous serons ravis de vous compter parmi nos participants.
+ 
+Bien cordialement,
+L’Équipe Pivotal</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

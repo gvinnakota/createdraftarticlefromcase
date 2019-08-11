@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Website_GPDB Early Access_Q214.Internal Alert</name>
+    <style>none</style>
+    <subject>{{lead.First Name:default=edit me}} {{lead.Last Name:default=edit me}} of {{company.Company Name:default=edit me}} has registered for GPDB Early Access</subject>
+    <textOnly>Hello,
+ 
+ {{lead.First Name:default=edit me}} {{lead.Last Name:default=edit me}} of {{company.Company Name:default=edit me}} has registered for GPDB Early Access. Here are the details:
+ 
+First Name: {{lead.First Name:default=edit me}}
+Last Name: {{lead.Last Name:default=edit me}}
+Company: {{company.Company Name:default=edit me}}
+Email Address: {{lead.Email Address:default=edit me}}
+Phone Number: {{lead.Phone Number:default=edit me}}
+ 
+You may view all early access members here: https://na12.salesforce.com/701U0000000RY1C &lt;https://na12.salesforce.com/701U0000000RY1C&gt;
+ 
+Should you have any questions, please email the Pivotal Operations Team &lt;mailto:pivotal-operations@gopivotal.com&gt;.
+ 
+Thank you.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

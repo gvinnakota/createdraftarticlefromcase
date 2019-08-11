@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_1922862</developerName>
+        <masterLabel>West Theater Regions</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ROLLUP_DESCRIPTION</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Regional Director</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Pacific Northwest Support Resources</sourceValue>
+            </sourceValues>
+            <value>West</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Central Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Central Support Resources</sourceValue>
+            </sourceValues>
+            <value>North Central</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>AMER - Southwest Sales Rep</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Southwest Support Resources</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>AMER - Southwest LATAM Regional Director</sourceValue>
+            </sourceValues>
+            <value>South Central</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Opportunity.Forecast_Status__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Opportunity_Number__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>PRODUCT_CUSTOMER_ID</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TOTAL_PRICE</field>
+    </columns>
+    <columns>
+        <field>CLOSE_DATE</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Forecast_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Omitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PRODUCT_CUSTOMER_ID</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>SVC-1049,SVC-1050,SVC-1041,SVC-1045,SVC-1080,SVC-1081,SVC-1079,SVC-1082,SVC-1140,SVC-1141</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User.Theater__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>AMER,FEDERAL,Global,LABS,Chatter Only</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FULL_NAME</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>pivotal</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Data Services AMER Bookings - Chase List</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityProduct</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Opportunity.Forecast_Status__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>NorthAm_Event_Microsoft Cloud Native Workshop_Omaha_Q217.OmahaConfirmation</name>
+    <style>none</style>
+    <subject>Thank you for registering!</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+ 
+Thank you for registering for the Cloud-Native Workshop in Omaha on May 30th. We hope you will leave this workshop with a better understanding of cloud-native development &lt;[[https://pivotal.io/cloud-native]]&gt; and how to adopt it moving forward. If you would like to participate in hands-on exercises please bring a laptop.
+ 
+
+
+
+Date:
+Tuesday, May 30, 2017
+
+
+
+Time:
+
+
+11:00AM to 4:00PM
+
+
+
+
+Location: 
+Microsoft Omaha
+2111 South 67th Street, Suite 100
+Omaha, NE, 68106 (map)
+
+
+
+
+ 
+Should you have any questions or would like more information about this event, please email us at fieldevents@pivotal.io &lt;[[mailto:fieldevents@pivotal.io]]&gt;. 
+ 
+We look forward to seeing you there! {{my.Cloud-Native Workshop Omaha:default=edit me}}
+The Pivotal Team
+See Agenda &lt;[[http://connect.pivotal.io/cloud-native-workshop-omaha.html]]&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,18 @@
+<apex:page id="RolesToAssign" controller="RolesToAssignController" sideBar="false" showHeader="false" showChat="false">
+    <apex:sectionHeader title="All roles were added to this Quote Rate Plan Charge" rendered="{!roles.size = 0}"/>
+    <apex:form rendered="{!roles.size > 0}">
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!roles}" var="wrp">
+                <apex:column >
+                    <apex:inputCheckbox value="{!wrp.selected}"/>
+                </apex:column>
+                <apex:column value="{!wrp.role.Name}"/>
+                <apex:column value="{!wrp.role.Hourly_Rate__c}"/>
+                <apex:column value="{!wrp.role.CreatedDate}"/>
+                <apex:column value="{!wrp.role.CreatedBy.Name}"/>
+            </apex:pageBlockTable>
+            <apex:commandButton value="Add selected roles to Quote Rate Plan Charge" action="{!addSelectedRoles}"
+                    onComplete="window.close();"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

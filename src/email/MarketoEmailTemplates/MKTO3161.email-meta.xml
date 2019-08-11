@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_PCF 1.6 Launch_Q415.Follow Up - No Show</name>
+    <style>none</style>
+    <subject>We&apos;re sorry we missed you!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Sorry we missed you for last week&apos;s webinar Expand Your Cloud Native Platform&apos;s Capabilities With The Newest Release of Pivotal Cloud Foundry. We reviewed how the latest release brings together the key principles of modern Cloud Native software development into a turnkey platform and brings you frameworks for the latest architectural styles. Some of the new capabilities and features available are:
+
+ - Integrated Microservices with Spring Cloud Services &lt;https://blog.pivotal.io/pivotal-cloud-foundry/products/now-available-spring-cloud-services-for-pivotal-cloud-foundry&gt;
+ - Native Support for .NET and Docker &lt;https://blog.pivotal.io/pivotal-cloud-foundry/products/pivotal-cloud-foundry-1-6-technical-blog-new-runtime-services-net-more&gt;
+ - Continuous Delivery &lt;http://pivotal.io/platform/press-release/go-from-idea-to-production-in-less-than-a-day&gt; of your Cloud Native Applications
+ - Pivotal Cloud Foundry on Microsoft Azure &lt;https://azure.microsoft.com/en-us/blog/general-availability-of-cloud-foundry-and-preview-access-of-pivotal-cloud-foundry/&gt; 
+
+Want to learn more? 
+
+ - Check out the replay &lt;http://pivotal.io/platform/webinar/expand-your-cloud-native-platform&gt; and slides &lt;http://www.slideshare.net/Pivotal/expand-your-cloud-native-platforms-enterprise-capabilities-with-the-newest-release-of-pivotal-cloud-foundry&gt;
+ - Read more &lt;https://blog.pivotal.io/pivotal-cloud-foundry/features/talking-pivotal-cloud-foundry-1-6-with-james-watters&gt; about the new version with James Watters
+ - Download &lt;https://network.pivotal.io/products/pivotal-cf&gt; Pivotal Cloud Foundry
+ - Register for Part 2 &lt;http://pivotal.io/platform/webinar/ensuring-cloud-native-success-working-with-legacy-it&gt; of our series: Ensuring Cloud Native Success - Working with Legacy IT
+
+
+We hope you can join us next time!
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

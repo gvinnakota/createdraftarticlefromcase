@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>System Master_Sales_Email.GS - Monthly Announcement - February 2015</name>
+    <style>none</style>
+    <subject>Pivotal Field Operations: February Sales News Flash</subject>
+    <textOnly>PIVOTAL FIELD OPERATIONS
+A Message from Greg Stroud
+FEBRUARY 2015 SALES NEWS FLASH
+Global Field Operations Team,
+
+It was great to see many of you at the 2015 Pivotal Worldwide Sales Kickoff. As you saw in Scott’s note earlier this week, the presentation and videos for the sessions are posted on Inside Pivotal 
+at WWSKO 2015 &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/events/sales-kick-off-2015?pli=1&gt;. Congratulations again to the award and Club nominees, visit Inside Pivotal to review the award winners.
+
+Now that we are mid-way through the quarter, please take the time to read this communication carefully; as there are a number of policy, process, and product updates that you should be aware of. 
+
+2015 Compensation Updates
+
+2015 Field Compensation 
+Overview slides have been posted to Inside Pivotal here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1zOCuVNQX7vEa0F1zoTu1EA6V0GavDFHWDErktdkEEqU/edit#slide=id.g585bcb2bf_0180&gt; and a recording of the WebEx trainings is available here &lt;https://emccorp.webex.com/emccorp/ldr.php?RCID=4ffa7bd8a744c32d677ef1de0176fa9e&gt;.  Slides for the FY15 Bookings Policy and Rules of Engagement with EMC and 
+VMware are both on Inside Pivotal as well, here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1VK7wZ0Rxw4BrE3Qw0zElOX9P23wbJQfa6sug6FVyLX0/edit#slide=id.g628136f2f_5_0&gt; and here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1VK7wZ0Rxw4BrE3Qw0zElOX9P23wbJQfa6sug6FVyLX0/edit#slide=id.g77b7345f3_2_89&gt; respectively.
+
+GAF Rollout will begin next week and continue through the month of March. Please note that Pivotal will be issuing payouts the field until April. This is consistent to last year and a result of goals not being finalized, updates not complete in PeopleSoft, and the waterfall affect to Callidus. After Q1, payments will go out as normally scheduled. 
+
+Compensation Tool Updates
+
+Pivotal’s Sales Performance Management tool (Callidus) will be your destination to sign your GAFs, view your compensation statements, attainment and order detail reports. It is also where you will submit questions/requests directly to the Sales Finance Compensation team. The tool is integrated with SFDC and everyone that has a commission’s component to their compensation plans will have access. Callidus FAQs &lt;https://docs.google.com/a/pivotal.io/document/d/1IAaUn-k4N4xnLivDE3JLY0TcL-b2t_kOE757g7JMXvs/edit&gt; and the slides that were presented at Kickoff are 
+available here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1r-P3qWkiKeNuTnbJLm8cmUDRhiSgXBRMiOUsGk1GqqQ/edit#slide=id.p16&gt; on the Field Operations Inside 
+Pivotal page. Please expect to see this new tab within SFDC in the March timeframe.
+
+SFDC – What’s New
+ 
+ The Pivotal Partner Section on the Opportunity page in SFDC has been updated to accurately capture partner related data. The Indirect Partner field has been removed from the opportunity page and replaced with three new fields:  
+
+
+ - Opportunity Channel
+ - Opportunity Distributor
+ - Opportunity Reseller
+
+
+Going forward, at Strong Upside and above users will be required to identify the Opportunity Channel as Direct or Indirect. If Indirect, the user must then identify either the Opportunity Distributor or Opportunity Reseller (but not both) via lookup.  The available Opportunity Distributor and Opportunity Reseller values represent companies that have a legal contract with Pivotal. Please see here  &lt;https://docs.google.com/a/pivotal.io/document/d/12CSKCDo3JvACF9fnfATC9c-QA9B5-O_WNQGpb3e5QVU/&gt;for FAQ. 
+ 
+ Tracking Drag Between Labs/PCF and Unified 
+Page Layout. Two new fields have been added to the Opportunity Page in SFDC to capture the Labs to PCF selling motion and PCF to Labs selling motion (also known as drag). On the Opportunity Page, you will find a section called &quot;Drag Details&quot;, which includes two new field additions:
+
+
+ - Is Labs/PCF Being Upsold?
+ - Original Labs Opportunity
+
+
+A guide has been provided here &lt;https://docs.google.com/a/pivotal.io/presentation/d/1fwWaJwKc5pcizbWD8ZN_2a0hLt0PT8dc9ZV0ZbESmVM/edit#slide=id.p4&gt; on how to properly use these fields. As this will be an important selling motion going forward, please take the time to read the instructions 
+carefully. If you have any questions, please route them to your Labs rep or sfdc-support@pivotal.io &lt;mailto:sfdc-support@pivotal.io&gt;.
+ 
+ Product Update – 
+What’s New
+ 
+ Announcing End of Availability for Pivotal Web Server and Apache HTTP Support. Effective February 9, 2015 for Pivotal-direct and EMC customers and March 1st, 2015 for VMware customers, the following offerings will reach End of Availability:
+
+
+ - Pivotal Web Server
+ - Apache HTTP Support
+ - Groovy &amp; Grails Support
+
+
+As a result, customers will no longer be able to purchase new licenses of these products as of the dates mentioned above. All support and maintenance will be unaffected and will continue as per the Pivotal Life Cycle policy &lt;http://www.pivotal.io/support/lifecycle_policy&gt; through the published support period to July 15, 2017.  
+ 
+ Current customers in good standing will be able to renew support maintenance so long as the support renewal period does not extend beyond July 15, 2017.
+ 
+ New App Suite SKU available. A new version of the Pivotal App Suite is available through the EMC / Pivotal channel on February 9th, 2015, and will be available on March 1, 2015 through the VMware channel. This new version no longer contains Pivotal Web Server, Apache HTTP Support, and Groovy &amp; Grails Support. All customers of Pivotal App Suite will have the option to convert licenses to the new version of App Suite at no cost. 
+ 
+ We anticipate no other changes in the near future to the App Suite.  Pivotal&apos;s focus is on PCF, and all of the components of the App Suite are now integrated into PCF, [RabbitMQ, Redis, Spring, tcServer, Tomcat]. Pivotal App Suite will remain on both the VMWare and EMC price lists and will continue to be available to sell to those customers and partners who demand it, but it will not be actively marketed or promoted. 
+ 
+ For more information, please consult the End of Availability FAQ &lt;https://docs.google.com/a/pivotal.io/document/d/1qxm8HWpAnN050PbaljSlyZMzvOGAv8XXFrlAW9X4i0o/edit&gt; or contact Dan Carwin at dcarwin@pivotal.io &lt;mailto:dcarwin@pivotal.io&gt;.  
+
+ Customer Reference Update – New Assets
+ 
+ New Reference Assets available. Click on the text below to access the material. 
+
+
+ - Catch Corelogic, Union Bank, and CS Stars sharing their opinions on Pivotal&apos;s data strategy
+ - Q4 Customer Writeups now Available: With Rep Interview Recordings &lt;https://www.google.com/url?q=https%3A%2F%2Fsites.google.com%2Fa%2Fpivotal.io%2Fcustomer-marketing-and-programs%2F&amp;sa=D&amp;sntz=1&amp;usg=AFrqEzf0j_xXSR05fUbMwPihPej8j_fqvw&gt;
+ - Check out the new searchable Customer Page on Pivotal.io
+ - Listen to Corelogic, JPMC, Allstate, Samsung Mobile, and Mastercard share their experiences working with Pivotal
+
+
+Be Bold!
+Greg</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

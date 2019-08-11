@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Subject</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Case$Priority</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Severity 1 - Critical,Severity 1 - Critical ,Severity 2 - Major</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Products__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pivotal Cloud Cache,Pivotal Cloud Foundry Elastic Runtime Suite,Pivotal Application Service (formerly Elastic Runtime),Pivotal Cloud Foundry Operations Manager,Pivotal Cloud Foundry Operations Manager v2,Pivotal GemFire for Pivotal Cloud Foundry,Pivotal RabbitMQ for Pivotal Cloud Foundry,Pivotal Services Suite for Pivotal Cloud Foundry</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New,Open,On Hold,Escalated,Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Account.Owner.Area__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,APJ,APJ Support Resources,Chatter,EMEA Central,EMEA Emerging Area,EMEA South,EMEA Support Resources,EMEA UKI,Labs,Federal</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Products__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Priority</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Account.Owner.Area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Top Support Cases_PA_Arni by Product</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cases_with_Owner_Hierarchy__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Case$Case_hold_time_staring__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

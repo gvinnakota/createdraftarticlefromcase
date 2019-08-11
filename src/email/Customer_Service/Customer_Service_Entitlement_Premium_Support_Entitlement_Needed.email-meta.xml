@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Premium Support Entitlement Needed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Pivotal_Support_Business_Operations</letterhead>
+    <name>Customer Support:Entitlement:Premium Support Entitlement Needed</name>
+    <style>freeForm</style>
+    <subject>Premium Support Entitlement Needed</subject>
+    <textOnly>Hi {!Contact.FirstName},  
+
+We received your request for assistance and need more information before we can proceed. While your credentials are valid for assistance in our Support Community, it appears you do not have a subscription. This is required to receive support from our professionals.  
+
+If you believe this is in error, please respond with your Pivotal Customer Number (PCN), or contact your Support sales representative to request your PCN. Once we receive this information, we will be able to proceed.  
+
+Alternately, we invite you to post your question in the Support Community (https://community.pivotal.io). 
+
+Kind regards,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

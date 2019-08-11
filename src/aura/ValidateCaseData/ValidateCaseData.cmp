@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:method name="validateNonTechCase"
+    description="Validate data entered to create case is correct">
+    	<aura:attribute name="caseObj" type="case"/>
+    </aura:method>
+    <aura:method name="validateTechCase"
+    description="Validate data entered to create case is correct">
+    	<aura:attribute name="caseObj" type="case"/>
+        <aura:attribute name="countEnt" type="String"/>
+    </aura:method>
+</aura:component>

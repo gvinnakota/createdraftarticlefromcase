@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Remove membership from EHSP {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Remove membership from EHSP</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <name>Non_member_Of_EHSP_Group</name>
+        <label>Non-member Of EHSP Group</label>
+        <locationX>207</locationX>
+        <locationY>144</locationY>
+        <filters>
+            <field>GroupId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>EHSPgroupID</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>UserOrGroupId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>EHSPuser</elementReference>
+            </value>
+        </filters>
+        <object>GroupMember</object>
+    </recordDeletes>
+    <startElementReference>Non_member_Of_EHSP_Group</startElementReference>
+    <variables>
+        <name>EHSPgroupID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>EHSPuser</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>OSS_Email_Spring_Monthly_Newsletter.9/29-30 News Send</name>
+    <style>none</style>
+    <subject>Introducing the Spring IO Platform</subject>
+    <textOnly>September 2013
+&lt;http://www.youtube.com/watch?v=jplkJIHPGos&gt;
+What is Spring IO?
+At SpringOne2GX 2013’s opening night keynote &lt;http://www.youtube.com/watch?v=jplkJIHPGos&gt;, Pivotal introduced the Spring IO Platform and new spring.io website &lt;http://spring.io/&gt;, as well as tons of new content aimed at users who are new to Spring. Check out the new guides and tutorials &lt;https://spring.io/guides&gt; on the new site, with more coming!
+
+Spring IO brings together the core Spring APIs into a cohesive and versioned foundational platform for modern applications. On top of this foundation it also provides domain-specific execution environments for a variety of enterprise workloads. Spring IO is comprised of the Spring IO Foundation and Spring IO Execution layers.
+
+Spring IO is 100% open source, lean, and modular. You can deploy the parts you need, and only what you need. A detailed list of modules and versions are included in the forthcoming Spring IO platform initial release, which will be available soon.
+
+eXtreme Data with Spring XD
+With storage being as cheap as it is, we can afford to keep all the data! Spring Batch and Spring for Hadoop certainly make for good, offline, batch processing solutions, but how do we build systems that can handle tidal data deluge online?
+
+Spring XD &lt;http://projects.spring.io/spring-xd/&gt; is a unified, distributed, and extensible system for data ingestion, real time analytics, batch processing and data export. The project&apos;s goal is to simplify the development of big data applications. Spring XD builds upon Spring Batch, Spring Integration, Spring Data and Spring Data for Hadoop.
+
+Spring XD applications define streams, which in turn ingest data from a source, can route it through a pipeline of components that might transform, route, accumulate, analyze or forward the data, and ultimately sends it to a sink. You may create taps, which are like wire-taps in Spring Integration, to funnel data from a stream to another stream where it can be processed, analyzed, etc. To work with Spring XD, you use the Spring XD shell or scripts that run in the shell. The scripts use a Spring XD DSL that looks remarkably similar to bash command line scripts on Unix environments!
+
+xd:&gt; stream create --definition &quot;syslog-udp --port=&lt;udp-port&gt; | hdfs&quot; --name syslog2hdfs
+
+The stream references components that live in the Spring XD distribution&apos;s modules folder. The dash arguments (--definition, --name, etc.) simply provide or override values specified in the original definition for these components (the syslog-udp component, or the hdfs component). This example takes data coming in from syslog, on the specified port, and forwards them to HDFS, where they&apos;ll be written. Not bad for a line of typing!
+
+For more, check out the great documentation &lt;http://docs.spring.io/spring-xd/docs/1.0.0.M3/reference/html/&gt;, and, as usual, the Spring website &lt;http://spring.io&gt;!
+Configure your Spring project easily
+Did you see the new context menu options for configuring your Spring projects inside the Spring Tool Suite? We provide context menu options on Spring XML config files as well as @Configuration annotated classes to add them as Spring configs to your project settings, as well as remove them again or arrange them in sets of configs for more exact validations.
+Building Big Data Applications with Hadoop &amp; Spring
+At Pivotal we are bringing two open source projects together -- Hadoop and the very rapid and widely used Spring java application development framework to help build Big Data Applications. While Hadoop is proving to be the defacto foundation for storing and processing data, real-world scenarios require much more. Millions of developers are already using Spring to create high performing, easily testable, reusable code without any lock-in. In this month&apos;s webinar James Williams will explore how Spring XD (Xtreme Data) is addressing Big Data Application needs including:
+
+
+ - High throughput distributed data ingestion into HDFS from a variety of input sources
+ - Real-time analytics at ingestion time, e.g., gathering metrics and counting value
+ - Hadoop workflow management via batch jobs
+ - High throughput data export, e.g., from HDFS to a RDBMS or NoSQL database
+Thursday, October 3, 2013
+Register &lt;http://play.gopivotal.com/Global_Hadoop_Spring_Webinar_Register.html&gt;
+Register &lt;http://play.gopivotal.com/Global_Hadoop_Spring_Webinar_Register.html&gt;
+
+Building WebSocket Browser Applications with Spring
+So you&apos;ve written a &quot;Hello world!&quot; WebSocket application or perhaps even a chat sample. You&apos;re able to exchange messages even in pre-Servlet 3.1 containers and pre-IE 10 browsers (that don&apos;t yet support WebSocket) thanks to the SockJS protocol and Spring&apos;s support for it. However, a message is a blank page that can have any content. Whatever message format you choose, proprietary or standard, both client and server need to understand it as well as distinguish different kinds of messages. You need support for the publish-subscribe pattern central to messaging applications so you can broadcast messages to one or more subscribers. You need to incorporate security, validation, and so on. In short you need to build a real-world application.
+
+If you&apos;re used to web applications (and Spring MVC annotated controllers) you are familiar with the foundation that HTTP provides including URLs (nouns), HTTP methods (verbs), headers, parameters, and others. Imagine building an application without HTTP, just a socket. WebSocket gives you this brand new, exciting capability -- full duplex, two-way communication -- yet you no longer have an application-level protocol. Can an entire application be built around a single Endpoint class processing all messages, assuming a single WebSocket connection between browser and server? Thankfully the WebSocket protocol has a built-in sub-protocol mechanism.
+
+In this presentation we&apos;ll discuss the Spring Framework 4.0 support for WebSocket. SockJS, and STOMP-based message brokering.
+
+VIDEOS:
+
+Spring with Cucumber for Automation &lt;spring.io/blog/2013/08/30/webinar-replay-spring-with-cucumber-for-automation&gt;
+Getting Agile with Pivotal Tracker &lt;http://www.youtube.com/watch?v=kFQORVSDeF0&gt;
+Taming Coupling &amp; Cohesive Beasts with Modularity Patterns and Spring  &lt;http://spring.io/blog/2013/10/23/webinar-replay-building-websocket-browser-applications-with-spring&gt;
+EMEA
+
+Tuesday, October 8, 2013
+ 3:00PM GMT Summer Time
+ (London, GMT+01:00)
+Register &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=667384670&gt;
+NORAM
+
+Tuesday, October 8, 2013
+ 10:00AM PDT
+ (San Francisco, GMT-07:00)
+Register &lt;https://gopivotal.webex.com/gopivotal/onstage/g.php?t=a&amp;d=660130258&gt;
+Spring Batch 3.0 Milestone 1 &lt;spring.io/blog/2013/08/23/spring-batch-3-0-milestone-1-released&gt;
+ Spring Tool Suite and Groovy/Grails Tool Suite 3.4.0.M1 &lt;spring.io/blog/2013/09/12/spring-tool-suite-and-groovy-grails-tool-suite-3-4-0-m1-released&gt;
+ Spring Data Couchbase 1.0 M1 and Spring Data Solr 1.0 
+GA
+ Spring Security 3.2.0.RC1 &lt;http://spring.io/blog/2013/09/01/spring-security-3-2-0-rc1-released&gt;
+ Spring Data Babbage release train goes GA &lt;spring.io/blog/2013/09/10/spring-data-babbage-release-train-goes-ga&gt;
+ Spring Data Redis 1.1 Spring &lt;spring.io/blog/2013/09/11/spring-data-redis-1-1-released&gt;
+Spring LDAP 1.3.2 &lt;spring.io/blog/2013/08/26/spring-ldap-1-3-2-released&gt;
+Reactor 
+1.0.0.M2
+Spring Scala 1.0.0.RC1 &lt;forum.spring.io/forum/spring-projects/scala/130854-spring-scala-1-0-0-rc1-has-been-released&gt;
+Spring Security 3.2.0.RC1 Highlights: CSRF Protection &lt;https://spring.io/blog/2013/08/21/spring-security-3-2-0-rc1-highlights-csrf-protection/&gt;
+ Spring Security 3.2.0.RC1 Highlights: Security Headers &lt;spring.io/blog/2013/08/23/spring-security-3-2-0-rc1-highlights-security-headers&gt;
+ Introducing the Spring YARN framework for developing Apache Hadoop YARN applications &lt;http://spring.io/blog/2013/09/10/introducing-the-spring-yarn-framework-for-developing-apache-hadoop-yarn-applications&gt;
+
+Spring Core &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17750&gt;
+ Enterprise Integration &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17833&gt;
+ Hibernate with Spring &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18355&gt;
+ Rich Web Applications &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=17834&gt;
+ Groovy and Grails &lt;http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&amp;a=one&amp;id_subject=18353&gt;
+
+To manage preferences for your Spring related communications, please visit play.gopivotal.com/OSSSubscriptions.html. To unsubscribe from all communications, please visit play.gopivotal.com/UnsubscribePage.html.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

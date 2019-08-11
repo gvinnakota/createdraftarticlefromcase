@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_PAIR_Q217.Munich_Confirmation</name>
+    <style>none</style>
+    <subject>You are confirmed - Pivotal Analytics Roadshow</subject>
+    <textOnly>Hello {{lead.First Name:default=there}},
+ 
+ Thank you for registering for the Pivotal Analytics Roadshow! Please see your event details below.
+ 
+
+
+
+Date:
+Tuesday, 11 April 2017 
+{{my.Save the Date Munich:default=edit me}}
+
+
+
+Time:
+
+
+8.30am - 1.15pm Strategy Session
+1.15pm - 5.15pm Data Science Workshop Session 
+(Limited Seating and for practitioners only)
+
+
+
+
+Location: 
+
+
+Allianz
+Seidlstraße 24-24a, 80335 München, Germany, Room NY(map &lt;[[https://www.google.com/maps/place/Seidlstra%C3%9Fe+24,+80335+M%C3%BCnchen,+Germany/data=!4m2!3m1!1s0x479e75fc8355bdc9:0xbb66c80601cd1066?sa=X&amp;ved=0ahUKEwjL25XQk5DSAhVB7WMKHTZUBdwQ8gEIGTAA]]&gt;)
+
+
+
+Agenda:
+
+
+Review the full agenda HERE &lt;[[pivotal.io/event/pivotal-analytics-innovation-roadshow/munich?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=PAIR-2017]]&gt;
+
+
+
+
+
+If you have any questions, feel free to email Marie-Jeanne Dougados at mdougados@pivotal.io &lt;[[mailto:mdougados@pivotal.io]]&gt;.
+
+Sincerely,
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

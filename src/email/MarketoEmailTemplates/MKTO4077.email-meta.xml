@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Corp Comm.08-13-15 V3N13</name>
+    <style>none</style>
+    <subject>Pivotal Newsletter Vol. 3, No. 13</subject>
+    <textOnly>VOL. 3, NO. 13
+Thursday, August 13, 2015
+Editor Welcome: Even Better as the Real Thing &lt;#14ebc20d8b820466_editor-welcome&gt;
+Business: What it Took—Taking Tyco to the Internet of Things  &lt;#business-update&gt;
+Product: The “WTF” on Cloud Native—or How to Make Customers Awesome  &lt;#product-update&gt;
+Agile: Pivotal and Telstra Team-up on Transformation &lt;#agile-update&gt;
+Customer Spotlight &lt;#customer-spotlight&gt;
+People: The Girls Are Back In Town! &lt;#people-update&gt;
+Hello, My Name Is... Dieu Cao &lt;#my-name-is&gt;
+New Hires: Welcome to Pivotal! &lt;#new-pivots&gt;
+EDITOR WELCOME
+ even better as the real thing
+ Steve Casale &lt;https://gopivotal-com.socialcast.com/users/1033819-stephencasale&gt;, Sr. Manager, Corporate Communications
+Few things are more important than our customers doing headline-type things largely through our help. The use cases and news of our role in others’ breakthroughs run across the spectrum of our business. One is Predix, or GE’s recent announcement &lt;http://fortune.com/2015/08/05/ge-preps-industrial-cloud/&gt; of its and the industrial future, as data and analytics software of mind-bending capability, built with the help of Pivotal. Another is a neat IoT demo &lt;https://www.youtube.com/watch?v=5gySgGWJMHA&amp;mkt_tok=3RkMMJWWfF9wsRoivK3IZKXonjHpfsX97OkoWqa1lMI%2F0ER3fOvrPUfGjI4ISsRjI%2BSLDwEYGJlv6SgFTLLAMal10LgNWxg%3D&gt;, where our data scientists help automakers 
+rethink—again—the connected car.
+
+We lay some of that out in this issue: PCF’s Michael Coté boils down cloud-native for us, and rolls off examples of how our interpretation makes customers awesome. We get a glimpse from Matt Polick on what it took to land the Tyco, and how much they’ve invested in us for their future—with a cool podcast you should download, exploring this. We landed a unique partnership and joint-venture in Australia with Tesla, helping them introduce transformation to their customers. And “Girls Who Code” returned to Pivotal for a day of learning! 
+
+Speaking of double-XX power, CloudNOW &lt;http://cloud-now.org/&gt; announced its ‘Top 10 Women in Cloud’ &lt;http://cloud-now.org/4th-annual-top-10-women-in-cloud-awards/&gt;, and it includes PCF’s Cornelia Davis (who is now a candidate to for the No. 1 spot). Right on Cornelia!
+
+Finally, we’ve a raft of conferences &lt;https://pivotal.io/news-events&gt; that you should get your prospects to, and the Town Hall is next Tuesday. You saw Bill Cook announce earlier today &lt;https://sites.google.com/a/pivotal.io/inside-pivotal/corporate-marketing/corporate-communications/news-archive/pivotal-town-hall-help-us-celebrate-a-special-moment&gt; how this would be special one. Don’t miss it.
+
+Enjoy.
+BUSINESS
+ What it took - taking tyco to the internet of things
+ Matthew Polick &lt;https://gopivotal-com.socialcast.com/users/1029115-matthewpolick&gt;, Sales Executive, Americas
+When we announced the Tyco win internally, we said “they bought the truck”—or the whole of the Pivotal portfolio. How we won Tyco was unique, as Pivotal had few prior inroads to follow.
+
+Tyco &lt;http://www.tyco.com/&gt; is the largest player in the fire and security vertical, but it plays in a highly fragmented, competitive, and 
+regulated space. To keep an edge, and gain ground in long product refresh cycles (for example, 10-15 years for a fire panel), as well as speed time to deployment, Tyco turned to IoT (Internet of Things). When we first engaged Tyco, we heard many say how they must “transform or die”, and with our help the IoT became the cornerstone of a new business strategy.
+
+Joined by my colleagues Noelle Saldana &lt;https://gopivotal-com.socialcast.com/users/923574-noellesaldana&gt; in data science, and Ryan Vaudry &lt;https://gopivotal-com.socialcast.com/users/984934-ryanvaudry&gt; from Pivotal Labs, we recently sat down with Americas 
+sales head Andy O’Brien for a spirited talk on the story behind the win, who inside Tyco shared our vision, and what made the difference. Take a moment to download and listen to that podcast &lt;https://drive.google.com/open?id=0B8GCVlqTdMB-NFdrRk9jMTlSRzQ&gt;.
+
+Key to success: Look for how your customers will be disrupted by software, and 
+who care deeply about solving issues for both the business and IT. It’s not one or the other (more on that in podcast). 
+
+Tyco’s next-generation IoT platform will connect a rich portfolio of assets (fire and security panels, access control, industrial vents, sprinkler systems, RFID, and other systems) that make up the parts an IoT play known as TycoON—that’s tens of 
+millions of sensors. Tyco aims to collect real-time data, diagnose systems remotely, leverage patterns, and provide predictive analytics to detect costly false alarms. In sum, we’ll help them glue some 1,400 separate Tyco entities through this solution! 
+
+Pivotal will make the IoT tangible through data-driven apps from a centralized data lake. Pivotal Cloud Foundry &lt;http://pivotal.io/platform-as-a-service/pivotal-cloud-foundry&gt; will enable Tyco to deliver apps at unprecedented speeds and bring innovation cycles that will help them disrupt their market. This is the stepping stone for a deeper partnership, giving Tyco the tools to continue to innovate—and to find a new path and relevancy through software, with Pivotal. Listen into what it took to win Tyco. &lt;https://drive.google.com/open?id=0B8GCVlqTdMB-NFdrRk9jMTlSRzQ&gt;
+PRODUCT
+ The &quot;WTF&quot; on Cloud Native - or how to make customers awesome
+ Coté &lt;https://gopivotal-com.socialcast.com/users/1103541-michaelcote&gt;, Director, Technical Marketing
+You’ve probably been coming across &lt;http://redmonk.com/sogrady/2015/07/24/cloud-native-implications/&gt; the term “cloud native&quot; frequently. James Watters wrote an excellent post on the topic &lt;http://blog.pivotal.io/pivotal-cloud-foundry/features/mapping-the-cloud-native-journey&gt;, but I wanted add some background for y&apos;all here.
+
+We&apos;ve made &quot;cloud 
+native&quot; an umbrella term to describe what Pivotal Cloud Foundry does for our customers. It&apos;s shorthand for how we make our customers awesome &lt;http://www.amazon.com/Badass-Making-Awesome-Kathy-Sierra/dp/1491919019&gt;: our platform gives them the tools and processes needed to start deploying their custom-written software 
+weekly, if not daily, along with the tools needed to keep that software running happily in production.
+
+With this platform and knowing how to use these cloud superpowers, our customers become truly agile: frequently changing both their businesses and IT processes to keep 
+competitive, for example, they can think of a new business idea on Monday and have it up and running by 
+Friday.
+
+The Cloud Native Lifestyle
+How to get there is where we can help. Customers are concerned with migrating existing legacy applications and developing new—even breakthrough—greenfield applications. In both cases, Pivotal Cloud Foundry has much to offer: it’s 12 factor app approach &lt;http://blog.pivotal.io/pivotal-cloud-foundry/features/all-things-pivotal-episode-7-a-look-at-12-factor-apps&gt;, backing services, and our integrated microservices framework based on Netflix&apos;s work &lt;http://blog.pivotal.io/pivotal-cloud-foundry/features/deploying-microservice-architectures-with-pivotal-cloud-foundry&gt;. We’re continually covering what it’s like to develop in the cloud native style: most recently, Josh Long posted an excerpt from his upcoming 
+book and a while back Josh Kruck wrote up a similar post &lt;http://blog.pivotal.io/pivotal-cloud-foundry/features/how-do-i-migrate-applications-to-pivotal-cloud-foundry&gt;.
+
+Customers want to know how they need to change how they operate and structure their company &lt;http://blog.pivotal.io/pivotal-cloud-foundry/news-2/organizing-for-devops-success&gt;. Pivotal Labs can help customers understand what the cloud native lifestyle looks like day-to-day—check out the SafeMeds project &lt;https://github.com/pivotal-cf/safemeds&gt; for a perfect example. We also frequently discuss the operations challenges &lt;https://docs.google.com/document/d/1Qx7QpbkwmvV1FIY7BW0YMKbTPeUER_l08RuWLSJDv9c/edit&gt;: addressing those concerns is one of Pivotal Cloud Foundry&apos;s key value propositions. We&apos;ve been documenting the overall cloud native journey with the first post in a series up this week &lt;http://blog.pivotal.io/pivotal-cloud-foundry/features/welcome-to-your-cloud-native-journey-part-1&gt;.
+
+Want more? Just Ask
+We&apos;re in the middle of codifying our cloud native material, some of it is previewed above. If you want more in the meantime, feel free to reach out to the platform marketing team &lt;mailto:pcf-concierge@pivotal.io&gt; or join us in slack here &lt;https://pivotal.slack.com/archives/cloudnative/&gt;.
+AGILE
+ Pivotal and Telstra Team-up on transformation
+ Melissa Ries &lt;https://gopivotal-com.socialcast.com/users/927431-melissaries&gt;, VP and General Manager, APJ
+Last week Pivotal announced a very exciting joint venture with Telstra &lt;https://www.telstra.com.au/&gt;, Australia&apos;s leading provider of mobile phones, mobile devices, home phones, and broadband internet. Telstra will partner with our new Pivotal Labs Sydney office—our second in APJ, with a planned opening towards the end of the year, serving as a software innovation hub for Telstra’s enterprise clients. 
+
+Telstra recognized its need to transform into a great software company in order to innovate and maximize future opportunities. It also saw how a deeper partnership with Pivotal would help its enterprise clients across the region achieve transformation through the practical application of Pivotal methods. Telstra CEO Andy Penn noted that “Pivotal has been the pioneer behind agile development, which is really changing the way organisations create new technologies and new applications and accelerate those into production.” 
+
+In growing from a project-based customer 
+relationship to a full-blown JV, Pivotal gains access not only to Telstra’s brand recognition in Australia, but exposure to their extensive experience in working with Australian enterprises. In a related move, Telstra also joined the Cloud Foundry Foundation &lt;https://www.cloudfoundry.org/&gt; (CFF) as a Gold member, which will bring their customers the advantages of the world’s fastest-growing open platform. We see this move as giving Telstra exposure to the full portfolio—PCF, data, and agile.
+
+The announcement was made at the grand opening of Telstra’s Melbourne-based Gurrowa Innovation Lab &lt;http://www.theaustralian.com.au/business/technology/telstra-opens-gurrowa-innovation-lab-in-melbourne/story-e6frgakx-1227469543793&gt;, a well placed space to leverage Pivotal’s expertise in design, development and product management to deliver modern 
+applications and user experiences. The Lab will be sending their developers to the Sydney office to partner directly with Pivotal teams to learn the ways of agile—on top of PCF of course. 
+
+Many hands helped make this a reality. Danny Burkes managed two initial successful projects with Telstra out of our San Francisco office, and Leo Spiegel and Mike Maxey drove the agreement. Thanks also to Gavin Jones, Christian Anders, Edward Hieatt, Matt Eng, Cyrus Wadia, Chris Ing, Paul Maritz, Scott Yara, and Bill Cook, for all their support.
+Customer Spotlight
+Cloud Foundry Summit Ripple Effect Goes On
+The Cloud Foundry Summit still reverberates with powerful customer stories that are rippling across the web. EMC Documentum Chief Technology Officer Jeroen van Rotterdam took time out from the two-day event to talk about going cloud native with Pivotal. The results? A case study &lt;http://pivotal.io/platform-as-a-service/case-study/emc-documentum&gt;, video &lt;https://youtu.be/fhSlHQyMRv0&gt; and Pivotal blog post &lt;http://blog.pivotal.io/pivotal-cloud-foundry/case-studies-2/emc-documentum-goes-cloud-native-with-pivotal-cloud-foundry&gt; highlighting our work together that is expected to impact the next 10 to 20 years of of engineering needs for EMC Documentum. Never underestimate the potential legs of one conversation! 
+
+Check out the latest Pivotal Cloud Foundry assets to learn more about how EMC Documentum became one of our earliest Cloud Native platform adopters.
+PEOPLE
+ The girls are back in town!
+ Marcy Tavano &lt;https://gopivotal-com.socialcast.com/users/949517-marcyletavano&gt;, Director, People team
+On Friday, July 31st, the San Francisco Pivotal office once again had the pleasure of hosting 19 high school girls who were part of the Girls Who Code &lt;http://girlswhocode.com/&gt; (GWC) summer immersion program. GWC aims to inspire young women to pursue careers in technology and engineering. Founded in 2012 by politico and lawyer Reshma Saujani &lt;http://www.womenwhodontwaitinline.com/&gt;, the program provides girls with high quality instruction in programming fundamentals, web development and design, mobile development, and robotics through exposure to technology companies such as Pivotal. 
+
+The girls filed into the Pivotal offices on the morning of the 31st. Cornelia Davis from the Cloud Foundry team welcomed the group, followed by a hands-on exercise, where the girls paired with Pivotal Labs and Cloud Foundry developers. Together they built an interactive “rocks, paper, scissors” game. Cornelia then talked to the girls about how software is eating the world, and Pivotal master data scientist Hulya Farinas gave an overview on her field. The girls wrapped the day in a Q&amp;A session with Rob Mee. 
+
+Pivotal’s partnership with GWC can be traced to last year, when our colleagues from GE asked if we would sponsor a field trip at one of our offices—to which we promptly obliged. After that field trip, the NYC Labs team volunteered its expertise pro bono for seven weeks to help two of the GWC participants, Sophie Houser, 17, and 
+Andrea Gonzales, 16, build the mobile version of a game they had created during their final project. 
+
+Recent statistics show that by 2020, there will be 1.4 million jobs available in the computing related fields, but women educated in the US are only on pace to filling 3% of them. With programs like Girls Who Code partnering with companies like Pivotal, we hope to change that. We continue to work with the GWC in their mission to “inspire, educate, and equip girls with the computing skills to pursue 21st century opportunities.”
+
+
+Rob Mee (center) with Pivotal and Girls who Code team; Cornelia Davis kicks it off 
+
+Thanks to everyone who helped make last month’s field trip a big success. A special shout out goes to:
+
+Guest speakers: Cornelia Davis, Hulya Farinas, Rob Mee
+Planning/logistics: Zach Larson, Magda Kozak, Aaron Vonderhaar and Sung Hae Kim
+Volunteer 
+developers: Jeanie Jung, Evan Short, Leslie Chang, Dan Wendorf, Tushar Dadlani, Elana Koren, Phil Kuryloski, Zak Auerbach, Yulia Tolskaya, Wiley Kestner and Tim Jarratt.
+HELLO MY NAME IS...
+ DIEU CAO
+ Dieu Cao &lt;https://gopivotal-com.socialcast.com/users/925263-dieucao&gt;, Product Manager, Cloud Foundry
+am a Product Manager on Cloud Foundry, where I manage backlog for CAPI, an open source team responsible for the cloud controller API. Basically, we’re responsible for abstracting platform features and policy complexity from developers, to make Cloud Foundry easy to use from a variety of clients.
+on the 4th floor at the base of the stairs in the San Francisco office, or otherwise near coffee.
+an MVP (minimum viable product) for v3 of the cloud controller API &lt;http://apidocs.cloudfoundry.org&gt;, and making it easier for developers to create and develop service brokers &lt;http://docs.cloudfoundry.org/services/api.html&gt;.
+I spend as much time as I can with my husband Vince, and my two kids, Jack (5) and Sophie (1).
+
+Dieu with her number ones, Jack (l) and Sophie (r).
+My husband and I were part of a World of Warcraft &lt;http://www.battle.net/wow/&gt; guild that was ranked among the top 200 in the US during the Burning Crusade and Wrath of the Lich King expansions (you can google that).
+is an awesome place to work with so many opportunities to grow and learn. It’s a privilege to get to work with the best and brightest in the industry, where everyone is excited to do great things.
+Welcome to Pivotal!
+We’re happy you’re here! Please welcome the new employees and college co-ops who joined Pivotal from July 27 - Aug 
+10:
+
+
+
+ 
+Alexander Wahls, Senior Inside Sales Rep, London 
+Amarender 
+Sardar, Member of Technical Staff 3, Americas
+Benjamin Watts, Software Engineer, San Francisco 
+Caroline Hane-Weijman, Product Manager, New York
+Christa Hartsock, Software 
+Engineer, San Francisco
+Christopher Cebelenski, Senior Field Engineer, Americas
+Christopher Decelles, Senior Field Engineer, Americas
+Chunhua Zhang, Senior 
+Solutions Architect, Shanghai 
+Claire Hirsch Laurence, Administrative Assistant, San Francisco
+Clodagh Frahill, Senior Workplace Advocate, Dublin 
+Cochetta Crowley, Director of Recruiting, Palo Alto 
+Coon Lam, Director of Marketing, San Francisco 
+Cristina Arevalo, Associate Inside Sales Rep, Cork Ireland
+David Barry, Account Manager, Toronto
+Edwin Xie, Software Engineer, San Francisco
+Heather 
+Ferguson, HR Operations Manager, San Francisco
+Huaixuan Zhuang, Member of Technical Staff 3, Beijing
+Jacob Frank, Member of Technical Staff 3, Palo Alto
+James Wen, Software 
+Engineer, New York 
+James Whittington, Sales Account Manager, Americas 
+Jeffrey Schomay, Senior Software Engineer, Denver
+Karen Perille, Administrative Assistant, Chicago
+Kenneth Howe, Senior Member of Technical Staff, Beaverton 
+Kevin Hoffman, Advisory Solutions Architect, Americas
+Kevin Kelani, Software 
+Engineer, Santa Monica CA
+Kimberly Viverette, Recruiting Consultant, Santa Monica CA
+Mac Yonglin Tang, Senior Account Manager, Beijing 
+Martin McVay, Senior Field Engineer, EMEA
+Matthew Pinder, Legal Counsel, London
+Mayra 
+Vega, UX Designer, Santa Monica
+Melody Rosado, Senior Administrative Assistant, San Francisco 
+Michelle Forszt, Product Manager, San Francisco
+Ming Li, Senior Member of Technical Staff, 
+Beijing
+Neha Batra, Software Engineer, San Francisco
+Oliver 
+Switzer, Software Engineer, New York
+Paul Hopper, Senior Field Engineer, Americas
+Rehan Altaf, Advisory Solutions Architect, Americas
+Ryan Hall, 
+Member of Technical Staff, Americas
+Salina Herrera, Financial Analyst, San Francisco
+Sandy Shan Cheng, Technical Staff 1, Beijing
+Simone Sequeira, College Co-op 
+student, San Francisco
+Sujit Mohanty, Senior Manager Field Engineering, Americas
+Sungyoon Kim, Software Engineer, Washington DC
+Wen Lin, Senior Member of 
+Technical Staff, Beijing</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

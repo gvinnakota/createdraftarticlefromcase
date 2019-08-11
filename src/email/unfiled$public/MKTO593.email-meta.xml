@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Webinar_Stuck in Traffic? Saved by Big Data!_Q214.Follow Up - No Show</name>
+    <style>none</style>
+    <subject>Sorry we missed you last week: Stuck in Traffic? Saved by Big Data!</subject>
+    <textOnly>Hi {{lead.First Name:default=There}},
+
+Sorry we missed you last week for our webinar &lt;http://www.gopivotal.com/big-data/webinar/stuck-in-traffic-saved-by-big-data&gt; &quot;Stuck in Traffic? Saved by Big Data!&quot;.  
+
+We reviewed how Pivotal&apos;s Data Science Team has developed several methods to analyze traffic information from real-time data sources. Using a variety of methods on a massively parallel analytics database system, the team demonstrated a traffic disruption model that can predict the duration of recent incidents – learning the disruption patterns of a major city.
+
+View the replay now &lt;http://www.gopivotal.com/big-data/webinar/stuck-in-traffic-saved-by-big-data&gt;.
+
+We look forward to you joining us next time. 
+ 
+Thank you,
+
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

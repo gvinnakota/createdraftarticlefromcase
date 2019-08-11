@@ -1,0 +1,3 @@
+<apex:page standardController="Opportunity" extensions="ChangeOwnerStandardCtlr" recordSetVar="dynamicObj">
+<c:ChangeOwnerDynamicComponent ChangeOwnerStandardCtlr="{!sController}"/>
+</apex:page>

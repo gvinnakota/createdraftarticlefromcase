@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Global_Event_AWS reinvent_Q416.Post-event</name>
+    <style>none</style>
+    <subject>Now that AWS re:Invent is behind us, what’s your next move?</subject>
+    <textOnly>Hi {{lead.First Name:default=there}},
+ 
+Now is the time to begin your transformation journey with Pivotal. It doesn’t matter what industry you’re in, you have the opportunity to take advantage of open source software, a cloud-native platform, and data analytics to redefine the customer experience, develop completely new business models, and drive new levels of profitability and efficiency. 
+
+ At the conference, we saw Amazon announce exciting new services, and heard great talks on making the most of your move to the cloud in both operations and development. We learned from the experiences of our peers, and Pivotal customers are demonstrating every day, that it’s possible to completely transform the software development process by adopting an agile approach and modern technologies—including a healthy dose of open source 
+tech! Want to learn more? 
+
+ We invite you to take advantage of our library of growing resources, including:
+
+ - PCF Service Broker for AWS - Use a standard interface to link AWS services to your apps. Whether S3, DynamoDB, RDS, or SQS, securely connect your apps to AWS services at runtime. Documentation &lt;[[https://docs.pivotal.io/aws-services/index.html]]&gt;
+ 
+- White Paper on NetflixOSS and Microservices - This new white paper takes a look at microservices, how Netflix solved technical challenges, and how you can do the same using Spring Cloud. Download  &lt;[[https://pivotal.io/supercharging-your-microservices-with-netflixoss-and-spring-cloud]]&gt;
+ 
+- Microservices Architecture eBook - This eBook by Matt Stine &lt;[[https://blog.pivotal.io/author/mstine]]&gt; helps developers learn how to architect and write cloud-native applications, as well as understand how to deploy and manage them. It examines the cultural, organizational, and technical changes necessary to migrate traditional monolithic applications and service-oriented architectures to cloud native architectures. Download  &lt;[[http://pivotal.io/platform/migrating-to-cloud-native-application-architectures-ebook]]&gt;
+ 
+- The Cloud-Native Platform eBook - This digital eBook by Duncan Winn &lt;[[https://blog.pivotal.io/author/dwinn]]&gt; explains the essential capabilities of a platform needed to support cloud applications and examines the changes enterprises need to make in process, organization, and culture if they are to take advantage of this approach. Download  &lt;[[http://pivotal.io/cloud-foundry-the-cloud-native-platform]]&gt;
+ 
+- Allstate Podcast - Matt Curry from Allstate, one of the largest US insurers, describes the company’s journey to continuous integration, continuous deployment, and test-driven development with the goal to drive automation all the way through the application lifecycle. Listen &lt;[[http://thenewstack.io/allstates-devops-honeymoon-pivotal-going-strong-one-year-later/]]&gt;
+
+Now is the time to take the reins of your digital transformation. Let’s build something meaningful. 
+
+ Best Regards, 
+The Pivotal Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Zendesk_Legacy_ID__c</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka$Id</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Id</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$PublishStatus</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Additional_Information__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>KnowledgeArticle__ka.KnowledgeArticle__kav$IsLatestVersion</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticle__ka.KnowledgeArticle__kav$Product2__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>articles by product</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Knowledge_Articles_w_kav__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle__ka$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
